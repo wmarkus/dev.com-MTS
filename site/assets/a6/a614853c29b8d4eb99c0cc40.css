@@ -1,0 +1,84 @@
+@font-face {
+  font-family: "Cascadia Code";
+  font-style: italic;
+  font-weight: 200;
+  font-display: swap;
+  src: url("/__mirror/assets/2693d1b2e0c5aed4801c54a1") format("truetype");
+}
+@font-face {
+  font-family: "Cascadia Code";
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/__mirror/assets/8377420a5827490fecf443a1") format("truetype");
+}
+@font-face {
+  font-family: "Cascadia Code";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/__mirror/assets/c03cb6d703ef7ac5838d9e8f") format("truetype");
+}
+@font-face {
+  font-family: "Cascadia Code";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/__mirror/assets/3c8316610ebc79c7ec3d8297") format("truetype");
+}
+@font-face {
+  font-family: "Cascadia Code";
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/__mirror/assets/b289da07f9a99d777b4e104c") format("truetype");
+}
+@font-face {
+  font-family: "Cascadia Code";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/__mirror/assets/656873efb9d86a41111f9fd1") format("truetype");
+}
+@font-face {
+  font-family: "Cascadia Code";
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url("/__mirror/assets/01582d99dbb5015ab82b7827") format("truetype");
+}
+@font-face {
+  font-family: "Cascadia Code";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/__mirror/assets/ab07535d4eb8e9e4f6a0648a") format("truetype");
+}
+@font-face {
+  font-family: "Cascadia Code";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/__mirror/assets/c92426ca6b32218bf625d44e") format("truetype");
+}
+@font-face {
+  font-family: "Cascadia Code";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/__mirror/assets/d5f6e8d1b6dafe7f74dcb465") format("truetype");
+}
+@font-face {
+  font-family: "Cascadia Code";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/__mirror/assets/de4f63ff2156567c886ceb3e") format("truetype");
+}
+@font-face {
+  font-family: "Cascadia Code";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/__mirror/assets/765fa806d672451089c4f5e4") format("truetype");
+}
