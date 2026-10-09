@@ -1,0 +1,2474 @@
+<!doctype html>
+<html lang="en-US" data-theme="light">
+<head>
+    <!-- Authorized local recreation. External services are not impersonated; analytics disabled. --><meta name="robots" content="noindex,nofollow"><script src="/__mirror/runtime.js"></script><title>Azure Developer | Microsoft Developer</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark light">
+    <meta name="awa-env" content="Production">
+    <meta name="description" content="Explore our Azure developer hub, offering a wealth of resources and tools tailored specifically for developers. Discover how Azure can help you achieve more.">
+
+    <meta property="og:title" content="Azure Developer | Microsoft Developer">
+    <meta property="og:description" content="Explore our Azure developer hub, offering a wealth of resources and tools tailored specifically for developers. Discover how Azure can help you achieve more.">
+    <meta property="og:image" content="https://developer.microsoft.com/_devcom/images/logo-ms-social.jpg">
+    <meta property="og:image:alt" content="Microsoft Developer">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Microsoft Developer">
+    <meta property="og:url" content="https://developer.microsoft.com/en-us/azure">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@msdev">
+    <meta name="twitter:image" content="https://developer.microsoft.com/_devcom/images/logo-ms-social.jpg">
+
+    
+<meta name="awa-pageType" content="Resources">
+<meta name="awa-product" content="Azure">
+<meta name="awa-prdct" content="Azure">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+    <link rel="canonical" href="https://developer.microsoft.com/en-us/azure">
+    
+    
+<style>
+    uhf-header:not(:defined) {
+        display: block;
+        height: 54px;
+    }
+
+    uhf-brand:not(:defined),
+    uhf-contextual-nav:not(:defined),
+    uhf-actions:not(:defined),
+    uhf-global-nav:not(:defined),
+    uhf-search:not(:defined),
+    uhf-mecontrol:not(:defined),
+    uhf-cart:not(:defined),
+    uhf-dropdown:not(:defined),
+    uhf-popout:not(:defined) {
+        visibility: hidden;
+    }
+</style>
+<link rel="stylesheet" href="/__mirror/assets/e4d14f1f8bc83e293e136adc"> <!-- UHF CSS -->
+
+    <script src="/__mirror/assets/fe2fc9b62e744e583f0eb2a4"></script>
+
+    <!-- 1DS script -->
+    
+    
+    <!-- /1DS script -->
+
+    
+</head>
+<body>
+    <!-- UHF Header -->
+    
+<uhf-header locale="en-us" partnerid="MSDev-Community" headerid="MSDev-DEVCOM-Community-Header" theme="light">
+    <a slot="skip-link" class="uhf-skip-link" href="#mainContent" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "SkipToMain", "cN": "Skip to content_nonnav", "ecn": "Skip to content_nonnav", "ehn": "SkipToMain"}'>Skip to main content</a>
+    
+<uhf-brand slot="brand">
+        <a href="https://www.microsoft.com/" class="uhf-microsoft-logo" slot="microsoft-logo" aria-label="Microsoft" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Anchor", "cN": "GlobalNav_Logo_cont", "ecn": "GlobalNav_Logo_cont", "ehn": "Anchor"}'>
+            <img src="/__mirror/assets/adea6dac4ae78fd2b1b9eda9" alt="Microsoft">
+        </a>
+            <a href="/en-us/" class="uhf-site-logo" slot="brand-logo" aria-label="Developer" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Anchor", "cN": "CatNav_Developer_nav", "ecn": "CatNav_Developer_nav", "ehn": "Anchor"}'>
+ <span>Developer</span>             </a>
+</uhf-brand>
+
+
+<uhf-contextual-nav slot="contextual-nav" overflowtext="More" brand="Developer" homeurl="https://developer.microsoft.com/en-us/" hometext="Home" data-nav-label="Contextual menu">
+
+
+
+<uhf-dropdown text="Products" id="" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_nav", "ecn": "CatNav_Products_nav", "ehn": "Products"}'>
+    
+
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://learn.microsoft.com/en-us/dynamics365/get-started/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Dynamics 365_nav", "ecn": "CatNav_Products_Dynamics 365_nav", "ehn": "Products"}'>Dynamics 365</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://github.com/home" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_GitHub_nav", "ecn": "CatNav_Products_GitHub_nav", "ehn": "Products"}'>GitHub</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://developer.microsoft.com/en-us/microsoft-365" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Microsoft 365_nav", "ecn": "CatNav_Products_Microsoft 365_nav", "ehn": "Products"}'>Microsoft 365</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/azure" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Microsoft Azure_nav", "ecn": "CatNav_Products_Microsoft Azure_nav", "ehn": "Products"}'>Microsoft Azure</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://developer.microsoft.com/en-us/microsoft-edge/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Microsoft Edge_nav", "ecn": "CatNav_Products_Microsoft Edge_nav", "ehn": "Products"}'>Microsoft Edge</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://ai.azure.com/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Microsoft Foundry_nav", "ecn": "CatNav_Products_Microsoft Foundry_nav", "ehn": "Products"}'>Microsoft Foundry</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://developer.microsoft.com/en-us/graph" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Microsoft Graph_nav", "ecn": "CatNav_Products_Microsoft Graph_nav", "ehn": "Products"}'>Microsoft Graph</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/identity" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Microsoft Identity Platform_nav", "ecn": "CatNav_Products_Microsoft Identity Platform_nav", "ehn": "Products"}'>Microsoft Identity Platform</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://developer.microsoft.com/en-us/microsoft-teams" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Microsoft Teams_nav", "ecn": "CatNav_Products_Microsoft Teams_nav", "ehn": "Products"}'>Microsoft Teams</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/power-platform" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Power Platform_nav", "ecn": "CatNav_Products_Power Platform_nav", "ehn": "Products"}'>Power Platform</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://visualstudio.microsoft.com/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Visual Studio_nav", "ecn": "CatNav_Products_Visual Studio_nav", "ehn": "Products"}'>Visual Studio</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://code.visualstudio.com/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Visual Studio Code_nav", "ecn": "CatNav_Products_Visual Studio Code_nav", "ehn": "Products"}'>Visual Studio Code</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/windows/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Windows_nav", "ecn": "CatNav_Products_Windows_nav", "ehn": "Products"}'>Windows</a>
+
+
+</uhf-dropdown>
+
+
+<uhf-dropdown text="Languages" id="" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Languages", "cN": "CatNav_Languages_nav", "ecn": "CatNav_Languages_nav", "ehn": "Languages"}'>
+    
+
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://dotnet.microsoft.com/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Languages", "cN": "CatNav_Languages_.NET_nav", "ecn": "CatNav_Languages_.NET_nav", "ehn": "Languages"}'>.NET</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/cpp" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Languages", "cN": "CatNav_Languages_C++_nav", "ecn": "CatNav_Languages_C++_nav", "ehn": "Languages"}'>C++</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/java" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Languages", "cN": "CatNav_Languages_Java_nav", "ecn": "CatNav_Languages_Java_nav", "ehn": "Languages"}'>Java</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/javascript/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Languages", "cN": "CatNav_Languages_JavaScript_nav", "ecn": "CatNav_Languages_JavaScript_nav", "ehn": "Languages"}'>JavaScript</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/python" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Languages", "cN": "CatNav_Languages_Python_nav", "ecn": "CatNav_Languages_Python_nav", "ehn": "Languages"}'>Python</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://www.typescriptlang.org/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Languages", "cN": "CatNav_Languages_TypeScript_nav", "ecn": "CatNav_Languages_TypeScript_nav", "ehn": "Languages"}'>TypeScript</a>
+
+
+</uhf-dropdown>
+
+
+<uhf-dropdown text="Hubs" id="" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Hubs", "cN": "CatNav_Hubs_nav", "ecn": "CatNav_Hubs_nav", "ehn": "Hubs"}'>
+    
+
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/build-apis" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Hubs", "cN": "CatNav_Hubs_Build APIs_nav", "ecn": "CatNav_Hubs_Build APIs_nav", "ehn": "Hubs"}'>Build APIs</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://developer.microsoft.com/en-us/games/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Hubs", "cN": "CatNav_Hubs_Game development_nav", "ecn": "CatNav_Hubs_Game development_nav", "ehn": "Hubs"}'>Game development</a>
+
+
+</uhf-dropdown>
+
+    <a class="uhf-nav-item uhf-nav-link" href="https://developer.microsoft.com/blog" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Blog", "cN": "CatNav_Blog_nav", "ecn": "CatNav_Blog_nav", "ehn": "Blog"}'>Blog</a>
+
+
+    <a class="uhf-nav-item uhf-nav-link" href="/en-us/events" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Events", "cN": "CatNav_Events_nav", "ecn": "CatNav_Events_nav", "ehn": "Events"}'>Events</a>
+
+
+    <a class="uhf-nav-item uhf-nav-link" href="https://learn.microsoft.com/docs/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Documentation", "cN": "CatNav_Documentation_nav", "ecn": "CatNav_Documentation_nav", "ehn": "Documentation"}'>Documentation</a>
+
+
+    <a class="uhf-nav-item uhf-nav-link" href="/en-us/community" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Community", "cN": "CatNav_Community_nav", "ecn": "CatNav_Community_nav", "ehn": "Community"}'>Community</a>
+
+
+    <a class="uhf-nav-item uhf-nav-link" href="/en-us/changelog" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Changelog", "cN": "CatNav_Changelog_nav", "ecn": "CatNav_Changelog_nav", "ehn": "Changelog"}'>Changelog</a>
+</uhf-contextual-nav>    <uhf-actions slot="actions">
+        
+<uhf-global-nav slot="global-nav" text="All Microsoft" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_nonnav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_nonnav", "ehn": "OneMicrosoftBar"}' data-nav-label="All Microsoft menu">
+    
+    <uhf-dropdown-header slot="header">
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/security" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Microsoft Security_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Microsoft Security_nav", "ehn": "OneMicrosoftBar"}'>Microsoft Security</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://azure.microsoft.com/en-us/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Azure_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Azure_nav", "ehn": "OneMicrosoftBar"}'>Azure</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://dynamics.microsoft.com/en-us/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Dynamics 365_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Dynamics 365_nav", "ehn": "OneMicrosoftBar"}'>Dynamics 365</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/microsoft-365/business/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Microsoft 365_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Microsoft 365_nav", "ehn": "OneMicrosoftBar"}'>Microsoft 365</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/microsoft-teams/group-chat-software" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Microsoft Teams_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Microsoft Teams_nav", "ehn": "OneMicrosoftBar"}'>Microsoft Teams</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/windows-365" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Windows 365_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Windows 365_nav", "ehn": "OneMicrosoftBar"}'>Windows 365</a>
+    </uhf-dropdown-header>
+
+        <uhf-dropdown-column title="Tech &amp; innovation" show-tooltip="false" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_nav", "ehn": "OneMicrosoftBar"}'>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/ai?icid=DSM_AllCommercial_AI" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_Microsoft AI_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_More_TechInnovation__AI_nav", "ehn": "OneMicrosoftBar"}'>Microsoft AI</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://azure.microsoft.com/en-us/solutions/space/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_Azure Space_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_More_TechInnovation_AzureSpace_nav", "ehn": "OneMicrosoftBar"}'>Azure Space</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/mixed-reality/windows-mixed-reality" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_Mixed reality_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_More_TechInnovation_MixedReality_nav", "ehn": "OneMicrosoftBar"}'>Mixed reality</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/hololens" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_Microsoft HoloLens_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_More_TechInnovation_MicrosoftHololens_nav", "ehn": "OneMicrosoftBar"}'>Microsoft HoloLens</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/microsoft-viva" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_Microsoft Viva_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_More_TechInnovation_Microsoft Viva_nav", "ehn": "OneMicrosoftBar"}'>Microsoft Viva</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://azure.microsoft.com/en-us/solutions/quantum-computing/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_Quantum computing_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_More_TechInnovation_QuantumComputing_nav", "ehn": "OneMicrosoftBar"}'>Quantum computing</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/corporate-responsibility/sustainability?icid=DSM_AllCommercial_Sustainability" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_Sustainability_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_More_TechInnovation_Sustainability_nav", "ehn": "OneMicrosoftBar"}'>Sustainability</a>
+        </uhf-dropdown-column>
+        <uhf-dropdown-column title="Industries" show-tooltip="false" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_nav", "ehn": "OneMicrosoftBar"}'>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/education" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_Education_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_More_Industries_Education_nav", "ehn": "OneMicrosoftBar"}'>Education</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/industry/automotive" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_Automotive_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_More_Industries_Automotive_nav", "ehn": "OneMicrosoftBar"}'>Automotive</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/industry/financial-services/banking" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_Financial services_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_More_Industries_Financialservices_nav", "ehn": "OneMicrosoftBar"}'>Financial services</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/industry/government" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_Government_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_More_Industries_Government_nav", "ehn": "OneMicrosoftBar"}'>Government</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/industry/health/microsoft-cloud-for-healthcare" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_Healthcare_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_More_Industries_Health_nav", "ehn": "OneMicrosoftBar"}'>Healthcare</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/industry/manufacturing/microsoft-cloud-for-manufacturing" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_Manufacturing_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_More_Industries_Manufacturing_nav", "ehn": "OneMicrosoftBar"}'>Manufacturing</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/industry/consumer-goods" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_Retail_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_More_Industries_Retail_nav", "ehn": "OneMicrosoftBar"}'>Retail</a>
+        </uhf-dropdown-column>
+        <uhf-dropdown-column title="Partners" show-tooltip="false" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_nav", "ehn": "OneMicrosoftBar"}'>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://partner.microsoft.com/en-US/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_Find a partner_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_More_Partner_FindPartner_nav", "ehn": "OneMicrosoftBar"}'>Find a partner</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://partner.microsoft.com/en-US/membership/cloud-solution-provider" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_Become a partner_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_More_Partner_BecomePartner_nav", "ehn": "OneMicrosoftBar"}'>Become a partner</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://partner.microsoft.com/en-us/membership" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_Partner Network_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_More_Partner_PartnerNetwork_nav", "ehn": "OneMicrosoftBar"}'>Partner Network</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://marketplace.microsoft.com/?icid=DSM_AllCommercial_Marketplace" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_Microsoft Marketplace_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_More_Partner_Marketplace_nav", "ehn": "OneMicrosoftBar"}'>Microsoft Marketplace</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/software-development-companies?icid=DSM_AllCommercial_SoftwareCompanies" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_Software companies_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_Software companies_nav", "ehn": "OneMicrosoftBar"}'>Software companies</a>
+        </uhf-dropdown-column>
+        <uhf-dropdown-column title="Resources" show-tooltip="false" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_nav", "ehn": "OneMicrosoftBar"}'>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://blogs.microsoft.com/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_Blog_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_More_Resources_Blog_nav", "ehn": "OneMicrosoftBar"}'>Blog</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://about.ads.microsoft.com/en-us?s_cid=dig-src_uhfcomm" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_Microsoft Advertising_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_More_Resources_MicrosoftAdvertising_nav", "ehn": "OneMicrosoftBar"}'>Microsoft Advertising</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_Developer Center_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_More_Resources_DeveloperCenter_nav", "ehn": "OneMicrosoftBar"}'>Developer Center</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://learn.microsoft.com/docs/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_Documentation_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_More_Resources_Documentation_nav", "ehn": "OneMicrosoftBar"}'>Documentation</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/events" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_Events_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_More_Resources_Events_nav", "ehn": "OneMicrosoftBar"}'>Events</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/licensing/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_Licensing_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_More_Resources_Licensing_nav", "ehn": "OneMicrosoftBar"}'>Licensing</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://learn.microsoft.com/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_Microsoft Learn_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_More_Resources_MicrosoftLearn_nav", "ehn": "OneMicrosoftBar"}'>Microsoft Learn</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/research/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_Microsoft Research_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_More_Resources_MicrosoftResearch_nav", "ehn": "OneMicrosoftBar"}'>Microsoft Research</a>
+        </uhf-dropdown-column>
+
+    <uhf-dropdown-footer slot="footer">
+        <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/sitemap" data-m="">View Sitemap</a>
+    </uhf-dropdown-footer>
+
+</uhf-global-nav>
+
+
+            <uhf-search slot="search" placeholder="Search or ask a question" search-label="Search" cancel-label="Cancel" suggestions-available-text="{0} suggestions available" searchurl="https://www.microsoft.com/en-us/search/explore" autosuggesturl="https://www.microsoft.com/msstoreapiprod/api/autosuggest" queryparametername="q" clientid="7F27B536-CF6B-4C65-8638-A0F8CBDFCA65" productcount="1,5,5" source="Iris-Products,DCatAll-Products,Microsoft-Terms">
+            </uhf-search>
+    </uhf-actions>
+</uhf-header>
+
+    <div class="site-banners">
+
+
+
+<section class="announcement-banner d-none" data-mount="ocr-alert-dismissible" data-identifier="windows-hybrid-intelligence">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="announcement-banner__badge">
+                    <span class="badge badge--size-xs badge-logo--m theme-day">
+                        <div class="ocr-icon d-inline-flex">
+                            <div class="ocr-img media__asset">
+                                <img src="/__mirror/assets/3e387745acc96f18d8365e8a" alt="">
+                            </div>
+                        </div>
+                    </span>
+                </div>
+                <div class="announcement-banner__center">
+                    <div class="announcement-banner__content" role="alert">
+                        
+                        <p>Building Windows for hybrid intelligence  –  Run agents locally or in the cloud, with enterprise-grade security and manageability.</p>
+                    </div>
+                    <div class="announcement-banner__action">
+                        <a href="https://aka.ms/WindowsEraofAI" class="link link-inline" target="_blank" data-bi-an="top-banner" data-bi-id="windows-hybrid-intelligence">
+                            <span class="link__text">Read more</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-auto d-flex">
+                <div class="announcement-banner__dismiss">
+                    <button id="fake-button" type="button" class="d-none" aria-label="close" data-dismiss="alert"></button>
+                    <button type="button" class="alert-dismiss btn btn--ghost glyph-append glyph-append-cancel" aria-label="close">
+                        <span class="glyph-prepend"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>    </div>
+
+    <div id="mainContent" role="main">
+        
+
+
+
+<div id="azure-developer">
+
+    <section id="hero">
+        <div class="section-master section-master--bg-image section-master--bg-image-stacked bg--neutral-fade section-master--density-compact section-master--blade-hero-card-carousel">
+            <div class="section-master__image">
+                <div class="ocr-img media__asset ">
+                    <picture>
+                        <source srcset="/__mirror/assets/a3170a76d7b42d46328bb64c" media="none and (prefers-color-scheme: dark)">
+                        <source srcset="/__mirror/assets/14c2abc11256fe9948ab2a97" media="none and (prefers-color-scheme: dark)">
+                        <source srcset="/__mirror/assets/25cc0d11b049e0cb138706f8" media="none and (prefers-color-scheme: dark)">
+                        <source srcset="/__mirror/assets/592cb310a1bcb4667d88505e" media="none and (prefers-color-scheme: light)">
+                        <source srcset="/__mirror/assets/7435a2627b065d3554831fb9" media="none and (prefers-color-scheme: light)">
+                        <source srcset="/__mirror/assets/eb1d68980ee26f8c1bd17d20" media="none and (prefers-color-scheme: light)">
+                        <img src="/__mirror/assets/eb1d68980ee26f8c1bd17d20" alt="">
+                    </source></source></source></source></source></source></picture>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="layout section-master__layout section-master--layout-cols-2">
+                            <div class="layout__col">
+                                <div class="section-master__layout-header">
+                                    <div class="block-heading block-heading--size-xl">
+                                        <h1 class="block-heading__title">Azure Developer Hub</h1>
+                                        <p class="block-heading__paragraph">Make your cloud-based apps stronger, take them farther, and do it all faster with Azure. Download the latest updates and best-in-class tools. Find the perfect code sample to jump-start your next project. Level up your cloud platform skills with free tutorials, videos, and training modules.</p>
+                                        <div class="block-heading__button-group">
+                                            <div class="button-group">
+                                                <a role="button" class="btn" target="_blank" data-bi-an="hero" data-bi-cn="create-azure-account" data-bi-ct="button" href="https://azure.microsoft.com/pricing/purchase-options/azure-account?icid=developer">
+                                                    <div class="btn__text">Get started with Azure</div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="secondary-sticky-nav">
+        <div class="sticky" data-mount="sticky" data-direction="top" data-observer-behavior="always">
+            <div class="secondary-nav">
+                <nav id="sticky-nav" class="container d-flex flex-grow-1" aria-label="In Page Navigation">
+                    <div class="dropdown">
+                        <a class="w-100 dropdown__link" id="menu-list-label-default" data-mount="m365-dropdown" aria-expanded="false" aria-controls="secondary-sticky-nav-menu-list" type="button" role="button" tabindex="0" aria-labelledby="secondary-sticky-nav-label">
+                            <div class="list-item">
+                                <div class="list-item__inner d-flex align-items-center py-m" id="secondary-sticky-nav-label" aria-hidden="true">
+                                    <div class="list-item__content flex-grow-1 d-flex flex-column">
+                                        <div class="fg--base-strong label list-item__content-title">
+                                            <p>Menu</p>
+                                        </div>
+                                    </div>
+                                    <div class="list-item__trailing">
+                                        <div class="ocr-icon d-inline-flex ocr-icon--size-s">
+                                            <span class="glyph-prepend glyph-prepend-chevron-down" aria-label="">
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <ul class="dropdown-menu menu-list p-0 rounded-scrollbar overflow-auto" id="secondary-sticky-nav-menu-list" aria-labelledby="menu-list-label-default" tabindex="-1">
+                            <li class="menu-list__list-item">
+        <a class="menu-list__item-link" href="#news-updates" data-bi-an="secondary-sticky-nav" data-bi-cn="news-and-updates" data-bi-ct="nav">
+            <div class="indicator indicator--shape-pill"></div>
+            <span class="menu-list__list-item-text">
+                <div class="list-item">
+                    <div class="list-item__inner d-flex align-items-center py-m">
+                        <div class="list-item__content flex-grow-1 d-flex flex-column">
+                            <div class="fg--base-strong label list-item__content-title">
+                                <p>News + updates</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </span>
+        </a>
+    </li>
+                            <li class="menu-list__list-item">
+        <a class="menu-list__item-link" href="#featured-solutions" data-bi-an="secondary-sticky-nav" data-bi-cn="featured-solutions" data-bi-ct="nav">
+            <div class="indicator indicator--shape-pill"></div>
+            <span class="menu-list__list-item-text">
+                <div class="list-item">
+                    <div class="list-item__inner d-flex align-items-center py-m">
+                        <div class="list-item__content flex-grow-1 d-flex flex-column">
+                            <div class="fg--base-strong label list-item__content-title">
+                                <p>Featured solutions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </span>
+        </a>
+    </li>
+                            <li class="menu-list__list-item">
+        <a class="menu-list__item-link" href="#languages" data-bi-an="secondary-sticky-nav" data-bi-cn="languages" data-bi-ct="nav">
+            <div class="indicator indicator--shape-pill"></div>
+            <span class="menu-list__list-item-text">
+                <div class="list-item">
+                    <div class="list-item__inner d-flex align-items-center py-m">
+                        <div class="list-item__content flex-grow-1 d-flex flex-column">
+                            <div class="fg--base-strong label list-item__content-title">
+                                <p>Languages</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </span>
+        </a>
+    </li>
+                            <li class="menu-list__list-item">
+        <a class="menu-list__item-link" href="#tools-and-extensions" data-bi-an="secondary-sticky-nav" data-bi-cn="tools-and-extensions" data-bi-ct="nav">
+            <div class="indicator indicator--shape-pill"></div>
+            <span class="menu-list__list-item-text">
+                <div class="list-item">
+                    <div class="list-item__inner d-flex align-items-center py-m">
+                        <div class="list-item__content flex-grow-1 d-flex flex-column">
+                            <div class="fg--base-strong label list-item__content-title">
+                                <p>Tools + extensions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </span>
+        </a>
+    </li>
+                            <li class="menu-list__list-item">
+        <a class="menu-list__item-link" href="#azure-developer-community" data-bi-an="secondary-sticky-nav" data-bi-cn="azure-developer-community" data-bi-ct="nav">
+            <div class="indicator indicator--shape-pill"></div>
+            <span class="menu-list__list-item-text">
+                <div class="list-item">
+                    <div class="list-item__inner d-flex align-items-center py-m">
+                        <div class="list-item__content flex-grow-1 d-flex flex-column">
+                            <div class="fg--base-strong label list-item__content-title">
+                                <p>Azure developer community</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </span>
+        </a>
+    </li>
+                            <li class="menu-list__list-item">
+        <a class="menu-list__item-link" href="#additional-resources" data-bi-an="secondary-sticky-nav" data-bi-cn="keep-on-learning" data-bi-ct="nav">
+            <div class="indicator indicator--shape-pill"></div>
+            <span class="menu-list__list-item-text">
+                <div class="list-item">
+                    <div class="list-item__inner d-flex align-items-center py-m">
+                        <div class="list-item__content flex-grow-1 d-flex flex-column">
+                            <div class="fg--base-strong label list-item__content-title">
+                                <p>Additional resources</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </span>
+        </a>
+    </li>
+                        </ul>
+
+                    </div>
+                </nav>
+                <div class="indicator indicator--horizontal"></div>
+            </div>
+        </div>
+
+        <div class="scrollspy-container">
+
+            <section id="news-updates">
+                <div class="section-master bg--base-fade section-master--breadth-comfortable section-master--layout-slot-horizontal-alignment-right section-master--layout-slot-vertical-alignment-bottom section-master--blade-card-carousel">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <div class="layout section-master__layout section-master--layout-cols-1">
+        <div class="layout__col">
+            <div class="section-master__layout-header">
+                <div class="block-heading block-heading--size-s">
+                        <h3 class="block-heading__eyebrow">News + Updates</h3>
+                        <h2 class="block-heading__title">What's new for Azure developers</h2>
+                </div>
+            </div>
+        </div>
+
+    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row section-master__slot">
+                        <div class="col">
+                            <div class="tab-panel-group">
+                                <div class="carousel carousel--type-regular">
+        <section class="carousel__section" aria-label="News and updates" aria-roledescription="carousel" data-mount="ocr-carousel">
+            <a href="#news-updates-carousel" class="sr-only-focusable w-100 position-absolute">Skip carousel</a>
+
+            <span id="news-updates-carousel-announcement-text" class="carousel__announcement-text sr-only" aria-live="polite" data-multi-slide-translatable="Showing %{curStart}-%{curEnd} of %{totalSlides} slides" data-single-slide-translatable="Showing slide %{curStart} of %{totalSlides}"></span>
+
+            <div id="news-updates-carousel-controls" class="carousel__controls carousel__container">
+                <button type="button" class="carousel__arrow-prev" title="Previous slide" data-slide="prev" aria-labelledby="carousel-control-prev-news-updates-carousel">
+                    <span class="sr-only" id="carousel-control-prev-news-updates-carousel">Previous slide</span>
+                    <span class="glyph-prepend glyph-prepend-back glyph-prepend-medium" aria-hidden="true"></span>
+                </button>
+                <button type="button" class="carousel__arrow-next" title="Next slide" data-slide="next" aria-labelledby="carousel-control-next-news-updates-carousel">
+                    <span class="sr-only" id="carousel-control-next-news-updates-carousel">Next slide</span>
+                    <span class="glyph-prepend glyph-prepend-forward glyph-prepend-medium" aria-hidden="true"></span>
+                </button>
+            </div>
+            <div class="carousel__window hide-scrollbar">
+                <div class="carousel__container layout layout--overflow  layout--cols-3" aria-label="News and updates">
+
+<section id="news-updates-carousel-0" class="carousel__slide layout__col" tabindex="-1" aria-label="Slide 1 of 5">
+        <div class="card rounded-l">
+            <div class="card__media px-xs">
+                <div class="media">
+                    <div class="ocr-img media__asset">
+                        <picture>
+                            <source srcset="/__mirror/assets/821a4d85ad959ea93fba469e">
+                            <source srcset="/__mirror/assets/b17d7d1bd699a0d6d7e40057">
+                            <source srcset="/__mirror/assets/1c7ea2e1298ef1058b1883e1">
+                            <img src="/__mirror/assets/1c7ea2e1298ef1058b1883e1" alt="">
+                        </source></source></source></picture>
+                    </div>
+
+                </div>
+            </div>
+            <div class="card__content p-l">
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+
+
+                        <div class="block-feature__headings d-flex flex-column align-items-start">
+                            <div class="block-feature__eyebrow">
+                                <h5 class="block-feature__label "></h5>
+                            </div>
+                            <h5 class="block-feature__title ">Microsoft Copilot for Azure (preview)</h5>
+                        </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph"></p>
+
+                    </div>
+                </div>
+
+                <div class="block-slim">
+                    <a href="https://azure.microsoft.com/products/copilot/" class="link" target="_blank" data-bi-an="news-and-updates" data-bi-cn="copilot-for-azure" data-bi-ct="link">
+                        <span class="btn btn--icon btn--icon-only btn--sm ">
+                            <span class="glyph-prepend" aria-hidden="true"></span>
+                        </span>
+                        <span class="link__text">Get more info</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section><section id="news-updates-carousel-1" class="carousel__slide layout__col" tabindex="-1" aria-label="Slide 2 of 5">
+        <div class="card rounded-l">
+            <div class="card__media px-xs">
+                <div class="media">
+                    <div class="ocr-img media__asset">
+                        <picture>
+                            <source srcset="/__mirror/assets/5af23b08204715e5682c9445">
+                            <source srcset="/__mirror/assets/24ba52414e1bdf562e501491">
+                            <source srcset="/__mirror/assets/1b223837d76cc6d996603ca0">
+                            <img src="/__mirror/assets/1b223837d76cc6d996603ca0" alt="">
+                        </source></source></source></picture>
+                    </div>
+
+                </div>
+            </div>
+            <div class="card__content p-l">
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+
+
+                        <div class="block-feature__headings d-flex flex-column align-items-start">
+                            <div class="block-feature__eyebrow">
+                                <h5 class="block-feature__label "></h5>
+                            </div>
+                            <h5 class="block-feature__title ">Latest Azure product updates</h5>
+                        </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph"></p>
+
+                    </div>
+                </div>
+
+                <div class="block-slim">
+                    <a href="https://azure.microsoft.com/updates/" class="link" target="_blank" data-bi-an="news-and-updates" data-bi-cn="azure-product-updates" data-bi-ct="link">
+                        <span class="btn btn--icon btn--icon-only btn--sm ">
+                            <span class="glyph-prepend" aria-hidden="true"></span>
+                        </span>
+                        <span class="link__text">View updates feed</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section><section id="news-updates-carousel-2" class="carousel__slide layout__col" tabindex="-1" aria-label="Slide 3 of 5">
+        <div class="card rounded-l">
+            <div class="card__media px-xs">
+                <div class="media">
+                    <div class="ocr-img media__asset">
+                        <picture>
+                            <source srcset="/__mirror/assets/46243c381bff9a7c0e57f031">
+                            <source srcset="/__mirror/assets/a25a74478f4de3b31fff8548">
+                            <source srcset="/__mirror/assets/828dc0fb46737d3efd8d2a68">
+                            <img src="/__mirror/assets/828dc0fb46737d3efd8d2a68" alt="">
+                        </source></source></source></picture>
+                    </div>
+
+                </div>
+            </div>
+            <div class="card__content p-l">
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+
+
+                        <div class="block-feature__headings d-flex flex-column align-items-start">
+                            <div class="block-feature__eyebrow">
+                                <h5 class="block-feature__label "></h5>
+                            </div>
+                            <h5 class="block-feature__title ">Azure services community livestreams</h5>
+                        </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph"></p>
+
+                    </div>
+                </div>
+
+                <div class="block-slim">
+                    <a href="https://www.youtube.com/playlist?list=PLI7iePan8aH6idG01JPEZoF7ob307EH1I" aria-label="Watch now a video playlist of Azure services community livestreams" class="link" target="_blank" data-bi-an="news-and-updates" data-bi-cn="community-livestreams" data-bi-ct="link">
+                        <span class="btn btn--icon btn--icon-only btn--sm ">
+                            <span class="glyph-prepend" aria-hidden="true"></span>
+                        </span>
+                        <span class="link__text">Watch now</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section><section id="news-updates-carousel-3" class="carousel__slide layout__col" tabindex="-1" aria-label="Slide 4 of 5">
+        <div class="card rounded-l">
+            <div class="card__media px-xs">
+                <div class="media">
+                    <div class="ocr-img media__asset">
+                        <picture>
+                            <source srcset="/__mirror/assets/dfe5b06d074bd55a44ef92cc">
+                            <source srcset="/__mirror/assets/932f7c51461355fe8d5f741a">
+                            <source srcset="/__mirror/assets/0def77180099b466dd5c619b">
+                            <img src="/__mirror/assets/0def77180099b466dd5c619b" alt="">
+                        </source></source></source></picture>
+                    </div>
+
+                </div>
+            </div>
+            <div class="card__content p-l">
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+
+
+                        <div class="block-feature__headings d-flex flex-column align-items-start">
+                            <div class="block-feature__eyebrow">
+                                <h5 class="block-feature__label "></h5>
+                            </div>
+                            <h5 class="block-feature__title ">Awesome azd templates</h5>
+                        </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph"></p>
+
+                    </div>
+                </div>
+
+                <div class="block-slim">
+                    <a href="https://azure.github.io/awesome-azd/" class="link" target="_blank" data-bi-an="news-and-updates" data-bi-cn="awesome-azd" data-bi-ct="link">
+                        <span class="btn btn--icon btn--icon-only btn--sm ">
+                            <span class="glyph-prepend" aria-hidden="true"></span>
+                        </span>
+                        <span class="link__text">Explore templates</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section><section id="news-updates-carousel-4" class="carousel__slide layout__col" tabindex="-1" aria-label="Slide 5 of 5">
+        <div class="card rounded-l">
+            <div class="card__media px-xs">
+                <div class="media">
+                    <div class="ocr-img media__asset">
+                        <picture>
+                            <source srcset="/__mirror/assets/8e6661b46e94b8b43038e92e">
+                            <source srcset="/__mirror/assets/04c3d7b7f8aa6217f833a7d7">
+                            <source srcset="/__mirror/assets/3b0f6b3c6807656590f0672f">
+                            <img src="/__mirror/assets/3b0f6b3c6807656590f0672f" alt="">
+                        </source></source></source></picture>
+                    </div>
+
+                </div>
+            </div>
+            <div class="card__content p-l">
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+
+
+                        <div class="block-feature__headings d-flex flex-column align-items-start">
+                            <div class="block-feature__eyebrow">
+                                <h5 class="block-feature__label "></h5>
+                            </div>
+                            <h5 class="block-feature__title ">Azure Integration Services</h5>
+                        </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph"></p>
+
+                    </div>
+                </div>
+
+                <div class="block-slim">
+                    <a href="https://www.youtube.com/playlist?list=PLI7iePan8aH4WYUDYUWRX75NPrw7kvWgm" aria-label="Watch now a video playlist about Azure Integration Services" class="link" target="_blank" data-bi-an="news-and-updates" data-bi-cn="azure-integration-services" data-bi-ct="link">
+                        <span class="btn btn--icon btn--icon-only btn--sm ">
+                            <span class="glyph-prepend" aria-hidden="true"></span>
+                        </span>
+                        <span class="link__text">Watch now</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>                </div>
+            </div>
+
+            <a href="#news-updates-carousel-controls" class="sr-only-focusable w-100 position-absolute">Back to carousel navigation controls</a>
+
+            <a id="news-updates-carousel" class="sr-only-focusable" tabindex="-1"></a>
+        </section>
+    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="featured-solutions">
+                <div class="section-master section-master--bg-image bg--overlay-full bg--base-fade section-master--breadth-comfortable section-master--layout-slot-horizontal-alignment-right section-master--layout-slot-vertical-alignment-bottom section-master--blade-card-carousel">
+
+                    <div class="section-master__image">
+                        <div class="ocr-img media__asset">
+                            <picture>
+                                <source srcset="/__mirror/assets/b6132989d2238c4e8b0c37e0" media="none and (prefers-color-scheme: dark)">
+                                <source srcset="/__mirror/assets/00e28bd9530144171e107c2a" media="none and (prefers-color-scheme: dark)">
+                                <source srcset="/__mirror/assets/8b4c83677ee25098d0e9f2b7" media="none and (prefers-color-scheme: dark)">
+                                <source srcset="/__mirror/assets/7ccb55225c3320871510cc3e" media="none and (prefers-color-scheme: light)">
+                                <source srcset="/__mirror/assets/ca226da65f4302816d1a7796" media="none and (prefers-color-scheme: light)">
+                                <source srcset="/__mirror/assets/2b00cd04035754090e0444cd" media="none and (prefers-color-scheme: light)">
+                                <img src="/__mirror/assets/2b00cd04035754090e0444cd" alt="">
+                            </source></source></source></source></source></source></picture>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="overlay__target rounded-l px-xl">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="layout section-master__layout section-master--layout-cols-1">
+        <div class="layout__col">
+            <div class="section-master__layout-header">
+                <div class="block-heading block-heading--size-s">
+                        <h3 class="block-heading__eyebrow">featured solutions</h3>
+                        <h2 class="block-heading__title">Get started with these Azure solutions and tutorials</h2>
+                </div>
+            </div>
+        </div>
+
+    </div>
+                                </div>
+                            </div>
+                            <div class="row section-master__slot">
+                                <div class="col">
+                                    <div class="pill-bar no-gutters">
+                                        <div class="dropdown">
+                                            <a class="w-100 dropdown__link" id="menu-list-label-slider" data-mount="m365-dropdown" aria-expanded="false" aria-controls="featured-solutions-menu-list" type="button" role="button" tabindex="0" aria-labelledby="featured-solutions-label">
+                                                <div class="list-item">
+                                                    <div class="list-item__inner d-flex align-items-center py-m" id="featured-solutions-label" aria-hidden="true">
+                                                        <div class="list-item__content flex-grow-1 d-flex flex-column">
+                                                            <div class="fg--base-strong label list-item__content-title">
+                                                                <p>Select an area</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="list-item__trailing">
+                                                            <div class="ocr-icon d-inline-flex ocr-icon--size-s">
+                                                                <span class="glyph-prepend glyph-prepend-chevron-down" aria-label="">
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="dropdown-menu menu-list p-0 rounded-scrollbar overflow-auto" id="featured-solutions-menu-list" aria-labelledby="menu-list-label-default" tabindex="-1">
+                                                <div data-mount="ocr-slider" class="col ocr-slider" data-item-list-selector=".pill-bar__item">
+                                                    <div class="slider__overflow">
+                                                        <div class="slider__window rounded-scrollbar">
+                                                            <div class="tab-group" role="tablist" aria-label="Featured solutions">
+                                                                <button id="featured-solution-1-pill-bar" class="pill-bar__item active" href="#featured-solution-1" role="tab" data-mount="tab" aria-controls="featured-solution-1" aria-selected="true" aria-disabled="false" tabindex="0">
+                                                                    <div class="indicator indicator--shape-pill"></div>
+                                                                    <span class="pill-bar__item__label">AI</span>
+                                                                </button>
+                                                                <button id="featured-solution-2-pill-bar" class="pill-bar__item" href="#featured-solution-2" role="tab" data-mount="tab" aria-controls="featured-solution-2" aria-selected="false" aria-disabled="false" tabindex="-1">
+                                                                    <div class="indicator indicator--shape-pill"></div>
+                                                                    <span class="pill-bar__item__label">New to Azure</span>
+                                                                </button>
+                                                                <button id="featured-solution-3-pill-bar" class="pill-bar__item" href="#featured-solution-3" role="tab" data-mount="tab" aria-controls="featured-solution-3" aria-selected="false" aria-disabled="false" tabindex="-1">
+                                                                    <div class="indicator indicator--shape-pill"></div>
+                                                                    <span class="pill-bar__item__label">App development</span>
+                                                                </button>
+                                                                <button id="featured-solution-4-pill-bar" class="pill-bar__item" href="#featured-solution-4" role="tab" data-mount="tab" aria-controls="featured-solution-4" aria-selected="false" aria-disabled="false" tabindex="-1">
+                                                                    <div class="indicator indicator--shape-pill"></div>
+                                                                    <span class="pill-bar__item__label">Security + monitoring</span>
+                                                                </button>
+                                                                <button id="featured-solution-5-pill-bar" class="pill-bar__item" href="#featured-solution-5" role="tab" data-mount="tab" aria-controls="featured-solution-5" aria-selected="false" aria-disabled="false" tabindex="-1">
+                                                                    <div class="indicator indicator--shape-pill"></div>
+                                                                    <span class="pill-bar__item__label">Data + analytics</span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slider__arrows">
+                                                        <button type="button" class="slider__arrow-prev" tabindex="-1" aria-hidden="true"></button>
+                                                        <div class="slider__arrow-prev slider__arrow-prev-bg"></div>
+                                                        <button type="button" class="slider__arrow-next" tabindex="-1" aria-hidden="true"></button>
+                                                        <div class="slider__arrow-next slider__arrow-next-bg"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="tab-panel-group">
+                                                <div id="featured-solution-1" class="tab-panel fade show active" role="tabpanel" aria-labelledby="featured-solution-1-pill-bar" tabindex="0">
+                                                    <div class="pill-bar__panel__content">
+                                                        <div class="d-block ocr-accordion accordion accordion--vertical">
+                                                            <ul class="accordion col-lg-12 col-md-8" id="accordion-container" style="min-height: 220px; height: 492px; overflow-y: auto;">
+                                                                <li class="ocr-accordion-item">
+        <span class="indicator indicator--shape-pill"></span>
+        <div class="ocr-accordion-item__content">
+            <div class="button-group button-group--stacked">
+                <button class="ocr-accordion-item__header btn-collapse" data-target="#featuredSolutions-1-1" aria-expanded="true" data-mount="collapse">
+                    <h3 class="h5">Microsoft AI Tour: Cloud Skills Challenge</h3>
+                </button>
+            </div>
+            <div class="collapse show" id="featuredSolutions-1-1" data-parent="accordion-container">
+                <div class="ocr-accordion-item__body">
+                    <p>Develop your AI skills and unlock the power of AI by completing the series of Cloud Skills Challenges.</p>
+                    <div>
+                        <a href="https://www.microsoft.com/cloudskillschallenge/aitour/registration" class="link link-inline" target="_blank" data-bi-an="featured-solutions--ai" data-bi-cn="ai-tour" data-bi-ct="link">
+                            <span class="link__text">Go to challenge</span>
+                        </a>
+
+                        <div class="d-none media slide-in-bottom-2 multi-feature-feature media--ratio-4-3 media--highlight">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+                                                                <li class="ocr-accordion-item">
+        <span class="indicator indicator--shape-pill"></span>
+        <div class="ocr-accordion-item__content">
+            <div class="button-group button-group--stacked">
+                <button class="ocr-accordion-item__header btn-collapse" data-target="#featuredSolutions-1-2" aria-expanded="false" data-mount="collapse">
+                    <h3 class="h5">Azure AI reference templates</h3>
+                </button>
+            </div>
+            <div class="collapse" id="featuredSolutions-1-2" data-parent="accordion-container">
+                <div class="ocr-accordion-item__body">
+                    <p>Learn how to develop applications that use Azure OpenAI Service and other Azure AI Services using .NET, Python, JavaScript, Java, or Go.</p>
+                    <div>
+                        <a href="https://learn.microsoft.com/azure/developer/intro/azure-ai-for-developers?pivots=dotnet" class="link link-inline" target="_blank" data-bi-an="featured-solutions--ai" data-bi-cn="ai-ref-templates" data-bi-ct="link">
+                            <span class="link__text">View reference templates</span>
+                        </a>
+
+                        <div class="d-none media slide-in-bottom-2 multi-feature-feature media--ratio-4-3 media--highlight">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+                                                                <li class="ocr-accordion-item">
+        <span class="indicator indicator--shape-pill"></span>
+        <div class="ocr-accordion-item__content">
+            <div class="button-group button-group--stacked">
+                <button class="ocr-accordion-item__header btn-collapse" data-target="#featuredSolutions-1-3" aria-expanded="false" data-mount="collapse">
+                    <h3 class="h5">Simple Chat Application using Azure OpenAI</h3>
+                </button>
+            </div>
+            <div class="collapse" id="featuredSolutions-1-3" data-parent="accordion-container">
+                <div class="ocr-accordion-item__body">
+                    <p>A sample chat app that uses Python and the Quart framework to stream chat completions from the OpenAI SDK. Deployable to Azure Container Apps.</p>
+                    <div>
+                        <a href="https://learn.microsoft.com/samples/azure-samples/openai-chat-app-quickstart/openai-chat-app-quickstart/" class="link link-inline" target="_blank" data-bi-an="featured-solutions--ai" data-bi-cn="simple-chat-app" data-bi-ct="link">
+                            <span class="link__text">Go to sample</span>
+                        </a>
+
+                        <div class="d-none media slide-in-bottom-2 multi-feature-feature media--ratio-4-3 media--highlight">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+                                                                <li class="ocr-accordion-item">
+        <span class="indicator indicator--shape-pill"></span>
+        <div class="ocr-accordion-item__content">
+            <div class="button-group button-group--stacked">
+                <button class="ocr-accordion-item__header btn-collapse" data-target="#featuredSolutions-1-4" aria-expanded="false" data-mount="collapse">
+                    <h3 class="h5">AI Shopping Cart App Template</h3>
+                </button>
+            </div>
+            <div class="collapse" id="featuredSolutions-1-4" data-parent="accordion-container">
+                <div class="ocr-accordion-item__body">
+                    <p>AI Shopping Cart Sample Application with Azure OpenAI and Azure Spring Apps</p>
+                    <div>
+                        <a href="https://learn.microsoft.com/samples/azure-samples/app-templates-java-openai-springapps/app-templates-java-openai-springapps/" class="link link-inline" target="_blank" data-bi-an="featured-solutions--ai" data-bi-cn="ai-shopping-cart" data-bi-ct="link">
+                            <span class="link__text">Go to sample</span>
+                        </a>
+
+                        <div class="d-none media slide-in-bottom-2 multi-feature-feature media--ratio-4-3 media--highlight">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div id="featured-solution-2" class="tab-panel fade " role="tabpanel" aria-labelledby="featured-solution-2-pill-bar" tabindex="0" hidden="">
+                                                    <div class="pill-bar__panel__content">
+                                                        <div class="d-block ocr-accordion accordion accordion--vertical">
+                                                            <ul class="accordion" id="accordion-container" style="min-height: 32px;">
+                                                                <li class="ocr-accordion-item">
+        <span class="indicator indicator--shape-pill"></span>
+        <div class="ocr-accordion-item__content">
+            <div class="button-group button-group--stacked">
+                <button class="ocr-accordion-item__header btn-collapse" data-target="#featuredSolutions-2-1" aria-expanded="true" data-mount="collapse">
+                    <h3 class="h5">Microsoft Azure Fundamentals</h3>
+                </button>
+            </div>
+            <div class="collapse show" id="featuredSolutions-2-1" data-parent="accordion-container">
+                <div class="ocr-accordion-item__body">
+                    <p>This course will provide foundational level knowledge on cloud concepts; core Azure services; and Azure management and governance features and tools.</p>
+                    <div>
+                        <a href="https://learn.microsoft.com/training/courses/az-900t00" class="link link-inline" target="_blank" data-bi-an="featured-solutions--new-to-azure" data-bi-cn="azure-fundamentals" data-bi-ct="link">
+                            <span class="link__text">Go to course</span>
+                        </a>
+
+                        <div class="d-none media slide-in-bottom-2 multi-feature-feature media--ratio-4-3 media--highlight">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+                                                                <li class="ocr-accordion-item">
+        <span class="indicator indicator--shape-pill"></span>
+        <div class="ocr-accordion-item__content">
+            <div class="button-group button-group--stacked">
+                <button class="ocr-accordion-item__header btn-collapse" data-target="#featuredSolutions-2-2" aria-expanded="false" data-mount="collapse">
+                    <h3 class="h5">Build great solutions with the Microsoft Azure Well-Architected Framework</h3>
+                </button>
+            </div>
+            <div class="collapse" id="featuredSolutions-2-2" data-parent="accordion-container">
+                <div class="ocr-accordion-item__body">
+                    <p>You want to build great things on Azure, but you're not sure exactly what that means. Using key principles throughout your architecture, regardless of technology choice, can help you design, build, and continuously improve your architecture.</p>
+                    <div>
+                        <a href="https://learn.microsoft.com/training/paths/azure-well-architected-framework/" class="link link-inline" target="_blank" data-bi-an="featured-solutions--new-to-azure" data-bi-cn="well-architected-framework" data-bi-ct="link">
+                            <span class="link__text">View learning path</span>
+                        </a>
+
+                        <div class="d-none media slide-in-bottom-2 multi-feature-feature media--ratio-4-3 media--highlight">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+                                                                <li class="ocr-accordion-item">
+        <span class="indicator indicator--shape-pill"></span>
+        <div class="ocr-accordion-item__content">
+            <div class="button-group button-group--stacked">
+                <button class="ocr-accordion-item__header btn-collapse" data-target="#featuredSolutions-2-3" aria-expanded="false" data-mount="collapse">
+                    <h3 class="h5">Microsoft Azure Fundamentals: Describe cloud concepts</h3>
+                </button>
+            </div>
+            <div class="collapse" id="featuredSolutions-2-3" data-parent="accordion-container">
+                <div class="ocr-accordion-item__body">
+                    <p>Learn about cloud computing and the different cloud service types with use cases and benefits aligned with each service type.</p>
+                    <div>
+                        <a href="https://learn.microsoft.com/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/" class="link link-inline" target="_blank" data-bi-an="featured-solutions--new-to-azure" data-bi-cn="fundamentals-cloud-concepts" data-bi-ct="link">
+                            <span class="link__text">Go to learning path</span>
+                        </a>
+
+                        <div class="d-none media slide-in-bottom-2 multi-feature-feature media--ratio-4-3 media--highlight">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+                                                                <li class="ocr-accordion-item">
+        <span class="indicator indicator--shape-pill"></span>
+        <div class="ocr-accordion-item__content">
+            <div class="button-group button-group--stacked">
+                <button class="ocr-accordion-item__header btn-collapse" data-target="#featuredSolutions-2-4" aria-expanded="false" data-mount="collapse">
+                    <h3 class="h5">Microsoft Azure Fundamentals: Describe Azure architecture and services</h3>
+                </button>
+            </div>
+            <div class="collapse" id="featuredSolutions-2-4" data-parent="accordion-container">
+                <div class="ocr-accordion-item__body">
+                    <p>Learn about core architectural components, compute and networking, storage, and authentication within Azure.</p>
+                    <div>
+                        <a href="https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/" class="link link-inline" target="_blank" data-bi-an="featured-solutions--new-to-azure" data-bi-cn="fundamentals-architecture-and-services" data-bi-ct="link">
+                            <span class="link__text">Go to learning path</span>
+                        </a>
+
+                        <div class="d-none media slide-in-bottom-2 multi-feature-feature media--ratio-4-3 media--highlight">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div id="featured-solution-3" class="tab-panel fade " role="tabpanel" aria-labelledby="featured-solution-3-pill-bar" tabindex="0" hidden="">
+                                                    <div class="pill-bar__panel__content">
+                                                        <div class="d-block ocr-accordion accordion accordion--vertical">
+                                                            <ul class="accordion" id="accordion-container" style="min-height: 32px;">
+                                                                <li class="ocr-accordion-item">
+        <span class="indicator indicator--shape-pill"></span>
+        <div class="ocr-accordion-item__content">
+            <div class="button-group button-group--stacked">
+                <button class="ocr-accordion-item__header btn-collapse" data-target="#featuredSolutions-3-1" aria-expanded="true" data-mount="collapse">
+                    <h3 class="h5">Choose the right DevOps tool</h3>
+                </button>
+            </div>
+            <div class="collapse show" id="featuredSolutions-3-1" data-parent="accordion-container">
+                <div class="ocr-accordion-item__body">
+                    <p>This module explores Azure DevOps and GitHub tools and helps organizations define their work management tool and licensing strategy.</p>
+                    <div>
+                        <a href="https://learn.microsoft.com/training/modules/migrate-to-devops/" class="link link-inline" target="_blank" data-bi-an="featured-solutions--app-dev" data-bi-cn="devops-tool" data-bi-ct="link">
+                            <span class="link__text">Go to module</span>
+                        </a>
+
+                        <div class="d-none media slide-in-bottom-2 multi-feature-feature media--ratio-4-3 media--highlight">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+                                                                <li class="ocr-accordion-item">
+        <span class="indicator indicator--shape-pill"></span>
+        <div class="ocr-accordion-item__content">
+            <div class="button-group button-group--stacked">
+                <button class="ocr-accordion-item__header btn-collapse" data-target="#featuredSolutions-3-2" aria-expanded="false" data-mount="collapse">
+                    <h3 class="h5">Contoso Real Estate: JavaScript + Enterprise</h3>
+                </button>
+            </div>
+            <div class="collapse" id="featuredSolutions-3-2" data-parent="accordion-container">
+                <div class="ocr-accordion-item__body">
+                    <p>This repository contains the reference architecture and components for building enterprise-grade modern composable frontends (or micro-frontends) and cloud-native applications. </p>
+                    <div>
+                        <a href="https://learn.microsoft.com/samples/azure-samples/contoso-real-estate/contoso-real-estate/" class="link link-inline" target="_blank" data-bi-an="featured-solutions--app-dev" data-bi-cn="contoso-js-enterprise" data-bi-ct="link">
+                            <span class="link__text">View code sample</span>
+                        </a>
+
+                        <div class="d-none media slide-in-bottom-2 multi-feature-feature media--ratio-4-3 media--highlight">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+                                                                <li class="ocr-accordion-item">
+        <span class="indicator indicator--shape-pill"></span>
+        <div class="ocr-accordion-item__content">
+            <div class="button-group button-group--stacked">
+                <button class="ocr-accordion-item__header btn-collapse" data-target="#featuredSolutions-3-3" aria-expanded="false" data-mount="collapse">
+                    <h3 class="h5">Deploy cloud-native apps using Azure Container Apps</h3>
+                </button>
+            </div>
+            <div class="collapse" id="featuredSolutions-3-3" data-parent="accordion-container">
+                <div class="ocr-accordion-item__body">
+                    <p>Learn how to build, deploy, scale, and manage containerized cloud-native apps using Azure Container Apps, Azure Container Registry, and Azure Pipelines.</p>
+                    <div>
+                        <a href="https://learn.microsoft.com/training/paths/deploy-cloud-native-applications-to-azure-container-apps/" class="link link-inline" target="_blank" data-bi-an="featured-solutions--app-dev" data-bi-cn="azure-container-apps" data-bi-ct="link">
+                            <span class="link__text">Go to learning path</span>
+                        </a>
+
+                        <div class="d-none media slide-in-bottom-2 multi-feature-feature media--ratio-4-3 media--highlight">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+                                                                <li class="ocr-accordion-item">
+        <span class="indicator indicator--shape-pill"></span>
+        <div class="ocr-accordion-item__content">
+            <div class="button-group button-group--stacked">
+                <button class="ocr-accordion-item__header btn-collapse" data-target="#featuredSolutions-3-4" aria-expanded="false" data-mount="collapse">
+                    <h3 class="h5">Automate your workflow with GitHub Actions</h3>
+                </button>
+            </div>
+            <div class="collapse" id="featuredSolutions-3-4" data-parent="accordion-container">
+                <div class="ocr-accordion-item__body">
+                    <p>Learn how GitHub Actions enables you to automate your software development cycle and deploy applications to Azure.</p>
+                    <div>
+                        <a href="https://learn.microsoft.com/training/paths/automate-workflow-github-actions/" class="link link-inline" target="_blank" data-bi-an="featured-solutions--app-dev" data-bi-cn="github-actions" data-bi-ct="link">
+                            <span class="link__text">Go to learning path</span>
+                        </a>
+
+                        <div class="d-none media slide-in-bottom-2 multi-feature-feature media--ratio-4-3 media--highlight">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div id="featured-solution-4" class="tab-panel fade " role="tabpanel" aria-labelledby="featured-solution-4-pill-bar" tabindex="0" hidden="">
+                                                    <div class="pill-bar__panel__content">
+                                                        <div class="d-block ocr-accordion accordion accordion--vertical">
+                                                            <ul class="accordion" id="accordion-container" style="min-height: 32px;">
+                                                                <li class="ocr-accordion-item">
+        <span class="indicator indicator--shape-pill"></span>
+        <div class="ocr-accordion-item__content">
+            <div class="button-group button-group--stacked">
+                <button class="ocr-accordion-item__header btn-collapse" data-target="#featuredSolutions-4-1" aria-expanded="true" data-mount="collapse">
+                    <h3 class="h5">Microsoft Azure Fundamentals: Describe Azure management and governance</h3>
+                </button>
+            </div>
+            <div class="collapse show" id="featuredSolutions-4-1" data-parent="accordion-container">
+                <div class="ocr-accordion-item__body">
+                    <p>This learning path introduces you to tools to help with governance, compliance, and monitoring within Azure. </p>
+                    <div>
+                        <a href="https://learn.microsoft.com/training/paths/describe-azure-management-governance/" class="link link-inline" target="_blank" data-bi-an="featured-solutions--security-and-monitoring" data-bi-cn="fundamentals-management-and-governance" data-bi-ct="link">
+                            <span class="link__text">Go to learning path</span>
+                        </a>
+
+                        <div class="d-none media slide-in-bottom-2 multi-feature-feature media--ratio-4-3 media--highlight">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+                                                                <li class="ocr-accordion-item">
+        <span class="indicator indicator--shape-pill"></span>
+        <div class="ocr-accordion-item__content">
+            <div class="button-group button-group--stacked">
+                <button class="ocr-accordion-item__header btn-collapse" data-target="#featuredSolutions-4-2" aria-expanded="false" data-mount="collapse">
+                    <h3 class="h5">Implement secure Azure solutions</h3>
+                </button>
+            </div>
+            <div class="collapse" id="featuredSolutions-4-2" data-parent="accordion-container">
+                <div class="ocr-accordion-item__body">
+                    <p>Learn how to more securely deploy apps in Azure by using Azure Key Vault, managed identities, and Azure App Configuration.</p>
+                    <div>
+                        <a href="https://learn.microsoft.com/training/paths/az-204-implement-secure-cloud-solutions/" class="link link-inline" target="_blank" data-bi-an="featured-solutions--security-and-monitoring" data-bi-cn="secure-azure-solutions" data-bi-ct="link">
+                            <span class="link__text">View learning path</span>
+                        </a>
+
+                        <div class="d-none media slide-in-bottom-2 multi-feature-feature media--ratio-4-3 media--highlight">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+                                                                <li class="ocr-accordion-item">
+        <span class="indicator indicator--shape-pill"></span>
+        <div class="ocr-accordion-item__content">
+            <div class="button-group button-group--stacked">
+                <button class="ocr-accordion-item__header btn-collapse" data-target="#featuredSolutions-4-3" aria-expanded="false" data-mount="collapse">
+                    <h3 class="h5">Secure your cloud applications in Azure</h3>
+                </button>
+            </div>
+            <div class="collapse" id="featuredSolutions-4-3" data-parent="accordion-container">
+                <div class="ocr-accordion-item__body">
+                    <p>Learn how to secure your Azure apps and associated data with encryption, certificates, and policy.</p>
+                    <div>
+                        <a href="https://learn.microsoft.com/training/paths/secure-your-cloud-apps/" class="link link-inline" target="_blank" data-bi-an="featured-solutions--security-and-monitoring" data-bi-cn="secure-cloud-apps" data-bi-ct="link">
+                            <span class="link__text">Go to learning path</span>
+                        </a>
+
+                        <div class="d-none media slide-in-bottom-2 multi-feature-feature media--ratio-4-3 media--highlight">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+                                                                <li class="ocr-accordion-item">
+        <span class="indicator indicator--shape-pill"></span>
+        <div class="ocr-accordion-item__content">
+            <div class="button-group button-group--stacked">
+                <button class="ocr-accordion-item__header btn-collapse" data-target="#featuredSolutions-4-4" aria-expanded="false" data-mount="collapse">
+                    <h3 class="h5">Implement security and validate code bases for compliance</h3>
+                </button>
+            </div>
+            <div class="collapse" id="featuredSolutions-4-4" data-parent="accordion-container">
+                <div class="ocr-accordion-item__body">
+                    <p>This learning path explores an infrastructure and configuration strategy and appropriate toolset for a release pipeline and application infrastructure. It explains compliance and security implementation in your application infrastructure.</p>
+                    <div>
+                        <a href="https://learn.microsoft.com/training/paths/az-400-implement-security-validate-code-bases-compliance/" class="link link-inline" target="_blank" data-bi-an="featured-solutions--security-and-monitoring" data-bi-cn="validate code-bases" data-bi-ct="link">
+                            <span class="link__text">Go to learning path</span>
+                        </a>
+
+                        <div class="d-none media slide-in-bottom-2 multi-feature-feature media--ratio-4-3 media--highlight">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div id="featured-solution-5" class="tab-panel fade " role="tabpanel" aria-labelledby="featured-solution-5-pill-bar" tabindex="0" hidden="">
+                                                    <div class="pill-bar__panel__content">
+                                                        <div class="d-block ocr-accordion accordion accordion--vertical">
+                                                            <ul class="accordion" id="accordion-container" style="min-height: 32px;">
+                                                                <li class="ocr-accordion-item">
+        <span class="indicator indicator--shape-pill"></span>
+        <div class="ocr-accordion-item__content">
+            <div class="button-group button-group--stacked">
+                <button class="ocr-accordion-item__header btn-collapse" data-target="#featuredSolutions-5-1" aria-expanded="true" data-mount="collapse">
+                    <h3 class="h5">Microsoft Azure Data Fundamentals: Explore core data concepts</h3>
+                </button>
+            </div>
+            <div class="collapse show" id="featuredSolutions-5-1" data-parent="accordion-container">
+                <div class="ocr-accordion-item__body">
+                    <p>Data is the foundation on which all software is built. By learning about common data formats, workloads, roles, and services, you can prepare yourself for a career as a data professional</p>
+                    <div>
+                        <a href="https://learn.microsoft.com/training/paths/azure-data-fundamentals-explore-core-data-concepts/" class="link link-inline" target="_blank" data-bi-an="featured-solutions--data-and-analytics" data-bi-cn="fundamentals-data" data-bi-ct="link">
+                            <span class="link__text">Go to learning path</span>
+                        </a>
+
+                        <div class="d-none media slide-in-bottom-2 multi-feature-feature media--ratio-4-3 media--highlight">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+                                                                <li class="ocr-accordion-item">
+        <span class="indicator indicator--shape-pill"></span>
+        <div class="ocr-accordion-item__content">
+            <div class="button-group button-group--stacked">
+                <button class="ocr-accordion-item__header btn-collapse" data-target="#featuredSolutions-5-2" aria-expanded="false" data-mount="collapse">
+                    <h3 class="h5">ChatGPT + Enterprise data</h3>
+                </button>
+            </div>
+            <div class="collapse" id="featuredSolutions-5-2" data-parent="accordion-container">
+                <div class="ocr-accordion-item__body">
+                    <p>This sample demonstrates a few approaches for creating ChatGPT-like experiences over your own data using the Retrieval Augmented Generation pattern.</p>
+                    <div>
+                        <a href="https://learn.microsoft.com/samples/azure-samples/azure-search-openai-demo-csharp/azure-search-openai-demo-csharp/" class="link link-inline" target="_blank" data-bi-an="featured-solutions--data-and-analytics" data-bi-cn="chatgpt-and-enterprise-data" data-bi-ct="link">
+                            <span class="link__text">View code sample</span>
+                        </a>
+
+                        <div class="d-none media slide-in-bottom-2 multi-feature-feature media--ratio-4-3 media--highlight">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+                                                                <li class="ocr-accordion-item">
+        <span class="indicator indicator--shape-pill"></span>
+        <div class="ocr-accordion-item__content">
+            <div class="button-group button-group--stacked">
+                <button class="ocr-accordion-item__header btn-collapse" data-target="#featuredSolutions-5-3" aria-expanded="false" data-mount="collapse">
+                    <h3 class="h5">Microsoft Azure Data Fundamentals: Explore data analytics in Azure</h3>
+                </button>
+            </div>
+            <div class="collapse" id="featuredSolutions-5-3" data-parent="accordion-container">
+                <div class="ocr-accordion-item__body">
+                    <p>Microsoft Azure provides multiple services that you can combine to build large-scale analytics solutions that leverage the latest technologies and techniques for data ingestion, storage, modeling, and visualization.</p>
+                    <div>
+                        <a href="https://learn.microsoft.com/training/paths/azure-data-fundamentals-explore-data-warehouse-analytics/" class="link link-inline" target="_blank" data-bi-an="featured-solutions--data-and-analytics" data-bi-cn="fundamentals-data-analytics" data-bi-ct="link">
+                            <span class="link__text">Go to learning path</span>
+                        </a>
+
+                        <div class="d-none media slide-in-bottom-2 multi-feature-feature media--ratio-4-3 media--highlight">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+                                                                <li class="ocr-accordion-item">
+        <span class="indicator indicator--shape-pill"></span>
+        <div class="ocr-accordion-item__content">
+            <div class="button-group button-group--stacked">
+                <button class="ocr-accordion-item__header btn-collapse" data-target="#featuredSolutions-5-4" aria-expanded="false" data-mount="collapse">
+                    <h3 class="h5">Get started with data engineering on Azure</h3>
+                </button>
+            </div>
+            <div class="collapse" id="featuredSolutions-5-4" data-parent="accordion-container">
+                <div class="ocr-accordion-item__body">
+                    <p>An Azure data engineer also helps ensure that data pipelines and data stores are high-performing, efficient, organized, and reliable, given a specific set of business requirements and constraints.</p>
+                    <div>
+                        <a href="https://learn.microsoft.com/training/paths/get-started-data-engineering/" class="link link-inline" target="_blank" data-bi-an="featured-solutions--data-and-analytics" data-bi-cn="data-engineering" data-bi-ct="link">
+                            <span class="link__text">Go to learning path</span>
+                        </a>
+
+                        <div class="d-none media slide-in-bottom-2 multi-feature-feature media--ratio-4-3 media--highlight">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="languages">
+                <div class="section-master bg--base-fade section-master--breadth-comfortable section-master--layout-slot-horizontal-alignment-right section-master--layout-slot-vertical-alignment-bottom section-master--blade-card-carousel">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <div class="layout section-master__layout section-master--layout-cols-1">
+        <div class="layout__col">
+            <div class="section-master__layout-header">
+                <div class="block-heading block-heading--size-s">
+                        <h3 class="block-heading__eyebrow">languages</h3>
+                        <h2 class="block-heading__title">Supported languages and frameworks</h2>
+                </div>
+            </div>
+        </div>
+
+    </div>
+                            </div>
+                        </div>
+
+                        <div class="card-grid row section-master__slot card-grid--disable-card-promo">
+                            <div class="card-grid__cards col-lg-18">
+                                <div class="layout layout--cols-3">
+
+                                    <div class="layout__col">
+        <a href="https://dotnet.microsoft.com/" target="_blank" class="btn-block" data-bi-an="languages" data-bi-cn="dotnet" data-bi-ct="card">
+            <div class="card rounded-l card--style-star-rating" data-mount="click-group">
+                <div class="card__content p-l">
+                    <div class="list-item">
+                        <div class="list-item__inner d-flex align-items-center">
+                            <div class="list-item__leading">
+                                <span class="badge badge--size-xs badge-media--xs">
+                                    <div class="ocr-img media__asset d-inline-flex">
+                                        <img src="/__mirror/assets/88758c12f7815ca2c58b1753" alt="">
+                                    </div>
+                                </span>
+                            </div>
+                            <div class="list-item__content flex-grow-1 d-flex flex-column">
+                                <div class="fg--base-strong label list-item__content-title">
+                                    <p class="mb-0 h5">.NET</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+
+                                    <div class="layout__col">
+        <a href="/java" target="_blank" class="btn-block" data-bi-an="languages" data-bi-cn="java" data-bi-ct="card">
+            <div class="card rounded-l card--style-star-rating" data-mount="click-group">
+                <div class="card__content p-l">
+                    <div class="list-item">
+                        <div class="list-item__inner d-flex align-items-center">
+                            <div class="list-item__leading">
+                                <span class="badge badge--size-xs badge-media--xs">
+                                    <div class="ocr-img media__asset d-inline-flex">
+                                        <img src="/__mirror/assets/0cdb786c5eb5df80823bed43" alt="">
+                                    </div>
+                                </span>
+                            </div>
+                            <div class="list-item__content flex-grow-1 d-flex flex-column">
+                                <div class="fg--base-strong label list-item__content-title">
+                                    <p class="mb-0 h5">Java</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+
+                                    <div class="layout__col">
+        <a href="/python" target="_blank" class="btn-block" data-bi-an="languages" data-bi-cn="python" data-bi-ct="card">
+            <div class="card rounded-l card--style-star-rating" data-mount="click-group">
+                <div class="card__content p-l">
+                    <div class="list-item">
+                        <div class="list-item__inner d-flex align-items-center">
+                            <div class="list-item__leading">
+                                <span class="badge badge--size-xs badge-media--xs">
+                                    <div class="ocr-img media__asset d-inline-flex">
+                                        <img src="/__mirror/assets/d92bc7042217701de84dc321" alt="">
+                                    </div>
+                                </span>
+                            </div>
+                            <div class="list-item__content flex-grow-1 d-flex flex-column">
+                                <div class="fg--base-strong label list-item__content-title">
+                                    <p class="mb-0 h5">Python</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+
+                                    <div class="layout__col">
+        <a href="/javascript/" target="_blank" class="btn-block" data-bi-an="languages" data-bi-cn="javascript" data-bi-ct="card">
+            <div class="card rounded-l card--style-star-rating" data-mount="click-group">
+                <div class="card__content p-l">
+                    <div class="list-item">
+                        <div class="list-item__inner d-flex align-items-center">
+                            <div class="list-item__leading">
+                                <span class="badge badge--size-xs badge-media--xs">
+                                    <div class="ocr-img media__asset d-inline-flex">
+                                        <img src="/__mirror/assets/d159e49d96e7e3480369a054" alt="">
+                                    </div>
+                                </span>
+                            </div>
+                            <div class="list-item__content flex-grow-1 d-flex flex-column">
+                                <div class="fg--base-strong label list-item__content-title">
+                                    <p class="mb-0 h5">JavaScript</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+
+                                    <div class="layout__col">
+        <a href="https://www.typescriptlang.org/" target="_blank" class="btn-block" data-bi-an="languages" data-bi-cn="typescript" data-bi-ct="card">
+            <div class="card rounded-l card--style-star-rating" data-mount="click-group">
+                <div class="card__content p-l">
+                    <div class="list-item">
+                        <div class="list-item__inner d-flex align-items-center">
+                            <div class="list-item__leading">
+                                <span class="badge badge--size-xs badge-media--xs">
+                                    <div class="ocr-img media__asset d-inline-flex">
+                                        <img src="/__mirror/assets/799f468d59b6c6aa0183e0dc" alt="">
+                                    </div>
+                                </span>
+                            </div>
+                            <div class="list-item__content flex-grow-1 d-flex flex-column">
+                                <div class="fg--base-strong label list-item__content-title">
+                                    <p class="mb-0 h5">TypeScript</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+
+                                    <div class="layout__col">
+        <a href="https://visualstudio.microsoft.com/vs/features/cplusplus/" target="_blank" class="btn-block" data-bi-an="languages" data-bi-cn="cpp" data-bi-ct="card">
+            <div class="card rounded-l card--style-star-rating" data-mount="click-group">
+                <div class="card__content p-l">
+                    <div class="list-item">
+                        <div class="list-item__inner d-flex align-items-center">
+                            <div class="list-item__leading">
+                                <span class="badge badge--size-xs badge-media--xs">
+                                    <div class="ocr-img media__asset d-inline-flex">
+                                        <img src="/__mirror/assets/19548ff0abe907fe4e774041" alt="">
+                                    </div>
+                                </span>
+                            </div>
+                            <div class="list-item__content flex-grow-1 d-flex flex-column">
+                                <div class="fg--base-strong label list-item__content-title">
+                                    <p class="mb-0 h5">C++</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="tools-and-extensions">
+                <div class="section-master bg--base-fade section-master--breadth-comfortable section-master--layout-slot-horizontal-alignment-right section-master--layout-slot-vertical-alignment-bottom section-master--blade-card-carousel">
+
+                    <div class="section-master__image">
+                        <div class="ocr-img media__asset ">
+                            <picture>
+                                <source srcset="/__mirror/assets/740ca88f74ff3f0e79a22847" media="none and (prefers-color-scheme: dark)">
+                                <source srcset="/__mirror/assets/8b3abf96fd1d8eb4ac5398a1" media="none and (prefers-color-scheme: dark)">
+                                <source srcset="/__mirror/assets/529c7c18b3ec15cace54e7b3" media="none and (prefers-color-scheme: dark)">
+                                <source srcset="/__mirror/assets/323b1844d4b2a662c55be8a7" media="none and (prefers-color-scheme: light)">
+                                <source srcset="/__mirror/assets/516cf2b41e74fe61c165136b" media="none and (prefers-color-scheme: light)">
+                                <source srcset="/__mirror/assets/0e0e0ae6f24153788a0b3f28" media="none and (prefers-color-scheme: light)">
+                                <img src="/__mirror/assets/0e0e0ae6f24153788a0b3f28" alt="">
+                            </source></source></source></source></source></source></picture>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <div class="layout section-master__layout section-master--layout-cols-1">
+        <div class="layout__col">
+            <div class="section-master__layout-header">
+                <div class="block-heading block-heading--size-s">
+                        <h3 class="block-heading__eyebrow">Tools + Extensions</h3>
+                        <h2 class="block-heading__title">Extend and enhance your Azure developer experience</h2>
+                </div>
+            </div>
+        </div>
+
+    </div>
+                            </div>
+                        </div>
+
+                        <div class="card-grid row section-master__slot">
+                            <div class="col-lg-8 col-md-4">
+                                <div id="feature" class="card rounded-l p-l">
+                                    <div class="card__content justify-content-end">
+                                        <div class="block-feature d-flex align-items-start block-feature--2xs">
+                                            <div class="block-feature__top d-flex flex-row align-items-start">
+                                                <div class="block-feature__headings d-flex flex-column align-items-start">
+                                                    <h5 class="block-feature__title">Azure AI</h5>
+                                                </div>
+                                            </div>
+                                            <div class="block-feature__body d-flex flex-column align-items-start">
+                                                <p class="block-feature__paragraph base block-feature__paragraph">Build intelligent apps at enterprise scale with the Azure AI portfolio.</p>
+                                            </div>
+                                        </div>
+                                        <div class="block-slim">
+                                            <a href="https://learn.microsoft.com/ai/" class="btn btn--md btn--secondary" target="_blank" data-bi-an="tools-and-extensions" data-bi-cn="azure-ai--learn-more" data-bi-ct="button">
+                                                <span class="link__text">Learn more</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-16 col-md-8">
+                                <div class="card-grid__cards">
+                                    <div class="layout layout--cols-3">
+                                        <div class="layout__col">
+        <div class="card rounded-l">
+            <div class="card__content p-l">
+
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+                        <div class="block-feature__headings d-flex flex-column align-items-start">
+                            <h5 class="block-feature__title">CLI</h5>
+                        </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Connect to Azure and run administrative commands on Azure resources through a command-line interface.</p>
+                    </div>
+                </div>
+
+                <div class="block-slim block-slim--checklist">
+                        <a href="https://learn.microsoft.com/azure/developer/azure-developer-cli/overview" class="link link-inline" data-bi-an="tools-and-extensions" data-bi-cn="cli--dev-cli" data-bi-ct="link" target="_blank">
+                            <span class="link__text">Azure Developer CLI</span>
+                        </a>
+                        <a href="https://learn.microsoft.com/cli/azure/what-is-azure-cli" class="link link-inline" data-bi-an="tools-and-extensions" data-bi-cn="cli--azure-cli" data-bi-ct="link" target="_blank">
+                            <span class="link__text">Azure CLI</span>
+                        </a>
+                </div>
+            </div>
+        </div>
+    </div>
+                                        <div class="layout__col">
+        <div class="card rounded-l">
+            <div class="card__content p-l">
+
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+                        <div class="block-feature__headings d-flex flex-column align-items-start">
+                            <h5 class="block-feature__title">Services + SDKs</h5>
+                        </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Build and manage powerful applications using Microsoft Azure services and software development kits.</p>
+                    </div>
+                </div>
+
+                <div class="block-slim block-slim--checklist">
+                        <a href="https://azure.microsoft.com/downloads/" class="link link-inline" data-bi-an="tools-and-extensions" data-bi-cn="services-and-sdk--download" data-bi-ct="link" target="_blank">
+                            <span class="link__text">Download Azure SDKs</span>
+                        </a>
+                        <a href="https://learn.microsoft.com/azure/?product=popular#browse-azure-products" class="link link-inline" data-bi-an="tools-and-extensions" data-bi-cn="services-and-sdk--browse" data-bi-ct="link" target="_blank">
+                            <span class="link__text">Browse Azure products</span>
+                        </a>
+                </div>
+            </div>
+        </div>
+    </div>
+                                        <div class="layout__col">
+        <div class="card rounded-l">
+            <div class="card__content p-l">
+
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+                        <div class="block-feature__headings d-flex flex-column align-items-start">
+                            <h5 class="block-feature__title">Visual Studio</h5>
+                        </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Develop, debug, deploy, manage, and diagnose cloud-scale Azure applications with a full-featured IDE.</p>
+                    </div>
+                </div>
+
+                <div class="block-slim block-slim--checklist">
+                        <a href="https://azure.microsoft.com/products/visual-studio/" class="link link-inline" data-bi-an="tools-and-extensions" data-bi-cn="vs--develop" data-bi-ct="link" target="_blank">
+                            <span class="link__text">Develop for Azure with Visual Studio</span>
+                        </a>
+                        <a href="https://visualstudio.microsoft.com/vs/pricing/" class="link link-inline" data-bi-an="tools-and-extensions" data-bi-cn="vs--buy" data-bi-ct="link" target="_blank">
+                            <span class="link__text">Buy a Visual Studio subscription</span>
+                        </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                                        <div class="layout__col">
+        <div class="card rounded-l">
+            <div class="card__content p-l">
+
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+                        <div class="block-feature__headings d-flex flex-column align-items-start">
+                            <h5 class="block-feature__title">Visual Studio Code</h5>
+                        </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Edit and debug code quickly with a lightweight code editor that runs on Windows, Linux, and macOS.</p>
+                    </div>
+                </div>
+
+                <div class="block-slim block-slim--checklist">
+                        <a href="https://vscode.dev/" class="link link-inline" data-bi-an="tools-and-extensions" data-bi-cn="vscode--try" data-bi-ct="link" target="_blank">
+                            <span class="link__text">Try VS Code in your browser</span>
+                        </a>
+                        <a href="https://code.visualstudio.com/docs/azure/extensions" class="link link-inline" data-bi-an="tools-and-extensions" data-bi-cn="vscode--download-ext" data-bi-ct="link" target="_blank">
+                            <span class="link__text">Get Azure extensions for VS Code</span>
+                        </a>
+                </div>
+            </div>
+        </div>
+    </div>
+                                        <div class="layout__col">
+        <div class="card rounded-l">
+            <div class="card__content p-l">
+
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+                        <div class="block-feature__headings d-flex flex-column align-items-start">
+                            <h5 class="block-feature__title">GitHub</h5>
+                        </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Take advantage of the seamless integration between Azure products and GitHub services to deliver your software more quickly and securely.</p>
+                    </div>
+                </div>
+
+                <div class="block-slim block-slim--checklist">
+                        <a href="https://azure.github.io/actions/" class="link link-inline" data-bi-an="tools-and-extensions" data-bi-cn="github--actions" data-bi-ct="link" target="_blank">
+                            <span class="link__text">Explore GitHub Actions for Azure</span>
+                        </a>
+                        <a href="https://azure.microsoft.com/products/github/" class="link link-inline" data-bi-an="tools-and-extensions" data-bi-cn="github--azure-with-github" data-bi-ct="link" target="_blank">
+                            <span class="link__text">Use Azure with GitHub</span>
+                        </a>
+                </div>
+            </div>
+        </div>
+    </div>
+                                        <div class="layout__col">
+        <div class="card rounded-l">
+            <div class="card__content p-l">
+
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+                        <div class="block-feature__headings d-flex flex-column align-items-start">
+                            <h5 class="block-feature__title">Power Platform</h5>
+                        </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Achieve your business goals, whether it's creating analytics, process automation, or data-driven productivity applications using low-code tooling.</p>
+                    </div>
+                </div>
+
+                <div class="block-slim block-slim--checklist">
+                        <a href="/power-platform" class="link link-inline" data-bi-an="tools-and-extensions" data-bi-cn="power-platform--discover" data-bi-ct="link" target="_self">
+                            <span class="link__text">Discover low-code tooling</span>
+                        </a>
+                </div>
+            </div>
+        </div>
+    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="block-slim py-xl">
+                            <a href="https://azure.microsoft.com/downloads/" class="link" id="show-all-products" target="_blank" data-bi-an="tools-and-extensions" data-bi-cn="show-all" data-bi-ct="link">
+                                <span class="btn btn--icon btn--icon-only btn--sm">
+                                    <span class="glyph-prepend" aria-hidden="true"></span>
+                                </span>
+                                <span class="link__text">Show all products</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="youtube">
+                <div class="section-master section-master--bg-image section-master--bg-image-stacked bg--base-fade theme-night section-master--alignment-center section-master--layout-header-horizontal-alignment-center">
+                    <div class="section-master__image">
+                        <div class="ocr-img media__asset">
+                            <picture>
+                                <source srcset="/__mirror/assets/53dd33df24f0d7e68bcf7ad2">
+                                <source srcset="/__mirror/assets/657bc97349d6ba5a82ed7fdc">
+                                <source srcset="/__mirror/assets/edd9a8c403728069e1deb1c5">
+                                <img src="/__mirror/assets/edd9a8c403728069e1deb1c5" alt="">
+                            </source></source></source></picture>
+                        </div>
+                    </div>
+                    <div class="container col-md-6 col-lg-6 px-l">
+                        <div class="layout section-master__layout">
+                            <div class="layout__col">
+                                <div class="section-master__layout-header">
+                                    <div class="block-heading block-heading--alignment-centered block-heading--size-m">
+                                        <h2 class="block-heading__title">Check out the Microsoft Azure Developers channel</h2>
+                                        <p class="block-heading__paragraph">Dive in to hundreds of videos and livestreams created exclusively for Azure developers. Topics include Azure functions, container apps, SDKs, logic apps, and more. New content uploaded weekly.</p>
+                                        <div class="block-heading__button-group">
+                                            <div class="button-group">
+                                                <a href="https://www.youtube.com/channel/UCtUYj6As_XFkOooUFnsJbYg" class="btn btn--md" target="_blank" data-bi-an="azure-dev-channel" data-bi-cn="watch-on-youtube" data-bi-ct="button">
+                                                    <div class="btn__text">Watch on YouTube</div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="azure-developer-community">
+                <div class="section-master bg--base-fade section-master--breadth-comfortable section-master--layout-slot-horizontal-alignment-right section-master--layout-slot-vertical-alignment-bottom section-master--blade-card-carousel">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <div class="layout section-master__layout section-master--layout-cols-2">
+        <div class="layout__col">
+            <div class="section-master__layout-header">
+                <div class="block-heading block-heading--size-s">
+                        <h3 class="block-heading__eyebrow">Azure developer community</h3>
+                        <h2 class="block-heading__title">Stay updated, get inspired, and connect with other developers building with Azure</h2>
+                </div>
+            </div>
+        </div>
+
+            <div class="layout__col">
+                <div class="section-master__layout-slot">
+                    <div class="button-group">
+                        <a href="https://linktr.ee/azuredevelopers" class="btn" target="_blank" data-bi-an="azure-developer-community" data-bi-cn="explore-more" data-bi-ct="button">Explore more</a>
+                    </div>
+                </div>
+            </div>
+    </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="story-grid">
+                                    <div class="story-grid__heading-divider"></div>
+                                    <div class="story-grid--next-to-3 layout layout--cols-2">
+                                        <div class="story-grid__featured-article layout__col">
+                                            <div class="ghost-card ghost-card--stacked ghost-card--divider-disabled">
+                                                <div class="layout layout--cols-2">
+                                                    <div class="layout__col">
+                                                        <div class="media ">
+                                                            <div class="ocr-img media__asset media--ratio-16-9">
+                                                                <picture>
+                                                                    <source srcset="/__mirror/assets/97b39b7d782effaa1a67300c">
+                                                                    <source srcset="/__mirror/assets/682da49c5121de036a244161">
+                                                                    <source srcset="/__mirror/assets/1b7f2a44bfc873e7d77e0f3f">
+                                                                    <img src="/__mirror/assets/1b7f2a44bfc873e7d77e0f3f" alt="">
+                                                                </source></source></source></picture>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="layout__col">
+                                                        <div class="block-feature d-flex align-items-start block-feature--2xs block-feature--align-stacked">
+                                                            <div class="block-feature__body d-flex flex-column align-items-start">
+                                                                <div class="block-feature__headings d-flex flex-column align-items-start">
+                                                                    <h5 class="block-feature__title">Azure Developer Community livestreams</h5>
+                                                                </div>
+                                                                <p class="base block-feature__paragraph">Check out our weekly livestreams from our Azure products and services. Hear about the latest product updates, get your questions answered live from the product owners and developers, and see demos of best practices!</p>
+                                                                <div class="block-feature__footer">
+                                                                    <div class="block-slim">
+                                                                        <a href="https://www.youtube.com/playlist?list=PLI7iePan8aH6idG01JPEZoF7ob307EH1I" class="link link-inline" target="_blank" data-bi-an="azure-developer-community" data-bi-cn="get-updates" data-bi-ct="link">
+                                                                            <span class="link__text">Get the latest updates</span>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="story-grid__other-articles layout__col">
+                                            <div class="block-section-title pb-l">
+                                                <div class="block-section-title__divider-top">
+                                                    <div class="ocr-divider ocr-divider--size-m"></div>
+                                                </div>
+                                                <div class="block-section-title__header">
+                                                    <h3 class="block-section-title__heading">News + updates</h3>
+                                                </div>
+                                            </div>
+                                            <div class="ghost-card">
+        <div class=""></div>
+
+        <div class="block-feature d-flex align-items-start block-feature--2xs">
+            <div class="block-feature__top d-flex flex-row align-items-start">
+                <div class="block-feature__badge">
+                    <span class="badge">
+                        <div class="d-inline-flex">
+                            <div class="ocr-img media__asset ">
+                                <picture>
+                                    <source srcset="/__mirror/assets/27a178121759ff801cfc4d0e" media="none and (prefers-color-scheme: dark)">
+                                    <source srcset="/__mirror/assets/27a178121759ff801cfc4d0e" media="none and (prefers-color-scheme: light)">
+                                    <img src="/__mirror/assets/27a178121759ff801cfc4d0e" alt="">
+                                </source></source></picture>
+                            </div>
+                        </div>
+                    </span>
+                </div>
+                <div class="block-feature__body d-flex flex-column align-items-start">
+                    <p class="medium">Follow us for the latest dev info, tips, research... We're your developer source for all things Azure!</p>
+                    <div class="block-feature__footer">
+                        <div class="block-slim">
+                            <a href="https://twitter.com/msazuredev" class="link link-inline" target="_blank" , data-bi-an="azure-developer-community" data-bi-cn="social-x" data-bi-ct="link">
+                                <span class="link__text">Find us on X</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+                                            <div class="ghost-card">
+        <div class="ocr-divider story-grid__article-divider"></div>
+
+        <div class="block-feature d-flex align-items-start block-feature--2xs">
+            <div class="block-feature__top d-flex flex-row align-items-start">
+                <div class="block-feature__badge">
+                    <span class="badge">
+                        <div class="d-inline-flex">
+                            <div class="ocr-img media__asset ">
+                                <picture>
+                                    <source srcset="/__mirror/assets/d507e03a4061676647d65f3f" media="none and (prefers-color-scheme: dark)">
+                                    <source srcset="/__mirror/assets/379d81e886f6b4e5c46aaded" media="none and (prefers-color-scheme: light)">
+                                    <img src="/__mirror/assets/379d81e886f6b4e5c46aaded" alt="">
+                                </source></source></picture>
+                            </div>
+                        </div>
+                    </span>
+                </div>
+                <div class="block-feature__body d-flex flex-column align-items-start">
+                    <p class="medium">Subscribe to see the most recent blog posts and announcements across all of Azure.</p>
+                    <div class="block-feature__footer">
+                        <div class="block-slim">
+                            <a href="https://azure.microsoft.com/blog/" class="link link-inline" target="_blank" , data-bi-an="azure-developer-community" data-bi-cn="social-blog" data-bi-ct="link">
+                                <span class="link__text">Microsoft Azure Blog</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+                                            <div class="ghost-card">
+        <div class="ocr-divider story-grid__article-divider"></div>
+
+        <div class="block-feature d-flex align-items-start block-feature--2xs">
+            <div class="block-feature__top d-flex flex-row align-items-start">
+                <div class="block-feature__badge">
+                    <span class="badge">
+                        <div class="d-inline-flex">
+                            <div class="ocr-img media__asset ">
+                                <picture>
+                                    <source srcset="/__mirror/assets/1c203cc0adbbed25daad9573" media="none and (prefers-color-scheme: dark)">
+                                    <source srcset="/__mirror/assets/1c203cc0adbbed25daad9573" media="none and (prefers-color-scheme: light)">
+                                    <img src="/__mirror/assets/1c203cc0adbbed25daad9573" alt="">
+                                </source></source></picture>
+                            </div>
+                        </div>
+                    </span>
+                </div>
+                <div class="block-feature__body d-flex flex-column align-items-start">
+                    <p class="medium">Join this group for anyone who uses Microsoft Azure: developers, cloud engineers, whatever you do!</p>
+                    <div class="block-feature__footer">
+                        <div class="block-slim">
+                            <a href="https://www.linkedin.com/groups/1731317/" class="link link-inline" target="_blank" , data-bi-an="azure-developer-community" data-bi-cn="social-linkedin" data-bi-ct="link">
+                                <span class="link__text">LinkedIn</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg--base-fade">
+                    <div class="carousel carousel--type-regular">
+        <section class="carousel__section" aria-label="Community content" aria-roledescription="carousel" data-mount="ocr-carousel">
+            <a href="#community-content-carousel" class="sr-only-focusable w-100 position-absolute">Skip carousel</a>
+
+            <span id="community-content-carousel-announcement-text" class="carousel__announcement-text sr-only" aria-live="polite" data-multi-slide-translatable="Showing %{curStart}-%{curEnd} of %{totalSlides} slides" data-single-slide-translatable="Showing slide %{curStart} of %{totalSlides}"></span>
+
+            <div id="community-content-carousel-controls" class="carousel__controls carousel__container">
+                <button type="button" class="carousel__arrow-prev" title="Previous slide" data-slide="prev" aria-labelledby="carousel-control-prev-community-content-carousel">
+                    <span class="sr-only" id="carousel-control-prev-community-content-carousel">Previous slide</span>
+                    <span class="glyph-prepend glyph-prepend-back glyph-prepend-medium" aria-hidden="true"></span>
+                </button>
+                <button type="button" class="carousel__arrow-next" title="Next slide" data-slide="next" aria-labelledby="carousel-control-next-community-content-carousel">
+                    <span class="sr-only" id="carousel-control-next-community-content-carousel">Next slide</span>
+                    <span class="glyph-prepend glyph-prepend-forward glyph-prepend-medium" aria-hidden="true"></span>
+                </button>
+            </div>
+            <div class="carousel__window hide-scrollbar">
+                <div class="carousel__container layout layout--overflow  layout--cols-3" aria-label="Community content">
+
+<section id="community-content-carousel-0" class="carousel__slide layout__col" tabindex="-1" aria-label="Slide 1 of 5">
+        <div class="card rounded-l">
+            <div class="card__media px-xs">
+                <div class="media">
+                    <div class="ocr-img media__asset">
+                        <picture>
+                            <source srcset="/__mirror/assets/5724e26c6b453105e48b8384">
+                            <source srcset="/__mirror/assets/abddb830e71382930a4c65d0">
+                            <source srcset="/__mirror/assets/d325ac30758f0cd736a8b377">
+                            <img src="/__mirror/assets/d325ac30758f0cd736a8b377" alt="">
+                        </source></source></source></picture>
+                    </div>
+
+                        <div class="media__slot">
+                            <span class="badge badge--size-s">
+                                <div class="ocr-icon d-inline-flex ocr-icon-svg--play-filled">
+                                    <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="img" title="Video">
+                                        <path></path>
+                                    </svg>
+                                </div>
+                            </span>
+                        </div>
+                </div>
+            </div>
+            <div class="card__content p-l">
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+
+
+                        <div class="block-feature__headings d-flex flex-column align-items-start">
+                            <div class="block-feature__eyebrow">
+                                <h5 class="block-feature__label "></h5>
+                            </div>
+                            <h5 class="block-feature__title ">Azure Friday</h5>
+                        </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Join Scott Hanselman as he hosts the engineers who build &amp; use Azure, demo it, answer questions, and share insights.</p>
+
+                    </div>
+                </div>
+
+                <div class="block-slim">
+                    <a href="https://www.youtube.com/playlist?list=PLLasX02E8BPDT2Z2pdCHNCkENpcQWy5n6" aria-label="Watch now a video series about Azure Friday" class="link" target="_blank" data-bi-an="azure-developer-community-content" data-bi-cn="azure-friday" data-bi-ct="link">
+                        <span class="btn btn--icon btn--icon-only btn--sm ">
+                            <span class="glyph-prepend" aria-hidden="true"></span>
+                        </span>
+                        <span class="link__text">Watch now</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section><section id="community-content-carousel-1" class="carousel__slide layout__col" tabindex="-1" aria-label="Slide 2 of 5">
+        <div class="card rounded-l">
+            <div class="card__media px-xs">
+                <div class="media">
+                    <div class="ocr-img media__asset">
+                        <picture>
+                            <source srcset="/__mirror/assets/a624b6074e8fa1f3de8cca15">
+                            <source srcset="/__mirror/assets/a1cfe8b07148e1175addf17b">
+                            <source srcset="/__mirror/assets/9dd61c671dbd86c7e6aa75f9">
+                            <img src="/__mirror/assets/9dd61c671dbd86c7e6aa75f9" alt="">
+                        </source></source></source></picture>
+                    </div>
+
+                        <div class="media__slot">
+                            <span class="badge badge--size-s">
+                                <div class="ocr-icon d-inline-flex ocr-icon-svg--play-filled">
+                                    <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="img" title="Video">
+                                        <path></path>
+                                    </svg>
+                                </div>
+                            </span>
+                        </div>
+                </div>
+            </div>
+            <div class="card__content p-l">
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+
+
+                        <div class="block-feature__headings d-flex flex-column align-items-start">
+                            <div class="block-feature__eyebrow">
+                                <h5 class="block-feature__label "></h5>
+                            </div>
+                            <h5 class="block-feature__title ">Getting Started on Azure Demo Series</h5>
+                        </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">View expert-led demos to quickly learn how to get started and accomplish your goals with Azure services.</p>
+
+                    </div>
+                </div>
+
+                <div class="block-slim">
+                    <a href="https://www.youtube.com/playlist?list=PLI7iePan8aH6doBq-ylDZhZ7ud8sDkeZ5" aria-label="Watch now a video series about Getting Started on Azure with demos" class="link" target="_blank" data-bi-an="azure-developer-community-content" data-bi-cn="azure-demo-series" data-bi-ct="link">
+                        <span class="btn btn--icon btn--icon-only btn--sm ">
+                            <span class="glyph-prepend" aria-hidden="true"></span>
+                        </span>
+                        <span class="link__text">Watch now</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section><section id="community-content-carousel-2" class="carousel__slide layout__col" tabindex="-1" aria-label="Slide 3 of 5">
+        <div class="card rounded-l">
+            <div class="card__media px-xs">
+                <div class="media">
+                    <div class="ocr-img media__asset">
+                        <picture>
+                            <source srcset="/__mirror/assets/e1621bfbfdcbbfd50f01fd1a">
+                            <source srcset="/__mirror/assets/20e02807d27303ba461803ee">
+                            <source srcset="/__mirror/assets/91dd335ed2a91aab37603858">
+                            <img src="/__mirror/assets/91dd335ed2a91aab37603858" alt="">
+                        </source></source></source></picture>
+                    </div>
+
+                        <div class="media__slot">
+                            <span class="badge badge--size-s">
+                                <div class="ocr-icon d-inline-flex ocr-icon-svg--play-filled">
+                                    <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="img" title="Video">
+                                        <path></path>
+                                    </svg>
+                                </div>
+                            </span>
+                        </div>
+                </div>
+            </div>
+            <div class="card__content p-l">
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+
+
+                        <div class="block-feature__headings d-flex flex-column align-items-start">
+                            <div class="block-feature__eyebrow">
+                                <h5 class="block-feature__label "></h5>
+                            </div>
+                            <h5 class="block-feature__title ">.NET on Azure</h5>
+                        </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Discover the latest services and features in Azure designed specifically for .NET developers.</p>
+
+                    </div>
+                </div>
+
+                <div class="block-slim">
+                    <a href="https://www.youtube.com/playlist?list=PLI7iePan8aH5k45O-CikWRKZ9-OO7fYiH" aria-label="Watch now a video playlist about using .NET on Azure" class="link" target="_blank" data-bi-an="azure-developer-community-content" data-bi-cn="dotnet-on-azure" data-bi-ct="link">
+                        <span class="btn btn--icon btn--icon-only btn--sm ">
+                            <span class="glyph-prepend" aria-hidden="true"></span>
+                        </span>
+                        <span class="link__text">Watch now</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section><section id="community-content-carousel-3" class="carousel__slide layout__col" tabindex="-1" aria-label="Slide 4 of 5">
+        <div class="card rounded-l">
+            <div class="card__media px-xs">
+                <div class="media">
+                    <div class="ocr-img media__asset">
+                        <picture>
+                            <source srcset="/__mirror/assets/b9d309b976fd0014c3277f0e">
+                            <source srcset="/__mirror/assets/95274abd5034ca36311a630c">
+                            <source srcset="/__mirror/assets/28c6bdb7e4c4765f97622a2c">
+                            <img src="/__mirror/assets/28c6bdb7e4c4765f97622a2c" alt="">
+                        </source></source></source></picture>
+                    </div>
+
+                        <div class="media__slot">
+                            <span class="badge badge--size-s">
+                                <div class="ocr-icon d-inline-flex ocr-icon-svg--play-filled">
+                                    <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="img" title="Video">
+                                        <path></path>
+                                    </svg>
+                                </div>
+                            </span>
+                        </div>
+                </div>
+            </div>
+            <div class="card__content p-l">
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+
+
+                        <div class="block-feature__headings d-flex flex-column align-items-start">
+                            <div class="block-feature__eyebrow">
+                                <h5 class="block-feature__label "></h5>
+                            </div>
+                            <h5 class="block-feature__title ">Python on Azure</h5>
+                        </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Discover the latest services and features in Azure designed specifically for Python developers.</p>
+
+                    </div>
+                </div>
+
+                <div class="block-slim">
+                    <a href="https://www.youtube.com/playlist?list=PLI7iePan8aH7rL1YhdvkX6XC_q55vX7mF" aria-label="Watch now a video playlist about using Python on Azure" class="link" target="_blank" data-bi-an="azure-developer-community-content" data-bi-cn="python-on-azure" data-bi-ct="link">
+                        <span class="btn btn--icon btn--icon-only btn--sm ">
+                            <span class="glyph-prepend" aria-hidden="true"></span>
+                        </span>
+                        <span class="link__text">Watch now</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section><section id="community-content-carousel-4" class="carousel__slide layout__col" tabindex="-1" aria-label="Slide 5 of 5">
+        <div class="card rounded-l">
+            <div class="card__media px-xs">
+                <div class="media">
+                    <div class="ocr-img media__asset">
+                        <picture>
+                            <source srcset="/__mirror/assets/a6c556c1928ec411ca38d2dc">
+                            <source srcset="/__mirror/assets/bbc8fe6db5e979d47582552e">
+                            <source srcset="/__mirror/assets/b2d6200eedee271a20bdf307">
+                            <img src="/__mirror/assets/b2d6200eedee271a20bdf307" alt="">
+                        </source></source></source></picture>
+                    </div>
+
+                        <div class="media__slot">
+                            <span class="badge badge--size-s">
+                                <div class="ocr-icon d-inline-flex ocr-icon-svg--play-filled">
+                                    <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="img" title="Video">
+                                        <path></path>
+                                    </svg>
+                                </div>
+                            </span>
+                        </div>
+                </div>
+            </div>
+            <div class="card__content p-l">
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+
+
+                        <div class="block-feature__headings d-flex flex-column align-items-start">
+                            <div class="block-feature__eyebrow">
+                                <h5 class="block-feature__label "></h5>
+                            </div>
+                            <h5 class="block-feature__title ">JavaScript on Azure</h5>
+                        </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Discover the latest services and features in Azure designed specifically for JavaScript developers.</p>
+
+                    </div>
+                </div>
+
+                <div class="block-slim">
+                    <a href="https://www.youtube.com/playlist?list=PLI7iePan8aH7FRDmefj-NAnoxM9V0USZm" aria-label="Watch now a video playlist about using JavaScript on Azure" class="link" target="_blank" data-bi-an="azure-developer-community-content" data-bi-cn="javascript-on-azure" data-bi-ct="link">
+                        <span class="btn btn--icon btn--icon-only btn--sm ">
+                            <span class="glyph-prepend" aria-hidden="true"></span>
+                        </span>
+                        <span class="link__text">Watch now</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>                </div>
+            </div>
+
+            <a href="#community-content-carousel-controls" class="sr-only-focusable w-100 position-absolute">Back to carousel navigation controls</a>
+
+            <a id="community-content-carousel" class="sr-only-focusable" tabindex="-1"></a>
+        </section>
+    </div>
+                </div>
+            </section>
+
+            <section id="additional-resources">
+                <div class="section-master bg--base-fade section-master--alignment-center section-master--layout-header-horizontal-alignment-center">
+                    <div class="section-master__image">
+                        <div class="ocr-img media__asset ">
+                            <picture>
+                                <source srcset="/__mirror/assets/cdb83b6f7197e3e8d28075c8" media="none and (prefers-color-scheme: dark)">
+                                <source srcset="/__mirror/assets/4ce4909ffff780589f0b0aee" media="none and (prefers-color-scheme: dark)">
+                                <source srcset="/__mirror/assets/c25a6bdab7b8a32e76fb1ec4" media="none and (prefers-color-scheme: dark)">
+                                <source srcset="/__mirror/assets/e6149e268c978926f30cd4fd" media="none and (prefers-color-scheme: light)">
+                                <source srcset="/__mirror/assets/2ea3c0d4c232aed2633c4ec3" media="none and (prefers-color-scheme: light)">
+                                <source srcset="/__mirror/assets/574bbff0eccf983b36b690f2" media="none and (prefers-color-scheme: light)">
+                                <img src="/__mirror/assets/574bbff0eccf983b36b690f2" alt="">
+                            </source></source></source></source></source></source></picture>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <div class="layout section-master__layout section-master--layout-cols-1">
+                                    <div class="layout__col">
+                                        <div class="section-master__layout-header">
+                                            <div class="block-heading block-heading--size-s">
+                                                <h2 class="block-heading__title">Keep on learning</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-grid row section-master__slot card-grid--disable-card-promo">
+                            <div class="card-grid__cards">
+                                <div class="layout layout--cols-4">
+                                    <div class="layout__col">
+        <div class="card rounded-l">
+            <div class="card__content p-l">
+
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                        <div class="block-feature__badge">
+                            <span class="badge badge--size-m">
+                                <div class="ocr-icon d-inline-flex ocr-icon-svg--document-filled">
+                                    <svg viewbox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" role="img" title="Documentation">
+                                        <path></path>
+                                    </svg>
+                                </div>
+                            </span>
+                        </div>
+
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+                        <div class="block-feature__headings d-flex flex-column align-items-start">
+                            <h5 class="block-feature__title">Documentation</h5>
+                        </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Learn how to build and manage powerful applications using Microsoft Azure cloud services.</p>
+                    </div>
+                </div>
+
+                <div class="block-slim block-slim--checklist">
+                        <a href="https://learn.microsoft.com/azure/?product=popular" class="link link-inline" data-bi-an="keep-on-learning" data-bi-cn="documentation" data-bi-ct="link" target="_blank">
+                            <span class="link__text">Browse documentation</span>
+                        </a>
+                </div>
+            </div>
+        </div>
+    </div>
+                                    <div class="layout__col">
+        <div class="card rounded-l">
+            <div class="card__content p-l">
+
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                        <div class="block-feature__badge">
+                            <span class="badge badge--size-m">
+                                <div class="ocr-icon d-inline-flex ocr-icon-svg--code-filled">
+                                    <svg viewbox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" role="img" title="Code Samples">
+                                        <path></path>
+                                    </svg>
+                                </div>
+                            </span>
+                        </div>
+
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+                        <div class="block-feature__headings d-flex flex-column align-items-start">
+                            <h5 class="block-feature__title">Code samples</h5>
+                        </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Explore code samples for Azure products and discover what you can build with Microsoft developer tools and technologies.</p>
+                    </div>
+                </div>
+
+                <div class="block-slim block-slim--checklist">
+                        <a href="https://learn.microsoft.com/samples/browse/?expanded=azure&amp;products=azure" class="link link-inline" data-bi-an="keep-on-learning" data-bi-cn="code-samples" data-bi-ct="link" target="_blank">
+                            <span class="link__text">Browse code samples</span>
+                        </a>
+                </div>
+            </div>
+        </div>
+    </div>
+                                    <div class="layout__col">
+        <div class="card rounded-l">
+            <div class="card__content p-l">
+
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                        <div class="block-feature__badge">
+                            <span class="badge badge--size-m">
+                                <div class="ocr-icon d-inline-flex ocr-icon-svg--tutorial-filled">
+                                    <svg viewbox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" role="img" title="Learning Paths">
+                                        <path></path>
+                                    </svg>
+                                </div>
+                            </span>
+                        </div>
+
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+                        <div class="block-feature__headings d-flex flex-column align-items-start">
+                            <h5 class="block-feature__title">Tutorials + training</h5>
+                        </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Grow your skills to build and manage Azure applications in the cloud, on-premises, and at the edge.</p>
+                    </div>
+                </div>
+
+                <div class="block-slim block-slim--checklist">
+                        <a href="https://learn.microsoft.com/training/azure/" class="link link-inline" data-bi-an="keep-on-learning" data-bi-cn="learning-paths" data-bi-ct="link" target="_blank">
+                            <span class="link__text">Browse learning paths</span>
+                        </a>
+                </div>
+            </div>
+        </div>
+    </div>
+                                    <div class="layout__col">
+        <div class="card rounded-l">
+            <div class="card__content p-l">
+
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                        <div class="block-feature__badge">
+                            <span class="badge badge--size-m">
+                                <div class="ocr-icon d-inline-flex ocr-icon-svg--certificate-filled">
+                                    <svg viewbox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" role="img" title="Certifications">
+                                        <path></path>
+                                    </svg>
+                                </div>
+                            </span>
+                        </div>
+
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+                        <div class="block-feature__headings d-flex flex-column align-items-start">
+                            <h5 class="block-feature__title">Certifications</h5>
+                        </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Stand out in your field, learn new skills, and become eligible for 50% off a Microsoft Certification exam - all in 30 days.</p>
+                    </div>
+                </div>
+
+                <div class="block-slim block-slim--checklist">
+                        <a href="/offers/30-days-to-learn-it" class="link link-inline" data-bi-an="keep-on-learning" data-bi-cn="certifications" data-bi-ct="link" target="_self">
+                            <span class="link__text">Get details</span>
+                        </a>
+                </div>
+            </div>
+        </div>
+    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+    </div>
+
+    <!-- Theme picker / UHF Footer -->
+    <div class="mx-0 px-0 overflow-hidden uhf-footer-wrapper">
+        
+<div class="uhf11-footer-container">
+    <button type="button" class="uhf11-btn-theme" id="theme-toggle" aria-label="Change page theme" aria-pressed="false" data-bi-an="uhf-footer" data-bi-id="theme-toggle" data-bi-ct="button">
+        <svg xmlns="http://www.w3.org/2000/svg" style="margin-right:10px" width="24" height="24" fill="currentColor" class="bi bi-brightness-high" viewbox="0 0 16 16" aria-hidden="true">
+            <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"></path>
+        </svg><span>Theme</span>
+    </button>
+    
+<uhf-footer locale="en-us" partnerid="MSDev-Community" footerid="MSDev-DEVCOM-Community-Footer" theme="light">
+    <script id="uhf-footer-ccpa">
+        (function () {
+            function checkThirdPartyAdsOptOutCookie() {
+                try {
+                    var match = document.cookie.match('(^|;)\\s*3PAdsOptOut\\s*=\\s*([^;]+)');
+                    return (match ? match[2] : '') !== '1';
+                } catch (e) {
+                    return true;
+                }
+            }
+            var globalPrivacyControlEnabled = navigator.globalPrivacyControl;
+            window.GPC_DataSharingOptIn = globalPrivacyControlEnabled ? false : checkThirdPartyAdsOptOutCookie();
+            if (typeof window.onGPCLoaded === 'function') {
+                window.onGPCLoaded();
+            }
+        })();
+    </script>
+    
+<uhf-footer-nav slot="uhf-footer-nav">
+</uhf-footer-nav>
+        <a slot="uhf-footer-locale-picker" class="uhf-footer-link" href="/en-us/_devcom/locale" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_English (United States)_nav","ecn":"LegalNav_LocalePicker_nav","ehn":"LegalNav"}' aria-label="Content Language Selector. Currently set to English (United States)">English (United States)</a>
+    <div slot="uhf-footer-california-privacy-link">
+        
+<a class="uhf-footer-link" href="https://aka.ms/yourcaliforniaprivacychoices" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_California Privacy_nav","ecn":"LegalNav_CaliforniaPrivacy_nav","ehn":"LegalNav"}'>
+    <svg role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 14" xml:space="preserve" height="16" width="43">
+    <title>Your Privacy Choices Opt-Out Icon</title>
+    <path d="M7.4 12.8h6.8l3.1-11.6H7.4C4.2 1.2 1.6 3.8 1.6 7s2.6 5.8 5.8 5.8z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#fff"></path>
+    <path d="M22.6 0H7.4c-3.9 0-7 3.1-7 7s3.1 7 7 7h15.2c3.9 0 7-3.1 7-7s-3.2-7-7-7zm-21 7c0-3.2 2.6-5.8 5.8-5.8h9.9l-3.1 11.6H7.4c-3.2 0-5.8-2.6-5.8-5.8z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#06f"></path>
+    <path d="M24.6 4c.2.2.2.6 0 .8L22.5 7l2.2 2.2c.2.2.2.6 0 .8-.2.2-.6.2-.8 0l-2.2-2.2-2.2 2.2c-.2.2-.6.2-.8 0-.2-.2-.2-.6 0-.8L20.8 7l-2.2-2.2c-.2-.2-.2-.6 0-.8.2-.2.6-.2.8 0l2.2 2.2L23.8 4c.2-.2.6-.2.8 0z" style="fill:#fff"></path>
+    <path d="M12.7 4.1c.2.2.3.6.1.8L8.6 9.8c-.1.1-.2.2-.3.2-.2.1-.5.1-.7-.1L5.4 7.7c-.2-.2-.2-.6 0-.8.2-.2.6-.2.8 0L8 8.6l3.8-4.5c.2-.2.6-.2.9 0z" style="fill:#06f"></path>
+    </svg>
+    <span>Your Privacy Choices</span>
+</a>
+        <noscript>
+            
+<a class="uhf-footer-link" href="https://aka.ms/yourcaliforniaprivacychoices" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_California Privacy_nav","ecn":"LegalNav_CaliforniaPrivacy_nav","ehn":"LegalNav"}'>
+    <svg role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 14" xml:space="preserve" height="16" width="43">
+    <title>Your Privacy Choices Opt-Out Icon</title>
+    <path d="M7.4 12.8h6.8l3.1-11.6H7.4C4.2 1.2 1.6 3.8 1.6 7s2.6 5.8 5.8 5.8z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#fff"></path>
+    <path d="M22.6 0H7.4c-3.9 0-7 3.1-7 7s3.1 7 7 7h15.2c3.9 0 7-3.1 7-7s-3.2-7-7-7zm-21 7c0-3.2 2.6-5.8 5.8-5.8h9.9l-3.1 11.6H7.4c-3.2 0-5.8-2.6-5.8-5.8z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#06f"></path>
+    <path d="M24.6 4c.2.2.2.6 0 .8L22.5 7l2.2 2.2c.2.2.2.6 0 .8-.2.2-.6.2-.8 0l-2.2-2.2-2.2 2.2c-.2.2-.6.2-.8 0-.2-.2-.2-.6 0-.8L20.8 7l-2.2-2.2c-.2-.2-.2-.6 0-.8.2-.2.6-.2.8 0l2.2 2.2L23.8 4c.2-.2.6-.2.8 0z" style="fill:#fff"></path>
+    <path d="M12.7 4.1c.2.2.3.6.1.8L8.6 9.8c-.1.1-.2.2-.3.2-.2.1-.5.1-.7-.1L5.4 7.7c-.2-.2-.2-.6 0-.8.2-.2.6-.2.8 0L8 8.6l3.8-4.5c.2-.2.6-.2.9 0z" style="fill:#06f"></path>
+    </svg>
+    <span>Your Privacy Choices</span>
+</a>
+        </noscript>
+    </div>
+    <a slot="uhf-footer-consumer-health-privacy-link" class="uhf-footer-link" href="https://go.microsoft.com/fwlink/?linkid=2259814" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_Consumer Health Privacy_nav","ecn":"LegalNav_ConsumerHealthPrivacy_nav","ehn":"LegalNav"}'>Consumer Health Privacy</a>
+    
+<uhf-footer-menu slot="uhf-footer-menu" data-nav-label="Microsoft corporate links">
+            <a class="uhf-footer-link" href="https://support.microsoft.com/contactus/" id="uhf-Contact Microsoft " data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_Contact Microsoft _nav","ecn":"LegalNav_Contact Microsoft _nav","ehn":"LegalNav"}'>Contact Microsoft </a>
+            <a class="uhf-footer-link" href="https://go.microsoft.com/fwlink/?LinkId=521839" id="uhf-Privacy &amp; Cookies" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_Privacy &amp; Cookies_nav","ecn":"LegalNav_Privacy &amp; Cookies_nav","ehn":"LegalNav"}'>Privacy &amp; Cookies</a>
+            <a class="uhf-footer-link" href="#" id="uhf-Manage cookies" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_Manage cookies_nav","ecn":"LegalNav_Manage cookies_nav","ehn":"LegalNav"}'>Manage cookies</a>
+            <a class="uhf-footer-link" href="https://go.microsoft.com/fwlink/?LinkID=206977" id="uhf-Terms of Use" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_Terms of Use_nav","ecn":"LegalNav_Terms of Use_nav","ehn":"LegalNav"}'>Terms of Use</a>
+            <a class="uhf-footer-link" href="https://www.microsoft.com/trademarks" id="uhf-Trademarks" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_Trademarks_nav","ecn":"LegalNav_Trademarks_nav","ehn":"LegalNav"}'>Trademarks</a>
+</uhf-footer-menu>
+</uhf-footer>
+</div>
+    </div>
+    <!-- /Theme picker -->
+
+
+    <!-- Scripts -->
+    <script src="/__mirror/assets/6c595ffdb677c4a558469896" async></script>
+
+    
+<script type="module" src="/__mirror/assets/adb93738516987ac3e9c9096"></script>
+    
+ <!-- UHF scripts -->
+
+    
+    
+    <script src="/__mirror/assets/5bc8db1ff406d4f5b65d6317"></script>
+    <!-- /Scripts -->
+
+    <script src="/__mirror/assets/942efe456a10a90269264a6f"></script>
+</body>
+</html>
