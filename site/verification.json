@@ -1,0 +1,4551 @@
+{
+  "schema_version": 1,
+  "capture_updated_at": "2026-10-09T04:53:19+00:00",
+  "errors": [],
+  "warnings": [
+    "364 source page failures/robots exclusions; no substitute content fabricated.",
+    "527 asset candidates are unavailable, too large, or not asset responses."
+  ],
+  "summary": {
+    "pages": {
+      "captured": 5487,
+      "robots_disallowed": 1,
+      "source_missing": 362,
+      "alias": 132,
+      "external": 63,
+      "http_error": 1,
+      "external_download": 9
+    },
+    "assets": {
+      "captured": 4435,
+      "source_missing": 393,
+      "network_error": 2,
+      "disabled_telemetry": 4,
+      "http_error": 122,
+      "not_an_asset": 4,
+      "blocked_address": 6
+    },
+    "page_records": 6055,
+    "asset_records": 4966,
+    "capture_queue_finished": true,
+    "captured_bytes": 2459293869
+  },
+  "source_page_gaps": [
+    {
+      "url": "https://developer.microsoft.com/en-us/_devcom/locale",
+      "status": "robots_disallowed",
+      "http_status": null
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/devnexus.com",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/14657/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/14658/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/14659/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/14661/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/14662/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/14664/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/14665/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/14666/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/14847/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/14951/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/14954/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/14973/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15049/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15050/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15051/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15053/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15090/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15259/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15279/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15281/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15282/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15284/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15287/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15288/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15316/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15317/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15318/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15339/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15342/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15366/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15379/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15380/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15381/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15383/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15384/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15385/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15386/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15404/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15406/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15407/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15411/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15427/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15428/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15429/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15430/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15431/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15432/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15433/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15434/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15435/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15436/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15456/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15467/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15468/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15481/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15484/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15486/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15487/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15493/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15495/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15496/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15509/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15510/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15514/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15522/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15523/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15524/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15537/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15538/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15539/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15548/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15549/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15566/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15594/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15595/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15596/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15603/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15612/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15614/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15615/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15616/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15617/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15618/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15626/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15640/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15645/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15647/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15648/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15649/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15650/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15651/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15653/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15654/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15664/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15665/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15674/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15675/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15681/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15682/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15697/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15704/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15707/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15714/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15724/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15725/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15747/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15748/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15749/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15750/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15751/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15752/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15753/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15754/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15755/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15756/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15757/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15759/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15760/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15761/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15763/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15766/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15767/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15768/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15787/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15796/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15801/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15802/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15803/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15804/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15810/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15811/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15812/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15813/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15815/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15816/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15817/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15819/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15850/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15851/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15852/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15853/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15858/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15859/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15867/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15908/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15911/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15951/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15952/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15953/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15955/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15956/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15958/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15959/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15960/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15961/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15962/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15968/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15984/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/15985/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16010/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16011/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16016/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16017/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16018/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16034/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16036/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16040/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16056/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16058/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16061/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16062/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16066/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16084/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16085/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16105/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16118/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16119/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16120/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16128/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16130/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16141/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16142/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16147/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16148/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16153/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16154/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16155/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16158/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16159/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16172/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16175/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16198/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16199/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16210/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16211/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16212/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16213/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16214/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16215/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16216/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16242/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16243/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16254/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16257/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16262/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16270/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16271/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16292/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16293/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16294/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16295/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16302/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16303/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16322/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16332/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16358/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16361/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16365/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16366/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16389/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16390/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16402/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16410/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16411/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16425/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16426/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16428/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16429/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16430/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16447/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16468/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16472/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16477/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16478/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16493/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16494/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16499/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16520/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16521/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16547/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16551/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16559/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16565/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16566/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16570/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16571/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16600/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16602/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16603/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16609/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16610/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16611/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16614/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16651/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16652/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16653/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16663/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16670/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16686/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16687/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16710/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16714/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16734/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16794/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16796/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16860/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16863/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/16903/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/17037/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/17073/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/17107/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/17108/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/17118/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/17288/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/17309/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/17310/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/17312/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/17313/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/17314/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/17514/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/17515/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/17516/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/17517/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/17518/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/17519/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/17520/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/17763/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/17764/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/17765/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/18101/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/18102/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/18103/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/18104/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/18193/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/18319/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/18428/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/18429/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/18465/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/18615/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/18616/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/18626/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/18817/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/19058/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/19125/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/19185/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/19186/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/19187/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/19926/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/20165/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/20167/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/20227/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/20324/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/20330/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/20331/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/20332/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/20352/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/20429/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/20448/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/20502/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/20727/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/20834/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/20857/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/20924/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/21164/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/21350/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/21368/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/21371/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/21710/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/21758/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/22640/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/22678/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/23059/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/23118/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/23537/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/23539/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/23541/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/23546/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/23547/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/23827/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/23828/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/23829/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/24113/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/24164/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/24261/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/25972/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/25973/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/25974/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/26276/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/26685/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/27400/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/27551/",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/locale",
+      "status": "http_error",
+      "http_status": 503
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/eventseries/abitofaishow",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/eventseries/measeries",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/advocates/japhlet-nwamu",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/advocates/glaucia-lemos",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/advocates/joshua-ndemenge",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/18879/%5Bhttps:/learn.microsoft.com/training/paths/describe-microsoft-365-core-services-concepts",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/23625/url",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/26408/wt.mc_id=1reg_26386_webpage_reactor",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/26458/xyz",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/reactor/events/26459/xyz",
+      "status": "source_missing",
+      "http_status": 404
+    }
+  ],
+  "asset_gaps": [
+    {
+      "url": "https://developer.microsoft.com/_devcom/fonts/MWFFluentIcons.ttf",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/_devcom/fonts/MWFFluentIcons.woff",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/_devcom/fonts/MWFFluentIcons.woff2",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/_devcom/fonts/segoe-sans/west-european/latest.ttf",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/_devcom/fonts/segoe-sans/west-european/latest.woff2",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://amp.azure.net/libs/amp/1.8.0/azuremediaplayer.min.js",
+      "status": "network_error",
+      "http_status": null
+    },
+    {
+      "url": "https://amp.azure.net/libs/amp/2.1.9/azuremediaplayer.min.js",
+      "status": "network_error",
+      "http_status": null
+    },
+    {
+      "url": "https://developer.microsoft.com/videoplayer/css/cache/oneplayer.css",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/videoplayer/css/cached/oneplayer.css",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/videoplayer/css/oneplayer.css",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://media.licdn.com/dms/image/v2/D4D03AQH-0TSIeCDg4w/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1699728860464?e=1751500800&v=beta&t=nHGpigIxxCRlZEV3IurxHpl5F-u1QFtwFVs7ZX69KbU",
+      "status": "http_error",
+      "http_status": 403
+    },
+    {
+      "url": "https://reactorcdnprod.blob.core.windows.net/banners/FY27MicrosoftAIGenius_ReactorHomePageBanner_1417x400px-01.webp",
+      "status": "http_error",
+      "http_status": 409
+    },
+    {
+      "url": "https://reactorcdnprod.blob.core.windows.net/banners/NETConf2025_ReactorHeader_Solid.webp",
+      "status": "http_error",
+      "http_status": 409
+    },
+    {
+      "url": "https://reactorcdnprod.blob.core.windows.net/images/speaker_images/AaronPowell_20260928053544897.jpg",
+      "status": "http_error",
+      "http_status": 409
+    },
+    {
+      "url": "https://reactorcdnprod.blob.core.windows.net/images/speaker_images/AmalHosni_20250220133302454.jpeg",
+      "status": "http_error",
+      "http_status": 409
+    },
+    {
+      "url": "https://reactorcdnprod.blob.core.windows.net/images/speaker_images/Amyboyd_20260630054003397.jpg",
+      "status": "http_error",
+      "http_status": 409
+    },
+    {
+      "url": "https://reactorcdnprod.blob.core.windows.net/images/speaker_images/AriLiVigni_20250604190740763.jpg",
+      "status": "http_error",
+      "http_status": 409
+    },
+    {
+      "url": "https://reactorcdnprod.blob.core.windows.net/images/speaker_images/AyanaYokota_20260929031135156.jpg",
+      "status": "http_error",
+      "http_status": 409
+    },
+    {
+      "url": "https://reactorcdnprod.blob.core.windows.net/images/speaker_images/Bethany%20Jepchumba.jpg",
+      "status": "http_error",
+      "http_status": 409
+    },
+    {
+      "url": "https://reactorcdnprod.blob.core.windows.net/images/speaker_images/BoramJeong_20260929025639275.jpg",
+      "status": "http_error",
+      "http_status": 409
+    },
+    {
+      "url": "https://reactorcdnprod.blob.core.windows.net/images/speaker_images/Brian%20Benz.jpg",
+      "status": "http_error",
+      "http_status": 409
+    },
+    {
+      "url": "https://reactorcdnprod.blob.core.windows.net/images/speaker_images/BrunoBorges.png",
+      "status": "http_error",
+      "http_status": 409
+    },
+    {
+      "url": "https://reactorcdnprod.blob.core.windows.net/images/speaker_images/BrunoCapuano_20251201194408505.jpg",
+      "status": "http_error",
+      "http_status": 409
+    },
+    {
+      "url": "https://reactorcdnprod.blob.core.windows.net/images/speaker_images/CarlKadie_20260925042323691.jpeg",
+      "status": "http_error",
+      "http_status": 409
+    },
+    {
+      "url": "https://reactorcdnprod.blob.core.windows.net/images/speaker_images/CarlosLopez_20261002061518709.jpg",
+      "status": "http_error",
+      "http_status": 409
+    },
+    {
+      "url": "https://reactorcdnprod.blob.core.windows.net/images/speaker_images/ChafiaAouissi_20260715000336772.jpg",
+      "status": "http_error",
+      "http_status": 409
+    },
+    {
+      "url": "https://reactorcdnprod.blob.core.windows.net/images/speaker_images/Christian%20Abata.jpg",
+      "status": "http_error",
+      "http_status": 409
+    },
+    {
+      "url": "https://reactorcdnprod.blob.core.windows.net/images/speaker_images/CynthiaZanoni_20250108204034015.jpg",
+      "status": "http_error",
+      "http_status": 409
+    },
+    {
+      "url": "https://reactorcdnprod.blob.core.windows.net/images/speaker_images/DarrenPortillo_20260831152220511.jpg",
+      "status": "http_error",
+      "http_status": 409
+    },
+    {
+      "url": "https://reactorcdnprod.blob.core.windows.net/images/speaker_images/DavidLorenzo_20241002131807810.jpg",
+      "status": "http_error",
+      "http_status": 409
+    },
+    {
+      "url": "https://reactorcdnprod.blob.core.windows.net/images/speaker_images/ElizabethOldag_20250805225827520.jpg",
+      "status": "http_error",
+      "http_status": 409
+    },
+    {
+      "url": "https://reactorcdnprod.blob.core.windows.net/images/speaker_images/EnriqueRomero_20250117182735541.jpg",
+      "status": "http_error",
+      "http_status": 409
+    },
+    {
+      "url": "https://reactorcdnprod.blob.core.windows.net/images/speaker_images/Garry%20Trinder.jpg",
+      "status": "http_error",
+      "http_status": 409
+    },
+    {
+      "url": "https://reactorcdnprod.blob.core.windows.net/images/speaker_images/GraemeFoster_20251210015750793.jpg",
+      "status": "http_error",
+      "http_status": 409
+    },
+    {
+      "url": "https://reactorcdnprod.blob.core.windows.net/images/speaker_images/Gustavo%20Cordido.jpeg",
+      "status": "http_error",
+      "http_status": 409
+    },
+    {
+      "url": "https://reactorcdnprod.blob.core.windows.net/images/speaker_images/HyeonsangJeon_20260929025026861.jpg",
+      "status": "http_error",
+      "http_status": 409
+    },
+    {
+      "url": "https://reactorcdnprod.blob.core.windows.net/images/speaker_images/Irene.Du_20260831153208995.jpg",
+      "status": "http_error",
+      "http_status": 409
+    },
+    {
+      "url": "https://reactorcdnprod.blob.core.windows.net/images/speaker_images/Jaqueline%20Battista.jpg",
+      "status": "http_error",
+      "http_status": 409
+    },
+    {
+      "url": "https://reactorcdnprod.blob.core.windows.net/images/speaker_images/Jaqueline%20Ramos.jpeg",
+      "status": "http_error",
+      "http_status": 409
+    },
+    {
+      "url": "https://reactorcdnprod.blob.core.windows.net/images/speaker_images/JayGordon25NEW_20250113190023491.jpg",
+      "status": "http_error",
+      "http_status": 409
+    },
+    {
+      "url": "https://reactorcdnprod.blob.core.windows.net/images/speaker_images/JennyFerries_20260104204354981.jpg",
+      "status": "http_error",
+      "http_status": 409
+    },
+    {
+      "url": "https://reactorcdnprod.blob.core.windows.net/images/speaker_images/Jorge.Fernandez_20260929204334119.jpg",
+      "status": "http_error",
+      "http_status": 409
+    },
+    {
+      "url": "https://reactorcdnprod.blob.core.windows.net/images/speaker_images/Justin%20Yoo.png",
+      "status": "http_error",
+      "http_status": 409
+    },
+    {
+      "url": "https://reactorcdnprod.blob.core.windows.net/images/speaker_images/Karl.Abbott_20261008181522165.jpg",
+      "status": "http_error",
+      "http_status": 409
+    },
+    {
+      "url": "https://reactorcdnprod.blob.core.windows.net/images/speaker_images/KarlPiteria_20251216005112589.jpg",
+      "status": "http_error",
+      "http_status": 409
+    },
+    {
+      "url": "https://reactorcdnprod.blob.core.windows.net/images/speaker_images/KeisukeHatasaki_20261002070154878.jpg",
+      "status": "http_error",
+      "http_status": 409
+    },
+    {
+      "url": "https://reactorcdnprod.blob.core.windows.net/images/speaker_images/KinfeyLo1_20260929204700475.png",
+      "status": "http_error",
+      "http_status": 409
+    },
+    {
+      "url": "https://reactorcdnprod.blob.core.windows.net/images/speaker_images/Marie.Louise.Onga.Nana_20260903214252346.jpg",
+      "status": "http_error",
+      "http_status": 409
+    },
+    {
+      "url": "https://reactorcdnprod.blob.core.windows.net/images/speaker_images/MayuriGupta_20261005151056289.jpg",
+      "status": "http_error",
+      "http_status": 409
+    },
+    {
+      "url": "https://reactorcdnprod.blob.core.windows.net/images/speaker_images/Monica.boris_20261008200707946.jpg",
+      "status": "http_error",
+      "http_status": 409
+    },
+    {
+      "url": "https://reactorcdnprod.blob.core.windows.net/images/speaker_images/Nitya_20260216083341673.jpg",
+      "status": "http_error",
+      "http_status": 409
+    },
+    {
+      "url": "https://reactorcdnprod.blob.core.windows.net/images/speaker_images/Paula_Berenguel_20260225205305588.jpg",
+      "status": "http_error",
+      "http_status": 409
+    },
+    {
+      "url": "https://reactorcdnprod.blob.core.windows.net/images/speaker_images/Rabia%20Williams.jpg",
+      "status": "http_error",
+      "http_status": 409
+    },
+    {
+      "url": "https://reactorcdnprod.blob.core.windows.net/images/speaker_images/Rachit_20260914202438897.jpg",
+      "status": "http_error",
+      "http_status": 409
+    },
+    {
+      "url": "https://reactorcdnprod.blob.core.windows.net/images/speaker_images/RafaelGranados_20260902181152630.png",
+      "status": "http_error",
+      "http_status": 409
+    },
+    {
+      "url": "https://reactorcdnprod.blob.core.windows.net/images/speaker_images/Revital.Ben.Ami_20261006164041206.jpg",
+      "status": "http_error",
+      "http_status": 409
+    },
+    {
+      "url": "https://reactorcdnprod.blob.core.windows.net/images/speaker_images/RodrigoDiazConcha_20260911155817349.png",
+      "status": "http_error",
+      "http_status": 409
+    },
+    {
+      "url": "https://reactorcdnprod.blob.core.windows.net/images/speaker_images/RohanParakh_20260211001947236.jpeg",
+      "status": "http_error",
+      "http_status": 409
+    },
+    {
+      "url": "https://reactorcdnprod.blob.core.windows.net/images/speaker_images/SajeetharanSinnathurai_20250123180028682.jpg",
+      "status": "http_error",
+      "http_status": 409
+    },
+    {
+      "url": "https://reactorcdnprod.blob.core.windows.net/images/speaker_images/SamitJhaveri_20251216005214699.jpg",
+      "status": "http_error",
+      "http_status": 409
+    },
+    {
+      "url": "https://reactorcdnprod.blob.core.windows.net/images/speaker_images/Sebastien%20Levert.png",
+      "status": "http_error",
+      "http_status": 409
+    },
+    {
+      "url": "https://reactorcdnprod.blob.core.windows.net/images/speaker_images/Sergio.Hernandez_20260929203810102.jpg",
+      "status": "http_error",
+      "http_status": 409
+    },
+    {
+      "url": "https://reactorcdnprod.blob.core.windows.net/images/speaker_images/Shamir_20251203135327024.jpg",
+      "status": "http_error",
+      "http_status": 409
+    },
+    {
+      "url": "https://reactorcdnprod.blob.core.windows.net/images/speaker_images/Sowmya.Sivaraman_20261008200413891.jpg",
+      "status": "http_error",
+      "http_status": 409
+    },
+    {
+      "url": "https://reactorcdnprod.blob.core.windows.net/images/speaker_images/Srikumar%20Nair.png",
+      "status": "http_error",
+      "http_status": 409
+    },
+    {
+      "url": "https://reactorcdnprod.blob.core.windows.net/images/speaker_images/Tiago%20Costa.jpg",
+      "status": "http_error",
+      "http_status": 409
+    },
+    {
+      "url": "https://reactorcdnprod.blob.core.windows.net/images/speaker_images/Yiyi_20260930195301497.png",
+      "status": "http_error",
+      "http_status": 409
+    },
+    {
+      "url": "https://reactorcdnprod.blob.core.windows.net/images/speaker_images/YurieMori_20260929031135175.png",
+      "status": "http_error",
+      "http_status": 409
+    },
+    {
+      "url": "https://reactorcdnprod.blob.core.windows.net/images/speaker_images/dr.Islam.Gouda_20260910190510760.jpg",
+      "status": "http_error",
+      "http_status": 409
+    },
+    {
+      "url": "https://reactorcdnprod.blob.core.windows.net/images/speaker_images/gana-chandrasekaran_20261003180743830.jpg",
+      "status": "http_error",
+      "http_status": 409
+    },
+    {
+      "url": "https://reactorcdnprod.blob.core.windows.net/images/speaker_images/ismael.mejia_20261006205113189.jpg",
+      "status": "http_error",
+      "http_status": 409
+    },
+    {
+      "url": "https://reactorcdnprod.blob.core.windows.net/images/speaker_images/jacky.kang_20261006170257951.png",
+      "status": "http_error",
+      "http_status": 409
+    },
+    {
+      "url": "https://reactorcdnprod.blob.core.windows.net/images/speaker_images/long.chen_20260829001807837.jpg",
+      "status": "http_error",
+      "http_status": 409
+    },
+    {
+      "url": "https://reactorcdnprod.blob.core.windows.net/images/speaker_images/nirmal_20251215055100611.jpg",
+      "status": "http_error",
+      "http_status": 409
+    },
+    {
+      "url": "https://reactorcdnprod.blob.core.windows.net/images/speaker_images/paolopialorsiNEW_20250113182352879.jpg",
+      "status": "http_error",
+      "http_status": 409
+    },
+    {
+      "url": "https://reactorcdnprod.blob.core.windows.net/images/speaker_images/shane.bauer_20261006163543830.jpg",
+      "status": "http_error",
+      "http_status": 409
+    },
+    {
+      "url": "https://reactorcdnprod.blob.core.windows.net/images/speaker_images/sharmila%2Cchockalingam_20260730232826753.png",
+      "status": "http_error",
+      "http_status": 409
+    },
+    {
+      "url": "https://reactorcdnprod.blob.core.windows.net/images/speaker_images/tanvi-tushar-shah_20261008194043743.jpeg",
+      "status": "http_error",
+      "http_status": 409
+    },
+    {
+      "url": "https://reactorcdnprod.blob.core.windows.net/images/speaker_images/yiwen-rong_20261008194525638.jpeg",
+      "status": "http_error",
+      "http_status": 409
+    },
+    {
+      "url": "https://reactorcdnprod.blob.core.windows.net/images/speaker_images/\u66f2\u5143\u76f4_20251014215137382.jpg",
+      "status": "http_error",
+      "http_status": 409
+    },
+    {
+      "url": "https://js.monitor.azure.com/c.gif?DI=4050&did=1&t=",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://js.monitor.azure.com/scripts/c/aad.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://js.monitor.azure.com/scripts/c/msa.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://learn.microsoft.com/static/assets/0.4.03564.8276-6f650523/scripts/en-us/20210923-TheIoTShow-DevelopappsthatdelightscustomerswithOmboriGridPoweredbyAzureIoTEdge_Edited_V3.mp4",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://review.learn.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-associate-badge.svg?branch=main",
+      "status": "not_an_asset",
+      "http_status": 200
+    },
+    {
+      "url": "https://developer.microsoft.com/js/views/windows-blog.js?v=DLmhrWMcKjl5D98oxFD3xtBtPUKo1nDSErNsEY8FuSA",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://atlas.microsoft.com/styles/glyphs/segoeui.ttf",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://atlas.microsoft.com/styles/glyphs/segoeuib.ttf",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://atlas.microsoft.com/styles/glyphs/segoeuii.ttf",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://atlas.microsoft.com/styles/glyphs/segoeuisl.ttf",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://atlas.microsoft.com/styles/glyphs/standardfont.ttf",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://atlas.microsoft.com/styles/glyphs/standardfontbold.ttf",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/atlas.min.css",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/mapbox-gl-rtl-text.min.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://reactorext.blob.core.windows.net/images/speaker_images/Jeff%20Fritz.jpg",
+      "status": "blocked_address",
+      "http_status": null
+    },
+    {
+      "url": "https://developer.microsoft.com/_devcom/static/js/mux.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/_devcom/static/js/vtt.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/src/css/accessibility-high-contrast.css",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/src/css/big-play-pause-button.css",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/src/css/closed-caption-settings.css",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/src/css/download-menu-button.css",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/src/css/player-controls.css",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/src/css/player.css",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/src/css/quality-selector.css",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/src/css/settings-menu-button.css",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/src/css/share-menu-button.css",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/lib/docs-css/docons.45081f9b.woff",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/lib/docs-css/docons.93127cef.ttf",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/lib/docs-css/docons.c77ce607.eot",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/lib/docs-css/download_hover.c70350eb.svg",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/lib/docs-css/modal-complete-plain.609fc87c.svg",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/lib/docs-css/quiz-complete.678661e4.svg",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/.hot-update.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/af.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/am-et.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/ar-dz.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/ar-kw.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/ar-ly.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/ar-ma.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/ar-ps.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/ar-sa.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/ar-tn.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/ar.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/az.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/be.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/bg.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/bm.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/bn-bd.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/bn.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/bo.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/br.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/bs.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/ca.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/cs.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/cv.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/cy.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/da.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/de-at.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/de-ch.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/de.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/dv.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/el.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/en-au.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/en-ca.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/en-gb.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/en-ie.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/en-il.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/en-in.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/en-nz.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/en-sg.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/eo.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/es-do.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/es-mx.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/es-us.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/es.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/et.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/eu.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/fa.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/fi.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/fil.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/fo.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/fr-ca.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/fr-ch.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/fr.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/fy.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/ga.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/gd.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/gl.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/gom-deva.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/gom-latn.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/gu.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/he.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/hi.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/hr.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/hu.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/hy-am.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/id.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/is.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/it-ch.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/it.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/ja.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/jv.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/ka.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/kk.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/km.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/kn.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/ko.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/ku-kmr.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/ku.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/ky.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/lb.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/lo.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/lt.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/lv.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/me.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/mi.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/mk.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/ml.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/mn.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/mr.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/ms-my.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/ms.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/mt.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/my.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/nb.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/ne.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/nl-be.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/nl.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/nn.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/oc-lnc.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/pa-in.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/pl.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/ps.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/pt-br.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/pt.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/ro.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/ru.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/sd.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/se.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/si.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/sk.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/sl.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/sq.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/sr-cyrl.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/sr.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/ss.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/sv.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/sw.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/ta.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/te.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/tet.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/tg.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/th.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/tk.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/tl-ph.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/tlh.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/tr.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/tzl.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/tzm-latn.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/tzm.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/ug-cn.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/uk.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/ur.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/uz-latn.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/uz.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/vi.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/x-pseudo.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/yo.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/zh-cn.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/zh-hk.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/zh-mo.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/reactor/publish/zh-tw.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/_devcom/dist/ajax-loader.gif",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/_devcom/dist/fonts/slick.eot",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/_devcom/dist/fonts/slick.ttf",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/_devcom/dist/fonts/slick.woff",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/azure-devops/static/Images/Home/main-tile-bg.png",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/azure-devops/static/js/Azure-Pipelines.png",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/azure-devops/static/js/Dialog.Example.css",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/azure-devops/static/js/Dropdown.css",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/azure-devops/static/js/Header.Example.css",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/azure-devops/static/js/List.Example.css",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/azure-devops/static/js/MasterDetail.Example.css",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/azure-devops/static/js/Page.Example.css",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/azure-devops/static/js/Persona.Example.css",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/azure-devops/static/js/SplitButton.Example.css",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/azure-devops/static/js/Status.Example.css",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/azure-devops/static/js/Table.Example.css",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/azure-devops/static/js/bars.png",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/azure-devops/static/js/cumulativeflow.png",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/azure-devops/static/js/iconFont.css",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/azure-devops/static/js/persona-female.png",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/azure-devops/static/js/persona-male.png",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://learn.microsoft.com/input/mml/entities.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://learn.microsoft.com/static/third-party/MathJax/3.2.2/mathmaps_ie.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/fonts/segoe-sans/west-european/latest.ttf",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/fonts/segoe-sans/west-european/latest.woff2",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/C.href",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/M",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/e",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/e.Aa",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/f.src",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/f.uri",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/g",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/j",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/new Blob",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/o.src,window.location.href",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/p",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/r",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/r.cf",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/t",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/t,e",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/t.url",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/u.value,i",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/w",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/window.location.href",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/h.ImageUrl",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/h.Url, h.Icid",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/o",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/o, window.location.origin",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/e,o",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/e,t",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/e.baseId,c",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/i",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/n",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/r.href",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/fonts/MWFFluentIcons.ttf",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/fonts/MWFFluentIcons.woff",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/fonts/MWFFluentIcons.woff2",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "http://a/",
+      "status": "blocked_address",
+      "http_status": null
+    },
+    {
+      "url": "http://\u0442\u0435\u0441\u0442/",
+      "status": "blocked_address",
+      "http_status": null
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/h.url",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/o.url",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/t.captions[u].url",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/t.snippet.thumbnails.medium.url",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/t.transcripts[s].url",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/this",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/this.submitButton.href,window.location.origin",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/u",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/u,document.location",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/e, window.location.origin",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/e.redirect_uri",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/t.webResult.mc1",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/t.webResult.mc1,n",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/Sz.getCurrentUri(",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/c,Sz.getCurrentUri(",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/e,Sz.getCurrentUri(",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/e,t,r",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/e.postLogoutRedirectUri,Sz.getCurrentUri(",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/n.glyphs",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/r.src",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/this._data",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/this.config.auth.postLogoutRedirectUri,Sz.getCurrentUri(",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/this.tiles,this.map.getPixelRatio(",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/B.location.href",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/N.agentService.conversations",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/N.auth.partner",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/Ri(",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/X.href",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/X.origin",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/[t]",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/c.url",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/co(o?.challengeDetails%3F.id=",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/document.referrer",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/dv(n?.plan%3F.id=",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/e,X.href",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/e,X.origin",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/e,location.origin",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/e,window.location.origin",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/e.URL",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/e.reportStudyGuide.credentialId,e.reportStudyGuide.assessmentId,e.reportStudyGuide.credentialUrl",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/e||location.href",
+      "status": "http_error",
+      "http_status": 400
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/i,o",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/l",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/location.href",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/media/learn/certification/renew/fireworks.png?branch=main",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/media/profile/CSCCollectionHeroImage.png?branch=main",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/media/profile/OfficialCollectionsHeroImage.png?branch=main",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/n,Ri(",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/n,a",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/n.href,location.href",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/o.href",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/r,Ri(",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/r,n",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/r,o",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/st(e,b.data.userLocale",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/t,KMe",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/t,n",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/t,s",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/t,window.location.href",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/t.href",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/t.postLogoutRedirectUri,Ri(",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/t.url||e,location.origin",
+      "status": "http_error",
+      "http_status": 400
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/this.config.auth.postLogoutRedirectUri,Ri(",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/tr(i,QXe.href",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/w.referrer",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/z$",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/media/learn/challenge/challenges_hero.png?branch=main",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/media/learn/plans/skilling_plan_hero.png?branch=main",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/media/profile/RegularCollectionsHeroImage.png?branch=main",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/media/profile/RegularCollectionsHeroImageDark.png?branch=main",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://microsoft.qualtrics.com/jfe/form/SV_6hUVpRBU3hQVnZY",
+      "status": "not_an_asset",
+      "http_status": 200
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/i,t",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/new Blob([lvi(i",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/t,i",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/t,n.location||bg",
+      "status": "http_error",
+      "http_status": 400
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/t.getBlob(",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/this.masterPlaylistController_.mediaSource",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/this.mediaSourceUrl_",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/n,u,M,i",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/Re.origin",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/a,Re.origin",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/t,Re.origin",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/decorateWithDynamicHost,            extension.hostedLibFilesBaseUrl,            buildInfo.minified",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/sourceUrl",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/%%URL%%/MathJax_AMS-Regular.woff",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/%%URL%%/MathJax_Calligraphic-Bold.woff",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/%%URL%%/MathJax_Calligraphic-Regular.woff",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/%%URL%%/MathJax_Fraktur-Bold.woff",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/%%URL%%/MathJax_Fraktur-Regular.woff",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/%%URL%%/MathJax_Main-Bold.woff",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/%%URL%%/MathJax_Main-Italic.woff",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/%%URL%%/MathJax_Main-Regular.woff",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/%%URL%%/MathJax_Math-BoldItalic.woff",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/%%URL%%/MathJax_Math-Italic.woff",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/%%URL%%/MathJax_SansSerif-Bold.woff",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/%%URL%%/MathJax_SansSerif-Italic.woff",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/%%URL%%/MathJax_SansSerif-Regular.woff",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/%%URL%%/MathJax_Script-Regular.woff",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/%%URL%%/MathJax_Size1-Regular.woff",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/%%URL%%/MathJax_Size2-Regular.woff",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/%%URL%%/MathJax_Size3-Regular.woff",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/%%URL%%/MathJax_Size4-Regular.woff",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/%%URL%%/MathJax_Typewriter-Regular.woff",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/%%URL%%/MathJax_Vector-Bold.woff",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/%%URL%%/MathJax_Vector-Regular.woff",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/%%URL%%/MathJax_Zero.woff",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/o.id,t.options.baseURL",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/ajax-loader.gif",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/fonts/slick.eot",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/fonts/slick.svg",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/fonts/slick.ttf",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/fonts/slick.woff",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/Images/Home/main-tile-bg.png",
+      "status": "http_error",
+      "http_status": 503
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/n(19589",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/n(30621",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/n(34238",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/n(35602",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/n(77356",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://vjs.zencdn.net/vttjs/0.14.1/vttcue.js",
+      "status": "http_error",
+      "http_status": 403
+    },
+    {
+      "url": "https://vjs.zencdn.net/vttjs/0.14.1/vttregion.js",
+      "status": "http_error",
+      "http_status": 403
+    },
+    {
+      "url": "https://mvp.microsoft.com/en-us/PublicProfile/Photo/4025261",
+      "status": "not_an_asset",
+      "http_status": 200
+    },
+    {
+      "url": "https://reactor-ext-ak.azureedge.net/banners/student-summit-2023.webp",
+      "status": "blocked_address",
+      "http_status": null
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ET_T7jEISsY",
+      "status": "not_an_asset",
+      "http_status": 200
+    },
+    {
+      "url": "https://media.licdn.com/dms/image/C5603AQHiRk0ngpJehw/profile-displayphoto-shrink_800_800/0/1596624285641?e=1707350400&v=beta&t=kK7VcI3veonMkW6RPE3MA_fsth2i-yqXvQ-FBqRSOfw",
+      "status": "http_error",
+      "http_status": 403
+    },
+    {
+      "url": "https://cdn.botframework.com/botframework-webchat/abort-controller/node_modules/event-target-shim/dist/event-target-shim.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://cdn.botframework.com/botframework-webchat/latest/md5.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://cdn.botframework.com/botframework-webchat/latest/nil.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://cdn.botframework.com/botframework-webchat/latest/parse.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://cdn.botframework.com/botframework-webchat/latest/regex.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://cdn.botframework.com/botframework-webchat/latest/rng.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://cdn.botframework.com/botframework-webchat/latest/sha1.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://cdn.botframework.com/botframework-webchat/latest/stringify.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://cdn.botframework.com/botframework-webchat/latest/to.css",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://cdn.botframework.com/botframework-webchat/latest/v1.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://cdn.botframework.com/botframework-webchat/latest/v3.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://cdn.botframework.com/botframework-webchat/latest/v35.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://cdn.botframework.com/botframework-webchat/latest/v4.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://cdn.botframework.com/botframework-webchat/latest/v5.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://cdn.botframework.com/botframework-webchat/latest/validate.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://cdn.botframework.com/botframework-webchat/latest/version.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://cdn.botframework.com/botframework-webchat/markdown-it-attrs/index.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://cdn.botframework.com/botframework-webchat/markdown-it-attrs/patterns.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://cdn.botframework.com/botframework-webchat/markdown-it-attrs/utils.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://cdn.botframework.com/maxresdefault.jpg",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://media.licdn.com/dms/image/C4E03AQHqnfGxdxTWCw/profile-displayphoto-shrink_800_800/0/1593423780275?e=1717632000&v=beta&t=DHaKh4pupnuJl3W9xJSw5RhS6zKvvbWQ9WRU615dU7s",
+      "status": "http_error",
+      "http_status": 403
+    },
+    {
+      "url": "https://media.licdn.com/dms/image/D4E03AQGbdXDysTKdJQ/profile-displayphoto-shrink_800_800/0/1712136189181?e=1717632000&v=beta&t=z4fgcCNiMOKs-WgRTrNkv0Uv9j6NKtUxNY8UlXbsDRg",
+      "status": "http_error",
+      "http_status": 403
+    },
+    {
+      "url": "https://media.licdn.com/dms/image/D4D03AQHoDKaVorC-RQ/profile-displayphoto-shrink_800_800/0/1711920192556?e=1717632000&v=beta&t=kCmj3mb_D5qHcCPe3vSnTMiFq13mbefBVF-uZSqhEVY",
+      "status": "http_error",
+      "http_status": 403
+    },
+    {
+      "url": "https://media.licdn.com/dms/image/D4D03AQHjdOKMyMXuxg/profile-displayphoto-shrink_800_800/0/1679946740137?e=1718236800&v=beta&t=E3jucdoCDUkHujwp6SLQDH47Ejeaj_qssgVzDItVBRk",
+      "status": "http_error",
+      "http_status": 403
+    },
+    {
+      "url": "https://am3pap006files.storage.live.com/y4m9IXudf0Unw_PNqNdmVKOOKxWWXqjyH1NVIC8igFQcrU2Dp4b-HMnUY8yQNBQRXpeR7uGK1MJP2b5x4AjC8pw7dMf3OVe6i3DCWAxmIF1ZgXEx_bCt8nOL6FH4MSa23y9vymKQiOfm5WiXrCy7glBo1UBbyaWFuRgahS-ZxZDmJT_6WSWTkKiXMygkQJUUAZeqtXTgGXGdIpdjBirJEsKrw?encodeFailures=1&width=262&height=322",
+      "status": "http_error",
+      "http_status": 503
+    },
+    {
+      "url": "https://media.licdn.com/dms/image/v2/D5603AQEC3TbA0VCb6w/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1729836432929?e=1738195200&v=beta&t=J5BGNw721kCI0FjOgQoKoMRrkOYY5ygFGpWRLuJ0Yg4",
+      "status": "http_error",
+      "http_status": 403
+    },
+    {
+      "url": "https://media.licdn.com/dms/image/v2/D4D03AQE5XR1T-HF4Sg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1697302664576?e=1739404800&v=beta&t=_JiGM-DBIxsDNk_FDIVYM8gLB8A8FT2lX3swNl8kuF0",
+      "status": "http_error",
+      "http_status": 403
+    },
+    {
+      "url": "https://media.licdn.com/dms/image/v2/D4D03AQGr7Gm1ujFjXg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1715791187526?e=1741824000&v=beta&t=FQjyCw_1wadUnuGZfK1TnrVGjgEZHyW17KLv-AzeupU",
+      "status": "http_error",
+      "http_status": 403
+    },
+    {
+      "url": "https://media.licdn.com/dms/image/v2/D4D03AQHaRKFVSmy_8g/profile-displayphoto-shrink_800_800/B4DZQ_vllfHcAc-/0/1736236227512?e=1742428800&v=beta&t=snug3vPKXykfKJMngt5PJVcSvhxXSQwfXUviDCyjBlo",
+      "status": "http_error",
+      "http_status": 403
+    },
+    {
+      "url": "https://media.licdn.com/dms/image/v2/D5603AQHHV8vHVzrCyQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1700501136130?e=1744243200&v=beta&t=1Fxv7pvFt4RAQSV9qqAYxdFU_RAe8VigJYPa3H74r_s",
+      "status": "http_error",
+      "http_status": 403
+    },
+    {
+      "url": "https://media.licdn.com/dms/image/v2/D4D03AQGMwWfK3fVq7Q/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1731074850188?e=1742428800&v=beta&t=WEMOj1To6laBkQqwqte1OA1YBbPEUcW1l9GcgKjWstg",
+      "status": "http_error",
+      "http_status": 403
+    },
+    {
+      "url": "https://media.licdn.com/dms/image/v2/D4D03AQGWsB5gRxuJiA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1678104833229?e=1744243200&v=beta&t=st9V15jn63Jt-6nJNvjW0We_PffDi_gnkk_hHkPgDLs",
+      "status": "http_error",
+      "http_status": 403
+    },
+    {
+      "url": "https://media.licdn.com/dms/image/v2/D4D03AQGyvSoyXN3Zcg/profile-displayphoto-shrink_800_800/B4DZS7Es2eHIAg-/0/1738305359791?e=1744243200&v=beta&t=vUFwO8eShnltkez4G7yyKCxEK1f64K5y3e9OAVbQGwo",
+      "status": "http_error",
+      "http_status": 403
+    },
+    {
+      "url": "https://media.licdn.com/dms/image/v2/D4D03AQHNQ6pEuaF-oQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1696616229187?e=1742428800&v=beta&t=ibihDYXUo4NZZOixpR4_AxAFhLyf5EIDlG2G4B581K8",
+      "status": "http_error",
+      "http_status": 403
+    },
+    {
+      "url": "https://media.licdn.com/dms/image/v2/C4D03AQEp_gYBTOUmmQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1618662900152?e=1744848000&v=beta&t=HmTFkV2Ci6_HJJmRqePQl-uEYdEp0E9aY_nVFUzKthI",
+      "status": "http_error",
+      "http_status": 403
+    },
+    {
+      "url": "https://media.licdn.com/dms/image/v2/D4D03AQGrpY9K1jbrFg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1723023389593?e=1744848000&v=beta&t=lS3GSA4JgSuzOgJ5JxCiTKZ8BE1LesG4CCpBUdKUZVc",
+      "status": "http_error",
+      "http_status": 403
+    },
+    {
+      "url": "https://media.licdn.com/dms/image/v2/D4E03AQFx311QZHLyDQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1718556912723?e=1744848000&v=beta&t=kjK_o0Fv_VcCm29pK6sU3tLizBnh-yiTQWqpMkUexeQ",
+      "status": "http_error",
+      "http_status": 403
+    },
+    {
+      "url": "https://www.linkedin.com/in/jones-souza-santos/",
+      "status": "http_error",
+      "http_status": 999
+    },
+    {
+      "url": "https://media.licdn.com/dms/image/v2/D4E03AQEJG9Q_bmoG-Q/profile-displayphoto-shrink_800_800/B4EZWVpH5aHMAc-/0/1741972340770?e=1750896000&v=beta&t=_Y9MoLUT4CMaBEOPy-xSb7gp9TnHiECnrMzylIrKsKo",
+      "status": "http_error",
+      "http_status": 403
+    },
+    {
+      "url": "https://media.licdn.com/dms/image/v2/D4D03AQFZT1udnRLdVw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1695213871341?e=1751500800&v=beta&t=JtHx0drFW7lB0v_JXbIo8yVYBTyVcnIb15AqFpeo4_E",
+      "status": "http_error",
+      "http_status": 403
+    },
+    {
+      "url": "https://media.licdn.com/dms/image/v2/C4E03AQFPzcTVaAKmHg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1528193607924?e=1751500800&v=beta&t=M0wyERdaDPHmS6Y1Jkp8bmvebCHb1s9sIk4I4YyFqXY",
+      "status": "http_error",
+      "http_status": 403
+    },
+    {
+      "url": "https://media.licdn.com/dms/image/v2/D4D03AQFimqhXbRbnQQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1719680067199?e=1752105600&v=beta&t=33MhbDmLPvk1LEIF8N-Cx0TTPPAyTt5lx0eR1iLM7N8",
+      "status": "http_error",
+      "http_status": 403
+    },
+    {
+      "url": "https://media.licdn.com/dms/image/v2/C4D03AQHC369DBOsxUQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1648626009919?e=1751500800&v=beta&t=T3aT5vEQQcn-DhJutgHVHapwyMlSTtMIJIQUFgLCPwI",
+      "status": "http_error",
+      "http_status": 403
+    },
+    {
+      "url": "https://media.licdn.com/dms/image/v2/D4D03AQH9jZUVrNEZjQ/profile-displayphoto-shrink_800_800/B4DZaBoB5TGsAc-/0/1745931478563?e=1752105600&v=beta&t=bJrlWYOimf_IF1HQ6BQxjBYZi-apgBRXSorVN_1dPSY",
+      "status": "http_error",
+      "http_status": 403
+    },
+    {
+      "url": "https://media.licdn.com/dms/image/v2/D4D03AQGlRYP_3ioRQg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1732555759565?e=1751500800&v=beta&t=NljKMWBnKjruFTwOGTvDgnzfajknEedi4jJ3ugFehDc",
+      "status": "http_error",
+      "http_status": 403
+    },
+    {
+      "url": "https://media.licdn.com/dms/image/v2/D4D03AQHx99tEnbDuxw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1686030739338?e=1751500800&v=beta&t=iCz462bZpj0DM7yURjqVPdtCoLfg2IRFKHBrbGymWWs",
+      "status": "http_error",
+      "http_status": 403
+    },
+    {
+      "url": "https://media.licdn.com/dms/image/v2/D4D03AQE2CzZNr5nkjA/profile-displayphoto-shrink_800_800/B4DZO5AFk7HMAc-/0/1733975629351?e=1756944000&v=beta&t=rlJXyjZYx-zAuHcSuDI5EIj17Ih2omP6z-yJhSl0gr8",
+      "status": "http_error",
+      "http_status": 403
+    },
+    {
+      "url": "https://microsoft-my.sharepoint.com/personal/v-erikasz_microsoft_com/Documents/Desktop/Speakers%20photos/Marcus%20Grass.jpeg?Web=1",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://media.licdn.com/dms/image/v2/C4D03AQEB2pMB458AaA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1516245004419?e=1738195200&v=beta&t=lCbwRfC6xYdyPuqF6Qog4EID2SlmfYVzH-mCCQCAGXE",
+      "status": "http_error",
+      "http_status": 403
+    },
+    {
+      "url": "https://media.licdn.com/dms/image/v2/C4D03AQF265kf0AKrZg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1662929337976?e=1738195200&v=beta&t=fRvwzSPJ5hfWhfZIMdrRGh7oyIKS5IyOZR6mjU6SK08",
+      "status": "http_error",
+      "http_status": 403
+    },
+    {
+      "url": "https://media.licdn.com/dms/image/v2/C4E03AQFJkH8RzAOqoA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1642503240352?e=1738195200&v=beta&t=W2Yk785E21NY09ZYdViJq4FlCHA5czqSFuYFgC4nCEU",
+      "status": "http_error",
+      "http_status": 403
+    },
+    {
+      "url": "https://media.licdn.com/dms/image/v2/C5603AQFXV5FcP5YY7g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1552549333009?e=1738195200&v=beta&t=HyMVuREcHmx7ZbCnzZxKsXEbP7hZhaL6i-KizerL1uo",
+      "status": "http_error",
+      "http_status": 403
+    },
+    {
+      "url": "https://media.licdn.com/dms/image/v2/D4D03AQFhDTzg9ZFAtA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1732390143287?e=1738195200&v=beta&t=8DTDgkTl30K7Y4jAqriAPWW7FPcJZoXR2Wjfk2ncW70",
+      "status": "http_error",
+      "http_status": 403
+    },
+    {
+      "url": "https://media.licdn.com/dms/image/v2/D4D03AQGUWcnoRp587A/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1674205974991?e=1738195200&v=beta&t=0gWS0BEYZBI74JhgdO_1F-YbbUlhaL5YDpvVJQFB4zE",
+      "status": "http_error",
+      "http_status": 403
+    },
+    {
+      "url": "https://media.licdn.com/dms/image/v2/D4D03AQHRTgH0JXxSHQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1679059163155?e=1738195200&v=beta&t=gEfJyeGTOzIz_ZkXxQGdhmB9_K39m4n3D5eCo8VmUP0",
+      "status": "http_error",
+      "http_status": 403
+    },
+    {
+      "url": "https://media.licdn.com/dms/image/v2/D4D03AQHeQ0z9qU27xA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1708347630356?e=1738195200&v=beta&t=lB3gjYxcUInrkKkGf8k_oK2zbBpfBXg4KAA6loTzUUc",
+      "status": "http_error",
+      "http_status": 403
+    },
+    {
+      "url": "https://media.licdn.com/dms/image/v2/D4D03AQHw9WivBwv6JQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1683639218709?e=1738195200&v=beta&t=arSjyFOaehSVWqLFMFbtNMXeMnEnJVe-DUhpvcf7Jt4",
+      "status": "http_error",
+      "http_status": 403
+    },
+    {
+      "url": "https://media.licdn.com/dms/image/v2/D4E03AQHFLW2FV-tYDQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1672244158711?e=1738195200&v=beta&t=bFDlpOXH7Hto5BUVvtyE5r83_CXR5iMVDnHTNBOpTJA",
+      "status": "http_error",
+      "http_status": 403
+    },
+    {
+      "url": "https://pitango.b-cdn.net/wp-content/uploads/Cecile-Bililiouss-1634.png",
+      "status": "http_error",
+      "http_status": 403
+    },
+    {
+      "url": "https://learnlivestorage.blob.core.windows.net/uploads/headshots/Obinna-Nwokolo.jpg",
+      "status": "blocked_address",
+      "http_status": null
+    },
+    {
+      "url": "https://learnlivestorage.blob.core.windows.net/uploads/headshots/Priyanshi-Mittal.jpg",
+      "status": "blocked_address",
+      "http_status": null
+    },
+    {
+      "url": "https://media.licdn.com/dms/image/C4D03AQFVIrvMInY4Bg/profile-displayphoto-shrink_800_800/0/1640996944111?e=1687392000&v=beta&t=A34FK4hPe5hDAfVWTmBo2t9U_LRk8QI2YTf6yyd_NSw",
+      "status": "http_error",
+      "http_status": 403
+    },
+    {
+      "url": "https://media.licdn.com/dms/image/v2/C4D03AQHWSSnKLAWN0A/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1616336989258?e=1738800000&v=beta&t=N3ZDhagUfoLzhCh3zqTLDhqY-Bjsmdh7lC4Tt-QUisg",
+      "status": "http_error",
+      "http_status": 403
+    },
+    {
+      "url": "https://media.licdn.com/dms/image/v2/C4E03AQGreJuO801gZg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1661946771965?e=1738800000&v=beta&t=_ctVrzOAZEzsW4rFL8D6wda4lrccZnxvERuAbyaZ8g0",
+      "status": "http_error",
+      "http_status": 403
+    },
+    {
+      "url": "https://media.licdn.com/dms/image/v2/C5603AQGgHCXJmGG_EQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1517341607514?e=1738800000&v=beta&t=UGUPpynXbMuHEN9bRPUuPExIFw4a1sGSw9Olj4vFzU0",
+      "status": "http_error",
+      "http_status": 403
+    },
+    {
+      "url": "https://media.licdn.com/dms/image/v2/D4D03AQHju5iO3AJdlQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1673103421624?e=1746057600&v=beta&t=f9_UE6yabM8a4yZ-BoJK4jau24nl2f4UNe0mCc-viK8",
+      "status": "http_error",
+      "http_status": 403
+    },
+    {
+      "url": "https://reactor.crm.dynamics.com/Image/download.aspx?Entity=msevtmgt_speaker&Attribute=rct_uploadspeakerimage&Id=db0fb23c-2fc0-ee11-9079-6045bd023efa&Timestamp=638972108812371089",
+      "status": "http_error",
+      "http_status": 403
+    },
+    {
+      "url": "https://assets.adobedtm.com/5ef092d1efb5/3456d747cef0/core/node_modules/postscribe/dist/postscribe.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://assets.adobedtm.com/5ef092d1efb5/3456d747cef0/core/src/lib/actions/customCode.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://assets.adobedtm.com/5ef092d1efb5/3456d747cef0/core/src/lib/actions/helpers/decorateCode.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://assets.adobedtm.com/5ef092d1efb5/3456d747cef0/core/src/lib/actions/helpers/decorators/decorateGlobalJavaScriptCode.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://assets.adobedtm.com/5ef092d1efb5/3456d747cef0/core/src/lib/actions/helpers/decorators/decorateHtmlCode.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://assets.adobedtm.com/5ef092d1efb5/3456d747cef0/core/src/lib/actions/helpers/decorators/decorateNonGlobalJavaScriptCode.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://assets.adobedtm.com/5ef092d1efb5/3456d747cef0/core/src/lib/actions/helpers/getSourceByUrl.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://assets.adobedtm.com/5ef092d1efb5/3456d747cef0/core/src/lib/actions/helpers/loadCodeSequentially.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://assets.adobedtm.com/5ef092d1efb5/3456d747cef0/core/src/lib/actions/helpers/unescapeHtmlCode.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://assets.adobedtm.com/5ef092d1efb5/3456d747cef0/core/src/lib/conditions/customCode.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://assets.adobedtm.com/5ef092d1efb5/3456d747cef0/core/src/lib/dataElements/pageInfo.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://assets.adobedtm.com/5ef092d1efb5/3456d747cef0/core/src/lib/dataElements/randomNumber.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://assets.adobedtm.com/5ef092d1efb5/3456d747cef0/core/src/lib/events/domReady.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://assets.adobedtm.com/5ef092d1efb5/3456d747cef0/core/src/lib/events/helpers/pageLifecycleEvents.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://assets.adobedtm.com/5ef092d1efb5/3456d747cef0/core/src/lib/helpers/findPageScript.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/azure-devops/static/js/azure-devops-ui/Core/override.css",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://cdn.botframework.com/botframework-webchat/latest/readable-stream/lib/_stream_duplex.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://cdn.botframework.com/botframework-webchat/latest/readable-stream/lib/_stream_passthrough.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://cdn.botframework.com/botframework-webchat/latest/readable-stream/lib/_stream_readable.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://cdn.botframework.com/botframework-webchat/latest/readable-stream/lib/_stream_transform.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://cdn.botframework.com/botframework-webchat/latest/readable-stream/lib/_stream_writable.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://cdn.botframework.com/botframework-webchat/latest/readable-stream/lib/internal/streams/end-of-stream.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://cdn.botframework.com/botframework-webchat/latest/readable-stream/lib/internal/streams/pipeline.js",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://cdn.botframework.com/botframework-webchat/latest/video/vnd.uvvu.mp4",
+      "status": "source_missing",
+      "http_status": 404
+    },
+    {
+      "url": "https://client-api.arkoselabs.com/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/v2/api.js",
+      "status": "http_error",
+      "http_status": 503
+    }
+  ],
+  "referenced_unavailable_asset_ids": {
+    "605178fe3db7ef9327caa3d8": 1,
+    "07ff64ceb6b9fb9f7f060df4": 1,
+    "e2b6edd3db740183d67be932": 2,
+    "8a652fbee91ec274d02e5711": 7,
+    "f2fafd4940d52c8d37ed48e1": 3,
+    "206d9d7c5289659510962687": 1,
+    "c7d464d2d9b0294dd0e997a9": 2,
+    "74174947c0c227aaa4ec8f0f": 1,
+    "558dda25bd56042764391c6b": 2,
+    "7b7701053927b51c17c48b9a": 2,
+    "19a30ff55c05d57b566b2904": 2,
+    "f0808188eac08b147d581bab": 2,
+    "0b25479aa5dc479737e4d8b5": 2,
+    "1df3eee9b6a2aec20a184470": 2,
+    "2211e839b41182ab7205cc70": 2,
+    "56218c2f5eae601f1c767071": 5,
+    "3b357cf362ae2c6b5521b4a6": 2,
+    "56a86f0b252c284d3df625e6": 2,
+    "b8420f6f0c7abe99def3cb1a": 2,
+    "2ddb785236819db99d0fe622": 2,
+    "b1a2c3228bd9be8df972f475": 1,
+    "785069cd87893f8a5e391208": 1,
+    "20eef6c51b5d97689cb9a92b": 1,
+    "413b7128f2522568dfd81c31": 2,
+    "b36374aa44ed191c701aeaa6": 1,
+    "b9b39fc3718df7b76af4a893": 2,
+    "01f6b8d7726738fe617fcfe8": 1,
+    "5e744c4953d46370c381b127": 1,
+    "c0c99e009b4d221db94ff50a": 1,
+    "a94d55854045cf20f615bca4": 1,
+    "2bdb7e3a10fdfe410c7d7a7e": 1,
+    "9e2c5ddd202884e4c229c2cc": 1,
+    "9dd2ebed5857e5497739d35e": 1,
+    "125b224510b5a599faed47f7": 2,
+    "7a005e71b9080e6fcf3566e8": 2,
+    "8d41dd446a9609b712e199bf": 2,
+    "1f8189a6db48202e6cdb0751": 2,
+    "19aa2f77782e955c2e579a30": 2,
+    "21a346f6513708e66b36c542": 2,
+    "92c5ae45e7c47a0ba0841834": 2,
+    "e8ed1b50b74f320a68d773bd": 2,
+    "83763dc844416bbff59c3ef7": 2,
+    "53ae6f7cadaa3f9da74ff8ab": 2,
+    "760435c93387547449565e25": 2,
+    "49c7c8e9d01871ee445c6c89": 2,
+    "94b58893f0580c996596a77a": 2,
+    "9f4d2ebb875fccaf45e69773": 2,
+    "d27025867ed6fae247545019": 2,
+    "ef622a96321748011c918b83": 2,
+    "236d66c88744602b5c579293": 2,
+    "429e8e6c45745987ce1eebc2": 2,
+    "20d57a3b935aa72ab0d5f6ad": 2,
+    "171df097bc6c999de16832d8": 2,
+    "38f776b098533e838d149b7e": 4
+  },
+  "html_text_characters": 113832933,
+  "framer_connected": false,
+  "figma_connected": false
+}
