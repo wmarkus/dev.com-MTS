@@ -1,0 +1,51 @@
+{
+  "updated_at": "2026-10-09T04:53:24+00:00",
+  "scope": {
+    "pages": "exact hostname; English locales and neutral routes pending language confirmation",
+    "excluded_families": [
+      "blog",
+      "games",
+      "microsoft-365",
+      "microsoft-edge"
+    ],
+    "reactor": "included",
+    "external_pages": "excluded; external redirects are recorded without following",
+    "assets": "URL references only; no downloads",
+    "copyright_reproduction": "authorized by user on 2026-10-08; actual capture tracked separately in site/manifest.json"
+  },
+  "known_urls": 5105,
+  "page_statuses": {
+    "discovered": 4812,
+    "external_redirect": 61,
+    "http_error": 1,
+    "inspected": 230,
+    "robots_disallowed": 1
+  },
+  "families": {
+    "advocates": 65,
+    "azure-devops": 60,
+    "developer-center": 41,
+    "reactor": 4922,
+    "windows": 17
+  },
+  "locales": {
+    "en-us": 5034,
+    "unlocalized": 71
+  },
+  "sitemaps_checked": 17,
+  "sitemaps_excluded": 332,
+  "sitemaps_unavailable": 0,
+  "inspected_pages": 230,
+  "uninspected_urls": 4812,
+  "migrated_pages": 0,
+  "complete_site_inventory": false,
+  "coverage_notes": [
+    "Counts represent discovered URL records, not unique working pages.",
+    "Scope: English routes and neutral routes pending English confirmation; Reactor is included.",
+    "Microsoft Developer blog, Edge, games and Microsoft 365 are excluded by user direction.",
+    "Sitemaps and HTML links cannot prove the absence of unlisted or client-generated routes.",
+    "Failed sitemaps, uninspected pages, redirects, robots exclusions and access failures remain visible.",
+    "Only inspected pages have HTML metadata; rendered behavior and CSS dependencies are not fully audited.",
+    "This initial metadata file contains no page bodies; authorized site captures are tracked separately in site/manifest.json."
+  ]
+}

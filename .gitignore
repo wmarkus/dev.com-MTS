@@ -1,0 +1,14 @@
+.DS_Store
+.playwright-mcp/
+.impeccable/hook.cache.json
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+.venv/
+node_modules/
+coverage/
+data/*.tmp
+data/site-inventory.json
+.mirror-cache/

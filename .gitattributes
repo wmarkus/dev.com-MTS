@@ -1,0 +1,4 @@
+# Preserve captured upstream bytes and do not lint their original whitespace.
+site/pages/** -text -whitespace linguist-generated
+site/assets/** -text -whitespace linguist-vendored
+site/media/** binary linguist-vendored

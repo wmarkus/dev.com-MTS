@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "phase": "authorized-recreation",
+  "complete_clone": false,
+  "reproduction_authorized": true,
+  "authorization": "User explicitly granted full permission on 2026-10-08 and directed repository recreation before Framer or Figma work.",
+  "framer_connected": false,
+  "figma_connected": false,
+  "default_decision": "undecided",
+  "scope": {
+    "language": "English only",
+    "included": ["Developer Center", "Reactor", "other English same-host areas not explicitly excluded"],
+    "excluded": ["Microsoft Developer blog", "Microsoft Edge", "games", "Microsoft 365"],
+    "excluded_area_links": "Preserve links on included pages; do not recreate the destinations."
+  },
+  "allowed_decisions": ["undecided", "keep", "consolidate", "remove"],
+  "blockers": [
+    {
+      "id": "framer-project",
+      "detail": "No destination Framer project or project-specific connection has been supplied."
+    },
+    {
+      "id": "figma-file",
+      "detail": "No destination Figma file or node URL was supplied. The user's existing design board must not be guessed."
+    }
+  ],
+  "recommended_content_model": {
+    "pages": ["sourceUrl", "sourcePath", "locale", "family", "title", "canonical", "decision", "template", "verificationStatus", "migrationStatus"],
+    "sections": ["pageId", "order", "componentType", "heading", "body", "actions", "assetIds", "visibility"],
+    "navigation": ["parentId", "order", "label", "destination", "destinationType"],
+    "assets": ["sourceUrl", "localPath", "mediaType", "alt", "rightsStatus", "usedBy"],
+    "redirects": ["sourcePath", "destination", "status", "reason"]
+  },
+  "integration_evidence": [
+    {
+      "name": "Framer Server API",
+      "url": "https://www.framer.com/developers/server-api-quick-start",
+      "verified_on": "2026-10-08",
+      "finding": "Framer supports project-scoped programmatic access through framer-api. A project connection is required; a GitHub repository does not become a Framer site automatically."
+    },
+    {
+      "name": "Framer external agents",
+      "url": "https://www.framer.com/agents/external/",
+      "verified_on": "2026-10-08",
+      "finding": "External agents can edit canvas components and CMS after an explicit project connection. Setup and access grants have not been performed."
+    },
+    {
+      "name": "Figma to Framer",
+      "url": "https://www.framer.com/solutions/figma-to-html/",
+      "verified_on": "2026-10-08",
+      "finding": "The official Figma plugin copies design layers into Framer. Responsive behavior and interactions require refinement. This is not evidence of bidirectional live sync."
+    },
+    {
+      "name": "Framer hosting and export",
+      "url": "https://www.framer.com/help/articles/can-i-export-my-website-to-html-and-self-host-it/",
+      "verified_on": "2026-10-08",
+      "finding": "Framer does not provide standalone HTML export for self-hosting. Keep the repository as the independent content and implementation source if code portability is required."
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "source": "https://developer.microsoft.com/en-us/",
+  "observed_on": "2026-10-08",
+  "evidence": "Rendered desktop DOM inspected with Playwright. Counts include hidden tab panels and carousel slides, not just the visible viewport.",
+  "copyright_status": "Structure and original descriptions only; source prose and media are not reproduced.",
+  "counts": {
+    "links": 177,
+    "image_elements": 76,
+    "buttons": 33,
+    "tab_groups": 2,
+    "tab_panels": 10,
+    "carousel_groups": 4,
+    "forms": 1
+  },
+  "sections": [
+    {
+      "id": "global-header",
+      "name": "Global navigation",
+      "structure": "Brand navigation; product, language and hub menus; direct links; overflow and global Microsoft menus; search.",
+      "migration_requirement": "Preserve every menu destination. External destinations and excluded product areas remain links rather than local pages. Rebuild responsive navigation and keyboard interaction."
+    },
+    {
+      "id": "announcement",
+      "name": "Announcement strip",
+      "structure": "Dismissible campaign notice with an image and outbound action.",
+      "migration_requirement": "Record the active campaign and dismissal behavior. Do not silently omit campaign content."
+    },
+    {
+      "id": "hero",
+      "name": "Opening introduction",
+      "structure": "Page identity, primary heading, introductory content and one illustration.",
+      "migration_requirement": "Obtain approved copy and illustration; preserve the initial layout before redesign."
+    },
+    {
+      "id": "featured-products",
+      "name": "Product explorer",
+      "structure": "Five product tabs, fifteen image elements and fifteen links across all panels.",
+      "migration_requirement": "Migrate every tab, not only the default Azure panel. Groups cover Azure, GitHub, Microsoft 365, Visual Studio and Windows."
+    },
+    {
+      "id": "banners",
+      "name": "Campaign carousel",
+      "structure": "Five slides, six image elements and previous/next controls.",
+      "migration_requirement": "Capture every slide and action. Preserve accessible carousel navigation and skip links."
+    },
+    {
+      "id": "news-and-updates",
+      "name": "News carousel",
+      "structure": "Three article slides plus a changelog route.",
+      "migration_requirement": "Keep article metadata separate from the carousel template. External articles stay outbound."
+    },
+    {
+      "id": "languages",
+      "name": "Programming-language destinations",
+      "structure": "Six icon links, mixing same-host language pages and external sites.",
+      "migration_requirement": "Preserve the full set of links; migrate only same-host destination pages."
+    },
+    {
+      "id": "communities",
+      "name": "Community carousel",
+      "structure": "Eight community slides linking to internal and external programs.",
+      "migration_requirement": "Include Azure Tech Groups, advocates and Reactor in discovery; do not reduce to the currently visible cards."
+    },
+    {
+      "id": "hubs",
+      "name": "Developer hub cards",
+      "structure": "Three illustrated destinations for AI, APIs and games.",
+      "migration_requirement": "Include AI and API hub routes. Keep the games link but exclude the games destination from recreation, per user direction."
+    },
+    {
+      "id": "developer-story",
+      "name": "Developer profile feature",
+      "structure": "Editorial story region with two image elements and two links.",
+      "migration_requirement": "Obtain the approved story copy and media. Preserve external story destinations as links."
+    },
+    {
+      "id": "blogs",
+      "name": "Blog feature",
+      "structure": "Featured article area with four image elements and five links.",
+      "migration_requirement": "Keep this region on the included homepage, but do not recreate blog destination pages. The user excluded the Microsoft Developer blog; other editorial hosts are already out of scope."
+    },
+    {
+      "id": "events",
+      "name": "Event carousel",
+      "structure": "Five event slides, previous/next controls and a community-events link.",
+      "migration_requirement": "Record event dates, expiry and registration dependencies from an authorized content export."
+    },
+    {
+      "id": "source-newsletter",
+      "name": "Newsletter call to action",
+      "structure": "One image and a subscription destination.",
+      "migration_requirement": "Keep the existing destination; do not submit subscriptions or fabricate a working local signup service."
+    },
+    {
+      "id": "learn",
+      "name": "Learning explorer",
+      "structure": "Five topic tabs, twenty image elements and twenty-five links across all panels.",
+      "migration_requirement": "Keep all topic panels: AI, Azure, Copilot, DevOps and Security. Learning content on other hosts is not migrated."
+    },
+    {
+      "id": "socials",
+      "name": "Social destinations",
+      "structure": "Six outbound social links.",
+      "migration_requirement": "Preserve destinations without crawling external social sites."
+    },
+    {
+      "id": "global-footer",
+      "name": "Footer and preferences",
+      "structure": "Locale destination, legal links, cookie-management control and a theme selector.",
+      "migration_requirement": "Rebuild local theme behavior. Define preview-safe consent behavior and keep third-party analytics disabled."
+    }
+  ],
+  "cross_cutting": [
+    "Search is a GET form with a q field; backend behavior has not been reproduced or fully verified.",
+    "Product and learning tab panels exist in the DOM even when hidden.",
+    "Source loads Microsoft global-navigation, consent and analytics dependencies from other hosts.",
+    "An external CDN asset is not an external page; record it as a dependency pending reuse approval.",
+    "Mobile menus, breakpoint-specific layouts, focus behavior and theme variants still require a full rendered-state audit.",
+    "DOM asset references do not include all CSS backgrounds, font files or lazy-loaded media."
+  ]
+}
