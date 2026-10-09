@@ -1,0 +1,2668 @@
+<!doctype html>
+<html lang="en-US" data-theme="light">
+<head>
+    <!-- Authorized local recreation. External services are not impersonated; analytics disabled. --><meta name="robots" content="noindex,nofollow"><script src="/__mirror/runtime.js"></script><title>Microsoft Power Platform - Accelerate development with AI-powered, low code tools | Microsoft Developer</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark light">
+    <meta name="awa-env" content="Production">
+    <meta name="description" content="Simplify integration with a unified, low-code platform for building, managing, and integrating applications and data across Microsoft and third-party apps and services.">
+
+    <meta property="og:title" content="Microsoft Power Platform - Accelerate development with AI-powered, low code tools | Microsoft Developer">
+    <meta property="og:description" content="Simplify integration with a unified, low-code platform for building, managing, and integrating applications and data across Microsoft and third-party apps and services.">
+    <meta property="og:image" content="https://developer.microsoft.com/_devcom/images/logo-ms-social.jpg">
+    <meta property="og:image:alt" content="Microsoft Developer">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Microsoft Developer">
+    <meta property="og:url" content="https://developer.microsoft.com/en-us/power-platform">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@msdev">
+    <meta name="twitter:image" content="https://developer.microsoft.com/_devcom/images/logo-ms-social.jpg">
+
+    
+    <meta name="awa-pageType" content="Resources">
+    <meta name="awa-product" content="Power Platform">
+    <meta name="awa-prdct" content="Power Platform">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+    <link rel="canonical" href="https://developer.microsoft.com/en-us/power-platform">
+    
+    
+<style>
+    uhf-header:not(:defined) {
+        display: block;
+        height: 54px;
+    }
+
+    uhf-brand:not(:defined),
+    uhf-contextual-nav:not(:defined),
+    uhf-actions:not(:defined),
+    uhf-global-nav:not(:defined),
+    uhf-search:not(:defined),
+    uhf-mecontrol:not(:defined),
+    uhf-cart:not(:defined),
+    uhf-dropdown:not(:defined),
+    uhf-popout:not(:defined) {
+        visibility: hidden;
+    }
+</style>
+<link rel="stylesheet" href="/__mirror/assets/e4d14f1f8bc83e293e136adc"> <!-- UHF CSS -->
+
+    <script src="/__mirror/assets/fe2fc9b62e744e583f0eb2a4"></script>
+
+    <!-- 1DS script -->
+    
+    
+    <!-- /1DS script -->
+
+    
+</head>
+<body>
+    <!-- UHF Header -->
+    
+<uhf-header locale="en-us" partnerid="MSDev-Community" headerid="MSDev-DEVCOM-Community-Header" theme="light">
+    <a slot="skip-link" class="uhf-skip-link" href="#mainContent" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "SkipToMain", "cN": "Skip to content_nonnav", "ecn": "Skip to content_nonnav", "ehn": "SkipToMain"}'>Skip to main content</a>
+    
+<uhf-brand slot="brand">
+        <a href="https://www.microsoft.com/" class="uhf-microsoft-logo" slot="microsoft-logo" aria-label="Microsoft" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Anchor", "cN": "GlobalNav_Logo_cont", "ecn": "GlobalNav_Logo_cont", "ehn": "Anchor"}'>
+            <img src="/__mirror/assets/adea6dac4ae78fd2b1b9eda9" alt="Microsoft">
+        </a>
+            <a href="/en-us/" class="uhf-site-logo" slot="brand-logo" aria-label="Developer" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Anchor", "cN": "CatNav_Developer_nav", "ecn": "CatNav_Developer_nav", "ehn": "Anchor"}'>
+ <span>Developer</span>             </a>
+</uhf-brand>
+
+
+<uhf-contextual-nav slot="contextual-nav" overflowtext="More" brand="Developer" homeurl="https://developer.microsoft.com/en-us/" hometext="Home" data-nav-label="Contextual menu">
+
+
+
+<uhf-dropdown text="Products" id="" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_nav", "ecn": "CatNav_Products_nav", "ehn": "Products"}'>
+    
+
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://learn.microsoft.com/en-us/dynamics365/get-started/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Dynamics 365_nav", "ecn": "CatNav_Products_Dynamics 365_nav", "ehn": "Products"}'>Dynamics 365</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://github.com/home" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_GitHub_nav", "ecn": "CatNav_Products_GitHub_nav", "ehn": "Products"}'>GitHub</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://developer.microsoft.com/en-us/microsoft-365" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Microsoft 365_nav", "ecn": "CatNav_Products_Microsoft 365_nav", "ehn": "Products"}'>Microsoft 365</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/azure" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Microsoft Azure_nav", "ecn": "CatNav_Products_Microsoft Azure_nav", "ehn": "Products"}'>Microsoft Azure</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://developer.microsoft.com/en-us/microsoft-edge/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Microsoft Edge_nav", "ecn": "CatNav_Products_Microsoft Edge_nav", "ehn": "Products"}'>Microsoft Edge</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://ai.azure.com/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Microsoft Foundry_nav", "ecn": "CatNav_Products_Microsoft Foundry_nav", "ehn": "Products"}'>Microsoft Foundry</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://developer.microsoft.com/en-us/graph" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Microsoft Graph_nav", "ecn": "CatNav_Products_Microsoft Graph_nav", "ehn": "Products"}'>Microsoft Graph</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/identity" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Microsoft Identity Platform_nav", "ecn": "CatNav_Products_Microsoft Identity Platform_nav", "ehn": "Products"}'>Microsoft Identity Platform</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://developer.microsoft.com/en-us/microsoft-teams" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Microsoft Teams_nav", "ecn": "CatNav_Products_Microsoft Teams_nav", "ehn": "Products"}'>Microsoft Teams</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/power-platform" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Power Platform_nav", "ecn": "CatNav_Products_Power Platform_nav", "ehn": "Products"}'>Power Platform</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://visualstudio.microsoft.com/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Visual Studio_nav", "ecn": "CatNav_Products_Visual Studio_nav", "ehn": "Products"}'>Visual Studio</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://code.visualstudio.com/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Visual Studio Code_nav", "ecn": "CatNav_Products_Visual Studio Code_nav", "ehn": "Products"}'>Visual Studio Code</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/windows/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Windows_nav", "ecn": "CatNav_Products_Windows_nav", "ehn": "Products"}'>Windows</a>
+
+
+</uhf-dropdown>
+
+
+<uhf-dropdown text="Languages" id="" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Languages", "cN": "CatNav_Languages_nav", "ecn": "CatNav_Languages_nav", "ehn": "Languages"}'>
+    
+
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://dotnet.microsoft.com/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Languages", "cN": "CatNav_Languages_.NET_nav", "ecn": "CatNav_Languages_.NET_nav", "ehn": "Languages"}'>.NET</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/cpp" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Languages", "cN": "CatNav_Languages_C++_nav", "ecn": "CatNav_Languages_C++_nav", "ehn": "Languages"}'>C++</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/java" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Languages", "cN": "CatNav_Languages_Java_nav", "ecn": "CatNav_Languages_Java_nav", "ehn": "Languages"}'>Java</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/javascript/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Languages", "cN": "CatNav_Languages_JavaScript_nav", "ecn": "CatNav_Languages_JavaScript_nav", "ehn": "Languages"}'>JavaScript</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/python" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Languages", "cN": "CatNav_Languages_Python_nav", "ecn": "CatNav_Languages_Python_nav", "ehn": "Languages"}'>Python</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://www.typescriptlang.org/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Languages", "cN": "CatNav_Languages_TypeScript_nav", "ecn": "CatNav_Languages_TypeScript_nav", "ehn": "Languages"}'>TypeScript</a>
+
+
+</uhf-dropdown>
+
+
+<uhf-dropdown text="Hubs" id="" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Hubs", "cN": "CatNav_Hubs_nav", "ecn": "CatNav_Hubs_nav", "ehn": "Hubs"}'>
+    
+
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/build-apis" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Hubs", "cN": "CatNav_Hubs_Build APIs_nav", "ecn": "CatNav_Hubs_Build APIs_nav", "ehn": "Hubs"}'>Build APIs</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://developer.microsoft.com/en-us/games/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Hubs", "cN": "CatNav_Hubs_Game development_nav", "ecn": "CatNav_Hubs_Game development_nav", "ehn": "Hubs"}'>Game development</a>
+
+
+</uhf-dropdown>
+
+    <a class="uhf-nav-item uhf-nav-link" href="https://developer.microsoft.com/blog" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Blog", "cN": "CatNav_Blog_nav", "ecn": "CatNav_Blog_nav", "ehn": "Blog"}'>Blog</a>
+
+
+    <a class="uhf-nav-item uhf-nav-link" href="/en-us/events" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Events", "cN": "CatNav_Events_nav", "ecn": "CatNav_Events_nav", "ehn": "Events"}'>Events</a>
+
+
+    <a class="uhf-nav-item uhf-nav-link" href="https://learn.microsoft.com/docs/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Documentation", "cN": "CatNav_Documentation_nav", "ecn": "CatNav_Documentation_nav", "ehn": "Documentation"}'>Documentation</a>
+
+
+    <a class="uhf-nav-item uhf-nav-link" href="/en-us/community" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Community", "cN": "CatNav_Community_nav", "ecn": "CatNav_Community_nav", "ehn": "Community"}'>Community</a>
+
+
+    <a class="uhf-nav-item uhf-nav-link" href="/en-us/changelog" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Changelog", "cN": "CatNav_Changelog_nav", "ecn": "CatNav_Changelog_nav", "ehn": "Changelog"}'>Changelog</a>
+</uhf-contextual-nav>    <uhf-actions slot="actions">
+        
+<uhf-global-nav slot="global-nav" text="All Microsoft" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_nonnav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_nonnav", "ehn": "OneMicrosoftBar"}' data-nav-label="All Microsoft menu">
+    
+    <uhf-dropdown-header slot="header">
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/security" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Microsoft Security_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Microsoft Security_nav", "ehn": "OneMicrosoftBar"}'>Microsoft Security</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://azure.microsoft.com/en-us/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Azure_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Azure_nav", "ehn": "OneMicrosoftBar"}'>Azure</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://dynamics.microsoft.com/en-us/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Dynamics 365_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Dynamics 365_nav", "ehn": "OneMicrosoftBar"}'>Dynamics 365</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/microsoft-365/business/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Microsoft 365_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Microsoft 365_nav", "ehn": "OneMicrosoftBar"}'>Microsoft 365</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/microsoft-teams/group-chat-software" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Microsoft Teams_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Microsoft Teams_nav", "ehn": "OneMicrosoftBar"}'>Microsoft Teams</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/windows-365" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Windows 365_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Windows 365_nav", "ehn": "OneMicrosoftBar"}'>Windows 365</a>
+    </uhf-dropdown-header>
+
+        <uhf-dropdown-column title="Tech &amp; innovation" show-tooltip="false" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_nav", "ehn": "OneMicrosoftBar"}'>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/ai?icid=DSM_AllCommercial_AI" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_Microsoft AI_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_More_TechInnovation__AI_nav", "ehn": "OneMicrosoftBar"}'>Microsoft AI</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://azure.microsoft.com/en-us/solutions/space/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_Azure Space_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_More_TechInnovation_AzureSpace_nav", "ehn": "OneMicrosoftBar"}'>Azure Space</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/mixed-reality/windows-mixed-reality" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_Mixed reality_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_More_TechInnovation_MixedReality_nav", "ehn": "OneMicrosoftBar"}'>Mixed reality</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/hololens" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_Microsoft HoloLens_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_More_TechInnovation_MicrosoftHololens_nav", "ehn": "OneMicrosoftBar"}'>Microsoft HoloLens</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/microsoft-viva" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_Microsoft Viva_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_More_TechInnovation_Microsoft Viva_nav", "ehn": "OneMicrosoftBar"}'>Microsoft Viva</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://azure.microsoft.com/en-us/solutions/quantum-computing/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_Quantum computing_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_More_TechInnovation_QuantumComputing_nav", "ehn": "OneMicrosoftBar"}'>Quantum computing</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/corporate-responsibility/sustainability?icid=DSM_AllCommercial_Sustainability" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_Sustainability_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_More_TechInnovation_Sustainability_nav", "ehn": "OneMicrosoftBar"}'>Sustainability</a>
+        </uhf-dropdown-column>
+        <uhf-dropdown-column title="Industries" show-tooltip="false" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_nav", "ehn": "OneMicrosoftBar"}'>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/education" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_Education_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_More_Industries_Education_nav", "ehn": "OneMicrosoftBar"}'>Education</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/industry/automotive" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_Automotive_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_More_Industries_Automotive_nav", "ehn": "OneMicrosoftBar"}'>Automotive</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/industry/financial-services/banking" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_Financial services_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_More_Industries_Financialservices_nav", "ehn": "OneMicrosoftBar"}'>Financial services</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/industry/government" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_Government_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_More_Industries_Government_nav", "ehn": "OneMicrosoftBar"}'>Government</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/industry/health/microsoft-cloud-for-healthcare" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_Healthcare_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_More_Industries_Health_nav", "ehn": "OneMicrosoftBar"}'>Healthcare</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/industry/manufacturing/microsoft-cloud-for-manufacturing" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_Manufacturing_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_More_Industries_Manufacturing_nav", "ehn": "OneMicrosoftBar"}'>Manufacturing</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/industry/consumer-goods" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_Retail_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_More_Industries_Retail_nav", "ehn": "OneMicrosoftBar"}'>Retail</a>
+        </uhf-dropdown-column>
+        <uhf-dropdown-column title="Partners" show-tooltip="false" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_nav", "ehn": "OneMicrosoftBar"}'>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://partner.microsoft.com/en-US/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_Find a partner_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_More_Partner_FindPartner_nav", "ehn": "OneMicrosoftBar"}'>Find a partner</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://partner.microsoft.com/en-US/membership/cloud-solution-provider" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_Become a partner_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_More_Partner_BecomePartner_nav", "ehn": "OneMicrosoftBar"}'>Become a partner</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://partner.microsoft.com/en-us/membership" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_Partner Network_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_More_Partner_PartnerNetwork_nav", "ehn": "OneMicrosoftBar"}'>Partner Network</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://marketplace.microsoft.com/?icid=DSM_AllCommercial_Marketplace" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_Microsoft Marketplace_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_More_Partner_Marketplace_nav", "ehn": "OneMicrosoftBar"}'>Microsoft Marketplace</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/software-development-companies?icid=DSM_AllCommercial_SoftwareCompanies" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_Software companies_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_Software companies_nav", "ehn": "OneMicrosoftBar"}'>Software companies</a>
+        </uhf-dropdown-column>
+        <uhf-dropdown-column title="Resources" show-tooltip="false" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_nav", "ehn": "OneMicrosoftBar"}'>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://blogs.microsoft.com/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_Blog_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_More_Resources_Blog_nav", "ehn": "OneMicrosoftBar"}'>Blog</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://about.ads.microsoft.com/en-us?s_cid=dig-src_uhfcomm" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_Microsoft Advertising_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_More_Resources_MicrosoftAdvertising_nav", "ehn": "OneMicrosoftBar"}'>Microsoft Advertising</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_Developer Center_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_More_Resources_DeveloperCenter_nav", "ehn": "OneMicrosoftBar"}'>Developer Center</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://learn.microsoft.com/docs/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_Documentation_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_More_Resources_Documentation_nav", "ehn": "OneMicrosoftBar"}'>Documentation</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/events" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_Events_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_More_Resources_Events_nav", "ehn": "OneMicrosoftBar"}'>Events</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/licensing/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_Licensing_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_More_Resources_Licensing_nav", "ehn": "OneMicrosoftBar"}'>Licensing</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://learn.microsoft.com/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_Microsoft Learn_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_More_Resources_MicrosoftLearn_nav", "ehn": "OneMicrosoftBar"}'>Microsoft Learn</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/research/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_Microsoft Research_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_More_Resources_MicrosoftResearch_nav", "ehn": "OneMicrosoftBar"}'>Microsoft Research</a>
+        </uhf-dropdown-column>
+
+    <uhf-dropdown-footer slot="footer">
+        <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/sitemap" data-m="">View Sitemap</a>
+    </uhf-dropdown-footer>
+
+</uhf-global-nav>
+
+
+            <uhf-search slot="search" placeholder="Search or ask a question" search-label="Search" cancel-label="Cancel" suggestions-available-text="{0} suggestions available" searchurl="https://www.microsoft.com/en-us/search/explore" autosuggesturl="https://www.microsoft.com/msstoreapiprod/api/autosuggest" queryparametername="q" clientid="7F27B536-CF6B-4C65-8638-A0F8CBDFCA65" productcount="1,5,5" source="Iris-Products,DCatAll-Products,Microsoft-Terms">
+            </uhf-search>
+    </uhf-actions>
+</uhf-header>
+
+    <div class="site-banners">
+
+
+
+<section class="announcement-banner d-none" data-mount="ocr-alert-dismissible" data-identifier="windows-hybrid-intelligence">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="announcement-banner__badge">
+                    <span class="badge badge--size-xs badge-logo--m theme-day">
+                        <div class="ocr-icon d-inline-flex">
+                            <div class="ocr-img media__asset">
+                                <img src="/__mirror/assets/3e387745acc96f18d8365e8a" alt="">
+                            </div>
+                        </div>
+                    </span>
+                </div>
+                <div class="announcement-banner__center">
+                    <div class="announcement-banner__content" role="alert">
+                        
+                        <p>Building Windows for hybrid intelligence  –  Run agents locally or in the cloud, with enterprise-grade security and manageability.</p>
+                    </div>
+                    <div class="announcement-banner__action">
+                        <a href="https://aka.ms/WindowsEraofAI" class="link link-inline" target="_blank" data-bi-an="top-banner" data-bi-id="windows-hybrid-intelligence">
+                            <span class="link__text">Read more</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-auto d-flex">
+                <div class="announcement-banner__dismiss">
+                    <button id="fake-button" type="button" class="d-none" aria-label="close" data-dismiss="alert"></button>
+                    <button type="button" class="alert-dismiss btn btn--ghost glyph-append glyph-append-cancel" aria-label="close">
+                        <span class="glyph-prepend"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>    </div>
+
+    <div id="mainContent" role="main">
+        
+
+
+
+<div id="power-platform">
+
+    <section id="hero">
+        <div class="section-master section-master--bg-image section-master--bg-image-stacked bg--neutral-fade section-master--density-compact section-master--blade-hero-card-carousel">
+            <div class="section-master__image">
+                <div class="ocr-img media__asset ">
+                    <picture>
+                        <source srcset="/__mirror/assets/acc3c4dee92da01a670d3399" media="none and (prefers-color-scheme: dark)">
+                        <source srcset="/__mirror/assets/2722b421bbd535a6ec074e79" media="none and (prefers-color-scheme: dark)">
+                        <source srcset="/__mirror/assets/1ec48e26bc7db26b7da25f99" media="none and (prefers-color-scheme: light)">
+                        <source srcset="/__mirror/assets/1e3c4e001ad4d740ae587a79" media="none and (prefers-color-scheme: light)">
+                        <img src="/__mirror/assets/1e3c4e001ad4d740ae587a79" alt="">
+                    </source></source></source></source></picture>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="layout section-master__layout section-master--layout-cols-2">
+                            <div class="layout__col">
+                                <div class="section-master__layout-header">
+                                    <div class="block-heading block-heading--size-xl">
+                                        <h1 class="block-heading__title">Build smarter and faster with Power Platform</h1>
+                                        <div class="block-heading__button-group">
+                                            <div class="button-group">
+                                                <a role="button" class="btn" target="_blank" data-bi-an="hero" data-bi-cn="read-news" data-bi-ct="button" href="https://learn.microsoft.com/power-platform/developer/get-started">
+                                                    <div class="btn__text">Read docs</div>
+                                                </a>
+                                                <a role="button" class="btn btn--secondary" target="_blank" data-bi-an="hero" data-bi-cn="create-dev-environment" data-bi-ct="button" href="https://www.microsoft.com/power-platform/products/power-apps/free">
+                                                    <div class="btn__text">Create a dev environment</div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="secondary-sticky-nav">
+        <div class="sticky" data-mount="sticky" data-direction="top" data-observer-behavior="always">
+            <div class="secondary-nav">
+                <nav id="sticky-nav" class="container d-flex flex-grow-1" aria-label="In Page Navigation">
+                    <div class="dropdown">
+                        <a class="w-100 dropdown__link" id="menu-list-label-default" data-mount="m365-dropdown" aria-expanded="false" aria-controls="secondary-sticky-nav-menu-list" type="button" role="button" tabindex="0" aria-labelledby="secondary-sticky-nav-label">
+                            <div class="list-item">
+                                <div class="list-item__inner d-flex align-items-center py-m" id="secondary-sticky-nav-label" aria-hidden="true">
+                                    <div class="list-item__content flex-grow-1 d-flex flex-column">
+                                        <div class="fg--base-strong label list-item__content-title">
+                                            <p>Menu</p>
+                                        </div>
+                                    </div>
+                                    <div class="list-item__trailing">
+                                        <div class="ocr-icon d-inline-flex ocr-icon--size-s">
+                                            <span class="glyph-prepend glyph-prepend-chevron-down" aria-label="">
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <ul class="dropdown-menu menu-list p-0 rounded-scrollbar overflow-auto" id="secondary-sticky-nav-menu-list" aria-labelledby="menu-list-label-default" tabindex="-1">
+                            <li class="menu-list__list-item">
+        <a class="menu-list__item-link" href="#overview" data-bi-an="secondary-sticky-nav" data-bi-cn="overview" data-bi-ct="nav">
+            <div class="indicator indicator--shape-pill"></div>
+            <span class="menu-list__list-item-text">
+                <div class="list-item">
+                    <div class="list-item__inner d-flex align-items-center py-m">
+                        <div class="list-item__content flex-grow-1 d-flex flex-column">
+                            <div class="fg--base-strong label list-item__content-title">
+                                <p>Overview</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </span>
+        </a>
+    </li>
+                            <li class="menu-list__list-item">
+        <a class="menu-list__item-link" href="#products" data-bi-an="secondary-sticky-nav" data-bi-cn="products" data-bi-ct="nav">
+            <div class="indicator indicator--shape-pill"></div>
+            <span class="menu-list__list-item-text">
+                <div class="list-item">
+                    <div class="list-item__inner d-flex align-items-center py-m">
+                        <div class="list-item__content flex-grow-1 d-flex flex-column">
+                            <div class="fg--base-strong label list-item__content-title">
+                                <p>Products + extensions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </span>
+        </a>
+    </li>
+                            <li class="menu-list__list-item">
+        <a class="menu-list__item-link" href="#featured-solutions" data-bi-an="secondary-sticky-nav" data-bi-cn="featured-solutions" data-bi-ct="nav">
+            <div class="indicator indicator--shape-pill"></div>
+            <span class="menu-list__list-item-text">
+                <div class="list-item">
+                    <div class="list-item__inner d-flex align-items-center py-m">
+                        <div class="list-item__content flex-grow-1 d-flex flex-column">
+                            <div class="fg--base-strong label list-item__content-title">
+                                <p>Featured solutions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </span>
+        </a>
+    </li>
+                            <li class="menu-list__list-item">
+        <a class="menu-list__item-link" href="#resources" data-bi-an="secondary-sticky-nav" data-bi-cn="resources" data-bi-ct="nav">
+            <div class="indicator indicator--shape-pill"></div>
+            <span class="menu-list__list-item-text">
+                <div class="list-item">
+                    <div class="list-item__inner d-flex align-items-center py-m">
+                        <div class="list-item__content flex-grow-1 d-flex flex-column">
+                            <div class="fg--base-strong label list-item__content-title">
+                                <p>Resources</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </span>
+        </a>
+    </li>
+                            <li class="menu-list__list-item">
+        <a class="menu-list__item-link" href="#news-updates" data-bi-an="secondary-sticky-nav" data-bi-cn="news-announcements" data-bi-ct="nav">
+            <div class="indicator indicator--shape-pill"></div>
+            <span class="menu-list__list-item-text">
+                <div class="list-item">
+                    <div class="list-item__inner d-flex align-items-center py-m">
+                        <div class="list-item__content flex-grow-1 d-flex flex-column">
+                            <div class="fg--base-strong label list-item__content-title">
+                                <p>News + announcements</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </span>
+        </a>
+    </li>
+                            <li class="menu-list__list-item">
+        <a class="menu-list__item-link" href="#case-studies" data-bi-an="secondary-sticky-nav" data-bi-cn="case-studies" data-bi-ct="nav">
+            <div class="indicator indicator--shape-pill"></div>
+            <span class="menu-list__list-item-text">
+                <div class="list-item">
+                    <div class="list-item__inner d-flex align-items-center py-m">
+                        <div class="list-item__content flex-grow-1 d-flex flex-column">
+                            <div class="fg--base-strong label list-item__content-title">
+                                <p>Case studies</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </span>
+        </a>
+    </li>
+                            <li class="menu-list__list-item">
+        <a class="menu-list__item-link" href="#power-platform-community" data-bi-an="secondary-sticky-nav" data-bi-cn="power-platform-community" data-bi-ct="nav">
+            <div class="indicator indicator--shape-pill"></div>
+            <span class="menu-list__list-item-text">
+                <div class="list-item">
+                    <div class="list-item__inner d-flex align-items-center py-m">
+                        <div class="list-item__content flex-grow-1 d-flex flex-column">
+                            <div class="fg--base-strong label list-item__content-title">
+                                <p>Community</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </span>
+        </a>
+    </li>
+                        </ul>
+
+                    </div>
+                </nav>
+                <div class="indicator indicator--horizontal"></div>
+            </div>
+        </div>
+
+        <div class="scrollspy-container">
+
+            <section id="overview">
+                <div class="section-master section-master--bg-image bg--overlay-full">
+                    <div class="section-master__image">
+                            <div class="ocr-img media__asset ">
+                                <picture>
+                                    <source srcset="/__mirror/assets/18718c0417457da3d20a9fcc" media="none and (prefers-color-scheme: dark)">
+                                    <source srcset="/__mirror/assets/c9fa73c981ed62cb354c5209" media="none and (prefers-color-scheme: dark)">
+                                    <source srcset="/__mirror/assets/363858589cc40effa65df017" media="none and (prefers-color-scheme: light)">
+                                    <source srcset="/__mirror/assets/979e5ffc27744159f29bcbd5" media="none and (prefers-color-scheme: light)">
+                                    <img src="/__mirror/assets/979e5ffc27744159f29bcbd5" alt="">
+                                </source></source></source></source></picture>
+                            </div>
+                        </div>
+                    <div class="container">
+                        <div class="row section-master__slot">
+                            <div class="col">
+                                <div class="layout section-master__layout">
+                                    <div class="layout__col">
+                                        <div class="section-master__layout-header">
+                                            <div class="block-heading block-heading--alignment-centered block-heading--size-m">
+                                                <div class="ocr-icon d-inline-flex ocr-icon--size-4xl">
+                                                    <div class="ocr-img media__asset ">
+                                                        <img src="/__mirror/assets/4f3ce608c1d59a7122e3f9ad" alt="">
+                                                    </div>
+                                                </div>
+                                                <h2 class="block-heading__title">Extend, integrate, and innovate with the most adaptable developer platform</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row section-master__slot">
+                                    <div class="banner-features layout layout--cols-3">
+                                        <div id="banner-1" class="banner-features__feature layout__col">
+                                            <div class="block-feature d-flex align-items-center block-feature--xs block-feature--align-list block-feature--text-center">
+                                                <div class="block-feature__badge">
+                                                    <span class="badge badge--size-m">
+                                                        <div class="ocr-icon d-inline-flex">
+                                                            <div class="ocr-img media__asset ">
+                                                                <picture>
+                                                                    <source srcset="/__mirror/assets/647a0cc15b11ee67b7e8a924">
+                                                                    <img src="/__mirror/assets/647a0cc15b11ee67b7e8a924" style="vertical-align: top;" alt="">
+                                                                </source></picture>
+                                                            </div>
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                                <div class="block-feature__body d-flex flex-column align-items-center">
+                                                    <div class="block-feature__headings d-flex flex-column align-items-center">
+                                                        <h5 class="block-feature__title">Supercharge business processes with agents</h5>
+                                                        <p class="block-feature__paragraph base block-feature__paragraph">Change what you build: With Copilot as the new UI for AI, build powerful agents to streamline business processes.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="banner-2" class="banner-features__feature layout__col">
+                                            <div class="block-feature d-flex align-items-start block-feature--xs block-feature--align-list  block-feature--text-center">
+                                                <div class="block-feature__badge">
+                                                    <span class="badge badge--size-m">
+                                                        <div class="ocr-icon d-inline-flex">
+                                                            <div class="ocr-img media__asset ">
+                                                                <picture>
+                                                                    <source srcset="/__mirror/assets/4d2f834426719e2990d7884a">
+                                                                    <img src="/__mirror/assets/4d2f834426719e2990d7884a" style="vertical-align: top;" alt="">
+                                                                </source></picture>
+                                                            </div>
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                                <div class="block-feature__body d-flex flex-column align-items-center">
+                                                    <div class="block-feature__headings d-flex flex-column align-items-center">
+                                                        <h5 class="block-feature__title">Enhance productivity with AI</h5>
+                                                        <p class="block-feature__paragraph base block-feature__paragraph">Change how you build: Unlock faster development using natural language, images, and documents to develop applications, automations, and more.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="banner-3" class="banner-features__feature layout__col">
+                                            <div class="block-feature d-flex align-items-start block-feature--xs block-feature--align-list  block-feature--text-center">
+                                                <div class="block-feature__badge">
+                                                    <span class="badge badge--size-m">
+                                                        <div class="ocr-icon d-inline-flex">
+                                                            <div class="ocr-img media__asset ">
+                                                                <picture>
+                                                                    <source srcset="/__mirror/assets/d8ada9661bd51bc0c34fa280">
+                                                                    <img src="/__mirror/assets/d8ada9661bd51bc0c34fa280" style="vertical-align: top;" alt="">
+                                                                </source></picture>
+                                                            </div>
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                                <div class="block-feature__body d-flex flex-column align-items-center">
+                                                    <div class="block-feature__headings d-flex flex-column align-items-center">
+                                                        <h5 class="block-feature__title">Streamline governance and security</h5>
+                                                        <p class="block-feature__paragraph base block-feature__paragraph">Ensure your business applications are secure, scalable with centralized management in the Admin Center.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="products">
+                <div class="section-master section-master--breadth-comfortable section-master--layout-slot-horizontal-alignment-right section-master--layout-slot-vertical-alignment-bottom section-master--blade-card-carousel">
+                    <div class="section-master__image">
+                        <div class="ocr-img media__asset">
+                            <picture>
+                                <source srcset="/__mirror/assets/f9d77d746a0cd2202d027dd0" media="none and (prefers-color-scheme: dark)">
+                                <source srcset="/__mirror/assets/10dfdf4249379875fc210a6b" media="none and (prefers-color-scheme: dark)">
+                                <source srcset="/__mirror/assets/8e6d5ca166832e11bc6269dd" media="none and (prefers-color-scheme: light)">
+                                <source srcset="/__mirror/assets/76de9dc694395506c9bd93c1" media="none and (prefers-color-scheme: light)">
+                                <img src="/__mirror/assets/76de9dc694395506c9bd93c1" alt="">
+                            </source></source></source></source></picture>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <div class="layout section-master__layout section-master--layout-cols-1">
+        <div class="layout__col">
+            <div class="section-master__layout-header">
+                <div class="block-heading block-heading--size-s">
+                        <h3 class="block-heading__eyebrow">Products + Extensions</h3>
+                        <h2 class="block-heading__title">Explore innovative, AI-powered developer tools</h2>
+                </div>
+            </div>
+        </div>
+
+    </div>
+                            </div>
+                        </div>
+                        <div class="card-grid row section-master__slot">
+                            <div class="col-lg-8 col-md-4">
+                                <div id="feature" class="card rounded-l p-l">
+                                    <div class="card__content justify-content-end">
+                                        <div class="block-feature d-flex align-items-start block-feature--2xs">
+                                            <div class="block-feature__top d-flex flex-row align-items-start">
+                                                <div class="block-feature__headings d-flex flex-column align-items-start">
+                                                    <h3>Power Platform</h3>
+                                                </div>
+                                            </div>
+                                            <div class="block-feature__body d-flex flex-column align-items-start">
+                                                <p class="block-feature__paragraph base block-feature__paragraph">Create and deploy more applications in less time with Power Platform.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-16 col-md-8">
+                                <div class="card-grid__cards">
+                                    <div class="layout layout--cols-3">
+                                        <div class="layout__col">
+        <div class="card rounded-l">
+            <div class="card__content p-l">
+
+
+                    <div class="block-feature__badge">
+                        <span class="badge badge--size-m">
+                            <div class="ocr-icon d-inline-flex">
+                                <div class="ocr-img media__asset ">
+                                    <img src="/__mirror/assets/aa3a6cd0dc7ce92c8addfd98" alt="">
+                                </div>
+                            </div>
+                        </span>
+                    </div>
+
+
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+                        <div class="block-feature__headings d-flex flex-column align-items-start">
+                            <h5 class="block-feature__title">Microsoft Copilot Studio</h5>
+                        </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Build your own copilots and embrace the future of conversational AI.</p>
+                    </div>
+                </div>
+
+                <div class="block-slim block-slim--checklist">
+                        <a href="https://learn.microsoft.com/microsoft-copilot-studio/" class="link link-inline" data-bi-an="products" data-bi-cn="microsoft-copilot-studio" data-bi-ct="link" target="_blank">
+                            <span class="link__text">Get started with Copilot Studio</span>
+                        </a>
+                </div>
+            </div>
+        </div>
+    </div>
+                                        <div class="layout__col">
+        <div class="card rounded-l">
+            <div class="card__content p-l">
+
+
+                    <div class="block-feature__badge">
+                        <span class="badge badge--size-m">
+                            <div class="ocr-icon d-inline-flex">
+                                <div class="ocr-img media__asset ">
+                                    <img src="/__mirror/assets/c9b16f7ee7ae681dd0208092" alt="">
+                                </div>
+                            </div>
+                        </span>
+                    </div>
+
+
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+                        <div class="block-feature__headings d-flex flex-column align-items-start">
+                            <h5 class="block-feature__title">Power Apps</h5>
+                        </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Build and deliver intelligent apps for your users.</p>
+                    </div>
+                </div>
+
+                <div class="block-slim block-slim--checklist">
+                        <a href="https://learn.microsoft.com/power-apps/maker/" class="link link-inline" data-bi-an="products" data-bi-cn="power-apps--maker" data-bi-ct="link" target="_blank">
+                            <span class="link__text">Get started with Power Apps</span>
+                        </a>
+                </div>
+            </div>
+        </div>
+    </div>
+                                        <div class="layout__col">
+        <div class="card rounded-l">
+            <div class="card__content p-l">
+
+
+                    <div class="block-feature__badge">
+                        <span class="badge badge--size-m">
+                            <div class="ocr-icon d-inline-flex">
+                                <div class="ocr-img media__asset ">
+                                    <img src="/__mirror/assets/858c8d2f444d0e47723b6682" alt="">
+                                </div>
+                            </div>
+                        </span>
+                    </div>
+
+
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+                        <div class="block-feature__headings d-flex flex-column align-items-start">
+                            <h5 class="block-feature__title">Power Automate</h5>
+                        </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Revolutionize the way you work with automation and AI.</p>
+                    </div>
+                </div>
+
+                <div class="block-slim block-slim--checklist">
+                        <a href="https://learn.microsoft.com/power-automate/" class="link link-inline" data-bi-an="products" data-bi-cn="power-automate" data-bi-ct="link" target="_blank">
+                            <span class="link__text">Get started with Power Automate</span>
+                        </a>
+                </div>
+            </div>
+        </div>
+    </div>
+                                        <div class="layout__col">
+        <div class="card rounded-l">
+            <div class="card__content p-l">
+
+
+                    <div class="block-feature__badge">
+                        <span class="badge badge--size-m">
+                            <div class="ocr-icon d-inline-flex">
+                                <div class="ocr-img media__asset ">
+                                    <img src="/__mirror/assets/97de3b29808402ad08efce2a" alt="">
+                                </div>
+                            </div>
+                        </span>
+                    </div>
+
+
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+                        <div class="block-feature__headings d-flex flex-column align-items-start">
+                            <h5 class="block-feature__title">Power Pages</h5>
+                        </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Transform user experiences and business objectives with Copilot-built websites.</p>
+                    </div>
+                </div>
+
+                <div class="block-slim block-slim--checklist">
+                        <a href="https://learn.microsoft.com/power-pages/" class="link link-inline" data-bi-an="products" data-bi-cn="power-pages" data-bi-ct="link" target="_blank">
+                            <span class="link__text">Get started with Power Pages</span>
+                        </a>
+                </div>
+            </div>
+        </div>
+    </div>
+                                        <div class="layout__col">
+        <div class="card rounded-l">
+            <div class="card__content p-l">
+
+
+                    <div class="block-feature__badge">
+                        <span class="badge badge--size-m">
+                            <div class="ocr-icon d-inline-flex">
+                                <div class="ocr-img media__asset ">
+                                    <img src="/__mirror/assets/605cd76c7c223753030cb5a8" alt="">
+                                </div>
+                            </div>
+                        </span>
+                    </div>
+
+
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+                        <div class="block-feature__headings d-flex flex-column align-items-start">
+                            <h5 class="block-feature__title">Dataverse</h5>
+                        </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Create enterprise applications and drive efficiency with data and AI.</p>
+                    </div>
+                </div>
+
+                <div class="block-slim block-slim--checklist">
+                        <a href="https://learn.microsoft.com/power-apps/maker/data-platform/data-platform-intro" class="link link-inline" data-bi-an="products" data-bi-cn="data-platform-intro" data-bi-ct="link" target="_blank">
+                            <span class="link__text">Get started with Dataverse</span>
+                        </a>
+                </div>
+            </div>
+        </div>
+    </div>
+                                        <div class="layout__col">
+        <div class="card rounded-l">
+            <div class="card__content p-l">
+
+
+                    <div class="block-feature__badge">
+                        <span class="badge badge--size-m">
+                            <div class="ocr-icon d-inline-flex">
+                                <div class="ocr-img media__asset ">
+                                    <img src="/__mirror/assets/10d6d3de2afd9059ddfed021" alt="">
+                                </div>
+                            </div>
+                        </span>
+                    </div>
+
+
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+                        <div class="block-feature__headings d-flex flex-column align-items-start">
+                            <h5 class="block-feature__title">CLI</h5>
+                        </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Run administrative commands and perform various operations through this simple, one-stop developer CLI.</p>
+                    </div>
+                </div>
+
+                <div class="block-slim block-slim--checklist">
+                        <a href="https://learn.microsoft.com/power-platform/developer/cli/introduction?tabs=windows" class="link link-inline" data-bi-an="products" data-bi-cn="data-platform-intro" data-bi-ct="link" target="_blank">
+                            <span class="link__text">Get started with CLI</span>
+                        </a>
+                </div>
+            </div>
+        </div>
+    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="featured-solutions">
+                <div class="section-master section-master--bg-image bg--overlay-full bg--base-fade section-master--breadth-comfortable section-master--layout-slot-horizontal-alignment-right section-master--layout-slot-vertical-alignment-bottom section-master--blade-card-carousel">
+                    <div class="section-master__image">
+                        <div class="ocr-img media__asset">
+                            <picture>
+                                <source srcset="/__mirror/assets/5607cb985d71158279457c4a" media="none and (prefers-color-scheme: dark)">
+                                <source srcset="/__mirror/assets/5eba65cf0a80442ea5919fc9" media="none and (prefers-color-scheme: dark)">
+                                <source srcset="/__mirror/assets/68e2623cdbf09bfcb8e35690" media="none and (prefers-color-scheme: light)">
+                                <source srcset="/__mirror/assets/3a8625e9adcbf80edeaa79c4" media="none and (prefers-color-scheme: light)">
+                                <img src="/__mirror/assets/3a8625e9adcbf80edeaa79c4" alt="">
+                            </source></source></source></source></picture>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="rounded-l">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="layout section-master__layout section-master--layout-cols-1">
+        <div class="layout__col">
+            <div class="section-master__layout-header">
+                <div class="block-heading block-heading--size-s">
+                        <h3 class="block-heading__eyebrow">featured solutions</h3>
+                        <h2 class="block-heading__title">Create modern, full-stack solutions faster, easier, and more securely</h2>
+                        <p class="block-heading__paragraph">With Power Platform and AI, developers can create custom connectors, code efficiently, and build sophisticated solutions using a comprehensive set of integrated tools. This enhances productivity, drives innovation, and ensures enterprise-grade security.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+                                </div>
+                            </div>
+                            <div class="row section-master__slot">
+                                <div class="col">
+                                    <div class="ocr-accordion accordion--vertical accordion">
+                                        <div data-mount="ocr-accordion">
+                                            <ul class="accordion" id="accordion-container">
+                                                <li class="ocr-accordion-item">
+        <span class="indicator indicator--shape-pill"></span>
+        <div class="ocr-accordion-item__content">
+            <div class="button-group button-group--stacked">
+                <button class="ocr-accordion-item__header btn-collapse" data-target="#featuredSolutions-1" aria-expanded="true" data-mount="ocr-collapse">
+                    <h3 class="h5">Build on top of Azure</h3>
+                </button>
+            </div>
+            <div class="collapse show" id="featuredSolutions-1" data-parent="accordion-container">
+                <div class="ocr-accordion-item__body">
+                    <p>Power Platform builds on Azure's security stack, offering robust data protection, encryption, governance, and compliance features. With Power Platform, you can create intelligent reports from Azure data sources, automate processes with RPA, and build conversational AI solutions.</p>
+                    <div>
+                        <a href="/azure" class="link link-inline" target="_blank" data-bi-an="featured-solutions--toolchain-azure" data-bi-cn="toolchain-azure" data-bi-ct="link">
+                            <span class="link__text">Learn more</span>
+                        </a>
+                    </div>
+                    <div class="media fade-in animation--duration-500 multi-feature-feature media--highlight media--highlight-glass">
+                        <div class="ocr-img media__asset">
+                            <picture>
+                                <source srcset="/__mirror/assets/a406f23b1ff4513769c07578">
+                                <source srcset="/__mirror/assets/54fe69e7b2a7719197d29085">
+                                <img src="/__mirror/assets/54fe69e7b2a7719197d29085" alt="">
+                            </source></source></picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+                                                <li class="ocr-accordion-item">
+        <span class="indicator indicator--shape-pill"></span>
+        <div class="ocr-accordion-item__content">
+            <div class="button-group button-group--stacked">
+                <button class="ocr-accordion-item__header btn-collapse collapsed" data-target="#featuredSolutions-2" aria-expanded="false" data-mount="ocr-collapse">
+                    <h3 class="h5">Accelerate development with Copilot</h3>
+                </button>
+            </div>
+            <div class="collapse" id="featuredSolutions-2" data-parent="accordion-container">
+                <div class="ocr-accordion-item__body">
+                    <p>Create Power Platform solutions with Copilot to speed up development and add AI functionality to make your solutions more intelligent with agents and generative AI.</p>
+                    <div>
+                        <a href="https://learn.microsoft.com/power-platform/copilot" class="link link-inline" target="_blank" data-bi-an="featured-solutions--toolchain-copilot" data-bi-cn="toolchain-copilot" data-bi-ct="link">
+                            <span class="link__text">Learn more</span>
+                        </a>
+                    </div>
+                    <div class="media fade-in animation--duration-500 multi-feature-feature media--highlight media--highlight-glass">
+                        <div class="ocr-img media__asset">
+                            <picture>
+                                <source srcset="/__mirror/assets/e14fdd807e8aafbe7891077f">
+                                <source srcset="/__mirror/assets/88390a06cc2fc48f4363af2a">
+                                <img src="/__mirror/assets/88390a06cc2fc48f4363af2a" alt="">
+                            </source></source></picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+                                                <li class="ocr-accordion-item">
+        <span class="indicator indicator--shape-pill"></span>
+        <div class="ocr-accordion-item__content">
+            <div class="button-group button-group--stacked">
+                <button class="ocr-accordion-item__header btn-collapse collapsed" data-target="#featuredSolutions-3" aria-expanded="false" data-mount="ocr-collapse">
+                    <h3 class="h5">Automate with GitHub</h3>
+                </button>
+            </div>
+            <div class="collapse" id="featuredSolutions-3" data-parent="accordion-container">
+                <div class="ocr-accordion-item__body">
+                    <p>With GitHub Actions for Microsoft Power Platform, you can create workflows in your repository to build, test, package, release, and deploy apps; perform automation; and manage bots and other components built on Microsoft Power Platform.</p>
+                    <div>
+                        <a href="https://github.com/marketplace/actions/powerplatform-actions" class="link link-inline" target="_blank" data-bi-an="featured-solutions--toolchain-github" data-bi-cn="toolchain-github" data-bi-ct="link">
+                            <span class="link__text">Get started</span>
+                        </a>
+                    </div>
+                    <div class="media fade-in animation--duration-500 multi-feature-feature media--highlight media--highlight-glass">
+                        <div class="ocr-img media__asset">
+                            <picture>
+                                <source srcset="/__mirror/assets/a00064f9015600ab640f1d9a">
+                                <source srcset="/__mirror/assets/d4de039b64887e93c66d0ce1">
+                                <img src="/__mirror/assets/d4de039b64887e93c66d0ce1" alt="">
+                            </source></source></picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+                                                <li class="ocr-accordion-item">
+        <span class="indicator indicator--shape-pill"></span>
+        <div class="ocr-accordion-item__content">
+            <div class="button-group button-group--stacked">
+                <button class="ocr-accordion-item__header btn-collapse collapsed" data-target="#featuredSolutions-4" aria-expanded="false" data-mount="ocr-collapse">
+                    <h3 class="h5">Integrate with Microsoft 365</h3>
+                </button>
+            </div>
+            <div class="collapse" id="featuredSolutions-4" data-parent="accordion-container">
+                <div class="ocr-accordion-item__body">
+                    <p>Integrating Power Platform with Microsoft 365 enables developers to create unified workspaces using AI agents, build connected apps with Power Apps, automate approvals, and enhance security.</p>
+                    <div>
+                        <a href="https://learn.microsoft.com/power-apps/teams/overview" class="link link-inline" target="_blank" data-bi-an="featured-solutions--toolchain-microsoft-365" data-bi-cn="toolchain-microsoft-365" data-bi-ct="link">
+                            <span class="link__text">Learn more</span>
+                        </a>
+                    </div>
+                    <div class="media fade-in animation--duration-500 multi-feature-feature media--highlight media--highlight-glass">
+                        <div class="ocr-img media__asset">
+                            <picture>
+                                <source srcset="/__mirror/assets/cfde80daef87c3ff71bd4536">
+                                <source srcset="/__mirror/assets/c23a0e200143ab2ae09e67d1">
+                                <img src="/__mirror/assets/c23a0e200143ab2ae09e67d1" alt="">
+                            </source></source></picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+                                                <li class="ocr-accordion-item">
+        <span class="indicator indicator--shape-pill"></span>
+        <div class="ocr-accordion-item__content">
+            <div class="button-group button-group--stacked">
+                <button class="ocr-accordion-item__header btn-collapse collapsed" data-target="#featuredSolutions-5" aria-expanded="false" data-mount="ocr-collapse">
+                    <h3 class="h5">Connect with Visual Studio</h3>
+                </button>
+            </div>
+            <div class="collapse" id="featuredSolutions-5" data-parent="accordion-container">
+                <div class="ocr-accordion-item__body">
+                    <p>By integrating Power Platform as a connected service in Visual Studio, developers can create custom connectors for web APIs, configure dev tunnels for real-time testing, and create Power Apps to simplify development.</p>
+                    <div>
+                        <a href="https://learn.microsoft.com/power-platform/developer/visual-studio-connected-service" class="link link-inline" target="_blank" data-bi-an="featured-solutions--toolchain-visual-studio" data-bi-cn="toolchain-visual-studio" data-bi-ct="link">
+                            <span class="link__text">Get started</span>
+                        </a>
+                    </div>
+                    <div class="media fade-in animation--duration-500 multi-feature-feature media--highlight media--highlight-glass">
+                        <div class="ocr-img media__asset">
+                            <picture>
+                                <source srcset="/__mirror/assets/6179c202a9a1f0a04cf3b002">
+                                <source srcset="/__mirror/assets/18ea20dfcf5b9de552ca119e">
+                                <img src="/__mirror/assets/18ea20dfcf5b9de552ca119e" alt="">
+                            </source></source></picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+                                                <li class="ocr-accordion-item">
+        <span class="indicator indicator--shape-pill"></span>
+        <div class="ocr-accordion-item__content">
+            <div class="button-group button-group--stacked">
+                <button class="ocr-accordion-item__header btn-collapse collapsed" data-target="#featuredSolutions-6" aria-expanded="false" data-mount="ocr-collapse">
+                    <h3 class="h5">Develop with Visual Studio Code</h3>
+                </button>
+            </div>
+            <div class="collapse" id="featuredSolutions-6" data-parent="accordion-container">
+                <div class="ocr-accordion-item__body">
+                    <p>The Power Platform Visual Studio Code extension makes it easy to manage Power Platform environments and allows you to create, build and deploy Power Platform solutions, packages and portals.</p>
+                    <div>
+                        <a href="https://marketplace.visualstudio.com/items?itemName=microsoft-IsvExpTools.powerplatform-vscode" class="link link-inline" target="_blank" data-bi-an="featured-solutions--toolchain-visual-studio-code" data-bi-cn="toolchain-visual-studio-code" data-bi-ct="link">
+                            <span class="link__text">Get started</span>
+                        </a>
+                    </div>
+                    <div class="media fade-in animation--duration-500 multi-feature-feature media--highlight media--highlight-glass">
+                        <div class="ocr-img media__asset">
+                            <picture>
+                                <source srcset="/__mirror/assets/5491882e5cb0c92e799d0dbf">
+                                <source srcset="/__mirror/assets/24f2b6aacc06cc9ff4f94ca4">
+                                <img src="/__mirror/assets/24f2b6aacc06cc9ff4f94ca4" alt="">
+                            </source></source></picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="resources">
+                <div class="section-master section-master--bg-image bg--overlay-full bg--base-fade section-master--breadth-comfortable section-master--layout-slot-horizontal-alignment-right section-master--layout-slot-vertical-alignment-bottom section-master--blade-card-carousel">
+                    <div class="section-master__image">
+                        <div class="ocr-img media__asset">
+                            <picture>
+                                <source srcset="/__mirror/assets/5607cb985d71158279457c4a" media="none and (prefers-color-scheme: dark)">
+                                <source srcset="/__mirror/assets/5eba65cf0a80442ea5919fc9" media="none and (prefers-color-scheme: dark)">
+                                <source srcset="/__mirror/assets/0534a41337c2e3d1c790493a" media="none and (prefers-color-scheme: light)">
+                                <source srcset="/__mirror/assets/fe78d44aee5c1340bdd92573" media="none and (prefers-color-scheme: light)">
+                                <img src="/__mirror/assets/3a8625e9adcbf80edeaa79c4" alt="">
+                            </source></source></source></source></picture>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="rounded-l">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="layout section-master__layout section-master--layout-cols-1">
+        <div class="layout__col">
+            <div class="section-master__layout-header">
+                <div class="block-heading block-heading--size-s">
+                        <h3 class="block-heading__eyebrow">resources</h3>
+                        <h2 class="block-heading__title">Begin your journey</h2>
+                        <p class="block-heading__paragraph">Discover the fundamentals of Power Platform with these valuable resources.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+                                </div>
+                            </div>
+                            <div class="row section-master__slot">
+                                <div class="col">
+                                    <div class="pill-bar no-gutters">
+                                        <div class="dropdown">
+                                            <a class="w-100 dropdown__link" id="menu-list-label-slider" data-mount="m365-dropdown" aria-expanded="false" aria-controls="resources-menu-list" type="button" role="button" tabindex="0" aria-labelledby="resources-label">
+                                                <div class="list-item">
+                                                    <div class="list-item__inner d-flex align-items-center py-m" id="resources-label" aria-hidden="true">
+                                                        <div class="list-item__content flex-grow-1 d-flex flex-column">
+                                                            <div class="fg--base-strong label list-item__content-title">
+                                                                <p>Select an area</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="list-item__trailing">
+                                                            <div class="ocr-icon d-inline-flex ocr-icon--size-s">
+                                                                <span class="glyph-prepend glyph-prepend-chevron-down" aria-label="">
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="dropdown-menu menu-list p-0 rounded-scrollbar overflow-auto" id="resources-menu-list" aria-labelledby="menu-list-label-default" tabindex="-1">
+                                                <div data-mount="ocr-slider" class="col ocr-slider" data-item-list-selector=".pill-bar__item">
+                                                    <div class="slider__overflow">
+                                                        <div class="slider__window rounded-scrollbar">
+                                                            <div class="tab-group" role="tablist" aria-label="Power Platform products">
+                                                                <button id="products-1-pill-bar" class="pill-bar__item active" href="#products-1" role="tab" data-mount="tab" aria-controls="products-1" aria-selected="true" aria-disabled="false" tabindex="0">
+                                                                    <div class="indicator indicator--shape-pill"></div>
+                                                                    <span class="pill-bar__item__label">Build</span>
+                                                                </button>
+                                                                <button id="products-2-pill-bar" class="pill-bar__item" href="#products-2" role="tab" data-mount="tab" aria-controls="products-2" aria-selected="false" aria-disabled="false" tabindex="-1">
+                                                                    <div class="indicator indicator--shape-pill"></div>
+                                                                    <span class="pill-bar__item__label">Extend</span>
+                                                                </button>
+                                                                <button id="products-3-pill-bar" class="pill-bar__item" href="#products-3" role="tab" data-mount="tab" aria-controls="products-3" aria-selected="false" aria-disabled="false" tabindex="-1">
+                                                                    <div class="indicator indicator--shape-pill"></div>
+                                                                    <span class="pill-bar__item__label">Integrate</span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slider__arrows">
+                                                        <button type="button" class="slider__arrow-prev" tabindex="-1" aria-hidden="true"></button>
+                                                        <div class="slider__arrow-prev slider__arrow-prev-bg"></div>
+                                                        <button type="button" class="slider__arrow-next" tabindex="-1" aria-hidden="true"></button>
+                                                        <div class="slider__arrow-next slider__arrow-next-bg"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="tab-panel-group">
+                                                <div id="products-1" class="tab-panel fade show active" role="tabpanel" aria-labelledby="products-1-pill-bar" tabindex="0">
+                                                    <div class="pill-bar__panel__content">
+                                                        <div class="carousel carousel--type-regular">
+        <section class="carousel__section" aria-label="Build products" aria-roledescription="carousel" data-mount="ocr-carousel">
+            <a href="#products-carousel-1" class="sr-only-focusable w-100 position-absolute">Skip carousel</a>
+
+            <span id="products-carousel-1-announcement-text" class="carousel__announcement-text sr-only" aria-live="polite" data-multi-slide-translatable="Showing %{curStart}-%{curEnd} of %{totalSlides} slides" data-single-slide-translatable="Showing slide %{curStart} of %{totalSlides}"></span>
+
+            <div id="products-carousel-1-controls" class="carousel__controls carousel__container">
+                <button type="button" class="carousel__arrow-prev" title="Previous slide" data-slide="prev" aria-labelledby="carousel-control-prev-products-carousel-1">
+                    <span class="sr-only" id="carousel-control-prev-products-carousel-1">Previous slide</span>
+                    <span class="glyph-prepend glyph-prepend-back glyph-prepend-medium" aria-hidden="true"></span>
+                </button>
+                <button type="button" class="carousel__arrow-next" title="Next slide" data-slide="next" aria-labelledby="carousel-control-next-products-carousel-1">
+                    <span class="sr-only" id="carousel-control-next-products-carousel-1">Next slide</span>
+                    <span class="glyph-prepend glyph-prepend-forward glyph-prepend-medium" aria-hidden="true"></span>
+                </button>
+            </div>
+            <div class="carousel__window hide-scrollbar">
+                <div class="carousel__container layout layout--overflow  layout--cols-5" aria-label="Build products">
+
+<section id="products-carousel-1-0" class="carousel__slide layout__col" tabindex="-1" aria-label="Slide 1 of 5">
+        <div class="card rounded-l">
+            <div class="card__media px-xs">
+                <div class="media">
+                        <div class="block-feature__badge">
+                            <span class="badge badge--size-m">
+                                <div class="ocr-icon d-inline-flex">
+                                    <div class="ocr-img media__asset ">
+                                        <img src="/__mirror/assets/f654ed7b66842aceb8a4c2d0" alt="">
+                                    </div>
+                                </div>
+                            </span>
+                        </div>
+
+                </div>
+            </div>
+            <div class="card__content p-l">
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+
+
+                        <div class="block-feature__headings d-flex flex-column align-items-start">
+                            <div class="block-feature__eyebrow">
+                                <h5 class="block-feature__label "></h5>
+                            </div>
+                            <h5 class="block-feature__title ">Developers documentation</h5>
+                        </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Explore all the developer documentation to get started.</p>
+
+                    </div>
+                </div>
+
+                    <div class="block-slim block-slim--checklist">
+                        <a href="https://aka.ms/pp/dev" class="link link-inline" data-bi-an="products-content-1" data-bi-cn="dev-docs-resources" data-bi-ct="link" target="_blank">
+                            <span class="link__text">Explore docs</span>
+                        </a>
+                    </div>
+            </div>
+        </div>
+    </section><section id="products-carousel-1-1" class="carousel__slide layout__col" tabindex="-1" aria-label="Slide 2 of 5">
+        <div class="card rounded-l">
+            <div class="card__media px-xs">
+                <div class="media">
+                        <div class="block-feature__badge">
+                            <span class="badge badge--size-m">
+                                <div class="ocr-icon d-inline-flex">
+                                    <div class="ocr-img media__asset ">
+                                        <img src="/__mirror/assets/05ffc9141e0afc98318935a9" alt="">
+                                    </div>
+                                </div>
+                            </span>
+                        </div>
+
+                </div>
+            </div>
+            <div class="card__content p-l">
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+
+
+                        <div class="block-feature__headings d-flex flex-column align-items-start">
+                            <div class="block-feature__eyebrow">
+                                <h5 class="block-feature__label "></h5>
+                            </div>
+                            <h5 class="block-feature__title ">Code samples</h5>
+                        </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Explore code samples and sample prompts for the Power Platform to discover what you can build with low code.</p>
+
+                    </div>
+                </div>
+
+                    <div class="block-slim block-slim--checklist">
+                        <a href="https://aka.ms/powerplatform-samples" class="link link-inline" data-bi-an="products-content-1" data-bi-cn="code-samples-resources" data-bi-ct="link" target="_blank">
+                            <span class="link__text">Explore code samples</span>
+                        </a>
+                    </div>
+            </div>
+        </div>
+    </section><section id="products-carousel-1-2" class="carousel__slide layout__col" tabindex="-1" aria-label="Slide 3 of 5">
+        <div class="card rounded-l">
+            <div class="card__media px-xs">
+                <div class="media">
+                        <div class="block-feature__badge">
+                            <span class="badge badge--size-m">
+                                <div class="ocr-icon d-inline-flex">
+                                    <div class="ocr-img media__asset ">
+                                        <img src="/__mirror/assets/de09638498d09a3ab22c181f" alt="">
+                                    </div>
+                                </div>
+                            </span>
+                        </div>
+
+                </div>
+            </div>
+            <div class="card__content p-l">
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+
+
+                        <div class="block-feature__headings d-flex flex-column align-items-start">
+                            <div class="block-feature__eyebrow">
+                                <h5 class="block-feature__label "></h5>
+                            </div>
+                            <h5 class="block-feature__title ">Tutorial + training</h5>
+                        </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Grow your skills to build Power Platform solutions.</p>
+
+                    </div>
+                </div>
+
+                    <div class="block-slim block-slim--checklist">
+                        <a href="https://learn.microsoft.com/training/browse/?products=power-platform" class="link link-inline" data-bi-an="products-content-1" data-bi-cn="tutorial-training-resources" data-bi-ct="link" target="_blank">
+                            <span class="link__text">Browse learning paths</span>
+                        </a>
+                    </div>
+            </div>
+        </div>
+    </section><section id="products-carousel-1-3" class="carousel__slide layout__col" tabindex="-1" aria-label="Slide 4 of 5">
+        <div class="card rounded-l">
+            <div class="card__media px-xs">
+                <div class="media">
+                        <div class="block-feature__badge">
+                            <span class="badge badge--size-m">
+                                <div class="ocr-icon d-inline-flex">
+                                    <div class="ocr-img media__asset ">
+                                        <img src="/__mirror/assets/190002a5b5d9012817157567" alt="">
+                                    </div>
+                                </div>
+                            </span>
+                        </div>
+
+                </div>
+            </div>
+            <div class="card__content p-l">
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+
+
+                        <div class="block-feature__headings d-flex flex-column align-items-start">
+                            <div class="block-feature__eyebrow">
+                                <h5 class="block-feature__label "></h5>
+                            </div>
+                            <h5 class="block-feature__title ">Applied skills</h5>
+                        </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Complete these scenario-based credentials to improve your proficiency specific to critical business problems. Complete a skill.</p>
+
+                    </div>
+                </div>
+
+                    <div class="block-slim block-slim--checklist">
+                        <a href="https://learn.microsoft.com/credentials/browse/?products=power-platform&amp;credential_types=applied+skills" class="link link-inline" data-bi-an="products-content-1" data-bi-cn="applied-skills-resources" data-bi-ct="link" target="_blank">
+                            <span class="link__text">Browse credentials</span>
+                        </a>
+                    </div>
+            </div>
+        </div>
+    </section><section id="products-carousel-1-4" class="carousel__slide layout__col" tabindex="-1" aria-label="Slide 5 of 5">
+        <div class="card rounded-l">
+            <div class="card__media px-xs">
+                <div class="media">
+                        <div class="block-feature__badge">
+                            <span class="badge badge--size-m">
+                                <div class="ocr-icon d-inline-flex">
+                                    <div class="ocr-img media__asset ">
+                                        <img src="/__mirror/assets/ba05f5e1a0f92b5e7aa2bca2" alt="">
+                                    </div>
+                                </div>
+                            </span>
+                        </div>
+
+                </div>
+            </div>
+            <div class="card__content p-l">
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+
+
+                        <div class="block-feature__headings d-flex flex-column align-items-start">
+                            <div class="block-feature__eyebrow">
+                                <h5 class="block-feature__label "></h5>
+                            </div>
+                            <h5 class="block-feature__title ">Power Platform well architected</h5>
+                        </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Get useful insights and suggestions in the lifecycle of a modern application workload built with Microsoft Power Platform.</p>
+
+                    </div>
+                </div>
+
+                    <div class="block-slim block-slim--checklist">
+                        <a href="https://aka.ms/powa" class="link link-inline" data-bi-an="products-content-1" data-bi-cn="power-platform-architected" data-bi-ct="link" target="_blank">
+                            <span class="link__text">Learn more</span>
+                        </a>
+                    </div>
+            </div>
+        </div>
+    </section>                </div>
+            </div>
+
+            <a href="#products-carousel-1-controls" class="sr-only-focusable w-100 position-absolute">Back to carousel navigation controls</a>
+
+            <a id="products-carousel-1" class="sr-only-focusable" tabindex="-1"></a>
+        </section>
+    </div>
+                                                    </div>
+                                                </div>
+                                                <div id="products-2" class="tab-panel fade " role="tabpanel" aria-labelledby="products-2-pill-bar" tabindex="0" hidden="">
+                                                    <div class="pill-bar__panel__content">
+                                                        <div class="carousel carousel--type-regular">
+        <section class="carousel__section" aria-label="Extend products" aria-roledescription="carousel" data-mount="ocr-carousel">
+            <a href="#products-carousel-2" class="sr-only-focusable w-100 position-absolute">Skip carousel</a>
+
+            <span id="products-carousel-2-announcement-text" class="carousel__announcement-text sr-only" aria-live="polite" data-multi-slide-translatable="Showing %{curStart}-%{curEnd} of %{totalSlides} slides" data-single-slide-translatable="Showing slide %{curStart} of %{totalSlides}"></span>
+
+            <div id="products-carousel-2-controls" class="carousel__controls carousel__container">
+                <button type="button" class="carousel__arrow-prev" title="Previous slide" data-slide="prev" aria-labelledby="carousel-control-prev-products-carousel-2">
+                    <span class="sr-only" id="carousel-control-prev-products-carousel-2">Previous slide</span>
+                    <span class="glyph-prepend glyph-prepend-back glyph-prepend-medium" aria-hidden="true"></span>
+                </button>
+                <button type="button" class="carousel__arrow-next" title="Next slide" data-slide="next" aria-labelledby="carousel-control-next-products-carousel-2">
+                    <span class="sr-only" id="carousel-control-next-products-carousel-2">Next slide</span>
+                    <span class="glyph-prepend glyph-prepend-forward glyph-prepend-medium" aria-hidden="true"></span>
+                </button>
+            </div>
+            <div class="carousel__window hide-scrollbar">
+                <div class="carousel__container layout layout--overflow  layout--cols-3" aria-label="Extend products">
+
+<section id="products-carousel-2-0" class="carousel__slide layout__col" tabindex="-1" aria-label="Slide 1 of 3">
+        <div class="card rounded-l">
+            <div class="card__media px-xs">
+                <div class="media">
+                        <div class="block-feature__badge">
+                            <span class="badge badge--size-m">
+                                <div class="ocr-icon d-inline-flex">
+                                    <div class="ocr-img media__asset ">
+                                        <img src="/__mirror/assets/59157f95fced6f66d675a6dc" alt="">
+                                    </div>
+                                </div>
+                            </span>
+                        </div>
+
+                </div>
+            </div>
+            <div class="card__content p-l">
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+
+
+                        <div class="block-feature__headings d-flex flex-column align-items-start">
+                            <div class="block-feature__eyebrow">
+                                <h5 class="block-feature__label "></h5>
+                            </div>
+                            <h5 class="block-feature__title ">Extend the UI of your apps</h5>
+                        </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Create code components for model-driven and canvas apps to enhance the user experience.</p>
+
+                    </div>
+                </div>
+
+                    <div class="block-slim block-slim--checklist">
+                        <a href="https://learn.microsoft.com/power-apps/developer/component-framework/overview" class="link link-inline" data-bi-an="products-content-2" data-bi-cn="extend-ui-apps" data-bi-ct="link" target="_blank">
+                            <span class="link__text">Get started</span>
+                        </a>
+                    </div>
+            </div>
+        </div>
+    </section><section id="products-carousel-2-1" class="carousel__slide layout__col" tabindex="-1" aria-label="Slide 2 of 3">
+        <div class="card rounded-l">
+            <div class="card__media px-xs">
+                <div class="media">
+                        <div class="block-feature__badge">
+                            <span class="badge badge--size-m">
+                                <div class="ocr-icon d-inline-flex">
+                                    <div class="ocr-img media__asset ">
+                                        <img src="/__mirror/assets/6c6b0a34ab4b46fc5e664126" alt="">
+                                    </div>
+                                </div>
+                            </span>
+                        </div>
+
+                </div>
+            </div>
+            <div class="card__content p-l">
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+
+
+                        <div class="block-feature__headings d-flex flex-column align-items-start">
+                            <div class="block-feature__eyebrow">
+                                <h5 class="block-feature__label "></h5>
+                            </div>
+                            <h5 class="block-feature__title ">Add AI to your solutions with AI Builder</h5>
+                        </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Create and use prebuilt or custom AI models to automate and optimize business processes and gain insights from your data.</p>
+
+                    </div>
+                </div>
+
+                    <div class="block-slim block-slim--checklist">
+                        <a href="https://learn.microsoft.com/ai-builder/" class="link link-inline" data-bi-an="products-content-2" data-bi-cn="ai-solutions-builder" data-bi-ct="link" target="_blank">
+                            <span class="link__text">Learn how</span>
+                        </a>
+                    </div>
+            </div>
+        </div>
+    </section><section id="products-carousel-2-2" class="carousel__slide layout__col" tabindex="-1" aria-label="Slide 3 of 3">
+        <div class="card rounded-l">
+            <div class="card__media px-xs">
+                <div class="media">
+                        <div class="block-feature__badge">
+                            <span class="badge badge--size-m">
+                                <div class="ocr-icon d-inline-flex">
+                                    <div class="ocr-img media__asset ">
+                                        <img src="/__mirror/assets/8a7d992dbe368a36ee79c5bd" alt="">
+                                    </div>
+                                </div>
+                            </span>
+                        </div>
+
+                </div>
+            </div>
+            <div class="card__content p-l">
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+
+
+                        <div class="block-feature__headings d-flex flex-column align-items-start">
+                            <div class="block-feature__eyebrow">
+                                <h5 class="block-feature__label "></h5>
+                            </div>
+                            <h5 class="block-feature__title ">Extend your solutions with Azure</h5>
+                        </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Explore solutions and architectures that use Power Platform together with Azure services.</p>
+
+                    </div>
+                </div>
+
+                    <div class="block-slim block-slim--checklist">
+                        <a href="https://learn.microsoft.com/azure/architecture/solutions/power-platform-scenarios" class="link link-inline" data-bi-an="products-content-2" data-bi-cn="extend-solutions-azure" data-bi-ct="link" target="_blank">
+                            <span class="link__text">Learn how</span>
+                        </a>
+                    </div>
+            </div>
+        </div>
+    </section>                </div>
+            </div>
+
+            <a href="#products-carousel-2-controls" class="sr-only-focusable w-100 position-absolute">Back to carousel navigation controls</a>
+
+            <a id="products-carousel-2" class="sr-only-focusable" tabindex="-1"></a>
+        </section>
+    </div>
+                                                    </div>
+                                                </div>
+                                                <div id="products-3" class="tab-panel fade " role="tabpanel" aria-labelledby="products-3-pill-bar" tabindex="0" hidden="">
+                                                    <div class="pill-bar__panel__content">
+                                                        <div class="carousel carousel--type-regular">
+        <section class="carousel__section" aria-label="Integrate products" aria-roledescription="carousel" data-mount="ocr-carousel">
+            <a href="#products-carousel-3" class="sr-only-focusable w-100 position-absolute">Skip carousel</a>
+
+            <span id="products-carousel-3-announcement-text" class="carousel__announcement-text sr-only" aria-live="polite" data-multi-slide-translatable="Showing %{curStart}-%{curEnd} of %{totalSlides} slides" data-single-slide-translatable="Showing slide %{curStart} of %{totalSlides}"></span>
+
+            <div id="products-carousel-3-controls" class="carousel__controls carousel__container">
+                <button type="button" class="carousel__arrow-prev" title="Previous slide" data-slide="prev" aria-labelledby="carousel-control-prev-products-carousel-3">
+                    <span class="sr-only" id="carousel-control-prev-products-carousel-3">Previous slide</span>
+                    <span class="glyph-prepend glyph-prepend-back glyph-prepend-medium" aria-hidden="true"></span>
+                </button>
+                <button type="button" class="carousel__arrow-next" title="Next slide" data-slide="next" aria-labelledby="carousel-control-next-products-carousel-3">
+                    <span class="sr-only" id="carousel-control-next-products-carousel-3">Next slide</span>
+                    <span class="glyph-prepend glyph-prepend-forward glyph-prepend-medium" aria-hidden="true"></span>
+                </button>
+            </div>
+            <div class="carousel__window hide-scrollbar">
+                <div class="carousel__container layout layout--overflow  layout--cols-3" aria-label="Integrate products">
+
+<section id="products-carousel-3-0" class="carousel__slide layout__col" tabindex="-1" aria-label="Slide 1 of 3">
+        <div class="card rounded-l">
+            <div class="card__media px-xs">
+                <div class="media">
+                        <div class="block-feature__badge">
+                            <span class="badge badge--size-m">
+                                <div class="ocr-icon d-inline-flex">
+                                    <div class="ocr-img media__asset ">
+                                        <img src="/__mirror/assets/fc66abb8a2c455137b541db2" alt="">
+                                    </div>
+                                </div>
+                            </span>
+                        </div>
+
+                </div>
+            </div>
+            <div class="card__content p-l">
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+
+
+                        <div class="block-feature__headings d-flex flex-column align-items-start">
+                            <div class="block-feature__eyebrow">
+                                <h5 class="block-feature__label "></h5>
+                            </div>
+                            <h5 class="block-feature__title ">Integrate your services with connectors</h5>
+                        </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Connect apps, data and devices in the cloud with a variety of prebuilt connectors or use custom connectors for tailored scenarios.</p>
+
+                    </div>
+                </div>
+
+                    <div class="block-slim block-slim--checklist">
+                        <a href="https://learn.microsoft.com/connectors/connectors" class="link link-inline" data-bi-an="products-content-3" data-bi-cn="integrate-services-connectors" data-bi-ct="link" target="_blank">
+                            <span class="link__text">Learn more</span>
+                        </a>
+                    </div>
+            </div>
+        </div>
+    </section><section id="products-carousel-3-1" class="carousel__slide layout__col" tabindex="-1" aria-label="Slide 2 of 3">
+        <div class="card rounded-l">
+            <div class="card__media px-xs">
+                <div class="media">
+                        <div class="block-feature__badge">
+                            <span class="badge badge--size-m">
+                                <div class="ocr-icon d-inline-flex">
+                                    <div class="ocr-img media__asset ">
+                                        <img src="/__mirror/assets/6f38784a8ac98ad78ee337e6" alt="">
+                                    </div>
+                                </div>
+                            </span>
+                        </div>
+
+                </div>
+            </div>
+            <div class="card__content p-l">
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+
+
+                        <div class="block-feature__headings d-flex flex-column align-items-start">
+                            <div class="block-feature__eyebrow">
+                                <h5 class="block-feature__label "></h5>
+                            </div>
+                            <h5 class="block-feature__title ">Create custom, GPT-powered prompts</h5>
+                        </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Prompt builder allows you to build, test and save custom prompts that generate text for tasks and goals.</p>
+
+                    </div>
+                </div>
+
+                    <div class="block-slim block-slim--checklist">
+                        <a href="https://learn.microsoft.com/ai-builder/create-a-custom-prompt" class="link link-inline" data-bi-an="products-content-3" data-bi-cn="create-custom-gpt-prompts" data-bi-ct="link" target="_blank">
+                            <span class="link__text">Get started</span>
+                        </a>
+                    </div>
+            </div>
+        </div>
+    </section><section id="products-carousel-3-2" class="carousel__slide layout__col" tabindex="-1" aria-label="Slide 3 of 3">
+        <div class="card rounded-l">
+            <div class="card__media px-xs">
+                <div class="media">
+                        <div class="block-feature__badge">
+                            <span class="badge badge--size-m">
+                                <div class="ocr-icon d-inline-flex">
+                                    <div class="ocr-img media__asset ">
+                                        <img src="/__mirror/assets/d4ed8e8b7f48bcc74a746205" alt="">
+                                    </div>
+                                </div>
+                            </span>
+                        </div>
+
+                </div>
+            </div>
+            <div class="card__content p-l">
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+
+
+                        <div class="block-feature__headings d-flex flex-column align-items-start">
+                            <div class="block-feature__eyebrow">
+                                <h5 class="block-feature__label "></h5>
+                            </div>
+                            <h5 class="block-feature__title ">Uplevel your skills with self-guided workshops</h5>
+                        </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Take these workshops to uplevel your skills on a variety of Power Platform technologies.</p>
+
+                    </div>
+                </div>
+
+                    <div class="block-slim block-slim--checklist">
+                        <a href="https://aka.ms/pp/workshops" class="link link-inline" data-bi-an="products-content-3" data-bi-cn="uplevel-skills-workshops" data-bi-ct="link" target="_blank">
+                            <span class="link__text">Explore workshops</span>
+                        </a>
+                    </div>
+            </div>
+        </div>
+    </section>                </div>
+            </div>
+
+            <a href="#products-carousel-3-controls" class="sr-only-focusable w-100 position-absolute">Back to carousel navigation controls</a>
+
+            <a id="products-carousel-3" class="sr-only-focusable" tabindex="-1"></a>
+        </section>
+    </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="youtube">
+                <div class="section-master section-master--bg-image section-master--bg-image-stacked bg--base-fade theme-night section-master--alignment-center section-master--layout-header-horizontal-alignment-center">
+                    <div class="section-master__image">
+                        <div class="ocr-img media__asset">
+                            <picture>
+                                <source srcset="/__mirror/assets/1d1714c5d601ff0141152c63">
+                                <source srcset="/__mirror/assets/4bbb69028902789cd3b4be78">
+                                <img src="/__mirror/assets/4bbb69028902789cd3b4be78" alt="">
+                            </source></source></picture>
+                        </div>
+                    </div>
+                    <div class="container col-md-6 col-lg-10 px-l">
+                        <div class="layout section-master__layout">
+                            <div class="layout__col">
+                                <div class="section-master__layout-header">
+                                    <div class="block-heading block-heading--alignment-centered block-heading--size-m">
+                                        <h2 class="block-heading__title">Check out our Power Platform YouTube channel</h2>
+                                        <p class="block-heading__paragraph">Get the latest updates about Power Platform with our videos and demos to learn how to accelerate productivity and customize solutions to help you with your development.</p>
+                                        <div class="block-heading__button-group">
+                                            <div class="button-group">
+                                                <a href="https://aka.ms/powerplatformYT" class="btn btn--md" target="_blank" data-bi-an="power-platform-dev-channel" data-bi-cn="watch-on-youtube" data-bi-ct="button">
+                                                    <div class="btn__text">Subscribe and watch</div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="news-updates">
+                <div class="section-master bg--base-fade section-master--breadth-comfortable section-master--layout-slot-horizontal-alignment-right section-master--layout-slot-vertical-alignment-bottom section-master--blade-card-carousel">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <h3 class="block-heading__eyebrow">News + announcements</h3>
+                                <div class="ocr-divider ocr-divider--size-s">
+                                </div>
+                                <div class="layout section-master__layout section-master--layout-cols-2">
+        <div class="layout__col">
+            <div class="section-master__layout-header">
+                <div class="block-heading block-heading--size-s">
+                        <h2 class="block-heading__title">What's new for Power Platform developers</h2>
+                </div>
+            </div>
+        </div>
+
+            <div class="layout__col">
+                <div class="section-master__layout-slot">
+                    <div class="button-group">
+                        <a href="https://devblogs.microsoft.com/powerplatform/" class="btn btn--secondary" target="_blank" data-bi-an="" data-bi-cn="" data-bi-ct="button">
+                            <span class="btn__text">Read all blogs</span>
+                            </a>
+                    </div>
+                </div>
+            </div>
+    </div>
+                            </div>
+                        </div>
+                        <div class="row section-master__slot">
+                            <div class="col">
+                                <div class="story-grid story-grid--stacked-on-4">
+                                    <div class="editorial-cards editorial-cards--4-up">
+                                        <div class=" layout layout--cols-4">
+<div class="layout__col">
+        <div class="ghost-card ghost-card--no-media">
+            <div class="layout">
+                <div class="layout__col">
+                    <div class="ocr-divider ocr-divider--size-s">
+                    </div>
+                    <div class="block-feature d-flex align-items-start block-feature--2xs block-feature--align-stacked">
+                        <div class="block-feature__body d-flex flex-column align-items-start">
+                            <div class="block-feature__headings d-flex flex-column align-items-start">
+                                <div class="block-feature__eyebrow">
+                                    <h4 class="block-feature__label">Lane Swenka •</h4>
+                                    <h4 class="block-feature__date">September 17, 2026</h4>
+                                </div>
+                                <h5 class="block-feature__title">Power Platform CLI ❤️ Power Platform API</h5>
+                            </div>
+                            <div class="block-feature__footer">
+                                <div class="block-slim">
+                                    <a href="https://devblogs.microsoft.com/powerplatform/power-platform-cli-%E2%9D%A4%EF%B8%8F-power-platform-api/" class="link link-inline" target="_blank">
+                                        <span class="link__text">Read blog</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><div class="layout__col">
+        <div class="ghost-card ghost-card--no-media">
+            <div class="layout">
+                <div class="layout__col">
+                    <div class="ocr-divider ocr-divider--size-s">
+                    </div>
+                    <div class="block-feature d-flex align-items-start block-feature--2xs block-feature--align-stacked">
+                        <div class="block-feature__body d-flex flex-column align-items-start">
+                            <div class="block-feature__headings d-flex flex-column align-items-start">
+                                <div class="block-feature__eyebrow">
+                                    <h4 class="block-feature__label">Sanket Achari •</h4>
+                                    <h4 class="block-feature__date">September 15, 2026</h4>
+                                </div>
+                                <h5 class="block-feature__title">From Redis pressure to a healthier service</h5>
+                            </div>
+                            <div class="block-feature__footer">
+                                <div class="block-slim">
+                                    <a href="https://devblogs.microsoft.com/powerplatform/azure-managed-redis-migration/" class="link link-inline" target="_blank">
+                                        <span class="link__text">Read blog</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><div class="layout__col">
+        <div class="ghost-card ghost-card--no-media">
+            <div class="layout">
+                <div class="layout__col">
+                    <div class="ocr-divider ocr-divider--size-s">
+                    </div>
+                    <div class="block-feature d-flex align-items-start block-feature--2xs block-feature--align-stacked">
+                        <div class="block-feature__body d-flex flex-column align-items-start">
+                            <div class="block-feature__headings d-flex flex-column align-items-start">
+                                <div class="block-feature__eyebrow">
+                                    <h4 class="block-feature__label">April Dunnam •</h4>
+                                    <h4 class="block-feature__date">June 18, 2026</h4>
+                                </div>
+                                <h5 class="block-feature__title">Meet the Agent Academy Hackathon Winners</h5>
+                            </div>
+                            <div class="block-feature__footer">
+                                <div class="block-slim">
+                                    <a href="https://devblogs.microsoft.com/powerplatform/agent-academy-hackathon-winners/" class="link link-inline" target="_blank">
+                                        <span class="link__text">Read blog</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><div class="layout__col">
+        <div class="ghost-card ghost-card--no-media">
+            <div class="layout">
+                <div class="layout__col">
+                    <div class="ocr-divider ocr-divider--size-s">
+                    </div>
+                    <div class="block-feature d-flex align-items-start block-feature--2xs block-feature--align-stacked">
+                        <div class="block-feature__body d-flex flex-column align-items-start">
+                            <div class="block-feature__headings d-flex flex-column align-items-start">
+                                <div class="block-feature__eyebrow">
+                                    <h4 class="block-feature__label">Suyash Kshirsagar •</h4>
+                                    <h4 class="block-feature__date">April 30, 2026</h4>
+                                </div>
+                                <h5 class="block-feature__title">Dataverse Plugin Is Now on the Claude Marketplace</h5>
+                            </div>
+                            <div class="block-feature__footer">
+                                <div class="block-slim">
+                                    <a href="https://devblogs.microsoft.com/powerplatform/dataverse-plugin-claude-marketplace/" class="link link-inline" target="_blank">
+                                        <span class="link__text">Read blog</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="case-studies">
+                <div class="section-master section-master--breadth-comfortable section-master--layout-slot-horizontal-alignment-right section-master--layout-slot-vertical-alignment-bottom section-master--blade-card-carousel">
+                    <div class="section-master__image">
+                        <div class="ocr-img media__asset">
+                            <picture>
+                                <source srcset="/__mirror/assets/987f6f5c9ddccfee8b058331" media="none and (prefers-color-scheme: dark)">
+                                <source srcset="/__mirror/assets/44f8ac7b717f5388231964eb" media="none and (prefers-color-scheme: dark)">
+                                <source srcset="/__mirror/assets/8838352a1a19d7e154b6bc65" media="none and (prefers-color-scheme: light)">
+                                <source srcset="/__mirror/assets/5a18e1b069d90cc2ef4a8c68" media="none and (prefers-color-scheme: light)">
+                                <img src="/__mirror/assets/5a18e1b069d90cc2ef4a8c68" alt="">
+                            </source></source></source></source></picture>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <div class="layout section-master__layout section-master--layout-cols-1">
+        <div class="layout__col">
+            <div class="section-master__layout-header">
+                <div class="block-heading block-heading--size-s">
+                        <h3 class="block-heading__eyebrow">Case studies</h3>
+                        <h2 class="block-heading__title">Accelerating innovation with AI and Microsoft Power Platform</h2>
+                        <p class="block-heading__paragraph">Highlights solutions developed from the Powerful Devs Hack Together where teams harnessed the power of AI and Microsoft Power Platform to tackle real-world challenges. These case studies demonstrate how rapid prototyping with low-code tools and intelligent automation can drive transformative outcomes for different use cases.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="case-studies-cards" class="bg--base-fade mt-2xl pb-2xl">
+                        <div class="carousel carousel--type-regular">
+        <section class="carousel__section" aria-label="Case studies" aria-roledescription="carousel" data-mount="ocr-carousel">
+            <a href="#tools-extensions-content-carousel" class="sr-only-focusable w-100 position-absolute">Skip carousel</a>
+
+            <span id="tools-extensions-content-carousel-announcement-text" class="carousel__announcement-text sr-only" aria-live="polite" data-multi-slide-translatable="Showing %{curStart}-%{curEnd} of %{totalSlides} slides" data-single-slide-translatable="Showing slide %{curStart} of %{totalSlides}"></span>
+
+            <div id="tools-extensions-content-carousel-controls" class="carousel__controls carousel__container">
+                <button type="button" class="carousel__arrow-prev" title="Previous slide" data-slide="prev" aria-labelledby="carousel-control-prev-tools-extensions-content-carousel">
+                    <span class="sr-only" id="carousel-control-prev-tools-extensions-content-carousel">Previous slide</span>
+                    <span class="glyph-prepend glyph-prepend-back glyph-prepend-medium" aria-hidden="true"></span>
+                </button>
+                <button type="button" class="carousel__arrow-next" title="Next slide" data-slide="next" aria-labelledby="carousel-control-next-tools-extensions-content-carousel">
+                    <span class="sr-only" id="carousel-control-next-tools-extensions-content-carousel">Next slide</span>
+                    <span class="glyph-prepend glyph-prepend-forward glyph-prepend-medium" aria-hidden="true"></span>
+                </button>
+            </div>
+            <div class="carousel__window hide-scrollbar">
+                <div class="carousel__container layout layout--overflow  layout--cols-3" aria-label="Case studies">
+
+<section id="tools-extensions-content-carousel-0" class="carousel__slide layout__col" tabindex="-1" aria-label="Slide 1 of 9">
+        <div class="card rounded-l">
+            <div class="card__media px-xs">
+                <div class="media">
+                        <div class="ocr-img media__asset">
+                            <picture>
+                                <source srcset="/__mirror/assets/6e0fd3caae26bed30e912873">
+                                <source srcset="/__mirror/assets/31278a221dd82f433ff47ae2">
+                                <img src="/__mirror/assets/31278a221dd82f433ff47ae2" alt="">
+                            </source></source></picture>
+                        </div>
+
+                </div>
+            </div>
+            <div class="card__content p-l">
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+
+
+                        <div class="block-feature__headings d-flex flex-column align-items-start">
+                            <div class="block-feature__eyebrow">
+                                <h5 class="block-feature__label "></h5>
+                            </div>
+                            <h5 class="block-feature__title ">Term Buddy Case Study</h5>
+                        </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">How Power Platform enabled the rapid development of an intelligent terminology assistant that enhances communication and understanding within organizations through AI-driven solutions.</p>
+
+                    </div>
+                </div>
+
+                    <div class="block-slim block-slim--checklist">
+                        <a href="/_devcom/pdf/power-platform/termbuddycasestudy.pdf" class="link link-inline" data-bi-an="agents-content" data-bi-cn="ai-in-action" data-bi-ct="link" target="_blank">
+                            <span class="link__text">Read now</span>
+                        </a>
+                    </div>
+            </div>
+        </div>
+    </section><section id="tools-extensions-content-carousel-1" class="carousel__slide layout__col" tabindex="-1" aria-label="Slide 2 of 9">
+        <div class="card rounded-l">
+            <div class="card__media px-xs">
+                <div class="media">
+                        <div class="ocr-img media__asset">
+                            <picture>
+                                <source srcset="/__mirror/assets/8142de39716c460e603a12e1">
+                                <source srcset="/__mirror/assets/defd110d3e9e6b7b16e4f27f">
+                                <img src="/__mirror/assets/defd110d3e9e6b7b16e4f27f" alt="">
+                            </source></source></picture>
+                        </div>
+
+                </div>
+            </div>
+            <div class="card__content p-l">
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+
+
+                        <div class="block-feature__headings d-flex flex-column align-items-start">
+                            <div class="block-feature__eyebrow">
+                                <h5 class="block-feature__label "></h5>
+                            </div>
+                            <h5 class="block-feature__title ">Auto Triage AI Agent Case Study</h5>
+                        </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">AI-powered processes simplify bug tracking, transforming inbox chaos into efficient, scalable issue management.</p>
+
+                    </div>
+                </div>
+
+                    <div class="block-slim block-slim--checklist">
+                        <a href="/_devcom/pdf/power-platform/autotriageaiagentcasestudy.pdf" class="link link-inline" data-bi-an="agents-content" data-bi-cn="ai-in-action" data-bi-ct="link" target="_blank">
+                            <span class="link__text">Read now</span>
+                        </a>
+                    </div>
+            </div>
+        </div>
+    </section><section id="tools-extensions-content-carousel-2" class="carousel__slide layout__col" tabindex="-1" aria-label="Slide 3 of 9">
+        <div class="card rounded-l">
+            <div class="card__media px-xs">
+                <div class="media">
+                        <div class="ocr-img media__asset">
+                            <picture>
+                                <source srcset="/__mirror/assets/98bed2d498f80fd3bfcd6353">
+                                <source srcset="/__mirror/assets/492440166ce46fa47b707bfa">
+                                <img src="/__mirror/assets/492440166ce46fa47b707bfa" alt="">
+                            </source></source></picture>
+                        </div>
+
+                </div>
+            </div>
+            <div class="card__content p-l">
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+
+
+                        <div class="block-feature__headings d-flex flex-column align-items-start">
+                            <div class="block-feature__eyebrow">
+                                <h5 class="block-feature__label "></h5>
+                            </div>
+                            <h5 class="block-feature__title ">AI Driven SharePoint Archiving Case Study</h5>
+                        </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Power Platform simplifies SharePoint governance using AI-driven automation to streamline site lifecycle management and enhance decision-making for administrators.</p>
+
+                    </div>
+                </div>
+
+                    <div class="block-slim block-slim--checklist">
+                        <a href="/_devcom/pdf/power-platform/aidrivensharepointarchivingcasestudy.pdf" class="link link-inline" data-bi-an="agents-content" data-bi-cn="azure-ai-foundry-sdk" data-bi-ct="link" target="_blank">
+                            <span class="link__text">Read now</span>
+                        </a>
+                    </div>
+            </div>
+        </div>
+    </section><section id="tools-extensions-content-carousel-3" class="carousel__slide layout__col" tabindex="-1" aria-label="Slide 4 of 9">
+        <div class="card rounded-l">
+            <div class="card__media px-xs">
+                <div class="media">
+                        <div class="ocr-img media__asset">
+                            <picture>
+                                <source srcset="/__mirror/assets/1db3f6a2e8bb196e95231f72">
+                                <source srcset="/__mirror/assets/2d29e9119820500767befa5b">
+                                <img src="/__mirror/assets/2d29e9119820500767befa5b" alt="">
+                            </source></source></picture>
+                        </div>
+
+                </div>
+            </div>
+            <div class="card__content p-l">
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+
+
+                        <div class="block-feature__headings d-flex flex-column align-items-start">
+                            <div class="block-feature__eyebrow">
+                                <h5 class="block-feature__label "></h5>
+                            </div>
+                            <h5 class="block-feature__title ">AI Powered Employee Development Platform Case Study</h5>
+                        </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Enable personalized, adaptive learning paths that enhance employee development and streamline HR processes with AI-driven capabilities in Power Platform.</p>
+
+                    </div>
+                </div>
+
+                    <div class="block-slim block-slim--checklist">
+                        <a href="/_devcom/pdf/power-platform/aipoweredemployeedevelopmentplatformcasestudy.pdf" class="link link-inline" data-bi-an="agents-content" data-bi-cn="ms-365-copilot-apis" data-bi-ct="link" target="_blank">
+                            <span class="link__text">Read now</span>
+                        </a>
+                    </div>
+            </div>
+        </div>
+    </section><section id="tools-extensions-content-carousel-4" class="carousel__slide layout__col" tabindex="-1" aria-label="Slide 5 of 9">
+        <div class="card rounded-l">
+            <div class="card__media px-xs">
+                <div class="media">
+                        <div class="ocr-img media__asset">
+                            <picture>
+                                <source srcset="/__mirror/assets/2d2b0fef988441a2a2dcc200">
+                                <source srcset="/__mirror/assets/66c5bfa3030652b66e73d94b">
+                                <img src="/__mirror/assets/66c5bfa3030652b66e73d94b" alt="">
+                            </source></source></picture>
+                        </div>
+
+                </div>
+            </div>
+            <div class="card__content p-l">
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+
+
+                        <div class="block-feature__headings d-flex flex-column align-items-start">
+                            <div class="block-feature__eyebrow">
+                                <h5 class="block-feature__label "></h5>
+                            </div>
+                            <h5 class="block-feature__title ">Employee Lifecycle Management App Case Study</h5>
+                        </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Power Platform and intelligent automation streamline employee onboarding and offboarding processes, improving efficiency, visibility, and user experience across departments.</p>
+
+                    </div>
+                </div>
+
+                    <div class="block-slim block-slim--checklist">
+                        <a href="/_devcom/pdf/power-platform/employeelifecyclemanagementappcasestudy.pdf" class="link link-inline" data-bi-an="agents-content" data-bi-cn="ai-in-action" data-bi-ct="link" target="_blank">
+                            <span class="link__text">Read now</span>
+                        </a>
+                    </div>
+            </div>
+        </div>
+    </section><section id="tools-extensions-content-carousel-5" class="carousel__slide layout__col" tabindex="-1" aria-label="Slide 6 of 9">
+        <div class="card rounded-l">
+            <div class="card__media px-xs">
+                <div class="media">
+                        <div class="ocr-img media__asset">
+                            <picture>
+                                <source srcset="/__mirror/assets/0ccaea202db0fd7b64d98314">
+                                <source srcset="/__mirror/assets/15d6e4de6b87b9d42ac6ace1">
+                                <img src="/__mirror/assets/15d6e4de6b87b9d42ac6ace1" alt="">
+                            </source></source></picture>
+                        </div>
+
+                </div>
+            </div>
+            <div class="card__content p-l">
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+
+
+                        <div class="block-feature__headings d-flex flex-column align-items-start">
+                            <div class="block-feature__eyebrow">
+                                <h5 class="block-feature__label "></h5>
+                            </div>
+                            <h5 class="block-feature__title ">Foodbank Friend Case Study</h5>
+                        </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">How Power Platform can help donation processes for food banks using an AI-powered assistant that connects users with real-time donation needs.</p>
+
+                    </div>
+                </div>
+
+                    <div class="block-slim block-slim--checklist">
+                        <a href="/_devcom/pdf/power-platform/foodbankfriendcasestudy.pdf" class="link link-inline" data-bi-an="agents-content" data-bi-cn="ai-in-action" data-bi-ct="link" target="_blank">
+                            <span class="link__text">Read now</span>
+                        </a>
+                    </div>
+            </div>
+        </div>
+    </section><section id="tools-extensions-content-carousel-6" class="carousel__slide layout__col" tabindex="-1" aria-label="Slide 7 of 9">
+        <div class="card rounded-l">
+            <div class="card__media px-xs">
+                <div class="media">
+                        <div class="ocr-img media__asset">
+                            <picture>
+                                <source srcset="/__mirror/assets/0322600a3f0326e4fcaa8ffc">
+                                <source srcset="/__mirror/assets/a7dd1f5defc7e1e6e96de1ba">
+                                <img src="/__mirror/assets/a7dd1f5defc7e1e6e96de1ba" alt="">
+                            </source></source></picture>
+                        </div>
+
+                </div>
+            </div>
+            <div class="card__content p-l">
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+
+
+                        <div class="block-feature__headings d-flex flex-column align-items-start">
+                            <div class="block-feature__eyebrow">
+                                <h5 class="block-feature__label "></h5>
+                            </div>
+                            <h5 class="block-feature__title ">Citizen Management HuB Case Study</h5>
+                        </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Transform government processes by simplifying identity registration, improving efficiency, and enabling secure, AI-assisted data capture with Power Platform.</p>
+
+                    </div>
+                </div>
+
+                    <div class="block-slim block-slim--checklist">
+                        <a href="/_devcom/pdf/power-platform/citizenmanagementhubcasestudy.pdf" class="link link-inline" data-bi-an="agents-content" data-bi-cn="ai-in-action" data-bi-ct="link" target="_blank">
+                            <span class="link__text">Read now</span>
+                        </a>
+                    </div>
+            </div>
+        </div>
+    </section><section id="tools-extensions-content-carousel-7" class="carousel__slide layout__col" tabindex="-1" aria-label="Slide 8 of 9">
+        <div class="card rounded-l">
+            <div class="card__media px-xs">
+                <div class="media">
+                        <div class="ocr-img media__asset">
+                            <picture>
+                                <source srcset="/__mirror/assets/1fff96944241812777e3d79f">
+                                <source srcset="/__mirror/assets/0174112a8a66b83519419a63">
+                                <img src="/__mirror/assets/0174112a8a66b83519419a63" alt="">
+                            </source></source></picture>
+                        </div>
+
+                </div>
+            </div>
+            <div class="card__content p-l">
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+
+
+                        <div class="block-feature__headings d-flex flex-column align-items-start">
+                            <div class="block-feature__eyebrow">
+                                <h5 class="block-feature__label "></h5>
+                            </div>
+                            <h5 class="block-feature__title ">Insight Bridge AI Driven Sales Intelligence Case Study</h5>
+                        </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Leverage Power Platform to enhance sales research and generate personalized outreach messages, resulting in faster, more effective, and scalable sales intelligence.</p>
+
+                    </div>
+                </div>
+
+                    <div class="block-slim block-slim--checklist">
+                        <a href="/_devcom/pdf/power-platform/insightbridgeaidrivensalesintelligencecasestudy.pdf" class="link link-inline" data-bi-an="agents-content" data-bi-cn="ai-in-action" data-bi-ct="link" target="_blank">
+                            <span class="link__text">Read now</span>
+                        </a>
+                    </div>
+            </div>
+        </div>
+    </section><section id="tools-extensions-content-carousel-8" class="carousel__slide layout__col" tabindex="-1" aria-label="Slide 9 of 9">
+        <div class="card rounded-l">
+            <div class="card__media px-xs">
+                <div class="media">
+                        <div class="ocr-img media__asset">
+                            <picture>
+                                <source srcset="/__mirror/assets/ac3b9e5867c487fbab764cec">
+                                <source srcset="/__mirror/assets/fa8e577a794790dbf2d3182a">
+                                <img src="/__mirror/assets/fa8e577a794790dbf2d3182a" alt="">
+                            </source></source></picture>
+                        </div>
+
+                </div>
+            </div>
+            <div class="card__content p-l">
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+
+
+                        <div class="block-feature__headings d-flex flex-column align-items-start">
+                            <div class="block-feature__eyebrow">
+                                <h5 class="block-feature__label "></h5>
+                            </div>
+                            <h5 class="block-feature__title ">Contract Opportunity Management System Case Study</h5>
+                        </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Power Platform centralizes and automates contract management, leading to better decision making, reduced manual efforts, and more visibility and control.</p>
+
+                    </div>
+                </div>
+
+                    <div class="block-slim block-slim--checklist">
+                        <a href="/_devcom/pdf/power-platform/contractopportunitymanagementsystemcasestudy.pdf" class="link link-inline" data-bi-an="agents-content" data-bi-cn="ai-in-action" data-bi-ct="link" target="_blank">
+                            <span class="link__text">Read now</span>
+                        </a>
+                    </div>
+            </div>
+        </div>
+    </section>                </div>
+            </div>
+
+            <a href="#tools-extensions-content-carousel-controls" class="sr-only-focusable w-100 position-absolute">Back to carousel navigation controls</a>
+
+            <a id="tools-extensions-content-carousel" class="sr-only-focusable" tabindex="-1"></a>
+        </section>
+    </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="power-platform-community">
+                <div class="section-master bg--base-fade section-master--breadth-comfortable section-master--layout-slot-horizontal-alignment-right section-master--layout-slot-vertical-alignment-bottom section-master--blade-card-carousel">
+                    <div class="section-master__image">
+                        <div class="ocr-img media__asset ">
+                            <picture>
+                                <source srcset="/__mirror/assets/f450a906edcaba6bd053084c" media="none and (prefers-color-scheme: dark)">
+                                <source srcset="/__mirror/assets/82dbbcb0448e659e7a673480" media="none and (prefers-color-scheme: dark)">
+                                <source srcset="/__mirror/assets/09b897e81f00e0039679288f" media="none and (prefers-color-scheme: light)">
+                                <source srcset="/__mirror/assets/ff984e15ce8b16f28a61ec5c" media="none and (prefers-color-scheme: light)">
+                                <img src="/__mirror/assets/ff984e15ce8b16f28a61ec5c" alt="">
+                            </source></source></source></source></picture>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <div class="layout section-master__layout section-master--layout-cols-1">
+        <div class="layout__col">
+            <div class="section-master__layout-header">
+                <div class="block-heading block-heading--size-s">
+                        <h3 class="block-heading__eyebrow">Power Platform Community</h3>
+                </div>
+            </div>
+        </div>
+
+    </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="card-horizontal">
+                                    <div class="row">
+                                        <div class="card-horizontal__media col-lg-12 col-md-6">
+                                            <div class="media">
+                                                <div class="ocr-img media__asset ">
+                                                    <picture>
+                                                        <source srcset="/__mirror/assets/a55a03eb29c87a25b052983b">
+                                                        <source srcset="/__mirror/assets/dea93c649f4a0b419af9f868">
+                                                        <img src="/__mirror/assets/dea93c649f4a0b419af9f868" alt="">
+                                                    </source></source></picture>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-horizontal__spacer">
+                                        </div>
+                                        <div class="card-horizontal__content col-lg-12 col-md-6">
+                                            <div class="block-feature d-flex align-items-start block-feature--s block-feature--align-true">
+                                                <div class="block-feature__top d-flex flex-row align-items-start">
+                                                    <div class="block-feature__headings d-flex flex-column align-items-start">
+                                                        <h4 class="block-feature__title ">Stay current, get inspired, and connect with others to build with Power Platform</h4>
+                                                        <p class="block-feature__paragraph">Join our vibrant community to learn about the latest product updates, watch live demos from our community and product teams, and get your questions answered!</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="block-heading__button-group">
+                                                <div class="button-group">
+                                                    <a role="button" class="btn" target="_blank" data-bi-an="hero" data-bi-cn="read-news" data-bi-ct="button" href="https://aka.ms/PPCommunityPro">
+                                                        <div class="btn__text">Join our community</div>
+                                                    </a>
+                                                    <a role="button" class="btn btn--secondary" target="_blank" data-bi-an="hero" data-bi-cn="create-dev-environment" data-bi-ct="button" href="https://aka.ms/pp/community-calls">
+                                                        <div class="btn__text">Participate in our community calls</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="community-videos" class="bg--base-fade">
+                        <div class="carousel carousel--type-regular">
+        <section class="carousel__section" aria-label="Community videos" aria-roledescription="carousel" data-mount="ocr-carousel">
+            <a href="#community-content-carousel" class="sr-only-focusable w-100 position-absolute">Skip carousel</a>
+
+            <span id="community-content-carousel-announcement-text" class="carousel__announcement-text sr-only" aria-live="polite" data-multi-slide-translatable="Showing %{curStart}-%{curEnd} of %{totalSlides} slides" data-single-slide-translatable="Showing slide %{curStart} of %{totalSlides}"></span>
+
+            <div id="community-content-carousel-controls" class="carousel__controls carousel__container">
+                <button type="button" class="carousel__arrow-prev" title="Previous slide" data-slide="prev" aria-labelledby="carousel-control-prev-community-content-carousel">
+                    <span class="sr-only" id="carousel-control-prev-community-content-carousel">Previous slide</span>
+                    <span class="glyph-prepend glyph-prepend-back glyph-prepend-medium" aria-hidden="true"></span>
+                </button>
+                <button type="button" class="carousel__arrow-next" title="Next slide" data-slide="next" aria-labelledby="carousel-control-next-community-content-carousel">
+                    <span class="sr-only" id="carousel-control-next-community-content-carousel">Next slide</span>
+                    <span class="glyph-prepend glyph-prepend-forward glyph-prepend-medium" aria-hidden="true"></span>
+                </button>
+            </div>
+            <div class="carousel__window hide-scrollbar">
+                <div class="carousel__container layout layout--overflow  layout--cols-3" aria-label="Community videos">
+
+<section id="community-content-carousel-0" class="carousel__slide layout__col" tabindex="-1" aria-label="Slide 1 of 3">
+        <div class="card rounded-l">
+            <div class="card__media px-xs">
+                <div class="media">
+                        <div class="ocr-img media__asset">
+                            <picture>
+                                <source srcset="/__mirror/assets/46a39993cd8131acee3773c0">
+                                <source srcset="/__mirror/assets/032ab227c13898ecaf834090">
+                                <img src="/__mirror/assets/032ab227c13898ecaf834090" alt="">
+                            </source></source></picture>
+                        </div>
+                        <div class="media__slot">
+                            <span class="badge badge--size-s">
+                                <div class="ocr-icon d-inline-flex ocr-icon-svg--play-filled">
+                                    <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="img" title="Video">
+                                        <path></path>
+                                    </svg>
+                                </div>
+                            </span>
+                        </div>
+
+                </div>
+            </div>
+            <div class="card__content p-l">
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+
+
+                        <div class="block-feature__headings d-flex flex-column align-items-start">
+                            <div class="block-feature__eyebrow">
+                                <h5 class="block-feature__label "></h5>
+                            </div>
+                            <h5 class="block-feature__title ">Power Devs</h5>
+                        </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Learn how to leverage the Power Platform to build applications smarter, faster, and with less effort.</p>
+
+                    </div>
+                </div>
+
+                    <div class="block-slim">
+                        <a href="https://aka.ms/powerfuldevs/ondemand" class="link" target="_blank" data-bi-an="power-platform-community-content" data-bi-cn="low-code-revolution" data-bi-ct="link">
+                            <span class="btn btn--icon btn--icon-only btn--sm ">
+                                <span class="glyph-prepend" aria-hidden="true"></span>
+                            </span>
+                            <span class="link__text">Watch now</span>
+                        </a>
+                    </div>
+            </div>
+        </div>
+    </section><section id="community-content-carousel-1" class="carousel__slide layout__col" tabindex="-1" aria-label="Slide 2 of 3">
+        <div class="card rounded-l">
+            <div class="card__media px-xs">
+                <div class="media">
+                        <div class="ocr-img media__asset">
+                            <picture>
+                                <source srcset="/__mirror/assets/db7e27f4ea87fd66426387c4">
+                                <source srcset="/__mirror/assets/93f553660538ee9a9c00250e">
+                                <img src="/__mirror/assets/93f553660538ee9a9c00250e" alt="">
+                            </source></source></picture>
+                        </div>
+                        <div class="media__slot">
+                            <span class="badge badge--size-s">
+                                <div class="ocr-icon d-inline-flex ocr-icon-svg--play-filled">
+                                    <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="img" title="Video">
+                                        <path></path>
+                                    </svg>
+                                </div>
+                            </span>
+                        </div>
+
+                </div>
+            </div>
+            <div class="card__content p-l">
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+
+
+                        <div class="block-feature__headings d-flex flex-column align-items-start">
+                            <div class="block-feature__eyebrow">
+                                <h5 class="block-feature__label "></h5>
+                            </div>
+                            <h5 class="block-feature__title ">Microsoft Copilot Studio Learning Series</h5>
+                        </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Learn how to build with the latest capabilities of Copilot Studio in these live demos  .</p>
+
+                    </div>
+                </div>
+
+                    <div class="block-slim">
+                        <a href="https://www.youtube.com/playlist?list=PLR9nK3mnD-OUnwt7ZoERaiWyHwjf-E2QV" class="link" target="_blank" data-bi-an="power-platform-community-content" data-bi-cn="power-cat-live" data-bi-ct="link">
+                            <span class="btn btn--icon btn--icon-only btn--sm ">
+                                <span class="glyph-prepend" aria-hidden="true"></span>
+                            </span>
+                            <span class="link__text">Watch now</span>
+                        </a>
+                    </div>
+            </div>
+        </div>
+    </section><section id="community-content-carousel-2" class="carousel__slide layout__col" tabindex="-1" aria-label="Slide 3 of 3">
+        <div class="card rounded-l">
+            <div class="card__media px-xs">
+                <div class="media">
+                        <div class="ocr-img media__asset">
+                            <picture>
+                                <source srcset="/__mirror/assets/a41721d9dda502d09c9ecdb9">
+                                <source srcset="/__mirror/assets/d35dab7354fdb74541e8265b">
+                                <img src="/__mirror/assets/d35dab7354fdb74541e8265b" alt="">
+                            </source></source></picture>
+                        </div>
+                        <div class="media__slot">
+                            <span class="badge badge--size-s">
+                                <div class="ocr-icon d-inline-flex ocr-icon-svg--play-filled">
+                                    <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="img" title="Video">
+                                        <path></path>
+                                    </svg>
+                                </div>
+                            </span>
+                        </div>
+
+                </div>
+            </div>
+            <div class="card__content p-l">
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+
+
+                        <div class="block-feature__headings d-flex flex-column align-items-start">
+                            <div class="block-feature__eyebrow">
+                                <h5 class="block-feature__label "></h5>
+                            </div>
+                            <h5 class="block-feature__title ">AI in Action</h5>
+                        </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Explore the latest innovations with AI in the Power Platform with this video series from the Power Platform Advocacy team.</p>
+
+                    </div>
+                </div>
+
+                    <div class="block-slim">
+                        <a href="https://aka.ms/ai-in-action" class="link" target="_blank" data-bi-an="power-platform-community-content" data-bi-cn="ai-in-action" data-bi-ct="link">
+                            <span class="btn btn--icon btn--icon-only btn--sm ">
+                                <span class="glyph-prepend" aria-hidden="true"></span>
+                            </span>
+                            <span class="link__text">Watch now</span>
+                        </a>
+                    </div>
+            </div>
+        </div>
+    </section>                </div>
+            </div>
+
+            <a href="#community-content-carousel-controls" class="sr-only-focusable w-100 position-absolute">Back to carousel navigation controls</a>
+
+            <a id="community-content-carousel" class="sr-only-focusable" tabindex="-1"></a>
+        </section>
+    </div>
+                    </div>
+                </div>
+            </section>        
+
+            <section id="socials" class="container-fluid py-5">
+                <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+                    <symbol id="brand-twitter-x" viewbox="0 0 1200 1227">
+                        <path d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.137 519.284H714.163ZM569.165 687.828L521.697 619.934L144.011 79.6944H306.615L611.412 515.685L658.88 583.579L1055.08 1150.3H892.476L569.165 687.854V687.828Z">
+                        </path>
+                    </symbol>
+                </svg>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-12">
+                            <p class="d-xl-inline-block d-sm-block me-3 mb-3 mb-xl-0">Follow us on the web</p>
+                            <div class="d-xl-inline-block d-sm-block">
+                                <div class="d-inline-block me-3">
+                                    <a href="https://github.com/microsoft/powerplatform-actions" class="social" target="_blank" aria-label="Follow us on GitHub" data-bi-cn="GitHub" data-bi-an="Social">
+                                        <svg href="#" target="_blank" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="CurrentColor" class="bi bi-github img-hc-dark" viewbox="0 0 16 16">
+                                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="d-inline-block me-3">
+                                    <a href="https://x.com/mspowerplat" class="social" target="_blank" aria-label="Follow us on X" data-bi-cn="X" data-bi-an="Social">
+                                        <svg width="24" height="24" fill="CurrentColor" version="2.0" class="bi bi-twitter mx-1">
+                                            <use href="#brand-twitter-x"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="d-inline-block me-3">
+                                    <a href="https://www.linkedin.com/company/microsoft-power-platform-community/posts/?feedView=all" class="social" target="_blank" aria-label="Follow us on LinkedIn" data-bi-cn="LinkedIn" data-bi-an="Social">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="CurrentColor" class="bi bi-linkedin mx-1" viewbox="0 0 16 16">
+                                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="d-inline-block">
+                                    <a href="https://www.youtube.com/mspowerplatform" class="social" target="_blank" aria-label="Follow us on YouTube" data-bi-cn="YouTube" data-bi-an="Social">
+                                        <svg width="24" height="24" viewbox="0 0 24 24" fill="CurrentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_1090_8939)">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0C1.79086 0 0 1.79086 0 4V20C0 22.2091 1.79086 24 4 24H20C22.2091 24 24 22.2091 24 20V4C24 1.79086 22.2091 0 20 0H4ZM16.7929 10.7596L8.56807 5.08237C7.90472 4.62449 7 5.09932 7 5.90535V17.121C7 17.9218 7.89431 18.3978 8.55855 17.9505L16.7834 12.412C17.3679 12.0184 17.3728 11.1599 16.7929 10.7596Z" fill="CurrentColor"></path>
+                                            </g>
+                                            <defs>
+                                                <clippath id="clip0_1090_8939">
+                                                    <rect width="24" height="24" fill="white"></rect>
+                                                </clippath>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Theme picker / UHF Footer -->
+    <div class="mx-0 px-0 overflow-hidden uhf-footer-wrapper">
+        
+<div class="uhf11-footer-container">
+    <button type="button" class="uhf11-btn-theme" id="theme-toggle" aria-label="Change page theme" aria-pressed="false" data-bi-an="uhf-footer" data-bi-id="theme-toggle" data-bi-ct="button">
+        <svg xmlns="http://www.w3.org/2000/svg" style="margin-right:10px" width="24" height="24" fill="currentColor" class="bi bi-brightness-high" viewbox="0 0 16 16" aria-hidden="true">
+            <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"></path>
+        </svg><span>Theme</span>
+    </button>
+    
+<uhf-footer locale="en-us" partnerid="MSDev-Community" footerid="MSDev-DEVCOM-Community-Footer" theme="light">
+    <script id="uhf-footer-ccpa">
+        (function () {
+            function checkThirdPartyAdsOptOutCookie() {
+                try {
+                    var match = document.cookie.match('(^|;)\\s*3PAdsOptOut\\s*=\\s*([^;]+)');
+                    return (match ? match[2] : '') !== '1';
+                } catch (e) {
+                    return true;
+                }
+            }
+            var globalPrivacyControlEnabled = navigator.globalPrivacyControl;
+            window.GPC_DataSharingOptIn = globalPrivacyControlEnabled ? false : checkThirdPartyAdsOptOutCookie();
+            if (typeof window.onGPCLoaded === 'function') {
+                window.onGPCLoaded();
+            }
+        })();
+    </script>
+    
+<uhf-footer-nav slot="uhf-footer-nav">
+</uhf-footer-nav>
+        <a slot="uhf-footer-locale-picker" class="uhf-footer-link" href="/en-us/_devcom/locale" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_English (United States)_nav","ecn":"LegalNav_LocalePicker_nav","ehn":"LegalNav"}' aria-label="Content Language Selector. Currently set to English (United States)">English (United States)</a>
+    <div slot="uhf-footer-california-privacy-link">
+        
+<a class="uhf-footer-link" href="https://aka.ms/yourcaliforniaprivacychoices" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_California Privacy_nav","ecn":"LegalNav_CaliforniaPrivacy_nav","ehn":"LegalNav"}'>
+    <svg role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 14" xml:space="preserve" height="16" width="43">
+    <title>Your Privacy Choices Opt-Out Icon</title>
+    <path d="M7.4 12.8h6.8l3.1-11.6H7.4C4.2 1.2 1.6 3.8 1.6 7s2.6 5.8 5.8 5.8z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#fff"></path>
+    <path d="M22.6 0H7.4c-3.9 0-7 3.1-7 7s3.1 7 7 7h15.2c3.9 0 7-3.1 7-7s-3.2-7-7-7zm-21 7c0-3.2 2.6-5.8 5.8-5.8h9.9l-3.1 11.6H7.4c-3.2 0-5.8-2.6-5.8-5.8z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#06f"></path>
+    <path d="M24.6 4c.2.2.2.6 0 .8L22.5 7l2.2 2.2c.2.2.2.6 0 .8-.2.2-.6.2-.8 0l-2.2-2.2-2.2 2.2c-.2.2-.6.2-.8 0-.2-.2-.2-.6 0-.8L20.8 7l-2.2-2.2c-.2-.2-.2-.6 0-.8.2-.2.6-.2.8 0l2.2 2.2L23.8 4c.2-.2.6-.2.8 0z" style="fill:#fff"></path>
+    <path d="M12.7 4.1c.2.2.3.6.1.8L8.6 9.8c-.1.1-.2.2-.3.2-.2.1-.5.1-.7-.1L5.4 7.7c-.2-.2-.2-.6 0-.8.2-.2.6-.2.8 0L8 8.6l3.8-4.5c.2-.2.6-.2.9 0z" style="fill:#06f"></path>
+    </svg>
+    <span>Your Privacy Choices</span>
+</a>
+        <noscript>
+            
+<a class="uhf-footer-link" href="https://aka.ms/yourcaliforniaprivacychoices" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_California Privacy_nav","ecn":"LegalNav_CaliforniaPrivacy_nav","ehn":"LegalNav"}'>
+    <svg role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 14" xml:space="preserve" height="16" width="43">
+    <title>Your Privacy Choices Opt-Out Icon</title>
+    <path d="M7.4 12.8h6.8l3.1-11.6H7.4C4.2 1.2 1.6 3.8 1.6 7s2.6 5.8 5.8 5.8z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#fff"></path>
+    <path d="M22.6 0H7.4c-3.9 0-7 3.1-7 7s3.1 7 7 7h15.2c3.9 0 7-3.1 7-7s-3.2-7-7-7zm-21 7c0-3.2 2.6-5.8 5.8-5.8h9.9l-3.1 11.6H7.4c-3.2 0-5.8-2.6-5.8-5.8z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#06f"></path>
+    <path d="M24.6 4c.2.2.2.6 0 .8L22.5 7l2.2 2.2c.2.2.2.6 0 .8-.2.2-.6.2-.8 0l-2.2-2.2-2.2 2.2c-.2.2-.6.2-.8 0-.2-.2-.2-.6 0-.8L20.8 7l-2.2-2.2c-.2-.2-.2-.6 0-.8.2-.2.6-.2.8 0l2.2 2.2L23.8 4c.2-.2.6-.2.8 0z" style="fill:#fff"></path>
+    <path d="M12.7 4.1c.2.2.3.6.1.8L8.6 9.8c-.1.1-.2.2-.3.2-.2.1-.5.1-.7-.1L5.4 7.7c-.2-.2-.2-.6 0-.8.2-.2.6-.2.8 0L8 8.6l3.8-4.5c.2-.2.6-.2.9 0z" style="fill:#06f"></path>
+    </svg>
+    <span>Your Privacy Choices</span>
+</a>
+        </noscript>
+    </div>
+    <a slot="uhf-footer-consumer-health-privacy-link" class="uhf-footer-link" href="https://go.microsoft.com/fwlink/?linkid=2259814" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_Consumer Health Privacy_nav","ecn":"LegalNav_ConsumerHealthPrivacy_nav","ehn":"LegalNav"}'>Consumer Health Privacy</a>
+    
+<uhf-footer-menu slot="uhf-footer-menu" data-nav-label="Microsoft corporate links">
+            <a class="uhf-footer-link" href="https://support.microsoft.com/contactus/" id="uhf-Contact Microsoft " data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_Contact Microsoft _nav","ecn":"LegalNav_Contact Microsoft _nav","ehn":"LegalNav"}'>Contact Microsoft </a>
+            <a class="uhf-footer-link" href="https://go.microsoft.com/fwlink/?LinkId=521839" id="uhf-Privacy &amp; Cookies" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_Privacy &amp; Cookies_nav","ecn":"LegalNav_Privacy &amp; Cookies_nav","ehn":"LegalNav"}'>Privacy &amp; Cookies</a>
+            <a class="uhf-footer-link" href="#" id="uhf-Manage cookies" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_Manage cookies_nav","ecn":"LegalNav_Manage cookies_nav","ehn":"LegalNav"}'>Manage cookies</a>
+            <a class="uhf-footer-link" href="https://go.microsoft.com/fwlink/?LinkID=206977" id="uhf-Terms of Use" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_Terms of Use_nav","ecn":"LegalNav_Terms of Use_nav","ehn":"LegalNav"}'>Terms of Use</a>
+            <a class="uhf-footer-link" href="https://www.microsoft.com/trademarks" id="uhf-Trademarks" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_Trademarks_nav","ecn":"LegalNav_Trademarks_nav","ehn":"LegalNav"}'>Trademarks</a>
+</uhf-footer-menu>
+</uhf-footer>
+</div>
+    </div>
+    <!-- /Theme picker -->
+
+
+    <!-- Scripts -->
+    <script src="/__mirror/assets/6c595ffdb677c4a558469896" async></script>
+
+    
+<script type="module" src="/__mirror/assets/adb93738516987ac3e9c9096"></script>
+    
+ <!-- UHF scripts -->
+
+    
+    
+    <script src="/__mirror/assets/5bc8db1ff406d4f5b65d6317"></script>
+    <!-- /Scripts -->
+
+    <script src="/__mirror/assets/942efe456a10a90269264a6f"></script>
+</body>
+</html>
