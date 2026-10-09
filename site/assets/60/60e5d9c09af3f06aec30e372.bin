@@ -1,0 +1,2338 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:02.460
+>> Hay más
+Azure IoT Edge que
+
+00:00:02.460 --> 00:00:04.455
+el módulo típico de Vision AI
+
+00:00:04.455 --> 00:00:07.005
+ejecutándose en el dispositivo
+para reconocer objetos.
+
+00:00:07.005 --> 00:00:10.680
+¿Y si te lo dijera?
+le permite jugar
+
+00:00:10.680 --> 00:00:14.910
+Flappy Bird en la señalización digital
+mientras esperas tu autobús.
+
+00:00:14.910 --> 00:00:17.370
+Eso es exactamente de lo que Andreas
+
+00:00:17.370 --> 00:00:21.975
+Ombori Grid está aquí para mostrar
+nosotros y cómo funciona eso.
+
+00:00:21.975 --> 00:00:24.270
+Muy buena demostración y manera
+
+00:00:24.270 --> 00:00:26.340
+más que solo Flappy Bird
+al final del día,
+
+00:00:26.340 --> 00:00:28.930
+y eso es hoy en The IoT Show.
+
+00:00:42.260 --> 00:00:43.360
+[MÚSICA]
+
+00:00:43.360 --> 00:00:45.890
+>> Hola a todos. Gracias por
+uniéndose a nosotros en The IoT Show.
+
+00:00:45.890 --> 00:00:47.315
+Soy Olivier, tu anfitrión.
+
+00:00:47.315 --> 00:00:50.450
+Hoy, estás aquí para escuchar
+sobre IoT Edge y cómo es
+
+00:00:50.450 --> 00:00:54.800
+utilizado para mejorar la ciencia digital
+experiencia y puente de IoT,
+
+00:00:54.800 --> 00:00:57.705
+Pantallas y dispositivos móviles
+con Ombori Grid.
+
+00:00:57.705 --> 00:00:59.400
+Para eso, tengo
+Andreas conmigo hoy.
+
+00:00:59.400 --> 00:01:00.840
+Andreas, ¿cómo estás?
+
+00:01:00.840 --> 00:01:03.645
+>> Hola, Olivier. Estoy
+genial, gracias. ¿Cómo estás?
+
+00:01:03.645 --> 00:01:07.110
+>> soy fantástico. Dónde
+¿Nos llamas desde?
+
+00:01:07.110 --> 00:01:10.335
+>> Estocolmo, Suecia, en realidad.
+
+00:01:10.335 --> 00:01:13.470
+>> Impresionante. Cuéntame un
+un poco sobre ti mismo.
+
+00:01:13.470 --> 00:01:15.150
+¿Cuál es tu experiencia en IoT?
+
+00:01:15.150 --> 00:01:16.950
+¿Cuánto tiempo llevas?
+en ese negocio?
+
+00:01:16.950 --> 00:01:18.990
+A continuación hablaremos de
+Cuadrícula de Ombori y Ombori,
+
+00:01:18.990 --> 00:01:21.840
+lo cual es una gran solución
+viniste aquí para mostrarnos.
+
+00:01:21.840 --> 00:01:24.725
+>> Bueno, he estado trabajando con
+
+00:01:24.725 --> 00:01:27.994
+IoT y Edge Compute para el pasado,
+
+00:01:27.994 --> 00:01:29.870
+Creo que tres o cuatro años
+
+00:01:29.870 --> 00:01:34.020
+ahora mientras hemos estado construyendo
+la plataforma Ombori Grid.
+
+00:01:35.930 --> 00:01:38.255
+>> sé que ustedes están usando
+
+00:01:38.255 --> 00:01:40.925
+Tecnologías de Microsoft.
+Por eso estás aquí.
+
+00:01:40.925 --> 00:01:44.540
+Lo interesante es que cuando
+hablamos de Azure IoT Edge,
+
+00:01:44.540 --> 00:01:45.830
+que es nuestro tiempo de ejecución para
+
+00:01:45.830 --> 00:01:47.915
+traer cargas de trabajo desde
+la nube al borde.
+
+00:01:47.915 --> 00:01:50.975
+Muy a menudo solo traemos
+hasta la demostración de Vision AI.
+
+00:01:50.975 --> 00:01:54.105
+Es como, "Oye, puedes hacer
+Vision AI en ese dispositivo Edge".
+
+00:01:54.105 --> 00:01:57.895
+Pero en realidad, muchos
+las personas usan IoT Edge para
+
+00:01:57.895 --> 00:01:59.590
+varias otras razones que no sean
+
+00:01:59.590 --> 00:02:02.680
+solo la capacidad de correr
+algún modelo de IA en el borde.
+
+00:02:02.680 --> 00:02:05.240
+Estás aquí para contarnos cómo
+
+00:02:05.240 --> 00:02:09.390
+Ombori Grid está utilizando el apalancamiento
+IoT Edge entre otras cosas
+
+00:02:09.390 --> 00:02:12.250
+pero creo que estamos viendo
+esa pantalla detrás de ti.
+
+00:02:12.250 --> 00:02:14.860
+Tenemos una pista de que
+va a ser sobre
+
+00:02:14.860 --> 00:02:17.765
+señales digitales y
+tecnologías relacionadas con ella.
+
+00:02:17.765 --> 00:02:19.380
+Entremos en eso.
+
+00:02:19.380 --> 00:02:22.695
+Cuéntanos sobre Ombori y
+Cuadrícula de Ombori. ¿Qué es?
+
+00:02:22.695 --> 00:02:26.565
+¿Cómo llegó a
+crear esa solución?
+
+00:02:26.565 --> 00:02:29.425
+A continuación hablaremos de detalles
+y veremos sobre su demo.
+
+00:02:29.425 --> 00:02:33.010
+>> Absolutamente. Es un
+historia bastante divertida en realidad,
+
+00:02:33.010 --> 00:02:35.010
+pero lo mantendré corto.
+
+00:02:35.010 --> 00:02:38.430
+Pero cuando empezamos
+construyendo la cuadrícula de Ombori,
+
+00:02:38.430 --> 00:02:41.750
+empezamos a crear un
+plataforma de gestión de aplicaciones
+
+00:02:41.750 --> 00:02:44.765
+y nos centramos en el
+experiencia móvil en realidad.
+
+00:02:44.765 --> 00:02:48.800
+Pero hicimos una colaboración
+con H&M y Microsoft
+
+00:02:48.800 --> 00:02:52.730
+hace unos años que fue
+viral con un espejo parlante.
+
+00:02:52.730 --> 00:02:55.670
+Muchos colegas o clientes
+comenzó a llamarnos y
+
+00:02:55.670 --> 00:02:58.805
+pidiéndonos que ayudemos con la innovación
+en el espacio físico,
+
+00:02:58.805 --> 00:03:01.850
+creando un realmente genial
+experiencia del cliente
+
+00:03:01.850 --> 00:03:04.030
+y también la experiencia de los empleados.
+
+00:03:04.030 --> 00:03:06.860
+Comenzamos a extender nuestra plataforma a
+
+00:03:06.860 --> 00:03:09.410
+ser más apto para esos casos de uso.
+
+00:03:09.410 --> 00:03:12.830
+Fue entonces cuando adoptamos el IoT
+Plataforma perimetral para hacer todo lo
+
+00:03:12.830 --> 00:03:14.660
+nuestra gestión de dispositivos
+y todo lo que es
+
+00:03:14.660 --> 00:03:17.110
+sucediendo en el Edge Compute.
+
+00:03:17.110 --> 00:03:20.310
+>> interesante. Veremos
+que durante las demos.
+
+00:03:20.310 --> 00:03:23.430
+Hay una cosa que
+Me llamó la atención que nosotros,
+
+00:03:23.430 --> 00:03:26.415
+yo aquí, especialmente en
+el equipo de IoT, estamos sesgados.
+
+00:03:26.415 --> 00:03:28.870
+Vemos IoT Edge todos los días y así sucesivamente.
+
+00:03:28.870 --> 00:03:33.470
+Cuéntame un poco sobre cómo
+nuestra ciencia digital.
+
+00:03:33.470 --> 00:03:36.845
+Yo diría que los más inteligentes
+los de estos días
+
+00:03:36.845 --> 00:03:41.215
+¿Se desarrollan de la
+tecnología que usaron allí?
+
+00:03:41.215 --> 00:03:45.190
+>> sí, quiero decir, hay un
+muchos marcos web que suceden
+
+00:03:45.190 --> 00:03:48.910
+cuando se trata de lo digital
+desarrollo de señalización.
+
+00:03:48.910 --> 00:03:51.910
+Pero algo que nosotros
+se han centrado
+
+00:03:51.910 --> 00:03:54.880
+on no es tanto ese signo en sí,
+
+00:03:54.880 --> 00:03:57.295
+pero más, ¿cómo podemos crear?
+
+00:03:57.295 --> 00:03:59.560
+este viaje digital tanto para
+
+00:03:59.560 --> 00:04:02.770
+los empleados y cuarto,
+para los visitantes?
+
+00:04:02.770 --> 00:04:06.635
+Va mucho más allá de lo que
+está sucediendo en la pantalla.
+
+00:04:06.635 --> 00:04:08.780
+Claro, tener pantallas grandes como esta
+
+00:04:08.780 --> 00:04:11.635
+son geniales porque
+llaman la atención
+
+00:04:11.635 --> 00:04:14.530
+y pueden educar al visitante a
+
+00:04:14.530 --> 00:04:17.710
+un espacio sobre qué
+posibilidades que hay.
+
+00:04:17.710 --> 00:04:20.335
+Pero siempre tratamos de seguir adelante.
+
+00:04:20.335 --> 00:04:22.600
+el dispositivo de los visitantes
+y cómo pueden usar
+
+00:04:22.600 --> 00:04:25.625
+su propio teléfono para
+navegar por el espacio.
+
+00:04:25.625 --> 00:04:28.160
+Para hacer eso, necesitas
+para realmente puentear
+
+00:04:28.160 --> 00:04:31.250
+estas tres áreas diferentes
+con la pantalla digital,
+
+00:04:31.250 --> 00:04:34.385
+el IoT y cómo
+tener dispositivos conectados,
+
+00:04:34.385 --> 00:04:38.130
+y luego el teléfono móvil.
+¿Tiene sentido eso?
+
+00:04:38.130 --> 00:04:40.025
+>> Tiene sentido.
+
+00:04:40.025 --> 00:04:41.690
+Puedo ver,
+
+00:04:41.690 --> 00:04:42.950
+porque ya los he visto.
+
+00:04:42.950 --> 00:04:45.530
+Creo que la gente se dio cuenta
+que cuando saltamos allí,
+
+00:04:45.530 --> 00:04:49.235
+Este puente está hecho
+posible a través de la Nube.
+
+00:04:49.235 --> 00:04:52.160
+Porque no quieres
+tener un consumidor conecte
+
+00:04:52.160 --> 00:04:55.490
+su dispositivo directamente a
+un signo digital desconocido.
+
+00:04:55.490 --> 00:04:59.690
+Desde la perspectiva de la privacidad,
+perspectiva de seguridad,
+
+00:04:59.690 --> 00:05:01.040
+como bidireccionalmente, no
+
+00:05:01.040 --> 00:05:02.540
+quieren que se conecten y no lo hacen
+
+00:05:02.540 --> 00:05:06.100
+quieren que ese signo digital tenga
+acceder directamente a su dispositivo.
+
+00:05:06.100 --> 00:05:09.755
+Definitivamente necesitas tener
+estos intermediarios, es decir,
+
+00:05:09.755 --> 00:05:14.265
+en nuestro caso a la Nube. Me gusta.
+
+00:05:14.265 --> 00:05:16.680
+¿Qué tal si nos lo muestras?
+
+00:05:16.680 --> 00:05:19.700
+Porque tenemos desarrolladores
+aquí observándonos,
+
+00:05:19.700 --> 00:05:22.610
+Me gustaría que trajeras
+subir la CLI también y mostrar
+
+00:05:22.610 --> 00:05:26.695
+cómo se ve la solución
+me gusta y cómo se usa.
+
+00:05:26.695 --> 00:05:28.395
+>> No, estaría encantado de hacerlo.
+
+00:05:28.395 --> 00:05:32.510
+De hecho, puedo compartir mi pantalla
+y tal vez guiarte a través de él.
+
+00:05:32.510 --> 00:05:36.680
+Porque, quiero decir, somos
+crear todo en Azure.
+
+00:05:36.680 --> 00:05:40.160
+Toda la plataforma Ombori Grid
+funciona con Microsoft Azure
+
+00:05:40.160 --> 00:05:44.015
+y se puede conectar a su
+poseer también el inquilino de Azure
+
+00:05:44.015 --> 00:05:48.395
+pero las herramientas llevan algún tiempo
+
+00:05:48.395 --> 00:05:50.210
+para usar y aprovechar en
+
+00:05:50.210 --> 00:05:53.180
+la mejor manera cuando realmente
+quieren centrarse en la experiencia.
+
+00:05:53.180 --> 00:05:54.920
+Lo que hemos hecho es que tenemos
+
+00:05:54.920 --> 00:05:56.930
+agilizaron todo
+cuando se trata de
+
+00:05:56.930 --> 00:06:01.265
+aprovisionamiento de dispositivos y
+incorporación y así sucesivamente.
+
+00:06:01.265 --> 00:06:04.430
+Solo para que puedas enderezte
+en la construcción de sus módulos Edge,
+
+00:06:04.430 --> 00:06:07.280
+sus aplicaciones móviles o las digitales
+aplicaciones de pantalla y todo
+
+00:06:07.280 --> 00:06:08.330
+simplemente funciona y tienes el
+
+00:06:08.330 --> 00:06:10.355
+comunicación en tiempo real
+entre los tres.
+
+00:06:10.355 --> 00:06:12.410
+Sin embargo, eso es bueno.
+
+00:06:12.410 --> 00:06:16.030
+>> me encanta eso porque cumplimos
+a nuestros socios como usted,
+
+00:06:16.030 --> 00:06:19.670
+una capa que le permite no
+hay que reinventar la rueda para
+
+00:06:19.670 --> 00:06:21.230
+gestión de módulos más antiguos y
+
+00:06:21.230 --> 00:06:23.780
+conexión del dispositivo
+a la nube y así sucesivamente.
+
+00:06:23.780 --> 00:06:26.120
+Estás agregando otra capa
+para sus clientes en
+
+00:06:26.120 --> 00:06:28.930
+el reino de los signos digitales y
+ciencia digital inteligente que
+
+00:06:28.930 --> 00:06:31.670
+no tienen que hacer eso
+conjunto adicional de cosas
+
+00:06:31.670 --> 00:06:34.805
+que son comunes y
+genérico en ese espacio.
+
+00:06:34.805 --> 00:06:37.490
+Creo que tiene sentido
+a diferencia de las capas,
+
+00:06:37.490 --> 00:06:44.865
+Creo que es muy explícito para
+personas para entender y captar.
+
+00:06:44.865 --> 00:06:48.140
+>> Exactamente. Quiero decir, tenemos
+clientes que tienen
+
+00:06:48.140 --> 00:06:49.370
+ningún concepto de Azure o
+
+00:06:49.370 --> 00:06:52.430
+los servicios de Azure y ellos
+solo directo con nuestra plataforma.
+
+00:06:52.430 --> 00:06:55.460
+Pero también tenemos muchos clientes
+que realmente están profundamente en
+
+00:06:55.460 --> 00:06:57.695
+todo el ecosistema de Azure
+y, a continuación, conéctese
+
+00:06:57.695 --> 00:07:00.760
+sus servicios existentes a lo que
+está sucediendo en Ombori Grid.
+
+00:07:00.760 --> 00:07:02.900
+Toda la conexión de Azure
+realmente está presente
+
+00:07:02.900 --> 00:07:05.650
+allí debajo de la superficie de la misma.
+
+00:07:05.650 --> 00:07:09.290
+La primera opción para empezar
+es simplemente ir a nuestro sitio web,
+
+00:07:09.290 --> 00:07:13.925
+ombori.com/grid, introduzca su
+dirección de correo electrónico, y ya está.
+
+00:07:13.925 --> 00:07:16.880
+La otra opción si
+ya está en Azure,
+
+00:07:16.880 --> 00:07:18.920
+simplemente vaya al Portal de Azure,
+
+00:07:18.920 --> 00:07:20.550
+busca Ombori y puedes
+
+00:07:20.550 --> 00:07:22.235
+encuéntralo en el
+Marketplace y tú puedes
+
+00:07:22.235 --> 00:07:25.925
+simplemente instálelo y úselo
+como cualquier otro servicio de Azure.
+
+00:07:25.925 --> 00:07:26.540
+>> perfecto.
+
+00:07:26.540 --> 00:07:28.805
+>> Una vez que tenga esta configuración,
+
+00:07:28.805 --> 00:07:33.325
+terminarás en lo que nosotros
+llame a la consola de Ombori Grid.
+
+00:07:33.325 --> 00:07:37.190
+Aquí tenemos un mercado con
+aplicaciones listas para usar que puedes
+
+00:07:37.190 --> 00:07:41.120
+simplemente instale y configure
+sin ninguna codificación
+
+00:07:41.120 --> 00:07:42.410
+pero también tenemos
+
+00:07:42.410 --> 00:07:46.235
+estas herramientas de desarrollo y eso es
+en lo que quiero centrarme hoy.
+
+00:07:46.235 --> 00:07:49.850
+Si te subes a
+developer.ombori.com,
+
+00:07:49.850 --> 00:07:53.420
+tiene la documentación cómo
+para hacer el desarrollo de pantalla,
+
+00:07:53.420 --> 00:07:58.100
+Desarrollo de aplicaciones IoT, cómo
+para usar la CLI, y así sucesivamente.
+
+00:07:58.100 --> 00:07:59.515
+>> Niza.
+
+00:07:59.515 --> 00:08:03.350
+>> La demo que quiero compartir
+contigo hoy es cómo
+
+00:08:03.350 --> 00:08:04.730
+ejecute Flappy Bird en
+
+00:08:04.730 --> 00:08:06.950
+una pantalla grande con tu
+teléfono móvil como control remoto.
+
+00:08:06.950 --> 00:08:08.990
+>> Por supuesto, quién
+no quiere jugar
+
+00:08:08.990 --> 00:08:11.500
+Flappy Bird en un gran letrero digital?
+
+00:08:11.500 --> 00:08:15.080
+>> Exactamente. Construyendo esto
+gastamos demasiados
+
+00:08:15.080 --> 00:08:18.665
+horas en la oficina jugando esto
+y eso para hacerlo también.
+
+00:08:18.665 --> 00:08:20.165
+>> Tienes que probarlo.
+
+00:08:20.165 --> 00:08:23.200
+>> sí. Tenemos que probarlo.
+
+00:08:23.200 --> 00:08:26.260
+Las instrucciones aquí
+son paso a paso,
+
+00:08:26.260 --> 00:08:27.560
+es una aplicación de pantalla y
+
+00:08:27.560 --> 00:08:30.095
+una aplicación móvil con
+comunicación en tiempo real.
+
+00:08:30.095 --> 00:08:34.085
+Vamos a ir recto
+en el repositorio de GitHub,
+
+00:08:34.085 --> 00:08:35.540
+que es una fragua de
+
+00:08:35.540 --> 00:08:38.660
+el código abierto original
+JavaScript Flappy Bird.
+
+00:08:38.660 --> 00:08:41.480
+Hay un enlace al original
+si quieres comprobarlo
+
+00:08:41.480 --> 00:08:43.400
+pero aquí tenemos nuestra versión con
+
+00:08:43.400 --> 00:08:46.890
+la aplicación móvil y la pantalla hacia arriba.
+
+00:08:47.540 --> 00:08:50.980
+Solo voy a clonar ese repositorio.
+
+00:08:54.110 --> 00:08:58.240
+Aquí vamos. Aquí puedes ver
+
+00:08:58.240 --> 00:08:59.800
+tenemos la aplicación móvil
+y la aplicación de pantalla
+
+00:08:59.800 --> 00:09:01.945
+así que comencemos con una aplicación móvil.
+
+00:09:01.945 --> 00:09:03.970
+Vamos a correr el hilo a
+
+00:09:03.970 --> 00:09:06.395
+obtener todo mi
+dependencias instaladas.
+
+00:09:06.395 --> 00:09:08.080
+>> Niza. Mientras lo hace
+
+00:09:08.080 --> 00:09:10.045
+eso porque va
+para tomarse un poco de tiempo.
+
+00:09:10.045 --> 00:09:12.790
+Vimos el mercado,
+
+00:09:12.790 --> 00:09:14.110
+y en el mercado estamos
+
+00:09:14.110 --> 00:09:16.780
+mencionando aplicaciones que
+podría estar preinstalado.
+
+00:09:16.780 --> 00:09:18.370
+Si entiendo correctamente,
+
+00:09:18.370 --> 00:09:20.440
+estas aplicaciones son cosas diferentes.
+
+00:09:20.440 --> 00:09:22.840
+Hay una parte de la aplicación
+
+00:09:22.840 --> 00:09:25.404
+que se está ejecutando en el
+dispositivo de señalización digital,
+
+00:09:25.404 --> 00:09:27.280
+que ofrece la experiencia.
+
+00:09:27.280 --> 00:09:29.830
+Luego hay otra parte
+que podría ser una aplicación móvil
+
+00:09:29.830 --> 00:09:32.480
+que el usuario está utilizando para
+interactuar con ese signo digital.
+
+00:09:32.480 --> 00:09:33.970
+Estos se empaquetan como lo que
+
+00:09:33.970 --> 00:09:36.815
+llamamos amplificadores a su
+mercado, ¿correcto?
+
+00:09:36.815 --> 00:09:40.320
+>> Absolutamente correcto. Nosotros
+dicen que tenemos aplicaciones en la nube,
+
+00:09:40.320 --> 00:09:43.110
+Aplicaciones de IoT, aplicaciones de pantalla,
+y aplicaciones móviles.
+
+00:09:43.110 --> 00:09:46.770
+Un ejemplo, cuando llegó covid,
+
+00:09:46.770 --> 00:09:49.695
+muchos de nuestros clientes nos preguntaron
+para ayudar con esa situación.
+
+00:09:49.695 --> 00:09:52.045
+Reutilizamos la solución de colas,
+
+00:09:52.045 --> 00:09:54.490
+que es una aplicación en la nube para tener
+
+00:09:54.490 --> 00:09:57.350
+señales digitales que muestran
+ocupación en tiempo real.
+
+00:09:57.350 --> 00:09:58.690
+Si escaneo un código QR,
+
+00:09:58.690 --> 00:10:00.455
+Obtendría el boleto en mi teléfono.
+
+00:10:00.455 --> 00:10:04.015
+Ese boleto podría incluso ser
+se utiliza para simplemente escanearlo a
+
+00:10:04.015 --> 00:10:07.570
+abrir una puerta física para dar
+mi entrada al espacio.
+
+00:10:07.570 --> 00:10:10.780
+Ese es un muy buen escaparate
+de esta interacción
+
+00:10:10.780 --> 00:10:13.935
+en tiempo real entre pantallas Cloud,
+
+00:10:13.935 --> 00:10:15.845
+IoT y teléfonos.
+
+00:10:15.845 --> 00:10:19.220
+>> Totalmente, gran ejemplo seguro.
+
+00:10:21.200 --> 00:10:25.530
+>> Solo voy a configurar mi
+Código de Visual Studio aquí.
+
+00:10:27.550 --> 00:10:35.205
+Demagogos correctos.
+Aquí vamos, así que aquí.
+
+00:10:35.205 --> 00:10:37.035
+>> Sí, confías en ti mismo.
+
+00:10:37.035 --> 00:10:39.030
+>> confío en mí mismo. Sí.
+
+00:10:39.030 --> 00:10:40.465
+>> Pero me gusta esta nueva característica.
+
+00:10:40.465 --> 00:10:43.460
+Es un pescador reciente y
+código que le permite
+
+00:10:43.460 --> 00:10:45.080
+reconocer que la fuente de
+
+00:10:45.080 --> 00:10:47.650
+el código es algo
+confías. Me gusta.
+
+00:10:47.650 --> 00:10:50.295
+>> Es muy útil en realidad.
+
+00:10:50.295 --> 00:10:53.535
+Ahora me he abierto
+el repositorio aquí.
+
+00:10:53.535 --> 00:10:56.059
+Ya ves que tenemos la aplicación móvil
+y la aplicación de pantalla.
+
+00:10:56.059 --> 00:10:59.440
+Acabo de instalar el
+dependencias para la aplicación móvil.
+
+00:10:59.440 --> 00:11:00.780
+Mientras miramos eso,
+
+00:11:00.780 --> 00:11:02.760
+Haré lo mismo para
+la aplicación de pantalla para que nosotros
+
+00:11:02.760 --> 00:11:05.505
+ahorre algo de tiempo para el siguiente paso.
+
+00:11:05.505 --> 00:11:07.800
+>> sí. En ese caso,
+
+00:11:07.800 --> 00:11:12.085
+Este prenupcial es IoT
+Módulo edge, ¿correcto?
+
+00:11:12.085 --> 00:11:14.450
+>> Sí. Tanto la aplicación móvil como
+
+00:11:14.450 --> 00:11:18.905
+Las aplicaciones de pantalla son en realidad
+sólo aplicaciones web HTML5.
+
+00:11:18.905 --> 00:11:21.860
+En este caso, son
+escrito en "React".
+
+00:11:21.860 --> 00:11:25.400
+Pero qué es esto en realidad
+voy a jugar esto en
+
+00:11:25.400 --> 00:11:29.060
+una pantalla es esta IoT Edge
+contenedor que ves detrás de mí,
+
+00:11:29.060 --> 00:11:31.700
+que está aquí solo pagando un video.
+
+00:11:31.700 --> 00:11:37.555
+Implementaremos esta aplicación
+en IoT Edge, en realidad.
+
+00:11:37.555 --> 00:11:39.190
+>> lo tengo. Básicamente
+
+00:11:39.190 --> 00:11:42.005
+Está utilizando un módulo preinstalado
+
+00:11:42.005 --> 00:11:44.930
+en el ámbito de IoT que se configurará
+
+00:11:44.930 --> 00:11:47.480
+de forma remota desde el Centro de IoT para implementar
+
+00:11:47.480 --> 00:11:48.950
+una aplicación web que va a ser
+
+00:11:48.950 --> 00:11:51.685
+el front-end básicamente
+del dispositivo?
+
+00:11:51.685 --> 00:11:52.695
+>> Exactamente.
+
+00:11:52.695 --> 00:11:53.685
+>> Está bien.
+
+00:11:53.685 --> 00:11:57.850
+>> Sí. Si somos
+mirando el código aquí
+
+00:11:57.850 --> 00:11:59.560
+de la aplicación móvil,
+
+00:11:59.560 --> 00:12:01.270
+en realidad es realmente simple
+
+00:12:01.270 --> 00:12:03.340
+porque cuando estás
+jugando Flappy Bird,
+
+00:12:03.340 --> 00:12:06.085
+lo único que realmente tienes
+lo que hay que hacer es aletear.
+
+00:12:06.085 --> 00:12:10.360
+Este código React tiene uno
+botón que se llama solapa,
+
+00:12:10.360 --> 00:12:13.075
+y que se va a publicar
+
+00:12:13.075 --> 00:12:17.365
+el evento a bordo
+rejilla que es solapa,
+
+00:12:17.365 --> 00:12:22.930
+pero también se está suscribiendo a
+eventos de la aplicación de pantalla,
+
+00:12:22.930 --> 00:12:24.910
+que es Game Over y Game Started,
+
+00:12:24.910 --> 00:12:26.815
+para que sea consciente del estado
+
+00:12:26.815 --> 00:12:28.840
+de la aplicación de pantalla
+en todo momento,
+
+00:12:28.840 --> 00:12:33.130
+pero luego puede enviar el comando
+a Flap. ¿Tiene sentido eso?
+
+00:12:33.130 --> 00:12:35.560
+>> Tiene sentido.
+Veo esa entidad,
+
+00:12:35.560 --> 00:12:39.310
+la aplicación va a
+interactuar con estos dos tipos,
+
+00:12:39.310 --> 00:12:40.660
+la pantalla y el móvil,
+
+00:12:40.660 --> 00:12:41.860
+y no tiene sentido.
+
+00:12:41.860 --> 00:12:43.975
+Tienes estas tuberías
+de comunicación,
+
+00:12:43.975 --> 00:12:45.910
+Un comando se apaga y el proveedor
+
+00:12:45.910 --> 00:12:48.130
+sube y luego tú
+tienen que hacer sonar eso.
+
+00:12:48.130 --> 00:12:49.735
+>> sí, exactamente.
+
+00:12:49.735 --> 00:12:52.345
+Tienes algunos módulos
+aquí están,
+
+00:12:52.345 --> 00:12:53.530
+Me parece bastante interesante.
+
+00:12:53.530 --> 00:12:57.595
+Uno es la configuración utilizada de
+configuración de la aplicación de cuadrícula móvil.
+
+00:12:57.595 --> 00:13:01.000
+El otro es el
+Biblioteca de mensajería real,
+
+00:13:01.000 --> 00:13:02.600
+que se llama mensajería GA,
+
+00:13:02.600 --> 00:13:05.610
+donde los tiene
+componentes que puede
+
+00:13:05.610 --> 00:13:08.985
+solo use para enviar y
+suscribirse a los eventos,
+
+00:13:08.985 --> 00:13:10.710
+toda la complejidad y
+
+00:13:10.710 --> 00:13:13.380
+la seguridad en torno a esto es
+simplemente abstraído de
+
+00:13:13.380 --> 00:13:15.770
+tú como desarrollador así que
+que solo puedes enfocar
+
+00:13:15.770 --> 00:13:19.345
+sobre la creación del bien
+experiencias del cliente.
+
+00:13:19.345 --> 00:13:21.400
+Cuando se trata de usar la configuración,
+
+00:13:21.400 --> 00:13:22.690
+esto es otra cosa porque si
+
+00:13:22.690 --> 00:13:24.355
+está creando una aplicación o si
+
+00:13:24.355 --> 00:13:28.510
+estamos viendo nuestro
+aplicaciones de mercado,
+
+00:13:28.510 --> 00:13:30.790
+si lo ha hecho, vamos a
+decir que eres un
+
+00:13:30.790 --> 00:13:32.170
+venta al por menor en las múltiples tiendas,
+
+00:13:32.170 --> 00:13:33.670
+no tendrás la misma configuración
+
+00:13:33.670 --> 00:13:35.440
+necesariamente en todas las tiendas,
+
+00:13:35.440 --> 00:13:37.825
+querrás cambiar
+cosas diferentes.
+
+00:13:37.825 --> 00:13:42.865
+Puedes elegir, como desarrollador
+qué opciones tienes,
+
+00:13:42.865 --> 00:13:46.330
+digamos gerentes de tienda o
+las personas no técnicas deberían poder
+
+00:13:46.330 --> 00:13:49.930
+cambio para cada instalación
+en la consola de cuadrícula,
+
+00:13:49.930 --> 00:13:54.085
+y lo haces por
+definiendo este esquema.
+
+00:13:54.085 --> 00:13:56.230
+Este es un esquema muy simple para
+
+00:13:56.230 --> 00:13:59.785
+la aplicación móvil que
+básicamente dice: "No hagas nada".
+
+00:13:59.785 --> 00:14:03.880
+Es un mejor ejemplo si saltamos
+a la aplicación de pantalla,
+
+00:14:03.880 --> 00:14:06.850
+y veremos el esquema
+que se define para eso,
+
+00:14:06.850 --> 00:14:09.415
+porque aquí tenemos
+
+00:14:09.415 --> 00:14:12.340
+tres valores que nos gusta mucho
+
+00:14:12.340 --> 00:14:15.205
+pronto veremos cómo
+úselo en la consola de cuadrícula.
+
+00:14:15.205 --> 00:14:17.485
+Pero es donde se puede
+¿Encuentro el control remoto?
+
+00:14:17.485 --> 00:14:19.615
+¿Cuál es la URL del control remoto?
+
+00:14:19.615 --> 00:14:22.120
+¿Cuál es la gravedad del ave?
+
+00:14:22.120 --> 00:14:27.430
+¿Cuál es la brecha entre el
+pipas del juego Flappy Bird,
+
+00:14:27.430 --> 00:14:29.080
+y ¿cuál es el empuje?
+
+00:14:29.080 --> 00:14:30.970
+Si implemento estas pantallas diferentes,
+
+00:14:30.970 --> 00:14:33.490
+Puedo tener completamente diferente
+juegos con solo cambiar
+
+00:14:33.490 --> 00:14:37.060
+Estos parámetros en
+la consola de cuadrícula.
+
+00:14:37.060 --> 00:14:38.930
+>> lo tengo.
+
+00:14:39.030 --> 00:14:42.160
+>> Si estás mirando el
+código para la aplicación de pantalla,
+
+00:14:42.160 --> 00:14:44.590
+puedes ver que
+se han abstraído
+
+00:14:44.590 --> 00:14:45.805
+el juego original en
+
+00:14:45.805 --> 00:14:48.925
+un solo componente React
+aquí, que llamamos Juego,
+
+00:14:48.925 --> 00:14:51.685
+y también se está cargando
+
+00:14:51.685 --> 00:14:53.710
+la biblioteca de mensajería de GA y
+
+00:14:53.710 --> 00:14:57.355
+la biblioteca de configuración de GA
+con ajustes en U,
+
+00:14:57.355 --> 00:15:01.330
+y entonces ves que vamos a
+obtener todos los valores como
+
+00:15:01.330 --> 00:15:05.290
+brecha de gravedad y empuje
+desde la consola de cuadrícula,
+
+00:15:05.290 --> 00:15:08.305
+y esta instancia
+de la solicitud,
+
+00:15:08.305 --> 00:15:10.450
+lo cual creo que es bastante genial.
+
+00:15:10.450 --> 00:15:12.490
+Lo que también harás
+ver es que como tú
+
+00:15:12.490 --> 00:15:15.279
+desarrollar aplicaciones de esta pantalla,
+
+00:15:15.279 --> 00:15:17.650
+y cómo se desarrolla el
+aplicaciones móviles.
+
+00:15:17.650 --> 00:15:19.390
+Simplemente siguen a todos
+los mismos patrones,
+
+00:15:19.390 --> 00:15:21.070
+utilizan las mismas bibliotecas,
+
+00:15:21.070 --> 00:15:25.180
+por lo que es muy fácil de usar su
+experiencia con la cuadrícula para
+
+00:15:25.180 --> 00:15:27.310
+ambas aplicaciones móviles
+y aplicaciones de pantalla y
+
+00:15:27.310 --> 00:15:30.010
+mensajería y todo
+funciona de la manera que esperas.
+
+00:15:30.010 --> 00:15:32.350
+>> sí, eso me gusta.
+Porque hoy cuando estás
+
+00:15:32.350 --> 00:15:34.330
+un desarrollador, aplicaciones de edificios,
+
+00:15:34.330 --> 00:15:38.515
+es como si estuvieras hablando con
+otro módulo de tu aplicación A,
+
+00:15:38.515 --> 00:15:41.530
+una aplicación en el mismo dispositivo
+junto a ella o no.
+
+00:15:41.530 --> 00:15:43.660
+Hace que las cosas sean súper
+simple para ellos.
+
+00:15:43.660 --> 00:15:45.310
+>> sí, exactamente.
+
+00:15:45.310 --> 00:15:47.680
+Ahora estamos viendo el
+aplicación móvil en la aplicación de pantalla,
+
+00:15:47.680 --> 00:15:48.940
+pero si estuviera creando,
+
+00:15:48.940 --> 00:15:50.860
+digamos un módulo Edge,
+
+00:15:50.860 --> 00:15:52.900
+Tendría acceso a
+las mismas bibliotecas y yo
+
+00:15:52.900 --> 00:15:55.060
+puede simplemente publicar y
+suscribirse a los mismos eventos,
+
+00:15:55.060 --> 00:15:56.545
+lo cual es realmente genial.
+
+00:15:56.545 --> 00:16:00.340
+Puede crear un escenario cuando
+presiona un botón en su teléfono,
+
+00:16:00.340 --> 00:16:03.535
+abre una puerta a través de un
+módulo de borde, por ejemplo.
+
+00:16:03.535 --> 00:16:04.690
+>> sí. No se trata solo de
+
+00:16:04.690 --> 00:16:06.850
+una pantalla o simplemente jugar
+algo en la pantalla,
+
+00:16:06.850 --> 00:16:10.315
+realmente se trata de interactuar
+con su entorno.
+
+00:16:10.315 --> 00:16:14.965
+>> Exactamente. También cuando estás
+construyendo este típico IoT Edge,
+
+00:16:14.965 --> 00:16:20.740
+ejemplos como una visión
+algoritmo o algo así.
+
+00:16:20.740 --> 00:16:23.095
+Cuando detecta ciertos eventos,
+
+00:16:23.095 --> 00:16:25.720
+puedes publicarlos
+para que las pantallas encendidas
+
+00:16:25.720 --> 00:16:28.735
+los teléfonos pueden reaccionar en tiempo real
+a lo que sea que estén detectando.
+
+00:16:28.735 --> 00:16:32.770
+>> sí. Ahora podemos traer
+nuestra visión AI, módulo, ¿verdad?
+
+00:16:32.770 --> 00:16:34.600
+Siempre queremos
+añadir una ventaja a la vida.
+
+00:16:34.600 --> 00:16:35.215
+>> Sí.
+
+00:16:35.215 --> 00:16:36.865
+>> Veamos cómo funciona.
+
+00:16:36.865 --> 00:16:39.565
+Veamos cómo se implementa
+eso y hacer que funcione.
+
+00:16:39.565 --> 00:16:45.055
+>> Vamos a desplegarlo. Volver atrás
+aquí a nuestra consola Grid.
+
+00:16:45.055 --> 00:16:46.780
+Además de las aplicaciones públicas,
+
+00:16:46.780 --> 00:16:48.235
+también tenemos sus aplicaciones,
+
+00:16:48.235 --> 00:16:52.525
+y aquí vemos que las aplicaciones para
+este inquilino, esto está vacío.
+
+00:16:52.525 --> 00:16:54.085
+Queremos poner algo aquí.
+
+00:16:54.085 --> 00:16:55.900
+Pero lo primero que necesito
+lo que hay que hacer es que necesito
+
+00:16:55.900 --> 00:16:58.450
+Escriba el nombre de mi inquilino en
+
+00:16:58.450 --> 00:17:01.690
+la configuración porque
+la CLI de grid integrada
+
+00:17:01.690 --> 00:17:03.115
+necesita saber dónde publicar esto.
+
+00:17:03.115 --> 00:17:07.105
+Ves que mi inquilino
+el nombre aquí es AH Demo 1.
+
+00:17:07.105 --> 00:17:09.895
+Qué voy a hacer
+¿Estoy entrando en
+
+00:17:09.895 --> 00:17:13.105
+mi paquete JSON y
+reemplazar mi organización por
+
+00:17:13.105 --> 00:17:22.940
+AH Demo 1 para ambas pantallas
+y para mi aplicación móvil.
+
+00:17:23.130 --> 00:17:28.930
+Aquí vamos. Entonces podemos
+volver a nuestra CLI,
+
+00:17:28.930 --> 00:17:33.745
+y haré construcción de hilo y pub de hilo,
+
+00:17:33.745 --> 00:17:36.770
+que obviamente es
+abreviatura de publish.
+
+00:17:37.980 --> 00:17:40.060
+Lo que está haciendo aquí ahora,
+
+00:17:40.060 --> 00:17:43.450
+es que está creando un
+punto [inaudible] archivo,
+
+00:17:43.450 --> 00:17:45.640
+que es la aplicación completa construida,
+
+00:17:45.640 --> 00:17:48.400
+y se va a publicar
+que a mi inquilino,
+
+00:17:48.400 --> 00:17:52.100
+por lo que está disponible para
+yo para instalar realmente.
+
+00:17:55.590 --> 00:17:59.930
+La construcción de este exitoso
+y yo estaba publicando,
+
+00:18:02.550 --> 00:18:05.650
+y se crea nuestro lanzamiento.
+
+00:18:05.650 --> 00:18:12.530
+Si volvemos entonces a la Cuadrícula
+Consola y acabamos de recargar Mis aplicaciones,
+
+00:18:12.690 --> 00:18:15.340
+vemos que son aplicaciones
+para las normas.
+
+00:18:15.340 --> 00:18:17.515
+Ahora tenemos Flappy Bird
+pantalla de aplicación aquí,
+
+00:18:17.515 --> 00:18:19.330
+y puedo instalar eso si quiero.
+
+00:18:19.330 --> 00:18:22.510
+>> Niza. Básicamente tú
+tener aquí al desarrollador,
+
+00:18:22.510 --> 00:18:24.625
+básicamente envió una aplicación y luego
+
+00:18:24.625 --> 00:18:28.285
+un operador de la solución puede
+justo ahora encuéntralo allí y di,
+
+00:18:28.285 --> 00:18:29.680
+"Oye, quiero implementarlo en
+
+00:18:29.680 --> 00:18:32.770
+esta pantalla está ahí para
+entregar esa experiencia".
+
+00:18:32.770 --> 00:18:37.540
+>> Exactamente así. Hagámoslo
+lo mismo para la aplicación móvil,
+
+00:18:37.540 --> 00:18:39.730
+y luego podemos tomar
+una mirada a cómo
+
+00:18:39.730 --> 00:18:43.760
+en realidad, instale e implemente esto.
+
+00:18:45.870 --> 00:18:49.150
+Mientras que la aplicación móvil es
+construir e implementar,
+
+00:18:49.150 --> 00:18:52.285
+podemos simplemente iniciar ese proceso.
+
+00:18:52.285 --> 00:18:58.730
+Ahora voy a pulsar "Instalar"
+en la pantalla flappy bird.
+
+00:18:58.980 --> 00:19:07.400
+Voy a dar este Flappy
+Pantalla de prueba, podemos llamarla.
+
+00:19:10.830 --> 00:19:15.040
+Ahora ves que aparece debajo de
+mis instalaciones aquí,
+
+00:19:15.040 --> 00:19:17.800
+y luego me muestra cuál
+dispositivos en los que se está ejecutando.
+
+00:19:17.800 --> 00:19:23.035
+Esto es lo que el IoT Edge
+dispositivos que tengo disponibles.
+
+00:19:23.035 --> 00:19:24.760
+Vemos que no de
+
+00:19:24.760 --> 00:19:27.145
+Los dispositivos se encuentran actualmente
+conectado a esta instalación,
+
+00:19:27.145 --> 00:19:29.020
+por supuesto, vamos
+para conectar el dispositivo.
+
+00:19:29.020 --> 00:19:30.325
+>> Está bien.
+
+00:19:30.325 --> 00:19:35.110
+>> Aquí puedo ver los dispositivos IoT Edge
+
+00:19:35.110 --> 00:19:37.990
+que ya son
+ejecutándose en este inquilino.
+
+00:19:37.990 --> 00:19:39.460
+Si presiono sobre uno de ellos,
+
+00:19:39.460 --> 00:19:41.830
+va a mover eso de
+
+00:19:41.830 --> 00:19:45.220
+esa instalación anterior
+al que acabamos de crear.
+
+00:19:45.220 --> 00:19:48.700
+Pero también es muy fácil
+configurar dispositivos completamente nuevos,
+
+00:19:48.700 --> 00:19:51.910
+y esto es algo que
+estamos muy orgullosos de ello.
+
+00:19:51.910 --> 00:19:55.120
+Si tiene un
+enclavamiento, por ejemplo,
+
+00:19:55.120 --> 00:19:58.750
+o si tienes una frambuesa
+Pi o algo así,
+
+00:19:58.750 --> 00:20:01.480
+puedes elegir
+el tipo de dispositivo y
+
+00:20:01.480 --> 00:20:04.525
+puedes descargar la imagen.
+
+00:20:04.525 --> 00:20:07.700
+Simplemente colóselo en un USB
+pegarlo y flashearlo.
+
+00:20:09.090 --> 00:20:12.520
+Poner eso en marcha
+es tan sencillo como simplemente entrar
+
+00:20:12.520 --> 00:20:16.450
+el número de serie aquí o el escaneo
+el código QR en el dispositivo.
+
+00:20:16.450 --> 00:20:21.310
+Si estás haciendo esto en
+parque infantil de desarrollo,
+
+00:20:21.310 --> 00:20:23.500
+probablemente querrás
+para utilizar el código QR,
+
+00:20:23.500 --> 00:20:24.730
+pero si está aprovisionando como
+
+00:20:24.730 --> 00:20:27.535
+cientos de miles de dispositivos
+en entornos de producción,
+
+00:20:27.535 --> 00:20:30.490
+solo obteniendo una lista de series
+números es mucho más fácil.
+
+00:20:30.490 --> 00:20:33.700
+Cuando agregas mucho a la vez.
+
+00:20:33.700 --> 00:20:36.610
+>> me encanta eso, así que
+realmente tienen hebra.
+
+00:20:36.610 --> 00:20:38.890
+Estaba a punto de preguntarte, son
+ustedes en el negocio
+
+00:20:38.890 --> 00:20:42.220
+del propio dispositivo como solución?
+
+00:20:42.220 --> 00:20:43.795
+Pero parece que puedes tomar
+
+00:20:43.795 --> 00:20:45.640
+algunos de los genéricos
+que están ahí fuera,
+
+00:20:45.640 --> 00:20:47.440
+y supongo que la lista
+tienes aquí es
+
+00:20:47.440 --> 00:20:51.520
+el hardware más utilizado
+para alimentar señales digitales.
+
+00:20:51.520 --> 00:20:53.319
+>> sí, absolutamente.
+
+00:20:53.319 --> 00:20:58.140
+Admitimos la mayoría de los tipos de dispositivos.
+
+00:20:58.140 --> 00:21:00.615
+Si se trata de cualquier hardware Intel,
+
+00:21:00.615 --> 00:21:03.810
+esta imagen normalmente se usa de inmediato,
+
+00:21:03.810 --> 00:21:07.280
+Raspberry Pi también es
+IoT Edge alimentado.
+
+00:21:07.280 --> 00:21:10.360
+Los otros dispositivos no son IoT Edge,
+
+00:21:10.360 --> 00:21:11.890
+para que solo pueda ejecutar
+
+00:21:11.890 --> 00:21:16.270
+Contenedores perimetrales o módulos perimetrales
+en la Raspberry Pi y la Intel
+
+00:21:16.270 --> 00:21:18.370
+Imagen pero se puede gestionar
+
+00:21:18.370 --> 00:21:20.320
+las aplicaciones de pantalla a través de
+
+00:21:20.320 --> 00:21:23.935
+Centro de IoT con esto
+otros tipos de dispositivos.
+
+00:21:23.935 --> 00:21:24.790
+>> Está bien.
+
+00:21:24.790 --> 00:21:32.874
+>> Genial. A ver si el móvil
+ha terminado de construirse. Lo ha hecho.
+
+00:21:32.874 --> 00:21:37.030
+Sugiero que volvamos a
+el mercado, Mis aplicaciones,
+
+00:21:37.030 --> 00:21:46.340
+e instalamos el móvil Flappy
+remoto entonces llamamos "Bien".
+
+00:21:46.980 --> 00:21:52.765
+Lo que podemos ver aquí es
+que cada contenido se actualice,
+
+00:21:52.765 --> 00:21:55.300
+si quieres, esto realmente construir y
+
+00:21:55.300 --> 00:21:58.690
+implementar esa versión de la aplicación.
+
+00:21:58.690 --> 00:22:00.460
+Si voy al contenido,
+
+00:22:00.460 --> 00:22:04.390
+verás que el
+esquema de configuración que
+
+00:22:04.390 --> 00:22:09.010
+creamos en el repositorio
+en realidad se representa aquí.
+
+00:22:09.010 --> 00:22:12.220
+No hay tantos interesantes
+configuración en el control remoto,
+
+00:22:12.220 --> 00:22:16.315
+pero si vamos a la pantalla y
+y, a continuación, vaya a la pestaña Contenido,
+
+00:22:16.315 --> 00:22:20.215
+aquí vemos que tú
+puede cambiar la gravedad,
+
+00:22:20.215 --> 00:22:22.780
+solapa de cinco huecos
+aceleración y así sucesivamente.
+
+00:22:22.780 --> 00:22:25.120
+Eso también me da
+la opción de elegir
+
+00:22:25.120 --> 00:22:27.310
+el punto final móvil y
+
+00:22:27.310 --> 00:22:29.470
+porque hemos instalado esto
+ahora Flappy móvil y todo,
+
+00:22:29.470 --> 00:22:31.510
+Puedo elegir esto
+uno y luego serán
+
+00:22:31.510 --> 00:22:34.375
+capaz de descubrirse unos a otros
+para esa comunicación.
+
+00:22:34.375 --> 00:22:35.860
+>> Está bien.
+
+00:22:35.860 --> 00:22:40.180
+>> voy a guardar eso y
+Voy a pulsar "Publicar".
+
+00:22:40.180 --> 00:22:41.860
+Quiero publicar esto en
+
+00:22:41.860 --> 00:22:45.130
+producción y luego puedo ver
+el progreso de cómo es esto
+
+00:22:45.130 --> 00:22:52.060
+crear e implementar esto
+aplicación. ¿Qué te parece?
+
+00:22:52.060 --> 00:22:55.330
+>> me encanta. Esto es
+bastante sencillo.
+
+00:22:55.330 --> 00:22:58.900
+El desarrollador hace este trabajo
+como desarrollador y luego
+
+00:22:58.900 --> 00:23:00.850
+el operador sólo tiene
+Para hacer clic en los botones de
+
+00:23:00.850 --> 00:23:04.250
+una interfaz de usuario y eso es bonito
+sencillo e intuitivo.
+
+00:23:05.280 --> 00:23:07.690
+Una cosa que realmente me gusta como
+
+00:23:07.690 --> 00:23:10.195
+bueno es cuando hablamos
+sobre signos digitales,
+
+00:23:10.195 --> 00:23:13.525
+la percepción de que
+la gente podría tener eso
+
+00:23:13.525 --> 00:23:17.050
+simplemente funciona para
+en el peor de los casos o incluso peor,
+
+00:23:17.050 --> 00:23:21.175
+que es solo una aplicación web que
+envuelve los datos de un sitio web.
+
+00:23:21.175 --> 00:23:23.800
+El letrero en sí es bastante tonto.
+
+00:23:23.800 --> 00:23:26.155
+Aquí estamos hablando
+sobre algo que
+
+00:23:26.155 --> 00:23:31.344
+es personalizable bonito
+fácilmente por un operador.
+
+00:23:31.344 --> 00:23:32.935
+Podemos ofrecer una experiencia.
+
+00:23:32.935 --> 00:23:35.200
+Tienes el escenario donde,
+
+00:23:35.200 --> 00:23:39.370
+basado en la ubicación de un
+pantalla específica y un evento,
+
+00:23:39.370 --> 00:23:44.560
+también puede diseñar el
+experiencia para ser dinámico.
+
+00:23:44.560 --> 00:23:49.180
+Tal vez sea algo que puedas
+Muéstrelo ahora mientras se está implementando
+
+00:23:49.180 --> 00:23:52.210
+la app Flappy Bird y muéstranos qué
+
+00:23:52.210 --> 00:23:55.345
+más puede hacer un operador
+gracias a Ombori Grid,
+
+00:23:55.345 --> 00:23:59.290
+Yo constituiría hacer el
+experiencia digital más interactiva.
+
+00:23:59.290 --> 00:24:04.960
+>> Absolutamente. Uno
+de lo más cool
+
+00:24:04.960 --> 00:24:08.560
+con la cuadrícula de Ombori
+es que además
+
+00:24:08.560 --> 00:24:12.280
+para poder crear
+sus propios esquemas de configuración,
+
+00:24:12.280 --> 00:24:16.195
+también tienes todo de
+la gestión de los medios de comunicación,
+
+00:24:16.195 --> 00:24:21.250
+como cualquier otro
+plataforma de señalización digital,
+
+00:24:21.250 --> 00:24:25.795
+puede administrar su
+dispositivos y sus archivos.
+
+00:24:25.795 --> 00:24:30.340
+Una de las cosas que tenemos
+en realidad pasó mucho tiempo en,
+
+00:24:30.340 --> 00:24:32.005
+usted mencionó es que,
+
+00:24:32.005 --> 00:24:36.130
+hay una percepción de que
+cuando pones, digamos,
+
+00:24:36.130 --> 00:24:39.100
+contenido interactivo
+en una pantalla digital,
+
+00:24:39.100 --> 00:24:40.540
+lo que estás haciendo es simplemente cargar
+
+00:24:40.540 --> 00:24:43.195
+una URL de página Web esencialmente
+en la pantalla.
+
+00:24:43.195 --> 00:24:45.925
+Pero, ¿qué es en realidad?
+Lo que sucede aquí es que
+
+00:24:45.925 --> 00:24:51.325
+La aplicación está implementada
+hacia el dispositivo.
+
+00:24:51.325 --> 00:24:53.500
+Esto no es solo cargar un sitio web,
+
+00:24:53.500 --> 00:24:55.420
+en realidad se está ejecutando localmente.
+
+00:24:55.420 --> 00:24:58.270
+Todo lo que ves en el
+la pantalla seguirá funcionando incluso
+
+00:24:58.270 --> 00:25:01.510
+Si el dispositivo se pierde repentinamente
+conectividad o algo así.
+
+00:25:01.510 --> 00:25:03.970
+Obviamente, no tendrás
+esa comunicación en tiempo real
+
+00:25:03.970 --> 00:25:05.140
+con el teléfono móvil y así sucesivamente,
+
+00:25:05.140 --> 00:25:07.330
+pero no terminarás con
+pantallas negras solo porque tú
+
+00:25:07.330 --> 00:25:11.990
+tienen conectividad intermitente
+problema o algo así.
+
+00:25:12.120 --> 00:25:14.870
+>> Eso tiene sentido.
+
+00:25:15.810 --> 00:25:20.330
+>> Si volvemos a la pantalla,
+
+00:25:20.700 --> 00:25:25.315
+vemos que la construcción se ha completado aquí.
+
+00:25:25.315 --> 00:25:29.365
+Conectemos esta pantalla que
+tenemos detrás de mí en realidad.
+
+00:25:29.365 --> 00:25:31.990
+Vamos aquí, Conectar dispositivo.
+
+00:25:31.990 --> 00:25:33.940
+Una cosa que yo
+creo que es bastante agradable
+
+00:25:33.940 --> 00:25:35.800
+es que ves el uso de la CPU,
+
+00:25:35.800 --> 00:25:40.400
+uso de memoria del IoT
+Dispositivo edge en todo momento.
+
+00:25:40.680 --> 00:25:46.795
+Voy a confirmar que quiero
+desplegarlo y ahora aparece aquí.
+
+00:25:46.795 --> 00:25:50.710
+Verás que va
+para empezar a cargar la aplicación.
+
+00:25:50.710 --> 00:25:53.080
+Tenemos la orientación equivocada.
+
+00:25:53.080 --> 00:25:56.185
+Podemos abrir aquí y
+Entraré en módulos.
+
+00:25:56.185 --> 00:26:00.010
+Aquí podemos ver los módulos que
+se implementan en el dispositivo.
+
+00:26:00.010 --> 00:26:03.500
+Voy a cambiar el
+orientación del módulo de pantalla.
+
+00:26:03.660 --> 00:26:06.800
+Presione "Guardar".
+
+00:26:06.930 --> 00:26:10.480
+Visite las actualizaciones en tiempo real.
+
+00:26:10.480 --> 00:26:12.970
+>> Veamos tu pantalla
+ahora, porque solo somos
+
+00:26:12.970 --> 00:26:14.890
+ver su pantalla de demostración en este momento.
+
+00:26:14.890 --> 00:26:17.185
+Veamos sus cámaras y
+podemos ver lo que está pasando.
+
+00:26:17.185 --> 00:26:20.870
+Bien, así que ahora está desplegado
+en esa pantalla aquí.
+
+00:26:21.270 --> 00:26:23.740
+Quiero desafiar
+tú. ¿Puedes cambiar?
+
+00:26:23.740 --> 00:26:27.055
+la orientación de nuevo para que veamos
+en vivo porque no lo vimos.
+
+00:26:27.055 --> 00:26:28.150
+>> sí, absolutamente.
+
+00:26:28.150 --> 00:26:29.905
+>> Para que la gente se dé cuenta
+lo que está pasando aquí.
+
+00:26:29.905 --> 00:26:33.950
+>> voy a poner esto
+paisaje, presione "Guardar cambios".
+
+00:26:35.490 --> 00:26:37.540
+>> esa persona estaba haciendo
+
+00:26:37.540 --> 00:26:39.820
+la operación ni siquiera es
+frente a esa pantalla.
+
+00:26:39.820 --> 00:26:42.010
+Pueden ser remotos porque
+están interactuando a través de
+
+00:26:42.010 --> 00:26:45.175
+una página web aquí y
+el propio Dashboard.
+
+00:26:45.175 --> 00:26:46.075
+>> Sí.
+
+00:26:46.075 --> 00:26:47.920
+>> Está bien. Ahora tienes
+para jugar con él hombre.
+
+00:26:47.920 --> 00:26:49.895
+Tienes que mostrarnos lo que está pasando.
+
+00:26:49.895 --> 00:26:53.105
+>> Está bien. Lo intentaré.
+
+00:26:53.105 --> 00:26:55.930
+Voy a abrir la cámara en
+
+00:26:55.930 --> 00:27:00.950
+mi teléfono y lo haré
+escanear el código QR.
+
+00:27:01.860 --> 00:27:04.555
+Se está cargando aquí.
+
+00:27:04.555 --> 00:27:07.105
+Si ves mi teléfono ahora.
+
+00:27:07.105 --> 00:27:09.835
+Ves que tiene uno
+botón que dice flappy.
+
+00:27:09.835 --> 00:27:10.765
+>> sí
+
+00:27:10.765 --> 00:27:12.985
+>> Por supuesto que tenemos que presionar eso.
+
+00:27:12.985 --> 00:27:15.550
+>> sí. Bastante difícil, ¿verdad?
+
+00:27:15.550 --> 00:27:19.615
+>> sí. Mira esto.
+
+00:27:19.615 --> 00:27:28.570
+>> fácil. Muy bien. Andreas.
+Eso es algo que,
+
+00:27:28.570 --> 00:27:31.615
+como juego de palabras intencionado con el
+juego, hay muchas tuberías.
+
+00:27:31.615 --> 00:27:34.240
+Ahí está el móvil
+aplicación que está siendo
+
+00:27:34.240 --> 00:27:36.925
+Borrar la aplicación web y usted está
+interactuando con él,
+
+00:27:36.925 --> 00:27:38.320
+va al back-end,
+
+00:27:38.320 --> 00:27:40.480
+back-end vuelve a esta pantalla,
+
+00:27:40.480 --> 00:27:43.990
+a través de la nube y
+aplica un comando,
+
+00:27:43.990 --> 00:27:45.880
+por lo que se rezagan fácilmente.
+
+00:27:45.880 --> 00:27:52.585
+>> La aplicación móvil mantiene el estado
+desde la pantalla en todo momento.
+
+00:27:52.585 --> 00:27:58.285
+El dispositivo solo dice que
+han muerto y si vuelvo a presionar,
+
+00:27:58.285 --> 00:28:00.580
+ojalá puedas ver un poco
+de la pantalla en la parte posterior.
+
+00:28:00.580 --> 00:28:02.290
+>> Se restablece.
+
+00:28:02.290 --> 00:28:05.050
+>> Esta es una latencia muy antigua en
+
+00:28:05.050 --> 00:28:07.945
+estas cosas que en realidad
+lo hace jugable.
+
+00:28:07.945 --> 00:28:10.720
+>> sí, exactamente. Es decir
+lo que estaba a punto de decir.
+
+00:28:10.720 --> 00:28:12.610
+Hay tantas tuberías y
+
+00:28:12.610 --> 00:28:15.430
+parece que intuitivamente
+diría como desarrollador,
+
+00:28:15.430 --> 00:28:17.815
+bueno, eso va a
+ser lento seguro.
+
+00:28:17.815 --> 00:28:20.680
+Por ejemplo, de repente la red se quiebra o
+
+00:28:20.680 --> 00:28:24.175
+se ralentiza o muchas personas
+están en el Wi-Fi o lo que sea,
+
+00:28:24.175 --> 00:28:27.370
+que al final del día porque
+está utilizando tecnologías de IoT para
+
+00:28:27.370 --> 00:28:31.360
+la conectividad de que
+señal digital a la nube,
+
+00:28:31.360 --> 00:28:33.760
+ya estás ahorrando
+muchos porque eso
+
+00:28:33.760 --> 00:28:35.920
+la comunicación está optimizada
+para dispositivos IoT,
+
+00:28:35.920 --> 00:28:39.130
+y así ya estás
+salvándote a ti mismo,
+
+00:28:39.130 --> 00:28:43.030
+la molestia de pasar por el
+canalizaciones habituales de HTTP para web.
+
+00:28:43.030 --> 00:28:46.690
+Aquí realmente estás pasando
+los canales ioT básicamente.
+
+00:28:46.690 --> 00:28:50.740
+>> sí. Exactamente y porque el
+El dispositivo también se autentica con
+
+00:28:50.740 --> 00:28:52.780
+su propia singularidad
+certificados gracias a
+
+00:28:52.780 --> 00:28:54.220
+el servicio de aprovisionamiento de dispositivos y
+
+00:28:54.220 --> 00:28:57.130
+todas estas cosas como
+desarrollador de activos,
+
+00:28:57.130 --> 00:28:58.780
+no es necesario
+piensa en cómo lo hago
+
+00:28:58.780 --> 00:29:00.925
+Autenticar esta diferencia
+cosas en la configuración,
+
+00:29:00.925 --> 00:29:02.920
+en tiempo real
+comunicación, solo usas
+
+00:29:02.920 --> 00:29:06.100
+aquellas bibliotecas que
+Te lo mostré antes.
+
+00:29:06.100 --> 00:29:12.025
+Si volvemos a mi
+pantalla rápidamente aquí.
+
+00:29:12.025 --> 00:29:15.805
+Simplemente importando mensajes de Ombori GA
+
+00:29:15.805 --> 00:29:19.210
+es todo lo que necesitas hacer porque
+toda la conectividad,
+
+00:29:19.210 --> 00:29:21.850
+la autorización y así
+
+00:29:21.850 --> 00:29:24.610
+on es administrado por el Ombori
+dentro del back-end,
+
+00:29:24.610 --> 00:29:27.925
+por lo que está completamente abstraído
+lejos de ti como desarrollador.
+
+00:29:27.925 --> 00:29:31.825
+>> Encanta. Muy bien
+y directo.
+
+00:29:31.825 --> 00:29:34.540
+Andreas, lo hiciste
+
+00:29:34.540 --> 00:29:36.880
+la demo hasta el final.
+Tenías un letrero digital.
+
+00:29:36.880 --> 00:29:40.210
+Solo mostraba un video
+y fuiste capaz de
+
+00:29:40.210 --> 00:29:44.365
+crear fácil y rápidamente un
+aplicación basada en una plantilla
+
+00:29:44.365 --> 00:29:45.580
+pero, reacciona,
+
+00:29:45.580 --> 00:29:48.520
+es bastante sencillo para
+desarrolladores por ahí para construir
+
+00:29:48.520 --> 00:29:52.135
+esas experiencias se implementan de forma remota,
+
+00:29:52.135 --> 00:29:54.505
+parámetro de control y así sucesivamente.
+
+00:29:54.505 --> 00:29:57.310
+Eso es bastante brillante.
+y muestra el poder de encendido
+
+00:29:57.310 --> 00:30:00.655
+rejilla de tablero. Gracias por eso Andreas.
+
+00:30:00.655 --> 00:30:02.830
+Para nuestra audiencia, si
+quieren aprender más,
+
+00:30:02.830 --> 00:30:04.810
+pueden ir a Ombori.com.
+
+00:30:04.810 --> 00:30:06.490
+Dijiste, cuadrícula de barras,
+
+00:30:06.490 --> 00:30:08.590
+ese nombre de extremo medio
+en el lugar correcto.
+
+00:30:08.590 --> 00:30:10.225
+Ombori.com. ese es el sitio web.
+
+00:30:10.225 --> 00:30:12.940
+Pero tienes algo
+más para la gente que mira
+
+00:30:12.940 --> 00:30:16.040
+este vídeo si quieren
+obtén algunos regalos, ¿verdad?
+
+00:30:16.040 --> 00:30:18.570
+>> sí, exactamente. Tengo dos cosas.
+
+00:30:18.570 --> 00:30:20.820
+En primer lugar, una característica
+que olvidé mencionar,
+
+00:30:20.820 --> 00:30:23.260
+lo cual en realidad es bastante importante.
+
+00:30:23.260 --> 00:30:27.745
+Me viste usando el OMG
+como Ombori Grid CLI para-
+
+00:30:27.745 --> 00:30:29.305
+>> Cuál es el mejor por cierto.
+
+00:30:29.305 --> 00:30:31.045
+El mejor comando de línea de comandos de todos los tiempos.
+
+00:30:31.045 --> 00:30:32.410
+OMG definitivamente.
+
+00:30:32.410 --> 00:30:33.880
+No puedes olvidarte de esa.
+
+00:30:33.880 --> 00:30:37.630
+>> No, exactamente. El hecho
+es que yo como desarrollador,
+
+00:30:37.630 --> 00:30:39.580
+No soy un gran fan de
+utilizando estos portales,
+
+00:30:39.580 --> 00:30:43.345
+eso es más para el
+operadores como usted lo llama.
+
+00:30:43.345 --> 00:30:47.830
+Controlo casi todos los aspectos de
+la cuadrícula de Ombori a través de la CLI.
+
+00:30:47.830 --> 00:30:49.479
+Puedo vincular mis dispositivos.
+
+00:30:49.479 --> 00:30:51.220
+Puedo abrir un shell remoto a él.
+
+00:30:51.220 --> 00:30:54.100
+Incluso puedo abrir un control remoto
+Terminal javascript
+
+00:30:54.100 --> 00:30:56.465
+para depurar lo que está pasando
+encendido con la pantalla.
+
+00:30:56.465 --> 00:31:01.290
+Incluso puedo abrir la instancia B y C
+para reflejar realmente lo que es
+
+00:31:01.290 --> 00:31:03.600
+ir en mi pantalla a
+mi pc y todo
+
+00:31:03.600 --> 00:31:06.315
+sin preocuparse
+acerca de autentica,
+
+00:31:06.315 --> 00:31:09.470
+evitar informes o cosas como
+eso, que es bastante genial.
+
+00:31:09.470 --> 00:31:12.110
+>> Sí, lo es.
+
+00:31:12.270 --> 00:31:17.320
+>> En cuanto a un obsequio. Sí. Nosotros
+diviértete con una sorpresa aquí,
+
+00:31:17.320 --> 00:31:20.590
+porque, si te registras
+para la cuadrícula de Ombori,
+
+00:31:20.590 --> 00:31:25.345
+en primer lugar, los tres primeros dispositivos
+siempre somos libres porque queremos
+
+00:31:25.345 --> 00:31:27.850
+desarrolladores para poder
+Usa esto para jugar con él
+
+00:31:27.850 --> 00:31:30.850
+sin coste alguno.
+
+00:31:30.850 --> 00:31:34.450
+Pero si quieres probar los diferentes
+soluciones de pago basadas en el mercado
+
+00:31:34.450 --> 00:31:37.180
+salir o volverse loco con
+muchos dispositivos,
+
+00:31:37.180 --> 00:31:41.080
+en realidad lo harás
+obtén $250 gratis si
+
+00:31:41.080 --> 00:31:45.070
+utilice el código Microsoftdeveloper.
+
+00:31:45.070 --> 00:31:48.535
+>> Microsoftdeveloper en
+una palabra, toda en minúsculas.
+
+00:31:48.535 --> 00:31:50.515
+>> Una palabra y minúsculas, sí.
+
+00:31:50.515 --> 00:31:52.555
+>> Agregaremos eso a la descripción.
+
+00:31:52.555 --> 00:31:55.195
+Microsoftdeveloper es tu código
+
+00:31:55.195 --> 00:31:58.300
+para obtener regalos de
+Ombori. Eso es increíble.
+
+00:31:58.300 --> 00:32:01.630
+Gracias Andreas. Tal vez lo haremos
+
+00:32:01.630 --> 00:32:03.805
+nos vemos de nuevo en el
+IoT se muestra en algún momento.
+
+00:32:03.805 --> 00:32:05.800
+Todo el mundo gracias por sintonizar.
+
+00:32:05.800 --> 00:32:07.810
+Que tengas un gran día y
+
+00:32:07.810 --> 00:32:10.465
+esperamos verte
+pronto en el programa de IoT. Adiós.
+
+00:32:10.465 --> 00:32:13.460
+>> Gracias Olivier. Adiós a todos.
+
+00:32:29.730 --> 00:32:32.000
+>> [MÚSICA]
+
