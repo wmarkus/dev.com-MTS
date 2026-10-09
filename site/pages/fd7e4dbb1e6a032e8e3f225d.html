@@ -1,0 +1,506 @@
+<!doctype html>
+<html lang="en-US" data-theme="light" theme="light">
+<head>
+    <!-- Authorized local recreation. External services are not impersonated; analytics disabled. --><meta name="robots" content="noindex,nofollow"><script src="/__mirror/runtime.js"></script><title>Build with local AI on Windows | Microsoft Developer</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark light">
+    <meta name="awa-env" content="Production">
+    <meta name="description" content="Build responsive AI experiences that can keep data on the device and remain available offline with Windows AI APIs, Microsoft Foundry on Windows, Windows ML, and AI Dev Gallery.">
+
+    <meta property="og:title" content="Build with local AI on Windows | Microsoft Developer">
+    <meta property="og:description" content="Build responsive AI experiences that can keep data on the device and remain available offline with Windows AI APIs, Microsoft Foundry on Windows, Windows ML, and AI Dev Gallery.">
+    <meta property="og:image" content="https://developer.microsoft.com/_devcom/images/logo-ms-social.jpg">
+    <meta property="og:image:alt" content="Microsoft Developer">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Microsoft Developer">
+    <meta property="og:url" content="https://developer.microsoft.com/en-us/windows/local-ai">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@msdev">
+    <meta name="twitter:image" content="https://developer.microsoft.com/_devcom/images/logo-ms-social.jpg">
+
+    
+    <meta name="awa-pageType" content="Resources">
+    <meta name="awa-product" content="Windows">
+    <meta name="awa-prdct" content="Windows">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+    <link rel="canonical" href="https://developer.microsoft.com/en-us/windows/local-ai">
+    
+    
+<style>
+    uhf-header:not(:defined) {
+        display: block;
+        height: 54px;
+    }
+
+    uhf-brand:not(:defined),
+    uhf-contextual-nav:not(:defined),
+    uhf-actions:not(:defined),
+    uhf-global-nav:not(:defined),
+    uhf-search:not(:defined),
+    uhf-mecontrol:not(:defined),
+    uhf-cart:not(:defined),
+    uhf-dropdown:not(:defined),
+    uhf-popout:not(:defined) {
+        visibility: hidden;
+    }
+</style>
+<link rel="stylesheet" href="/__mirror/assets/e4d14f1f8bc83e293e136adc"> <!-- UHF CSS -->
+
+    <script src="/__mirror/assets/fe2fc9b62e744e583f0eb2a4"></script>
+    
+    
+    <link rel="stylesheet" href="/__mirror/assets/f0a2f4bb8e7fd8f995b212dd">
+    <link rel="stylesheet" href="/__mirror/assets/7645384d8723410070241432">
+    
+    <script type="module" src="/__mirror/assets/a0e5b0f304f32fc68c4bf67b"></script>
+    
+    <script src="/__mirror/assets/389caacc8c667b179afc3c37"></script>
+    
+    <style>
+        body {
+            background-color: var(--ds-app-color-base-default-bg-opt1);
+            color: var(--ds-app-color-base-default-fg-body);
+        }
+        /* Eyebrow labels should be uppercase */
+        [slot="heading-block__eyebrow-label"] {
+            text-transform: uppercase;
+        }
+    </style>
+
+    <!-- 1DS script -->
+    
+    
+    <!-- /1DS script -->
+
+    
+</head>
+<body data-windows-version="v2">
+    <!-- UHF Header -->
+    
+<uhf-header locale="en-us" partnerid="MSDev-Community" headerid="MSDev-DEVCOM-Community-Header" theme="light">
+    <a slot="skip-link" class="uhf-skip-link" href="#mainContent" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "SkipToMain", "cN": "Skip to content_nonnav", "ecn": "Skip to content_nonnav", "ehn": "SkipToMain"}'>Skip to main content</a>
+    
+<uhf-brand slot="brand">
+        <a href="https://www.microsoft.com/" class="uhf-microsoft-logo" slot="microsoft-logo" aria-label="Microsoft" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Anchor", "cN": "GlobalNav_Logo_cont", "ecn": "GlobalNav_Logo_cont", "ehn": "Anchor"}'>
+            <img src="/__mirror/assets/adea6dac4ae78fd2b1b9eda9" alt="Microsoft">
+        </a>
+            <a href="/en-us/" class="uhf-site-logo" slot="brand-logo" aria-label="Developer" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Anchor", "cN": "CatNav_Developer_nav", "ecn": "CatNav_Developer_nav", "ehn": "Anchor"}'>
+ <span>Developer</span>             </a>
+</uhf-brand>
+
+
+<uhf-contextual-nav slot="contextual-nav" overflowtext="More" brand="Developer" homeurl="https://developer.microsoft.com/en-us/" hometext="Home" data-nav-label="Contextual menu">
+
+
+
+<uhf-dropdown text="Products" id="" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_nav", "ecn": "CatNav_Products_nav", "ehn": "Products"}'>
+    
+
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://learn.microsoft.com/en-us/dynamics365/get-started/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Dynamics 365_nav", "ecn": "CatNav_Products_Dynamics 365_nav", "ehn": "Products"}'>Dynamics 365</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://github.com/home" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_GitHub_nav", "ecn": "CatNav_Products_GitHub_nav", "ehn": "Products"}'>GitHub</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://developer.microsoft.com/en-us/microsoft-365" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Microsoft 365_nav", "ecn": "CatNav_Products_Microsoft 365_nav", "ehn": "Products"}'>Microsoft 365</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/azure" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Microsoft Azure_nav", "ecn": "CatNav_Products_Microsoft Azure_nav", "ehn": "Products"}'>Microsoft Azure</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://developer.microsoft.com/en-us/microsoft-edge/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Microsoft Edge_nav", "ecn": "CatNav_Products_Microsoft Edge_nav", "ehn": "Products"}'>Microsoft Edge</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://ai.azure.com/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Microsoft Foundry_nav", "ecn": "CatNav_Products_Microsoft Foundry_nav", "ehn": "Products"}'>Microsoft Foundry</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://developer.microsoft.com/en-us/graph" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Microsoft Graph_nav", "ecn": "CatNav_Products_Microsoft Graph_nav", "ehn": "Products"}'>Microsoft Graph</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/identity" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Microsoft Identity Platform_nav", "ecn": "CatNav_Products_Microsoft Identity Platform_nav", "ehn": "Products"}'>Microsoft Identity Platform</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://developer.microsoft.com/en-us/microsoft-teams" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Microsoft Teams_nav", "ecn": "CatNav_Products_Microsoft Teams_nav", "ehn": "Products"}'>Microsoft Teams</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/power-platform" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Power Platform_nav", "ecn": "CatNav_Products_Power Platform_nav", "ehn": "Products"}'>Power Platform</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://visualstudio.microsoft.com/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Visual Studio_nav", "ecn": "CatNav_Products_Visual Studio_nav", "ehn": "Products"}'>Visual Studio</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://code.visualstudio.com/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Visual Studio Code_nav", "ecn": "CatNav_Products_Visual Studio Code_nav", "ehn": "Products"}'>Visual Studio Code</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/windows/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Windows_nav", "ecn": "CatNav_Products_Windows_nav", "ehn": "Products"}'>Windows</a>
+
+
+</uhf-dropdown>
+
+
+<uhf-dropdown text="Languages" id="" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Languages", "cN": "CatNav_Languages_nav", "ecn": "CatNav_Languages_nav", "ehn": "Languages"}'>
+    
+
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://dotnet.microsoft.com/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Languages", "cN": "CatNav_Languages_.NET_nav", "ecn": "CatNav_Languages_.NET_nav", "ehn": "Languages"}'>.NET</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/cpp" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Languages", "cN": "CatNav_Languages_C++_nav", "ecn": "CatNav_Languages_C++_nav", "ehn": "Languages"}'>C++</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/java" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Languages", "cN": "CatNav_Languages_Java_nav", "ecn": "CatNav_Languages_Java_nav", "ehn": "Languages"}'>Java</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/javascript/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Languages", "cN": "CatNav_Languages_JavaScript_nav", "ecn": "CatNav_Languages_JavaScript_nav", "ehn": "Languages"}'>JavaScript</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/python" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Languages", "cN": "CatNav_Languages_Python_nav", "ecn": "CatNav_Languages_Python_nav", "ehn": "Languages"}'>Python</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://www.typescriptlang.org/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Languages", "cN": "CatNav_Languages_TypeScript_nav", "ecn": "CatNav_Languages_TypeScript_nav", "ehn": "Languages"}'>TypeScript</a>
+
+
+</uhf-dropdown>
+
+
+<uhf-dropdown text="Hubs" id="" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Hubs", "cN": "CatNav_Hubs_nav", "ecn": "CatNav_Hubs_nav", "ehn": "Hubs"}'>
+    
+
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/build-apis" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Hubs", "cN": "CatNav_Hubs_Build APIs_nav", "ecn": "CatNav_Hubs_Build APIs_nav", "ehn": "Hubs"}'>Build APIs</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://developer.microsoft.com/en-us/games/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Hubs", "cN": "CatNav_Hubs_Game development_nav", "ecn": "CatNav_Hubs_Game development_nav", "ehn": "Hubs"}'>Game development</a>
+
+
+</uhf-dropdown>
+
+    <a class="uhf-nav-item uhf-nav-link" href="https://developer.microsoft.com/blog" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Blog", "cN": "CatNav_Blog_nav", "ecn": "CatNav_Blog_nav", "ehn": "Blog"}'>Blog</a>
+
+
+    <a class="uhf-nav-item uhf-nav-link" href="/en-us/events" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Events", "cN": "CatNav_Events_nav", "ecn": "CatNav_Events_nav", "ehn": "Events"}'>Events</a>
+
+
+    <a class="uhf-nav-item uhf-nav-link" href="https://learn.microsoft.com/docs/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Documentation", "cN": "CatNav_Documentation_nav", "ecn": "CatNav_Documentation_nav", "ehn": "Documentation"}'>Documentation</a>
+
+
+    <a class="uhf-nav-item uhf-nav-link" href="/en-us/community" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Community", "cN": "CatNav_Community_nav", "ecn": "CatNav_Community_nav", "ehn": "Community"}'>Community</a>
+
+
+    <a class="uhf-nav-item uhf-nav-link" href="/en-us/changelog" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Changelog", "cN": "CatNav_Changelog_nav", "ecn": "CatNav_Changelog_nav", "ehn": "Changelog"}'>Changelog</a>
+</uhf-contextual-nav>    <uhf-actions slot="actions">
+        
+<uhf-global-nav slot="global-nav" text="All Microsoft" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_nonnav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_nonnav", "ehn": "OneMicrosoftBar"}' data-nav-label="All Microsoft menu">
+    
+    <uhf-dropdown-header slot="header">
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/security" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Microsoft Security_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Microsoft Security_nav", "ehn": "OneMicrosoftBar"}'>Microsoft Security</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://azure.microsoft.com/en-us/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Azure_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Azure_nav", "ehn": "OneMicrosoftBar"}'>Azure</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://dynamics.microsoft.com/en-us/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Dynamics 365_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Dynamics 365_nav", "ehn": "OneMicrosoftBar"}'>Dynamics 365</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/microsoft-365/business/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Microsoft 365_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Microsoft 365_nav", "ehn": "OneMicrosoftBar"}'>Microsoft 365</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/microsoft-teams/group-chat-software" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Microsoft Teams_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Microsoft Teams_nav", "ehn": "OneMicrosoftBar"}'>Microsoft Teams</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/windows-365" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Windows 365_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Windows 365_nav", "ehn": "OneMicrosoftBar"}'>Windows 365</a>
+    </uhf-dropdown-header>
+
+        <uhf-dropdown-column title="Tech &amp; innovation" show-tooltip="false" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_nav", "ehn": "OneMicrosoftBar"}'>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/ai?icid=DSM_AllCommercial_AI" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_Microsoft AI_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_More_TechInnovation__AI_nav", "ehn": "OneMicrosoftBar"}'>Microsoft AI</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://azure.microsoft.com/en-us/solutions/space/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_Azure Space_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_More_TechInnovation_AzureSpace_nav", "ehn": "OneMicrosoftBar"}'>Azure Space</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/mixed-reality/windows-mixed-reality" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_Mixed reality_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_More_TechInnovation_MixedReality_nav", "ehn": "OneMicrosoftBar"}'>Mixed reality</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/hololens" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_Microsoft HoloLens_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_More_TechInnovation_MicrosoftHololens_nav", "ehn": "OneMicrosoftBar"}'>Microsoft HoloLens</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/microsoft-viva" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_Microsoft Viva_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_More_TechInnovation_Microsoft Viva_nav", "ehn": "OneMicrosoftBar"}'>Microsoft Viva</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://azure.microsoft.com/en-us/solutions/quantum-computing/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_Quantum computing_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_More_TechInnovation_QuantumComputing_nav", "ehn": "OneMicrosoftBar"}'>Quantum computing</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/corporate-responsibility/sustainability?icid=DSM_AllCommercial_Sustainability" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_Sustainability_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_More_TechInnovation_Sustainability_nav", "ehn": "OneMicrosoftBar"}'>Sustainability</a>
+        </uhf-dropdown-column>
+        <uhf-dropdown-column title="Industries" show-tooltip="false" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_nav", "ehn": "OneMicrosoftBar"}'>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/education" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_Education_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_More_Industries_Education_nav", "ehn": "OneMicrosoftBar"}'>Education</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/industry/automotive" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_Automotive_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_More_Industries_Automotive_nav", "ehn": "OneMicrosoftBar"}'>Automotive</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/industry/financial-services/banking" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_Financial services_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_More_Industries_Financialservices_nav", "ehn": "OneMicrosoftBar"}'>Financial services</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/industry/government" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_Government_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_More_Industries_Government_nav", "ehn": "OneMicrosoftBar"}'>Government</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/industry/health/microsoft-cloud-for-healthcare" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_Healthcare_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_More_Industries_Health_nav", "ehn": "OneMicrosoftBar"}'>Healthcare</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/industry/manufacturing/microsoft-cloud-for-manufacturing" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_Manufacturing_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_More_Industries_Manufacturing_nav", "ehn": "OneMicrosoftBar"}'>Manufacturing</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/industry/consumer-goods" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_Retail_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_More_Industries_Retail_nav", "ehn": "OneMicrosoftBar"}'>Retail</a>
+        </uhf-dropdown-column>
+        <uhf-dropdown-column title="Partners" show-tooltip="false" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_nav", "ehn": "OneMicrosoftBar"}'>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://partner.microsoft.com/en-US/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_Find a partner_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_More_Partner_FindPartner_nav", "ehn": "OneMicrosoftBar"}'>Find a partner</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://partner.microsoft.com/en-US/membership/cloud-solution-provider" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_Become a partner_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_More_Partner_BecomePartner_nav", "ehn": "OneMicrosoftBar"}'>Become a partner</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://partner.microsoft.com/en-us/membership" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_Partner Network_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_More_Partner_PartnerNetwork_nav", "ehn": "OneMicrosoftBar"}'>Partner Network</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://marketplace.microsoft.com/?icid=DSM_AllCommercial_Marketplace" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_Microsoft Marketplace_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_More_Partner_Marketplace_nav", "ehn": "OneMicrosoftBar"}'>Microsoft Marketplace</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/software-development-companies?icid=DSM_AllCommercial_SoftwareCompanies" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_Software companies_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_Software companies_nav", "ehn": "OneMicrosoftBar"}'>Software companies</a>
+        </uhf-dropdown-column>
+        <uhf-dropdown-column title="Resources" show-tooltip="false" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_nav", "ehn": "OneMicrosoftBar"}'>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://blogs.microsoft.com/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_Blog_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_More_Resources_Blog_nav", "ehn": "OneMicrosoftBar"}'>Blog</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://about.ads.microsoft.com/en-us?s_cid=dig-src_uhfcomm" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_Microsoft Advertising_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_More_Resources_MicrosoftAdvertising_nav", "ehn": "OneMicrosoftBar"}'>Microsoft Advertising</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_Developer Center_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_More_Resources_DeveloperCenter_nav", "ehn": "OneMicrosoftBar"}'>Developer Center</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://learn.microsoft.com/docs/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_Documentation_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_More_Resources_Documentation_nav", "ehn": "OneMicrosoftBar"}'>Documentation</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/events" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_Events_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_More_Resources_Events_nav", "ehn": "OneMicrosoftBar"}'>Events</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/licensing/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_Licensing_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_More_Resources_Licensing_nav", "ehn": "OneMicrosoftBar"}'>Licensing</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://learn.microsoft.com/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_Microsoft Learn_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_More_Resources_MicrosoftLearn_nav", "ehn": "OneMicrosoftBar"}'>Microsoft Learn</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/research/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_Microsoft Research_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_More_Resources_MicrosoftResearch_nav", "ehn": "OneMicrosoftBar"}'>Microsoft Research</a>
+        </uhf-dropdown-column>
+
+    <uhf-dropdown-footer slot="footer">
+        <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/sitemap" data-m="">View Sitemap</a>
+    </uhf-dropdown-footer>
+
+</uhf-global-nav>
+
+
+            <uhf-search slot="search" placeholder="Search or ask a question" search-label="Search" cancel-label="Cancel" suggestions-available-text="{0} suggestions available" searchurl="https://www.microsoft.com/en-us/search/explore" autosuggesturl="https://www.microsoft.com/msstoreapiprod/api/autosuggest" queryparametername="q" clientid="7F27B536-CF6B-4C65-8638-A0F8CBDFCA65" productcount="1,5,5" source="Iris-Products,DCatAll-Products,Microsoft-Terms">
+            </uhf-search>
+    </uhf-actions>
+</uhf-header>
+
+<reimagine-secondary-nav configuration="navigation" hide-divider label="Windows Dev Center navigation" data-nav-type="secondary-uhf">
+    <a href="/en-us/windows" slot="secondary-nav__label" data-bi-an="secondary-uhf-nav" data-bi-id="windows-dev-center" data-bi-ct="nav">Windows Dev Center</a>
+        <reimagine-secondary-nav-item href="/en-us/windows/apps/build-a-windows-app" configuration="navigation" data-bi-an="secondary-uhf-nav" data-bi-id="build-apps" data-bi-ct="nav">Build Windows apps</reimagine-secondary-nav-item>
+        <reimagine-secondary-nav-item href="/en-us/windows/dev-tools" configuration="navigation" data-bi-an="secondary-uhf-nav" data-bi-id="dev-box" data-bi-ct="nav">Get developer tools</reimagine-secondary-nav-item>
+        <reimagine-secondary-nav-item href="/en-us/windows/local-ai" configuration="navigation" active="" data-bi-an="secondary-uhf-nav" data-bi-id="local-ai" data-bi-ct="nav">Code with AI</reimagine-secondary-nav-item>
+        <reimagine-secondary-nav-item href="/en-us/windows/agentic" configuration="navigation" data-bi-an="secondary-uhf-nav" data-bi-id="agent-platform" data-bi-ct="nav">Run agents locally</reimagine-secondary-nav-item>
+    <reimagine-button-group slot="secondary-nav__button-group">
+            <reimagine-button size="small" appearance="button--secondary" shape="rounded" href="/en-us/windows/support" target="_self" data-bi-an="secondary-uhf-nav" data-bi-id="support" data-bi-ct="button">
+                <span slot="button__text">Support</span>
+            </reimagine-button>
+            <reimagine-button size="small" appearance="button--primary" shape="rounded" href="https://partner.microsoft.com/dashboard" target="_blank" rel="noopener noreferrer" data-bi-an="secondary-uhf-nav" data-bi-id="partner-center" data-bi-ct="button">
+                <span slot="button__text">Partner Center</span>
+            </reimagine-button>
+    </reimagine-button-group>
+</reimagine-secondary-nav>
+
+    <div class="site-banners">
+
+
+
+
+<style>
+    /* Purple announcement banner styling to match original design */
+    #announcement-banner-windows-hybrid-intelligence {
+        --ds-fill-color-override: #6761D9;
+        --ds-text-color-override: #FFFFFF;
+        --ds-button-ghost-color: #FFFFFF;
+    }
+    
+    :root[data-theme="dark"] #announcement-banner-windows-hybrid-intelligence {
+        --ds-fill-color-override: #514AC9;
+    }
+    
+    #announcement-banner-windows-hybrid-intelligence [slot="announcement__label"],
+    #announcement-banner-windows-hybrid-intelligence [slot="announcement__link"] {
+        color: #FFFFFF;
+    }
+    
+    #announcement-banner-windows-hybrid-intelligence reimagine-link {
+        --ds-link-color: #FFFFFF;
+        --ds-link-outline: 0.1875rem dotted #FFFFFF;
+    }
+    
+    /* White outline around badge icon */
+    #announcement-banner-windows-hybrid-intelligence [slot="announcement__badge"] {
+        border: 1px solid #FFFFFF;
+        border-radius: var(--root-radii-s, 0.5rem);
+        box-sizing: content-box;
+    }
+</style>
+
+<reimagine-announcement id="announcement-banner-windows-hybrid-intelligence" class="d-none" data-identifier="windows-hybrid-intelligence" role="alert" aria-label="Building Windows for hybrid intelligence announcement" close-label="Close announcement" sr-close-text="Announcement closed" data-bi-an="top-banner">
+    
+    <img slot="announcement__badge" src="/__mirror/assets/3e387745acc96f18d8365e8a" alt="">
+
+    <p slot="announcement__label">Building Windows for hybrid intelligence – Run agents locally or in the cloud, with enterprise-grade security and manageability.</p>
+    
+    <reimagine-link slot="announcement__link" href="https://aka.ms/WindowsEraofAI" target="_blank" data-bi-an="top-banner" data-bi-id="windows-hybrid-intelligence">
+        <span slot="link__text">Read more</span>
+    </reimagine-link>
+</reimagine-announcement>
+    </div>
+
+    <div id="mainContent" role="main">
+        
+
+<div id="windows-local-ai-page">
+    <section id="hero"><reimagine-hero-featured header-layout-configuration="2-col-even" media-orientation="mobile-stack" density="compact" breadth="compact"><reimagine-media slot="ui-shell-media" aspect-ratio="21-9" overlay="gradient"><picture slot="media__asset"><source srcset="/__mirror/assets/2ad86a18607c4f13e20b9cbc" media="none and (prefers-color-scheme: dark)"></source><source srcset="/__mirror/assets/33bc04d8a991e76421e0f7bf" media="none and (prefers-color-scheme: light)"></source><img src="/__mirror/assets/33bc04d8a991e76421e0f7bf" alt></picture></reimagine-media>
+        
+        <reimagine-layout-column slot="ui-shell-header"><reimagine-heading-block size="m"><h1 slot="heading-block__heading-text">Build with local AI on Windows</h1>
+                <p slot="heading-block__content-text">Create responsive AI experiences that can keep data on the device, remain available without a network connection, and reduce dependence on per-request cloud inference. Use Windows AI APIs, Microsoft Foundry on Windows, or Windows ML to match the local AI path to your app.</p><reimagine-button-group slot="heading-block__last"><reimagine-button href="https://learn.microsoft.com/windows/ai/ai-dev-gallery/" appearance="button--primary" shape="rounded" size="medium" target="_blank" data-bi-an="local-ai-hero" data-bi-id="explore-ai-dev-gallery" data-bi-ct="button"><span slot="button__text">Explore AI Dev Gallery</span></reimagine-button><reimagine-button href="https://learn.microsoft.com/windows/ai/overview" appearance="button--secondary" shape="rounded" size="medium" target="_blank" data-bi-an="local-ai-hero" data-bi-id="local-ai-docs" data-bi-ct="button"><span slot="button__text">View local AI documentation</span></reimagine-button></reimagine-button-group></reimagine-heading-block></reimagine-layout-column></reimagine-hero-featured></section>
+
+<section id="why-local-ai" aria-label="Why build with local AI"><reimagine-base-ui-shell breadth="relaxed" top-breadth="compact" bottom-breadth="compact" data-bi-an="local-ai-benefits"><div slot="ui-shell-header"><reimagine-heading-block size="m"><span slot="heading-block__eyebrow-label">Why local AI</span>
+                <h2 slot="heading-block__heading-text">Bring inference closer to your app and its data</h2>
+                <span slot="heading-block__content-text">Local inference can complement cloud AI when an experience benefits from device data, immediate interaction, or continued operation without a reliable connection.</span></reimagine-heading-block></div>
+        <reimagine-container><reimagine-layout configuration="4-col-even-1"><reimagine-layout-column><reimagine-card-badge surface="solid-border" text-block-configuration="stacked"><reimagine-text-block size="2xs"><span slot="text-block__eyebrow-label">Privacy and data locality</span>
+                            <span slot="text-block__heading">Keep supported workloads on the device</span>
+                            <span slot="text-block__content">Process app data locally when your scenario and selected capability support on-device inference.</span></reimagine-text-block>
+                        <reimagine-link slot="card-badge__footer-bottom" href="https://learn.microsoft.com/windows/ai/overview" target="_blank" rel="noopener noreferrer" link-label="Learn about local AI on Windows" data-bi-an="local-ai-benefits" data-bi-id="local-ai-overview" data-bi-ct="link"><span slot="link__text">Learn about local AI</span></reimagine-link></reimagine-card-badge></reimagine-layout-column>
+                <reimagine-layout-column><reimagine-card-badge surface="solid-border" text-block-configuration="stacked"><reimagine-text-block size="2xs"><span slot="text-block__eyebrow-label">Responsiveness</span>
+                            <span slot="text-block__heading">Respond without a network round trip</span>
+                            <span slot="text-block__content">Use local inference for interactions that benefit from low latency and immediate feedback.</span></reimagine-text-block>
+                        <reimagine-link slot="card-badge__footer-bottom" href="https://learn.microsoft.com/windows/ai/cloud-ai" target="_blank" rel="noopener noreferrer" link-label="Compare cloud-based, local, and hybrid AI models" data-bi-an="local-ai-benefits" data-bi-id="cloud-local-guidance" data-bi-ct="link"><span slot="link__text">Compare local and cloud AI</span></reimagine-link></reimagine-card-badge></reimagine-layout-column>
+                <reimagine-layout-column><reimagine-card-badge surface="solid-border" text-block-configuration="stacked"><reimagine-text-block size="2xs"><span slot="text-block__eyebrow-label">Offline availability</span>
+                            <span slot="text-block__heading">Keep key experiences available</span>
+                            <span slot="text-block__content">Design supported local AI features to continue working when connectivity is limited or unavailable.</span></reimagine-text-block>
+                        <reimagine-link slot="card-badge__footer-bottom" href="https://learn.microsoft.com/windows/ai/foundry-local/get-started" target="_blank" rel="noopener noreferrer" link-label="Get started with Foundry Local on Microsoft Learn" data-bi-an="local-ai-benefits" data-bi-id="offline-foundry-local" data-bi-ct="link"><span slot="link__text">Get started with Foundry Local</span></reimagine-link></reimagine-card-badge></reimagine-layout-column>
+                <reimagine-layout-column><reimagine-card-badge surface="solid-border" text-block-configuration="stacked"><reimagine-text-block size="2xs"><span slot="text-block__eyebrow-label">Flexible architecture</span>
+                            <span slot="text-block__heading">Choose where each request runs</span>
+                            <span slot="text-block__content">Use local inference where it fits and connect to cloud services when a workload needs cloud scale or capabilities.</span></reimagine-text-block>
+                        <reimagine-link slot="card-badge__footer-bottom" href="https://learn.microsoft.com/windows/ai/windows-ai-comparison" target="_blank" rel="noopener noreferrer" link-label="Choose the Windows AI solution for your scenario" data-bi-an="local-ai-benefits" data-bi-id="choose-ai-solution" data-bi-ct="link"><span slot="link__text">Choose a Windows AI solution</span></reimagine-link></reimagine-card-badge></reimagine-layout-column></reimagine-layout></reimagine-container></reimagine-base-ui-shell></section>
+
+<section id="local-ai-products" aria-label="Local AI products and tools"><reimagine-base-ui-shell breadth="relaxed" data-bi-an="local-ai-products"><div slot="ui-shell-header"><reimagine-heading-block size="m"><span slot="heading-block__eyebrow-label">Start building</span>
+                <h2 slot="heading-block__heading-text">Choose the local AI path that fits your app</h2>
+                <span slot="heading-block__content-text">Start with AI Dev Gallery to explore working samples. Then choose a Windows-managed API, a local model through Microsoft Foundry on Windows, or Windows ML for your own model.</span></reimagine-heading-block></div>
+        <reimagine-container><reimagine-layout configuration="4-col-even-1"><reimagine-layout-column><reimagine-card-feature surface="solid-border"><reimagine-media slot="card-feature__media" aspect-ratio="16-9" object-fit="contain"><picture slot="media__asset"><source srcset="/__mirror/assets/d44c23ef623e8f724825d4f7" media="none and (prefers-color-scheme: dark)">
+                                <img src="/__mirror/assets/601104718b2fa99275fb4041" alt loading="lazy"></source></picture></reimagine-media>
+                        <reimagine-text-block slot="card-feature__content-body" configuration="stacked" size="2xs"><span slot="text-block__eyebrow-label">Ready-to-use capabilities</span>
+                            <span slot="text-block__heading">Windows AI APIs</span>
+                            <span slot="text-block__content">Add Windows-provided AI capabilities when your app needs a supported API without managing the model lifecycle directly.</span></reimagine-text-block>
+                        <reimagine-link slot="card-feature__content-footer-bottom" href="https://learn.microsoft.com/windows/ai/apis/" target="_blank" rel="noopener noreferrer" link-label="Explore Windows AI APIs documentation on Microsoft Learn" data-bi-an="local-ai-products" data-bi-id="windows-ai-apis" data-bi-ct="link"><span slot="link__text">Windows AI APIs documentation</span></reimagine-link></reimagine-card-feature></reimagine-layout-column>
+                <reimagine-layout-column><reimagine-card-feature surface="solid-border"><reimagine-media slot="card-feature__media" aspect-ratio="16-9" object-fit="contain"><picture slot="media__asset"><source srcset="/__mirror/assets/8717a2fceb59bc6858204597" media="none and (prefers-color-scheme: dark)">
+                                <img src="/__mirror/assets/9c4de3830943cb17424aa7ed" alt loading="lazy"></source></picture></reimagine-media>
+                        <reimagine-text-block slot="card-feature__content-body" configuration="stacked" size="2xs"><span slot="text-block__eyebrow-label">Local generative AI</span>
+                            <span slot="text-block__heading">Microsoft Foundry on Windows</span>
+                            <span slot="text-block__content">Use Foundry Local to find, download, and integrate supported open-source models for local inference in your Windows app.</span></reimagine-text-block>
+                        <reimagine-link slot="card-feature__content-footer-bottom" href="https://learn.microsoft.com/windows/ai/overview" target="_blank" rel="noopener noreferrer" link-label="Explore Microsoft Foundry on Windows on Microsoft Learn" data-bi-an="local-ai-products" data-bi-id="foundry-on-windows" data-bi-ct="link"><span slot="link__text">Microsoft Foundry on Windows documentation</span></reimagine-link></reimagine-card-feature></reimagine-layout-column>
+                <reimagine-layout-column><reimagine-card-feature surface="solid-border"><reimagine-media slot="card-feature__media" aspect-ratio="16-9" object-fit="contain"><picture slot="media__asset"><source srcset="/__mirror/assets/860d8ae3af7d94c2e2e19971" media="none and (prefers-color-scheme: dark)">
+                                <img src="/__mirror/assets/eeb64ffdb592413b54f43058" alt loading="lazy"></source></picture></reimagine-media>
+                        <reimagine-text-block slot="card-feature__content-body" configuration="stacked" size="2xs"><span slot="text-block__eyebrow-label">Bring your own model</span>
+                            <span slot="text-block__heading">Windows ML</span>
+                            <span slot="text-block__content">Run custom or open-source models through the Windows ML runtime across supported Windows hardware.</span></reimagine-text-block>
+                        <reimagine-link slot="card-feature__content-footer-bottom" href="https://learn.microsoft.com/windows/ai/new-windows-ml/overview" target="_blank" rel="noopener noreferrer" link-label="Explore Windows ML documentation on Microsoft Learn" data-bi-an="local-ai-products" data-bi-id="windows-ml" data-bi-ct="link"><span slot="link__text">Windows ML documentation</span></reimagine-link></reimagine-card-feature></reimagine-layout-column>
+                <reimagine-layout-column><reimagine-card-feature surface="solid-border"><reimagine-media slot="card-feature__media" aspect-ratio="16-9" object-fit="contain"><picture slot="media__asset"><source srcset="/__mirror/assets/7125bec3f271244cad282c24" media="none and (prefers-color-scheme: dark)">
+                                <img src="/__mirror/assets/84dc55f3369a2c511c70280a" alt loading="lazy"></source></picture></reimagine-media>
+                        <reimagine-text-block slot="card-feature__content-body" configuration="stacked" size="2xs"><span slot="text-block__eyebrow-label">Working examples</span>
+                            <span slot="text-block__heading">AI Dev Gallery</span>
+                            <span slot="text-block__content">Explore interactive local AI samples, test capabilities on your hardware, and inspect the source code.</span></reimagine-text-block>
+                        <reimagine-link slot="card-feature__content-footer-bottom" href="https://learn.microsoft.com/windows/ai/ai-dev-gallery/" target="_blank" rel="noopener noreferrer" link-label="Explore AI Dev Gallery on Microsoft Learn" data-bi-an="local-ai-products" data-bi-id="ai-dev-gallery" data-bi-ct="link"><span slot="link__text">Explore AI Dev Gallery</span></reimagine-link></reimagine-card-feature></reimagine-layout-column></reimagine-layout></reimagine-container></reimagine-base-ui-shell></section>
+
+<section id="local-ai-agents" aria-label="Power agents with a local model"><reimagine-base-ui-shell breadth="relaxed" background="app-color-base-alt1-bg-opt1" data-bi-an="local-ai-agents"><div slot="ui-shell-header"><reimagine-heading-block size="m"><span slot="heading-block__eyebrow-label">Local AI for agents</span>
+                <h2 slot="heading-block__heading-text">Power agents with a local model on Windows</h2>
+                <span slot="heading-block__content-text">Run a ready-to-use local LLM with Foundry Local or bring your own ONNX model with Windows ML, then connect that local inference path to your agent experience.</span></reimagine-heading-block></div>
+        <reimagine-container><reimagine-layout configuration="2-col-even"><reimagine-layout-column><reimagine-card-badge surface="solid-border" text-block-configuration="stacked"><reimagine-text-block size="2xs"><span slot="text-block__eyebrow-label">Ready-to-use local LLMs</span>
+                            <span slot="text-block__heading">Start with Foundry Local</span>
+                            <span slot="text-block__content">Use the Foundry Local SDK and CLI to evaluate and integrate a supported language model for local inference.</span></reimagine-text-block>
+                        <reimagine-link-group orientation="vertical" slot="card-badge__footer-bottom"><li slot="link-group-item"><reimagine-link href="https://learn.microsoft.com/windows/ai/foundry-local/get-started" target="_blank" rel="noopener noreferrer" link-label="Get started with Foundry Local on Microsoft Learn" data-bi-an="local-ai-agents" data-bi-id="foundry-local" data-bi-ct="link"><span slot="link__text">Get started with Foundry Local</span></reimagine-link></li>
+                            <li slot="link-group-item"><reimagine-link href="https://learn.microsoft.com/windows/ai/apis/local-llms" target="_blank" rel="noopener noreferrer" link-label="Explore ready-to-use local LLMs on Windows" data-bi-an="local-ai-agents" data-bi-id="local-llms" data-bi-ct="link"><span slot="link__text">Explore ready-to-use local LLMs</span></reimagine-link></li></reimagine-link-group></reimagine-card-badge></reimagine-layout-column>
+                <reimagine-layout-column><reimagine-card-badge surface="solid-border" text-block-configuration="stacked"><reimagine-text-block size="2xs"><span slot="text-block__eyebrow-label">Bring your own model</span>
+                            <span slot="text-block__heading">Use Windows ML for custom inference</span>
+                            <span slot="text-block__content">Find, convert, optimize, and accelerate an ONNX model across supported NPUs, GPUs, and CPUs with Windows ML.</span></reimagine-text-block>
+                        <reimagine-link-group orientation="vertical" slot="card-badge__footer-bottom"><li slot="link-group-item"><reimagine-link href="https://learn.microsoft.com/windows/ai/new-windows-ml/get-started" target="_blank" rel="noopener noreferrer" link-label="Get started with Windows ML on Microsoft Learn" data-bi-an="local-ai-agents" data-bi-id="agent-windows-ml" data-bi-ct="link"><span slot="link__text">Get started with Windows ML</span></reimagine-link></li>
+                            <li slot="link-group-item"><reimagine-link href="https://learn.microsoft.com/windows/ai/new-windows-ml/models" target="_blank" rel="noopener noreferrer" link-label="Find or train models for Windows ML" data-bi-an="local-ai-agents" data-bi-id="agent-windows-ml-models" data-bi-ct="link"><span slot="link__text">Find or train models</span></reimagine-link></li>
+                            <li slot="link-group-item"><reimagine-link href="https://learn.microsoft.com/windows/ai/new-windows-ml/accelerate-ai-models" target="_blank" rel="noopener noreferrer" link-label="Accelerate AI models with Windows ML" data-bi-an="local-ai-agents" data-bi-id="agent-windows-ml-acceleration" data-bi-ct="link"><span slot="link__text">Accelerate local inference</span></reimagine-link></li></reimagine-link-group></reimagine-card-badge></reimagine-layout-column></reimagine-layout></reimagine-container></reimagine-base-ui-shell></section>
+
+<section id="secure-agent-handoff" aria-label="Secure agent development on Windows"><reimagine-cta-banner background="app-color-base-default-bg-opt1" top-breadth="compact" bottom-breadth="compact" style="--ds-ui-shell-gap: 0;" data-bi-an="local-ai-secure-agent-handoff"><reimagine-layout-column slot="ui-shell-header"><reimagine-heading-block size="m" alignment="center"><h2 slot="heading-block__heading-text">Ready to build agents that take action?</h2><p slot="heading-block__content-text">Continue to the separate Windows agent guidance for identity, isolation, containment, governance, and policy controls.</p><reimagine-button-group slot="heading-block__footer-link"><reimagine-button href="https://blogs.windows.com/windowsdeveloper/2026/06/02/windows-platform-security-for-ai-agents/" appearance="button--primary" shape="rounded" size="medium" target="_blank" data-bi-an="local-ai-secure-agent-handoff" data-bi-id="secure-agent-development" data-bi-ct="button"><span slot="button__text">Explore secure agent development</span></reimagine-button></reimagine-button-group></reimagine-heading-block></reimagine-layout-column></reimagine-cta-banner></section>
+
+<section id="local-ai-resources" aria-label="Local AI resources"><reimagine-base-ui-shell breadth="relaxed" background="app-color-base-default-bg-opt1" data-bi-an="local-ai-resources"><div slot="ui-shell-header"><reimagine-heading-block size="s"><span slot="heading-block__eyebrow-label">Continue learning</span>
+                <h2 slot="heading-block__heading-text">Move from overview to implementation</h2>
+                <span slot="heading-block__content-text">Use maintained documentation to choose an inference path, evaluate working samples, prepare models, and deploy local AI across Windows hardware.</span></reimagine-heading-block></div>
+        <reimagine-container><reimagine-layout configuration="3-col-even"><reimagine-layout-column><reimagine-card-badge surface="solid-border" text-block-configuration="stacked"><reimagine-text-block size="2xs"><span slot="text-block__heading">Choose an inference path</span>
+                            <span slot="text-block__content">Compare Windows AI APIs, Foundry Local, and Windows ML, then decide where local and cloud inference fit your app.</span></reimagine-text-block>
+                        <reimagine-link-group orientation="vertical" slot="card-badge__footer-bottom"><li slot="link-group-item"><reimagine-link href="https://learn.microsoft.com/windows/ai/overview" target="_blank" rel="noopener noreferrer" link-label="Explore Microsoft Foundry on Windows on Microsoft Learn" data-bi-an="local-ai-resources" data-bi-id="foundry-on-windows-resource" data-bi-ct="link"><span slot="link__text">Microsoft Foundry on Windows</span></reimagine-link></li>
+                            <li slot="link-group-item"><reimagine-link href="https://learn.microsoft.com/windows/ai/apis/" target="_blank" rel="noopener noreferrer" link-label="Explore Windows AI APIs documentation on Microsoft Learn" data-bi-an="local-ai-resources" data-bi-id="windows-ai-apis-resource" data-bi-ct="link"><span slot="link__text">Windows AI APIs</span></reimagine-link></li>
+                            <li slot="link-group-item"><reimagine-link href="https://learn.microsoft.com/windows/ai/foundry-local/get-started" target="_blank" rel="noopener noreferrer" link-label="Get started with Foundry Local on Microsoft Learn" data-bi-an="local-ai-resources" data-bi-id="foundry-local-resource" data-bi-ct="link"><span slot="link__text">Foundry Local</span></reimagine-link></li>
+                            <li slot="link-group-item"><reimagine-link href="https://learn.microsoft.com/windows/ai/new-windows-ml/overview" target="_blank" rel="noopener noreferrer" link-label="Explore Windows ML documentation on Microsoft Learn" data-bi-an="local-ai-resources" data-bi-id="windows-ml-resource" data-bi-ct="link"><span slot="link__text">Windows ML</span></reimagine-link></li>
+                            <li slot="link-group-item"><reimagine-link href="https://learn.microsoft.com/windows/ai/windows-ai-comparison" target="_blank" rel="noopener noreferrer" link-label="Choose the Windows AI solution for your scenario" data-bi-an="local-ai-resources" data-bi-id="choose-ai-solution-resource" data-bi-ct="link"><span slot="link__text">Choose your Windows AI solution</span></reimagine-link></li></reimagine-link-group></reimagine-card-badge></reimagine-layout-column>
+                <reimagine-layout-column><reimagine-card-badge surface="solid-border" text-block-configuration="stacked"><reimagine-text-block size="2xs"><span slot="text-block__heading">Tools, samples, and scenarios</span>
+                            <span slot="text-block__content">Evaluate local AI on your hardware and inspect working code.</span></reimagine-text-block>
+                        <reimagine-link-group orientation="vertical" slot="card-badge__footer-bottom"><li slot="link-group-item"><reimagine-link href="https://learn.microsoft.com/windows/ai/ai-dev-gallery/" target="_blank" rel="noopener noreferrer" link-label="Explore AI Dev Gallery on Microsoft Learn" data-bi-an="local-ai-resources" data-bi-id="ai-dev-gallery-resources" data-bi-ct="link"><span slot="link__text">AI Dev Gallery</span></reimagine-link></li>
+                            <li slot="link-group-item"><reimagine-link href="https://learn.microsoft.com/windows/ai/samples/" target="_blank" rel="noopener noreferrer" link-label="Explore AI on Windows code samples and tutorials" data-bi-an="local-ai-resources" data-bi-id="windows-ai-samples" data-bi-ct="link"><span slot="link__text">AI code samples and tutorials</span></reimagine-link></li>
+                            <li slot="link-group-item"><reimagine-link href="https://learn.microsoft.com/windows/ai/toolkit/" target="_blank" rel="noopener noreferrer" link-label="Explore Foundry Toolkit for Visual Studio Code" data-bi-an="local-ai-resources" data-bi-id="foundry-toolkit" data-bi-ct="link"><span slot="link__text">Foundry Toolkit for VS Code</span></reimagine-link></li></reimagine-link-group></reimagine-card-badge></reimagine-layout-column>
+                <reimagine-layout-column><reimagine-card-badge surface="solid-border" text-block-configuration="stacked"><reimagine-text-block size="2xs"><span slot="text-block__heading">Models, acceleration, and distribution</span>
+                            <span slot="text-block__content">Prepare ONNX models for Windows ML, accelerate them across available hardware, and choose how model files reach your users.</span></reimagine-text-block>
+                        <reimagine-link-group orientation="vertical" slot="card-badge__footer-bottom"><li slot="link-group-item"><reimagine-link href="https://learn.microsoft.com/windows/ai/new-windows-ml/models" target="_blank" rel="noopener noreferrer" link-label="Find or train models for Windows ML" data-bi-an="local-ai-resources" data-bi-id="windows-ml-models" data-bi-ct="link"><span slot="link__text">Find or train models</span></reimagine-link></li>
+                            <li slot="link-group-item"><reimagine-link href="https://learn.microsoft.com/windows/ai/new-windows-ml/accelerate-ai-models" target="_blank" rel="noopener noreferrer" link-label="Accelerate AI models with Windows ML" data-bi-an="local-ai-resources" data-bi-id="windows-ml-acceleration" data-bi-ct="link"><span slot="link__text">Accelerate AI models</span></reimagine-link></li>
+                            <li slot="link-group-item"><reimagine-link href="https://learn.microsoft.com/windows/ai/new-windows-ml/model-distribution" target="_blank" rel="noopener noreferrer" link-label="Distribute models for Windows ML" data-bi-an="local-ai-resources" data-bi-id="windows-ml-model-distribution" data-bi-ct="link"><span slot="link__text">Distribute models</span></reimagine-link></li>
+                            <li slot="link-group-item"><reimagine-link href="https://learn.microsoft.com/windows/ai/new-windows-ml/winml-cli" target="_blank" rel="noopener noreferrer" link-label="Explore Windows ML CLI" data-bi-an="local-ai-resources" data-bi-id="windows-ml-cli" data-bi-ct="link"><span slot="link__text">Windows ML CLI</span></reimagine-link></li></reimagine-link-group></reimagine-card-badge></reimagine-layout-column></reimagine-layout></reimagine-container></reimagine-base-ui-shell></section>
+</div>
+
+    </div>
+
+<section class="windows-developer-social" aria-labelledby="windows-developer-social-heading">
+    <div class="windows-developer-social__inner">
+        <h2 id="windows-developer-social-heading" class="windows-developer-social__heading">
+            Follow Windows Developer
+        </h2>
+        <ul class="windows-developer-social__list">
+            <li>
+                <a class="windows-developer-social__link" href="https://x.com/windowsdev" target="_blank" rel="noopener noreferrer" aria-label="Follow Windows Developer on X" data-bi-an="windows-social" data-bi-id="x" data-bi-ct="link">
+                    <svg viewbox="0 0 1200 1227" aria-hidden="true" focusable="false">
+                        <path d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.137 519.284H714.163ZM569.165 687.828L521.697 619.934L144.011 79.6944H306.615L611.412 515.685L658.88 583.579L1055.08 1150.3H892.476L569.165 687.854V687.828Z"></path>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a class="windows-developer-social__link" href="https://www.instagram.com/windowsdeveloper/" target="_blank" rel="noopener noreferrer" aria-label="Follow Windows Developer on Instagram" data-bi-an="windows-social" data-bi-id="instagram" data-bi-ct="link">
+                    <svg viewbox="0 0 16 16" aria-hidden="true" focusable="false">
+                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a class="windows-developer-social__link" href="https://www.facebook.com/windowsdeveloper/" target="_blank" rel="noopener noreferrer" aria-label="Follow Windows Developer on Facebook" data-bi-an="windows-social" data-bi-id="facebook" data-bi-ct="link">
+                    <svg viewbox="0 0 32 33" aria-hidden="true" focusable="false">
+                        <path d="M28.455 2.49805H3.54623C3.13636 2.49821 2.74332 2.66111 2.4535 2.95093C2.16367 3.24076 2.00078 3.6338 2.00061 4.04367V28.9524C2.00078 29.3623 2.16367 29.7553 2.4535 30.0452C2.74332 30.335 3.13636 30.4979 3.54623 30.498H16.0006V19.498H12.6537V15.498H16.0006V12.3105C16.0006 8.69429 18.5087 6.72555 21.7394 6.72555C23.285 6.72555 24.9475 6.8418 25.3337 6.89305V10.6699H22.76C21.0025 10.6699 20.6675 11.5012 20.6675 12.7262V15.498H24.855L24.3081 19.498H20.6675V30.498H28.455C28.8648 30.4979 29.2579 30.335 29.5477 30.0452C29.8375 29.7553 30.0004 29.3623 30.0006 28.9524V4.04367C30.0004 3.6338 29.8375 3.24076 29.5477 2.95093C29.2579 2.66111 28.8648 2.49821 28.455 2.49805Z"></path>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a class="windows-developer-social__link" href="https://www.linkedin.com/company/windows-developer" target="_blank" rel="noopener noreferrer" aria-label="Follow Windows Developer on LinkedIn" data-bi-an="windows-social" data-bi-id="linkedin" data-bi-ct="link">
+                    <svg viewbox="0 0 16 16" aria-hidden="true" focusable="false">
+                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"></path>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+    <!-- Theme picker / UHF Footer -->
+    <div class="mx-0 px-0 overflow-hidden uhf-footer-wrapper">
+        
+<div class="uhf11-footer-container">
+    <button type="button" class="uhf11-btn-theme" id="theme-toggle" aria-label="Change page theme" aria-pressed="false" data-bi-an="uhf-footer" data-bi-id="theme-toggle" data-bi-ct="button">
+        <svg xmlns="http://www.w3.org/2000/svg" style="margin-right:10px" width="24" height="24" fill="currentColor" class="bi bi-brightness-high" viewbox="0 0 16 16" aria-hidden="true">
+            <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"></path>
+        </svg><span>Theme</span>
+    </button>
+    
+<uhf-footer locale="en-us" partnerid="MSDev-Community" footerid="MSDev-DEVCOM-Community-Footer" theme="light">
+    <script id="uhf-footer-ccpa">
+        (function () {
+            function checkThirdPartyAdsOptOutCookie() {
+                try {
+                    var match = document.cookie.match('(^|;)\\s*3PAdsOptOut\\s*=\\s*([^;]+)');
+                    return (match ? match[2] : '') !== '1';
+                } catch (e) {
+                    return true;
+                }
+            }
+            var globalPrivacyControlEnabled = navigator.globalPrivacyControl;
+            window.GPC_DataSharingOptIn = globalPrivacyControlEnabled ? false : checkThirdPartyAdsOptOutCookie();
+            if (typeof window.onGPCLoaded === 'function') {
+                window.onGPCLoaded();
+            }
+        })();
+    </script>
+    
+<uhf-footer-nav slot="uhf-footer-nav">
+</uhf-footer-nav>
+        <a slot="uhf-footer-locale-picker" class="uhf-footer-link" href="/en-us/_devcom/locale" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_English (United States)_nav","ecn":"LegalNav_LocalePicker_nav","ehn":"LegalNav"}' aria-label="Content Language Selector. Currently set to English (United States)">English (United States)</a>
+    <div slot="uhf-footer-california-privacy-link">
+        
+<a class="uhf-footer-link" href="https://aka.ms/yourcaliforniaprivacychoices" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_California Privacy_nav","ecn":"LegalNav_CaliforniaPrivacy_nav","ehn":"LegalNav"}'>
+    <svg role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 14" xml:space="preserve" height="16" width="43">
+    <title>Your Privacy Choices Opt-Out Icon</title>
+    <path d="M7.4 12.8h6.8l3.1-11.6H7.4C4.2 1.2 1.6 3.8 1.6 7s2.6 5.8 5.8 5.8z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#fff"></path>
+    <path d="M22.6 0H7.4c-3.9 0-7 3.1-7 7s3.1 7 7 7h15.2c3.9 0 7-3.1 7-7s-3.2-7-7-7zm-21 7c0-3.2 2.6-5.8 5.8-5.8h9.9l-3.1 11.6H7.4c-3.2 0-5.8-2.6-5.8-5.8z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#06f"></path>
+    <path d="M24.6 4c.2.2.2.6 0 .8L22.5 7l2.2 2.2c.2.2.2.6 0 .8-.2.2-.6.2-.8 0l-2.2-2.2-2.2 2.2c-.2.2-.6.2-.8 0-.2-.2-.2-.6 0-.8L20.8 7l-2.2-2.2c-.2-.2-.2-.6 0-.8.2-.2.6-.2.8 0l2.2 2.2L23.8 4c.2-.2.6-.2.8 0z" style="fill:#fff"></path>
+    <path d="M12.7 4.1c.2.2.3.6.1.8L8.6 9.8c-.1.1-.2.2-.3.2-.2.1-.5.1-.7-.1L5.4 7.7c-.2-.2-.2-.6 0-.8.2-.2.6-.2.8 0L8 8.6l3.8-4.5c.2-.2.6-.2.9 0z" style="fill:#06f"></path>
+    </svg>
+    <span>Your Privacy Choices</span>
+</a>
+        <noscript>
+            
+<a class="uhf-footer-link" href="https://aka.ms/yourcaliforniaprivacychoices" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_California Privacy_nav","ecn":"LegalNav_CaliforniaPrivacy_nav","ehn":"LegalNav"}'>
+    <svg role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 14" xml:space="preserve" height="16" width="43">
+    <title>Your Privacy Choices Opt-Out Icon</title>
+    <path d="M7.4 12.8h6.8l3.1-11.6H7.4C4.2 1.2 1.6 3.8 1.6 7s2.6 5.8 5.8 5.8z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#fff"></path>
+    <path d="M22.6 0H7.4c-3.9 0-7 3.1-7 7s3.1 7 7 7h15.2c3.9 0 7-3.1 7-7s-3.2-7-7-7zm-21 7c0-3.2 2.6-5.8 5.8-5.8h9.9l-3.1 11.6H7.4c-3.2 0-5.8-2.6-5.8-5.8z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#06f"></path>
+    <path d="M24.6 4c.2.2.2.6 0 .8L22.5 7l2.2 2.2c.2.2.2.6 0 .8-.2.2-.6.2-.8 0l-2.2-2.2-2.2 2.2c-.2.2-.6.2-.8 0-.2-.2-.2-.6 0-.8L20.8 7l-2.2-2.2c-.2-.2-.2-.6 0-.8.2-.2.6-.2.8 0l2.2 2.2L23.8 4c.2-.2.6-.2.8 0z" style="fill:#fff"></path>
+    <path d="M12.7 4.1c.2.2.3.6.1.8L8.6 9.8c-.1.1-.2.2-.3.2-.2.1-.5.1-.7-.1L5.4 7.7c-.2-.2-.2-.6 0-.8.2-.2.6-.2.8 0L8 8.6l3.8-4.5c.2-.2.6-.2.9 0z" style="fill:#06f"></path>
+    </svg>
+    <span>Your Privacy Choices</span>
+</a>
+        </noscript>
+    </div>
+    <a slot="uhf-footer-consumer-health-privacy-link" class="uhf-footer-link" href="https://go.microsoft.com/fwlink/?linkid=2259814" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_Consumer Health Privacy_nav","ecn":"LegalNav_ConsumerHealthPrivacy_nav","ehn":"LegalNav"}'>Consumer Health Privacy</a>
+    
+<uhf-footer-menu slot="uhf-footer-menu" data-nav-label="Microsoft corporate links">
+            <a class="uhf-footer-link" href="https://support.microsoft.com/contactus/" id="uhf-Contact Microsoft " data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_Contact Microsoft _nav","ecn":"LegalNav_Contact Microsoft _nav","ehn":"LegalNav"}'>Contact Microsoft </a>
+            <a class="uhf-footer-link" href="https://go.microsoft.com/fwlink/?LinkId=521839" id="uhf-Privacy &amp; Cookies" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_Privacy &amp; Cookies_nav","ecn":"LegalNav_Privacy &amp; Cookies_nav","ehn":"LegalNav"}'>Privacy &amp; Cookies</a>
+            <a class="uhf-footer-link" href="#" id="uhf-Manage cookies" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_Manage cookies_nav","ecn":"LegalNav_Manage cookies_nav","ehn":"LegalNav"}'>Manage cookies</a>
+            <a class="uhf-footer-link" href="https://go.microsoft.com/fwlink/?LinkID=206977" id="uhf-Terms of Use" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_Terms of Use_nav","ecn":"LegalNav_Terms of Use_nav","ehn":"LegalNav"}'>Terms of Use</a>
+            <a class="uhf-footer-link" href="https://www.microsoft.com/trademarks" id="uhf-Trademarks" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_Trademarks_nav","ecn":"LegalNav_Trademarks_nav","ehn":"LegalNav"}'>Trademarks</a>
+</uhf-footer-menu>
+</uhf-footer>
+</div>
+    </div>
+    <!-- /Theme picker -->
+
+
+    <!-- Scripts -->
+    <script>window.cdaTrackerShadowDOM = true;</script>
+    <script src="/__mirror/assets/6c595ffdb677c4a558469896" async></script>
+
+    
+<script type="module" src="/__mirror/assets/adb93738516987ac3e9c9096"></script>
+    
+ <!-- UHF scripts -->
+
+    
+    
+    <!-- /Scripts -->
+</body>
+</html>
