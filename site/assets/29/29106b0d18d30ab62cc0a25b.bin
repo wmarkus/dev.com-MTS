@@ -1,0 +1,9 @@
+#EXTM3U
+## Generated with https://github.com/google/shaka-packager version v2.6.1-634af65-release
+
+#EXT-X-INDEPENDENT-SEGMENTS
+
+#EXT-X-MEDIA:TYPE=AUDIO,URI="/__mirror/assets/4fbf0fb53af98f732706b010",GROUP-ID="default-audio-group",LANGUAGE="zxx",NAME="SoundHandler",AUTOSELECT=YES,CHANNELS="2"
+
+#EXT-X-STREAM-INF:BANDWIDTH=7001012,AVERAGE-BANDWIDTH=2799851,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=1280x720,FRAME-RATE=24.000,VIDEO-RANGE=SDR,AUDIO="default-audio-group",CLOSED-CAPTIONS=NONE
+/__mirror/assets/35fd204d294412646865415b
