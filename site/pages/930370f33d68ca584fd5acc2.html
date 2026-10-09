@@ -1,0 +1,619 @@
+<!doctype html>
+<html lang="en-US" data-theme="light" theme="light">
+<head>
+    <!-- Authorized local recreation. External services are not impersonated; analytics disabled. --><meta name="robots" content="noindex,nofollow"><script src="/__mirror/runtime.js"></script><title>Microsoft PowerToys | Microsoft Developer</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark light">
+    <meta name="awa-env" content="Production">
+    <meta name="description" content="Customize Windows and streamline everyday work with Microsoft PowerToys, a free, open-source collection of utilities for power users and developers.">
+
+    <meta property="og:title" content="Microsoft PowerToys | Microsoft Developer">
+    <meta property="og:description" content="Customize Windows and streamline everyday work with Microsoft PowerToys, a free, open-source collection of utilities for power users and developers.">
+    <meta property="og:image" content="https://developer.microsoft.com/_devcom/images/logo-ms-social.jpg">
+    <meta property="og:image:alt" content="Microsoft Developer">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Microsoft Developer">
+    <meta property="og:url" content="https://developer.microsoft.com/en-us/windows/powertoys">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@msdev">
+    <meta name="twitter:image" content="https://developer.microsoft.com/_devcom/images/logo-ms-social.jpg">
+
+    
+    <meta name="awa-pageType" content="Resources">
+    <meta name="awa-product" content="Windows">
+    <meta name="awa-prdct" content="Windows">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+    <link rel="canonical" href="https://developer.microsoft.com/en-us/windows/powertoys">
+    
+    
+<style>
+    uhf-header:not(:defined) {
+        display: block;
+        height: 54px;
+    }
+
+    uhf-brand:not(:defined),
+    uhf-contextual-nav:not(:defined),
+    uhf-actions:not(:defined),
+    uhf-global-nav:not(:defined),
+    uhf-search:not(:defined),
+    uhf-mecontrol:not(:defined),
+    uhf-cart:not(:defined),
+    uhf-dropdown:not(:defined),
+    uhf-popout:not(:defined) {
+        visibility: hidden;
+    }
+</style>
+<link rel="stylesheet" href="/__mirror/assets/e4d14f1f8bc83e293e136adc"> <!-- UHF CSS -->
+
+    <script src="/__mirror/assets/fe2fc9b62e744e583f0eb2a4"></script>
+    
+    
+    <link rel="stylesheet" href="/__mirror/assets/f0a2f4bb8e7fd8f995b212dd">
+    <link rel="stylesheet" href="/__mirror/assets/7645384d8723410070241432">
+    
+    <script type="module" src="/__mirror/assets/a0e5b0f304f32fc68c4bf67b"></script>
+    
+    <script src="/__mirror/assets/389caacc8c667b179afc3c37"></script>
+    
+    <style>
+        body {
+            background-color: var(--ds-app-color-base-default-bg-opt1);
+            color: var(--ds-app-color-base-default-fg-body);
+        }
+        /* Eyebrow labels should be uppercase */
+        [slot="heading-block__eyebrow-label"] {
+            text-transform: uppercase;
+        }
+    </style>
+
+    <!-- 1DS script -->
+    
+    
+    <!-- /1DS script -->
+
+    
+</head>
+<body data-windows-version="v2">
+    <!-- UHF Header -->
+    
+<uhf-header locale="en-us" partnerid="MSDev-Community" headerid="MSDev-DEVCOM-Community-Header" theme="light">
+    <a slot="skip-link" class="uhf-skip-link" href="#mainContent" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "SkipToMain", "cN": "Skip to content_nonnav", "ecn": "Skip to content_nonnav", "ehn": "SkipToMain"}'>Skip to main content</a>
+    
+<uhf-brand slot="brand">
+        <a href="https://www.microsoft.com/" class="uhf-microsoft-logo" slot="microsoft-logo" aria-label="Microsoft" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Anchor", "cN": "GlobalNav_Logo_cont", "ecn": "GlobalNav_Logo_cont", "ehn": "Anchor"}'>
+            <img src="/__mirror/assets/adea6dac4ae78fd2b1b9eda9" alt="Microsoft">
+        </a>
+            <a href="/en-us/" class="uhf-site-logo" slot="brand-logo" aria-label="Developer" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Anchor", "cN": "CatNav_Developer_nav", "ecn": "CatNav_Developer_nav", "ehn": "Anchor"}'>
+ <span>Developer</span>             </a>
+</uhf-brand>
+
+
+<uhf-contextual-nav slot="contextual-nav" overflowtext="More" brand="Developer" homeurl="https://developer.microsoft.com/en-us/" hometext="Home" data-nav-label="Contextual menu">
+
+
+
+<uhf-dropdown text="Products" id="" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_nav", "ecn": "CatNav_Products_nav", "ehn": "Products"}'>
+    
+
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://learn.microsoft.com/en-us/dynamics365/get-started/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Dynamics 365_nav", "ecn": "CatNav_Products_Dynamics 365_nav", "ehn": "Products"}'>Dynamics 365</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://github.com/home" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_GitHub_nav", "ecn": "CatNav_Products_GitHub_nav", "ehn": "Products"}'>GitHub</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://developer.microsoft.com/en-us/microsoft-365" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Microsoft 365_nav", "ecn": "CatNav_Products_Microsoft 365_nav", "ehn": "Products"}'>Microsoft 365</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/azure" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Microsoft Azure_nav", "ecn": "CatNav_Products_Microsoft Azure_nav", "ehn": "Products"}'>Microsoft Azure</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://developer.microsoft.com/en-us/microsoft-edge/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Microsoft Edge_nav", "ecn": "CatNav_Products_Microsoft Edge_nav", "ehn": "Products"}'>Microsoft Edge</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://ai.azure.com/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Microsoft Foundry_nav", "ecn": "CatNav_Products_Microsoft Foundry_nav", "ehn": "Products"}'>Microsoft Foundry</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://developer.microsoft.com/en-us/graph" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Microsoft Graph_nav", "ecn": "CatNav_Products_Microsoft Graph_nav", "ehn": "Products"}'>Microsoft Graph</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/identity" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Microsoft Identity Platform_nav", "ecn": "CatNav_Products_Microsoft Identity Platform_nav", "ehn": "Products"}'>Microsoft Identity Platform</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://developer.microsoft.com/en-us/microsoft-teams" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Microsoft Teams_nav", "ecn": "CatNav_Products_Microsoft Teams_nav", "ehn": "Products"}'>Microsoft Teams</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/power-platform" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Power Platform_nav", "ecn": "CatNav_Products_Power Platform_nav", "ehn": "Products"}'>Power Platform</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://visualstudio.microsoft.com/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Visual Studio_nav", "ecn": "CatNav_Products_Visual Studio_nav", "ehn": "Products"}'>Visual Studio</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://code.visualstudio.com/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Visual Studio Code_nav", "ecn": "CatNav_Products_Visual Studio Code_nav", "ehn": "Products"}'>Visual Studio Code</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/windows/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Windows_nav", "ecn": "CatNav_Products_Windows_nav", "ehn": "Products"}'>Windows</a>
+
+
+</uhf-dropdown>
+
+
+<uhf-dropdown text="Languages" id="" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Languages", "cN": "CatNav_Languages_nav", "ecn": "CatNav_Languages_nav", "ehn": "Languages"}'>
+    
+
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://dotnet.microsoft.com/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Languages", "cN": "CatNav_Languages_.NET_nav", "ecn": "CatNav_Languages_.NET_nav", "ehn": "Languages"}'>.NET</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/cpp" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Languages", "cN": "CatNav_Languages_C++_nav", "ecn": "CatNav_Languages_C++_nav", "ehn": "Languages"}'>C++</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/java" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Languages", "cN": "CatNav_Languages_Java_nav", "ecn": "CatNav_Languages_Java_nav", "ehn": "Languages"}'>Java</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/javascript/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Languages", "cN": "CatNav_Languages_JavaScript_nav", "ecn": "CatNav_Languages_JavaScript_nav", "ehn": "Languages"}'>JavaScript</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/python" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Languages", "cN": "CatNav_Languages_Python_nav", "ecn": "CatNav_Languages_Python_nav", "ehn": "Languages"}'>Python</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://www.typescriptlang.org/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Languages", "cN": "CatNav_Languages_TypeScript_nav", "ecn": "CatNav_Languages_TypeScript_nav", "ehn": "Languages"}'>TypeScript</a>
+
+
+</uhf-dropdown>
+
+
+<uhf-dropdown text="Hubs" id="" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Hubs", "cN": "CatNav_Hubs_nav", "ecn": "CatNav_Hubs_nav", "ehn": "Hubs"}'>
+    
+
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/build-apis" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Hubs", "cN": "CatNav_Hubs_Build APIs_nav", "ecn": "CatNav_Hubs_Build APIs_nav", "ehn": "Hubs"}'>Build APIs</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://developer.microsoft.com/en-us/games/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Hubs", "cN": "CatNav_Hubs_Game development_nav", "ecn": "CatNav_Hubs_Game development_nav", "ehn": "Hubs"}'>Game development</a>
+
+
+</uhf-dropdown>
+
+    <a class="uhf-nav-item uhf-nav-link" href="https://developer.microsoft.com/blog" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Blog", "cN": "CatNav_Blog_nav", "ecn": "CatNav_Blog_nav", "ehn": "Blog"}'>Blog</a>
+
+
+    <a class="uhf-nav-item uhf-nav-link" href="/en-us/events" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Events", "cN": "CatNav_Events_nav", "ecn": "CatNav_Events_nav", "ehn": "Events"}'>Events</a>
+
+
+    <a class="uhf-nav-item uhf-nav-link" href="https://learn.microsoft.com/docs/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Documentation", "cN": "CatNav_Documentation_nav", "ecn": "CatNav_Documentation_nav", "ehn": "Documentation"}'>Documentation</a>
+
+
+    <a class="uhf-nav-item uhf-nav-link" href="/en-us/community" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Community", "cN": "CatNav_Community_nav", "ecn": "CatNav_Community_nav", "ehn": "Community"}'>Community</a>
+
+
+    <a class="uhf-nav-item uhf-nav-link" href="/en-us/changelog" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Changelog", "cN": "CatNav_Changelog_nav", "ecn": "CatNav_Changelog_nav", "ehn": "Changelog"}'>Changelog</a>
+</uhf-contextual-nav>    <uhf-actions slot="actions">
+        
+<uhf-global-nav slot="global-nav" text="All Microsoft" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_nonnav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_nonnav", "ehn": "OneMicrosoftBar"}' data-nav-label="All Microsoft menu">
+    
+    <uhf-dropdown-header slot="header">
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/security" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Microsoft Security_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Microsoft Security_nav", "ehn": "OneMicrosoftBar"}'>Microsoft Security</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://azure.microsoft.com/en-us/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Azure_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Azure_nav", "ehn": "OneMicrosoftBar"}'>Azure</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://dynamics.microsoft.com/en-us/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Dynamics 365_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Dynamics 365_nav", "ehn": "OneMicrosoftBar"}'>Dynamics 365</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/microsoft-365/business/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Microsoft 365_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Microsoft 365_nav", "ehn": "OneMicrosoftBar"}'>Microsoft 365</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/microsoft-teams/group-chat-software" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Microsoft Teams_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Microsoft Teams_nav", "ehn": "OneMicrosoftBar"}'>Microsoft Teams</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/windows-365" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Windows 365_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Windows 365_nav", "ehn": "OneMicrosoftBar"}'>Windows 365</a>
+    </uhf-dropdown-header>
+
+        <uhf-dropdown-column title="Tech &amp; innovation" show-tooltip="false" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_nav", "ehn": "OneMicrosoftBar"}'>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/ai?icid=DSM_AllCommercial_AI" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_Microsoft AI_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_More_TechInnovation__AI_nav", "ehn": "OneMicrosoftBar"}'>Microsoft AI</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://azure.microsoft.com/en-us/solutions/space/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_Azure Space_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_More_TechInnovation_AzureSpace_nav", "ehn": "OneMicrosoftBar"}'>Azure Space</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/mixed-reality/windows-mixed-reality" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_Mixed reality_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_More_TechInnovation_MixedReality_nav", "ehn": "OneMicrosoftBar"}'>Mixed reality</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/hololens" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_Microsoft HoloLens_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_More_TechInnovation_MicrosoftHololens_nav", "ehn": "OneMicrosoftBar"}'>Microsoft HoloLens</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/microsoft-viva" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_Microsoft Viva_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_More_TechInnovation_Microsoft Viva_nav", "ehn": "OneMicrosoftBar"}'>Microsoft Viva</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://azure.microsoft.com/en-us/solutions/quantum-computing/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_Quantum computing_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_More_TechInnovation_QuantumComputing_nav", "ehn": "OneMicrosoftBar"}'>Quantum computing</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/corporate-responsibility/sustainability?icid=DSM_AllCommercial_Sustainability" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_Sustainability_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_More_TechInnovation_Sustainability_nav", "ehn": "OneMicrosoftBar"}'>Sustainability</a>
+        </uhf-dropdown-column>
+        <uhf-dropdown-column title="Industries" show-tooltip="false" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_nav", "ehn": "OneMicrosoftBar"}'>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/education" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_Education_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_More_Industries_Education_nav", "ehn": "OneMicrosoftBar"}'>Education</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/industry/automotive" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_Automotive_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_More_Industries_Automotive_nav", "ehn": "OneMicrosoftBar"}'>Automotive</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/industry/financial-services/banking" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_Financial services_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_More_Industries_Financialservices_nav", "ehn": "OneMicrosoftBar"}'>Financial services</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/industry/government" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_Government_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_More_Industries_Government_nav", "ehn": "OneMicrosoftBar"}'>Government</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/industry/health/microsoft-cloud-for-healthcare" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_Healthcare_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_More_Industries_Health_nav", "ehn": "OneMicrosoftBar"}'>Healthcare</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/industry/manufacturing/microsoft-cloud-for-manufacturing" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_Manufacturing_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_More_Industries_Manufacturing_nav", "ehn": "OneMicrosoftBar"}'>Manufacturing</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/industry/consumer-goods" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_Retail_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_More_Industries_Retail_nav", "ehn": "OneMicrosoftBar"}'>Retail</a>
+        </uhf-dropdown-column>
+        <uhf-dropdown-column title="Partners" show-tooltip="false" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_nav", "ehn": "OneMicrosoftBar"}'>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://partner.microsoft.com/en-US/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_Find a partner_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_More_Partner_FindPartner_nav", "ehn": "OneMicrosoftBar"}'>Find a partner</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://partner.microsoft.com/en-US/membership/cloud-solution-provider" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_Become a partner_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_More_Partner_BecomePartner_nav", "ehn": "OneMicrosoftBar"}'>Become a partner</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://partner.microsoft.com/en-us/membership" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_Partner Network_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_More_Partner_PartnerNetwork_nav", "ehn": "OneMicrosoftBar"}'>Partner Network</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://marketplace.microsoft.com/?icid=DSM_AllCommercial_Marketplace" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_Microsoft Marketplace_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_More_Partner_Marketplace_nav", "ehn": "OneMicrosoftBar"}'>Microsoft Marketplace</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/software-development-companies?icid=DSM_AllCommercial_SoftwareCompanies" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_Software companies_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_Software companies_nav", "ehn": "OneMicrosoftBar"}'>Software companies</a>
+        </uhf-dropdown-column>
+        <uhf-dropdown-column title="Resources" show-tooltip="false" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_nav", "ehn": "OneMicrosoftBar"}'>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://blogs.microsoft.com/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_Blog_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_More_Resources_Blog_nav", "ehn": "OneMicrosoftBar"}'>Blog</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://about.ads.microsoft.com/en-us?s_cid=dig-src_uhfcomm" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_Microsoft Advertising_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_More_Resources_MicrosoftAdvertising_nav", "ehn": "OneMicrosoftBar"}'>Microsoft Advertising</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_Developer Center_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_More_Resources_DeveloperCenter_nav", "ehn": "OneMicrosoftBar"}'>Developer Center</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://learn.microsoft.com/docs/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_Documentation_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_More_Resources_Documentation_nav", "ehn": "OneMicrosoftBar"}'>Documentation</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/events" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_Events_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_More_Resources_Events_nav", "ehn": "OneMicrosoftBar"}'>Events</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/licensing/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_Licensing_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_More_Resources_Licensing_nav", "ehn": "OneMicrosoftBar"}'>Licensing</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://learn.microsoft.com/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_Microsoft Learn_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_More_Resources_MicrosoftLearn_nav", "ehn": "OneMicrosoftBar"}'>Microsoft Learn</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/research/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_Microsoft Research_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_More_Resources_MicrosoftResearch_nav", "ehn": "OneMicrosoftBar"}'>Microsoft Research</a>
+        </uhf-dropdown-column>
+
+    <uhf-dropdown-footer slot="footer">
+        <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/sitemap" data-m="">View Sitemap</a>
+    </uhf-dropdown-footer>
+
+</uhf-global-nav>
+
+
+            <uhf-search slot="search" placeholder="Search or ask a question" search-label="Search" cancel-label="Cancel" suggestions-available-text="{0} suggestions available" searchurl="https://www.microsoft.com/en-us/search/explore" autosuggesturl="https://www.microsoft.com/msstoreapiprod/api/autosuggest" queryparametername="q" clientid="7F27B536-CF6B-4C65-8638-A0F8CBDFCA65" productcount="1,5,5" source="Iris-Products,DCatAll-Products,Microsoft-Terms">
+            </uhf-search>
+    </uhf-actions>
+</uhf-header>
+
+<reimagine-secondary-nav configuration="navigation" hide-divider label="Windows Dev Center navigation" data-nav-type="secondary-uhf">
+    <a href="/en-us/windows" slot="secondary-nav__label" data-bi-an="secondary-uhf-nav" data-bi-id="windows-dev-center" data-bi-ct="nav">Windows Dev Center</a>
+        <reimagine-secondary-nav-item href="/en-us/windows/apps/build-a-windows-app" configuration="navigation" data-bi-an="secondary-uhf-nav" data-bi-id="build-apps" data-bi-ct="nav">Build Windows apps</reimagine-secondary-nav-item>
+        <reimagine-secondary-nav-item href="/en-us/windows/dev-tools" configuration="navigation" data-bi-an="secondary-uhf-nav" data-bi-id="dev-box" data-bi-ct="nav">Get developer tools</reimagine-secondary-nav-item>
+        <reimagine-secondary-nav-item href="/en-us/windows/local-ai" configuration="navigation" data-bi-an="secondary-uhf-nav" data-bi-id="local-ai" data-bi-ct="nav">Code with AI</reimagine-secondary-nav-item>
+        <reimagine-secondary-nav-item href="/en-us/windows/agentic" configuration="navigation" data-bi-an="secondary-uhf-nav" data-bi-id="agent-platform" data-bi-ct="nav">Run agents locally</reimagine-secondary-nav-item>
+    <reimagine-button-group slot="secondary-nav__button-group">
+            <reimagine-button size="small" appearance="button--secondary" shape="rounded" href="/en-us/windows/support" target="_self" data-bi-an="secondary-uhf-nav" data-bi-id="support" data-bi-ct="button">
+                <span slot="button__text">Support</span>
+            </reimagine-button>
+            <reimagine-button size="small" appearance="button--primary" shape="rounded" href="https://partner.microsoft.com/dashboard" target="_blank" rel="noopener noreferrer" data-bi-an="secondary-uhf-nav" data-bi-id="partner-center" data-bi-ct="button">
+                <span slot="button__text">Partner Center</span>
+            </reimagine-button>
+    </reimagine-button-group>
+</reimagine-secondary-nav>
+
+    <div class="site-banners">
+
+
+
+
+<style>
+    /* Purple announcement banner styling to match original design */
+    #announcement-banner-windows-hybrid-intelligence {
+        --ds-fill-color-override: #6761D9;
+        --ds-text-color-override: #FFFFFF;
+        --ds-button-ghost-color: #FFFFFF;
+    }
+    
+    :root[data-theme="dark"] #announcement-banner-windows-hybrid-intelligence {
+        --ds-fill-color-override: #514AC9;
+    }
+    
+    #announcement-banner-windows-hybrid-intelligence [slot="announcement__label"],
+    #announcement-banner-windows-hybrid-intelligence [slot="announcement__link"] {
+        color: #FFFFFF;
+    }
+    
+    #announcement-banner-windows-hybrid-intelligence reimagine-link {
+        --ds-link-color: #FFFFFF;
+        --ds-link-outline: 0.1875rem dotted #FFFFFF;
+    }
+    
+    /* White outline around badge icon */
+    #announcement-banner-windows-hybrid-intelligence [slot="announcement__badge"] {
+        border: 1px solid #FFFFFF;
+        border-radius: var(--root-radii-s, 0.5rem);
+        box-sizing: content-box;
+    }
+</style>
+
+<reimagine-announcement id="announcement-banner-windows-hybrid-intelligence" class="d-none" data-identifier="windows-hybrid-intelligence" role="alert" aria-label="Building Windows for hybrid intelligence announcement" close-label="Close announcement" sr-close-text="Announcement closed" data-bi-an="top-banner">
+    
+    <img slot="announcement__badge" src="/__mirror/assets/3e387745acc96f18d8365e8a" alt="">
+
+    <p slot="announcement__label">Building Windows for hybrid intelligence – Run agents locally or in the cloud, with enterprise-grade security and manageability.</p>
+    
+    <reimagine-link slot="announcement__link" href="https://aka.ms/WindowsEraofAI" target="_blank" data-bi-an="top-banner" data-bi-id="windows-hybrid-intelligence">
+        <span slot="link__text">Read more</span>
+    </reimagine-link>
+</reimagine-announcement>
+    </div>
+
+    <div id="mainContent" role="main">
+        
+
+<div id="windows-powertoys-page">
+    <section id="hero"><reimagine-hero-featured header-layout-configuration="2-col-even" media-orientation="mobile-stack" density="compact" breadth="compact"><reimagine-media slot="ui-shell-media" aspect-ratio="21-9" overlay="gradient"><picture slot="media__asset"><source srcset="/__mirror/assets/d09531bbb70c4a75928e90c6" media="none and (prefers-color-scheme: dark)"></source><source srcset="/__mirror/assets/f3d26bec7736aced9d6fa8da" media="none and (prefers-color-scheme: light)"></source><img src="/__mirror/assets/f3d26bec7736aced9d6fa8da" alt></picture></reimagine-media>
+        
+        <reimagine-layout-column slot="ui-shell-header"><reimagine-heading-block size="m"><h1 slot="heading-block__heading-text">PowerToys</h1>
+                <p slot="heading-block__content-text">Make Windows work the way you do. Get more than 30 free, open-source tools that help you find things fast, arrange windows, and paste smarter.</p><reimagine-button-group slot="heading-block__last"><reimagine-button href="https://aka.ms/getPowertoys" appearance="button--primary" shape="rounded" size="medium" target="_blank" button-label="Install PowerToys from Microsoft Store" data-bi-an="powertoys-hero" data-bi-id="install-powertoys" data-bi-ct="button"><span slot="button__text">Install PowerToys</span></reimagine-button><reimagine-button href="https://github.com/microsoft/PowerToys" appearance="button--secondary" shape="rounded" size="medium" target="_blank" button-label="View PowerToys on GitHub" data-bi-an="powertoys-hero" data-bi-id="github" data-bi-ct="button"><span slot="button__text">View on GitHub</span></reimagine-button></reimagine-button-group></reimagine-heading-block></reimagine-layout-column></reimagine-hero-featured></section>
+
+<section id="popular-tools" aria-label="Popular PowerToys utilities"><reimagine-high-impact-product-accordion breadth="compact" data-bi-an="powertoys-popular"><div slot="ui-shell-header"><reimagine-heading-block size="m"><span slot="heading-block__eyebrow-label">Popular tools</span>
+                <h2 slot="heading-block__heading-text">Big time savers, one shortcut away</h2>
+                <span slot="heading-block__content-text">Start with the tools people use every day. Turn on only the ones you need.</span></reimagine-heading-block></div>
+        <reimagine-accordion configuration="product" appearance="subtle--chevron" group-management><reimagine-accordion-item open data-bi-an="powertoys-popular" data-bi-id="command-palette" data-bi-ct="button"><span slot="collapse__title">Find anything fast with Command Palette</span>
+                <p>Press Win + Alt + Space and start typing. Open apps, files, and commands, and add extensions to make it your own.</p>
+                <reimagine-media slot="product" border-width="m" object-fit="contain"><img slot="media__asset" src="/__mirror/assets/2cdfa2e8695b242234669ef3" alt="Command Palette with a search box and commands to search apps, switch windows, and search files." loading="lazy"></reimagine-media></reimagine-accordion-item>
+            <reimagine-accordion-item data-bi-an="powertoys-popular" data-bi-id="fancyzones" data-bi-ct="button"><span slot="collapse__title">Arrange your windows with FancyZones</span>
+                <p>Create your own window layouts and snap apps into place. Press Win + Shift + ` to open the layout editor.</p>
+                <reimagine-media slot="product" border-width="m" object-fit="contain"><img slot="media__asset" src="/__mirror/assets/5bdc0ee38970e0ec55c2b418" alt="FancyZones layout editor with layout templates and custom layouts." loading="lazy"></reimagine-media></reimagine-accordion-item>
+            <reimagine-accordion-item data-bi-an="powertoys-popular" data-bi-id="advanced-paste" data-bi-ct="button"><span slot="collapse__title">Paste smarter with Advanced Paste</span>
+                <p>Press Win + Shift + V to paste as plain text, Markdown, or JSON. You can also use AI to change text, with online or local models.</p>
+                <reimagine-media slot="product" border-width="m" object-fit="contain"><img slot="media__asset" src="/__mirror/assets/8882331f18e89e5e19f840cf" alt="Advanced Paste window with options to paste as plain text, Markdown, or JSON, and a box for AI instructions." loading="lazy"></reimagine-media></reimagine-accordion-item>
+            <reimagine-accordion-item data-bi-an="powertoys-popular" data-bi-id="peek" data-bi-ct="button"><span slot="collapse__title">Preview files with Peek</span>
+                <p>Select a file in File Explorer and press Space to see a quick preview. No need to open another app.</p>
+                <reimagine-media slot="product" border-width="m" object-fit="contain"><img slot="media__asset" src="/__mirror/assets/359398312c5643dc7dd9496c" alt="Peek showing a large preview of an image file selected in File Explorer." loading="lazy"></reimagine-media></reimagine-accordion-item></reimagine-accordion></reimagine-high-impact-product-accordion></section>
+
+<section id="for-developers" aria-label="PowerToys for developers"><reimagine-base-ui-shell breadth="compact" bottom-breadth="none" background="app-color-base-default-bg-opt1" data-bi-an="powertoys-developers"><div slot="ui-shell-header"><reimagine-heading-block size="m"><span slot="heading-block__eyebrow-label">For developers</span>
+                <h2 slot="heading-block__heading-text">Made for developers, too</h2>
+                <span slot="heading-block__content-text">Handle everyday dev tasks without digging through system settings.</span></reimagine-heading-block></div>
+        <reimagine-container><reimagine-layout configuration="4-col-even-1"><reimagine-layout-column><reimagine-card-feature surface="glass" clickable><reimagine-media slot="card-feature__media" aspect-ratio="4-3" object-fit="contain"><picture slot="media__asset"><source srcset="/__mirror/assets/cf1018ace04ac2dd032ff414" media="none and (prefers-color-scheme: dark)"></source>
+                        <img src="/__mirror/assets/db6849e64273a217774617e2" alt width="1280" height="720" loading="lazy"></picture></reimagine-media>
+            <reimagine-text-block slot="card-feature__content-body" configuration="stacked" size="2xs"><span slot="text-block__heading">Environment Variables</span>
+                <span slot="text-block__content">Group environment variables into profiles and turn them on or off when you need them.</span></reimagine-text-block>
+            <reimagine-link slot="card-feature__content-footer-bottom" href="https://aka.ms/PowerToysOverview_EnvironmentVariables" target="_blank" rel="noopener noreferrer" link-label="Learn about Environment Variables" data-bi-an="powertoys-developers" data-bi-id="environment-variables" data-bi-ct="link"><span slot="link__text">Learn about Environment Variables</span></reimagine-link></reimagine-card-feature></reimagine-layout-column><reimagine-layout-column><reimagine-card-feature surface="glass" clickable><reimagine-media slot="card-feature__media" aspect-ratio="4-3" object-fit="contain"><picture slot="media__asset"><source srcset="/__mirror/assets/d20150facdf7aec1d7760239" media="none and (prefers-color-scheme: dark)"></source>
+                        <img src="/__mirror/assets/05acc03735c56e3dc6078b01" alt width="1280" height="720" loading="lazy"></picture></reimagine-media>
+            <reimagine-text-block slot="card-feature__content-body" configuration="stacked" size="2xs"><span slot="text-block__heading">Hosts File Editor</span>
+                <span slot="text-block__content">Add, edit, and turn hosts entries on or off in a simple editor to test local and staging sites.</span></reimagine-text-block>
+            <reimagine-link slot="card-feature__content-footer-bottom" href="https://aka.ms/PowerToysOverview_HostsFileEditor" target="_blank" rel="noopener noreferrer" link-label="Learn about Hosts File Editor" data-bi-an="powertoys-developers" data-bi-id="hosts-file-editor" data-bi-ct="link"><span slot="link__text">Learn about Hosts File Editor</span></reimagine-link></reimagine-card-feature></reimagine-layout-column><reimagine-layout-column><reimagine-card-feature surface="glass" clickable><reimagine-media slot="card-feature__media" aspect-ratio="4-3" object-fit="contain"><picture slot="media__asset"><source srcset="/__mirror/assets/527b791968dc3daa690d83cf" media="none and (prefers-color-scheme: dark)"></source>
+                        <img src="/__mirror/assets/31a49a83bd76e36b952b2b97" alt width="1280" height="720" loading="lazy"></picture></reimagine-media>
+            <reimagine-text-block slot="card-feature__content-body" configuration="stacked" size="2xs"><span slot="text-block__heading">Command Not Found</span>
+                <span slot="text-block__content">Type a command that isn't installed in PowerShell 7, and get the WinGet package that adds it.</span></reimagine-text-block>
+            <reimagine-link slot="card-feature__content-footer-bottom" href="https://aka.ms/PowerToysOverview_CmdNotFound" target="_blank" rel="noopener noreferrer" link-label="Learn about Command Not Found" data-bi-an="powertoys-developers" data-bi-id="command-not-found" data-bi-ct="link"><span slot="link__text">Learn about Command Not Found</span></reimagine-link></reimagine-card-feature></reimagine-layout-column><reimagine-layout-column><reimagine-card-feature surface="glass" clickable><reimagine-media slot="card-feature__media" aspect-ratio="4-3" object-fit="contain"><picture slot="media__asset"><source srcset="/__mirror/assets/8db7bdc85eddf23831254883" media="none and (prefers-color-scheme: dark)"></source>
+                        <img src="/__mirror/assets/3c477faa031acb3d8619e822" alt width="1280" height="720" loading="lazy"></picture></reimagine-media>
+            <reimagine-text-block slot="card-feature__content-body" configuration="stacked" size="2xs"><span slot="text-block__heading">Text Extractor</span>
+                <span slot="text-block__content">Press Win + Shift + T to copy text from anywhere on screen, like an error message in a dialog.</span></reimagine-text-block>
+            <reimagine-link slot="card-feature__content-footer-bottom" href="https://aka.ms/PowerToysOverview_TextExtractor" target="_blank" rel="noopener noreferrer" link-label="Learn about Text Extractor" data-bi-an="powertoys-developers" data-bi-id="text-extractor" data-bi-ct="link"><span slot="link__text">Learn about Text Extractor</span></reimagine-link></reimagine-card-feature></reimagine-layout-column></reimagine-layout></reimagine-container></reimagine-base-ui-shell>
+    <reimagine-base-ui-shell id="command-palette-extensions" breadth="compact" background="app-color-base-default-bg-opt1" data-bi-an="powertoys-extensions"><reimagine-container><reimagine-card-split media-last surface="solid-border"><reimagine-text-block slot="header" configuration="stacked" size="m"><span slot="text-block__eyebrow-label">Extend Command Palette</span>
+                    <h3 slot="text-block__heading">Build the next thing people launch</h3>
+                    <span slot="text-block__content">Create an extension in C#, try it instantly in Command Palette, and share it through Microsoft Store or WinGet. Join a rich ecosystem of extensions—or explore it for inspiration.</span></reimagine-text-block>
+                <reimagine-button-group slot="content-bottom"><reimagine-button href="https://learn.microsoft.com/windows/powertoys/command-palette/creating-an-extension" appearance="button--primary" shape="rounded" size="medium" target="_blank" rel="noopener noreferrer" button-label="Build a Command Palette extension" data-bi-an="powertoys-extensions" data-bi-id="build-extension" data-bi-ct="button"><span slot="button__text">Build an extension</span></reimagine-button>
+                    <reimagine-button href="https://microsoft.github.io/CmdPal-Extensions/" appearance="button--secondary" shape="rounded" size="medium" target="_blank" rel="noopener noreferrer" button-label="Explore the Command Palette extension gallery" data-bi-an="powertoys-extensions" data-bi-id="explore-extension-gallery" data-bi-ct="button"><span slot="button__text">Explore extensions</span></reimagine-button></reimagine-button-group>
+                <reimagine-media slot="media" aspect-ratio="initial" object-fit="contain"><picture slot="media__asset"><source srcset="/__mirror/assets/329420d15d3584334ff4b15c" media="none and (prefers-color-scheme: dark)">
+                        <img src="/__mirror/assets/728a8b4d667f8aeca4a8cdc3" alt="Command Palette Extensions gallery showing community-built tools for developers, productivity, media, and more." width="1440" height="810" loading="lazy"></source></picture></reimagine-media></reimagine-card-split></reimagine-container></reimagine-base-ui-shell></section>
+
+<section id="built-in-the-open" aria-label="PowerToys is open source"><reimagine-base-ui-shell breadth="compact" data-bi-an="powertoys-open-source"><div slot="ui-shell-header"><reimagine-heading-block size="m"><span slot="heading-block__eyebrow-label">Open source</span>
+                <h2 slot="heading-block__heading-text">Built in the open, with the community</h2>
+                <span slot="heading-block__content-text">Microsoft and the Windows community build PowerToys together on GitHub. Report a bug, suggest an idea, or send a pull request.</span></reimagine-heading-block></div>
+        <reimagine-container><reimagine-layout configuration="3-col-even"><reimagine-layout-column><reimagine-stat size="large" configuration="stacked"><h3 slot="stat__title-primary">135K+</h3>
+            <span slot="stat__title-secondary">stars on GitHub</span><span slot="stat__title-footnote">1</span></reimagine-stat></reimagine-layout-column>
+                <reimagine-layout-column><reimagine-stat size="large" configuration="stacked"><h3 slot="stat__title-primary">400+</h3>
+            <span slot="stat__title-secondary">contributors</span><span slot="stat__title-footnote">1</span></reimagine-stat></reimagine-layout-column>
+                <reimagine-layout-column><reimagine-stat size="large" configuration="stacked"><h3 slot="stat__title-primary">30+</h3>
+            <span slot="stat__title-secondary">tools in one free app</span></reimagine-stat></reimagine-layout-column></reimagine-layout></reimagine-container>
+        <reimagine-container><reimagine-footnote with-divider><reimagine-footnote-item slot="footnote__item"><span slot="footnote-item__superscript">1</span>
+                    <span slot="footnote-item__paragraph">Source: github.com/microsoft/PowerToys, September 2026. Numbers are rounded down.</span></reimagine-footnote-item></reimagine-footnote></reimagine-container></reimagine-base-ui-shell></section>
+
+<section id="featured-utilities" aria-label="All PowerToys utilities"><reimagine-base-ui-shell background="app-color-base-default-bg-opt1" breadth="comfortable" data-bi-an="powertoys-utilities" bottom-breadth="compact"><reimagine-layout-column slot="ui-shell-header"><reimagine-heading-block size="s"><div slot="heading-block__eyebrow-label">All utilities</div><h2 slot="heading-block__heading-text">Find the right tool</h2><p slot="heading-block__content-text">Browse every utility by category, the same way they appear in PowerToys Settings.</p></reimagine-heading-block></reimagine-layout-column>
+    
+    <reimagine-tabs configuration="pill" alignment="start" enable-base-container enable-panel-container dropdown-label-text="Category"><reimagine-tab id="powertoys-system-tools-tab" tab-panel-id="powertoys-system-tools" active data-bi-an="powertoys-utilities" data-bi-id="powertoys-system-tools-tab" data-bi-ct="button"><reimagine-pill active>System tools</reimagine-pill></reimagine-tab>
+            <reimagine-tab id="powertoys-windowing-layouts-tab" tab-panel-id="powertoys-windowing-layouts" data-bi-an="powertoys-utilities" data-bi-id="powertoys-windowing-layouts-tab" data-bi-ct="button"><reimagine-pill>Windowing &amp; layouts</reimagine-pill></reimagine-tab>
+            <reimagine-tab id="powertoys-input-output-tab" tab-panel-id="powertoys-input-output" data-bi-an="powertoys-utilities" data-bi-id="powertoys-input-output-tab" data-bi-ct="button"><reimagine-pill>Input &amp; output</reimagine-pill></reimagine-tab>
+            <reimagine-tab id="powertoys-file-management-tab" tab-panel-id="powertoys-file-management" data-bi-an="powertoys-utilities" data-bi-id="powertoys-file-management-tab" data-bi-ct="button"><reimagine-pill>File management</reimagine-pill></reimagine-tab>
+            <reimagine-tab id="powertoys-advanced-tab" tab-panel-id="powertoys-advanced" data-bi-an="powertoys-utilities" data-bi-id="powertoys-advanced-tab" data-bi-ct="button"><reimagine-pill>Advanced</reimagine-pill></reimagine-tab>
+        <reimagine-tab-panel slot="tabs__tabpanel" id="powertoys-system-tools" tab-label="tabs" active><reimagine-layout configuration="3-col-even"><reimagine-layout-column><reimagine-card-feature surface="glass" clickable><reimagine-media slot="card-feature__media" aspect-ratio="4-3" object-fit="contain"><img slot="media__asset" src="/__mirror/assets/8882331f18e89e5e19f840cf" alt loading="lazy"></reimagine-media>
+            <reimagine-text-block slot="card-feature__content-body" configuration="stacked" size="2xs"><span slot="text-block__heading">Advanced Paste</span>
+                <span slot="text-block__content">Paste clipboard content as plain text, Markdown, JSON, or a custom transformed format.</span></reimagine-text-block>
+            <reimagine-link slot="card-feature__content-footer-bottom" href="https://aka.ms/PowerToysOverview_AdvancedPaste" target="_blank" rel="noopener noreferrer" link-label="Learn about Advanced Paste" data-bi-an="powertoys-utilities" data-bi-id="advanced-paste" data-bi-ct="link"><span slot="link__text">Learn about Advanced Paste</span></reimagine-link></reimagine-card-feature></reimagine-layout-column><reimagine-layout-column><reimagine-card-feature surface="glass" clickable><reimagine-media slot="card-feature__media" aspect-ratio="4-3" object-fit="contain"><img slot="media__asset" src="/__mirror/assets/065ba00e5d371fc3f2ee87cd" alt loading="lazy"></reimagine-media>
+            <reimagine-text-block slot="card-feature__content-body" configuration="stacked" size="2xs"><span slot="text-block__heading">Awake</span>
+                <span slot="text-block__content">Keep your PC awake without changing its power and sleep settings.</span></reimagine-text-block>
+            <reimagine-link slot="card-feature__content-footer-bottom" href="https://aka.ms/PowerToysOverview_Awake" target="_blank" rel="noopener noreferrer" link-label="Learn about Awake" data-bi-an="powertoys-utilities" data-bi-id="awake" data-bi-ct="link"><span slot="link__text">Learn about Awake</span></reimagine-link></reimagine-card-feature></reimagine-layout-column><reimagine-layout-column><reimagine-card-feature surface="glass" clickable><reimagine-media slot="card-feature__media" aspect-ratio="4-3" object-fit="contain"><img slot="media__asset" src="/__mirror/assets/2cdfa2e8695b242234669ef3" alt loading="lazy"></reimagine-media>
+            <reimagine-text-block slot="card-feature__content-body" configuration="stacked" size="2xs"><span slot="text-block__heading">Command Palette</span>
+                <span slot="text-block__content">Search apps, commands, windows, files, and extensions from one launcher.</span></reimagine-text-block>
+            <reimagine-link slot="card-feature__content-footer-bottom" href="https://aka.ms/PowerToysOverview_CmdPal" target="_blank" rel="noopener noreferrer" link-label="Learn about Command Palette" data-bi-an="powertoys-utilities" data-bi-id="command-palette" data-bi-ct="link"><span slot="link__text">Learn about Command Palette</span></reimagine-link></reimagine-card-feature></reimagine-layout-column><reimagine-layout-column><reimagine-card-feature surface="glass" clickable><reimagine-media slot="card-feature__media" aspect-ratio="4-3" object-fit="contain"><img slot="media__asset" src="/__mirror/assets/0b6f2e82bf2946beddaa3867" alt loading="lazy"></reimagine-media>
+            <reimagine-text-block slot="card-feature__content-body" configuration="stacked" size="2xs"><span slot="text-block__heading">Color Picker</span>
+                <span slot="text-block__content">Pick a color anywhere on screen and copy it in the format you need.</span></reimagine-text-block>
+            <reimagine-link slot="card-feature__content-footer-bottom" href="https://aka.ms/PowerToysOverview_ColorPicker" target="_blank" rel="noopener noreferrer" link-label="Learn about Color Picker" data-bi-an="powertoys-utilities" data-bi-id="color-picker" data-bi-ct="link"><span slot="link__text">Learn about Color Picker</span></reimagine-link></reimagine-card-feature></reimagine-layout-column><reimagine-layout-column><reimagine-card-feature surface="glass" clickable><reimagine-media slot="card-feature__media" aspect-ratio="4-3" object-fit="contain"><img slot="media__asset" src="/__mirror/assets/be6baacbf56123044deb7b22" alt loading="lazy"></reimagine-media>
+            <reimagine-text-block slot="card-feature__content-body" configuration="stacked" size="2xs"><span slot="text-block__heading">Light Switch</span>
+                <span slot="text-block__content">Switch Windows between light and dark themes with a schedule or shortcut.</span></reimagine-text-block>
+            <reimagine-link slot="card-feature__content-footer-bottom" href="https://aka.ms/PowerToysOverview_LightSwitch" target="_blank" rel="noopener noreferrer" link-label="Learn about Light Switch" data-bi-an="powertoys-utilities" data-bi-id="light-switch" data-bi-ct="link"><span slot="link__text">Learn about Light Switch</span></reimagine-link></reimagine-card-feature></reimagine-layout-column><reimagine-layout-column><reimagine-card-feature surface="glass" clickable><reimagine-media slot="card-feature__media" aspect-ratio="4-3" object-fit="contain"><img slot="media__asset" src="/__mirror/assets/a430589b53fd2072004e83c6" alt loading="lazy"></reimagine-media>
+            <reimagine-text-block slot="card-feature__content-body" configuration="stacked" size="2xs"><span slot="text-block__heading">PowerToys Run</span>
+                <span slot="text-block__content">Launch apps, files, folders, settings, calculations, and searches from the keyboard.</span></reimagine-text-block>
+            <reimagine-link slot="card-feature__content-footer-bottom" href="https://aka.ms/PowerToysOverview_PowerToysRun" target="_blank" rel="noopener noreferrer" link-label="Learn about PowerToys Run" data-bi-an="powertoys-utilities" data-bi-id="powertoys-run" data-bi-ct="link"><span slot="link__text">Learn about PowerToys Run</span></reimagine-link></reimagine-card-feature></reimagine-layout-column><reimagine-layout-column><reimagine-card-feature surface="glass" clickable><reimagine-media slot="card-feature__media" aspect-ratio="4-3" object-fit="contain"><img slot="media__asset" src="/__mirror/assets/ec5023037f1e9ba3e09e615a" alt loading="lazy"></reimagine-media>
+            <reimagine-text-block slot="card-feature__content-body" configuration="stacked" size="2xs"><span slot="text-block__heading">Screen Ruler</span>
+                <span slot="text-block__content">Measure pixels and spacing directly on your screen.</span></reimagine-text-block>
+            <reimagine-link slot="card-feature__content-footer-bottom" href="https://aka.ms/PowerToysOverview_ScreenRuler" target="_blank" rel="noopener noreferrer" link-label="Learn about Screen Ruler" data-bi-an="powertoys-utilities" data-bi-id="screen-ruler" data-bi-ct="link"><span slot="link__text">Learn about Screen Ruler</span></reimagine-link></reimagine-card-feature></reimagine-layout-column><reimagine-layout-column><reimagine-card-feature surface="glass" clickable><reimagine-media slot="card-feature__media" aspect-ratio="4-3" object-fit="contain"><img slot="media__asset" src="/__mirror/assets/426668744211b442b14138c5" alt loading="lazy"></reimagine-media>
+            <reimagine-text-block slot="card-feature__content-body" configuration="stacked" size="2xs"><span slot="text-block__heading">Shortcut Guide</span>
+                <span slot="text-block__content">Display available Windows shortcuts and search for the command you need.</span></reimagine-text-block>
+            <reimagine-link slot="card-feature__content-footer-bottom" href="https://aka.ms/PowerToysOverview_ShortcutGuide" target="_blank" rel="noopener noreferrer" link-label="Learn about Shortcut Guide" data-bi-an="powertoys-utilities" data-bi-id="shortcut-guide" data-bi-ct="link"><span slot="link__text">Learn about Shortcut Guide</span></reimagine-link></reimagine-card-feature></reimagine-layout-column><reimagine-layout-column><reimagine-card-feature surface="glass" clickable><reimagine-media slot="card-feature__media" aspect-ratio="4-3" object-fit="contain"><img slot="media__asset" src="/__mirror/assets/01552f74ddc2fa88fd59e330" alt loading="lazy"></reimagine-media>
+            <reimagine-text-block slot="card-feature__content-body" configuration="stacked" size="2xs"><span slot="text-block__heading">Text Extractor</span>
+                <span slot="text-block__content">Copy text from anywhere on screen with optical character recognition.</span></reimagine-text-block>
+            <reimagine-link slot="card-feature__content-footer-bottom" href="https://aka.ms/PowerToysOverview_TextExtractor" target="_blank" rel="noopener noreferrer" link-label="Learn about Text Extractor" data-bi-an="powertoys-utilities" data-bi-id="text-extractor" data-bi-ct="link"><span slot="link__text">Learn about Text Extractor</span></reimagine-link></reimagine-card-feature></reimagine-layout-column><reimagine-layout-column><reimagine-card-feature surface="glass" clickable><reimagine-media slot="card-feature__media" aspect-ratio="4-3" object-fit="contain"><img slot="media__asset" src="/__mirror/assets/2e510f218c0e82171db3b3b2" alt loading="lazy"></reimagine-media>
+            <reimagine-text-block slot="card-feature__content-body" configuration="stacked" size="2xs"><span slot="text-block__heading">ZoomIt</span>
+                <span slot="text-block__content">Zoom, annotate, record, and present details from your screen.</span></reimagine-text-block>
+            <reimagine-link slot="card-feature__content-footer-bottom" href="https://aka.ms/PowerToysOverview_ZoomIt" target="_blank" rel="noopener noreferrer" link-label="Learn about ZoomIt" data-bi-an="powertoys-utilities" data-bi-id="zoomit" data-bi-ct="link"><span slot="link__text">Learn about ZoomIt</span></reimagine-link></reimagine-card-feature></reimagine-layout-column></reimagine-layout></reimagine-tab-panel>
+            <reimagine-tab-panel slot="tabs__tabpanel" id="powertoys-windowing-layouts" tab-label="tabs"><reimagine-layout configuration="3-col-even"><reimagine-layout-column><reimagine-card-feature surface="glass" clickable><reimagine-media slot="card-feature__media" aspect-ratio="4-3" object-fit="contain"><img slot="media__asset" src="/__mirror/assets/e99140fe59f44282d9295834" alt loading="lazy"></reimagine-media>
+            <reimagine-text-block slot="card-feature__content-body" configuration="stacked" size="2xs"><span slot="text-block__heading">Always On Top</span>
+                <span slot="text-block__content">Pin a window above other windows with a keyboard shortcut.</span></reimagine-text-block>
+            <reimagine-link slot="card-feature__content-footer-bottom" href="https://aka.ms/PowerToysOverview_AoT" target="_blank" rel="noopener noreferrer" link-label="Learn about Always On Top" data-bi-an="powertoys-utilities" data-bi-id="always-on-top" data-bi-ct="link"><span slot="link__text">Learn about Always On Top</span></reimagine-link></reimagine-card-feature></reimagine-layout-column><reimagine-layout-column><reimagine-card-feature surface="glass" clickable><reimagine-media slot="card-feature__media" aspect-ratio="4-3" object-fit="contain"><img slot="media__asset" src="/__mirror/assets/71cc2890caffa9cf982b6e31" alt loading="lazy"></reimagine-media>
+            <reimagine-text-block slot="card-feature__content-body" configuration="stacked" size="2xs"><span slot="text-block__heading">Crop And Lock</span>
+                <span slot="text-block__content">Create a live cropped view or interactive thumbnail of another window.</span></reimagine-text-block>
+            <reimagine-link slot="card-feature__content-footer-bottom" href="https://aka.ms/PowerToysOverview_CropAndLock" target="_blank" rel="noopener noreferrer" link-label="Learn about Crop And Lock" data-bi-an="powertoys-utilities" data-bi-id="crop-and-lock" data-bi-ct="link"><span slot="link__text">Learn about Crop And Lock</span></reimagine-link></reimagine-card-feature></reimagine-layout-column><reimagine-layout-column><reimagine-card-feature surface="glass" clickable><reimagine-media slot="card-feature__media" aspect-ratio="4-3" object-fit="contain"><img slot="media__asset" src="/__mirror/assets/5bdc0ee38970e0ec55c2b418" alt loading="lazy"></reimagine-media>
+            <reimagine-text-block slot="card-feature__content-body" configuration="stacked" size="2xs"><span slot="text-block__heading">FancyZones</span>
+                <span slot="text-block__content">Create custom window layouts and snap apps into defined zones.</span></reimagine-text-block>
+            <reimagine-link slot="card-feature__content-footer-bottom" href="https://aka.ms/PowerToysOverview_FancyZones" target="_blank" rel="noopener noreferrer" link-label="Learn about FancyZones" data-bi-an="powertoys-utilities" data-bi-id="fancyzones" data-bi-ct="link"><span slot="link__text">Learn about FancyZones</span></reimagine-link></reimagine-card-feature></reimagine-layout-column><reimagine-layout-column><reimagine-card-feature surface="glass" clickable><reimagine-media slot="card-feature__media" aspect-ratio="4-3" object-fit="contain"><img slot="media__asset" src="/__mirror/assets/1fb6e599507e3f0130f733cf" alt loading="lazy"></reimagine-media>
+            <reimagine-text-block slot="card-feature__content-body" configuration="stacked" size="2xs"><span slot="text-block__heading">Grab And Move</span>
+                <span slot="text-block__content">Move windows from anywhere inside their surface instead of reaching for the title bar.</span></reimagine-text-block>
+            <reimagine-link slot="card-feature__content-footer-bottom" href="https://aka.ms/PowerToysOverview_GrabAndMove" target="_blank" rel="noopener noreferrer" link-label="Learn about Grab And Move" data-bi-an="powertoys-utilities" data-bi-id="grab-and-move" data-bi-ct="link"><span slot="link__text">Learn about Grab And Move</span></reimagine-link></reimagine-card-feature></reimagine-layout-column><reimagine-layout-column><reimagine-card-feature surface="glass" clickable><reimagine-media slot="card-feature__media" aspect-ratio="4-3" object-fit="contain"><img slot="media__asset" src="/__mirror/assets/82615260c91857f98df2f62d" alt loading="lazy"></reimagine-media>
+            <reimagine-text-block slot="card-feature__content-body" configuration="stacked" size="2xs"><span slot="text-block__heading">Window Hopper</span>
+                <span slot="text-block__content">Switch quickly between open windows from the same app.</span></reimagine-text-block>
+            <reimagine-link slot="card-feature__content-footer-bottom" href="https://aka.ms/PowerToysOverview_WindowHopper" target="_blank" rel="noopener noreferrer" link-label="Learn about Window Hopper" data-bi-an="powertoys-utilities" data-bi-id="window-hopper" data-bi-ct="link"><span slot="link__text">Learn about Window Hopper</span></reimagine-link></reimagine-card-feature></reimagine-layout-column><reimagine-layout-column><reimagine-card-feature surface="glass" clickable><reimagine-media slot="card-feature__media" aspect-ratio="4-3" object-fit="contain"><img slot="media__asset" src="/__mirror/assets/35f6a0e7751e75d0e72bb873" alt loading="lazy"></reimagine-media>
+            <reimagine-text-block slot="card-feature__content-body" configuration="stacked" size="2xs"><span slot="text-block__heading">Workspaces</span>
+                <span slot="text-block__content">Launch groups of applications into saved positions with one action.</span></reimagine-text-block>
+            <reimagine-link slot="card-feature__content-footer-bottom" href="https://aka.ms/PowerToysOverview_Workspaces" target="_blank" rel="noopener noreferrer" link-label="Learn about Workspaces" data-bi-an="powertoys-utilities" data-bi-id="workspaces" data-bi-ct="link"><span slot="link__text">Learn about Workspaces</span></reimagine-link></reimagine-card-feature></reimagine-layout-column></reimagine-layout></reimagine-tab-panel>
+            <reimagine-tab-panel slot="tabs__tabpanel" id="powertoys-input-output" tab-label="tabs"><reimagine-layout configuration="3-col-even"><reimagine-layout-column><reimagine-card-feature surface="glass" clickable><reimagine-media slot="card-feature__media" aspect-ratio="4-3" object-fit="contain"><img slot="media__asset" src="/__mirror/assets/3f18d730319907dbcdde56c0" alt loading="lazy"></reimagine-media>
+            <reimagine-text-block slot="card-feature__content-body" configuration="stacked" size="2xs"><span slot="text-block__heading">Keyboard Manager</span>
+                <span slot="text-block__content">Remap keys and create custom keyboard shortcuts.</span></reimagine-text-block>
+            <reimagine-link slot="card-feature__content-footer-bottom" href="https://aka.ms/PowerToysOverview_KeyboardManager" target="_blank" rel="noopener noreferrer" link-label="Learn about Keyboard Manager" data-bi-an="powertoys-utilities" data-bi-id="keyboard-manager" data-bi-ct="link"><span slot="link__text">Learn about Keyboard Manager</span></reimagine-link></reimagine-card-feature></reimagine-layout-column><reimagine-layout-column><reimagine-card-feature surface="glass" clickable><reimagine-media slot="card-feature__media" aspect-ratio="4-3" object-fit="contain"><img slot="media__asset" src="/__mirror/assets/33c46d5d8fa86810fcffdd25" alt loading="lazy"></reimagine-media>
+            <reimagine-text-block slot="card-feature__content-body" configuration="stacked" size="2xs"><span slot="text-block__heading">Mouse Utilities</span>
+                <span slot="text-block__content">Find your pointer, highlight clicks, jump across displays, and add crosshairs.</span></reimagine-text-block>
+            <reimagine-link slot="card-feature__content-footer-bottom" href="https://aka.ms/PowerToysOverview_MouseUtilities" target="_blank" rel="noopener noreferrer" link-label="Learn about Mouse Utilities" data-bi-an="powertoys-utilities" data-bi-id="mouse-utilities" data-bi-ct="link"><span slot="link__text">Learn about Mouse Utilities</span></reimagine-link></reimagine-card-feature></reimagine-layout-column><reimagine-layout-column><reimagine-card-feature surface="glass" clickable><reimagine-media slot="card-feature__media" aspect-ratio="4-3" object-fit="contain"><img slot="media__asset" src="/__mirror/assets/6a0e9d94e294dbf540fd3e87" alt loading="lazy"></reimagine-media>
+            <reimagine-text-block slot="card-feature__content-body" configuration="stacked" size="2xs"><span slot="text-block__heading">Mouse Without Borders</span>
+                <span slot="text-block__content">Control multiple computers with one mouse and keyboard.</span></reimagine-text-block>
+            <reimagine-link slot="card-feature__content-footer-bottom" href="https://aka.ms/PowerToysOverview_MouseWithoutBorders" target="_blank" rel="noopener noreferrer" link-label="Learn about Mouse Without Borders" data-bi-an="powertoys-utilities" data-bi-id="mouse-without-borders" data-bi-ct="link"><span slot="link__text">Learn about Mouse Without Borders</span></reimagine-link></reimagine-card-feature></reimagine-layout-column><reimagine-layout-column><reimagine-card-feature surface="glass" clickable><reimagine-media slot="card-feature__media" aspect-ratio="4-3" object-fit="contain"><img slot="media__asset" src="/__mirror/assets/c55361da35a993cce77e1c68" alt loading="lazy"></reimagine-media>
+            <reimagine-text-block slot="card-feature__content-body" configuration="stacked" size="2xs"><span slot="text-block__heading">Power Display</span>
+                <span slot="text-block__content">Control supported monitor brightness, contrast, input, and display profiles.</span></reimagine-text-block>
+            <reimagine-link slot="card-feature__content-footer-bottom" href="https://aka.ms/PowerToysOverview_PowerDisplay" target="_blank" rel="noopener noreferrer" link-label="Learn about Power Display" data-bi-an="powertoys-utilities" data-bi-id="power-display" data-bi-ct="link"><span slot="link__text">Learn about Power Display</span></reimagine-link></reimagine-card-feature></reimagine-layout-column><reimagine-layout-column><reimagine-card-feature surface="glass" clickable><reimagine-media slot="card-feature__media" aspect-ratio="4-3" object-fit="contain"><img slot="media__asset" src="/__mirror/assets/79a69c964e0974f10443a2cb" alt loading="lazy"></reimagine-media>
+            <reimagine-text-block slot="card-feature__content-body" configuration="stacked" size="2xs"><span slot="text-block__heading">Quick Accent</span>
+                <span slot="text-block__content">Type accented characters and symbols without changing your keyboard layout.</span></reimagine-text-block>
+            <reimagine-link slot="card-feature__content-footer-bottom" href="https://aka.ms/PowerToysOverview_QuickAccent" target="_blank" rel="noopener noreferrer" link-label="Learn about Quick Accent" data-bi-an="powertoys-utilities" data-bi-id="quick-accent" data-bi-ct="link"><span slot="link__text">Learn about Quick Accent</span></reimagine-link></reimagine-card-feature></reimagine-layout-column></reimagine-layout></reimagine-tab-panel>
+            <reimagine-tab-panel slot="tabs__tabpanel" id="powertoys-file-management" tab-label="tabs"><reimagine-layout configuration="3-col-even"><reimagine-layout-column><reimagine-card-feature surface="glass" clickable><reimagine-media slot="card-feature__media" aspect-ratio="4-3" object-fit="contain"><img slot="media__asset" src="/__mirror/assets/241b4c70171f84d1f624bc46" alt loading="lazy"></reimagine-media>
+            <reimagine-text-block slot="card-feature__content-body" configuration="stacked" size="2xs"><span slot="text-block__heading">File Explorer Add-ons</span>
+                <span slot="text-block__content">Preview more file types and show additional thumbnails in File Explorer.</span></reimagine-text-block>
+            <reimagine-link slot="card-feature__content-footer-bottom" href="https://aka.ms/PowerToysOverview_FileExplorerAddOns" target="_blank" rel="noopener noreferrer" link-label="Learn about File Explorer Add-ons" data-bi-an="powertoys-utilities" data-bi-id="file-explorer-add-ons" data-bi-ct="link"><span slot="link__text">Learn about File Explorer Add-ons</span></reimagine-link></reimagine-card-feature></reimagine-layout-column><reimagine-layout-column><reimagine-card-feature surface="glass" clickable><reimagine-media slot="card-feature__media" aspect-ratio="4-3" object-fit="contain"><img slot="media__asset" src="/__mirror/assets/5a7f55019b68a864a9d7b518" alt loading="lazy"></reimagine-media>
+            <reimagine-text-block slot="card-feature__content-body" configuration="stacked" size="2xs"><span slot="text-block__heading">File Locksmith</span>
+                <span slot="text-block__content">See which processes are using a file or directory.</span></reimagine-text-block>
+            <reimagine-link slot="card-feature__content-footer-bottom" href="https://aka.ms/PowerToysOverview_FileLocksmith" target="_blank" rel="noopener noreferrer" link-label="Learn about File Locksmith" data-bi-an="powertoys-utilities" data-bi-id="file-locksmith" data-bi-ct="link"><span slot="link__text">Learn about File Locksmith</span></reimagine-link></reimagine-card-feature></reimagine-layout-column><reimagine-layout-column><reimagine-card-feature surface="glass" clickable><reimagine-media slot="card-feature__media" aspect-ratio="4-3" object-fit="contain"><img slot="media__asset" src="/__mirror/assets/b8c4a553a8d8b869ad6741b4" alt loading="lazy"></reimagine-media>
+            <reimagine-text-block slot="card-feature__content-body" configuration="stacked" size="2xs"><span slot="text-block__heading">Image Resizer</span>
+                <span slot="text-block__content">Resize one or many images directly from File Explorer.</span></reimagine-text-block>
+            <reimagine-link slot="card-feature__content-footer-bottom" href="https://aka.ms/PowerToysOverview_ImageResizer" target="_blank" rel="noopener noreferrer" link-label="Learn about Image Resizer" data-bi-an="powertoys-utilities" data-bi-id="image-resizer" data-bi-ct="link"><span slot="link__text">Learn about Image Resizer</span></reimagine-link></reimagine-card-feature></reimagine-layout-column><reimagine-layout-column><reimagine-card-feature surface="glass" clickable><reimagine-media slot="card-feature__media" aspect-ratio="4-3" object-fit="contain"><img slot="media__asset" src="/__mirror/assets/91f51cccf846d3337dd25ee1" alt loading="lazy"></reimagine-media>
+            <reimagine-text-block slot="card-feature__content-body" configuration="stacked" size="2xs"><span slot="text-block__heading">New+</span>
+                <span slot="text-block__content">Create files and folders from reusable templates in File Explorer.</span></reimagine-text-block>
+            <reimagine-link slot="card-feature__content-footer-bottom" href="https://aka.ms/PowerToysOverview_NewPlus" target="_blank" rel="noopener noreferrer" link-label="Learn about New+" data-bi-an="powertoys-utilities" data-bi-id="new-plus" data-bi-ct="link"><span slot="link__text">Learn about New+</span></reimagine-link></reimagine-card-feature></reimagine-layout-column><reimagine-layout-column><reimagine-card-feature surface="glass" clickable><reimagine-media slot="card-feature__media" aspect-ratio="4-3" object-fit="contain"><img slot="media__asset" src="/__mirror/assets/359398312c5643dc7dd9496c" alt loading="lazy"></reimagine-media>
+            <reimagine-text-block slot="card-feature__content-body" configuration="stacked" size="2xs"><span slot="text-block__heading">Peek</span>
+                <span slot="text-block__content">Preview files without opening a separate application.</span></reimagine-text-block>
+            <reimagine-link slot="card-feature__content-footer-bottom" href="https://aka.ms/PowerToysOverview_Peek" target="_blank" rel="noopener noreferrer" link-label="Learn about Peek" data-bi-an="powertoys-utilities" data-bi-id="peek" data-bi-ct="link"><span slot="link__text">Learn about Peek</span></reimagine-link></reimagine-card-feature></reimagine-layout-column><reimagine-layout-column><reimagine-card-feature surface="glass" clickable><reimagine-media slot="card-feature__media" aspect-ratio="4-3" object-fit="contain"><img slot="media__asset" src="/__mirror/assets/7f11dd056cc9b065efca520b" alt loading="lazy"></reimagine-media>
+            <reimagine-text-block slot="card-feature__content-body" configuration="stacked" size="2xs"><span slot="text-block__heading">PowerRename</span>
+                <span slot="text-block__content">Rename many files at once with search, replace, and regular expressions.</span></reimagine-text-block>
+            <reimagine-link slot="card-feature__content-footer-bottom" href="https://aka.ms/PowerToysOverview_PowerRename" target="_blank" rel="noopener noreferrer" link-label="Learn about PowerRename" data-bi-an="powertoys-utilities" data-bi-id="power-rename" data-bi-ct="link"><span slot="link__text">Learn about PowerRename</span></reimagine-link></reimagine-card-feature></reimagine-layout-column></reimagine-layout></reimagine-tab-panel>
+            <reimagine-tab-panel slot="tabs__tabpanel" id="powertoys-advanced" tab-label="tabs"><reimagine-layout configuration="3-col-even"><reimagine-layout-column><reimagine-card-feature surface="glass" clickable><reimagine-media slot="card-feature__media" aspect-ratio="4-3" object-fit="contain"><img slot="media__asset" src="/__mirror/assets/8e31e102d853a8fcbb54c68f" alt loading="lazy"></reimagine-media>
+            <reimagine-text-block slot="card-feature__content-body" configuration="stacked" size="2xs"><span slot="text-block__heading">Command Not Found</span>
+                <span slot="text-block__content">Suggest WinGet packages when a PowerShell command is not installed.</span></reimagine-text-block>
+            <reimagine-link slot="card-feature__content-footer-bottom" href="https://aka.ms/PowerToysOverview_CmdNotFound" target="_blank" rel="noopener noreferrer" link-label="Learn about Command Not Found" data-bi-an="powertoys-utilities" data-bi-id="command-not-found" data-bi-ct="link"><span slot="link__text">Learn about Command Not Found</span></reimagine-link></reimagine-card-feature></reimagine-layout-column><reimagine-layout-column><reimagine-card-feature surface="glass" clickable><reimagine-media slot="card-feature__media" aspect-ratio="4-3" object-fit="contain"><img slot="media__asset" src="/__mirror/assets/ff58179d89e8ee4cdb81a399" alt loading="lazy"></reimagine-media>
+            <reimagine-text-block slot="card-feature__content-body" configuration="stacked" size="2xs"><span slot="text-block__heading">Environment Variables</span>
+                <span slot="text-block__content">Create and manage environment-variable profiles from a dedicated editor.</span></reimagine-text-block>
+            <reimagine-link slot="card-feature__content-footer-bottom" href="https://aka.ms/PowerToysOverview_EnvironmentVariables" target="_blank" rel="noopener noreferrer" link-label="Learn about Environment Variables" data-bi-an="powertoys-utilities" data-bi-id="environment-variables" data-bi-ct="link"><span slot="link__text">Learn about Environment Variables</span></reimagine-link></reimagine-card-feature></reimagine-layout-column><reimagine-layout-column><reimagine-card-feature surface="glass" clickable><reimagine-media slot="card-feature__media" aspect-ratio="4-3" object-fit="contain"><img slot="media__asset" src="/__mirror/assets/760175e77e2cc1a7fcc8974c" alt loading="lazy"></reimagine-media>
+            <reimagine-text-block slot="card-feature__content-body" configuration="stacked" size="2xs"><span slot="text-block__heading">Hosts File Editor</span>
+                <span slot="text-block__content">Edit and manage entries in the Windows hosts file.</span></reimagine-text-block>
+            <reimagine-link slot="card-feature__content-footer-bottom" href="https://aka.ms/PowerToysOverview_HostsFileEditor" target="_blank" rel="noopener noreferrer" link-label="Learn about Hosts File Editor" data-bi-an="powertoys-utilities" data-bi-id="hosts-file-editor" data-bi-ct="link"><span slot="link__text">Learn about Hosts File Editor</span></reimagine-link></reimagine-card-feature></reimagine-layout-column><reimagine-layout-column><reimagine-card-feature surface="glass" clickable><reimagine-media slot="card-feature__media" aspect-ratio="4-3" object-fit="contain"><img slot="media__asset" src="/__mirror/assets/1fc5684857bb69ed3987a2ab" alt loading="lazy"></reimagine-media>
+            <reimagine-text-block slot="card-feature__content-body" configuration="stacked" size="2xs"><span slot="text-block__heading">Registry Preview</span>
+                <span slot="text-block__content">Preview, edit, and write Windows Registry files before applying them.</span></reimagine-text-block>
+            <reimagine-link slot="card-feature__content-footer-bottom" href="https://aka.ms/PowerToysOverview_RegistryPreview" target="_blank" rel="noopener noreferrer" link-label="Learn about Registry Preview" data-bi-an="powertoys-utilities" data-bi-id="registry-preview" data-bi-ct="link"><span slot="link__text">Learn about Registry Preview</span></reimagine-link></reimagine-card-feature></reimagine-layout-column></reimagine-layout></reimagine-tab-panel></reimagine-tabs></reimagine-base-ui-shell></section>
+
+<section id="install" aria-label="Install PowerToys"><reimagine-base-ui-shell breadth="compact" data-bi-an="powertoys-install"><div slot="ui-shell-header"><reimagine-heading-block size="m"><span slot="heading-block__eyebrow-label">Get started</span>
+                <h2 slot="heading-block__heading-text">Install PowerToys your way</h2>
+                <span slot="heading-block__content-text">PowerToys is free. It runs on Windows 11 and Windows 10 version 2004 or later, on x64 and Arm64 PCs.</span></reimagine-heading-block></div>
+        <reimagine-container><reimagine-layout configuration="3-col-even" class="windows-page-equal"><reimagine-layout-column><reimagine-card-badge surface="solid-border" text-block-configuration="stacked"><reimagine-text-block size="2xs"><reimagine-badge slot="text-block__badge" size="s" surface="glass"><reimagine-icon icon="apps"></reimagine-icon></reimagine-badge>
+                            <span slot="text-block__heading">Microsoft Store</span>
+                            <span slot="text-block__content">The simplest way to install PowerToys and keep it up to date.</span></reimagine-text-block>
+                        <reimagine-link slot="card-badge__footer-bottom" href="https://aka.ms/getPowertoys" target="_blank" rel="noopener noreferrer" link-label="Get PowerToys from Microsoft Store" data-bi-an="powertoys-install" data-bi-id="microsoft-store" data-bi-ct="link"><span slot="link__text">Get it from Microsoft Store</span></reimagine-link></reimagine-card-badge></reimagine-layout-column>
+                <reimagine-layout-column><reimagine-card-badge surface="solid-border" text-block-configuration="stacked"><reimagine-text-block size="2xs"><reimagine-badge slot="text-block__badge" size="s" surface="glass"><reimagine-icon icon="code-block"></reimagine-icon></reimagine-badge>
+                            <span slot="text-block__heading">WinGet</span>
+                            <span slot="text-block__content">Install from your terminal with one command:<code class="windows-page-code"><span class="windows-page-code-token">winget</span> <span class="windows-page-code-token">install</span> <span class="windows-page-code-token">--id</span> <span class="windows-page-code-token">Microsoft.PowerToys</span> <span class="windows-page-code-token">--source</span> <span class="windows-page-code-token">winget</span> </code></span></reimagine-text-block>
+                        <reimagine-link slot="card-badge__footer-bottom" href="https://learn.microsoft.com/windows/powertoys/install" target="_blank" rel="noopener noreferrer" link-label="See all PowerToys install options on Microsoft Learn" data-bi-an="powertoys-install" data-bi-id="install-options" data-bi-ct="link"><span slot="link__text">See all install options</span></reimagine-link></reimagine-card-badge></reimagine-layout-column>
+                <reimagine-layout-column><reimagine-card-badge surface="solid-border" text-block-configuration="stacked"><reimagine-text-block size="2xs"><reimagine-badge slot="text-block__badge" size="s" surface="glass"><reimagine-icon icon="github"></reimagine-icon></reimagine-badge>
+                            <span slot="text-block__heading">GitHub</span>
+                            <span slot="text-block__content">Download the installer for your PC from the latest release.</span></reimagine-text-block>
+                        <reimagine-link slot="card-badge__footer-bottom" href="https://github.com/microsoft/PowerToys/releases/latest" target="_blank" rel="noopener noreferrer" link-label="Download the latest PowerToys release from GitHub" data-bi-an="powertoys-install" data-bi-id="latest-release" data-bi-ct="link"><span slot="link__text">Go to the latest release</span></reimagine-link></reimagine-card-badge></reimagine-layout-column></reimagine-layout></reimagine-container></reimagine-base-ui-shell></section>
+
+<section id="resources" aria-label="PowerToys resources"><reimagine-base-ui-shell breadth="compact" background="app-color-base-special-bg-opt1-left" data-bi-an="powertoys-resources"><div slot="ui-shell-header"><reimagine-heading-block size="s"><span slot="heading-block__eyebrow-label">Keep going</span>
+                <h2 slot="heading-block__heading-text">Documentation, releases, and news</h2>
+                <span slot="heading-block__content-text">Learn how each utility works, see what changed in each release, and follow the project.</span></reimagine-heading-block></div>
+        <reimagine-container><reimagine-layout configuration="4-col-even-1" class="windows-page-equal"><reimagine-layout-column><reimagine-card-badge surface="solid-border" text-block-configuration="stacked"><reimagine-text-block size="2xs"><reimagine-badge slot="text-block__badge" size="s" surface="glass"><reimagine-icon icon="book"></reimagine-icon></reimagine-badge>
+                            <span slot="text-block__heading">Documentation</span>
+                            <span slot="text-block__content">Read how to set up and use every utility, and how IT admins can manage PowerToys.</span></reimagine-text-block>
+                        <reimagine-link-group orientation="vertical" slot="card-badge__footer-bottom"><li slot="link-group-item"><reimagine-link href="https://learn.microsoft.com/windows/powertoys/" target="_blank" rel="noopener noreferrer" link-label="Browse PowerToys documentation on Microsoft Learn" data-bi-an="powertoys-resources" data-bi-id="documentation" data-bi-ct="link"><span slot="link__text">Browse documentation</span></reimagine-link></li>
+                            <li slot="link-group-item"><reimagine-link href="https://learn.microsoft.com/windows/powertoys/grouppolicy" target="_blank" rel="noopener noreferrer" link-label="Manage PowerToys with Group Policy on Microsoft Learn" data-bi-an="powertoys-resources" data-bi-id="group-policy" data-bi-ct="link"><span slot="link__text">Manage with Group Policy</span></reimagine-link></li></reimagine-link-group></reimagine-card-badge></reimagine-layout-column>
+                <reimagine-layout-column><reimagine-card-badge surface="solid-border" text-block-configuration="stacked"><reimagine-text-block size="2xs"><reimagine-badge slot="text-block__badge" size="s" surface="glass"><reimagine-icon icon="arrow-download"></reimagine-icon></reimagine-badge>
+                            <span slot="text-block__heading">Releases</span>
+                            <span slot="text-block__content">See what's new and what changed in every version.</span></reimagine-text-block>
+                        <reimagine-link slot="card-badge__footer-bottom" href="https://github.com/microsoft/PowerToys/releases" target="_blank" rel="noopener noreferrer" link-label="View PowerToys release notes on GitHub" data-bi-an="powertoys-resources" data-bi-id="releases" data-bi-ct="link"><span slot="link__text">View release notes</span></reimagine-link></reimagine-card-badge></reimagine-layout-column>
+                <reimagine-layout-column><reimagine-card-badge surface="solid-border" text-block-configuration="stacked"><reimagine-text-block size="2xs"><reimagine-badge slot="text-block__badge" size="s" surface="glass"><reimagine-icon icon="github"></reimagine-icon></reimagine-badge>
+                            <span slot="text-block__heading">GitHub</span>
+                            <span slot="text-block__content">Explore the code, report issues, and suggest new features.</span></reimagine-text-block>
+                        <reimagine-link-group orientation="vertical" slot="card-badge__footer-bottom"><li slot="link-group-item"><reimagine-link href="https://github.com/microsoft/PowerToys" target="_blank" rel="noopener noreferrer" link-label="Open the PowerToys repository on GitHub" data-bi-an="powertoys-resources" data-bi-id="github-repository" data-bi-ct="link"><span slot="link__text">Open the repository</span></reimagine-link></li>
+                            <li slot="link-group-item"><reimagine-link href="https://github.com/microsoft/PowerToys/issues" target="_blank" rel="noopener noreferrer" link-label="Report a PowerToys issue on GitHub" data-bi-an="powertoys-resources" data-bi-id="github-issues" data-bi-ct="link"><span slot="link__text">Report an issue</span></reimagine-link></li></reimagine-link-group></reimagine-card-badge></reimagine-layout-column>
+                <reimagine-layout-column><reimagine-card-badge surface="solid-border" text-block-configuration="stacked"><reimagine-text-block size="2xs"><reimagine-badge slot="text-block__badge" size="s" surface="glass"><reimagine-icon icon="document"></reimagine-icon></reimagine-badge>
+                            <span slot="text-block__heading">Blog</span>
+                            <span slot="text-block__content">Read PowerToys news and release stories on the Windows Command Line blog.</span></reimagine-text-block>
+                        <reimagine-link slot="card-badge__footer-bottom" href="https://devblogs.microsoft.com/commandline/tag/powertoys/" target="_blank" rel="noopener noreferrer" link-label="Read PowerToys news on the Windows Command Line blog" data-bi-an="powertoys-resources" data-bi-id="blog" data-bi-ct="link"><span slot="link__text">Read PowerToys news</span></reimagine-link></reimagine-card-badge></reimagine-layout-column></reimagine-layout></reimagine-container></reimagine-base-ui-shell></section>
+</div>
+
+    </div>
+
+<section class="windows-developer-social" aria-labelledby="windows-developer-social-heading">
+    <div class="windows-developer-social__inner">
+        <h2 id="windows-developer-social-heading" class="windows-developer-social__heading">
+            Follow Windows Developer
+        </h2>
+        <ul class="windows-developer-social__list">
+            <li>
+                <a class="windows-developer-social__link" href="https://x.com/windowsdev" target="_blank" rel="noopener noreferrer" aria-label="Follow Windows Developer on X" data-bi-an="windows-social" data-bi-id="x" data-bi-ct="link">
+                    <svg viewbox="0 0 1200 1227" aria-hidden="true" focusable="false">
+                        <path d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.137 519.284H714.163ZM569.165 687.828L521.697 619.934L144.011 79.6944H306.615L611.412 515.685L658.88 583.579L1055.08 1150.3H892.476L569.165 687.854V687.828Z"></path>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a class="windows-developer-social__link" href="https://www.instagram.com/windowsdeveloper/" target="_blank" rel="noopener noreferrer" aria-label="Follow Windows Developer on Instagram" data-bi-an="windows-social" data-bi-id="instagram" data-bi-ct="link">
+                    <svg viewbox="0 0 16 16" aria-hidden="true" focusable="false">
+                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a class="windows-developer-social__link" href="https://www.facebook.com/windowsdeveloper/" target="_blank" rel="noopener noreferrer" aria-label="Follow Windows Developer on Facebook" data-bi-an="windows-social" data-bi-id="facebook" data-bi-ct="link">
+                    <svg viewbox="0 0 32 33" aria-hidden="true" focusable="false">
+                        <path d="M28.455 2.49805H3.54623C3.13636 2.49821 2.74332 2.66111 2.4535 2.95093C2.16367 3.24076 2.00078 3.6338 2.00061 4.04367V28.9524C2.00078 29.3623 2.16367 29.7553 2.4535 30.0452C2.74332 30.335 3.13636 30.4979 3.54623 30.498H16.0006V19.498H12.6537V15.498H16.0006V12.3105C16.0006 8.69429 18.5087 6.72555 21.7394 6.72555C23.285 6.72555 24.9475 6.8418 25.3337 6.89305V10.6699H22.76C21.0025 10.6699 20.6675 11.5012 20.6675 12.7262V15.498H24.855L24.3081 19.498H20.6675V30.498H28.455C28.8648 30.4979 29.2579 30.335 29.5477 30.0452C29.8375 29.7553 30.0004 29.3623 30.0006 28.9524V4.04367C30.0004 3.6338 29.8375 3.24076 29.5477 2.95093C29.2579 2.66111 28.8648 2.49821 28.455 2.49805Z"></path>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a class="windows-developer-social__link" href="https://www.linkedin.com/company/windows-developer" target="_blank" rel="noopener noreferrer" aria-label="Follow Windows Developer on LinkedIn" data-bi-an="windows-social" data-bi-id="linkedin" data-bi-ct="link">
+                    <svg viewbox="0 0 16 16" aria-hidden="true" focusable="false">
+                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"></path>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+    <!-- Theme picker / UHF Footer -->
+    <div class="mx-0 px-0 overflow-hidden uhf-footer-wrapper">
+        
+<div class="uhf11-footer-container">
+    <button type="button" class="uhf11-btn-theme" id="theme-toggle" aria-label="Change page theme" aria-pressed="false" data-bi-an="uhf-footer" data-bi-id="theme-toggle" data-bi-ct="button">
+        <svg xmlns="http://www.w3.org/2000/svg" style="margin-right:10px" width="24" height="24" fill="currentColor" class="bi bi-brightness-high" viewbox="0 0 16 16" aria-hidden="true">
+            <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"></path>
+        </svg><span>Theme</span>
+    </button>
+    
+<uhf-footer locale="en-us" partnerid="MSDev-Community" footerid="MSDev-DEVCOM-Community-Footer" theme="light">
+    <script id="uhf-footer-ccpa">
+        (function () {
+            function checkThirdPartyAdsOptOutCookie() {
+                try {
+                    var match = document.cookie.match('(^|;)\\s*3PAdsOptOut\\s*=\\s*([^;]+)');
+                    return (match ? match[2] : '') !== '1';
+                } catch (e) {
+                    return true;
+                }
+            }
+            var globalPrivacyControlEnabled = navigator.globalPrivacyControl;
+            window.GPC_DataSharingOptIn = globalPrivacyControlEnabled ? false : checkThirdPartyAdsOptOutCookie();
+            if (typeof window.onGPCLoaded === 'function') {
+                window.onGPCLoaded();
+            }
+        })();
+    </script>
+    
+<uhf-footer-nav slot="uhf-footer-nav">
+</uhf-footer-nav>
+        <a slot="uhf-footer-locale-picker" class="uhf-footer-link" href="/en-us/_devcom/locale" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_English (United States)_nav","ecn":"LegalNav_LocalePicker_nav","ehn":"LegalNav"}' aria-label="Content Language Selector. Currently set to English (United States)">English (United States)</a>
+    <div slot="uhf-footer-california-privacy-link">
+        
+<a class="uhf-footer-link" href="https://aka.ms/yourcaliforniaprivacychoices" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_California Privacy_nav","ecn":"LegalNav_CaliforniaPrivacy_nav","ehn":"LegalNav"}'>
+    <svg role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 14" xml:space="preserve" height="16" width="43">
+    <title>Your Privacy Choices Opt-Out Icon</title>
+    <path d="M7.4 12.8h6.8l3.1-11.6H7.4C4.2 1.2 1.6 3.8 1.6 7s2.6 5.8 5.8 5.8z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#fff"></path>
+    <path d="M22.6 0H7.4c-3.9 0-7 3.1-7 7s3.1 7 7 7h15.2c3.9 0 7-3.1 7-7s-3.2-7-7-7zm-21 7c0-3.2 2.6-5.8 5.8-5.8h9.9l-3.1 11.6H7.4c-3.2 0-5.8-2.6-5.8-5.8z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#06f"></path>
+    <path d="M24.6 4c.2.2.2.6 0 .8L22.5 7l2.2 2.2c.2.2.2.6 0 .8-.2.2-.6.2-.8 0l-2.2-2.2-2.2 2.2c-.2.2-.6.2-.8 0-.2-.2-.2-.6 0-.8L20.8 7l-2.2-2.2c-.2-.2-.2-.6 0-.8.2-.2.6-.2.8 0l2.2 2.2L23.8 4c.2-.2.6-.2.8 0z" style="fill:#fff"></path>
+    <path d="M12.7 4.1c.2.2.3.6.1.8L8.6 9.8c-.1.1-.2.2-.3.2-.2.1-.5.1-.7-.1L5.4 7.7c-.2-.2-.2-.6 0-.8.2-.2.6-.2.8 0L8 8.6l3.8-4.5c.2-.2.6-.2.9 0z" style="fill:#06f"></path>
+    </svg>
+    <span>Your Privacy Choices</span>
+</a>
+        <noscript>
+            
+<a class="uhf-footer-link" href="https://aka.ms/yourcaliforniaprivacychoices" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_California Privacy_nav","ecn":"LegalNav_CaliforniaPrivacy_nav","ehn":"LegalNav"}'>
+    <svg role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 14" xml:space="preserve" height="16" width="43">
+    <title>Your Privacy Choices Opt-Out Icon</title>
+    <path d="M7.4 12.8h6.8l3.1-11.6H7.4C4.2 1.2 1.6 3.8 1.6 7s2.6 5.8 5.8 5.8z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#fff"></path>
+    <path d="M22.6 0H7.4c-3.9 0-7 3.1-7 7s3.1 7 7 7h15.2c3.9 0 7-3.1 7-7s-3.2-7-7-7zm-21 7c0-3.2 2.6-5.8 5.8-5.8h9.9l-3.1 11.6H7.4c-3.2 0-5.8-2.6-5.8-5.8z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#06f"></path>
+    <path d="M24.6 4c.2.2.2.6 0 .8L22.5 7l2.2 2.2c.2.2.2.6 0 .8-.2.2-.6.2-.8 0l-2.2-2.2-2.2 2.2c-.2.2-.6.2-.8 0-.2-.2-.2-.6 0-.8L20.8 7l-2.2-2.2c-.2-.2-.2-.6 0-.8.2-.2.6-.2.8 0l2.2 2.2L23.8 4c.2-.2.6-.2.8 0z" style="fill:#fff"></path>
+    <path d="M12.7 4.1c.2.2.3.6.1.8L8.6 9.8c-.1.1-.2.2-.3.2-.2.1-.5.1-.7-.1L5.4 7.7c-.2-.2-.2-.6 0-.8.2-.2.6-.2.8 0L8 8.6l3.8-4.5c.2-.2.6-.2.9 0z" style="fill:#06f"></path>
+    </svg>
+    <span>Your Privacy Choices</span>
+</a>
+        </noscript>
+    </div>
+    <a slot="uhf-footer-consumer-health-privacy-link" class="uhf-footer-link" href="https://go.microsoft.com/fwlink/?linkid=2259814" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_Consumer Health Privacy_nav","ecn":"LegalNav_ConsumerHealthPrivacy_nav","ehn":"LegalNav"}'>Consumer Health Privacy</a>
+    
+<uhf-footer-menu slot="uhf-footer-menu" data-nav-label="Microsoft corporate links">
+            <a class="uhf-footer-link" href="https://support.microsoft.com/contactus/" id="uhf-Contact Microsoft " data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_Contact Microsoft _nav","ecn":"LegalNav_Contact Microsoft _nav","ehn":"LegalNav"}'>Contact Microsoft </a>
+            <a class="uhf-footer-link" href="https://go.microsoft.com/fwlink/?LinkId=521839" id="uhf-Privacy &amp; Cookies" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_Privacy &amp; Cookies_nav","ecn":"LegalNav_Privacy &amp; Cookies_nav","ehn":"LegalNav"}'>Privacy &amp; Cookies</a>
+            <a class="uhf-footer-link" href="#" id="uhf-Manage cookies" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_Manage cookies_nav","ecn":"LegalNav_Manage cookies_nav","ehn":"LegalNav"}'>Manage cookies</a>
+            <a class="uhf-footer-link" href="https://go.microsoft.com/fwlink/?LinkID=206977" id="uhf-Terms of Use" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_Terms of Use_nav","ecn":"LegalNav_Terms of Use_nav","ehn":"LegalNav"}'>Terms of Use</a>
+            <a class="uhf-footer-link" href="https://www.microsoft.com/trademarks" id="uhf-Trademarks" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_Trademarks_nav","ecn":"LegalNav_Trademarks_nav","ehn":"LegalNav"}'>Trademarks</a>
+</uhf-footer-menu>
+</uhf-footer>
+</div>
+    </div>
+    <!-- /Theme picker -->
+
+
+    <!-- Scripts -->
+    <script>window.cdaTrackerShadowDOM = true;</script>
+    <script src="/__mirror/assets/6c595ffdb677c4a558469896" async></script>
+
+    
+<script type="module" src="/__mirror/assets/adb93738516987ac3e9c9096"></script>
+    
+ <!-- UHF scripts -->
+
+    
+    
+    <!-- /Scripts -->
+</body>
+</html>
