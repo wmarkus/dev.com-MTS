@@ -1,0 +1,43 @@
+<svg width="206" height="160" viewBox="0 0 206 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="206" height="160" fill="white"/>
+<rect width="206" height="160" rx="4" fill="#F8F8F8"/>
+<g opacity="0.2" filter="url(#filter0_f)">
+<path d="M20 24C20 22.8954 20.8954 22 22 22H184C185.105 22 186 22.8954 186 24V140C186 141.105 185.105 142 184 142H22C20.8954 142 20 141.105 20 140V24Z" fill="black" fill-opacity="0.7"/>
+</g>
+<path d="M20 22C20 20.8954 20.8954 20 22 20H184C185.105 20 186 20.8954 186 22V138C186 139.105 185.105 140 184 140H22C20.8954 140 20 139.105 20 138V22Z" fill="white"/>
+<path d="M20 40H186V60H20V40Z" fill="white"/>
+<path d="M20 60H186V80H20V60Z" fill="#EFF6FC"/>
+<path d="M20 80H186V100H20V80Z" fill="white"/>
+<path d="M20 100H186V120H20V100Z" fill="white"/>
+<path d="M20 120H186V140H20V120Z" fill="white"/>
+<path d="M28 50C29.3991 50 69.1347 50 84 50" stroke="black" stroke-opacity="0.1" stroke-width="4"/>
+<path d="M109 50C109.966 50 130.736 50 141 50" stroke="black" stroke-opacity="0.1" stroke-width="4"/>
+<path d="M164 50C164.362 50 172.151 50 176 50" stroke="black" stroke-opacity="0.1" stroke-width="4"/>
+<path d="M28 70C29.3991 70 69.1347 70 84 70" stroke="black" stroke-opacity="0.1" stroke-width="4"/>
+<path d="M109 70C109.966 70 130.736 70 141 70" stroke="black" stroke-opacity="0.1" stroke-width="4"/>
+<path d="M164 70C164.362 70 172.151 70 176 70" stroke="black" stroke-opacity="0.1" stroke-width="4"/>
+<path d="M28 90C29.3991 90 69.1347 90 84 90" stroke="black" stroke-opacity="0.1" stroke-width="4"/>
+<path d="M109 90C109.966 90 130.736 90 141 90" stroke="black" stroke-opacity="0.1" stroke-width="4"/>
+<path d="M164 90C164.362 90 172.151 90 176 90" stroke="black" stroke-opacity="0.1" stroke-width="4"/>
+<path d="M28 110C29.3991 110 69.1347 110 84 110" stroke="black" stroke-opacity="0.1" stroke-width="4"/>
+<path d="M109 110C109.966 110 130.736 110 141 110" stroke="black" stroke-opacity="0.1" stroke-width="4"/>
+<path d="M164 110C164.362 110 172.151 110 176 110" stroke="black" stroke-opacity="0.1" stroke-width="4"/>
+<path d="M28 130C29.3991 130 69.1347 130 84 130" stroke="black" stroke-opacity="0.1" stroke-width="4"/>
+<path d="M109 130C109.966 130 130.736 130 141 130" stroke="black" stroke-opacity="0.1" stroke-width="4"/>
+<path d="M164 130C164.362 130 172.151 130 176 130" stroke="black" stroke-opacity="0.1" stroke-width="4"/>
+<path d="M109 30C109.483 30 119.868 30 125 30" stroke="black" stroke-opacity="0.3" stroke-width="4"/>
+<path d="M164 30C164.362 30 172.151 30 176 30" stroke="black" stroke-opacity="0.3" stroke-width="4"/>
+<path d="M20 40.5H186" stroke="#F2F2F2"/>
+<path d="M20 60.5H186" stroke="#DEECF9"/>
+<path d="M20 80.5H186" stroke="#DEECF9"/>
+<path d="M20 100.5H186" stroke="#F2F2F2"/>
+<path d="M20 120.5H186" stroke="#F2F2F2"/>
+<path d="M28 30C28.966 30 49.7358 30 60 30" stroke="black" stroke-opacity="0.3" stroke-width="4"/>
+<defs>
+<filter id="filter0_f" x="17" y="19" width="172" height="126" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="1.5" result="effect1_foregroundBlur"/>
+</filter>
+</defs>
+</svg>
