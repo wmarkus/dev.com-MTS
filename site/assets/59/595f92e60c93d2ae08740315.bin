@@ -1,0 +1,1852 @@
+import { r as w, a as h } from "/__mirror/assets/65231c19c96dcee42c15fc50";
+import { s as k, T as pe, c as $ } from "/__mirror/assets/5f61cb2cb2aaa935e5d33379";
+const he = (e) => {
+  if (!(e != null && e.friendlyName))
+    return "ME";
+  const [t, r] = e.friendlyName.split(" ", 2);
+  return `${t[0]}${r ? r[0] : ""}`;
+};
+function fe(e) {
+  const [t, r] = w.useState(!1);
+  return w.useEffect(() => {
+    if (!e) {
+      r(!1);
+      return;
+    }
+    let o = !1;
+    const n = new Image();
+    return n.onload = () => {
+      o || r(!0);
+    }, n.onerror = () => {
+      o || r(!1);
+    }, n.src = e, () => {
+      o = !0, n.onload = null, n.onerror = null;
+    };
+  }, [e]), t;
+}
+var Y = function(e, t, r) {
+  if (r || arguments.length === 2) for (var o = 0, n = t.length, s; o < n; o++)
+    (s || !(o in t)) && (s || (s = Array.prototype.slice.call(t, 0, o)), s[o] = t[o]);
+  return e.concat(s || Array.prototype.slice.call(t));
+}, ge = "REDACTED", X = ["eyJhbGciOiJIUzI1NiJ9", "dGVzdFBheWxvYWQ", "c2ln"].join("."), Ae = [
+  {
+    description: "ESTS/EvoSts encrypted primary refresh token cookie (base64 blob).",
+    matchType: "named-param",
+    credScanCategory: "CSCAN-MSFT0010",
+    key: "epct",
+    testVectors: {
+      positive: [
+        "https://login.live.com/ppsecure/post.srf?nonce=1&epct=PAQABDgEAAABRXZvU3RzQXJ0aWZhY3Rz&x=1",
+        '{"apiName":"https://x/post.srf?epct=PAQABDgEAAAA"}',
+        "https://x/post.srf?a=1&amp;epct=PAQABDgEAAAA&amp;b=2",
+        "https://x/post.srf?EPCT=PAQABDgEAAAA",
+        '{"epct":"PAQABDgEAAABsomekey"}'
+      ],
+      negative: [
+        "https://x/post.srf?epctenabled=true",
+        "https://x/post.srf?myepct=1",
+        "https://x/post.srf?epct="
+      ]
+    }
+  },
+  {
+    description: "ESTS/EvoSts encrypted primary refresh token canary value.",
+    matchType: "named-param",
+    credScanCategory: "CSCAN-MSFT0010",
+    key: "epctrc",
+    testVectors: {
+      positive: [
+        "https://x/post.srf?epctrc=AAAACANARYvalue&y=1",
+        "https://x/post.srf?a=1&amp;epctrc=AAAACANARYvalue"
+      ],
+      negative: ["https://x/post.srf?epctrcx=1", "https://x/post.srf?epctrc="]
+    }
+  },
+  {
+    description: "OAuth authorization code (incl. Google 4/0A... codes).",
+    matchType: "named-param",
+    credScanCategory: "CSCAN-MSFT0010",
+    key: "code",
+    testVectors: {
+      positive: [
+        "https://login.live.com/GetSessionState.srf?seclog=0&code=f9704efa5c717c5c3ccd&mkt=EN-US",
+        "https://x/post.srf?code=4/0AdkVLPzabcdefg&state=1"
+      ],
+      negative: [
+        "https://x/authorize?code_challenge=abc",
+        "https://x/authorize?code_verifier=abc",
+        "https://x/authorize?codee=1",
+        "https://x/authorize?code="
+      ]
+    }
+  },
+  {
+    description: "PKCE code challenge.",
+    matchType: "named-param",
+    credScanCategory: "CSCAN-MSFT0010",
+    key: "code_challenge",
+    testVectors: {
+      positive: [
+        "https://login.live.com/oauth20_authorize.srf?code_challenge=PsxABCDEF&code_challenge_method=S256",
+        "https://x/authorize?a=1&amp;code_challenge=PsxABCDEF"
+      ],
+      negative: [
+        "https://x/authorize?code_challenge_method=S256",
+        "https://x/authorize?code_challenge="
+      ]
+    }
+  },
+  {
+    description: "PKCE code verifier (the secret paired with the challenge).",
+    matchType: "named-param",
+    key: "code_verifier",
+    testVectors: {
+      positive: ["https://x/token?code_verifier=abcdefghijklmnop"],
+      negative: ["https://x/token?code_verifierx=1", "https://x/token?code_verifier="]
+    }
+  },
+  {
+    description: "OAuth state parameter (often carries a double-encoded return URL / nonce).",
+    matchType: "named-param",
+    credScanCategory: "CSCAN-MSFT0010",
+    key: "state",
+    testVectors: {
+      positive: [
+        "https://login.live.com/oauth20_authorize.srf?state=Kdt8-abcdefg&client_id=1",
+        "https://x/authorize?a=1&amp;state=3B08F153abcdef"
+      ],
+      negative: ["https://x/authorize?stateProvince=WA", "https://x/authorize?state="]
+    }
+  },
+  {
+    description: "OIDC session_state value.",
+    matchType: "named-param",
+    key: "session_state",
+    testVectors: {
+      positive: ["https://x/authorize?session_state=abc123def456"],
+      negative: ["https://x/authorize?session_state="]
+    }
+  },
+  {
+    description: "OAuth/OIDC nonce.",
+    matchType: "named-param",
+    credScanCategory: "CSCAN-MSFT0010",
+    key: "nonce",
+    testVectors: {
+      positive: ["https://x/post.srf?nonce=639191abcdef&epct=1"],
+      negative: [
+        "https://x/authorize?sso_nonce=abc",
+        "https://x/authorize?noncex=1",
+        "https://x/post.srf?nonce="
+      ]
+    }
+  },
+  {
+    description: "ESTS single-sign-on nonce.",
+    matchType: "named-param",
+    key: "sso_nonce",
+    testVectors: {
+      positive: [
+        "https://login.microsoftonline.com/common/oauth2/authorize?nonce=&sso_nonce=AwABEgEAAAAsecret"
+      ],
+      negative: ["https://x/authorize?sso_nonce="]
+    }
+  },
+  {
+    description: "Login hint (username/email PII).",
+    matchType: "named-param",
+    key: "login_hint",
+    testVectors: {
+      positive: ["https://x/authorize?login_hint=user@contoso.com"],
+      negative: ["https://x/authorize?login_hint="]
+    }
+  },
+  {
+    description: "ESTS anti-CSRF canary token.",
+    matchType: "named-param",
+    key: "ests_canary",
+    testVectors: {
+      positive: ["https://x/authorize?ests_canary=abcdef123456"],
+      negative: ["https://x/authorize?ests_canary="]
+    }
+  },
+  {
+    description: "OIDC id_token (JWT).",
+    matchType: "named-param",
+    credScanCategory: "CSCAN-AZURE0140",
+    key: "id_token",
+    testVectors: {
+      positive: ["https://x/callback?id_token=abcdefIDTOKENvalue123"],
+      negative: ["https://x/callback?id_token="]
+    }
+  },
+  {
+    description: "OAuth access token.",
+    matchType: "named-param",
+    key: "access_token",
+    testVectors: {
+      positive: ["https://x/callback?access_token=abcdefACCESSvalue123"],
+      negative: ["https://x/callback?access_token="]
+    }
+  },
+  {
+    description: "OAuth refresh token.",
+    matchType: "named-param",
+    key: "refresh_token",
+    testVectors: {
+      positive: ["https://x/token?refresh_token=0.AAAAabcdefg"],
+      negative: ["https://x/token?refresh_token="]
+    }
+  },
+  {
+    description: "SAML / JWT bearer assertion.",
+    matchType: "named-param",
+    credScanCategory: "CSCAN-AZURE0140",
+    key: "assertion",
+    testVectors: {
+      positive: ["https://x/token?assertion=abcdefASSERTvalue123"],
+      negative: ["https://x/token?assertion="]
+    }
+  },
+  {
+    description: "OAuth client assertion (JWT).",
+    matchType: "named-param",
+    key: "client_assertion",
+    testVectors: {
+      positive: ["https://x/token?client_assertion=abcdefCLIENTvalue123"],
+      negative: ["https://x/token?client_assertion="]
+    }
+  },
+  {
+    description: "OAuth client secret.",
+    matchType: "named-param",
+    key: "client_secret",
+    testVectors: {
+      positive: ["https://x/token?client_secret=Abc123secretvalue"],
+      negative: ["https://x/token?client_secret="]
+    }
+  },
+  {
+    description: "Generic secret parameter.",
+    matchType: "named-param",
+    key: "secret",
+    testVectors: {
+      positive: ["https://test.com?a=b&secret=secretvalue"],
+      negative: ["https://x?secretless=1", "https://x?secret="]
+    }
+  },
+  {
+    description: "Password parameter.",
+    matchType: "named-param",
+    credScanCategory: "CSCAN-GENERAL0060",
+    key: "password",
+    testVectors: {
+      positive: ["https://x/login?password=Hunter2abc"],
+      negative: ["https://x/login?password="]
+    }
+  },
+  {
+    description: "Password parameter (alternate spelling).",
+    matchType: "named-param",
+    credScanCategory: "CSCAN-GENERAL0060",
+    key: "passwd",
+    testVectors: {
+      positive: ["https://x/login?passwd=Hunter2abc"],
+      negative: ["https://x/login?passwd="]
+    }
+  },
+  {
+    description: "Password parameter (short spelling).",
+    matchType: "named-param",
+    credScanCategory: "CSCAN-GENERAL0060",
+    key: "pwd",
+    testVectors: {
+      positive: ["https://x/login?pwd=Hunter2abc"],
+      negative: ["https://x/login?pwdhash=1", "https://x/login?pwd="]
+    }
+  },
+  {
+    description: "Shared-access / URL signature.",
+    matchType: "named-param",
+    key: "sig",
+    testVectors: {
+      positive: ["https://x/resource?sig=abc123signature"],
+      negative: ["https://x/resource?signx=1", "https://x/resource?sig="]
+    }
+  },
+  {
+    description: "URL signature.",
+    matchType: "named-param",
+    key: "signature",
+    testVectors: {
+      positive: ["https://x/resource?signature=abc123signature"],
+      negative: ["https://x/resource?signature="]
+    }
+  },
+  {
+    description: "SAML AuthnRequest (base64 blob).",
+    matchType: "named-param",
+    key: "samlrequest",
+    testVectors: {
+      positive: ["https://x/saml?SAMLRequest=fVLBaBase64Blob"],
+      negative: ["https://x/saml?SAMLRequest="]
+    }
+  },
+  {
+    description: "SAML Response (base64 blob).",
+    matchType: "named-param",
+    key: "samlresponse",
+    testVectors: {
+      positive: ["https://x/saml?SAMLResponse=fVLBaBase64Blob"],
+      negative: ["https://x/saml?SAMLResponse="]
+    }
+  },
+  {
+    description: "Return URL (may carry nested credentials / tokens).",
+    matchType: "named-param",
+    credScanCategory: "CSCAN-MSFT0010",
+    key: "ru",
+    testVectors: {
+      positive: ["https://account.live.com/qrcr?ru=https%3a%2f%2flogin.live.com%2flogin.srf"],
+      negative: ["https://x?run=1", "https://x?true=1", "https://x?ru="]
+    }
+  },
+  {
+    description: "Signed return URL (may carry nested credentials / tokens).",
+    matchType: "named-param",
+    credScanCategory: "CSCAN-MSFT0010",
+    key: "sru",
+    testVectors: {
+      positive: ["https://x?sru=https%3a%2f%2flogin.live.com%2flogin.srf%3fcode_challenge%3dabc"],
+      negative: ["https://x?srus=1", "https://x?sru="]
+    }
+  },
+  {
+    description: "Google hosted-domain hint (PII).",
+    matchType: "named-param",
+    key: "hd",
+    testVectors: {
+      positive: ["https://x/authorize?hd=contoso.com"],
+      negative: [
+        "https://x/authorize?hdr=1",
+        "https://x/authorize?head=1",
+        "https://x/authorize?hd="
+      ]
+    }
+  }
+], ve = [
+  {
+    description: "JSON Web Token / JWS (id_token, access_token, assertion) appearing anywhere in the payload.",
+    matchType: "value-shape",
+    credScanCategory: "CSCAN-AZURE0140",
+    // Group: (whole token). 2- or 3-segment base64url separated by dots, starting with the
+    // canonical `eyJ` header prefix (base64 of `{"`).
+    pattern: "(eyJ[A-Za-z0-9_\\-]+\\.[A-Za-z0-9_\\-]+(?:\\.[A-Za-z0-9_\\-]+)?)",
+    testVectors: {
+      positive: ["bearer ".concat(X), '{"stack":"at foo (token '.concat(X, ')"}')],
+      negative: ["not a jwt: eyJonly", "plain.text.value", "eyJmissingdot"]
+    }
+  },
+  {
+    description: "Google OAuth authorization code (4/0A... shape) appearing without a `code=` key.",
+    matchType: "value-shape",
+    // Group: (whole token).
+    pattern: "(4\\/0[A-Za-z0-9._\\-]{6,})",
+    testVectors: {
+      positive: ["redirected to 4/0AdkVLPzabcdefghij"],
+      negative: ["4/0", "ratio 4/0abc is 12/0", "40Aabcdefg"]
+    }
+  },
+  {
+    description: "Leading opaque MSA/WLID token (`?**!<token>` or `?**,<token>`) with no key=value form.",
+    matchType: "value-shape",
+    credScanCategory: "CSCAN-MSFT0010",
+    // Groups: (marker `?**!` or `?**,`)(token up to next delimiter).
+    pattern: `(\\?\\*\\*[!,])([^&#"'\\s]*)`,
+    testVectors: {
+      positive: [
+        "https://login.live.com/GetSessionState.srf?**!4W8JTHywU3rfiTzi0mo&seclog=0",
+        "https://login.live.com/oauth20_authorize.srf?**,easi2abcdef&xsup=1"
+      ],
+      negative: ["https://x/post.srf?code=1", "https://x/post.srf?**&x=1"]
+    }
+  }
+], ye = Y(Y([], Ae, !0), ve, !0);
+function be(e) {
+  return e.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+function Se(e) {
+  for (var t = 0, r = 0; r < e.length; r += 1) {
+    var o = e.charAt(r);
+    o === "\\" ? r += 1 : o === "(" && e.charAt(r + 1) !== "?" && (t += 1);
+  }
+  return t;
+}
+function F(e) {
+  return e ? ge : "";
+}
+function Ce(e) {
+  return e.map(function(t) {
+    return t.key;
+  }).slice().sort(function(t, r) {
+    return r.length - t.length;
+  }).map(be).join("|");
+}
+function we(e) {
+  var t = e.filter(function(s) {
+    return s.matchType === "named-param";
+  }), r = e.filter(function(s) {
+    return s.matchType === "value-shape";
+  }), o = [];
+  if (t.length > 0) {
+    var n = Ce(t);
+    o.push({
+      source: `(^|&amp;|[\\s"'?&#])(`.concat(n, ')=((?:[^&#"\\\\]|\\\\.)*)'),
+      groupCount: 3,
+      redact: function(s) {
+        return "".concat(s[0]).concat(s[1], "=").concat(F(s[2]));
+      }
+    }), o.push({
+      source: "(%3F|%26|%253F|%2526)(".concat(n, ')(?:%3D|%253D)((?:[^&#"\\\\]|\\\\.)*?)(?=%3F|%26|%253F|%2526|\\?|&|#|$)'),
+      groupCount: 3,
+      redact: function(s) {
+        return "".concat(s[0]).concat(s[1], "%3D").concat(F(s[2]));
+      }
+    }), o.push({
+      source: '("(?:'.concat(n, ')"\\s*:\\s*")((?:[^"\\\\]|\\\\.)*)'),
+      groupCount: 2,
+      redact: function(s) {
+        return "".concat(s[0]).concat(F(s[1]));
+      }
+    });
+  }
+  return r.forEach(function(s) {
+    var i = s.pattern, c = Se(i);
+    o.push({
+      source: i,
+      groupCount: c,
+      redact: function(l) {
+        return c >= 2 ? "".concat(l[0]).concat(F(l[1])) : F(l[0]);
+      }
+    });
+  }), o;
+}
+function xe(e) {
+  var t = we(e);
+  if (t.length === 0)
+    return { redact: function(i) {
+      return i;
+    }, redactPayload: function(i) {
+      return i;
+    } };
+  var r = new RegExp(t.map(function(i) {
+    return i.source;
+  }).join("|"), "gi"), o = function() {
+    for (var i = [], c = 0; c < arguments.length; c++)
+      i[c] = arguments[c];
+    for (var l = i[0], m = 1, p = 0; p < t.length; p += 1) {
+      for (var d = t[p], I = [], u = !1, g = 0; g < d.groupCount; g += 1) {
+        var A = i[m + g], T = typeof A == "string" ? A : void 0;
+        I.push(T), T !== void 0 && (u = !0);
+      }
+      if (u)
+        return d.redact(I);
+      m += d.groupCount;
+    }
+    return l;
+  }, n = function(i) {
+    if (!i)
+      return i;
+    try {
+      return i.replace(r, o);
+    } catch {
+      return i;
+    }
+  }, s = function(i) {
+    try {
+      return JSON.parse(n(JSON.stringify(i)));
+    } catch {
+      return i;
+    }
+  };
+  return { redact: n, redactPayload: s };
+}
+var _e = xe(ye);
+function ae(e) {
+  return _e.redactPayload(e);
+}
+var H = function() {
+  return H = Object.assign || function(e) {
+    for (var t, r = 1, o = arguments.length; r < o; r++) {
+      t = arguments[r];
+      for (var n in t) Object.prototype.hasOwnProperty.call(t, n) && (e[n] = t[n]);
+    }
+    return e;
+  }, H.apply(this, arguments);
+}, P;
+(function(e) {
+  e.Redact = "redact", e.LegacyBehavior = "legacy-behavior", e.Passthrough = "passthrough";
+})(P || (P = {}));
+var Ie = {
+  rolloutEnabled: !1,
+  emergencyPassthrough: !1
+}, ee = H({}, Ie);
+function ie() {
+  return ee.emergencyPassthrough ? P.Passthrough : ee.rolloutEnabled ? P.Redact : P.LegacyBehavior;
+}
+var Ee = (
+  /** @class */
+  function() {
+    function e() {
+    }
+    return e.prototype.addEvent = function(t) {
+      var r = ie() === P.Redact ? ae(t) : t;
+      console.log("Logged event: ".concat(JSON.stringify(r, void 0, 2)));
+    }, e;
+  }()
+), z = function() {
+  return z = Object.assign || function(e) {
+    for (var t, r = 1, o = arguments.length; r < o; r++) {
+      t = arguments[r];
+      for (var n in t) Object.prototype.hasOwnProperty.call(t, n) && (e[n] = t[n]);
+    }
+    return e;
+  }, z.apply(this, arguments);
+}, O;
+(function(e) {
+  e[e.NotStarted = 0] = "NotStarted", e[e.InProgress = 1] = "InProgress", e[e.Done = 2] = "Done", e[e.Failed = 3] = "Failed";
+})(O || (O = {}));
+var Oe = (
+  /** @class */
+  function() {
+    function e() {
+      this.eventBuffer = [], this.oneDsLoadState = O.NotStarted;
+    }
+    return e.prototype.initialize = function(t) {
+      var r = this;
+      if (this.oneDsLoadState !== O.NotStarted)
+        return Promise.reject(new Error("OneDsTelemetryProvider has already been initialized"));
+      var o = z(z({ instrumentationKey: t.instrumentationKey }, t.endpointUrl && { endpointUrl: t.endpointUrl }), { disablePageUnloadEvents: ["unload"], extensions: [], extensionConfig: [], channelConfiguration: {
+        eventsLimitInMem: 50,
+        ignoreMc1Ms0CookieProcessing: !0
+      }, propertyConfiguration: {
+        hashIdentifiers: !0,
+        // this prevents the SDK from sending PII
+        gpcDataSharingOptIn: !1
+        // this sets the GPC flag to false (compliance requirement)
+      }, cookieCfg: {
+        ignoreCookies: ["ANON", "MicrosoftApplicationsTelemetryDeviceId"]
+        // this prevents the SDK from sending ANID which is a PII
+      }, disableCookiesUsage: !0 }), n = import(
+        /* webpackChunkName: "oneds-analytics-js" */
+        "/__mirror/assets/6c116b5ea06b5a47dc85333d"
+      ).then(
+        // resolve
+        function(s) {
+          r.oneDs = new s.ApplicationInsights(), r.oneDs.initialize(o), r.oneDsLoadState = O.Done, r.eventBuffer.forEach(function(i) {
+            r.oneDs.track(e.formatEvent(i));
+          }), r.eventBuffer = [];
+        },
+        // reject
+        function() {
+          r.oneDsLoadState = O.Failed;
+        }
+      );
+      return this.oneDsLoadState = O.InProgress, n;
+    }, e.prototype.addEvent = function(t) {
+      var r = this;
+      if (this.oneDsLoadState !== O.Failed)
+        try {
+          if (this.oneDsLoadState === O.Done) {
+            this.oneDs.track(e.formatEvent(t)), this.eventBuffer.length > 0 && (this.eventBuffer.forEach(function(o) {
+              r.oneDs.track(e.formatEvent(o));
+            }), this.eventBuffer = []);
+            return;
+          }
+          this.eventBuffer.push(t);
+        } catch (o) {
+          console.warn("Failed to log telemetry: ".concat(o instanceof Error ? o.message : o));
+        }
+    }, e.formatEvent = function(t) {
+      var r = z({}, t);
+      switch (r._table = void 0, ie()) {
+        case P.Passthrough:
+          break;
+        case P.LegacyBehavior:
+          r = e.removeQueryParams(r);
+          break;
+        default:
+          r = e.redactEvent(r);
+          break;
+      }
+      var o = {
+        name: t._table,
+        data: r
+      };
+      return o.sync = !1, o.baseData = {}, o;
+    }, e.redactEvent = function(t) {
+      return ae(t);
+    }, e.removeQueryParams = function(t) {
+      try {
+        var r = JSON.stringify(t);
+        return r = r.replace(/\?([a-zA-Z0-9~+\-._%:/]+=[a-zA-Z0-9~+\-._%:/]*&?)+/g, "?**"), JSON.parse(r);
+      } catch {
+        return t;
+      }
+    }, e;
+  }()
+);
+const Ne = "4.17.0";
+var x;
+(function(e) {
+  e.Error = "MeControlWeb__Error", e.PageView = "MeControlWeb_PageView", e.OutgoingRequest = "MeControlWeb_OutgoingRequest";
+})(x || (x = {}));
+const te = "b8ffe739c47a401190627519795ca4d2-044a8309-9d4b-430b-9d47-6e87775cbab6-6888";
+class Me {
+  constructor() {
+    this.partner = "defaultPartner", this.version = Ne;
+  }
+  /**
+   * initializes the telemetry provider
+   * @param enableTelemetry configurable boolean to enable/disable telemetry
+   * @param partner partner name
+   */
+  initialize(t, r) {
+    this.telemetryProvider || (t && te ? (this.telemetryProvider = new Oe(), this.telemetryProvider.initialize({
+      instrumentationKey: te
+    })) : this.telemetryProvider = new Ee(), this.partner = r);
+  }
+  /**
+   * Get the telemetry provider
+   * @returns The telemetry provider
+   */
+  getInstance() {
+    if (!this.telemetryProvider)
+      throw new Error("Telemetry provider has not been initialized");
+    return this.telemetryProvider;
+  }
+  /**
+   * logs telemetry event
+   * @param data telemetry event
+   */
+  logEvent(t) {
+    const r = {
+      partner: this.partner,
+      version: this.version
+    }, o = Object.assign(Object.assign({}, t), { metaData: r });
+    this.getInstance().addEvent(o);
+  }
+  /**
+   * logs error event by constructing the error event object
+   * @param error error to report
+   */
+  logError(t) {
+    this.logEvent({
+      _table: x.Error,
+      errorMessage: t.message,
+      errorName: t.name,
+      errorInfo: t.stack || ""
+    });
+  }
+}
+const _ = new Me();
+class Re extends w.Component {
+  /**
+   * Construct an ErrorBoundary instance
+   * @param props ErrorBoundary properties
+   */
+  constructor(t) {
+    super(t), this.state = { hasError: !1 };
+  }
+  /**
+   * Lifecycle method invoked after an error has been thrown by a descendant component.
+   * @returns a value to update state.
+   */
+  static getDerivedStateFromError() {
+    return { hasError: !0 };
+  }
+  /**
+   * Lifecycle method invoked after an error has been thrown by a descendant component.
+   * @param {Error} error The error that was thrown by descendant component.
+   */
+  componentDidCatch(t) {
+    _.logError(t);
+  }
+  /**
+   * Required lifecycle method to update UI
+   * @returns HTML elements
+   */
+  render() {
+    const { hasError: t } = this.state, { children: r } = this.props;
+    return !t && r;
+  }
+}
+const Pe = (e, t, r, o, n) => h.createElement(
+  "div",
+  { style: n },
+  h.createElement("img", { src: e, alt: t, style: o }),
+  h.createElement("span", { style: { margin: 8, fontSize: 14, whiteSpace: "nowrap" } }, r)
+), Te = (e, t, r) => h.createElement("img", { src: e, alt: t, style: r }), Ue = (e, t, r) => h.createElement(
+  "div",
+  { style: r },
+  h.createElement("span", null, e),
+  h.createElement("span", { style: { margin: 8, fontSize: 14, whiteSpace: "nowrap" } }, t)
+), ke = (e) => h.createElement("span", null, e), Fe = function({ onClick: t, placeholderStyles: r, initials: o, pictureUrl: n, showUserName: s = !1, userName: i }) {
+  const c = {
+    height: 36,
+    width: 36,
+    backgroundColor: "transparent",
+    borderColor: "white",
+    borderRadius: "50%",
+    borderStyle: "solid",
+    borderWidth: "1px",
+    display: "flex",
+    fontSize: 14,
+    cursor: "pointer",
+    color: "white",
+    alignItems: "center",
+    justifyContent: "center"
+  }, l = {
+    width: "inherit",
+    height: "inherit",
+    borderRadius: "inherit"
+  }, m = Object.assign(Object.assign({}, l), { display: "inline-flex", alignItems: "center", width: "20px", height: "20px" }), p = fe(n ?? null);
+  let d;
+  return p && s ? d = Pe(n, o, i, l, m) : p && !s ? d = Te(n, o, l) : !p && s ? d = Ue(o, i, m) : d = ke(o), h.createElement("button", { type: "button", onClick: t, style: Object.assign(Object.assign({}, c), r) }, d);
+}, Le = h.lazy(() => import(
+  /* [ME_CONTROL_WEBPACK_MAGIC_COMMENT_PREFETCH] */
+  "/__mirror/assets/e96252e7add5e08a8bb9a47f"
+)), ze = function({ handlers: t, currentAccount: r, locale: o, theme: n, rememberedAccounts: s, additionalLinks: i, placeholderStyles: c, inline: l = !0, partner: m, enableTelemetry: p = !0, defaultExpanded: d = !1, showUserName: I = !1, accountLink: u, themeOverrides: g, popoverPosition: A, popoverAlign: T, renderTrigger: U }) {
+  _.initialize(p, m);
+  const [b, a] = w.useState(!1), y = h.createElement(Fe, { onClick: () => {
+    a(!0), r || t.signIn();
+  }, initials: he(r), pictureUrl: r == null ? void 0 : r.profilePicUrl, placeholderStyles: c, showUserName: I, userName: r == null ? void 0 : r.friendlyName }), f = U ?? y, S = (U || b || d) && r;
+  return h.useEffect(() => {
+    _.logEvent({
+      _table: x.PageView,
+      userView: S ? "PlaceholderClicked" : "PlaceholderLoaded"
+    });
+  }, [S]), h.createElement(
+    Re,
+    null,
+    h.createElement("div", null, S ? h.createElement(
+      h.Suspense,
+      { fallback: h.createElement("div", null, f) },
+      h.createElement(Le, { startWithMenuOpened: !0, locale: o, theme: n, handlers: t, placeholderComponent: f, currentAccount: r, rememberedAccounts: s, additionalLinks: i, inline: l, accountLink: u, themeOverrides: g, popoverPosition: A, popoverAlign: T })
+    ) : f)
+  );
+};
+class Q {
+  /**
+   * Constructor for the IFrameManager
+   * @param parent The parent element that the iframe should be attached to
+   */
+  constructor(t) {
+    this._iFrame = null, this.expectedTargetOrigin = "", this.parent = t || document.body;
+  }
+  /**
+   * Get an instance of the managed iframe
+   * @returns An instance of the iframe
+   */
+  getFrame() {
+    return this._iFrame || (this._iFrame = document.createElement("iframe"), this._iFrame.setAttribute("sandbox", "allow-forms allow-scripts allow-same-origin"), this._iFrame.style.display = "none", this.parent.appendChild(this._iFrame)), this._iFrame;
+  }
+  /**
+   * fetches token for graph call to fetch picture by posting the data to the iframe
+   * @param data data to post
+   */
+  postMessageToIframe(t) {
+    const r = this.getFrame();
+    r.contentWindow && r.contentWindow.postMessage(t, this.expectedTargetOrigin);
+  }
+  /**
+   * Navigates the iframe to a given URI
+   * @param url The URI to navigate the iframe to
+   * @param additionalQsParams Any additional query string params to append to the URI before initiating navigation
+   * @param expectedTargetOrigin The expected origin of the iframe if different from the origin of the URI
+   */
+  navigate(t, r = {}, o) {
+    const n = this.getFrame(), s = new URL(t), i = Object.keys(r);
+    for (let c = 0; c < i.length; c += 1)
+      s.searchParams.append(i[c], r[i[c]]);
+    this.expectedTargetOrigin = o || s.origin, n.src = s.toString();
+  }
+  /**
+   * Waits for messages from the iframe to the parent
+   * @param timeout The amount of time, in milliseconds, to wait for a response
+   * @param expectedMessages The number of expected messages that should be received from the iframe
+   * @returns A promise that resolves with the set of messages received from the iframe
+   */
+  waitForMessages(t, r) {
+    return new Promise((o, n) => {
+      let s = !1;
+      const i = [], c = (l) => {
+        l.origin === this.expectedTargetOrigin && (i.push(l.data), i.length >= r && (window.removeEventListener("message", c), s = !0, o(i)));
+      };
+      window.addEventListener("message", c, !1), setTimeout(() => {
+        s || n(new Error(`Timeout waiting for messages from iframe from origin ${this.expectedTargetOrigin} after ${t}ms`));
+      }, t);
+    });
+  }
+  /**
+   * Sets up a load event listener on the iframe that fires once
+   * @param callback The callback function to execute when the iframe loads
+   */
+  onLoad(t) {
+    this.getFrame().addEventListener("load", t, { once: !0 });
+  }
+}
+const re = 50 * 1e3;
+let W, V;
+function qe(e) {
+  const { userList: t } = e;
+  return t && t.length > 0 ? t.map((r) => {
+    var o;
+    return {
+      id: r.memberName,
+      accountType: (o = r.idp) === null || o === void 0 ? void 0 : o.toUpperCase(),
+      preferredUsername: r.memberName,
+      firstName: r.firstName,
+      lastName: r.lastName,
+      friendlyName: `${r.firstName} ${r.lastName}`.trim() || r.displayName.trim() || ""
+    };
+  }) : [];
+}
+function We({ msaUrl: e, aadUrl: t, getRememberedAccounts: r }, o) {
+  if (r)
+    return r().then((s) => ({
+      rememberedAccounts: s,
+      failures: []
+    }));
+  const n = [];
+  if (e) {
+    V || (V = new Q(o)), V.navigate(e);
+    let s = 1;
+    e.includes("idpflag=proxy") && (s = 2), n.push(V.waitForMessages(re, s)), _.logEvent({
+      _table: x.OutgoingRequest,
+      requestType: "RememberedAccountsRequest",
+      requestUrl: new URL(e).origin,
+      requestStatus: "Initiated"
+    });
+  }
+  if (t) {
+    W || (W = new Q(o)), W.navigate(t);
+    let s = 1;
+    t.includes("idpflag=proxy") && (s = 2), n.push(W.waitForMessages(re, s)), _.logEvent({
+      _table: x.OutgoingRequest,
+      requestType: "RememberedAccountsRequest",
+      requestUrl: new URL(t).origin,
+      requestStatus: "Initiated"
+    });
+  }
+  return new Promise((s, i) => {
+    let c = [];
+    const l = [];
+    let m = !1;
+    Promise.allSettled(n).then((p) => {
+      p.forEach((d) => {
+        d.status === "rejected" ? l.push(d.reason) : (d.value && d.value.length > 0 && d.value.forEach((I) => {
+          c = c.concat(qe(JSON.parse(I)));
+        }), m = !0);
+      }), m ? (_.logEvent({
+        _table: x.OutgoingRequest,
+        requestType: "RememberedAccountsRequest",
+        requestUrl: `${t && new URL(t).origin} & ${e && new URL(e).origin}`,
+        requestStatus: `Success with ${c.length - 1} accounts`
+        // -1 to account for the current account
+      }), s({ rememberedAccounts: c, failures: l })) : (_.logEvent({
+        _table: x.OutgoingRequest,
+        requestType: "RememberedAccountsRequest",
+        requestUrl: `${t && new URL(t).origin} & ${e && new URL(e).origin}`,
+        requestStatus: `Failed to fetch remembered accounts: ${JSON.stringify(l)}}`
+      }), i(l));
+    }).catch((p) => {
+      _.logEvent({
+        _table: x.OutgoingRequest,
+        requestType: "RememberedAccountsRequest",
+        requestUrl: `${t && new URL(t).origin} & ${e && new URL(e).origin}`,
+        requestStatus: `Failed to fetch remembered accounts: ${JSON.stringify(p)}}`
+      });
+    });
+  });
+}
+function Ve(e) {
+  const r = new URL(e.redirect_uri).origin, o = new Q();
+  function n(s) {
+    return e.state === s.state ? s.status === "INI" ? (o.postMessageToIframe(e.GetFrameInitResponse()), o.waitForMessages(1e4, 1).then((i) => n(i[0]))) : Promise.resolve([s]) : Promise.reject(new Error("Invalid state from IFrame when fetching profile picture"));
+  }
+  return o.navigate(e.getCodeReqUrl(), void 0, r), o.waitForMessages(1e4, 1).then((s) => n(s[0]));
+}
+function Be(e, t, r = !0) {
+  const o = new URL(e);
+  return o && Object.keys(t).forEach((n) => {
+    const s = t[n];
+    Object.prototype.hasOwnProperty.call(t, n) && (r || s) && o.searchParams.set(n, s != null ? String(s) : "");
+  }), o.toString();
+}
+function B(e) {
+  return e < 26 ? e + 65 : e < 52 ? e + 71 : e < 62 ? e - 4 : e === 62 ? 43 : e === 63 ? 47 : 65;
+}
+function Je(e) {
+  const t = (3 - e.length % 3) % 3;
+  let r = "", o, n, s, i;
+  for (o = e.length, n = e.length, s = 0, i = 0; i < n; i++)
+    o = i % 3, s |= e[i] << (16 >>> o & 24), (o === 2 || e.length - i === 1) && (r += String.fromCharCode(B(s >>> 18 & 63), B(s >>> 12 & 63), B(s >>> 6 & 63), B(s & 63)), s = 0);
+  if (t === 0)
+    return r;
+  const c = r.substring(0, r.length - t);
+  return t === 1 ? `${c}=` : `${c}==`;
+}
+function Z(e) {
+  return Je(e).replace(/=/g, "").replace(/\+/g, "-").replace(/\//g, "_");
+}
+var ce = function(e, t, r, o) {
+  function n(s) {
+    return s instanceof r ? s : new r(function(i) {
+      i(s);
+    });
+  }
+  return new (r || (r = Promise))(function(s, i) {
+    function c(p) {
+      try {
+        m(o.next(p));
+      } catch (d) {
+        i(d);
+      }
+    }
+    function l(p) {
+      try {
+        m(o.throw(p));
+      } catch (d) {
+        i(d);
+      }
+    }
+    function m(p) {
+      p.done ? s(p.value) : n(p.value).then(c, l);
+    }
+    m((o = o.apply(e, t || [])).next());
+  });
+};
+function ne() {
+  const e = "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx", t = "0123456789abcdef";
+  let r = 0, o = "";
+  for (let n = 0; n < 36; n++)
+    e[n] !== "-" && e[n] !== "4" && (r = Math.random() * 16 | 0), e[n] === "x" ? o += t[r] : e[n] === "y" ? (r &= 3, r |= 8, o += t[r]) : o += e[n];
+  return o;
+}
+function Ge(e) {
+  const r = new Uint8Array(32);
+  return e.getRandomValues(r), Z(r);
+}
+function De(e) {
+  let t, r = 0;
+  const o = e.length;
+  for (let s = 0; s < o; s++)
+    t = e.charCodeAt(s), t < 128 ? r += 1 : t < 2048 ? r += 2 : t < 65536 ? r += 3 : t < 2097152 ? r += 4 : t < 67108864 ? r += 5 : r += 6;
+  const n = new Uint8Array(r);
+  for (let s = 0, i = 0; s < r; i++)
+    t = e.charCodeAt(i), t < 128 ? n[s++] = t : t < 2048 ? (n[s++] = 192 + (t >>> 6), n[s++] = 128 + (t & 63)) : t < 65536 ? (n[s++] = 224 + (t >>> 12), n[s++] = 128 + (t >>> 6 & 63), n[s++] = 128 + (t & 63)) : t < 2097152 ? (n[s++] = 240 + (t >>> 18), n[s++] = 128 + (t >>> 12 & 63), n[s++] = 128 + (t >>> 6 & 63), n[s++] = 128 + (t & 63)) : t < 67108864 ? (n[s++] = 248 + (t >>> 24), n[s++] = 128 + (t >>> 18 & 63), n[s++] = 128 + (t >>> 12 & 63), n[s++] = 128 + (t >>> 6 & 63), n[s++] = 128 + (t & 63)) : (n[s++] = 252 + (t >>> 30), n[s++] = 128 + (t >>> 24 & 63), n[s++] = 128 + (t >>> 18 & 63), n[s++] = 128 + (t >>> 12 & 63), n[s++] = 128 + (t >>> 6 & 63), n[s++] = 128 + (t & 63));
+  return n;
+}
+function le(e, t) {
+  return ce(this, void 0, void 0, function* () {
+    const r = De(t);
+    function o(n) {
+      return window.crypto.subtle ? window.crypto.subtle.digest("SHA-256", n).then((s) => Z(new Uint8Array(s))) : Promise.resolve("");
+    }
+    return window.crypto ? yield o(r) : new Promise((n) => {
+      if (e.subtle) {
+        const s = e.subtle.digest("SHA-256", r);
+        s.oncomplete = (i) => {
+          const c = i.target.result;
+          n(Z(new Uint8Array(c)));
+        };
+      }
+    });
+  });
+}
+function $e() {
+  return ce(this, void 0, void 0, function* () {
+    let { crypto: e } = window;
+    window.msCrypto && !e && (e = window.msCrypto);
+    const t = Ge(e), r = yield le(e, t);
+    return {
+      verifier: t,
+      challenge: r
+    };
+  });
+}
+class je {
+  /**
+   * constructs MSGraphOAuth2Builder object
+   * @param account account to get picture for
+   * @param accountId user account id (generated or from currentAccount)
+   * @param graphResources graph resources to request
+   * @param state state of transaction
+   * @param redirect_uri redirect uri (CDN endpoint with iframe content)
+   */
+  constructor(t, r, o, n, s) {
+    this.account = t, this.accountId = r, this.graphResources = o, this.state = n, this.code = { challenge: "", verifier: "" }, this.client_id = "7eadcef8-456d-4611-9480-4fff72b8b9e2", this.scope = "user.read", this.code_challenge_method = "S256", this.grant_type = "authorization_code", this.response_type = "code", this.response_mode = "fragment", this.prompt = "none", this.response_type = "code", this.response_mode = "fragment", this.redirect_uri = s ?? "https://amcdn.msftauth.net/me/callgraph";
+  }
+  /**
+   * @returns Promise resolves to string url to request code
+   */
+  initCodeFlow() {
+    return $e().then((t) => {
+      var r;
+      this.code = t, this.state = (r = this.state) !== null && r !== void 0 ? r : ne();
+    });
+  }
+  /**
+   * @returns code request url
+   */
+  getCodeReqUrl() {
+    return Be("https://login.microsoftonline.com/common/oauth2/v2.0/authorize", this.GetCodeQueryParams(), !1);
+  }
+  /**
+   * @returns code request query params
+   */
+  GetCodeQueryParams() {
+    var t, r;
+    const o = {
+      client_id: this.client_id,
+      scope: this.scope,
+      code_challenge: (t = this.code) === null || t === void 0 ? void 0 : t.challenge,
+      code_challenge_method: this.code_challenge_method,
+      prompt: this.prompt,
+      redirect_uri: this.redirect_uri,
+      response_mode: this.response_mode,
+      response_type: this.response_type,
+      state: (r = this.state) !== null && r !== void 0 ? r : ne()
+    };
+    if (this.account.accountType === "AAD" && this.account.sessionId)
+      o.sid = this.account.sessionId;
+    else if (this.account.preferredUsername)
+      o.login_hint = this.account.preferredUsername;
+    else
+      throw new Error("Fatal Error: Account is missing critical id info.");
+    return o;
+  }
+  /**
+   * @returns values sent to iframe to request token
+   */
+  GetFrameInitResponse() {
+    if (!this.state)
+      throw new Error("Critical error: Missing state of transaction.");
+    return {
+      accountId: this.accountId,
+      state: this.state,
+      qParams: {
+        code_verifier: this.code.verifier,
+        client_id: this.client_id,
+        scope: this.scope,
+        redirect_uri: this.redirect_uri,
+        grant_type: this.grant_type
+      },
+      graphResources: this.graphResources
+    };
+  }
+}
+const He = (e) => `${e.accountType}:${e.preferredUsername && e.preferredUsername.toLowerCase()}`, Qe = (e) => {
+  const t = e && He(e) || "";
+  if (_.logEvent({
+    _table: x.OutgoingRequest,
+    requestType: "GraphPictureRequest",
+    requestUrl: "https://graph.microsoft.com",
+    requestStatus: "Initiated"
+  }), t === "")
+    return _.logEvent({
+      _table: x.OutgoingRequest,
+      requestType: "GraphPictureRequest",
+      requestUrl: "https://graph.microsoft.com",
+      requestStatus: "Failed to retrieve account id for graph picture"
+    }), Promise.resolve();
+  const r = window.crypto || window.msCrypto;
+  function o(n) {
+    var s;
+    let i;
+    if (n !== void 0) {
+      const c = n[0], l = (s = c.payload.resource) !== null && s !== void 0 ? s : c.payload.pictureUrl;
+      c.status === "OK" && l && (i = l);
+    }
+    return _.logEvent({
+      _table: x.OutgoingRequest,
+      requestType: "GraphPictureRequest",
+      requestUrl: "https://graph.microsoft.com",
+      requestStatus: "Success"
+    }), i;
+  }
+  return le(r, t).then((n) => {
+    const s = [
+      {
+        key: n,
+        resourceType: "pictureUrl",
+        resourceName: "pictureUrl",
+        resourceUrl: "https://graph.microsoft.com/v1.0/me/photos/96x96/$value",
+        resource: null
+      }
+    ], i = new je(e, n, s);
+    return i.initCodeFlow().then(() => Ve(i).then(o).catch((c) => {
+      _.logEvent({
+        _table: x.OutgoingRequest,
+        requestType: "GraphPictureRequest",
+        requestUrl: "https://graph.microsoft.com",
+        requestStatus: `Failed to retrieve graph picture ${JSON.stringify(c)}`
+      });
+    }));
+  });
+}, ue = (e, t) => {
+  if (e.protocol !== "javascript")
+    for (let r = 0; r < Object.keys(t).length; r += 1) {
+      const o = Object.keys(t)[r], n = t[o];
+      n && e.searchParams.set(o, n || "");
+    }
+  return e.toString();
+}, D = (e, t, r) => {
+  const o = {}, n = new URL(e, window.location.origin);
+  return n.searchParams.has("ru") || (o.ru = window.location.href), t && (o.login_hint = t), r && (o.sessionId = r), ue(n, o);
+}, R = (e, t) => e || (t ? t() : "/"), Ze = (e) => typeof e == "string" ? D(e) : e(), M = (e, t) => typeof e == "string" ? t ? ue(new URL(e, window.location.origin), { idpflag: t.idpflag }) : e : e(), Ke = (e, t) => typeof e == "string" ? D(
+  e,
+  void 0,
+  t.currentAccount.sessionId
+) : e(t), Ye = (e, t) => typeof e == "string" ? D(e) : e(t), Xe = (e, t) => typeof e == "string" ? D(e, t.nextAccount.memberName, void 0) : e(t), J = (e) => {
+  window.open(e, "_top");
+};
+var v = /* @__PURE__ */ ((e) => (e[e.Converged = 1] = "Converged", e[e.Msa = 2] = "Msa", e[e.Aad = 4] = "Aad", e))(v || {}), C = /* @__PURE__ */ ((e) => (e.PartnerManaged = "partnerManaged", e.WebDualStack = "webDualStack", e.WebAadOnly = "webAadOnly", e.WebAadWithMsaFed = "webAadWithMsaFed", e.WebMsaOnly = "webMsaOnly", e.WebAadWithMsaProxy = "webAadWithMsaProxy", e.WebMsaWithAadProxy = "webMsaWithAadProxy", e.AdalJsWithMsaFed = "adalJsWithMsaFed", e.AdalJsAadOnly = "adalJsAadOnly", e.MsalJsAadOnly = "msalJsAadOnly", e.MsalJsWithMsa = "msalJsWithMsa", e.V1BackCompat = "v1BackCompat", e))(C || {}), E = /* @__PURE__ */ ((e) => (e.AAD = "aad", e.MSA = "msa", e.MSA_FED = "msaFed", e))(E || {}), L = /* @__PURE__ */ ((e) => (e.SignedIn = "signedIn", e.SignedInIDPOnly = "signedInIDPOnly", e.NotSignedIn = "notSignedIn", e))(L || {});
+const et = function(t, r) {
+  const o = (c) => c && c.signOutUrl && c.signOutAndForgetUrl && c.rememberedAccountsUrl && c.forgetUrl ? !0 : (console.warn("MeControl: Invalid AAD auth configuration"), !1), n = (c) => c && c.signOutUrl && c.signOutAndForgetUrl && c.forgetUrl ? !0 : (console.warn("MeControl: Invalid AAD auth configuration for AAD Proxy"), !1), s = (c) => c && c.signOutAndForgetUrl && c.rememberedAccountsUrl ? !0 : (console.warn("MeControl: Invalid MSA auth configuration"), !1), i = () => t ? !t.meControlOptions || !t.meControlOptions.authProviderConfig || !t.meControlOptions.authProviderConfig.type ? (console.error("MeControl: Config does not meet basic requirements"), !1) : !0 : !1;
+  return w.useMemo(() => {
+    const c = () => r, l = (a, y) => {
+      const f = {
+        signIn: () => {
+          J(Ze(a.appSignInUrl));
+        },
+        signOut: () => {
+          const S = {
+            currentAccount: c()
+          };
+          J(Ke(a.appSignOutUrl, S));
+        }
+      };
+      return a.appSwitchUrl && (f.addNewAccount = () => {
+        const S = {
+          currentAccount: c(),
+          signInType: y
+        };
+        J(Ye(a.appSwitchUrl, S));
+      }), a.appSwitchToUrl && (f.switchTo = ({ accountId: S }) => {
+        const N = {
+          currentAccount: c(),
+          nextAccount: { memberName: S }
+        };
+        J(Xe(a.appSwitchToUrl, N));
+      }), f;
+    }, m = (a) => ({
+      ...l(b, a)
+    }), p = () => {
+      const a = b;
+      return !o(a.aad) || !s(a.msa) ? m(v.Converged) : {
+        ...l(a, v.Converged),
+        rememberedAccountsParams: {
+          aadUrl: M(a.aad.rememberedAccountsUrl),
+          msaUrl: M(a.msa.rememberedAccountsUrl)
+        }
+      };
+    }, d = () => {
+      let a;
+      return b == null || b.type, C.WebAadWithMsaFed, a = b, o(a.aad) ? {
+        ...l(a, v.Aad),
+        rememberedAccountsParams: {
+          aadUrl: M(a.aad.rememberedAccountsUrl)
+        }
+      } : m(v.Aad);
+    }, I = () => {
+      const a = b;
+      return s(a.msa) ? {
+        ...l(a, v.Msa),
+        rememberedAccountsParams: {
+          msaUrl: M(a.msa.rememberedAccountsUrl)
+        }
+      } : m(v.Msa);
+    }, u = () => {
+      const a = b;
+      return o(a.aad) ? {
+        ...l(a, v.Converged),
+        rememberedAccountsParams: {
+          aadUrl: M(a.aad.rememberedAccountsUrl, { idpflag: "proxy" })
+        }
+      } : m(v.Converged);
+    }, g = () => {
+      const a = b;
+      return !n(a.aad) || !s(a.msa) ? m(v.Converged) : {
+        ...l(a, v.Converged),
+        rememberedAccountsParams: {
+          msaUrl: M(a.msa.rememberedAccountsUrl, { idpflag: "proxy" })
+        }
+      };
+    }, A = () => {
+      const a = b, y = a.signInExperienceTypes;
+      return {
+        signIn: () => a.signIn({ signInType: y }),
+        signOut: () => a.signOutFromApp({ currentAccount: c() }),
+        addNewAccount: () => {
+          var f;
+          return (f = a == null ? void 0 : a.switch) == null ? void 0 : f.call(a, { currentAccount: c(), signInType: y });
+        },
+        switchTo: ({ accountId: f }) => {
+          var S;
+          return (S = a == null ? void 0 : a.switchTo) == null ? void 0 : S.call(a, {
+            currentAccount: c(),
+            nextAccount: { memberName: f }
+          });
+        },
+        rememberedAccountsParams: {
+          getRememberedAccounts: () => {
+            var f;
+            return a && a.getRememberedAccounts ? (f = a == null ? void 0 : a.getRememberedAccounts) == null ? void 0 : f.call(a).then((S) => S && S.length > 0 ? S.map((N) => {
+              var K;
+              return {
+                id: N.uaid,
+                accountType: N.type == E.AAD ? "AAD" : "MSA",
+                preferredUsername: N.memberName,
+                friendlyName: N.displayName,
+                profilePicUrl: (K = N.profile) == null ? void 0 : K.profilePictureUrl,
+                sessionId: N.sessionId
+              };
+            }) : []) : new Promise(() => []);
+          }
+        }
+      };
+    }, T = () => {
+      const a = b;
+      return {
+        signIn: () => a.signIn({ signInType: v.Aad }),
+        signOut: () => a.signOutFromApp({ currentAccount: c() }),
+        addNewAccount: () => {
+          var y;
+          return (y = a == null ? void 0 : a.switch) == null ? void 0 : y.call(a, {
+            currentAccount: c(),
+            signInType: v.Aad
+          });
+        },
+        switchTo: ({ accountId: y }) => {
+          var f;
+          return (f = a == null ? void 0 : a.switchTo) == null ? void 0 : f.call(a, {
+            currentAccount: c(),
+            nextAccount: { memberName: y }
+          });
+        },
+        rememberedAccountsParams: {
+          aadUrl: M(a.aad.rememberedAccountsUrl)
+        }
+      };
+    }, U = () => {
+      const a = b;
+      return {
+        signIn: () => a.signIn({ signInType: v.Aad }),
+        signOut: () => a.signOutFromApp({ currentAccount: c() }),
+        addNewAccount: () => {
+          var y;
+          return (y = a == null ? void 0 : a.switch) == null ? void 0 : y.call(a, {
+            currentAccount: c(),
+            signInType: v.Aad
+          });
+        },
+        switchTo: ({ accountId: y }) => {
+          var f;
+          return (f = a == null ? void 0 : a.switchTo) == null ? void 0 : f.call(a, {
+            currentAccount: c(),
+            nextAccount: { memberName: y }
+          });
+        },
+        rememberedAccountsParams: {
+          aadUrl: M(a.aad.rememberedAccountsUrl)
+        }
+      };
+    };
+    if (!i())
+      return {};
+    let b = t.meControlOptions.authProviderConfig;
+    switch (b.type) {
+      case C.WebDualStack:
+        return p();
+      case C.WebAadWithMsaFed:
+        return d();
+      case C.WebAadOnly:
+        return d();
+      case C.WebMsaOnly:
+        return I();
+      case C.WebAadWithMsaProxy:
+        return u();
+      case C.WebMsaWithAadProxy:
+        return g();
+      case C.PartnerManaged:
+        return A();
+      case C.AdalJsAadOnly:
+      case C.AdalJsWithMsaFed:
+        return T();
+      case C.MsalJsAadOnly:
+      case C.MsalJsWithMsa:
+        return U();
+      default:
+        return m(v.Converged);
+    }
+  }, [
+    t,
+    r
+  ]);
+}, tt = function(t, r, o, n) {
+  const [s, i] = w.useState(void 0);
+  return w.useEffect(() => {
+    t && We({ msaUrl: r, aadUrl: o, getRememberedAccounts: n }).then((c) => {
+      i(c.rememberedAccounts);
+    }).catch(() => {
+    });
+  }, [r, o, n, t]), s;
+}, rt = (e) => {
+  if (e)
+    try {
+      const t = JSON.parse(e);
+      return t == null ? void 0 : t.map((r) => ({
+        href: r.url || "/",
+        displayText: r.text || ""
+      }));
+    } catch {
+      return;
+    }
+}, nt = function(t, r, o) {
+  const n = (c, l) => {
+    if (c) {
+      if (typeof c == "string")
+        return c;
+      if (r)
+        return c({
+          commandId: l,
+          currentAccount: r
+        });
+    }
+  }, s = () => {
+    var c;
+    return (c = t == null ? void 0 : t.commands) == null ? void 0 : c.map((l) => ({
+      href: n(l.url, l.id) || "/",
+      displayText: l.text
+    }));
+  };
+  return w.useMemo(() => s() ?? rt(o), [t, o]);
+};
+var q = /* @__PURE__ */ ((e) => (e.SignedIn = "1", e.SignedInIdp = "2", e.NotSignedIn = "3", e))(q || {}), G = /* @__PURE__ */ ((e) => (e.MSA = "msa", e.AAD = "aad", e))(G || {}), de = /* @__PURE__ */ ((e) => (e.AAD = "aad", e.MSA = "msa", e.MSA_FED = "msaFed", e))(de || {});
+const j = (e, t) => t === G.AAD ? {
+  appSignOutUrl: R(e.aadInfo.signOutUrl, e.aadInfo.generateSignOutReturnUrl),
+  appSignInUrl: R(e.aadInfo.signInUrl, e.aadInfo.generateSignInReturnUrl)
+} : {
+  appSignOutUrl: R(e.msaInfo.signOutUrl, e.msaInfo.generateSignOutReturnUrl),
+  appSignInUrl: R(e.msaInfo.signInUrl, e.msaInfo.generateSignInReturnUrl)
+}, se = (e) => ({
+  signOutUrl: R(e.signOutUrl, e.generateSignOutReturnUrl),
+  rememberedAccountsUrl: e.meUrl,
+  signOutAndForgetUrl: R(e.signOutUrl, e.generateSignOutReturnUrl),
+  forgetUrl: R(e.signOutUrl, e.generateSignOutReturnUrl)
+}), oe = (e) => ({
+  signOutAndForgetUrl: R(e.signOutUrl, e.generateSignOutReturnUrl),
+  rememberedAccountsUrl: e.meUrl
+}), st = (e) => {
+  let t;
+  return e.aadInfo && e.msaInfo ? t = {
+    type: C.WebDualStack,
+    ...j(e, e.preferredIdp),
+    aad: se(e.aadInfo),
+    msa: oe(e.msaInfo)
+  } : e.aadInfo ? t = {
+    type: C.WebAadOnly,
+    ...j(e, G.AAD),
+    aad: se(e.aadInfo)
+  } : t = {
+    type: C.WebMsaOnly,
+    ...j(e, G.MSA),
+    msa: oe(e.msaInfo)
+  }, t;
+}, me = (e) => {
+  switch (e) {
+    case q.SignedIn:
+      return L.SignedIn;
+    case q.SignedInIdp:
+      return L.SignedInIDPOnly;
+    case q.NotSignedIn:
+      return L.NotSignedIn;
+    default:
+      return L.NotSignedIn;
+  }
+}, ot = (e) => ({
+  type: E.MSA,
+  cid: e.cid,
+  firstName: e.firstName,
+  lastName: e.lastName,
+  memberName: e.memberName,
+  displayName: e.nickName || `${e.firstName} ${e.lastName}`,
+  authenticatedState: me(e.authenticatedState),
+  pictureUrl: e.tileUrl
+}), at = (e) => ({
+  type: E.AAD,
+  firstName: e.firstName,
+  lastName: e.lastName,
+  memberName: e.memberName,
+  displayName: e.displayName || `${e.firstName} ${e.lastName}`,
+  roleName: e.roleName,
+  orgLogoUrl: e.orgLogoUrl,
+  orgName: e.orgName,
+  sessionId: e.sessionId,
+  authenticatedState: me(e.authenticatedState),
+  pictureUrl: e.tileUrl
+}), it = (e) => !e || e === q.NotSignedIn || String(e).toLowerCase() === "notsignedin", ct = (e) => {
+  if (!(!e || it(e.authenticatedState) || !e.memberName))
+    return e.idp === de.MSA ? ot(e) : at(e);
+}, lt = (e) => {
+  if (!(!e || !e.meControlOptions))
+    return {
+      meControlOptions: {
+        apiGeneration: "GEN2",
+        authProviderConfig: st(e.meControlOptions.rpData),
+        currentAccount: ct(e.meControlOptions.userData)
+      }
+    };
+}, ut = () => {
+  const [e, t] = w.useState(k.getState().meControlState);
+  w.useEffect(() => {
+    const n = k.subscribe((s) => {
+      s.meControlState && JSON.stringify(s.meControlState) !== JSON.stringify(e) && t(s.meControlState);
+    });
+    return () => {
+      k.unsubscribe(n);
+    };
+  }, []);
+  const r = (n) => {
+    k.setState((s) => ({ meControlState: { ...s.meControlState, config: n } }));
+  }, o = (n) => {
+    if (k.setState((s) => ({ meControlState: { ...s.meControlState, activeAccount: n } })), n && n.memberName && !n.pictureUrl) {
+      const s = {
+        id: n.memberName,
+        accountType: n.type == E.AAD ? "AAD" : "MSA",
+        preferredUsername: n.memberName,
+        friendlyName: n.displayName,
+        sessionId: n.sessionId,
+        tenantId: n.type === E.AAD ? n.tenantId : void 0,
+        tenantName: n.type === E.AAD ? n.orgName : void 0
+      };
+      Qe(s).then((i) => {
+        i && k.setState((c) => ({
+          meControlState: {
+            ...c.meControlState,
+            activeAccount: { ...n, pictureUrl: i }
+          }
+        }));
+      }).catch(() => {
+        console.error("MeControl: Failed to get profile picture from graph");
+      });
+    }
+  };
+  return { config: e.config, activeAccount: e.activeAccount, setConfig: r, setActiveAccount: o };
+}, dt = () => {
+  const [e, t] = w.useState($.getContext().headerTheme || pe.LIGHT);
+  return w.useEffect(() => {
+    const r = $.subscribe((o) => {
+      o.headerTheme && t(o.headerTheme);
+    });
+    return () => $.unsubscribe(r);
+  }, []), e;
+}, mt = (e) => {
+  const { config: t, activeAccount: r, setConfig: o, setActiveAccount: n } = ut(), s = dt(), i = et(
+    t,
+    r || {}
+  ), c = tt(
+    t !== void 0,
+    i && i.rememberedAccountsParams && i.rememberedAccountsParams.msaUrl,
+    i && i.rememberedAccountsParams && i.rememberedAccountsParams.aadUrl,
+    i && i.rememberedAccountsParams && i.rememberedAccountsParams.getRememberedAccounts
+  ), l = nt(
+    t && t.meControlOptions && t.meControlOptions.appContextConfig,
+    r,
+    e.extensibleLinks
+  );
+  w.useEffect(() => {
+    (!window.msCommonShell || !window.MeControl) && m();
+  }, []);
+  const m = () => {
+    window.msCommonShell = {}, window.msCommonShell.load = (u) => {
+      if (u.meControlOptions.apiGeneration === "GEN2") {
+        let g = u;
+        o(g), g.meControlOptions.currentAccount && n(g.meControlOptions.currentAccount);
+      } else {
+        let A = lt(u);
+        A && (o(A), A.meControlOptions.currentAccount && n(A.meControlOptions.currentAccount));
+      }
+    }, window.MeControl = {}, window.MeControl.API = {}, window.MeControl.API.setActiveAccount = (u) => {
+      n(u);
+    }, window.onShellReadyToLoad && window.onShellReadyToLoad();
+  }, p = (u) => {
+    if (!u)
+      return null;
+    let g = u.memberName, A = u.pictureUrl;
+    return u.profile && (g = u.profile.profileName ?? g, A = u.profile.profilePictureUrl ?? A), {
+      accountType: u.type === E.MSA ? "MSA" : "AAD",
+      preferredUsername: g,
+      friendlyName: u.displayName,
+      profilePicUrl: A,
+      sessionId: u.sessionId,
+      tenantId: u.type === E.AAD ? u.tenantId : void 0,
+      tenantName: u.type === E.AAD ? u.orgName : void 0
+    };
+  }, d = w.useRef(null), I = w.useCallback(() => {
+    var A;
+    const u = (A = d.current) == null ? void 0 : A.closest("uhf-mecontrol"), g = u == null ? void 0 : u.querySelector("button");
+    g == null || g.click();
+  }, []);
+  return /* @__PURE__ */ h.createElement(h.Fragment, null, !r && e.signInLabelText && /* @__PURE__ */ h.createElement(
+    "span",
+    {
+      ref: d,
+      className: "uhf-mecontrol-signin-label",
+      onClick: I,
+      "data-m": '{"compnm":"UHF","view":"UHF","pa":"UniversalHeader","cN":"GlobalNav_Account_SignIn","bhvr":82}'
+    },
+    e.signInLabelText
+  ), /* @__PURE__ */ h.createElement(
+    ze,
+    {
+      handlers: i,
+      locale: "en-us",
+      theme: s,
+      partner: "UHFPortal",
+      currentAccount: p(r),
+      rememberedAccounts: c,
+      additionalLinks: l
+    }
+  ));
+}, ft = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  default: mt
+}, Symbol.toStringTag, { value: "Module" }));
+export {
+  ft as M,
+  _ as t,
+  fe as u
+};
+
+// SIG // Begin signature block
+// SIG // MIIo1gYJKoZIhvcNAQcCoIIoxzCCKMMCAQExDzANBglg
+// SIG // hkgBZQMEAgEFADB3BgorBgEEAYI3AgEEoGkwZzAyBgor
+// SIG // BgEEAYI3AgEeMCQCAQEEEBDgyQbOONQRoqMAEEvTUJAC
+// SIG // AQACAQACAQACAQACAQAwMTANBglghkgBZQMEAgEFAAQg
+// SIG // VFKWdPM9X+tcG8YHaF/Eugr07rU9TV6RImpXszb3SISg
+// SIG // gg3DMIIGrTCCBJWgAwIBAgITMwAAANMCiNhpvd8CCQAA
+// SIG // AAAA0zANBgkqhkiG9w0BAQwFADBiMQswCQYDVQQGEwJV
+// SIG // UzEeMBwGA1UEChMVTWljcm9zb2Z0IENvcnBvcmF0aW9u
+// SIG // MTMwMQYDVQQDEypBenVyZSBSU0EgUHVibGljIFNlcnZp
+// SIG // Y2VzIENvZGUgU2lnbmluZyBQQ0EwHhcNMjYwMzA1MTkw
+// SIG // NjE5WhcNMjcwMzAzMTkwNjE5WjCBgjELMAkGA1UEBhMC
+// SIG // VVMxEzARBgNVBAgTCldhc2hpbmd0b24xEDAOBgNVBAcT
+// SIG // B1JlZG1vbmQxHjAcBgNVBAoTFU1pY3Jvc29mdCBDb3Jw
+// SIG // b3JhdGlvbjEsMCoGA1UEAxMjQXp1cmUgUHVibGljIFNl
+// SIG // cnZpY2VzIFJTQSBDb2RlIFNpZ24wggGiMA0GCSqGSIb3
+// SIG // DQEBAQUAA4IBjwAwggGKAoIBgQDJrDsZxGHNBYj5RPkR
+// SIG // yGEIGZlcCQkqE7SdGa6c2FPAMGu1JLqHur8qNWjR5swe
+// SIG // kMMn0WSz2+QE0c848wHvqVVLpWV+Un3Q01Dnyzjifae4
+// SIG // h+kzhQTUIhX2rKQbGHdqBe7LXyCgkfDrTNLXsI1xAXAw
+// SIG // A42Ar+PpVd1ktqLSsM6pwqrM/FFfEizl9h5gtrEIZODp
+// SIG // +jo9vESxKvHGp/Ifca7e/IluDeJffP4ME/fFtUzUCLH/
+// SIG // IweugiUcsaTmewSny4odYLtmZK/zpBuPjGTLpUnn4HMy
+// SIG // WXLUSOFlgvFrLKCPZxbNxXxBo5EUquzrFbpg9NmQVipJ
+// SIG // QsKDSKNHluTwNicItFpZpiPMc7Y2LG11dNAil3yJEBLF
+// SIG // MQ/5RqQptcWmgSKoG8Tx7x+RCYQj4Sjl2yJt+4OykVn9
+// SIG // /kQ5wo6v6TmIHHZsKdmgIkMCKBuIRcB2FaGwLY+UGMP1
+// SIG // xmiwIaekgjUgVwXX8Kv/2SYI9XXrjyUME4NLj0JTBIO7
+// SIG // YX201gYYOL8CAwEAAaOCAbkwggG1MA4GA1UdDwEB/wQE
+// SIG // AwIHgDAfBgNVHSUEGDAWBggrBgEFBQcDAwYKKwYBBAGC
+// SIG // N1sBATAdBgNVHQ4EFgQU6DIfaqBAAm33/QFJGYifZUeQ
+// SIG // B3AwRQYDVR0RBD4wPKQ6MDgxHjAcBgNVBAsTFU1pY3Jv
+// SIG // c29mdCBDb3Jwb3JhdGlvbjEWMBQGA1UEBRMNNDY5OTgx
+// SIG // KzUwNzE4MTAfBgNVHSMEGDAWgBTxL7qRFnzefVInMfV6
+// SIG // +9VYWWk6PTBvBgNVHR8EaDBmMGSgYqBghl5odHRwOi8v
+// SIG // d3d3Lm1pY3Jvc29mdC5jb20vcGtpb3BzL2NybC9BenVy
+// SIG // ZSUyMFJTQSUyMFB1YmxpYyUyMFNlcnZpY2VzJTIwQ29k
+// SIG // ZSUyMFNpZ25pbmclMjBQQ0EuY3JsMHwGCCsGAQUFBwEB
+// SIG // BHAwbjBsBggrBgEFBQcwAoZgaHR0cDovL3d3dy5taWNy
+// SIG // b3NvZnQuY29tL3BraW9wcy9jZXJ0cy9BenVyZSUyMFJT
+// SIG // QSUyMFB1YmxpYyUyMFNlcnZpY2VzJTIwQ29kZSUyMFNp
+// SIG // Z25pbmclMjBQQ0EuY3J0MAwGA1UdEwEB/wQCMAAwDQYJ
+// SIG // KoZIhvcNAQEMBQADggIBAKJEWoxuo4PDUOPrpeqZZBdc
+// SIG // EBjIoYQZjSvEIMTd0fcf89rWN/fr6cbAs3fZtR1LQ2kR
+// SIG // Wo2mYixmAQpm6ijAYu3Qg+/NIHofviOVCDqHmaQGEiwi
+// SIG // oBsb7Et9V7B9rqsksJslTyCJUJYuIXaKv37suPC7cFpX
+// SIG // aaWaNLn0juz1sPKdklvTO23fwcahgRO9nqd9gTi9j6dw
+// SIG // /nEJURWo32dl+rxdylnuRd6RHpkJKdlPVXRrr/ZL8sby
+// SIG // akoCUN4zNVivUMLmUspYRJIV2TpkZonQnrmTm6TpXGVg
+// SIG // Cjj56duTzVa/GRAKLVBHNm8je6esjgoswv6eHmYkmgJR
+// SIG // jvZ+eHNloLnXfqByg3CxJ0Gd+nja5RTavYplIc9zfOgq
+// SIG // Ng5e6NW8E0Q/AI115WfpM+ncWenWqdPs1YLinyUdRDxi
+// SIG // DTmhYTyN1p3FojGtyM+mrQVIvC2l8zQr/LNCTvz/dj2h
+// SIG // WqsF/7SDnK4wE812YAp6pPfgtr6BfVD0LMJu+s6f2PXe
+// SIG // oLskA4Ac2PoJz5N7FmeY7Wn5shZBf4hOqCJssd5ZBpUb
+// SIG // tGYh3iCnQSJP9EokoxVxe7D5HmkqTRNnXqIDQ5zW6bL3
+// SIG // SDCYFEG5EWtqV9Ytd0Mjplx/s5+w1TnYbXIKbPzi4Hnb
+// SIG // 3Xr0m8YnMuVyhmxGyHZ2CjMpQclgocs2QNsOyr7evLGD
+// SIG // MIIHDjCCBPagAwIBAgITMwAAAAKyxJOIeFns0wAAAAAA
+// SIG // AjANBgkqhkiG9w0BAQwFADBbMQswCQYDVQQGEwJVUzEe
+// SIG // MBwGA1UEChMVTWljcm9zb2Z0IENvcnBvcmF0aW9uMSww
+// SIG // KgYDVQQDEyNNaWNyb3NvZnQgUlNBIFNlcnZpY2VzIFJv
+// SIG // b3QgQ0EgMjAyMTAeFw0yMTA5MDIxNzQxMTlaFw0zNjA5
+// SIG // MDIxNzUxMTlaMGIxCzAJBgNVBAYTAlVTMR4wHAYDVQQK
+// SIG // ExVNaWNyb3NvZnQgQ29ycG9yYXRpb24xMzAxBgNVBAMT
+// SIG // KkF6dXJlIFJTQSBQdWJsaWMgU2VydmljZXMgQ29kZSBT
+// SIG // aWduaW5nIFBDQTCCAiIwDQYJKoZIhvcNAQEBBQADggIP
+// SIG // ADCCAgoCggIBAKXd/Sy91nFgseVJOFgeRhVxrcahyp1Y
+// SIG // GSN0FpOEgEREVb3ND/QgI7I0yd7XG6OE8Vomr5FMxvK8
+// SIG // TvJ4Lc6LP9BDz2GSa1M0LlzHKX757/24C0ZndzccA1qQ
+// SIG // i00+BmmOr4plmxRzTFv4Phdw8yBPF9GDvClqV8ASvvbi
+// SIG // tfjaD7dVPOFLb7N7fvt/qWogGN5eis0FXCqVJdmPZZaX
+// SIG // 2h4iG0otsAhfq8yvSlJ0YwO4i5GDeLQwTsMN1Rf2UAHQ
+// SIG // KCUYkFsLSQ0mqbaRbDZhB+2pFL/q/c2a6hlHLnapYyfw
+// SIG // lNFXkDhwAFWEzfwFHER2oR42UayfN9tsO/p2tWk33Crn
+// SIG // HdndJDrIZ6oQ3D+Ngol/TR8BAgXCIM6se6YlLDTsxRwh
+// SIG // 9QUDq7KVhKy58HGKJUqwgIW0E7cvlzUl0Hft/ebhALZy
+// SIG // FDkhof9C5Cq4c/486XLjQq0nbuKsFNhQU0yvABR3eohw
+// SIG // 63Kps66Uma48oE0JmqOxmzrPvrITYcsnByKleiHn+4yq
+// SIG // +Ts/KrtqkQwQcuikMPrZwXCtsYkxMUyUn8gr8oew22WD
+// SIG // eIQECAM1Cz9TcdJadsrToKqXQa2bAn/AABAYyogPPONf
+// SIG // GvojTI3DlYD42etMa/gPeZJavX+z7x8d/4eYBnJ9WFSi
+// SIG // 9q0v+vLOGc3fyM2KQtq5eVbHX5rVyWc6bJ35AgMBAAGj
+// SIG // ggHCMIIBvjAQBgkrBgEEAYI3FQEEAwIBADAdBgNVHQ4E
+// SIG // FgQU8S+6kRZ83n1SJzH1evvVWFlpOj0wVAYDVR0gBE0w
+// SIG // SzBJBgRVHSAAMEEwPwYIKwYBBQUHAgEWM2h0dHA6Ly93
+// SIG // d3cubWljcm9zb2Z0LmNvbS9wa2lvcHMvRG9jcy9SZXBv
+// SIG // c2l0b3J5Lmh0bTAZBgkrBgEEAYI3FAIEDB4KAFMAdQBi
+// SIG // AEMAQTALBgNVHQ8EBAMCAYYwDwYDVR0TAQH/BAUwAwEB
+// SIG // /zAfBgNVHSMEGDAWgBQODLFkab0tsdVrJqZH6lZOgMPt
+// SIG // ijBmBgNVHR8EXzBdMFugWaBXhlVodHRwOi8vd3d3Lm1p
+// SIG // Y3Jvc29mdC5jb20vcGtpb3BzL2NybC9NaWNyb3NvZnQl
+// SIG // MjBSU0ElMjBTZXJ2aWNlcyUyMFJvb3QlMjBDQSUyMDIw
+// SIG // MjEuY3JsMHMGCCsGAQUFBwEBBGcwZTBjBggrBgEFBQcw
+// SIG // AoZXaHR0cDovL3d3dy5taWNyb3NvZnQuY29tL3BraW9w
+// SIG // cy9jZXJ0cy9NaWNyb3NvZnQlMjBSU0ElMjBTZXJ2aWNl
+// SIG // cyUyMFJvb3QlMjBDQSUyMDIwMjEuY3J0MA0GCSqGSIb3
+// SIG // DQEBDAUAA4ICAQBin7PMBnXjnIJ0x++LnudLDWWnZ8dZ
+// SIG // mJ14DuZfUss/doUThLAM4crrHaTbJoulUUELNd2AnOpX
+// SIG // /Z4tenUMT3sjYIdPYyJfIYWPRqfI6Nbz+JVK7RRvn2nl
+// SIG // 5EEMIuRE6UKS9ZGBbf02a7sb04E/7BN/NhhrmtS/tVFj
+// SIG // fRrrVh9zXku45rqWuCwUTzg3EqxKQ8OGbtjBQtq/Syb/
+// SIG // clm5BHsoh3XhMnb9VLv3G1duNf90FL5/o88XZ4L18nx1
+// SIG // lfky2nllY4HIA8PK8AarqAW4iKSTA3EGqn8s/47WtQKT
+// SIG // +qED2YbZXVOYL+L7vQDCnFbwhgAx6ucuMz7Ae1rqibg3
+// SIG // AjsC7U5M3oA/vqAHDKDA3mdM5D6L/ZEdQgaG20HhUOSQ
+// SIG // +CiQD3TyHSiVCfVMuTv83IiKCni3LW/23tHC2tbN57rl
+// SIG // hMcoyjIi+IVd7j7s41MFBaDwJrmfXn/YM+lR/5QqvO7z
+// SIG // WAbbr/XU531v3jr/jBilmrqt6U/b7y8TXyA9nYxV9iSM
+// SIG // FmcbyIi2xgdcAHhxnpXcvcvyFWET6YiJiyeSJZwwJv8g
+// SIG // wXiBF+Zh0IHArl6KVsbAdsATuP1TCEBpPynXZmkviIEW
+// SIG // Ptnv315ZjTC7nPoOpSnOVaO7wZztrOefZunI5fBxw7mG
+// SIG // 1oyoRnADZawiFsVo9J/cDu15ErRCfDQRhwSiBTGCGmsw
+// SIG // ghpnAgEBMHkwYjELMAkGA1UEBhMCVVMxHjAcBgNVBAoT
+// SIG // FU1pY3Jvc29mdCBDb3Jwb3JhdGlvbjEzMDEGA1UEAxMq
+// SIG // QXp1cmUgUlNBIFB1YmxpYyBTZXJ2aWNlcyBDb2RlIFNp
+// SIG // Z25pbmcgUENBAhMzAAAA0wKI2Gm93wIJAAAAAADTMA0G
+// SIG // CWCGSAFlAwQCAQUAoIGQMBkGCSqGSIb3DQEJAzEMBgor
+// SIG // BgEEAYI3AgEEMC8GCSqGSIb3DQEJBDEiBCAt9Mk5AvvP
+// SIG // 6HurSAk7CG6l0/IZR4XbeBcXXcBYghlOTTBCBgorBgEE
+// SIG // AYI3AgEMMTQwMqAUgBIATQBpAGMAcgBvAHMAbwBmAHSh
+// SIG // GoAYaHR0cDovL3d3dy5taWNyb3NvZnQuY29tMA0GCSqG
+// SIG // SIb3DQEBAQUABIIBgLC6TekEVIamClNcOZ1b3DyWg3fF
+// SIG // NkNfGbGgHyZMHP0vmysFk22WAHJ4A6oeKAJlYPiqrhOI
+// SIG // PBO/p9G9zmj8x3zoQJreTekk72V4VptytwhgyAIk0haC
+// SIG // rL4OnF637WlgvA8NZlNqkeD58yhO3JgsoCfTyahPFcOq
+// SIG // 9L8GbOnPhi3zhBEm0/mWXA1e8zpRO41WxH9xKbfrSLXa
+// SIG // eeD8r22wOlXJwmDOMaEHvQE9Guud+w3xnDk0zrnbu4Gq
+// SIG // Ndq99IxwuviCllt9cRQeTnGybXQZyEY19QVxWmEXbDWI
+// SIG // E1rIqcvkDBW4xioWJyfDpS2nBhveAKXDJdpUEk/4SM1N
+// SIG // l0Dfo95bQ/Z8PFlyN68cvsGOGqAHE46XbOtKSLDzPZ1/
+// SIG // aHygYjCrx1Zeu8YuJ8QN8x8JBrf80Ye34O04yXQfFDFZ
+// SIG // /pf8FJtBRWMeDYzwq2mGYFjz8HKsVixrh0d8WJgc57GE
+// SIG // Ia53AOHXaEAqyYlSznXPRZrFT+h9v+L7LxQMjSYXxdqB
+// SIG // YaGCF7AwghesBgorBgEEAYI3AwMBMYIXnDCCF5gGCSqG
+// SIG // SIb3DQEHAqCCF4kwgheFAgEDMQ8wDQYJYIZIAWUDBAIB
+// SIG // BQAwggFaBgsqhkiG9w0BCRABBKCCAUkEggFFMIIBQQIB
+// SIG // AQYKKwYBBAGEWQoDATAxMA0GCWCGSAFlAwQCAQUABCDN
+// SIG // zV1a/xlQSXXE6JA1NkPnb2d2BJ9EjUpgxCs5gzKJFwIG
+// SIG // aq0o5O3/GBMyMDI2MDkyODE2MDAwNC4xMzdaMASAAgH0
+// SIG // oIHZpIHWMIHTMQswCQYDVQQGEwJVUzETMBEGA1UECBMK
+// SIG // V2FzaGluZ3RvbjEQMA4GA1UEBxMHUmVkbW9uZDEeMBwG
+// SIG // A1UEChMVTWljcm9zb2Z0IENvcnBvcmF0aW9uMS0wKwYD
+// SIG // VQQLEyRNaWNyb3NvZnQgSXJlbGFuZCBPcGVyYXRpb25z
+// SIG // IExpbWl0ZWQxJzAlBgNVBAsTHm5TaGllbGQgVFNTIEVT
+// SIG // Tjo2QjA1LTA1RTAtRDk0NzElMCMGA1UEAxMcTWljcm9z
+// SIG // b2Z0IFRpbWUtU3RhbXAgU2VydmljZaCCEf4wggcoMIIF
+// SIG // EKADAgECAhMzAAACEUUYOZtDz/xsAAEAAAIRMA0GCSqG
+// SIG // SIb3DQEBCwUAMHwxCzAJBgNVBAYTAlVTMRMwEQYDVQQI
+// SIG // EwpXYXNoaW5ndG9uMRAwDgYDVQQHEwdSZWRtb25kMR4w
+// SIG // HAYDVQQKExVNaWNyb3NvZnQgQ29ycG9yYXRpb24xJjAk
+// SIG // BgNVBAMTHU1pY3Jvc29mdCBUaW1lLVN0YW1wIFBDQSAy
+// SIG // MDEwMB4XDTI1MDgxNDE4NDgxM1oXDTI2MTExMzE4NDgx
+// SIG // M1owgdMxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpXYXNo
+// SIG // aW5ndG9uMRAwDgYDVQQHEwdSZWRtb25kMR4wHAYDVQQK
+// SIG // ExVNaWNyb3NvZnQgQ29ycG9yYXRpb24xLTArBgNVBAsT
+// SIG // JE1pY3Jvc29mdCBJcmVsYW5kIE9wZXJhdGlvbnMgTGlt
+// SIG // aXRlZDEnMCUGA1UECxMeblNoaWVsZCBUU1MgRVNOOjZC
+// SIG // MDUtMDVFMC1EOTQ3MSUwIwYDVQQDExxNaWNyb3NvZnQg
+// SIG // VGltZS1TdGFtcCBTZXJ2aWNlMIICIjANBgkqhkiG9w0B
+// SIG // AQEFAAOCAg8AMIICCgKCAgEAz7m7MxAdL5Vayrk7jsMo
+// SIG // 3GnhN85ktHCZEvEcj4BIccHKd/NKC7uPvpX5dhO63W6V
+// SIG // M5iCxklG8qQeVVrPaKvj8dYYJC7DNt4NN3XlVdC/vove
+// SIG // JuPPhTJ/u7X+pYmV2qehTVPOOB1/hpmt51SzgxZczMdn
+// SIG // Fl+X2e1PgutSA5CAh9/Xz5NW0CxnYVz8g0Vpxg+Bq32a
+// SIG // mktRXr8m3BSEgUs8jgWRPVzPHEczpbhloGGEfHaROmHh
+// SIG // VKIqN+JhMweEjU2NXM2W6hm32j/QH/I/KWqNNfYchHaG
+// SIG // 0xJljVTYoUKPpcQDuhH9dQKEgvGxj2U5/3Fq1em4dO6I
+// SIG // h04m6R+ttxr6Y8oRJH9ZhZ3sciFBIvZh7E2YFXOjP4MG
+// SIG // ybSylQTPDEFAtHHgpkskeEUhsPDR9VvWWhekhQx3qXaA
+// SIG // Kh+AkLmz/hpE3e0y+RIKO2AREjULJAKgf+R9QnNvqMeM
+// SIG // kz9PGrjsijqWGzB2k2JNyaUYKlbmQweOabsCioiY2fJb
+// SIG // imjVyFAGk5AeYddUFxvJGgRVCH7BeBPKAq7MMOmSCTOM
+// SIG // Z0Sw6zyNx4Uhh5Y0uJ0ZOoTKnB3KfdN/ba/eKHFeEhi3
+// SIG // WqAfzTxiy0rMvhsfsXZK7zoclqaRvVl8Q48J174+eyri
+// SIG // ypY9HhU+ohgiYi4uQGDDVdTDeKDtoC/hD2Cn+ARzwE1r
+// SIG // FfECAwEAAaOCAUkwggFFMB0GA1UdDgQWBBRifUUDwOnq
+// SIG // Icvfb53+yV0EZn7OcDAfBgNVHSMEGDAWgBSfpxVdAF5i
+// SIG // XYP05dJlpxtTNRnpcjBfBgNVHR8EWDBWMFSgUqBQhk5o
+// SIG // dHRwOi8vd3d3Lm1pY3Jvc29mdC5jb20vcGtpb3BzL2Ny
+// SIG // bC9NaWNyb3NvZnQlMjBUaW1lLVN0YW1wJTIwUENBJTIw
+// SIG // MjAxMCgxKS5jcmwwbAYIKwYBBQUHAQEEYDBeMFwGCCsG
+// SIG // AQUFBzAChlBodHRwOi8vd3d3Lm1pY3Jvc29mdC5jb20v
+// SIG // cGtpb3BzL2NlcnRzL01pY3Jvc29mdCUyMFRpbWUtU3Rh
+// SIG // bXAlMjBQQ0ElMjAyMDEwKDEpLmNydDAMBgNVHRMBAf8E
+// SIG // AjAAMBYGA1UdJQEB/wQMMAoGCCsGAQUFBwMIMA4GA1Ud
+// SIG // DwEB/wQEAwIHgDANBgkqhkiG9w0BAQsFAAOCAgEApEKd
+// SIG // nMeIIUiU6PatZ/qbrwiDzYUMKRczC4Bp/XY1S9NmHI+2
+// SIG // c3dcpwH2SOmDfdvIIqt7mRrgvBPYOvJ9CtZS5eeIrsOb
+// SIG // C0b0ggKTv2wrTgWG+qktqNFEhQeipdURNLN68uHAm5ed
+// SIG // wBytd1kwy5r6B93klxDsldOmVWtw/ngj7knN09muCmwr
+// SIG // 17JnsMFcoIN/H59s+1RYN7Vid4+7nj8FcvYy9rbZOMnd
+// SIG // BzsTiosF1M+aMIJX2k3EVFVsuDL7/R5ppI9Tg7eWQOWK
+// SIG // MZHPdsA3ZqWzDuhJqTzoFSQShnZenC+xq/z9BhHPFFbU
+// SIG // tfjAoG6EDPjSQJYXmogja8OEa19xwnh3wVufeP+ck+/0
+// SIG // gxNi7g+kO6WaOm052F4siD8xi6Uv75L7798lHvPThcxH
+// SIG // HsgXqMY592d1wUof3tL/eDaQ0UhnYCU8yGkU2XJnctON
+// SIG // nBKAvURAvf2qiIWDj4Lpcm0zA7VuofuJR1Tpuyc5p1ja
+// SIG // 52bNZBBVqAOwyDhAmqWsJXAjYXnssC/fJkee314Fh+GI
+// SIG // yMgvAPRScgqRZqV16dTBYvoe+w1n/wWs/ySTUsxDw4T/
+// SIG // AITcu5PAsLnCVpArDrFLRTFyut+eHUoG6UYZfj8/RsuQ
+// SIG // 42INse1pb/cPm7G2lcLJtkIKT80xvB1LiaNvPTBVEcmN
+// SIG // SvFUM0xrXZXcYcxVXiYwggdxMIIFWaADAgECAhMzAAAA
+// SIG // FcXna54Cm0mZAAAAAAAVMA0GCSqGSIb3DQEBCwUAMIGI
+// SIG // MQswCQYDVQQGEwJVUzETMBEGA1UECBMKV2FzaGluZ3Rv
+// SIG // bjEQMA4GA1UEBxMHUmVkbW9uZDEeMBwGA1UEChMVTWlj
+// SIG // cm9zb2Z0IENvcnBvcmF0aW9uMTIwMAYDVQQDEylNaWNy
+// SIG // b3NvZnQgUm9vdCBDZXJ0aWZpY2F0ZSBBdXRob3JpdHkg
+// SIG // MjAxMDAeFw0yMTA5MzAxODIyMjVaFw0zMDA5MzAxODMy
+// SIG // MjVaMHwxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpXYXNo
+// SIG // aW5ndG9uMRAwDgYDVQQHEwdSZWRtb25kMR4wHAYDVQQK
+// SIG // ExVNaWNyb3NvZnQgQ29ycG9yYXRpb24xJjAkBgNVBAMT
+// SIG // HU1pY3Jvc29mdCBUaW1lLVN0YW1wIFBDQSAyMDEwMIIC
+// SIG // IjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEA5OGm
+// SIG // TOe0ciELeaLL1yR5vQ7VgtP97pwHB9KpbE51yMo1V/YB
+// SIG // f2xK4OK9uT4XYDP/XE/HZveVU3Fa4n5KWv64NmeFRiMM
+// SIG // tY0Tz3cywBAY6GB9alKDRLemjkZrBxTzxXb1hlDcwUTI
+// SIG // cVxRMTegCjhuje3XD9gmU3w5YQJ6xKr9cmmvHaus9ja+
+// SIG // NSZk2pg7uhp7M62AW36MEBydUv626GIl3GoPz130/o5T
+// SIG // z9bshVZN7928jaTjkY+yOSxRnOlwaQ3KNi1wjjHINSi9
+// SIG // 47SHJMPgyY9+tVSP3PoFVZhtaDuaRr3tpK56KTesy+uD
+// SIG // RedGbsoy1cCGMFxPLOJiss254o2I5JasAUq7vnGpF1tn
+// SIG // YN74kpEeHT39IM9zfUGaRnXNxF803RKJ1v2lIH1+/Nme
+// SIG // Rd+2ci/bfV+AutuqfjbsNkz2K26oElHovwUDo9Fzpk03
+// SIG // dJQcNIIP8BDyt0cY7afomXw/TNuvXsLz1dhzPUNOwTM5
+// SIG // TI4CvEJoLhDqhFFG4tG9ahhaYQFzymeiXtcodgLiMxhy
+// SIG // 16cg8ML6EgrXY28MyTZki1ugpoMhXV8wdJGUlNi5UPkL
+// SIG // iWHzNgY1GIRH29wb0f2y1BzFa/ZcUlFdEtsluq9QBXps
+// SIG // xREdcu+N+VLEhReTwDwV2xo3xwgVGD94q0W29R6HXtqP
+// SIG // nhZyacaue7e3PmriLq0CAwEAAaOCAd0wggHZMBIGCSsG
+// SIG // AQQBgjcVAQQFAgMBAAEwIwYJKwYBBAGCNxUCBBYEFCqn
+// SIG // Uv5kxJq+gpE8RjUpzxD/LwTuMB0GA1UdDgQWBBSfpxVd
+// SIG // AF5iXYP05dJlpxtTNRnpcjBcBgNVHSAEVTBTMFEGDCsG
+// SIG // AQQBgjdMg30BATBBMD8GCCsGAQUFBwIBFjNodHRwOi8v
+// SIG // d3d3Lm1pY3Jvc29mdC5jb20vcGtpb3BzL0RvY3MvUmVw
+// SIG // b3NpdG9yeS5odG0wEwYDVR0lBAwwCgYIKwYBBQUHAwgw
+// SIG // GQYJKwYBBAGCNxQCBAweCgBTAHUAYgBDAEEwCwYDVR0P
+// SIG // BAQDAgGGMA8GA1UdEwEB/wQFMAMBAf8wHwYDVR0jBBgw
+// SIG // FoAU1fZWy4/oolxiaNE9lJBb186aGMQwVgYDVR0fBE8w
+// SIG // TTBLoEmgR4ZFaHR0cDovL2NybC5taWNyb3NvZnQuY29t
+// SIG // L3BraS9jcmwvcHJvZHVjdHMvTWljUm9vQ2VyQXV0XzIw
+// SIG // MTAtMDYtMjMuY3JsMFoGCCsGAQUFBwEBBE4wTDBKBggr
+// SIG // BgEFBQcwAoY+aHR0cDovL3d3dy5taWNyb3NvZnQuY29t
+// SIG // L3BraS9jZXJ0cy9NaWNSb29DZXJBdXRfMjAxMC0wNi0y
+// SIG // My5jcnQwDQYJKoZIhvcNAQELBQADggIBAJ1VffwqreEs
+// SIG // H2cBMSRb4Z5yS/ypb+pcFLY+TkdkeLEGk5c9MTO1OdfC
+// SIG // cTY/2mRsfNB1OW27DzHkwo/7bNGhlBgi7ulmZzpTTd2Y
+// SIG // urYeeNg2LpypglYAA7AFvonoaeC6Ce5732pvvinLbtg/
+// SIG // SHUB2RjebYIM9W0jVOR4U3UkV7ndn/OOPcbzaN9l9qRW
+// SIG // qveVtihVJ9AkvUCgvxm2EhIRXT0n4ECWOKz3+SmJw7wX
+// SIG // sFSFQrP8DJ6LGYnn8AtqgcKBGUIZUnWKNsIdw2FzLixr
+// SIG // e24/LAl4FOmRsqlb30mjdAy87JGA0j3mSj5mO0+7hvoy
+// SIG // GtmW9I/2kQH2zsZ0/fZMcm8Qq3UwxTSwethQ/gpY3UA8
+// SIG // x1RtnWN0SCyxTkctwRQEcb9k+SS+c23Kjgm9swFXSVRk
+// SIG // 2XPXfx5bRAGOWhmRaw2fpCjcZxkoJLo4S5pu+yFUa2pF
+// SIG // EUep8beuyOiJXk+d0tBMdrVXVAmxaQFEfnyhYWxz/gq7
+// SIG // 7EFmPWn9y8FBSX5+k77L+DvktxW/tM4+pTFRhLy/AsGC
+// SIG // onsXHRWJjXD+57XQKBqJC4822rpM+Zv/Cuk0+CQ1Zyvg
+// SIG // DbjmjJnW4SLq8CdCPSWU5nR0W2rRnj7tfqAxM328y+l7
+// SIG // vzhwRNGQ8cirOoo6CGJ/2XBjU02N7oJtpQUQwXEGahC0
+// SIG // HVUzWLOhcGbyoYIDWTCCAkECAQEwggEBoYHZpIHWMIHT
+// SIG // MQswCQYDVQQGEwJVUzETMBEGA1UECBMKV2FzaGluZ3Rv
+// SIG // bjEQMA4GA1UEBxMHUmVkbW9uZDEeMBwGA1UEChMVTWlj
+// SIG // cm9zb2Z0IENvcnBvcmF0aW9uMS0wKwYDVQQLEyRNaWNy
+// SIG // b3NvZnQgSXJlbGFuZCBPcGVyYXRpb25zIExpbWl0ZWQx
+// SIG // JzAlBgNVBAsTHm5TaGllbGQgVFNTIEVTTjo2QjA1LTA1
+// SIG // RTAtRDk0NzElMCMGA1UEAxMcTWljcm9zb2Z0IFRpbWUt
+// SIG // U3RhbXAgU2VydmljZaIjCgEBMAcGBSsOAwIaAxUAKyp8
+// SIG // q2VdgAq1VGkzd7PZwV6zNc2ggYMwgYCkfjB8MQswCQYD
+// SIG // VQQGEwJVUzETMBEGA1UECBMKV2FzaGluZ3RvbjEQMA4G
+// SIG // A1UEBxMHUmVkbW9uZDEeMBwGA1UEChMVTWljcm9zb2Z0
+// SIG // IENvcnBvcmF0aW9uMSYwJAYDVQQDEx1NaWNyb3NvZnQg
+// SIG // VGltZS1TdGFtcCBQQ0EgMjAxMDANBgkqhkiG9w0BAQsF
+// SIG // AAIFAO5k1V0wIhgPMjAyNjA5MjgxMjAwMjlaGA8yMDI2
+// SIG // MDkyOTEyMDAyOVowdzA9BgorBgEEAYRZCgQBMS8wLTAK
+// SIG // AgUA7mTVXQIBADAKAgEAAgIjbAIB/zAHAgEAAgISTjAK
+// SIG // AgUA7mYm3QIBADA2BgorBgEEAYRZCgQCMSgwJjAMBgor
+// SIG // BgEEAYRZCgMCoAowCAIBAAIDB6EgoQowCAIBAAIDAYag
+// SIG // MA0GCSqGSIb3DQEBCwUAA4IBAQDE4KP54n8CpM+sYPlD
+// SIG // NkxghksvpfDGLOMs9nDRPnSP9ebywpSpN/F0bTgDjWPU
+// SIG // JiFsEcQYmJSn1x5YaWAlWbZ+7E0/BDaSl31hAB41kut3
+// SIG // SvUWO3nTlztgQQh4gSd4Pq51VZ9BE9jk1Gr5oc5PSWmQ
+// SIG // x0pEI2WtUNWahMpFlLhHd9qmokjVyrfTV5/NuDJXrrdn
+// SIG // lJeXWoqp3aguec1ch3WbD3TanOyD54xvy3ZblBBenSLH
+// SIG // uUJ/NINoEg7nIUG9s7YWJ+uJx9MXiOS7aOyvUtCZ8s7N
+// SIG // A0ZXFl6i86NkHcTeK/cBUbDXsWtyBumC2wUNP1+D5p87
+// SIG // Qz9MqhphwDEmvK+TMYIEDTCCBAkCAQEwgZMwfDELMAkG
+// SIG // A1UEBhMCVVMxEzARBgNVBAgTCldhc2hpbmd0b24xEDAO
+// SIG // BgNVBAcTB1JlZG1vbmQxHjAcBgNVBAoTFU1pY3Jvc29m
+// SIG // dCBDb3Jwb3JhdGlvbjEmMCQGA1UEAxMdTWljcm9zb2Z0
+// SIG // IFRpbWUtU3RhbXAgUENBIDIwMTACEzMAAAIRRRg5m0PP
+// SIG // /GwAAQAAAhEwDQYJYIZIAWUDBAIBBQCgggFKMBoGCSqG
+// SIG // SIb3DQEJAzENBgsqhkiG9w0BCRABBDAvBgkqhkiG9w0B
+// SIG // CQQxIgQgwKXpl4Hx98b9wri3Voc37ATQYpoYbCtttutT
+// SIG // 2IZ8glQwgfoGCyqGSIb3DQEJEAIvMYHqMIHnMIHkMIG9
+// SIG // BCAsrTOpmu+HTq1aXFwvlhjF8p2nUCNNCEX/OWLHNDMm
+// SIG // tzCBmDCBgKR+MHwxCzAJBgNVBAYTAlVTMRMwEQYDVQQI
+// SIG // EwpXYXNoaW5ndG9uMRAwDgYDVQQHEwdSZWRtb25kMR4w
+// SIG // HAYDVQQKExVNaWNyb3NvZnQgQ29ycG9yYXRpb24xJjAk
+// SIG // BgNVBAMTHU1pY3Jvc29mdCBUaW1lLVN0YW1wIFBDQSAy
+// SIG // MDEwAhMzAAACEUUYOZtDz/xsAAEAAAIRMCIEIN2vHz0m
+// SIG // KTqaGQozDh0s20yXd/+uEo1T2ad8o9UbhXPZMA0GCSqG
+// SIG // SIb3DQEBCwUABIICADoKivilStNbKYFCfcj2+KyJUY6J
+// SIG // 158bBkpLWGjOB3eSeLMJGEfCBKddErEeJD8mfAJ9Ouji
+// SIG // PPIsI6xSGU7ak0RE47nDKphyRbsMvCqdtrcpyj2nzdvv
+// SIG // rUYOoezsIULtOe0++uvd4pSjFGqJw36CTUVB6oVJ0Gdn
+// SIG // Jq5GLSwZpKDkdtdobJF+ngQOrWaffopIRKsmUGQTqKYi
+// SIG // P66rca7lV8HJmOm1jrLqplAYvToeOMYdMRgbDQrEtGM3
+// SIG // eQ1mb+SP+SidEHNNsJc3Jh/5FurQ5wtmz9tOtI+dj9Gr
+// SIG // JlzS06bG+VIvHKF/UL/Ap8bJet+lgSBAIAt3pBoFzCCs
+// SIG // MEJpW8Gz1f06zCchzu5Ff7AvfODAwr6B2b6V4ifOJq/c
+// SIG // +9zXKn+ExFOuWMOnXGK8M4O9/z7HQsxcpw/EwzYli9wl
+// SIG // yQtrIDXG4yrKzBIOrbpm+aOZihp3qBoSAP2xWiAT/Nsh
+// SIG // hO4b7qsN8xvaXq0/M4WjjcpmtJABm0iHT3Ovrbi7A7lK
+// SIG // LJfnLd6VPKDxqAacz1lOg8KXvyPJfMzT2p+uJRHQThIT
+// SIG // B5KPw9metuWtSWvBs14Xyxgb4dm2DxNSRua3/deuVXIF
+// SIG // xpmq5vlCVFzhrrXm3wEE5W+rr0v7CpiM1a0OZ47EWdbS
+// SIG // ReQxfDjqzXa/Zu8KRGDIQWYX6E3GeCcBcJWk+WJf
+// SIG // End signature block
