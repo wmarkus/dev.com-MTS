@@ -1,0 +1,17 @@
+<svg width="206" height="160" viewBox="0 0 206 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="206" height="160" rx="4" fill="#F8F8F8"/>
+<path d="M84 52H186" stroke="black" stroke-opacity="0.08" stroke-width="6"/>
+<path d="M84 64H186" stroke="black" stroke-opacity="0.08" stroke-width="6"/>
+<path d="M84 76H186" stroke="black" stroke-opacity="0.08" stroke-width="6"/>
+<path d="M84 88H135" stroke="black" stroke-opacity="0.08" stroke-width="6"/>
+<path d="M74 28V135" stroke="black" stroke-opacity="0.3" stroke-width="2"/>
+<path d="M170 34C170.483 34 180.868 34 186 34" stroke="#0078D4" stroke-width="6"/>
+<path d="M84 34C84.966 34 105.736 34 116 34" stroke="black" stroke-opacity="0.3" stroke-width="6"/>
+<path d="M41 34C41.634 34 55.2642 34 62 34" stroke="black" stroke-opacity="0.3" stroke-width="6"/>
+<path d="M37 34.25H29.9766L33.0508 37.3242L32.6992 37.6758L29.0234 34L32.6992 30.3242L33.0508 30.6758L29.9766 33.75H37V34.25Z" fill="black" fill-opacity="0.9"/>
+<path d="M30 52C31.0264 52 53.0943 52 64 52" stroke="black" stroke-opacity="0.08" stroke-width="4"/>
+<path d="M30 68C31.0264 68 53.0943 68 64 68" stroke="black" stroke-opacity="0.08" stroke-width="4"/>
+<path d="M20 76H74V92H20V76Z" fill="black" fill-opacity="0.06"/>
+<path d="M30 84C31.0264 84 53.0943 84 64 84" stroke="black" stroke-opacity="0.08" stroke-width="4"/>
+<path d="M30 100C31.0264 100 53.0943 100 64 100" stroke="black" stroke-opacity="0.08" stroke-width="4"/>
+</svg>
