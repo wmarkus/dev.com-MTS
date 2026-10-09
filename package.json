@@ -1,0 +1,12 @@
+{
+  "name": "developer-site-recreation",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/model.test.mjs",
+    "preview": ".venv/bin/python scripts/serve_site.py --port 4174"
+  },
+  "dependencies": {
+    "acorn": "^8.15.0"
+  }
+}

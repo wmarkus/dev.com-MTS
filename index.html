@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="description" content="Local, evidence-backed inventory for the Microsoft Developer site migration.">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+    <title>Developer site migration | Inventory</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='5' fill='%230755ac'/%3E%3Ctext x='8' y='24' font-family='Arial' font-size='24' fill='white'%3ED%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="/src/styles.css">
+    <script type="module" src="/src/app.js"></script>
+  </head>
+  <body>
+    <!--
+      THESIS: An evidence ledger for the migration, not a substitute clone.
+      OWN-WORLD: White document canvas, blue navigation, system type, explicit status.
+      STORY: Inspect the domain, understand omissions, decide scope, export a handoff.
+      FIRST VIEWPORT: Scope warning above searchable routes; evidence alongside selection.
+      FORM: Task-first inventory table; no concept roll, marketing claims or source assets.
+    -->
+    <a class="skip-link" href="#main">Skip to inventory</a>
+    <header class="app-header">
+      <a class="identity" href="/">Developer site migration</a>
+      <span class="phase">Inventory workspace</span>
+      <a class="source-link" href="https://developer.microsoft.com/en-us/" target="_blank" rel="noopener noreferrer">Open source site <span aria-hidden="true">&#8599;</span></a>
+    </header>
+    <main id="main" tabindex="-1">
+      <div class="intro">
+        <div>
+          <h1>Developer site inventory</h1>
+          <p>English pages, including Reactor. Review the current footprint before content migration and redesign.</p>
+        </div>
+        <div class="actions">
+          <button id="export" type="button" disabled>Export review decisions</button>
+          <label class="file-button">Import decisions <input id="import" type="file" accept=".json,application/json" disabled></label>
+        </div>
+      </div>
+      <aside class="notice" aria-label="Migration status">
+        <strong>This is the inventory workspace, separate from the recreated site.</strong>
+        <p>Reproduction is authorized. <a href="http://127.0.0.1:4174/en-us/">Open the recreated website</a>. This initial metadata inventory is not a capture-completion report; use the site's capture status for current coverage. Framer and Figma are deferred.</p>
+        <p><strong>Excluded:</strong> Microsoft Developer blog, Edge, games, and Microsoft 365. Links to these areas remain references; their pages are not included.</p>
+      </aside>
+      <p id="message" role="status" aria-live="polite">Loading the checked-in inventory...</p>
+      <nav class="view-nav" aria-label="Workspace sections">
+        <button type="button" data-view="routes" aria-current="page">Routes</button>
+        <button type="button" data-view="homepage">Homepage structure</button>
+        <button type="button" data-view="coverage">Coverage &amp; gaps</button>
+        <button type="button" data-view="handoff">Framer &amp; Figma</button>
+      </nav>
+      <section id="routes" class="view" aria-labelledby="routes-heading">
+        <div class="section-top">
+          <h2 id="routes-heading">Route inventory</h2>
+          <p id="totals"></p>
+        </div>
+        <form id="filters" class="filters" role="search">
+          <label class="search-label">Find a route<input id="search" type="search" placeholder="Path, page title, or URL" autocomplete="off"></label>
+          <label>Site area<select id="family"><option value="">All areas</option></select></label>
+          <label>Locale<select id="locale"><option value="">All locales</option></select></label>
+          <label>Evidence<select id="evidence"><option value="">All statuses</option></select></label>
+          <label>Decision<select id="decision"><option value="">All decisions</option><option value="undecided">Undecided</option><option value="keep">Keep</option><option value="consolidate">Consolidate</option><option value="remove">Remove</option></select></label>
+        </form>
+        <div class="inventory-layout">
+          <div class="route-list">
+            <div class="table-scroll">
+              <table>
+                <caption id="results">Loading routes</caption>
+                <thead><tr><th scope="col">Page / path</th><th scope="col">Area</th><th scope="col">Evidence</th><th scope="col">Decision</th></tr></thead>
+                <tbody id="rows"></tbody>
+              </table>
+            </div>
+            <p id="empty" hidden>No routes match these filters. Clear the search or broaden the filters.</p>
+            <div class="pagination">
+              <button id="previous" type="button" disabled>Previous</button>
+              <span id="page-number"></span>
+              <button id="next" type="button" disabled>Next</button>
+            </div>
+          </div>
+          <aside id="detail" class="detail" aria-label="Selected route">
+            <h3>Inspect a route</h3>
+            <p>Select a page to see its evidence, dependencies and migration decision.</p>
+          </aside>
+        </div>
+        <p class="footnote">Decisions are saved in this browser only. Export the JSON to preserve or share your review. Marking a route “remove” does not delete it from the inventory or source site.</p>
+      </section>
+      <section id="homepage" class="view" hidden aria-labelledby="homepage-heading">
+        <h2 id="homepage-heading">Homepage structure</h2>
+        <p class="section-description">The observed page, including hidden panels and carousel slides. These are original structural descriptions, not copied page content.</p>
+        <p id="home-evidence" class="footnote"></p>
+        <div id="home-sections" class="document-list"></div>
+        <h3>Cross-cutting requirements</h3>
+        <ul id="home-requirements"></ul>
+      </section>
+      <section id="coverage" class="view" hidden aria-labelledby="coverage-heading">
+        <h2 id="coverage-heading">Coverage &amp; gaps</h2>
+        <p class="section-description">A sitemap is a discovery source, not a completeness certificate. Failures and uninspected URLs stay visible.</p>
+        <div id="coverage-summary"></div>
+        <h3>Unavailable sitemap sources</h3>
+        <div id="sitemap-errors" class="document-list"></div>
+        <h3>What the inventory does not prove</h3>
+        <ul id="coverage-notes"></ul>
+      </section>
+      <section id="handoff" class="view" hidden aria-labelledby="handoff-heading">
+        <h2 id="handoff-heading">A portable content handoff.<br>Not an automatic platform sync.</h2>
+        <p class="section-description">Keep the content model and route evidence in this repository. Build editable Framer templates after authorization, then apply the Figma design direction.</p>
+        <ol class="handoff-steps">
+          <li><strong>Capture the authorized source.</strong> Permission has been granted. Finish the repository capture and reconcile routes, variants, assets and interactive states before connecting other platforms.</li>
+          <li><strong>Recreate before reducing.</strong> Build shared navigation, page templates, content records and redirects. Verify desktop and mobile fidelity, with no hidden omissions.</li>
+          <li><strong>Connect a Framer project.</strong> Use its project-scoped API or external-agent connection. Import structured content and create editable templates; a repository is not itself a Framer project.</li>
+          <li><strong>Reduce the footprint.</strong> Review keep, consolidate and remove decisions. Approve redirect targets before cutting pages.</li>
+          <li><strong>Apply Figma designs.</strong> Identify the existing file and component nodes. The official Figma-to-Framer plugin transfers editable layers; do not assume two-way synchronization.</li>
+        </ol>
+        <h3>Open blockers</h3>
+        <ul id="blockers"></ul>
+        <h3>Verified integration references</h3>
+        <div id="integration-evidence" class="document-list"></div>
+      </section>
+    </main>
+    <footer class="app-footer">
+      <span>Local migration workspace. No Microsoft analytics or tracking scripts.</span>
+      <span id="updated"></span>
+    </footer>
+    <noscript>This inventory viewer requires JavaScript. The underlying records are available in data/site-inventory.json.gz.</noscript>
+  </body>
+</html>
