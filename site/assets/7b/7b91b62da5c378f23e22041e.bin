@@ -1,0 +1,2337 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:02.460
+>> Daha fazlası var
+Azure IoT Edge daha fazla
+
+00:00:02.460 --> 00:00:04.455
+tipik Vision AI modülü
+
+00:00:04.455 --> 00:00:07.005
+aygıtta çalışma
+nesneleri tanımak için.
+
+00:00:07.005 --> 00:00:10.680
+Ya sana söylersem?
+oynamanızı sağlar
+
+00:00:10.680 --> 00:00:14.910
+Dijital tabelada Flappy Kuşu
+Sen otobüsünü beklerken.
+
+00:00:14.910 --> 00:00:17.370
+Andreas'ın geldiği yer de tam olarak bu.
+
+00:00:17.370 --> 00:00:21.975
+Ombori Grid göstermek için burada
+biz ve bunun nasıl çalıştığı.
+
+00:00:21.975 --> 00:00:24.270
+Çok güzel demo ve yol
+
+00:00:24.270 --> 00:00:26.340
+Flappy Bird'den daha fazlası
+günün sonunda,
+
+00:00:26.340 --> 00:00:28.930
+Ve bu da bugün IoT Show'da.
+
+00:00:42.260 --> 00:00:43.360
+[MÜZİk]
+
+00:00:43.360 --> 00:00:45.890
+>> Herkese merhaba. İçin teşekkürler.
+IoT Show'da bize katılıyor.
+
+00:00:45.890 --> 00:00:47.315
+Ben Olivier, ev sahibiniz.
+
+00:00:47.315 --> 00:00:50.450
+Bugün, duymak için buradasın.
+IoT Edge ve nasıl olduğu hakkında
+
+00:00:50.450 --> 00:00:54.800
+dijital bilimi geliştirmek için kullanılır
+IoT deneyimi ve köprüleme,
+
+00:00:54.800 --> 00:00:57.705
+Ekranlar ve Mobil
+Ombori Grid ile birlikte.
+
+00:00:57.705 --> 00:00:59.400
+Bunun için, ben.
+Andreas bugün benimle.
+
+00:00:59.400 --> 00:01:00.840
+Andreas, nasılsın?
+
+00:01:00.840 --> 00:01:03.645
+>> Merhaba Olivier. Ben sadece.
+Harika, teşekkürler. Nasılsın?
+
+00:01:03.645 --> 00:01:07.110
+>> ben harikayım. Nerede
+Bizi nereden arıyorsun?
+
+00:01:07.110 --> 00:01:10.335
+Aslında Stockholm, İsveç'>>.
+
+00:01:10.335 --> 00:01:13.470
+>> Harika. Bana bir.
+Biraz kendinle ilgili.
+
+00:01:13.470 --> 00:01:15.150
+IoT'deki geçmişiniz nedir?
+
+00:01:15.150 --> 00:01:16.950
+Ne kadar zamandır.
+Bu işte mi?
+
+00:01:16.950 --> 00:01:18.990
+O zaman konuşuruz.
+Ombori ve Ombori Izgarası,
+
+00:01:18.990 --> 00:01:21.840
+ki bu harika bir çözüm
+Buraya bize göstermeye geldin.
+
+00:01:21.840 --> 00:01:24.725
+>> Şey, ben şey ile çalışıyordum.
+
+00:01:24.725 --> 00:01:27.994
+Geçmiş için IoT ve Edge Compute,
+
+00:01:27.994 --> 00:01:29.870
+Sanırım, üç ya da dört yıl.
+
+00:01:29.870 --> 00:01:34.020
+şimdi inşa ederken
+Ombori Grid platformu.
+
+00:01:35.930 --> 00:01:38.255
+>> kullandığınızı biliyorum.
+
+00:01:38.255 --> 00:01:40.925
+Microsoft teknolojileri.
+Bu yüzden buradasın.
+
+00:01:40.925 --> 00:01:44.540
+İlginç olan şey,
+Azure IoT Edge hakkında konuşuyoruz,
+
+00:01:44.540 --> 00:01:45.830
+çalışma saatimiz
+
+00:01:45.830 --> 00:01:47.915
+iş yüklerini
+Bulut'u Kenara.
+
+00:01:47.915 --> 00:01:50.975
+Biz çok sık sadece getirmek
+Vision AI demosunu yükseltene kadar.
+
+00:01:50.975 --> 00:01:54.105
+"Hey, yapabilirsin.
+O Edge cihazında Vision AI."
+
+00:01:54.105 --> 00:01:57.895
+Ama gerçekte, bir sürü.
+kişiler IoT Edge'i
+
+00:01:57.895 --> 00:01:59.590
+diğer çeşitli nedenler
+
+00:01:59.590 --> 00:02:02.680
+sadece koşma yeteneği
+kenarda bazı yapay zeka modeli.
+
+00:02:02.680 --> 00:02:05.240
+Bize nasıl olduğunu anlatmak için buradasın.
+
+00:02:05.240 --> 00:02:09.390
+Ombori Grid kaldıraç kullanıyor
+IoT Edge diğer şeylerin yanı sıra
+
+00:02:09.390 --> 00:02:12.250
+ama sanırım görüyoruz.
+Arkan o ekran.
+
+00:02:12.250 --> 00:02:14.860
+Bir ipucumuz var.
+bu şey hakkında olacak
+
+00:02:14.860 --> 00:02:17.765
+dijital işaretler ve
+ile ilgili teknolojiler.
+
+00:02:17.765 --> 00:02:19.380
+O işe girelim.
+
+00:02:19.380 --> 00:02:22.695
+Bize Ombori'den bahset ve.
+Ombori Izgarası. Nedir o?
+
+00:02:22.695 --> 00:02:26.565
+Nasıl oldu da.
+bu çözümü yaratmak mı?
+
+00:02:26.565 --> 00:02:29.425
+O zaman detaylar hakkında konuşuruz.
+Ve demosunu göreceğiz.
+
+00:02:29.425 --> 00:02:33.010
+>> Kesinlikle. Bu bir.
+oldukça eğlenceli bir hikaye aslında,
+
+00:02:33.010 --> 00:02:35.010
+Ama kısa tutacağım.
+
+00:02:35.010 --> 00:02:38.430
+Ama başladığımızda.
+Ombori Izgarası'nı inşa etmek,
+
+00:02:38.430 --> 00:02:41.750
+oluşturmaya başladık
+uygulama yönetim platformu
+
+00:02:41.750 --> 00:02:44.765
+ve odaklandık.
+mobil deneyim aslında.
+
+00:02:44.765 --> 00:02:48.800
+Ama bir işbirliği yaptık.
+H&M ve Microsoft ile
+
+00:02:48.800 --> 00:02:52.730
+birkaç yıl önce gitti
+konuşan bir ayna ile viral.
+
+00:02:52.730 --> 00:02:55.670
+Birçok iş arkadaşı veya müşteri
+bizi aramaya başladı ve
+
+00:02:55.670 --> 00:02:58.805
+inovasyon konusunda yardım etmemizi istemek
+fiziksel alanda,
+
+00:02:58.805 --> 00:03:01.850
+gerçekten harika bir yaratmak
+müşteri deneyimi
+
+00:03:01.850 --> 00:03:04.030
+ve ayrıca çalışan deneyimi.
+
+00:03:04.030 --> 00:03:06.860
+Platformumuzu genişletmeye başladık.
+
+00:03:06.860 --> 00:03:09.410
+bu kullanım örnekleri için daha uygun olmalıdır.
+
+00:03:09.410 --> 00:03:12.830
+IoT'i o zaman benimsedik.
+Tüm bunları yapmak için kenar platformu
+
+00:03:12.830 --> 00:03:14.660
+cihaz yönetimimiz
+ve her şey
+
+00:03:14.660 --> 00:03:17.110
+Edge Compute'de gerçekleşiyor.
+
+00:03:17.110 --> 00:03:20.310
+>> ilginç. Göreceğiz bakalım.
+Demolar sırasında.
+
+00:03:20.310 --> 00:03:23.430
+Bir şey var.
+bana öyle bir şey çarptı ki, biz,
+
+00:03:23.430 --> 00:03:26.415
+burada kendim, özellikle de
+IoT ekibi, önyargılıyız.
+
+00:03:26.415 --> 00:03:28.870
+IoT Edge'i her gün görüyoruz vesaire.
+
+00:03:28.870 --> 00:03:33.470
+Bana biraz anlat nasıl
+dijital bilimimiz.
+
+00:03:33.470 --> 00:03:36.845
+Bence daha akıllı olan.
+bugünlerde olanlar
+
+00:03:36.845 --> 00:03:41.215
+onlar gelişmiş mi
+Orada kullandıkları teknoloji mi?
+
+00:03:41.215 --> 00:03:45.190
+>> evet, yani, bir.
+çok sayıda web çerçevesi gerçekleşiyor
+
+00:03:45.190 --> 00:03:48.910
+dijital söz konusu olduğunda
+tabela geliştirme.
+
+00:03:48.910 --> 00:03:51.910
+Ama bir şey.
+odaklanmak
+
+00:03:51.910 --> 00:03:54.880
+on, o işaretin kendisi değil,
+
+00:03:54.880 --> 00:03:57.295
+ama daha fazlası, nasıl oluşturabiliriz
+
+00:03:57.295 --> 00:03:59.560
+bu dijital yolculuk her ikisi için de
+
+00:03:59.560 --> 00:04:02.770
+çalışanlar ve dördüncü,
+Ziyaretçiler için mi?
+
+00:04:02.770 --> 00:04:06.635
+O kadar çok şey var ki.
+ekranda oluyor.
+
+00:04:06.635 --> 00:04:08.780
+Tabii, böyle büyük ekranlara sahip olmak.
+
+00:04:08.780 --> 00:04:11.635
+harikalar çünkü onlar
+dikkat çekici
+
+00:04:11.635 --> 00:04:14.530
+ve ziyaretçiyi eğitebilirler
+
+00:04:14.530 --> 00:04:17.710
+ne hakkında bir boşluk
+olasılıklar var.
+
+00:04:17.710 --> 00:04:20.335
+Ama biz her zaman binmeye çalışırız.
+
+00:04:20.335 --> 00:04:22.600
+ziyaretçi cihazı
+ve nasıl kullanabileceklerini
+
+00:04:22.600 --> 00:04:25.625
+kendi telefonlarını
+boşluk gezinmek.
+
+00:04:25.625 --> 00:04:28.160
+Bunu yapmak için,
+gerçekten köprü olmak
+
+00:04:28.160 --> 00:04:31.250
+bu üç farklı alan
+dijital ekran ile,
+
+00:04:31.250 --> 00:04:34.385
+IoT ve nasıl
+bağlı cihazlara sahip olmak,
+
+00:04:34.385 --> 00:04:38.130
+ve sonra cep telefonu.
+Bu mantıklı mı?
+
+00:04:38.130 --> 00:04:40.025
+>> Mantıklı geliyor.
+
+00:04:40.025 --> 00:04:41.690
+Görebiliyorum.
+
+00:04:41.690 --> 00:04:42.950
+Çünkü onları zaten gördüm.
+
+00:04:42.950 --> 00:04:45.530
+Sanırım insanlar fark etti ki.
+Oraya atladığımızda,
+
+00:04:45.530 --> 00:04:49.235
+bu köprüleme yapılır
+bulut üzerinden mümkündür.
+
+00:04:49.235 --> 00:04:52.160
+Çünkü istemiyorsun.
+tüketici bağlantısına sahip olmak
+
+00:04:52.160 --> 00:04:55.490
+cihazları doğrudan
+bilinmeyen bir dijital işaret.
+
+00:04:55.490 --> 00:04:59.690
+Gizlilik açısından,
+güvenlik perspektifi,
+
+00:04:59.690 --> 00:05:01.040
+çift yönlü olarak, sen.
+
+00:05:01.040 --> 00:05:02.540
+bağlanmalarını istiyorum ama bağlanmıyorlar
+
+00:05:02.540 --> 00:05:06.100
+dijital işaretin
+doğrudan cihazlarına erişin.
+
+00:05:06.100 --> 00:05:09.755
+Kesinlikle sahip olmanız gerekir
+bu aracılar,
+
+00:05:09.755 --> 00:05:14.265
+Bizim durumumuzda Bulut'a. Hoşuma gitti.
+
+00:05:14.265 --> 00:05:16.680
+Bize göstermeye ne dersin?
+
+00:05:16.680 --> 00:05:19.700
+Çünkü geliştiricilerimiz var.
+Burada bizi izliyor,
+
+00:05:19.700 --> 00:05:22.610
+Senin de getirmeni istiyorum.
+CLI'yi de yukarı kaldır ve göster
+
+00:05:22.610 --> 00:05:26.695
+bize çözüm nasıl görünüyor
+nasıl kullanıldığı gibi.
+
+00:05:26.695 --> 00:05:28.395
+>> Hayır, memnuniyetle.
+
+00:05:28.395 --> 00:05:32.510
+Aslında ekranımı paylaşabiliyorum
+Belki de sana yol eşlik ederim.
+
+00:05:32.510 --> 00:05:36.680
+Çünkü, yani, biz.
+Azure'da her şeyi oluşturmak.
+
+00:05:36.680 --> 00:05:40.160
+Tüm Ombori Grid platformu
+Microsoft Azure tarafından desteklenmektedir
+
+00:05:40.160 --> 00:05:44.015
+ve sizin
+kendi Azure kiracısı da
+
+00:05:44.015 --> 00:05:48.395
+ancak araçlar biraz zaman alır
+
+00:05:48.395 --> 00:05:50.210
+kullanmak ve yararlanmak için
+
+00:05:50.210 --> 00:05:53.180
+gerçekten en iyi yol
+Deneyime odaklanmak istiyorum.
+
+00:05:53.180 --> 00:05:54.920
+Yaptığımız şey.
+
+00:05:54.920 --> 00:05:56.930
+her şeyi düzene sokmuş
+iş mekken
+
+00:05:56.930 --> 00:06:01.265
+cihaz sağlama ve
+ekleme ve benzeri.
+
+00:06:01.265 --> 00:06:04.430
+Sadece düz gidebilmek için.
+Edge modüllerinizi oluşturmaya,
+
+00:06:04.430 --> 00:06:07.280
+mobil uygulamalarınız veya dijital
+ekran uygulamaları ve her şey
+
+00:06:07.280 --> 00:06:08.330
+sadece çalışır ve var
+
+00:06:08.330 --> 00:06:10.355
+gerçek zamanlı iletişim
+üçü arasında.
+
+00:06:10.355 --> 00:06:12.410
+Yine de güzel.
+
+00:06:12.410 --> 00:06:16.030
+>> bunu seviyorum çünkü biz teslim ettik.
+sizin gibi ortaklarımıza,
+
+00:06:16.030 --> 00:06:19.670
+yapmamanıza izin veren bir katman
+için tekerleği yeniden icat etmek zorunda
+
+00:06:19.670 --> 00:06:21.230
+eski modül yönetimi ve
+
+00:06:21.230 --> 00:06:23.780
+aygıtı bağlama
+Bulut'a vb.
+
+00:06:23.780 --> 00:06:26.120
+Başka bir katman ekliyorsunuz
+müşterileriniz için
+
+00:06:26.120 --> 00:06:28.930
+dijital işaretler ve
+akıllı dijital bilim
+
+00:06:28.930 --> 00:06:31.670
+bunu yapmak zorunda değiller
+ek şeyler kümesi
+
+00:06:31.670 --> 00:06:34.805
+yaygın olan ve
+bu alanda genel.
+
+00:06:34.805 --> 00:06:37.490
+Bence mantıklı.
+katmanlamanın aksine,
+
+00:06:37.490 --> 00:06:44.865
+Bence bu çok açık.
+anlamak ve kavramak için insanlar.
+
+00:06:44.865 --> 00:06:48.140
+>> Aynen öyle. Yani, biz.
+sahip oldukları müşteriler
+
+00:06:48.140 --> 00:06:49.370
+Azure kavramı yok veya
+
+00:06:49.370 --> 00:06:52.430
+Azure hizmetleri ve onlar
+sadece platformumuzla doğrudan.
+
+00:06:52.430 --> 00:06:55.460
+Ama aynı zamanda bir sürü müşterimiz var.
+gerçekten derin olan
+
+00:06:55.460 --> 00:06:57.695
+tüm Azure ekosistemi
+ve sonra bağlanın
+
+00:06:57.695 --> 00:07:00.760
+mevcut hizmetleri ne için
+Ombori Grid'de oluyor.
+
+00:07:00.760 --> 00:07:02.900
+Tüm Azure bağlantısı
+gerçekten mevcut
+
+00:07:02.900 --> 00:07:05.650
+yüzeyinin altında.
+
+00:07:05.650 --> 00:07:09.290
+Başlamak için ilk seçenek
+sadece web sitemize gitmektir,
+
+00:07:09.290 --> 00:07:13.925
+ombori.com/grid,
+e-posta adresi ve sen git.
+
+00:07:13.925 --> 00:07:16.880
+Diğer seçenek,
+zaten Azure'dasınız,
+
+00:07:16.880 --> 00:07:18.920
+azure portalına gitmeniz yeterlidir,
+
+00:07:18.920 --> 00:07:20.550
+Ombori'yi arayın ve
+
+00:07:20.550 --> 00:07:22.235
+içinde bulmak
+Pazaryeri ve yapabilirsiniz
+
+00:07:22.235 --> 00:07:25.925
+sadece yükleyin ve kullanın
+diğer Azure hizmetleri gibi.
+
+00:07:25.925 --> 00:07:26.540
+>> Mükemmel.
+
+00:07:26.540 --> 00:07:28.805
+>> Bu düzeni bilirsiniz.
+
+00:07:28.805 --> 00:07:33.325
+sen bizim
+Ombori Grid konsolını arayın.
+
+00:07:33.325 --> 00:07:37.190
+Burada bir pazar yerimiz var.
+kullanabileceğiniz kullanıma hazır uygulamalar
+
+00:07:37.190 --> 00:07:41.120
+sadece yükleme ve yapılandırma
+herhangi bir kodlama olmadan
+
+00:07:41.120 --> 00:07:42.410
+ama aynı zamanda biz var
+
+00:07:42.410 --> 00:07:46.235
+bu geliştirici araçları ve bu
+Bugün odaklanmak istediğim şey.
+
+00:07:46.235 --> 00:07:49.850
+Eğer atlarsanız
+developer.ombori.com,
+
+00:07:49.850 --> 00:07:53.420
+belgelere sahipsiniz
+geliştirmeyi taramak için,
+
+00:07:53.420 --> 00:07:58.100
+IoT uygulama geliştirme, nasıl
+CLI'yi kullanmak için vb.
+
+00:07:58.100 --> 00:07:59.515
+>> güzel.
+
+00:07:59.515 --> 00:08:03.350
+>> Paylaşmak istediğim demo
+bugün sizinle nasıl
+
+00:08:03.350 --> 00:08:04.730
+Flappy Bird'i çalıştırmak
+
+00:08:04.730 --> 00:08:06.950
+büyük bir ekran ile
+uzaktan kumanda olarak cep telefonu.
+
+00:08:06.950 --> 00:08:08.990
+>> tabii ki, kim
+oynamak istemiyor
+
+00:08:08.990 --> 00:08:11.500
+Flappy Bird büyük bir dijital tabelada mı?
+
+00:08:11.500 --> 00:08:15.080
+>> Aynen öyle. Bunu inşa etmek
+çok fazla harcadık
+
+00:08:15.080 --> 00:08:18.665
+ofiste saatler bunu çalmak
+Ve bunu da yapmak için.
+
+00:08:18.665 --> 00:08:20.165
+>> Test etmek zorundasın.
+
+00:08:20.165 --> 00:08:23.200
+>> evet. Test etmeliyiz.
+
+00:08:23.200 --> 00:08:26.260
+Buradaki talimatlar
+adım adım,
+
+00:08:26.260 --> 00:08:27.560
+bu bir ekran uygulaması ve
+
+00:08:27.560 --> 00:08:30.095
+ile bir mobil uygulama
+gerçek zamanlı iletişim.
+
+00:08:30.095 --> 00:08:34.085
+Düz gideceğiz.
+GitHub deposuna,
+
+00:08:34.085 --> 00:08:35.540
+bir taklit olan
+
+00:08:35.540 --> 00:08:38.660
+özgün açık kaynak
+JavaScript Flappy Kuşu.
+
+00:08:38.660 --> 00:08:41.480
+Orijinaline bir bağlantı var.
+eğer kontrol etmek istersen
+
+00:08:41.480 --> 00:08:43.400
+ama burada bizim sürümü ile var
+
+00:08:43.400 --> 00:08:46.890
+mobil uygulama ve ekran yukarı.
+
+00:08:47.540 --> 00:08:50.980
+O repo'yu klonlayacağım.
+
+00:08:54.110 --> 00:08:58.240
+İşte oldu. Burada görüyorsunuz.
+
+00:08:58.240 --> 00:08:59.800
+mobil uygulamamız var
+ve ekran uygulaması
+
+00:08:59.800 --> 00:09:01.945
+bu yüzden bir mobil uygulama ile başlayalım.
+
+00:09:01.945 --> 00:09:03.970
+İpliği çalıştıracağız.
+
+00:09:03.970 --> 00:09:06.395
+tüm benim almak
+bağımlılıklar yüklendi.
+
+00:09:06.395 --> 00:09:08.080
+>> güzel. Bu olurken
+
+00:09:08.080 --> 00:09:10.045
+çünkü gidiyor
+Biraz zaman almak için.
+
+00:09:10.045 --> 00:09:12.790
+Pazaryerini gördük.
+
+00:09:12.790 --> 00:09:14.110
+ve pazarda biz
+
+00:09:14.110 --> 00:09:16.780
+uygulamalardan bahsetmek
+önceden yüklenmiş olabilir.
+
+00:09:16.780 --> 00:09:18.370
+Eğer doğru anladıysam,
+
+00:09:18.370 --> 00:09:20.440
+bu uygulamalar farklı şeylerdir.
+
+00:09:20.440 --> 00:09:22.840
+Uygulamanın bir bölümü var
+
+00:09:22.840 --> 00:09:25.404
+üzerinde çalışan
+dijital işaret cihazı,
+
+00:09:25.404 --> 00:09:27.280
+bu da deneyimi sunar.
+
+00:09:27.280 --> 00:09:29.830
+O zaman başka bir bölüm daha var.
+bir mobil uygulama olabilir
+
+00:09:29.830 --> 00:09:32.480
+kullanıcının kullandığı
+bu dijital işaretle etkileşime geçin.
+
+00:09:32.480 --> 00:09:33.970
+Bunlar ne olarak paketlenmiştir
+
+00:09:33.970 --> 00:09:36.815
+amfileri sizin
+Pazar yeri, değil mi?
+
+00:09:36.815 --> 00:09:40.320
+>> Kesinlikle doğru. Biz
+Bulut uygulamalarımız olduğunu varsay,
+
+00:09:40.320 --> 00:09:43.110
+IoT uygulamaları, ekran uygulamaları,
+ve mobil uygulamalar.
+
+00:09:43.110 --> 00:09:46.770
+Bir örnek, COVID vurduğunda,
+
+00:09:46.770 --> 00:09:49.695
+müşterilerimizin çoğu bize sordu
+Bu duruma yardım etmek için.
+
+00:09:49.695 --> 00:09:52.045
+Biz yeniden tasarlanmış sıraya sokacağız,
+
+00:09:52.045 --> 00:09:54.490
+sahip olmak için bir Bulut uygulamasıdır
+
+00:09:54.490 --> 00:09:57.350
+gösteren dijital işaretler
+gerçek zamanlı olarak doluluk.
+
+00:09:57.350 --> 00:09:58.690
+Eğer bir QR kodunu tararsam,
+
+00:09:58.690 --> 00:10:00.455
+Bileti telefonumdan alırdım.
+
+00:10:00.455 --> 00:10:04.015
+O bilet bile olabilir.
+sadece taramak için kullanılır
+
+00:10:04.015 --> 00:10:07.570
+vermek için fiziksel bir kapı açmak
+Benim uzaya girişim.
+
+00:10:07.570 --> 00:10:10.780
+Bu çok iyi bir gösteri.
+bu etkileşimin
+
+00:10:10.780 --> 00:10:13.935
+Bulut ekranları arasında gerçek zamanlı olarak,
+
+00:10:13.935 --> 00:10:15.845
+IoT ve telefonlar.
+
+00:10:15.845 --> 00:10:19.220
+>> Kesinlikle harika bir örnek.
+
+00:10:21.200 --> 00:10:25.530
+>> sadece benim.
+Visual Studio kodu burada.
+
+00:10:27.550 --> 00:10:35.205
+Demagoglar haklı.
+İşte başlıyoruz, işte burada.
+
+00:10:35.205 --> 00:10:37.035
+>> Evet, kendine güveniyorsun.
+
+00:10:37.035 --> 00:10:39.030
+>> kendime güveniyorum. Evet.
+
+00:10:39.030 --> 00:10:40.465
+>> Ama bu yeni özelliği sevdim.
+
+00:10:40.465 --> 00:10:43.460
+Yeni bir balıkçı ve.
+kod
+
+00:10:43.460 --> 00:10:45.080
+kaynağının
+
+00:10:45.080 --> 00:10:47.650
+kod bir şeydir
+Güveniyorsun. Hoşuma gidiyor.
+
+00:10:47.650 --> 00:10:50.295
+>> Aslında çok kullanışlı.
+
+00:10:50.295 --> 00:10:53.535
+Şimdi açıldım.
+Buradaki depo.
+
+00:10:53.535 --> 00:10:56.059
+Gördüğünüz gibi mobil uygulamamız var
+ve ekran uygulaması.
+
+00:10:56.059 --> 00:10:59.440
+Ben sadece yüklü
+mobil uygulama için bağımlılıklar.
+
+00:10:59.440 --> 00:11:00.780
+Biz buna bakarken,
+
+00:11:00.780 --> 00:11:02.760
+Ben de aynısını yapacağım.
+ekran uygulaması, böylece biz
+
+00:11:02.760 --> 00:11:05.505
+bir sonraki adım için biraz zaman kazanın.
+
+00:11:05.505 --> 00:11:07.800
+>> evet. Bu durumda,
+
+00:11:07.800 --> 00:11:12.085
+Bu önseçme IoT'dir
+Kenar modülü, doğru mu?
+
+00:11:12.085 --> 00:11:14.450
+>> Evet. Hem mobil uygulama hem de
+
+00:11:14.450 --> 00:11:18.905
+ekran uygulamaları aslında
+sadece HTML5 web uygulamaları.
+
+00:11:18.905 --> 00:11:21.860
+Bu durumda, onlar.
+"React" ile yazılmış.
+
+00:11:21.860 --> 00:11:25.400
+Ama aslında bu.
+Bunu çalacağım
+
+00:11:25.400 --> 00:11:29.060
+bir ekran bu IoT Edge'dir
+arkamda gördüğünüz konteyner,
+
+00:11:29.060 --> 00:11:31.700
+Ki bu da sadece bir video ödüyor.
+
+00:11:31.700 --> 00:11:37.555
+Bu uygulamayı dağıtacağız
+Aslında IoT Edge'de.
+
+00:11:37.555 --> 00:11:39.190
+>> anladım. Temelde
+
+00:11:39.190 --> 00:11:42.005
+Önceden yüklenmiş bir modül kullanıyorsunuz
+
+00:11:42.005 --> 00:11:44.930
+ayarlanacak IoT bölgesinde
+
+00:11:44.930 --> 00:11:47.480
+iot hub'dan uzaktan dağıtmak için
+
+00:11:47.480 --> 00:11:48.950
+olacak bir web uygulaması
+
+00:11:48.950 --> 00:11:51.685
+temel olarak ön uç
+cihazın mı?
+
+00:11:51.685 --> 00:11:52.695
+>> Aynen öyle.
+
+00:11:52.695 --> 00:11:53.685
+>> tamam.
+
+00:11:53.685 --> 00:11:57.850
+>> Evet. Eğer öyleysek.
+buradaki koda bakmak
+
+00:11:57.850 --> 00:11:59.560
+mobil uygulamanın,
+
+00:11:59.560 --> 00:12:01.270
+aslında çok basit
+
+00:12:01.270 --> 00:12:03.340
+çünkü sen.
+Flappy Bird'ü oynamak,
+
+00:12:03.340 --> 00:12:06.085
+gerçekten tek şey
+Yapması gereken çırpınmak.
+
+00:12:06.085 --> 00:12:10.360
+Bu React Code'da bir tane var
+flap olarak adlandırılan düğme,
+
+00:12:10.360 --> 00:12:13.075
+ve bu yayınlayacak
+
+00:12:13.075 --> 00:12:17.365
+gemideki olay
+kapaklı ızgara,
+
+00:12:17.365 --> 00:12:22.930
+ama aynı zamanda abone oluyor
+ekran uygulamasından olaylar,
+
+00:12:22.930 --> 00:12:24.910
+Oyun Bitti ve Oyun Başladı,
+
+00:12:24.910 --> 00:12:26.815
+böylece devletin farkında olur
+
+00:12:26.815 --> 00:12:28.840
+ekran uygulamasının
+her zaman,
+
+00:12:28.840 --> 00:12:33.130
+ancak daha sonra komutu gönderebilir
+Flap'a. Bu mantıklı mı?
+
+00:12:33.130 --> 00:12:35.560
+>> Mantıklı geliyor.
+O varlığı görüyorum.
+
+00:12:35.560 --> 00:12:39.310
+uygulama
+bu iki adamla etkileşime girmek,
+
+00:12:39.310 --> 00:12:40.660
+ekran ve cep telefonu,
+
+00:12:40.660 --> 00:12:41.860
+Ve bu hiç mantıklı değil.
+
+00:12:41.860 --> 00:12:43.975
+Bu borular sizde.
+iletişim,
+
+00:12:43.975 --> 00:12:45.910
+komut aşağı iner ve satıcı
+
+00:12:45.910 --> 00:12:48.130
+yukarı çıkar ve sonra sen
+Bunu çıngıraklamak zorundayım.
+
+00:12:48.130 --> 00:12:49.735
+>> evet, kesinlikle.
+
+00:12:49.735 --> 00:12:52.345
+Birkaç modülün var.
+burada,
+
+00:12:52.345 --> 00:12:53.530
+Bence oldukça ilginç.
+
+00:12:53.530 --> 00:12:57.595
+Bunlardan biri,
+mobil ızgara uygulaması ayarları.
+
+00:12:57.595 --> 00:13:01.000
+Diğeri ise.
+Gerçek Mesajlaşma Kitaplığı,
+
+00:13:01.000 --> 00:13:02.600
+GA Mesajlaşma olarak adlandırılır,
+
+00:13:02.600 --> 00:13:05.610
+bunların olduğu yer
+bileşenler
+
+00:13:05.610 --> 00:13:08.985
+sadece göndermek için kullanın ve
+olaylara abone olmak,
+
+00:13:08.985 --> 00:13:10.710
+tüm karmaşıklık ve
+
+00:13:10.710 --> 00:13:13.380
+bunun etrafındaki güvenlik
+sadece soyutlanmış uzakta
+
+00:13:13.380 --> 00:13:15.770
+bir geliştirici olarak bu yüzden
+yalnızca odaklanabileceğiniz
+
+00:13:15.770 --> 00:13:19.345
+iyi yaratma üzerine
+müşteri deneyimleri.
+
+00:13:19.345 --> 00:13:21.400
+Ayarların kullanımı söz konusu olduğunda,
+
+00:13:21.400 --> 00:13:22.690
+bu başka bir şey çünkü eğer
+
+00:13:22.690 --> 00:13:24.355
+bir uygulama oluşturuyorsanız veya
+
+00:13:24.355 --> 00:13:28.510
+biz bizim bakıyoruz
+pazaryeri uygulamaları,
+
+00:13:28.510 --> 00:13:30.790
+Eğer varsa, hadi
+olduğunu söylemek
+
+00:13:30.790 --> 00:13:32.170
+birden fazla mağazada perakende satış,
+
+00:13:32.170 --> 00:13:33.670
+aynı ayarlara sahip olmayacaksınız
+
+00:13:33.670 --> 00:13:35.440
+mutlaka tüm mağazalarda,
+
+00:13:35.440 --> 00:13:37.825
+değişmek isteyeceksin
+Farklı şeyler.
+
+00:13:37.825 --> 00:13:42.865
+Geliştirici olarak seçebilirsiniz
+hangi seçenekler olduğunuzu,
+
+00:13:42.865 --> 00:13:46.330
+mağaza yöneticileri veya
+teknik olmayan kişiler,
+
+00:13:46.330 --> 00:13:49.930
+her yükleme için değişiklik
+kılavuz konsolunda,
+
+00:13:49.930 --> 00:13:54.085
+ve bunu yaparak
+bu şemayı tanımlama.
+
+00:13:54.085 --> 00:13:56.230
+Bu çok basit bir şemadır.
+
+00:13:56.230 --> 00:13:59.785
+mobil uygulama
+Temel olarak "Hiçbir şey yapma" diyor.
+
+00:13:59.785 --> 00:14:03.880
+Atlarsak daha iyi bir örnek olur.
+ekran uygulamasına,
+
+00:14:03.880 --> 00:14:06.850
+ve şemaya bakacağız
+bunun için tanımlanmıştır,
+
+00:14:06.850 --> 00:14:09.415
+çünkü burada
+
+00:14:09.415 --> 00:14:12.340
+üç değer biz çok
+
+00:14:12.340 --> 00:14:15.205
+yakında nasıl göreceğiz
+kılavuz konsolunda kullanın.
+
+00:14:15.205 --> 00:14:17.485
+Ama burası.
+Kumandayı buldum mu?
+
+00:14:17.485 --> 00:14:19.615
+Uzaktan kumandanın URL'si nedir?
+
+00:14:19.615 --> 00:14:22.120
+Kuşun ağırlığı nedir?
+
+00:14:22.120 --> 00:14:27.430
+Arasındaki boşluk nedir?
+Flappy Bird oyununun boruları,
+
+00:14:27.430 --> 00:14:29.080
+Peki itiş gücü nedir?
+
+00:14:29.080 --> 00:14:30.970
+Eğer bu farklı ekranları dağıtırsam,
+
+00:14:30.970 --> 00:14:33.490
+Tamamen farklı olabilirim.
+sadece değiştirerek oyunlar
+
+00:14:33.490 --> 00:14:37.060
+bu parametreler
+kılavuz konsolu.
+
+00:14:37.060 --> 00:14:38.930
+>> anladım.
+
+00:14:39.030 --> 00:14:42.160
+>> Eğer bakıyorsanız
+ekran uygulaması kodu,
+
+00:14:42.160 --> 00:14:44.590
+görebilirsiniz ki biz
+soyutladım
+
+00:14:44.590 --> 00:14:45.805
+orijinal oyun içine
+
+00:14:45.805 --> 00:14:48.925
+tek bir React bileşeni
+Burada, Game dediğimiz,
+
+00:14:48.925 --> 00:14:51.685
+ve aynı zamanda sadece yükleniyor
+
+00:14:51.685 --> 00:14:53.710
+GA Mesajlaşma Kitaplığı ve
+
+00:14:53.710 --> 00:14:57.355
+GA ayarları kitaplığı
+U ayarlarıyla,
+
+00:14:57.355 --> 00:15:01.330
+ve sonra göreceksiniz ki biz
+gibi tüm değerleri almak
+
+00:15:01.330 --> 00:15:05.290
+yerçekimi boşluğu ve itme
+kılavuz konsolundan,
+
+00:15:05.290 --> 00:15:08.305
+ve bu örnek
+uygulamanın,
+
+00:15:08.305 --> 00:15:10.450
+Bence bu çok havalı.
+
+00:15:10.450 --> 00:15:12.490
+Ne de ne yapacaksınız
+bak, sen böyle
+
+00:15:12.490 --> 00:15:15.279
+bu ekran uygulamalarını geliştirmek,
+
+00:15:15.279 --> 00:15:17.650
+ve nasıl geliştirdiğinizi
+mobil uygulamalar.
+
+00:15:17.650 --> 00:15:19.390
+Sadece hepsini takip ediyorlar.
+aynı kalıplar,
+
+00:15:19.390 --> 00:15:21.070
+aynı kütüphaneleri kullanıyorlar,
+
+00:15:21.070 --> 00:15:25.180
+bu yüzden kullanmak gerçekten kolaydır
+ızgara ile deneyim
+
+00:15:25.180 --> 00:15:27.310
+her iki mobil uygulama
+ve ekran uygulamaları ve
+
+00:15:27.310 --> 00:15:30.010
+mesajlaşma ve her şey sadece
+beklediğiniz gibi çalışır.
+
+00:15:30.010 --> 00:15:32.350
+>> evet, hoşuma >>.
+Çünkü bugün sen.
+
+00:15:32.350 --> 00:15:34.330
+bir geliştirici, bina uygulamaları,
+
+00:15:34.330 --> 00:15:38.515
+Sanki onunla konuşuyor gibiydin.
+uygulamanızın başka bir modülü A,
+
+00:15:38.515 --> 00:15:41.530
+aynı cihazda bir uygulama
+Yanında ya da değil.
+
+00:15:41.530 --> 00:15:43.660
+Her şeyi süper yapar.
+onlar için basit.
+
+00:15:43.660 --> 00:15:45.310
+>> evet, kesinlikle.
+
+00:15:45.310 --> 00:15:47.680
+Şimdi bakıyoruz.
+ekran uygulamasında mobil uygulama,
+
+00:15:47.680 --> 00:15:48.940
+ama eğer ben yaratıyorsam,
+
+00:15:48.940 --> 00:15:50.860
+Diyelim ki bir Kenar Modülü,
+
+00:15:50.860 --> 00:15:52.900
+Erişimim olurdu.
+aynı kütüphaneler ve ben
+
+00:15:52.900 --> 00:15:55.060
+sadece yayınlayabilir ve
+aynı olaylara abone olmak,
+
+00:15:55.060 --> 00:15:56.545
+Ki bu gerçekten harika.
+
+00:15:56.545 --> 00:16:00.340
+Bir senaryo oluşturabilirsiniz:
+telefonunuzdaki bir düğmeye basarsanız,
+
+00:16:00.340 --> 00:16:03.535
+içinden bir kapı açar.
+kenar modülü, örneğin.
+
+00:16:03.535 --> 00:16:04.690
+>> evet. Bu sadece.
+
+00:16:04.690 --> 00:16:06.850
+ekran veya sadece oynatma
+Ekranda bir şey,
+
+00:16:06.850 --> 00:16:10.315
+gerçekten etkileşimle ilgili
+çevrenizle birlikte.
+
+00:16:10.315 --> 00:16:14.965
+>> Aynen öyle. Ayrıca siz.
+bu tipik IoT Edge'i oluşturmak,
+
+00:16:14.965 --> 00:16:20.740
+vizyon gibi örnekler
+Algoritma gibi bir şey.
+
+00:16:20.740 --> 00:16:23.095
+Belirli olayları tespit ettiğinizde,
+
+00:16:23.095 --> 00:16:25.720
+bunları yayımlayabilirsiniz
+böylece ekranlar açık
+
+00:16:25.720 --> 00:16:28.735
+telefonlar gerçek zamanlı olarak tepki verebilir
+tespit ettikleri her neyse ona.
+
+00:16:28.735 --> 00:16:32.770
+>> evet. Şimdi getirebiliriz.
+Vizyonumuz yapay zeka, modül, değil mi?
+
+00:16:32.770 --> 00:16:34.600
+Her zaman istiyoruz.
+hayata bir kenar ekleyin.
+
+00:16:34.600 --> 00:16:35.215
+>> Evet.
+
+00:16:35.215 --> 00:16:36.865
+>> Bakalım nasıl olacak.
+
+00:16:36.865 --> 00:16:39.565
+Bakalım nasıl konuşlandırılacaksınız?
+ve işe yaramasını sağlar.
+
+00:16:39.565 --> 00:16:45.055
+>> Konuşlandıralım. Geri dönüyoruz
+Grid konsolumuza.
+
+00:16:45.055 --> 00:16:46.780
+Genel uygulamalara ek olarak,
+
+00:16:46.780 --> 00:16:48.235
+uygulamalarınız da var,
+
+00:16:48.235 --> 00:16:52.525
+ve burada bu uygulamaların
+Bu kiracı, bu boş.
+
+00:16:52.525 --> 00:16:54.085
+Buraya bir şey koymak istiyoruz.
+
+00:16:54.085 --> 00:16:55.900
+Ama ihtiyacım olan ilk şey.
+yapmam gereken şey
+
+00:16:55.900 --> 00:16:58.450
+kiracı adımı girin
+
+00:16:58.450 --> 00:17:01.690
+yapılandırma çünkü
+yerleşik Grid CLI
+
+00:17:01.690 --> 00:17:03.115
+bunu nerede yayınlayacağını bilmesi gerekiyor.
+
+00:17:03.115 --> 00:17:07.105
+Kiracımın.
+adı burada AH Demo 1.
+
+00:17:07.105 --> 00:17:09.895
+Ne yapacağım.
+ben gidiyorum
+
+00:17:09.895 --> 00:17:13.105
+paketim JSON ve
+org'umu
+
+00:17:13.105 --> 00:17:22.940
+Her iki ekran için AH Demo 1
+ve mobil uygulamam için.
+
+00:17:23.130 --> 00:17:28.930
+İşte oldu. O zaman biz.
+CLI'mıza geri dönmek,
+
+00:17:28.930 --> 00:17:33.745
+Ve iplik yapımı ve iplik pub yapacağım.
+
+00:17:33.745 --> 00:17:36.770
+ki bu açıkçası
+yayınlamak için kısa.
+
+00:17:37.980 --> 00:17:40.060
+Şu anda burada ne işi var?
+
+00:17:40.060 --> 00:17:43.450
+bir
+dot [duyulamaz] dosyası,
+
+00:17:43.450 --> 00:17:45.640
+tam uygulama inşa,
+
+00:17:45.640 --> 00:17:48.400
+ve yayınlayacak
+Kiracıma,
+
+00:17:48.400 --> 00:17:52.100
+bu nedenle kullanılabilir hale gelir
+gerçekten yüklemek için beni.
+
+00:17:55.590 --> 00:17:59.930
+Yapı bu başarılı
+Ve ben yayın yapıyordum,
+
+00:18:02.550 --> 00:18:05.650
+ve serbest bırakılmamız yaratıldı.
+
+00:18:05.650 --> 00:18:12.530
+Eğer gride geri dönersek.
+Konsol ve biz sadece uygulamalarımı yeniden yükleyeceğiz,
+
+00:18:12.690 --> 00:18:15.340
+bunun uygulamalar olduğunu görüyoruz
+standartlar için.
+
+00:18:15.340 --> 00:18:17.515
+Artık Flappy Bird'umuz var.
+ekran uygulaması burada,
+
+00:18:17.515 --> 00:18:19.330
+ve istersem bunu yükleyebilirim.
+
+00:18:19.330 --> 00:18:22.510
+>> güzel. Temel olarak sen.
+geliştiriciyi burada sahip olmak,
+
+00:18:22.510 --> 00:18:24.625
+temelde bir uygulama sevk ve sonra
+
+00:18:24.625 --> 00:18:28.285
+çözümün bir operatörü
+Şimdi onu orada bul ve de ki,
+
+00:18:28.285 --> 00:18:29.680
+"Hey, onu dağıtmak istiyorum.
+
+00:18:29.680 --> 00:18:32.770
+bu ekran için
+bu deneyimi sunmak".
+
+00:18:32.770 --> 00:18:37.540
+>> aynen böyle. Hadi yapalım.
+mobil uygulama için de aynı şey geçerli,
+
+00:18:37.540 --> 00:18:39.730
+ve sonra alabiliriz
+nasıl bir bakış
+
+00:18:39.730 --> 00:18:43.760
+aslında bunu yükleyin ve dağıtın.
+
+00:18:45.870 --> 00:18:49.150
+Mobil uygulama
+bina ve dağıtım,
+
+00:18:49.150 --> 00:18:52.285
+Bu süreci başlatabiliriz.
+
+00:18:52.285 --> 00:18:58.730
+Şimdi "Yükle" tuşuna basacağım.
+Flappy Kuş ekranında.
+
+00:18:58.980 --> 00:19:07.400
+Flappy'yi vereceğim.
+Test ekranı diyebiliriz.
+
+00:19:10.830 --> 00:19:15.040
+Şimdi altında belirdiğini görüyorsunuz.
+buradaki kurulumlarım,
+
+00:19:15.040 --> 00:19:17.800
+ve sonra bana hangisi olduğunu gösterir
+üzerinde çalıştığı aygıtlar.
+
+00:19:17.800 --> 00:19:23.035
+IoT Edge budur
+aygıtlarım var mı?
+
+00:19:23.035 --> 00:19:24.760
+Görüyoruz ki,
+
+00:19:24.760 --> 00:19:27.145
+aygıtlar şu anda
+bu kuruluma bağlı,
+
+00:19:27.145 --> 00:19:29.020
+Tabii ki, gidiyoruz
+cihazı bağlamak için.
+
+00:19:29.020 --> 00:19:30.325
+>> tamam.
+
+00:19:30.325 --> 00:19:35.110
+>> Burada IoT Edge cihazlarını görebiliyorum
+
+00:19:35.110 --> 00:19:37.990
+zaten
+bu kiracıda çalışıyor.
+
+00:19:37.990 --> 00:19:39.460
+Eğer onlardan birine basamazsam,
+
+00:19:39.460 --> 00:19:41.830
+bunu şuradan alacak.
+
+00:19:41.830 --> 00:19:45.220
+önceki yükleme
+Yeni yarattığımız sine.
+
+00:19:45.220 --> 00:19:48.700
+Ama aynı zamanda gerçekten kolay.
+tamamen yeni cihazlar kurmak,
+
+00:19:48.700 --> 00:19:51.910
+ve bu bir şey.
+Aslında gurur duyuyoruz.
+
+00:19:51.910 --> 00:19:55.120
+Eğer bir
+kilitleme, örneğin,
+
+00:19:55.120 --> 00:19:58.750
+veya ahududu varsa
+Pi ya da onun gibi bir şey.
+
+00:19:58.750 --> 00:20:01.480
+sadece seçebilirsiniz
+aygıt türü ve
+
+00:20:01.480 --> 00:20:04.525
+görüntüyü indirebilirsiniz.
+
+00:20:04.525 --> 00:20:07.700
+Sadece bir USB'ye koy.
+sopa ve flaş.
+
+00:20:09.090 --> 00:20:12.520
+Bunu çalışır hale getiren
+sadece girmek kadar basit
+
+00:20:12.520 --> 00:20:16.450
+buradaki seri numarası veya tarama
+cihazdaki QR kodu.
+
+00:20:16.450 --> 00:20:21.310
+Eğer bunu şeyde yapıyorsan.
+gelişim oyun alanı,
+
+00:20:21.310 --> 00:20:23.500
+muhtemelen isteyeceksiniz
+QR kodunu kullanmak için,
+
+00:20:23.500 --> 00:20:24.730
+ama eğer rızık veriyorsanız
+
+00:20:24.730 --> 00:20:27.535
+yüz binlerce cihaz
+üretim ortamlarına,
+
+00:20:27.535 --> 00:20:30.490
+sadece serinin bir listesini alıyorum
+sayılar çok daha kolay.
+
+00:20:30.490 --> 00:20:33.700
+Aynı anda çok şey eklediğinizde.
+
+00:20:33.700 --> 00:20:36.610
+>> bunu seviyorum, böylece.
+Gerçekten iplikçik var.
+
+00:20:36.610 --> 00:20:38.890
+Ben de sana soracaktım.
+siz bu iştekiler
+
+00:20:38.890 --> 00:20:42.220
+bir çözüm olarak cihazın kendisi?
+
+00:20:42.220 --> 00:20:43.795
+Ama görünüşe göre sen.
+
+00:20:43.795 --> 00:20:45.640
+bazı genel olanlar
+Dışarıda olan,
+
+00:20:45.640 --> 00:20:47.440
+ve sanırım liste
+burada var
+
+00:20:47.440 --> 00:20:51.520
+en sık kullanılan donanım
+dijital işaretlere güç için.
+
+00:20:51.520 --> 00:20:53.319
+>> evet, kesinlikle.
+
+00:20:53.319 --> 00:20:58.140
+Çoğu cihaz türünü destekliyoruz.
+
+00:20:58.140 --> 00:21:00.615
+Eğer herhangi bir Intel donanımıysa,
+
+00:21:00.615 --> 00:21:03.810
+bu görüntü genellikle hemen kullanılır,
+
+00:21:03.810 --> 00:21:07.280
+Raspberry Pi de
+IoT Edge destekli.
+
+00:21:07.280 --> 00:21:10.360
+Diğer cihazlar IoT Edge değildir,
+
+00:21:10.360 --> 00:21:11.890
+böylece sadece koşabilirsiniz
+
+00:21:11.890 --> 00:21:16.270
+Kenar Kapları veya Kenar Modülleri
+Raspberry Pi ve Intel üzerinde
+
+00:21:16.270 --> 00:21:18.370
+Resim ama yönetebilirsiniz
+
+00:21:18.370 --> 00:21:20.320
+aracılığıyla ekran uygulamaları
+
+00:21:20.320 --> 00:21:23.935
+Bununla IoT Hub
+diğer aygıt türleri.
+
+00:21:23.935 --> 00:21:24.790
+>> tamam.
+
+00:21:24.790 --> 00:21:32.874
+>> Harika. Bakalım cep telefonu.
+yapımı bitti. Öyle oldu.
+
+00:21:32.874 --> 00:21:37.030
+Geri dönmemizi öneriyorum.
+pazaryeri, Uygulamalarım,
+
+00:21:37.030 --> 00:21:46.340
+ve Flappy cep telefonunu kuruyoruz
+uzaktan kumanda sonra "Tamam" diyoruz.
+
+00:21:46.980 --> 00:21:52.765
+Burada görebildiğimiz şey.
+her içeriğin güncellenerek,
+
+00:21:52.765 --> 00:21:55.300
+eğer isterseniz, bu gerçekten inşa ve
+
+00:21:55.300 --> 00:21:58.690
+uygulamanın bu sürümünün dağıtımını.
+
+00:21:58.690 --> 00:22:00.460
+Eğer içeriğe gidersem,
+
+00:22:00.460 --> 00:22:04.390
+göreceksiniz ki
+ayarlar şeması
+
+00:22:04.390 --> 00:22:09.010
+depoda oluşturduk
+aslında burada işlenir.
+
+00:22:09.010 --> 00:22:12.220
+Çok ilginç bir şey yok.
+uzaktan kumandadaki ayarlar,
+
+00:22:12.220 --> 00:22:16.315
+ama ekrana gidersek ve
+ardından İçerik sekmesine gidin,
+
+00:22:16.315 --> 00:22:20.215
+burada görüyoruz ki sen
+yerçekimini değiştirebilir,
+
+00:22:20.215 --> 00:22:22.780
+beş boşluk kapağı
+hızlanma ve benzeri.
+
+00:22:22.780 --> 00:22:25.120
+Bu da bana.
+seçme seçeneği
+
+00:22:25.120 --> 00:22:27.310
+mobil uç nokta ve
+
+00:22:27.310 --> 00:22:29.470
+çünkü bunu yükledik
+Şimdi Flappy mobil ve hepsi,
+
+00:22:29.470 --> 00:22:31.510
+Bunu seçebilirim.
+bir ve sonra onlar olacak
+
+00:22:31.510 --> 00:22:34.375
+birbirini keşfedebilmek
+bu iletişim için.
+
+00:22:34.375 --> 00:22:35.860
+>> tamam.
+
+00:22:35.860 --> 00:22:40.180
+>> bunu kurtaracağım ve.
+"Yayınla"ya basacağım.
+
+00:22:40.180 --> 00:22:41.860
+Bunu yayınlamak istiyorum.
+
+00:22:41.860 --> 00:22:45.130
+üretim ve sonra görebiliyorum
+bunun nasıl olduğuna dair ilerleme
+
+00:22:45.130 --> 00:22:52.060
+bunu oluşturma ve dağıtma
+uygulama. Ne düşünüyorsun?
+
+00:22:52.060 --> 00:22:55.330
+>> bayıldım. Bu.
+oldukça açık.
+
+00:22:55.330 --> 00:22:58.900
+Geliştirici bu işi yapar
+bir geliştirici olarak ve sonra
+
+00:22:58.900 --> 00:23:00.850
+operatör sadece
+düğmelerini tıklatmak için
+
+00:23:00.850 --> 00:23:04.250
+bir kullanıcı arabirimi ve bu güzel
+basit ve sezgisel.
+
+00:23:05.280 --> 00:23:07.690
+Gerçekten sevdiğim bir şey var.
+
+00:23:07.690 --> 00:23:10.195
+konuştuğumuz zaman
+dijital işaretler hakkında,
+
+00:23:10.195 --> 00:23:13.525
+algısı
+insanlarda bu olabilir
+
+00:23:13.525 --> 00:23:17.050
+sadece işe yarıyor
+en kötü durum ya da daha kötüsü,
+
+00:23:17.050 --> 00:23:21.175
+sadece bir web uygulaması olduğunu
+bir web sitesindeki verileri sarar.
+
+00:23:21.175 --> 00:23:23.800
+Tabelanın kendisi oldukça aptalca.
+
+00:23:23.800 --> 00:23:26.155
+İşte konuşuyoruz.
+hakkında bir şey hakkında
+
+00:23:26.155 --> 00:23:31.344
+özelleştirilebilir güzel
+bir operatör tarafından kolayca.
+
+00:23:31.344 --> 00:23:32.935
+Bir deneyim sunabiliriz.
+
+00:23:32.935 --> 00:23:35.200
+Senaryoya göre,
+
+00:23:35.200 --> 00:23:39.370
+konumuna göre
+belirli bir ekran ve bir olay,
+
+00:23:39.370 --> 00:23:44.560
+ayrıca,
+dinamik olma deneyimi.
+
+00:23:44.560 --> 00:23:49.180
+Belki de yapabileceğin bir şeydir.
+dağıtılırken şimdi göster
+
+00:23:49.180 --> 00:23:52.210
+Flappy Bird uygulaması ve bize ne olduğunu gösterin
+
+00:23:52.210 --> 00:23:55.345
+bir operatörün yapabileceği daha fazla şey
+Ombori Grid sayesinde,
+
+00:23:55.345 --> 00:23:59.290
+Ben yapmak için oluştururum
+dijital deneyim daha etkileşimli.
+
+00:23:59.290 --> 00:24:04.960
+>> Kesinlikle. Bir
+en havalı şey
+
+00:24:04.960 --> 00:24:08.560
+Ombori Grid ile
+buna ek olarak
+
+00:24:08.560 --> 00:24:12.280
+yaratabilmek
+kendi ayarlar şemalarınız,
+
+00:24:12.280 --> 00:24:16.195
+ayrıca tüm
+medya yönetimi,
+
+00:24:16.195 --> 00:24:21.250
+tıpkı diğerleri gibi
+dijital tabela platformu,
+
+00:24:21.250 --> 00:24:25.795
+aygıtları ve dosyalarınızı.
+
+00:24:25.795 --> 00:24:30.340
+Sahip olduğumuz şeylerden biri
+Aslında çok zaman harcadım.
+
+00:24:30.340 --> 00:24:32.005
+Bahsettiğin şey şu ki,
+
+00:24:32.005 --> 00:24:36.130
+bir algı var
+Koyduğunuzda, diyelim ki,
+
+00:24:36.130 --> 00:24:39.100
+etkileşimli içerik
+dijital ekranda,
+
+00:24:39.100 --> 00:24:40.540
+yaptığınız şey sadece yüklemek
+
+00:24:40.540 --> 00:24:43.195
+esasen bir Web sayfası URL'si
+ekranda.
+
+00:24:43.195 --> 00:24:45.925
+Ama aslında nedir
+burada olmak,
+
+00:24:45.925 --> 00:24:51.325
+uygulama dağıtılır
+cihaza dışarı çıkın.
+
+00:24:51.325 --> 00:24:53.500
+Bu sadece bir web sitesini yüklemek değil,
+
+00:24:53.500 --> 00:24:55.420
+Aslında yerel olarak çalışıyor.
+
+00:24:55.420 --> 00:24:58.270
+Üzerinde gördüğünüz her şey
+ekran eşit çalışmaya devam edecek
+
+00:24:58.270 --> 00:25:01.510
+cihaz aniden kaybederse
+bağlantı ya da onun gibi bir şey.
+
+00:25:01.510 --> 00:25:03.970
+Belli ki, bunu yapmamışsın.
+bu gerçek zamanlı iletişim
+
+00:25:03.970 --> 00:25:05.140
+cep telefonu ve benzeri,
+
+00:25:05.140 --> 00:25:07.330
+ama sen.
+siyah ekranlar sadece çünkü
+
+00:25:07.330 --> 00:25:11.990
+aralıklı bağlantıya sahip olmak
+sorun ya da onun gibi bir şey.
+
+00:25:12.120 --> 00:25:14.870
+>> Bu mantıklı.
+
+00:25:15.810 --> 00:25:20.330
+>> Ekrana dönersek,
+
+00:25:20.700 --> 00:25:25.315
+burada yapının tamamlandığını görüyoruz.
+
+00:25:25.315 --> 00:25:29.365
+Bu ekranı bağlayalım.
+Aslında arkamdayız.
+
+00:25:29.365 --> 00:25:31.990
+Buraya gidiyoruz, cihazı bağlayın.
+
+00:25:31.990 --> 00:25:33.940
+Tek bir şey.
+düşünmek oldukça güzel
+
+00:25:33.940 --> 00:25:35.800
+CPU kullanımını görmenizdir,
+
+00:25:35.800 --> 00:25:40.400
+IoT'nin bellek kullanımı
+Edge cihazı her zaman.
+
+00:25:40.680 --> 00:25:46.795
+bunu yapmak istediğimi onaylarım.
+konuşlandırın ve şimdi burada beliriyor.
+
+00:25:46.795 --> 00:25:50.710
+Gittiğini göreceksin.
+uygulamayı yüklemeye başlamak için.
+
+00:25:50.710 --> 00:25:53.080
+Yanlış oryantasyona sahibiz.
+
+00:25:53.080 --> 00:25:56.185
+Burayı açabiliriz ve.
+Modüllere gireceğim.
+
+00:25:56.185 --> 00:26:00.010
+Burada modülleri görebiliriz.
+cihaza dağıtılır.
+
+00:26:00.010 --> 00:26:03.500
+Değiştireceğim.
+ekran modülünün yönü.
+
+00:26:03.660 --> 00:26:06.800
+"Kaydet" tuşuna basın.
+
+00:26:06.930 --> 00:26:10.480
+Güncellemeleri gerçek zamanlı olarak ziyaret edin.
+
+00:26:10.480 --> 00:26:12.970
+>> Ekranınızı görelim
+Şimdi, çünkü biz sadece.
+
+00:26:12.970 --> 00:26:14.890
+şu anda demo ekranınızı görmek.
+
+00:26:14.890 --> 00:26:17.185
+Kameralarınızı görelim ve.
+Neler olduğunu görebiliyoruz.
+
+00:26:17.185 --> 00:26:20.870
+Tamam, şimdi konuşlandırıldı.
+Şu ekranda.
+
+00:26:21.270 --> 00:26:23.740
+Meydan okumak istiyorum.
+sen. Değişebilir misin?
+
+00:26:23.740 --> 00:26:27.055
+tekrar oryantasyon, böylece
+Biz görmediğimiz için yaşıyoruz.
+
+00:26:27.055 --> 00:26:28.150
+>> evet, kesinlikle.
+
+00:26:28.150 --> 00:26:29.905
+>> böylece insanlar fark eder
+Burada neler oluyor.
+
+00:26:29.905 --> 00:26:33.950
+>> bunu koyacağım.
+"Değişiklikleri Kaydet" tuşuna basın.
+
+00:26:35.490 --> 00:26:37.540
+>> O kişi yapıyordu.
+
+00:26:37.540 --> 00:26:39.820
+operasyon eşit değil
+Ekranın önünde.
+
+00:26:39.820 --> 00:26:42.010
+Uzaktan kumandalı olabilirler çünkü
+etkileşimde
+
+00:26:42.010 --> 00:26:45.175
+burada bir web sayfası ve
+Pano'nun kendisi.
+
+00:26:45.175 --> 00:26:46.075
+>> Evet.
+
+00:26:46.075 --> 00:26:47.920
+>> tamam. Şimdi sen.
+Onunla oynamak için adamım.
+
+00:26:47.920 --> 00:26:49.895
+Bize neler olduğunu göstermelisin.
+
+00:26:49.895 --> 00:26:53.105
+>> tamam. Ben de denerim.
+
+00:26:53.105 --> 00:26:55.930
+Kamerayı açacağım.
+
+00:26:55.930 --> 00:27:00.950
+telefonum ve ben
+QR kodunu tarayın.
+
+00:27:01.860 --> 00:27:04.555
+Buraya yükleniyor.
+
+00:27:04.555 --> 00:27:07.105
+Eğer şimdi telefonumu görürsen.
+
+00:27:07.105 --> 00:27:09.835
+Görüyorsun, bir tane var.
+flappy yazan düğme.
+
+00:27:09.835 --> 00:27:10.765
+>> evet
+
+00:27:10.765 --> 00:27:12.985
+>> Tabii ki buna basmalıyız.
+
+00:27:12.985 --> 00:27:15.550
+>> evet. Yeterince zor, değil mi?
+
+00:27:15.550 --> 00:27:19.615
+>> evet. Şuna bakın.
+
+00:27:19.615 --> 00:27:28.570
+>> Kolay. Güzel. Andreas.
+Bu öyle bir şey ki.
+
+00:27:28.570 --> 00:27:31.615
+ile amaçlanan kelime oyunu gibi
+Oyun, bir sürü boru var.
+
+00:27:31.615 --> 00:27:34.240
+İşte cep telefonu.
+uygulama olmak
+
+00:27:34.240 --> 00:27:36.925
+web uygulamasını temizlerseniz
+onunla etkileşime girmek,
+
+00:27:36.925 --> 00:27:38.320
+arka uca gider,
+
+00:27:38.320 --> 00:27:40.480
+arka uç konuşmaları bu ekrana geri dönüyor,
+
+00:27:40.480 --> 00:27:43.990
+Bulut'a kadar ve
+bir komut uygular,
+
+00:27:43.990 --> 00:27:45.880
+bu yüzden kolayca gebilmeleri için.
+
+00:27:45.880 --> 00:27:52.585
+>> Mobil uygulama devleti koruyor
+ekrandan her zaman.
+
+00:27:52.585 --> 00:27:58.285
+Cihaz sadece diyor ki.
+öldü ve tekrar basılırsam,
+
+00:27:58.285 --> 00:28:00.580
+umarım biraz görebilirsiniz
+arkadaki ekranın.
+
+00:28:00.580 --> 00:28:02.290
+>> Sıfırlarsınız.
+
+00:28:02.290 --> 00:28:05.050
+>> Bu çok eski bir gecikme süresi
+
+00:28:05.050 --> 00:28:07.945
+bu şeyler aslında
+oynanabilir hale getirir.
+
+00:28:07.945 --> 00:28:10.720
+>> evet, kesinlikle. Yani
+Söylemek üzere olduğum şeyi.
+
+00:28:10.720 --> 00:28:12.610
+Bir sürü boru var ve.
+
+00:28:12.610 --> 00:28:15.430
+sezgisel olarak sen gibi görünüyor
+bir geliştirici olarak şöyle derdi:
+
+00:28:15.430 --> 00:28:17.815
+Şey, bu.
+kesinlikle laggy olun.
+
+00:28:17.815 --> 00:28:20.680
+Mesela, aniden ağ kesilip kapatılır ya da
+
+00:28:20.680 --> 00:28:24.175
+yavaşlar veya birçok kişi
+Wi-Fi veya benzeri bir şey üzerinde,
+
+00:28:24.175 --> 00:28:27.370
+günün sonunda çünkü
+IoT teknolojilerini
+
+00:28:27.370 --> 00:28:31.360
+bunun bağlantısı
+Bulut'a dijital işaret,
+
+00:28:31.360 --> 00:28:33.760
+zaten kaydediyorsunuz
+çok çünkü bu
+
+00:28:33.760 --> 00:28:35.920
+iletişim optimize edilmiştir
+IoT cihazları için,
+
+00:28:35.920 --> 00:28:39.130
+ve sen zaten
+kendini kurtarmak,
+
+00:28:39.130 --> 00:28:43.030
+içinden geçmenin züsesini
+web için HTTP'nin olağan boruları.
+
+00:28:43.030 --> 00:28:46.690
+Burada gerçekten.
+temel olarak IoT kanalları.
+
+00:28:46.690 --> 00:28:50.740
+>> evet. Aynen ve çünkü.
+aygıtının kimliği de
+
+00:28:50.740 --> 00:28:52.780
+kendine has
+sayesinde sertifikalar
+
+00:28:52.780 --> 00:28:54.220
+cihaz sağlama hizmeti ve
+
+00:28:54.220 --> 00:28:57.130
+gibi tüm bu şeyler
+varlık geliştiricisi,
+
+00:28:57.130 --> 00:28:58.780
+buna gerek yok
+nasıl yapacağımı düşünmek
+
+00:28:58.780 --> 00:29:00.925
+bu farklı kimlik doğrulama
+kurulumdaki şeyler,
+
+00:29:00.925 --> 00:29:02.920
+gerçek zamanlı
+iletişim, sadece
+
+00:29:02.920 --> 00:29:06.100
+bu kütüphaneler
+Sana daha önce gösterdim.
+
+00:29:06.100 --> 00:29:12.025
+Eğer tekrar benim.
+ekrana buradan hızlı bir şekilde tıklayın.
+
+00:29:12.025 --> 00:29:15.805
+Sadece Ombori GA mesajlaşmasını içe aktarıyor
+
+00:29:15.805 --> 00:29:19.210
+tek yapman gereken bu çünkü
+tüm bağlantı,
+
+00:29:19.210 --> 00:29:21.850
+yetkilendirme vb.
+
+00:29:21.850 --> 00:29:24.610
+açık Ombori tarafından yönetilmektedir
+arka uç içinde,
+
+00:29:24.610 --> 00:29:27.925
+bu yüzden tamamen soyutlanmış
+geliştirici olarak sizden uzakta.
+
+00:29:27.925 --> 00:29:31.825
+>> bayıldım. Oldukça iyi
+ve açık sözlü.
+
+00:29:31.825 --> 00:29:34.540
+Andreas, sen yaptın.
+
+00:29:34.540 --> 00:29:36.880
+Demo boyunca.
+Dijital bir işaretin vardı.
+
+00:29:36.880 --> 00:29:40.210
+Sadece bir video gösteriyordu.
+ve sen çok başardı
+
+00:29:40.210 --> 00:29:44.365
+kolayca ve hızlı bir şekilde
+şablonu temel alan uygulama
+
+00:29:44.365 --> 00:29:45.580
+Ama tepki veriyor.
+
+00:29:45.580 --> 00:29:48.520
+için oldukça basit
+geliştiriciler oluşturmak için orada
+
+00:29:48.520 --> 00:29:52.135
+bu deneyimler uzaktan dağıtılır,
+
+00:29:52.135 --> 00:29:54.505
+control parametresi vb.
+
+00:29:54.505 --> 00:29:57.310
+Bu çok zekice.
+ve açık gücünü gösterir
+
+00:29:57.310 --> 00:30:00.655
+tahta ızgarası. Bunun için teşekkürler Andreas.
+
+00:30:00.655 --> 00:30:02.830
+Seyircilerimiz için, eğer
+daha fazla bilgi edinmek istiyorlar.
+
+00:30:02.830 --> 00:30:04.810
+Ombori.com gidebilirler.
+
+00:30:04.810 --> 00:30:06.490
+Dedin ki, eğik ızgara,
+
+00:30:06.490 --> 00:30:08.590
+bu orta uç adı
+doğru yerde.
+
+00:30:08.590 --> 00:30:10.225
+Ombori.com. bu web sitesi.
+
+00:30:10.225 --> 00:30:12.940
+Ama sende bir şey var.
+izleyen insanlar için daha fazlası
+
+00:30:12.940 --> 00:30:16.040
+isterlerse bu video
+Bedavaya al, tamam mı?
+
+00:30:16.040 --> 00:30:18.570
+>> evet, kesinlikle. İki şeyim var.
+
+00:30:18.570 --> 00:30:20.820
+Her şeyden önce, bir özellik
+bahsetmeyi unuttuğum,
+
+00:30:20.820 --> 00:30:23.260
+Ki bu aslında oldukça önemli.
+
+00:30:23.260 --> 00:30:27.745
+Beni OMG kullanırken gördün.
+Ombori Grid CLI to-
+
+00:30:27.745 --> 00:30:29.305
+>> Bu arada en iyisi bu.
+
+00:30:29.305 --> 00:30:31.045
+Şimdiye kadarki en iyi komut satırı komutu.
+
+00:30:31.045 --> 00:30:32.410
+OMG kesinlikle.
+
+00:30:32.410 --> 00:30:33.880
+Bunu unutamazsın.
+
+00:30:33.880 --> 00:30:37.630
+>> Hayır, kesinlikle. Gerçek şu ki.
+Ben bir geliştirici olarak,
+
+00:30:37.630 --> 00:30:39.580
+Büyük bir hayranı değilim.
+bu portalları kullanarak,
+
+00:30:39.580 --> 00:30:43.345
+bu daha çok
+sizin deyiminle operatörler.
+
+00:30:43.345 --> 00:30:47.830
+Hemen hemen her yönüyle kontrol ediyorum.
+CLI üzerinden Ombori Izgarası.
+
+00:30:47.830 --> 00:30:49.479
+Cihazlarımı bağlayabilirim.
+
+00:30:49.479 --> 00:30:51.220
+Ona uzak bir kabuk açabilirim.
+
+00:30:51.220 --> 00:30:54.100
+Uzaktan kumandayı bile açabilirim.
+JavaScript terminali
+
+00:30:54.100 --> 00:30:56.465
+olup bitenleri ayıklamak için
+ekranla birlikte.
+
+00:30:56.465 --> 00:31:01.290
+B ve C örneğini bile açabilirim.
+aslında ne olduğunu yansıtmak için
+
+00:31:01.290 --> 00:31:03.600
+ekranımda devam ediyor
+bilgisayarım ve her şey
+
+00:31:03.600 --> 00:31:06.315
+endişelenmeden
+kimlik doğrulamalar hakkında,
+
+00:31:06.315 --> 00:31:09.470
+raporları veya gibi şeyleri dışlamak
+Bu, ki bu oldukça havalı.
+
+00:31:09.470 --> 00:31:12.110
+>> Evet, öyle.
+
+00:31:12.270 --> 00:31:17.320
+>> Bir freebie gelince. Evet. Biz
+Burada eğlenceli bir sürpriz olsun,
+
+00:31:17.320 --> 00:31:20.590
+Çünkü, eğer kaydolrsanız
+Ombori Izgarası için,
+
+00:31:20.590 --> 00:31:25.345
+her şeyden önce, ilk üç cihaz
+her zaman özgürler çünkü istiyoruz
+
+00:31:25.345 --> 00:31:27.850
+geliştiriciler
+oynamak için bunu kullanın
+
+00:31:27.850 --> 00:31:30.850
+hiçbir ücrete karşı herhangi bir ücrete karşı.
+
+00:31:30.850 --> 00:31:34.450
+Ama farklı denemek istersen.
+ücretli piyasa bazlı çözümler
+
+00:31:34.450 --> 00:31:37.180
+dışarı çıkmak ya da delirir
+bir sürü cihaz,
+
+00:31:37.180 --> 00:31:41.080
+aslında
+eğer 250 $ ücretsiz almak
+
+00:31:41.080 --> 00:31:45.070
+Microsoftdeveloper kodunu kullanın.
+
+00:31:45.070 --> 00:31:48.535
+Microsoftdeveloper içinde >>
+tek kelime, hepsi küçük harf.
+
+00:31:48.535 --> 00:31:50.515
+>> Tek kelime ve küçük harf, evet.
+
+00:31:50.515 --> 00:31:52.555
+>> Bunu açıklamaya ekleyeceğiz.
+
+00:31:52.555 --> 00:31:55.195
+Microsoftdeveloper kodunuzdur
+
+00:31:55.195 --> 00:31:58.300
+freebies almak için
+Ombori. Bu harika bir şey.
+
+00:31:58.300 --> 00:32:01.630
+Teşekkürler Andreas. Belki de biz.
+
+00:32:01.630 --> 00:32:03.805
+üzerinde tekrar görüşmek üzere
+Bir noktada IoT gösterisi.
+
+00:32:03.805 --> 00:32:05.800
+Herkes akort ettiğin için teşekkürler.
+
+00:32:05.800 --> 00:32:07.810
+İyi günler ve
+
+00:32:07.810 --> 00:32:10.465
+seni görmek için sabırsızlanıyoruz
+yakında IoT şovunda. Hoşça kal.
+
+00:32:10.465 --> 00:32:13.460
+>> Teşekkürler Olivier. Herkese güle güle.
+
+00:32:29.730 --> 00:32:32.000
+>> [MÜZİk]
+
