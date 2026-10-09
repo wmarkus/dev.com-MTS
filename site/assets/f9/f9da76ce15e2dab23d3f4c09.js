@@ -1,0 +1,1 @@
+const checkAndSetCookie=()=>{const n=document.getElementById("timeZoneOffset"),t=()=>document.cookie.match("(^|;)\\s*PreferredTimeZone\\s*=\\s*([^;]+)")?.pop()||"";n!==null&&(t()===""?setTimeZone():(n.value=decodeURIComponent(t()),n.value||setTimeZone()))};checkAndSetCookie()
