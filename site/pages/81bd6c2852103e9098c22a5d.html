@@ -1,0 +1,2459 @@
+<!doctype html>
+<html lang="en-US" data-theme="light">
+<head>
+    <!-- Authorized local recreation. External services are not impersonated; analytics disabled. --><meta name="robots" content="noindex,nofollow"><script src="/__mirror/runtime.js"></script><title>Build APIs | Microsoft Developer</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark light">
+    <meta name="awa-env" content="Production">
+    <meta name="description" content="Explore Microsoft API products, tools, and services. Find documentation and resources for every API lifecycle stage: design, develop, test, deploy, publish, and version.">
+
+    <meta property="og:title" content="Build APIs | Microsoft Developer">
+    <meta property="og:description" content="Explore Microsoft API products, tools, and services. Find documentation and resources for every API lifecycle stage: design, develop, test, deploy, publish, and version.">
+    <meta property="og:image" content="https://developer.microsoft.com/_devcom/images/logo-ms-social.jpg">
+    <meta property="og:image:alt" content="Microsoft Developer">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Microsoft Developer">
+    <meta property="og:url" content="https://developer.microsoft.com/en-us/build-apis">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@msdev">
+    <meta name="twitter:image" content="https://developer.microsoft.com/_devcom/images/logo-ms-social.jpg">
+
+    
+<meta name="awa-pageType" content="Resources">
+<meta name="awa-product" content="Azure">
+<meta name="awa-prdct" content="Azure">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+    <link rel="canonical" href="https://developer.microsoft.com/en-us/build-apis">
+    
+    <link rel="stylesheet" href="/__mirror/assets/e1c24783ae544852495a6d6a">
+
+    
+<style>
+    uhf-header:not(:defined) {
+        display: block;
+        height: 54px;
+    }
+
+    uhf-brand:not(:defined),
+    uhf-contextual-nav:not(:defined),
+    uhf-actions:not(:defined),
+    uhf-global-nav:not(:defined),
+    uhf-search:not(:defined),
+    uhf-mecontrol:not(:defined),
+    uhf-cart:not(:defined),
+    uhf-dropdown:not(:defined),
+    uhf-popout:not(:defined) {
+        visibility: hidden;
+    }
+</style>
+<link rel="stylesheet" href="/__mirror/assets/e4d14f1f8bc83e293e136adc"> <!-- UHF CSS -->
+
+    <script src="/__mirror/assets/fe2fc9b62e744e583f0eb2a4"></script>
+
+    <!-- 1DS script -->
+    
+    
+    <!-- /1DS script -->
+
+    
+</head>
+<body>
+    <!-- UHF Header -->
+    
+<uhf-header locale="en-us" partnerid="MSDev-Community" headerid="MSDev-DEVCOM-Community-Header" theme="light">
+    <a slot="skip-link" class="uhf-skip-link" href="#mainContent" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "SkipToMain", "cN": "Skip to content_nonnav", "ecn": "Skip to content_nonnav", "ehn": "SkipToMain"}'>Skip to main content</a>
+    
+<uhf-brand slot="brand">
+        <a href="https://www.microsoft.com/" class="uhf-microsoft-logo" slot="microsoft-logo" aria-label="Microsoft" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Anchor", "cN": "GlobalNav_Logo_cont", "ecn": "GlobalNav_Logo_cont", "ehn": "Anchor"}'>
+            <img src="/__mirror/assets/adea6dac4ae78fd2b1b9eda9" alt="Microsoft">
+        </a>
+            <a href="/en-us/" class="uhf-site-logo" slot="brand-logo" aria-label="Developer" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Anchor", "cN": "CatNav_Developer_nav", "ecn": "CatNav_Developer_nav", "ehn": "Anchor"}'>
+ <span>Developer</span>             </a>
+</uhf-brand>
+
+
+<uhf-contextual-nav slot="contextual-nav" overflowtext="More" brand="Developer" homeurl="https://developer.microsoft.com/en-us/" hometext="Home" data-nav-label="Contextual menu">
+
+
+
+<uhf-dropdown text="Products" id="" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_nav", "ecn": "CatNav_Products_nav", "ehn": "Products"}'>
+    
+
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://learn.microsoft.com/en-us/dynamics365/get-started/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Dynamics 365_nav", "ecn": "CatNav_Products_Dynamics 365_nav", "ehn": "Products"}'>Dynamics 365</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://github.com/home" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_GitHub_nav", "ecn": "CatNav_Products_GitHub_nav", "ehn": "Products"}'>GitHub</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://developer.microsoft.com/en-us/microsoft-365" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Microsoft 365_nav", "ecn": "CatNav_Products_Microsoft 365_nav", "ehn": "Products"}'>Microsoft 365</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/azure" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Microsoft Azure_nav", "ecn": "CatNav_Products_Microsoft Azure_nav", "ehn": "Products"}'>Microsoft Azure</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://developer.microsoft.com/en-us/microsoft-edge/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Microsoft Edge_nav", "ecn": "CatNav_Products_Microsoft Edge_nav", "ehn": "Products"}'>Microsoft Edge</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://ai.azure.com/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Microsoft Foundry_nav", "ecn": "CatNav_Products_Microsoft Foundry_nav", "ehn": "Products"}'>Microsoft Foundry</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://developer.microsoft.com/en-us/graph" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Microsoft Graph_nav", "ecn": "CatNav_Products_Microsoft Graph_nav", "ehn": "Products"}'>Microsoft Graph</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/identity" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Microsoft Identity Platform_nav", "ecn": "CatNav_Products_Microsoft Identity Platform_nav", "ehn": "Products"}'>Microsoft Identity Platform</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://developer.microsoft.com/en-us/microsoft-teams" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Microsoft Teams_nav", "ecn": "CatNav_Products_Microsoft Teams_nav", "ehn": "Products"}'>Microsoft Teams</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/power-platform" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Power Platform_nav", "ecn": "CatNav_Products_Power Platform_nav", "ehn": "Products"}'>Power Platform</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://visualstudio.microsoft.com/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Visual Studio_nav", "ecn": "CatNav_Products_Visual Studio_nav", "ehn": "Products"}'>Visual Studio</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://code.visualstudio.com/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Visual Studio Code_nav", "ecn": "CatNav_Products_Visual Studio Code_nav", "ehn": "Products"}'>Visual Studio Code</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/windows/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Windows_nav", "ecn": "CatNav_Products_Windows_nav", "ehn": "Products"}'>Windows</a>
+
+
+</uhf-dropdown>
+
+
+<uhf-dropdown text="Languages" id="" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Languages", "cN": "CatNav_Languages_nav", "ecn": "CatNav_Languages_nav", "ehn": "Languages"}'>
+    
+
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://dotnet.microsoft.com/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Languages", "cN": "CatNav_Languages_.NET_nav", "ecn": "CatNav_Languages_.NET_nav", "ehn": "Languages"}'>.NET</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/cpp" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Languages", "cN": "CatNav_Languages_C++_nav", "ecn": "CatNav_Languages_C++_nav", "ehn": "Languages"}'>C++</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/java" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Languages", "cN": "CatNav_Languages_Java_nav", "ecn": "CatNav_Languages_Java_nav", "ehn": "Languages"}'>Java</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/javascript/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Languages", "cN": "CatNav_Languages_JavaScript_nav", "ecn": "CatNav_Languages_JavaScript_nav", "ehn": "Languages"}'>JavaScript</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/python" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Languages", "cN": "CatNav_Languages_Python_nav", "ecn": "CatNav_Languages_Python_nav", "ehn": "Languages"}'>Python</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://www.typescriptlang.org/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Languages", "cN": "CatNav_Languages_TypeScript_nav", "ecn": "CatNav_Languages_TypeScript_nav", "ehn": "Languages"}'>TypeScript</a>
+
+
+</uhf-dropdown>
+
+
+<uhf-dropdown text="Hubs" id="" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Hubs", "cN": "CatNav_Hubs_nav", "ecn": "CatNav_Hubs_nav", "ehn": "Hubs"}'>
+    
+
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/build-apis" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Hubs", "cN": "CatNav_Hubs_Build APIs_nav", "ecn": "CatNav_Hubs_Build APIs_nav", "ehn": "Hubs"}'>Build APIs</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://developer.microsoft.com/en-us/games/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Hubs", "cN": "CatNav_Hubs_Game development_nav", "ecn": "CatNav_Hubs_Game development_nav", "ehn": "Hubs"}'>Game development</a>
+
+
+</uhf-dropdown>
+
+    <a class="uhf-nav-item uhf-nav-link" href="https://developer.microsoft.com/blog" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Blog", "cN": "CatNav_Blog_nav", "ecn": "CatNav_Blog_nav", "ehn": "Blog"}'>Blog</a>
+
+
+    <a class="uhf-nav-item uhf-nav-link" href="/en-us/events" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Events", "cN": "CatNav_Events_nav", "ecn": "CatNav_Events_nav", "ehn": "Events"}'>Events</a>
+
+
+    <a class="uhf-nav-item uhf-nav-link" href="https://learn.microsoft.com/docs/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Documentation", "cN": "CatNav_Documentation_nav", "ecn": "CatNav_Documentation_nav", "ehn": "Documentation"}'>Documentation</a>
+
+
+    <a class="uhf-nav-item uhf-nav-link" href="/en-us/community" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Community", "cN": "CatNav_Community_nav", "ecn": "CatNav_Community_nav", "ehn": "Community"}'>Community</a>
+
+
+    <a class="uhf-nav-item uhf-nav-link" href="/en-us/changelog" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Changelog", "cN": "CatNav_Changelog_nav", "ecn": "CatNav_Changelog_nav", "ehn": "Changelog"}'>Changelog</a>
+</uhf-contextual-nav>    <uhf-actions slot="actions">
+        
+<uhf-global-nav slot="global-nav" text="All Microsoft" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_nonnav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_nonnav", "ehn": "OneMicrosoftBar"}' data-nav-label="All Microsoft menu">
+    
+    <uhf-dropdown-header slot="header">
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/security" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Microsoft Security_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Microsoft Security_nav", "ehn": "OneMicrosoftBar"}'>Microsoft Security</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://azure.microsoft.com/en-us/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Azure_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Azure_nav", "ehn": "OneMicrosoftBar"}'>Azure</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://dynamics.microsoft.com/en-us/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Dynamics 365_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Dynamics 365_nav", "ehn": "OneMicrosoftBar"}'>Dynamics 365</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/microsoft-365/business/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Microsoft 365_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Microsoft 365_nav", "ehn": "OneMicrosoftBar"}'>Microsoft 365</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/microsoft-teams/group-chat-software" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Microsoft Teams_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Microsoft Teams_nav", "ehn": "OneMicrosoftBar"}'>Microsoft Teams</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/windows-365" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Windows 365_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Windows 365_nav", "ehn": "OneMicrosoftBar"}'>Windows 365</a>
+    </uhf-dropdown-header>
+
+        <uhf-dropdown-column title="Tech &amp; innovation" show-tooltip="false" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_nav", "ehn": "OneMicrosoftBar"}'>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/ai?icid=DSM_AllCommercial_AI" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_Microsoft AI_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_More_TechInnovation__AI_nav", "ehn": "OneMicrosoftBar"}'>Microsoft AI</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://azure.microsoft.com/en-us/solutions/space/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_Azure Space_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_More_TechInnovation_AzureSpace_nav", "ehn": "OneMicrosoftBar"}'>Azure Space</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/mixed-reality/windows-mixed-reality" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_Mixed reality_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_More_TechInnovation_MixedReality_nav", "ehn": "OneMicrosoftBar"}'>Mixed reality</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/hololens" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_Microsoft HoloLens_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_More_TechInnovation_MicrosoftHololens_nav", "ehn": "OneMicrosoftBar"}'>Microsoft HoloLens</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/microsoft-viva" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_Microsoft Viva_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_More_TechInnovation_Microsoft Viva_nav", "ehn": "OneMicrosoftBar"}'>Microsoft Viva</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://azure.microsoft.com/en-us/solutions/quantum-computing/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_Quantum computing_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_More_TechInnovation_QuantumComputing_nav", "ehn": "OneMicrosoftBar"}'>Quantum computing</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/corporate-responsibility/sustainability?icid=DSM_AllCommercial_Sustainability" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_Sustainability_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_More_TechInnovation_Sustainability_nav", "ehn": "OneMicrosoftBar"}'>Sustainability</a>
+        </uhf-dropdown-column>
+        <uhf-dropdown-column title="Industries" show-tooltip="false" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_nav", "ehn": "OneMicrosoftBar"}'>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/education" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_Education_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_More_Industries_Education_nav", "ehn": "OneMicrosoftBar"}'>Education</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/industry/automotive" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_Automotive_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_More_Industries_Automotive_nav", "ehn": "OneMicrosoftBar"}'>Automotive</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/industry/financial-services/banking" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_Financial services_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_More_Industries_Financialservices_nav", "ehn": "OneMicrosoftBar"}'>Financial services</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/industry/government" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_Government_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_More_Industries_Government_nav", "ehn": "OneMicrosoftBar"}'>Government</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/industry/health/microsoft-cloud-for-healthcare" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_Healthcare_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_More_Industries_Health_nav", "ehn": "OneMicrosoftBar"}'>Healthcare</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/industry/manufacturing/microsoft-cloud-for-manufacturing" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_Manufacturing_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_More_Industries_Manufacturing_nav", "ehn": "OneMicrosoftBar"}'>Manufacturing</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/industry/consumer-goods" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_Retail_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_More_Industries_Retail_nav", "ehn": "OneMicrosoftBar"}'>Retail</a>
+        </uhf-dropdown-column>
+        <uhf-dropdown-column title="Partners" show-tooltip="false" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_nav", "ehn": "OneMicrosoftBar"}'>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://partner.microsoft.com/en-US/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_Find a partner_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_More_Partner_FindPartner_nav", "ehn": "OneMicrosoftBar"}'>Find a partner</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://partner.microsoft.com/en-US/membership/cloud-solution-provider" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_Become a partner_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_More_Partner_BecomePartner_nav", "ehn": "OneMicrosoftBar"}'>Become a partner</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://partner.microsoft.com/en-us/membership" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_Partner Network_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_More_Partner_PartnerNetwork_nav", "ehn": "OneMicrosoftBar"}'>Partner Network</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://marketplace.microsoft.com/?icid=DSM_AllCommercial_Marketplace" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_Microsoft Marketplace_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_More_Partner_Marketplace_nav", "ehn": "OneMicrosoftBar"}'>Microsoft Marketplace</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/software-development-companies?icid=DSM_AllCommercial_SoftwareCompanies" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_Software companies_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_Software companies_nav", "ehn": "OneMicrosoftBar"}'>Software companies</a>
+        </uhf-dropdown-column>
+        <uhf-dropdown-column title="Resources" show-tooltip="false" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_nav", "ehn": "OneMicrosoftBar"}'>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://blogs.microsoft.com/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_Blog_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_More_Resources_Blog_nav", "ehn": "OneMicrosoftBar"}'>Blog</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://about.ads.microsoft.com/en-us?s_cid=dig-src_uhfcomm" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_Microsoft Advertising_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_More_Resources_MicrosoftAdvertising_nav", "ehn": "OneMicrosoftBar"}'>Microsoft Advertising</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_Developer Center_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_More_Resources_DeveloperCenter_nav", "ehn": "OneMicrosoftBar"}'>Developer Center</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://learn.microsoft.com/docs/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_Documentation_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_More_Resources_Documentation_nav", "ehn": "OneMicrosoftBar"}'>Documentation</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/events" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_Events_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_More_Resources_Events_nav", "ehn": "OneMicrosoftBar"}'>Events</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/licensing/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_Licensing_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_More_Resources_Licensing_nav", "ehn": "OneMicrosoftBar"}'>Licensing</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://learn.microsoft.com/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_Microsoft Learn_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_More_Resources_MicrosoftLearn_nav", "ehn": "OneMicrosoftBar"}'>Microsoft Learn</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/research/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_Microsoft Research_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_More_Resources_MicrosoftResearch_nav", "ehn": "OneMicrosoftBar"}'>Microsoft Research</a>
+        </uhf-dropdown-column>
+
+    <uhf-dropdown-footer slot="footer">
+        <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/sitemap" data-m="">View Sitemap</a>
+    </uhf-dropdown-footer>
+
+</uhf-global-nav>
+
+
+            <uhf-search slot="search" placeholder="Search or ask a question" search-label="Search" cancel-label="Cancel" suggestions-available-text="{0} suggestions available" searchurl="https://www.microsoft.com/en-us/search/explore" autosuggesturl="https://www.microsoft.com/msstoreapiprod/api/autosuggest" queryparametername="q" clientid="7F27B536-CF6B-4C65-8638-A0F8CBDFCA65" productcount="1,5,5" source="Iris-Products,DCatAll-Products,Microsoft-Terms">
+            </uhf-search>
+    </uhf-actions>
+</uhf-header>
+
+    <div class="site-banners">
+
+
+
+<section class="announcement-banner d-none" data-mount="ocr-alert-dismissible" data-identifier="windows-hybrid-intelligence">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="announcement-banner__badge">
+                    <span class="badge badge--size-xs badge-logo--m theme-day">
+                        <div class="ocr-icon d-inline-flex">
+                            <div class="ocr-img media__asset">
+                                <img src="/__mirror/assets/3e387745acc96f18d8365e8a" alt="">
+                            </div>
+                        </div>
+                    </span>
+                </div>
+                <div class="announcement-banner__center">
+                    <div class="announcement-banner__content" role="alert">
+                        
+                        <p>Building Windows for hybrid intelligence  –  Run agents locally or in the cloud, with enterprise-grade security and manageability.</p>
+                    </div>
+                    <div class="announcement-banner__action">
+                        <a href="https://aka.ms/WindowsEraofAI" class="link link-inline" target="_blank" data-bi-an="top-banner" data-bi-id="windows-hybrid-intelligence">
+                            <span class="link__text">Read more</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-auto d-flex">
+                <div class="announcement-banner__dismiss">
+                    <button id="fake-button" type="button" class="d-none" aria-label="close" data-dismiss="alert"></button>
+                    <button type="button" class="alert-dismiss btn btn--ghost glyph-append glyph-append-cancel" aria-label="close">
+                        <span class="glyph-prepend"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>    </div>
+
+    <div id="mainContent" role="main">
+        
+
+
+
+
+
+<div id="api-page">
+    
+    <section id="hero">
+        <div class="section-master section-master--bg-image section-master--bg-image-stacked bg--neutral-fade section-master--density-compact section-master--blade-hero-card-carousel">
+            <div class="section-master__image">
+                <div class="ocr-img media__asset ">
+                    <picture>
+                        <source srcset="/__mirror/assets/1068ce74085e01aac7a69b3a" media="none and (prefers-color-scheme: dark)">
+                        <source srcset="/__mirror/assets/24c354f69f858561f70c668f" media="none and (prefers-color-scheme: dark)">
+                        <source srcset="/__mirror/assets/e6dab65de2e62a1492e45b11" media="none and (prefers-color-scheme: light)">
+                        <source srcset="/__mirror/assets/475af66f2a13ef593ec3fc34" media="none and (prefers-color-scheme: light)">
+                        <img src="/__mirror/assets/475af66f2a13ef593ec3fc34" alt="">
+                    </source></source></source></source></picture>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="layout section-master__layout section-master--layout-cols-2">
+                            <div class="layout__col">
+                                <div class="section-master__layout-header">
+                                    <div class="block-heading block-heading--size-xl">
+                                        <h1 class="block-heading__title">Develop APIs faster, smarter, and more securely</h1>
+                                        <p class="block-heading__paragraph">Transform your API development journey with developer-friendly tools and services.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="secondary-sticky-nav">
+        <div class="sticky" data-mount="sticky" data-direction="top" data-observer-behavior="always">
+            <div class="secondary-nav">
+                <nav id="sticky-nav" class="container d-flex flex-grow-1" aria-label="In Page Navigation">
+                    <div class="dropdown">
+                        <a class="w-100 dropdown__link" id="menu-list-label-default" data-mount="m365-dropdown" aria-expanded="false" aria-controls="secondary-sticky-nav-menu-list" type="button" role="button" tabindex="0" aria-labelledby="secondary-sticky-nav-label">
+                            <div class="list-item">
+                                <div class="list-item__inner d-flex align-items-center py-m" id="secondary-sticky-nav-label" aria-hidden="true">
+                                    <div class="list-item__content flex-grow-1 d-flex flex-column">
+                                        <div class="fg--base-strong label list-item__content-title">
+                                            <p>Menu</p>
+                                        </div>
+                                    </div>
+                                    <div class="list-item__trailing">
+                                        <div class="ocr-icon d-inline-flex ocr-icon--size-s">
+                                            <span class="glyph-prepend glyph-prepend-chevron-down" aria-label="">
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <ul class="dropdown-menu menu-list p-0 rounded-scrollbar overflow-auto" id="secondary-sticky-nav-menu-list" aria-labelledby="menu-list-label-default" tabindex="-1">
+                            <li class="menu-list__list-item">
+        <a class="menu-list__item-link" href="#api-lifecycle-stages" data-bi-an="secondary-sticky-nav" data-bi-cn="api-lifecycle-stages" data-bi-ct="nav">
+            <div class="indicator indicator--shape-pill"></div>
+            <span class="menu-list__list-item-text">
+                <div class="list-item">
+                    <div class="list-item__inner d-flex align-items-center py-m">
+                        <div class="list-item__content flex-grow-1 d-flex flex-column">
+                            <div class="fg--base-strong label list-item__content-title">
+                                <p>API lifecycle stages</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </span>
+        </a>
+    </li>
+                            <li class="menu-list__list-item">
+        <a class="menu-list__item-link" href="#featured-products" data-bi-an="secondary-sticky-nav" data-bi-cn="featured-products" data-bi-ct="nav">
+            <div class="indicator indicator--shape-pill"></div>
+            <span class="menu-list__list-item-text">
+                <div class="list-item">
+                    <div class="list-item__inner d-flex align-items-center py-m">
+                        <div class="list-item__content flex-grow-1 d-flex flex-column">
+                            <div class="fg--base-strong label list-item__content-title">
+                                <p>Featured products</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </span>
+        </a>
+    </li>
+                            <li class="menu-list__list-item">
+        <a class="menu-list__item-link" href="#api-action" data-bi-an="secondary-sticky-nav" data-bi-cn="api-action" data-bi-ct="nav">
+            <div class="indicator indicator--shape-pill"></div>
+            <span class="menu-list__list-item-text">
+                <div class="list-item">
+                    <div class="list-item__inner d-flex align-items-center py-m">
+                        <div class="list-item__content flex-grow-1 d-flex flex-column">
+                            <div class="fg--base-strong label list-item__content-title">
+                                <p>APIs in Action</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </span>
+        </a>
+    </li>
+                            <li class="menu-list__list-item">
+        <a class="menu-list__item-link" href="#featured-blogs" data-bi-an="secondary-sticky-nav" data-bi-cn="featured-blogs" data-bi-ct="nav">
+            <div class="indicator indicator--shape-pill"></div>
+            <span class="menu-list__list-item-text">
+                <div class="list-item">
+                    <div class="list-item__inner d-flex align-items-center py-m">
+                        <div class="list-item__content flex-grow-1 d-flex flex-column">
+                            <div class="fg--base-strong label list-item__content-title">
+                                <p>Featured blogs</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </span>
+        </a>
+    </li>
+                        </ul>
+    
+                    </div>
+                </nav>
+                <div class="indicator indicator--horizontal"></div>
+            </div>
+        </div>
+
+        <div class="scrollspy-container">
+
+            <section id="api-lifecycle-stages">
+                <div class="section-master bg--base-fade section-master--breadth-comfortable section-master--layout-slot-horizontal-alignment-right section-master--layout-slot-vertical-alignment-bottom section-master--blade-card-carousel">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <div class="layout section-master__layout section-master--layout-cols-1">
+        <div class="layout__col">
+            <div class="section-master__layout-header">
+                <div class="block-heading block-heading--size-s">
+                        <h3 class="block-heading__eyebrow">API lifecycle stages</h3>
+                        <h2 class="block-heading__title">API lifecycle excellence with Microsoft</h2>
+                </div>
+            </div>
+        </div>
+
+    </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row section-master__slot">
+                            <div class="col">
+                                <div class="pill-bar no-gutters pl-0 ml-0">
+                                    <div data-mount="tab-slider" class="col">
+                                        <div class="tab-overflow">
+                                            <div class="tab-window">
+                                                <div class="tab-group" role="tablist" aria-label="API lifecycle stages">
+                                                    <button id="api-lifecycle-stages-1-pill-bar" class="pill-bar__item active" href="#api-lifecycle-stages-1" role="tab" data-mount="tab" aria-controls="api-lifecycle-stages-1" aria-selected="true" aria-disabled="" tabindex="0">
+                                                        <span class="pill-bar__item__label">Design</span>
+                                                    </button>
+                                                    <button id="api-lifecycle-stages-2-pill-bar" class="pill-bar__item" href="#api-lifecycle-stages-2" role="tab" data-mount="tab" aria-controls="api-lifecycle-stages-2" aria-selected="false" aria-disabled="" tabindex="-1">
+                                                        <span class="pill-bar__item__label">Development</span>
+                                                    </button>
+                                                    <button id="api-lifecycle-stages-3-pill-bar" class="pill-bar__item" href="#api-lifecycle-stages-3" role="tab" data-mount="tab" aria-controls="api-lifecycle-stages-3" aria-selected="false" aria-disabled="" tabindex="-1">
+                                                        <span class="pill-bar__item__label">Testing</span>
+                                                    </button>
+                                                    <button id="api-lifecycle-stages-4-pill-bar" class="pill-bar__item" href="#api-lifecycle-stages-4" role="tab" data-mount="tab" aria-controls="api-lifecycle-stages-4" aria-selected="false" aria-disabled="" tabindex="-1">
+                                                        <span class="pill-bar__item__label">Deployment</span>
+                                                    </button>
+                                                    <button id="api-lifecycle-stages-5-pill-bar" class="pill-bar__item" href="#api-lifecycle-stages-5" role="tab" data-mount="tab" aria-controls="api-lifecycle-stages-5" aria-selected="false" aria-disabled="" tabindex="-1">
+                                                        <span class="pill-bar__item__label">Publishing</span>
+                                                    </button>
+                                                    <button id="api-lifecycle-stages-6-pill-bar" class="pill-bar__item" href="#api-lifecycle-stages-6" role="tab" data-mount="tab" aria-controls="api-lifecycle-stages-6" aria-selected="false" aria-disabled="" tabindex="-1">
+                                                        <span class="pill-bar__item__label">Versioning</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-arrows">
+                                            <button type="button" class="arrow-prev" tabindex="-1" aria-hidden="true" data-width="40">
+                                                <span class="sr-only">Previous</span>
+                                            </button>
+                                            <div class="arrow-prev pill-bar__arrow-prev-bg"></div>
+                                            <button type="button" class="arrow-next" tabindex="-1" aria-hidden="true" data-width="40">
+                                                <span class="sr-only">Next</span>
+                                            </button>
+                                            <div class="arrow-next pill-bar__arrow-next-bg"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row pb-xl">
+                                    <div class="col">
+                                        <div class="tab-panel-group">
+
+                                            <div id="api-lifecycle-stages-1" class="tab-panel fade active show" role="tabpanel" aria-labelledby="api-lifecycle-stages-1-pill-bar" tabindex="0">
+                                                <div class="pill-bar__panel__content">
+                                                    <div class="card-grid row">
+                                                        <div class="card-grid__cards">
+                                                            <div class="layout layout--cols-4">
+                                                                <div class="layout__col">
+        <div class="card rounded-l">
+            <div class="card__media px-xs">
+            </div>
+            <div class="card__content p-l">
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+                        <div class="block-feature__badge">
+                            
+                                <div class="block-feature__badge pb-m">
+                                    <span class="badge badge--size-s badge-logo--m badge--solid">
+                                        <div class="ocr-icon d-inline-flex">
+                                            <div class="ocr-img media__asset">
+                                                <img src="/__mirror/assets/0aac8084ae8ce4a8f29fbdc9" class="" alt="">
+                                            </div>
+                                        </div>
+                                    </span>
+                                </div>
+
+                            <div class="block-feature__headings d-flex flex-column align-items-start">
+        <h5 class="block-feature__title">Azure API Center</h5>
+    </div>
+                        </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Azure API Center helps ensure your APIs meet organizational standards by allowing you to register and validate your API definitions against organizational style guides.</p>
+                    </div>
+                </div>
+                <div class="block-slim">
+
+                    <a href="https://learn.microsoft.com/azure/api-center/enable-managed-api-analysis-linting" class="link" target="_blank" data-bi-an="api-lifecycle-stages--design" data-bi-cn="azure-api-center" data-bi-ct="link" aria-label="Learn more about Azure API Center">
+                        <span class="btn btn--icon btn--icon-only btn--sm">
+                            <span class="glyph-prepend" aria-hidden="true"></span>
+                        </span>
+                        <span class="link__text">Learn more</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+                                                                <div class="layout__col">
+        <div class="card rounded-l">
+            <div class="card__media px-xs">
+            </div>
+            <div class="card__content p-l">
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+                        <div class="block-feature__badge">
+                            
+                                <div class="block-feature__badge pb-m">
+                                    <span class="badge badge--size-s badge-logo--m badge--solid">
+                                        <div class="ocr-icon d-inline-flex">
+                                            <div class="ocr-img media__asset">
+                                                <img src="/__mirror/assets/3f8d131aa648eee04c1d375e" class="" alt="">
+                                            </div>
+                                        </div>
+                                    </span>
+                                </div>
+
+                            <div class="block-feature__headings d-flex flex-column align-items-start">
+        <h5 class="block-feature__title">Azure API Management</h5>
+    </div>
+                        </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Design REST APIs, import APIs from Azure services, or expose backends as GraphQL APIs. Quickly mock APIs to accelerate and parallelize client and backend development and enable collaboration across teams.</p>
+                    </div>
+                </div>
+                <div class="block-slim">
+
+                    <a href="https://learn.microsoft.com/azure/api-management/mock-api-responses?tabs=azure-portal" class="link" target="_blank" data-bi-an="api-lifecycle-stages--design" data-bi-cn="api-management" data-bi-ct="link" aria-label="Learn more about Azure API Management">
+                        <span class="btn btn--icon btn--icon-only btn--sm">
+                            <span class="glyph-prepend" aria-hidden="true"></span>
+                        </span>
+                        <span class="link__text">Learn more</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+                                                                <div class="layout__col">
+        <div class="card rounded-l">
+            <div class="card__media px-xs">
+            </div>
+            <div class="card__content p-l">
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+                        <div class="block-feature__badge">
+                            
+                                <div class="block-feature__badge pb-m">
+                                    <span class="badge badge--size-s badge-logo--m badge--solid">
+                                        <div class="ocr-icon d-inline-flex">
+                                            <div class="ocr-img media__asset">
+                                                <img src="/__mirror/assets/428d1dac29aa9e7987b151dd" class="" alt="">
+                                            </div>
+                                        </div>
+                                    </span>
+                                </div>
+
+                            <div class="block-feature__headings d-flex flex-column align-items-start">
+        <h5 class="block-feature__title">Dev Proxy</h5>
+    </div>
+                        </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Quickly test your API design ideas by creating mock APIs, testing them with apps, simulating CRUD operations, and securing APIs with Microsoft Entra ID.</p>
+                    </div>
+                </div>
+                <div class="block-slim">
+
+                    <a href="https://learn.microsoft.com/microsoft-cloud/dev/dev-proxy/concepts/use-api-design" class="link" target="_blank" data-bi-an="api-lifecycle-stages--design" data-bi-cn="dev-proxy" data-bi-ct="link" aria-label="Learn more about Dev Proxy">
+                        <span class="btn btn--icon btn--icon-only btn--sm">
+                            <span class="glyph-prepend" aria-hidden="true"></span>
+                        </span>
+                        <span class="link__text">Learn more</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+                                                                <div class="layout__col">
+        <div class="card rounded-l">
+            <div class="card__media px-xs">
+            </div>
+            <div class="card__content p-l">
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+                        <div class="block-feature__badge">
+                            
+                                <div class="block-feature__badge pb-m">
+                                    <span class="badge badge--size-s badge-logo--m badge--solid">
+                                        <div class="ocr-icon d-inline-flex">
+                                            <div class="ocr-img media__asset">
+                                                <img src="/__mirror/assets/03271f74230b1c1d127ee7f0" class="" alt="">
+                                            </div>
+                                        </div>
+                                    </span>
+                                </div>
+
+                            <div class="block-feature__headings d-flex flex-column align-items-start">
+        <h5 class="block-feature__title">TypeSpec</h5>
+    </div>
+                        </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">TypeSpec is an extensible API design language designed for "API First" web service development. TypeSpec docs serve as the "source of truth" for web services and are used to generate and update all artifacts related to a service, including OpenAPI, documentation, client and server stubs, relieving developers of the burden of coordinating changes between those artifacts. TypeSpec is built by Microsoft and supported by the community.</p>
+                    </div>
+                </div>
+                <div class="block-slim">
+
+                    <a href="https://typespec.io/" class="link" target="_blank" data-bi-an="api-lifecycle-stages--design" data-bi-cn="typespec" data-bi-ct="link" aria-label="Learn more about TypeSpec">
+                        <span class="btn btn--icon btn--icon-only btn--sm">
+                            <span class="glyph-prepend" aria-hidden="true"></span>
+                        </span>
+                        <span class="link__text">Learn more</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>                                                  
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="api-lifecycle-stages-2" class="tab-panel fade" role="tabpanel" aria-labelledby="api-lifecycle-stages-2-pill-bar" tabindex="0" hidden="">
+                                                <div class="pill-bar__panel__content">
+                                                    <div class="card-grid row">
+                                                        <div class="card-grid__cards">
+                                                            <div class="layout layout--cols-4">
+                                                                <div class="layout__col">
+        <div class="card rounded-l">
+            <div class="card__media px-xs">
+            </div>
+            <div class="card__content p-l">
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+                        <div class="block-feature__badge">
+                            
+                                <div class="block-feature__badge pb-m">
+                                    <span class="badge badge--size-s badge-logo--m badge--solid">
+                                        <div class="ocr-icon d-inline-flex">
+                                            <div class="ocr-img media__asset">
+                                                <img src="/__mirror/assets/3f8d131aa648eee04c1d375e" class="" alt="">
+                                            </div>
+                                        </div>
+                                    </span>
+                                </div>
+
+                            <div class="block-feature__headings d-flex flex-column align-items-start">
+        <h5 class="block-feature__title">Azure API Management</h5>
+    </div>
+                        </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Select from over 60 customizable policies to manage traffic, enhance security, and transform API requests and responses—without the need to develop or maintain logic in your application code.</p>
+                    </div>
+                </div>
+                <div class="block-slim">
+
+                    <a href="https://learn.microsoft.com/azure/api-management/api-management-howto-policies" class="link" target="_blank" data-bi-an="api-lifecycle-stages--development" data-bi-cn="azure-api-management" data-bi-ct="link" aria-label="Learn more about Azure API Management policies">
+                        <span class="btn btn--icon btn--icon-only btn--sm">
+                            <span class="glyph-prepend" aria-hidden="true"></span>
+                        </span>
+                        <span class="link__text">Learn more</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+                                                                <div class="layout__col">
+        <div class="card rounded-l">
+            <div class="card__media px-xs">
+            </div>
+            <div class="card__content p-l">
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+                        <div class="block-feature__badge">
+                            
+                                <div class="block-feature__badge pb-m">
+                                    <span class="badge badge--size-s badge-logo--m badge--solid">
+                                        <div class="ocr-icon d-inline-flex">
+                                            <div class="ocr-img media__asset">
+                                                <img src="/__mirror/assets/2482816c38ee940cb0f9972b" class="invert-for-darkmode" alt="">
+                                            </div>
+                                        </div>
+                                    </span>
+                                </div>
+
+                            <div class="block-feature__headings d-flex flex-column align-items-start">
+        <h5 class="block-feature__title">GitHub</h5>
+    </div>
+                        </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">GitHub enhances API development with version control, collaboration tools, CI/CD automation, comprehensive documentation, and security features, ensuring efficient API development and deployment.</p>
+                    </div>
+                </div>
+                <div class="block-slim">
+
+                    <a href="https://github.com/" class="link" target="_blank" data-bi-an="api-lifecycle-stages--development" data-bi-cn="github" data-bi-ct="link" aria-label="Learn more about GitHub">
+                        <span class="btn btn--icon btn--icon-only btn--sm">
+                            <span class="glyph-prepend" aria-hidden="true"></span>
+                        </span>
+                        <span class="link__text">Learn more</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+                                                                <div class="layout__col">
+        <div class="card rounded-l">
+            <div class="card__media px-xs">
+            </div>
+            <div class="card__content p-l">
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+                        <div class="block-feature__badge">
+                            
+                                <div class="block-feature__badge pb-m">
+                                    <span class="badge badge--size-s badge-logo--m badge--solid">
+                                        <div class="ocr-icon d-inline-flex">
+                                            <div class="ocr-img media__asset">
+                                                <img src="/__mirror/assets/9fd16694dc154f437ca25904" class="invert-for-darkmode" alt="">
+                                            </div>
+                                        </div>
+                                    </span>
+                                </div>
+
+                            <div class="block-feature__headings d-flex flex-column align-items-start">
+        <h5 class="block-feature__title">GitHub Copilot</h5>
+    </div>
+                        </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">GitHub Copilot is an AI-powered code completion tool that suggests code snippets and functions as you type, speeding up API development and improving productivity.</p>
+                    </div>
+                </div>
+                <div class="block-slim">
+
+                    <a href="https://visualstudio.microsoft.com/github-copilot/" class="link" target="_blank" data-bi-an="api-lifecycle-stages--development" data-bi-cn="github-copilot" data-bi-ct="link" aria-label="Learn more about GitHub Copilot">
+                        <span class="btn btn--icon btn--icon-only btn--sm">
+                            <span class="glyph-prepend" aria-hidden="true"></span>
+                        </span>
+                        <span class="link__text">Learn more</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+                                                                <div class="layout__col">
+        <div class="card rounded-l">
+            <div class="card__media px-xs">
+            </div>
+            <div class="card__content p-l">
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+                        <div class="block-feature__badge">
+                            
+                                <div class="block-feature__badge pb-m">
+                                    <span class="badge badge--size-s badge-logo--m badge--solid">
+                                        <div class="ocr-icon d-inline-flex">
+                                            <div class="ocr-img media__asset">
+                                                <img src="/__mirror/assets/c284666b0bbe76c83761e45d" class="" alt="">
+                                            </div>
+                                        </div>
+                                    </span>
+                                </div>
+
+                            <div class="block-feature__headings d-flex flex-column align-items-start">
+        <h5 class="block-feature__title">Visual Studio &amp; Visual Studio Code</h5>
+    </div>
+                        </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Visual Studio and VS Code support your API development with templates for quick project setup, IntelliSense for intelligent code completion, robust debugging tools, and integrated version control for seamless collaboration and code management. </p>
+                    </div>
+                </div>
+                <div class="block-slim">
+
+                    <a href="https://visualstudio.microsoft.com/" class="link" target="_blank" data-bi-an="api-lifecycle-stages--development" data-bi-cn="vs-and-vs-code" data-bi-ct="link" aria-label="Learn more about Visual Studio &amp; Visual Studio Code">
+                        <span class="btn btn--icon btn--icon-only btn--sm">
+                            <span class="glyph-prepend" aria-hidden="true"></span>
+                        </span>
+                        <span class="link__text">Learn more</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="api-lifecycle-stages-3" class="tab-panel fade" role="tabpanel" aria-labelledby="api-lifecycle-stages-3-pill-bar" tabindex="0" hidden="">
+                                                <div class="pill-bar__panel__content">
+                                                    <div class="card-grid row">
+                                                        <div class="card-grid__cards">
+                                                            <div class="layout layout--cols-4">
+                                                                <div class="layout__col">
+        <div class="card rounded-l">
+            <div class="card__media px-xs">
+            </div>
+            <div class="card__content p-l">
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+                        <div class="block-feature__badge">
+                            
+                                <div class="block-feature__badge pb-m">
+                                    <span class="badge badge--size-s badge-logo--m badge--solid">
+                                        <div class="ocr-icon d-inline-flex">
+                                            <div class="ocr-img media__asset">
+                                                <img src="/__mirror/assets/3f8d131aa648eee04c1d375e" class="" alt="">
+                                            </div>
+                                        </div>
+                                    </span>
+                                </div>
+
+                            <div class="block-feature__headings d-flex flex-column align-items-start">
+        <h5 class="block-feature__title">Azure API Management</h5>
+    </div>
+                        </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Trace API requests to pinpoint execution issues and performance bottlenecks. Use detailed metrics and logs to effectively measure API performance and troubleshoot errors. </p>
+                    </div>
+                </div>
+                <div class="block-slim">
+
+                    <a href="https://learn.microsoft.com/azure/api-management/api-management-howto-api-inspector" class="link" target="_blank" data-bi-an="api-lifecycle-stages--testing" data-bi-cn="azure-api-management" data-bi-ct="link" aria-label="Learn more about Azure API Management testing">
+                        <span class="btn btn--icon btn--icon-only btn--sm">
+                            <span class="glyph-prepend" aria-hidden="true"></span>
+                        </span>
+                        <span class="link__text">Learn more</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+                                                                <div class="layout__col">
+        <div class="card rounded-l">
+            <div class="card__media px-xs">
+            </div>
+            <div class="card__content p-l">
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+                        <div class="block-feature__badge">
+                            
+                                <div class="block-feature__badge pb-m">
+                                    <span class="badge badge--size-s badge-logo--m badge--solid">
+                                        <div class="ocr-icon d-inline-flex">
+                                            <div class="ocr-img media__asset">
+                                                <img src="/__mirror/assets/907d916491c7eb5eca0e67e0" class="" alt="">
+                                            </div>
+                                        </div>
+                                    </span>
+                                </div>
+
+                            <div class="block-feature__headings d-flex flex-column align-items-start">
+        <h5 class="block-feature__title">Azure Load Testing</h5>
+    </div>
+                        </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Generate high-scale load and run simulations with a fully managed load-testing service for Azure. Quickly create tests or upload Apache JMeter scripts. Gain insights into performance, scalability, and capacity, supporting continuous improvement through automated CI/CD workflows.</p>
+                    </div>
+                </div>
+                <div class="block-slim">
+
+                    <a href="https://azure.microsoft.com/products/load-testing/" class="link" target="_blank" data-bi-an="api-lifecycle-stages--testing" data-bi-cn="azure-load-testing" data-bi-ct="link" aria-label="Learn more about Azure Load Testing">
+                        <span class="btn btn--icon btn--icon-only btn--sm">
+                            <span class="glyph-prepend" aria-hidden="true"></span>
+                        </span>
+                        <span class="link__text">Learn more</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+                                                                <div class="layout__col">
+        <div class="card rounded-l">
+            <div class="card__media px-xs">
+            </div>
+            <div class="card__content p-l">
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+                        <div class="block-feature__badge">
+                            
+                                <div class="block-feature__badge pb-m">
+                                    <span class="badge badge--size-s badge-logo--m badge--solid">
+                                        <div class="ocr-icon d-inline-flex">
+                                            <div class="ocr-img media__asset">
+                                                <img src="/__mirror/assets/428d1dac29aa9e7987b151dd" class="" alt="">
+                                            </div>
+                                        </div>
+                                    </span>
+                                </div>
+
+                            <div class="block-feature__headings d-flex flex-column align-items-start">
+        <h5 class="block-feature__title">Dev Proxy</h5>
+    </div>
+                        </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Build robust apps by simulating different API errors and behaviors. Without changing your app's code, see how it handles throttling, rate limiting and other errors. Mock APIs and responses to speed up app development.</p>
+                    </div>
+                </div>
+                <div class="block-slim">
+
+                    <a href="https://learn.microsoft.com/microsoft-cloud/dev/dev-proxy/concepts/use-api-testing" class="link" target="_blank" data-bi-an="api-lifecycle-stages--testing" data-bi-cn="dev-proxy" data-bi-ct="link" aria-label="Learn more about Dev Proxy testing">
+                        <span class="btn btn--icon btn--icon-only btn--sm">
+                            <span class="glyph-prepend" aria-hidden="true"></span>
+                        </span>
+                        <span class="link__text">Learn more</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+                                                                <div class="layout__col">
+        <div class="card rounded-l">
+            <div class="card__media px-xs">
+            </div>
+            <div class="card__content p-l">
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+                        <div class="block-feature__badge">
+                            
+                                <div class="block-feature__badge pb-m">
+                                    <span class="badge badge--size-s badge-logo--m badge--solid">
+                                        <div class="ocr-icon d-inline-flex">
+                                            <div class="ocr-img media__asset">
+                                                <img src="/__mirror/assets/cd53538ab57ab533eb9bf1e2" class="" alt="">
+                                            </div>
+                                        </div>
+                                    </span>
+                                </div>
+
+                            <div class="block-feature__headings d-flex flex-column align-items-start">
+        <h5 class="block-feature__title">Playwright</h5>
+    </div>
+                        </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Playwright allows you to write automated tests for APIs, integrating them with your CI/CD system for continuous testing and quality assurance.</p>
+                    </div>
+                </div>
+                <div class="block-slim">
+
+                    <a href="https://playwright.dev/docs/api-testing" class="link" target="_blank" data-bi-an="api-lifecycle-stages--testing" data-bi-cn="playwright" data-bi-ct="link" aria-label="Learn more about Playwright">
+                        <span class="btn btn--icon btn--icon-only btn--sm">
+                            <span class="glyph-prepend" aria-hidden="true"></span>
+                        </span>
+                        <span class="link__text">Learn more</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="api-lifecycle-stages-4" class="tab-panel fade" role="tabpanel" aria-labelledby="api-lifecycle-stages-4-pill-bar" tabindex="0" hidden="">
+                                                <div class="pill-bar__panel__content">
+                                                    <div class="card-grid row">
+                                                        <div class="card-grid__cards">
+                                                            <div class="layout layout--cols-4">
+                                                                <div class="layout__col">
+        <div class="card rounded-l">
+            <div class="card__media px-xs">
+            </div>
+            <div class="card__content p-l">
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+                        <div class="block-feature__badge">
+                            
+                                <div class="block-feature__badge pb-m">
+                                    <span class="badge badge--size-s badge-logo--m badge--solid">
+                                        <div class="ocr-icon d-inline-flex">
+                                            <div class="ocr-img media__asset">
+                                                <img src="/__mirror/assets/3f8d131aa648eee04c1d375e" class="" alt="">
+                                            </div>
+                                        </div>
+                                    </span>
+                                </div>
+
+                            <div class="block-feature__headings d-flex flex-column align-items-start">
+        <h5 class="block-feature__title">Azure API Management</h5>
+    </div>
+                        </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Manage and secure API runtime with gateways in the cloud or on-premises. Easily monitor, analyze, and report API performance and usage.</p>
+                    </div>
+                </div>
+                <div class="block-slim">
+
+                    <a href="https://learn.microsoft.com/azure/api-management/api-management-key-concepts" class="link" target="_blank" data-bi-an="api-lifecycle-stages--deployment" data-bi-cn="azure-api-management" data-bi-ct="link" aria-label="Learn more about Azure API Management deployment">
+                        <span class="btn btn--icon btn--icon-only btn--sm">
+                            <span class="glyph-prepend" aria-hidden="true"></span>
+                        </span>
+                        <span class="link__text">Learn more</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+                                                                <div class="layout__col">
+        <div class="card rounded-l">
+            <div class="card__media px-xs">
+            </div>
+            <div class="card__content p-l">
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+                        <div class="block-feature__badge">
+                            
+                                <div class="block-feature__badge pb-m">
+                                    <span class="badge badge--size-s badge-logo--m badge--solid">
+                                        <div class="ocr-icon d-inline-flex">
+                                            <div class="ocr-img media__asset">
+                                                <img src="/__mirror/assets/1e5dfe1d38c93f622bf52ee9" class="" alt="">
+                                            </div>
+                                        </div>
+                                    </span>
+                                </div>
+
+                            <div class="block-feature__headings d-flex flex-column align-items-start">
+        <h5 class="block-feature__title">Microsoft Defender for APIs</h5>
+    </div>
+                        </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Identify threats and malicious traffic patterns with ML-based detections. Classify APIs serving sensitive data, assess their security posture, and prioritize risk remediation.</p>
+                    </div>
+                </div>
+                <div class="block-slim">
+
+                    <a href="https://learn.microsoft.com/azure/defender-for-cloud/defender-for-apis-introduction" class="link" target="_blank" data-bi-an="api-lifecycle-stages--deployment" data-bi-cn="microsft-defender-for-apis" data-bi-ct="link" aria-label="Learn more about Microsoft Defender for APIs">
+                        <span class="btn btn--icon btn--icon-only btn--sm">
+                            <span class="glyph-prepend" aria-hidden="true"></span>
+                        </span>
+                        <span class="link__text">Learn more</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+                                                                <div class="layout__col">
+        <div class="card rounded-l">
+            <div class="card__media px-xs">
+            </div>
+            <div class="card__content p-l">
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+                        <div class="block-feature__badge">
+                            
+                                <div class="block-feature__badge pb-m">
+                                    <span class="badge badge--size-s badge-logo--m badge--solid">
+                                        <div class="ocr-icon d-inline-flex">
+                                            <div class="ocr-img media__asset">
+                                                <img src="/__mirror/assets/cd53538ab57ab533eb9bf1e2" class="" alt="">
+                                            </div>
+                                        </div>
+                                    </span>
+                                </div>
+
+                            <div class="block-feature__headings d-flex flex-column align-items-start">
+        <h5 class="block-feature__title">Playwright</h5>
+    </div>
+                        </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Playwright allows you to write automated tests for APIs, integrating them with your CI/CD system for continuous testing and quality assurance.</p>
+                    </div>
+                </div>
+                <div class="block-slim">
+
+                    <a href="https://playwright.dev/docs/api-testing" class="link" target="_blank" data-bi-an="api-lifecycle-stages--deployment" data-bi-cn="playwright" data-bi-ct="link" aria-label="Learn more about Playwright deployment">
+                        <span class="btn btn--icon btn--icon-only btn--sm">
+                            <span class="glyph-prepend" aria-hidden="true"></span>
+                        </span>
+                        <span class="link__text">Learn more</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="api-lifecycle-stages-5" class="tab-panel fade" role="tabpanel" aria-labelledby="api-lifecycle-stages-5-pill-bar" tabindex="0" hidden="">
+                                                <div class="pill-bar__panel__content">
+                                                    <div class="card-grid row">
+                                                        <div class="card-grid__cards">
+                                                            <div class="layout layout--cols-4">
+                                                                <div class="layout__col">
+        <div class="card rounded-l">
+            <div class="card__media px-xs">
+            </div>
+            <div class="card__content p-l">
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+                        <div class="block-feature__badge">
+                            
+                                <div class="block-feature__badge pb-m">
+                                    <span class="badge badge--size-s badge-logo--m badge--solid">
+                                        <div class="ocr-icon d-inline-flex">
+                                            <div class="ocr-img media__asset">
+                                                <img src="/__mirror/assets/0aac8084ae8ce4a8f29fbdc9" class="" alt="">
+                                            </div>
+                                        </div>
+                                    </span>
+                                </div>
+
+                            <div class="block-feature__headings d-flex flex-column align-items-start">
+        <h5 class="block-feature__title">Azure API Center</h5>
+    </div>
+                        </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">This service aids in centralized API discovery and governance, ensuring that APIs are well-documented and consistent, which helps mitigate understanding and documentation challenges.</p>
+                    </div>
+                </div>
+                <div class="block-slim">
+
+                    <a href="https://github.com/Azure/api-center?tab=readme-ov-file#getting-started-resources" class="link" target="_blank" data-bi-an="api-lifecycle-stages--publishing" data-bi-cn="azure-api-center" data-bi-ct="link" aria-label="Learn more about Azure API Center publishing">
+                        <span class="btn btn--icon btn--icon-only btn--sm">
+                            <span class="glyph-prepend" aria-hidden="true"></span>
+                        </span>
+                        <span class="link__text">Learn more</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+                                                                <div class="layout__col">
+        <div class="card rounded-l">
+            <div class="card__media px-xs">
+            </div>
+            <div class="card__content p-l">
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+                        <div class="block-feature__badge">
+                            
+                                <div class="block-feature__badge pb-m">
+                                    <span class="badge badge--size-s badge-logo--m badge--solid">
+                                        <div class="ocr-icon d-inline-flex">
+                                            <div class="ocr-img media__asset">
+                                                <img src="/__mirror/assets/3f8d131aa648eee04c1d375e" class="" alt="">
+                                            </div>
+                                        </div>
+                                    </span>
+                                </div>
+
+                            <div class="block-feature__headings d-flex flex-column align-items-start">
+        <h5 class="block-feature__title">Azure API Management</h5>
+    </div>
+                        </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Document and publish APIs for consumption within or outside your organization with the customizable, built-in developer portal. Control and monitor API access and usage by consumers.</p>
+                    </div>
+                </div>
+                <div class="block-slim">
+
+                    <a href="https://learn.microsoft.com/azure/api-management/developer-portal-overview" class="link" target="_blank" data-bi-an="api-lifecycle-stages--publishing" data-bi-cn="azure-api-management" data-bi-ct="link" aria-label="Learn more about Azure API Management publishing">
+                        <span class="btn btn--icon btn--icon-only btn--sm">
+                            <span class="glyph-prepend" aria-hidden="true"></span>
+                        </span>
+                        <span class="link__text">Learn more</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+                                                                <div class="layout__col">
+        <div class="card rounded-l">
+            <div class="card__media px-xs">
+            </div>
+            <div class="card__content p-l">
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+                        <div class="block-feature__badge">
+                            
+                                <div class="block-feature__badge pb-m">
+                                    <span class="badge badge--size-s badge-logo--m badge--solid">
+                                        <div class="ocr-icon d-inline-flex">
+                                            <div class="ocr-img media__asset">
+                                                <img src="/__mirror/assets/428d1dac29aa9e7987b151dd" class="" alt="">
+                                            </div>
+                                        </div>
+                                    </span>
+                                </div>
+
+                            <div class="block-feature__headings d-flex flex-column align-items-start">
+        <h5 class="block-feature__title">Dev Proxy</h5>
+    </div>
+                        </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Effortlessly generate Open API specs for your APIs to benefit from integration tooling. Optimize API usage in your app by analyzing its requests. <br>Detect the use of non-production APIs and make your apps more reliable.</p>
+                    </div>
+                </div>
+                <div class="block-slim">
+
+                    <a href="https://learn.microsoft.com/microsoft-cloud/dev/dev-proxy/concepts/use-api-publishing" class="link" target="_blank" data-bi-an="api-lifecycle-stages--publishing" data-bi-cn="dev-proxy" data-bi-ct="link" aria-label="Learn more about Dev Proxy publishing">
+                        <span class="btn btn--icon btn--icon-only btn--sm">
+                            <span class="glyph-prepend" aria-hidden="true"></span>
+                        </span>
+                        <span class="link__text">Learn more</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+                                                                <div class="layout__col">
+        <div class="card rounded-l">
+            <div class="card__media px-xs">
+            </div>
+            <div class="card__content p-l">
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+                        <div class="block-feature__badge">
+                            
+                                <div class="block-feature__badge pb-m">
+                                    <span class="badge badge--size-s badge-logo--m badge--solid">
+                                        <div class="ocr-icon d-inline-flex">
+                                            <div class="ocr-img media__asset">
+                                                <img src="/__mirror/assets/03684da55b1dd885827dc3b7" class="" alt="">
+                                            </div>
+                                        </div>
+                                    </span>
+                                </div>
+
+                            <div class="block-feature__headings d-flex flex-column align-items-start">
+        <h5 class="block-feature__title">Kiota</h5>
+    </div>
+                        </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Simplify consumption of your OpenAPI by creating API plugins that empower Copilot with real-time data access and resource management, or generate tailored HTTP API clients in various languages to streamline API interactions.</p>
+                    </div>
+                </div>
+                <div class="block-slim">
+
+                    <a href="https://aka.ms/kiota/docs" class="link" target="_blank" data-bi-an="api-lifecycle-stages--publishing" data-bi-cn="kiota" data-bi-ct="link" aria-label="Learn more about Kiota">
+                        <span class="btn btn--icon btn--icon-only btn--sm">
+                            <span class="glyph-prepend" aria-hidden="true"></span>
+                        </span>
+                        <span class="link__text">Learn more</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="api-lifecycle-stages-6" class="tab-panel fade" role="tabpanel" aria-labelledby="api-lifecycle-stages-6-pill-bar" tabindex="0" hidden="">
+                                                <div class="pill-bar__panel__content">
+                                                    <div class="card-grid row">
+                                                        <div class="card-grid__cards">
+                                                            <div class="layout layout--cols-4">
+                                                                <div class="layout__col">
+        <div class="card rounded-l">
+            <div class="card__media px-xs">
+            </div>
+            <div class="card__content p-l">
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+                        <div class="block-feature__badge">
+                            
+                                <div class="block-feature__badge pb-m">
+                                    <span class="badge badge--size-s badge-logo--m badge--solid">
+                                        <div class="ocr-icon d-inline-flex">
+                                            <div class="ocr-img media__asset">
+                                                <img src="/__mirror/assets/0aac8084ae8ce4a8f29fbdc9" class="" alt="">
+                                            </div>
+                                        </div>
+                                    </span>
+                                </div>
+
+                            <div class="block-feature__headings d-flex flex-column align-items-start">
+        <h5 class="block-feature__title">Azure API Center</h5>
+    </div>
+                        </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Keep track of your API inventory by registering and managing different API versions. Maintain oversight by knowing where these APIs and their respective versions are deployed, ensuring you have a clear view of your API landscape.</p>
+                    </div>
+                </div>
+                <div class="block-slim">
+
+                    <a href="https://learn.microsoft.com/azure/api-center/manage-apis-azure-cli" class="link" target="_blank" data-bi-an="api-lifecycle-stages--versioning" data-bi-cn="azure-api-center" data-bi-ct="link" aria-label="Learn more about Azure API Center versioning">
+                        <span class="btn btn--icon btn--icon-only btn--sm">
+                            <span class="glyph-prepend" aria-hidden="true"></span>
+                        </span>
+                        <span class="link__text">Learn more</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+                                                                <div class="layout__col">
+        <div class="card rounded-l">
+            <div class="card__media px-xs">
+            </div>
+            <div class="card__content p-l">
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+                        <div class="block-feature__badge">
+                            
+                                <div class="block-feature__badge pb-m">
+                                    <span class="badge badge--size-s badge-logo--m badge--solid">
+                                        <div class="ocr-icon d-inline-flex">
+                                            <div class="ocr-img media__asset">
+                                                <img src="/__mirror/assets/3f8d131aa648eee04c1d375e" class="" alt="">
+                                            </div>
+                                        </div>
+                                    </span>
+                                </div>
+
+                            <div class="block-feature__headings d-flex flex-column align-items-start">
+        <h5 class="block-feature__title">Azure API Management</h5>
+    </div>
+                        </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Evolve and change your APIs with revisions and versions, without impacting consumers. Monitor older API versions and proactively reduce their usage before deprecation.</p>
+                    </div>
+                </div>
+                <div class="block-slim">
+
+                    <a href="https://learn.microsoft.com/azure/api-management/api-management-get-started-publish-versions" class="link" target="_blank" data-bi-an="api-lifecycle-stages--versioning" data-bi-cn="azure-api-management" data-bi-ct="link" aria-label="Learn more about Azure API Management versioning">
+                        <span class="btn btn--icon btn--icon-only btn--sm">
+                            <span class="glyph-prepend" aria-hidden="true"></span>
+                        </span>
+                        <span class="link__text">Learn more</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+                                                                <div class="layout__col">
+        <div class="card rounded-l">
+            <div class="card__media px-xs">
+            </div>
+            <div class="card__content p-l">
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+                        <div class="block-feature__badge">
+                            
+                                <div class="block-feature__badge pb-m">
+                                    <span class="badge badge--size-s badge-logo--m badge--solid">
+                                        <div class="ocr-icon d-inline-flex">
+                                            <div class="ocr-img media__asset">
+                                                <img src="/__mirror/assets/1e5dfe1d38c93f622bf52ee9" class="" alt="">
+                                            </div>
+                                        </div>
+                                    </span>
+                                </div>
+
+                            <div class="block-feature__headings d-flex flex-column align-items-start">
+        <h5 class="block-feature__title">Microsoft Defender for APIs</h5>
+    </div>
+                        </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Automatically identify dormant API endpoints that expand your cybersecurity attack surface.</p>
+                    </div>
+                </div>
+                <div class="block-slim">
+
+                    <a href="https://learn.microsoft.com/azure/defender-for-cloud/defender-for-apis-introduction" class="link" target="_blank" data-bi-an="api-lifecycle-stages--versioning" data-bi-cn="microsft-defender-for-apis" data-bi-ct="link" aria-label="Learn more about Microsoft Defender for APIs versioning">
+                        <span class="btn btn--icon btn--icon-only btn--sm">
+                            <span class="glyph-prepend" aria-hidden="true"></span>
+                        </span>
+                        <span class="link__text">Learn more</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+                                                                <div class="layout__col">
+        <div class="card rounded-l">
+            <div class="card__media px-xs">
+            </div>
+            <div class="card__content p-l">
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+                        <div class="block-feature__badge">
+                            
+                                <div class="block-feature__badge pb-m">
+                                    <span class="badge badge--size-s badge-logo--m badge--solid">
+                                        <div class="ocr-icon d-inline-flex">
+                                            <div class="ocr-img media__asset">
+                                                <img src="/__mirror/assets/428d1dac29aa9e7987b151dd" class="" alt="">
+                                            </div>
+                                        </div>
+                                    </span>
+                                </div>
+
+                            <div class="block-feature__headings d-flex flex-column align-items-start">
+        <h5 class="block-feature__title">Dev Proxy</h5>
+    </div>
+                        </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Detect the use of deprecated APIs, ensuring that no applications are unexpectedly affected by the retirement.</p>
+                    </div>
+                </div>
+                <div class="block-slim">
+
+                    <a href="https://learn.microsoft.com/microsoft-cloud/dev/dev-proxy/concepts/use-api-versioning" class="link" target="_blank" data-bi-an="api-lifecycle-stages--versioning" data-bi-cn="dev-proxy" data-bi-ct="link" aria-label="Learn more about Dev Proxy versioning">
+                        <span class="btn btn--icon btn--icon-only btn--sm">
+                            <span class="glyph-prepend" aria-hidden="true"></span>
+                        </span>
+                        <span class="link__text">Learn more</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="featured-products">
+                <div class="section-master bg--base-fade section-master--breadth-comfortable section-master--layout-slot-horizontal-alignment-right section-master--layout-slot-vertical-alignment-bottom section-master--blade-card-carousel">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <div class="layout section-master__layout section-master--layout-cols-1">
+        <div class="layout__col">
+            <div class="section-master__layout-header">
+                <div class="block-heading block-heading--size-s">
+                        <h3 class="block-heading__eyebrow">Featured products</h3>
+                        <h2 class="block-heading__title">Unleash the power of your APIs with our developer-friendly products</h2>
+                </div>
+            </div>
+        </div>
+
+    </div>
+                            </div>
+                        </div>
+                        <div class="card-grid row section-master__slot card-grid--disable-card-promo">
+                            <div class="card-grid__cards col-lg-18">
+                                <div class="layout layout--cols-3">
+                                    <div class="layout__col">
+        <div class="card rounded-l">
+            <div class="card__media px-xs">
+                    <div class="media">
+                        <div class="ocr-img media__asset">
+                            <picture>
+                                <source srcset="/__mirror/assets/e611a6ab62ab9de5d80ec09f">
+                                <source srcset="/__mirror/assets/1c90a30a5cc2868ac4110a26">
+                                <img src="/__mirror/assets/1c90a30a5cc2868ac4110a26" alt="">
+                            </source></source></picture>
+                        </div>
+                    </div>
+            </div>
+            <div class="card__content p-l">
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+                        <div class="block-feature__badge">
+                            
+
+                            <div class="block-feature__headings d-flex flex-column align-items-start">
+        <h5 class="block-feature__title">Azure API Management</h5>
+    </div>
+                        </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Azure API Management is an established, fully managed Azure service that enables developers to efficiently and effectively manage APIs throughout their lifecycle, across cloud and on-premise environments. It provides an API gateway, a developer portal, and administrative controls to streamline and enhance API design, development, publishing, security, and monitoring.</p>
+                    </div>
+                </div>
+                <div class="block-slim">
+
+                    <a href="https://learn.microsoft.com/azure/api-management/api-management-key-concepts" class="link" target="_blank" data-bi-an="featured-products" data-bi-cn="api-management" data-bi-ct="link" aria-label="Get started with Azure API Management">
+                        <span class="btn btn--icon btn--icon-only btn--sm">
+                            <span class="glyph-prepend" aria-hidden="true"></span>
+                        </span>
+                        <span class="link__text">Get started now</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+                                    <div class="layout__col">
+        <div class="card rounded-l">
+            <div class="card__media px-xs">
+                    <div class="media">
+                        <div class="ocr-img media__asset">
+                            <picture>
+                                <source srcset="/__mirror/assets/3914f5f5a04635d765e62cd0">
+                                <source srcset="/__mirror/assets/066bc8ad5733f77f9b785312">
+                                <img src="/__mirror/assets/066bc8ad5733f77f9b785312" alt="">
+                            </source></source></picture>
+                        </div>
+                    </div>
+            </div>
+            <div class="card__content p-l">
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+                        <div class="block-feature__badge">
+                            
+
+                            <div class="block-feature__headings d-flex flex-column align-items-start">
+        <h5 class="block-feature__title">Azure API Center</h5>
+    </div>
+                        </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Azure API Center offers a centralized inventory solution for API discovery, reusability, and governance, making it easier for developers to manage APIs across different environments and stages of their lifecycle. Increase developer's productivity by streamlining the discovery process, making it an attractive tool for developers looking to maintain high-quality and compliant APIs efficiently.</p>
+                    </div>
+                </div>
+                <div class="block-slim">
+
+                    <a href="https://github.com/Azure/api-center?tab=readme-ov-file#getting-started-resources" class="link" target="_blank" data-bi-an="featured-products" data-bi-cn="api-center" data-bi-ct="link" aria-label="Get started with Azure API Center">
+                        <span class="btn btn--icon btn--icon-only btn--sm">
+                            <span class="glyph-prepend" aria-hidden="true"></span>
+                        </span>
+                        <span class="link__text">Get started now</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+                                    <div class="layout__col">
+        <div class="card rounded-l">
+            <div class="card__media px-xs">
+                    <div class="media">
+                        <div class="ocr-img media__asset">
+                            <picture>
+                                <source srcset="/__mirror/assets/9f5d4e7e64def5b4334c7d1d">
+                                <source srcset="/__mirror/assets/76ab8d7a9baa4998b84d27a4">
+                                <img src="/__mirror/assets/76ab8d7a9baa4998b84d27a4" alt="">
+                            </source></source></picture>
+                        </div>
+                    </div>
+            </div>
+            <div class="card__content p-l">
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+                        <div class="block-feature__badge">
+                            
+
+                            <div class="block-feature__headings d-flex flex-column align-items-start">
+        <h5 class="block-feature__title">Dev Proxy</h5>
+    </div>
+                        </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Dev Proxy is a command-line tool that helps developers build and test resilient applications by simulating API behaviors like errors, delays, and rate limiting. It works across platforms and tech stacks, allowing developers to identify and fix issues early, ensuring their applications are robust and reliable.</p>
+                    </div>
+                </div>
+                <div class="block-slim">
+
+                    <a href="https://learn.microsoft.com/microsoft-cloud/dev/dev-proxy/overview" class="link" target="_blank" data-bi-an="featured-products" data-bi-cn="dev-proxy" data-bi-ct="link" aria-label="Get started with Dev Proxy">
+                        <span class="btn btn--icon btn--icon-only btn--sm">
+                            <span class="glyph-prepend" aria-hidden="true"></span>
+                        </span>
+                        <span class="link__text">Get started now</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="api-action">
+                <div class="section-master bg--base-fade section-master--alignment-center section-master--layout-header-horizontal-alignment-center-focus section-master--blade-media-playlist-video">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <div class="layout section-master__layout">
+                                    <div class="layout__col">
+                                        <div class="section-master__layout-header">
+                                            <div class="block-heading block-heading--size-m">
+                                                <h3 class="block-heading__eyebrow">APIs in Action</h3>
+                                                <h2 class="block-heading__title">APIs in Action</h2>
+                                                <p class="block-heading__paragraph">Explore the latest trends and best practices in the Microsoft API landscape.</p>
+                                                <div class="block-heading__button-group">
+                                                    <div class="button-group">
+                                                        
+                                                        <a href="https://learn.microsoft.com/shows/apis-in-action/" class="btn btn--icon" target="_blank" data-bi-an="apis-in-action-show" data-bi-id="learn-from-experts" aria-label="Learn more about the APIs in Action show">
+
+                                                            <span class="btn__text">Learn from experts</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="section-master bg--base-fade section-master--alignment-center section-master--layout-header-horizontal-alignment-center-focus section-master--blade-media-playlist-video">
+                    <div class="row section-master__slot">
+                        <div class="col">
+
+                            <div class="carousel carousel--indicator-media-bar carousel--type-media-playlist-video bg--base-fade theme-day scroll-snap-mandatory">
+                                <section class="carousel__section" aria-label="video carousel" aria-roledescription="carousel" data-mount="ocr-carousel" style="--media-playlist-indicator-height: 175px;">
+                                    <span id="mwf5e6e3ca2-announcement-text" class="carousel__announcement-text sr-only" aria-live="polite" data-multi-slide-translatable="Showing %{curStart}-%{curEnd} of %{totalSlides} slides" data-single-slide-translatable="Showing slide %{curStart} of %{totalSlides}">Showing slide 6 of 6</span>
+
+                                    <div id="mwf5e6e3ca2-controls" class="carousel__controls slide-up-animation" style="z-index: 2;">
+                                        <button type="button" class="carousel__arrow-prev" title="Previous slide" data-slide="prev" aria-labelledby="carousel-control-prev-mwf5e6e3ca2" aria-controls="mwf5e6e3ca2-carousel__container">
+                                            <span class="sr-only" id="carousel-control-prev-mwf5e6e3ca2">Previous slide</span><span class="glyph-prepend glyph-prepend-back glyph-prepend-medium" aria-hidden="true"></span>
+                                        </button>
+                                        <div data-mount="ocr-slider" class="col ocr-slider" data-item-list-selector=".carousel__indicators-item">
+                                            <div class="slider__overflow">
+                                                <div class="slider__window rounded-scrollbar justify-content-center" style="margin-top: 50px;">
+                                                    <div class="d-flex flex-column align-items-center">
+                                                        <ol class="carousel__indicators">
+<li class="carousel__indicators-item-wrapper">
+
+        <a href="#mwf5e6e3ca2-1" class="carousel__indicators-item" role="button" aria-controls="mwf5e6e3ca2-1" aria-label="Select video Azure API Management from a developer perspective" aria-current="aria-current" data-current-slide-translatable="current slide">
+            <div class="carousel__indicators-item--container carousel__indicators-type--media carousel__indicators-type--videos depth-2 surface--solid">
+                <div class="carousel__indicators-item__media">
+                    <div class="media media--ratio-16-9">
+                        <div class="ocr-img media__asset">
+                            <picture>
+                                <source srcset="/__mirror/assets/fd79c62d9f65e9a156b1f621" media="(min-width: 1400px)">
+                                <img src="/__mirror/assets/fd79c62d9f65e9a156b1f621" alt="Azure API Management from a developer perspective cover image">
+                            </source></picture>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <div class="list-item__inner d-flex align-items-center">
+                        <div class="list-item__content flex-grow-1 d-flex flex-column">
+                            <div class="fg--base-highlight label-small">
+                                <p>15 mins</p>
+                            </div>
+                            <div class="fg--base-strong label list-item__content-title">
+                                <p>Azure API Management from a developer perspective</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <span class="indicator" role="presentation"></span>
+            </div>
+        </a>
+    </li><li class="carousel__indicators-item-wrapper">
+
+        <a href="#mwf5e6e3ca2-2" class="carousel__indicators-item" role="button" aria-controls="mwf5e6e3ca2-2" aria-label="Select video Better API Governance with Azure API Center" data-current-slide-translatable="current slide">
+            <div class="carousel__indicators-item--container carousel__indicators-type--media carousel__indicators-type--videos depth-2 surface--solid">
+                <div class="carousel__indicators-item__media">
+                    <div class="media media--ratio-16-9">
+                        <div class="ocr-img media__asset">
+                            <picture>
+                                <source srcset="/__mirror/assets/5df25639881ad436845ba7e7" media="(min-width: 1400px)">
+                                <img src="/__mirror/assets/5df25639881ad436845ba7e7" alt="Better API Governance with Azure API Center cover image">
+                            </source></picture>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <div class="list-item__inner d-flex align-items-center">
+                        <div class="list-item__content flex-grow-1 d-flex flex-column">
+                            <div class="fg--base-highlight label-small">
+                                <p>16 mins</p>
+                            </div>
+                            <div class="fg--base-strong label list-item__content-title">
+                                <p>Better API Governance with Azure API Center</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <span class="indicator" role="presentation"></span>
+            </div>
+        </a>
+    </li><li class="carousel__indicators-item-wrapper">
+
+        <a href="#mwf5e6e3ca2-3" class="carousel__indicators-item" role="button" aria-controls="mwf5e6e3ca2-3" aria-label="Select video OpenAPI now vs. the future" data-current-slide-translatable="current slide">
+            <div class="carousel__indicators-item--container carousel__indicators-type--media carousel__indicators-type--videos depth-2 surface--solid">
+                <div class="carousel__indicators-item__media">
+                    <div class="media media--ratio-16-9">
+                        <div class="ocr-img media__asset">
+                            <picture>
+                                <source srcset="/__mirror/assets/5950cd34c0cf73157ee13cbf" media="(min-width: 1400px)">
+                                <img src="/__mirror/assets/5950cd34c0cf73157ee13cbf" alt="OpenAPI now vs. the future cover image">
+                            </source></picture>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <div class="list-item__inner d-flex align-items-center">
+                        <div class="list-item__content flex-grow-1 d-flex flex-column">
+                            <div class="fg--base-highlight label-small">
+                                <p>12 mins</p>
+                            </div>
+                            <div class="fg--base-strong label list-item__content-title">
+                                <p>OpenAPI now vs. the future</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <span class="indicator" role="presentation"></span>
+            </div>
+        </a>
+    </li><li class="carousel__indicators-item-wrapper">
+
+        <a href="#mwf5e6e3ca2-4" class="carousel__indicators-item" role="button" aria-controls="mwf5e6e3ca2-4" aria-label="Select video APIOps: Transforming Azure APIM Deployments with GitOps and DevOps Methodologies" data-current-slide-translatable="current slide">
+            <div class="carousel__indicators-item--container carousel__indicators-type--media carousel__indicators-type--videos depth-2 surface--solid">
+                <div class="carousel__indicators-item__media">
+                    <div class="media media--ratio-16-9">
+                        <div class="ocr-img media__asset">
+                            <picture>
+                                <source srcset="/__mirror/assets/6aa5701eac9c5980129dd9d7" media="(min-width: 1400px)">
+                                <img src="/__mirror/assets/6aa5701eac9c5980129dd9d7" alt="APIOps: Transforming Azure APIM Deployments with GitOps and DevOps Methodologies cover image">
+                            </source></picture>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <div class="list-item__inner d-flex align-items-center">
+                        <div class="list-item__content flex-grow-1 d-flex flex-column">
+                            <div class="fg--base-highlight label-small">
+                                <p>28 mins</p>
+                            </div>
+                            <div class="fg--base-strong label list-item__content-title">
+                                <p>APIOps: Transforming Azure APIM Deployments with GitOps and DevOps Methodologies</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <span class="indicator" role="presentation"></span>
+            </div>
+        </a>
+    </li><li class="carousel__indicators-item-wrapper">
+
+        <a href="#mwf5e6e3ca2-5" class="carousel__indicators-item" role="button" aria-controls="mwf5e6e3ca2-5" aria-label="Select video Enhance your API security posture with Microsoft Defender for APIs" data-current-slide-translatable="current slide">
+            <div class="carousel__indicators-item--container carousel__indicators-type--media carousel__indicators-type--videos depth-2 surface--solid">
+                <div class="carousel__indicators-item__media">
+                    <div class="media media--ratio-16-9">
+                        <div class="ocr-img media__asset">
+                            <picture>
+                                <source srcset="/__mirror/assets/e04e46bb76501fb7490dba13" media="(min-width: 1400px)">
+                                <img src="/__mirror/assets/e04e46bb76501fb7490dba13" alt="Enhance your API security posture with Microsoft Defender for APIs cover image">
+                            </source></picture>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <div class="list-item__inner d-flex align-items-center">
+                        <div class="list-item__content flex-grow-1 d-flex flex-column">
+                            <div class="fg--base-highlight label-small">
+                                <p>16 mins</p>
+                            </div>
+                            <div class="fg--base-strong label list-item__content-title">
+                                <p>Enhance your API security posture with Microsoft Defender for APIs</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <span class="indicator" role="presentation"></span>
+            </div>
+        </a>
+    </li><li class="carousel__indicators-item-wrapper">
+
+        <a href="#mwf5e6e3ca2-6" class="carousel__indicators-item" role="button" aria-controls="mwf5e6e3ca2-6" aria-label="Select video API Developer Experience (DevEx)" data-current-slide-translatable="current slide">
+            <div class="carousel__indicators-item--container carousel__indicators-type--media carousel__indicators-type--videos depth-2 surface--solid">
+                <div class="carousel__indicators-item__media">
+                    <div class="media media--ratio-16-9">
+                        <div class="ocr-img media__asset">
+                            <picture>
+                                <source srcset="/__mirror/assets/7d88ee1e0dca6683218db0b8" media="(min-width: 1400px)">
+                                <img src="/__mirror/assets/7d88ee1e0dca6683218db0b8" alt="API Developer Experience (DevEx) cover image">
+                            </source></picture>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <div class="list-item__inner d-flex align-items-center">
+                        <div class="list-item__content flex-grow-1 d-flex flex-column">
+                            <div class="fg--base-highlight label-small">
+                                <p>25 mins</p>
+                            </div>
+                            <div class="fg--base-strong label list-item__content-title">
+                                <p>API Developer Experience (DevEx)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <span class="indicator" role="presentation"></span>
+            </div>
+        </a>
+    </li>                                                        </ol>
+                                                        <div class="carousel__show-more-indicator">
+                                                            <div class="button-group">
+                                                                <button class="btn btn--secondary" aria-label="Show more items in carousel">
+                                                                    <span class="btn__text">Show more</span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="slider__arrows d-none">
+                                                <button type="button" class="slider__arrow-prev" tabindex="-1" aria-hidden="true"></button>
+                                                <div class="slider__arrow-prev slider__arrow-prev-bg"></div>
+                                                <button type="button" class="slider__arrow-next" tabindex="-1" aria-hidden="true"></button>
+                                                <div class="slider__arrow-next slider__arrow-next-bg"></div>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="carousel__arrow-next" title="Next slide" data-slide="next" aria-labelledby="carousel-control-next-mwf5e6e3ca2" aria-controls="mwf5e6e3ca2-carousel__container" disabled>
+                                            <span class="sr-only" id="carousel-control-next-mwf5e6e3ca2">Next slide</span><span class="glyph-prepend glyph-prepend-forward glyph-prepend-medium" aria-hidden="true"></span>
+                                        </button>
+                                    </div>
+
+                                    <div class="carousel__window hide-scrollbar sticky sticky-direction-top" data-mount="sticky" data-observer-behavior="size-aware" style="--vw: 3817px; position: initial; scroll-padding-inline-start: 4px; height: 2145px; margin-top: 0px;">
+                                        <div id="mwf5e6e3ca2-carousel__container" class="carousel__container layout layout--overflow " data-expanded-aria-label="Hide overlay content" data-collapsed-aria-label="Show overlay content">
+<div role="group" aria-roledescription="slide" tabindex="-1" id="mwf5e6e3ca2-1" class="carousel__slide layout__col" aria-label="1 of 6" aria-hidden="true">
+
+
+        <div class="media  media--ratio-16-9 overlay__target media--universal-media-player">
+            <div class="ump-container ump-inherit mx-auto">
+                <universal-media-player data-video='{ 
+                "options": {
+                    "market": "en-US",
+                    "autoplay": false,
+                    "mute": false,
+                    "percentage": 0,
+                    "loop": false,
+                    "playFullScreen": false,
+                    "playPauseTrigger": false,
+                    "playButtonTheme": "dark",
+                    "playButtonSize": "large",
+                    "maskLevel": "0",
+                    "share": false,
+                    "shareOptions": [],
+                    "playbackSpeed": false,
+                    "reporting": {
+                        "enabled": true
+                    },
+                    "centered": true
+                },
+                                "metadata": {
+                                    "title": "Azure API Management from a developer perspective",
+                                    "posterframeUrl": "/_devcom/images/views/build-apis/apis-in-action/1.jpg",
+                                    "videoFiles": [
+                                        { "mediaType": "HLS", "url": "https://videoencodingpublic-hgeaeyeba8gycee3.b01.azurefd.net/public-f57d726d-72c2-4b22-ad6b-3d1bbb5b41e8/AD-APIs-04-Azure%20API%20Management%20_master.m3u8" }
+                                    ],
+                                    "videoAssetId": "f57d726d-72c2-4b22-ad6b-3d1bbb5b41e8"
+                                }
+                            }'>
+                </universal-media-player>
+            </div>
+        </div>
+        <div class="carousel__overlay-content">
+            <button class="btn carousel__overlay-btn-toggle d-none overlay-hidden btn--media-stroke" aria-label="Show overlay content" aria-expanded="false" tabindex="-1" aria-controls="mwf5e6e3ca2-1-bf mwf5e6e3ca2-controls">
+                <span class="glyph-prepend glyph-prepend-chevron-up" aria-hidden="true"></span>
+            </button>
+            <div class="block-feature d-flex align-items-start block-feature--s block-feature--align-stacked block-feature--text-center" aria-live="polite" id="mwf5e6e3ca2-1-bf">
+                <div class="block-feature__body d-flex flex-column align-items-start">
+                    <div class="block-feature__headings d-flex flex-column align-items-start">
+                        <div class="block-feature__eyebrow">
+                            <p class="block-feature__label ">15 mins</p>
+                        </div>
+                        <h3 class="block-feature__title ">Azure API Management from a developer perspective</h3>
+                    </div>
+                    <p class="block-feature__paragraph"></p>
+                </div>
+            </div>
+        </div>
+    </div><div role="group" aria-roledescription="slide" tabindex="-1" id="mwf5e6e3ca2-2" class="carousel__slide layout__col" aria-label="2 of 6" aria-hidden="true">
+
+
+        <div class="media  media--ratio-16-9 overlay__target media--universal-media-player">
+            <div class="ump-container ump-inherit mx-auto">
+                <universal-media-player data-video='{ 
+                "options": {
+                    "market": "en-US",
+                    "autoplay": false,
+                    "mute": false,
+                    "percentage": 0,
+                    "loop": false,
+                    "playFullScreen": false,
+                    "playPauseTrigger": false,
+                    "playButtonTheme": "dark",
+                    "playButtonSize": "large",
+                    "maskLevel": "0",
+                    "share": false,
+                    "shareOptions": [],
+                    "playbackSpeed": false,
+                    "reporting": {
+                        "enabled": true
+                    },
+                    "centered": true
+                },
+                                "metadata": {
+                                    "title": "Better API Governance with Azure API Center",
+                                    "posterframeUrl": "/_devcom/images/views/build-apis/apis-in-action/2.jpg",
+                                    "videoFiles": [
+                                        { "mediaType": "HLS", "url": "https://videoencodingpublic-hgeaeyeba8gycee3.b01.azurefd.net/public-13aa5092-c21f-4d1c-973c-3b72acfbc427/AD-APIs-08-Better%20API%20Governance_master.m3u8" }
+                                    ],
+                                    "videoAssetId": "13aa5092-c21f-4d1c-973c-3b72acfbc427"
+                                }
+                            }'>
+                </universal-media-player>
+            </div>
+        </div>
+        <div class="carousel__overlay-content">
+            <button class="btn carousel__overlay-btn-toggle d-none overlay-hidden btn--media-stroke" aria-label="Show overlay content" aria-expanded="false" tabindex="-1" aria-controls="mwf5e6e3ca2-2-bf mwf5e6e3ca2-controls">
+                <span class="glyph-prepend glyph-prepend-chevron-up" aria-hidden="true"></span>
+            </button>
+            <div class="block-feature d-flex align-items-start block-feature--s block-feature--align-stacked block-feature--text-center" aria-live="polite" id="mwf5e6e3ca2-2-bf">
+                <div class="block-feature__body d-flex flex-column align-items-start">
+                    <div class="block-feature__headings d-flex flex-column align-items-start">
+                        <div class="block-feature__eyebrow">
+                            <p class="block-feature__label ">16 mins</p>
+                        </div>
+                        <h3 class="block-feature__title ">Better API Governance with Azure API Center</h3>
+                    </div>
+                    <p class="block-feature__paragraph"></p>
+                </div>
+            </div>
+        </div>
+    </div><div role="group" aria-roledescription="slide" tabindex="-1" id="mwf5e6e3ca2-3" class="carousel__slide layout__col" aria-label="3 of 6" aria-hidden="true">
+
+
+        <div class="media  media--ratio-16-9 overlay__target media--universal-media-player">
+            <div class="ump-container ump-inherit mx-auto">
+                <universal-media-player data-video='{ 
+                "options": {
+                    "market": "en-US",
+                    "autoplay": false,
+                    "mute": false,
+                    "percentage": 0,
+                    "loop": false,
+                    "playFullScreen": false,
+                    "playPauseTrigger": false,
+                    "playButtonTheme": "dark",
+                    "playButtonSize": "large",
+                    "maskLevel": "0",
+                    "share": false,
+                    "shareOptions": [],
+                    "playbackSpeed": false,
+                    "reporting": {
+                        "enabled": true
+                    },
+                    "centered": true
+                },
+                                "metadata": {
+                                    "title": "OpenAPI now vs. the future",
+                                    "posterframeUrl": "/_devcom/images/views/build-apis/apis-in-action/3.jpg",
+                                    "videoFiles": [
+                                        { "mediaType": "HLS", "url": "https://videoencodingpublic-hgeaeyeba8gycee3.b01.azurefd.net/public-1e92500c-9aa0-4bc1-a7a8-a059652687d7/AD-APIs-05-OpenAPI%20Unleashed%20-%20N_master.m3u8" }
+                                    ],
+                                    "videoAssetId": "1e92500c-9aa0-4bc1-a7a8-a059652687d7"
+                                }
+                            }'>
+                </universal-media-player>
+            </div>
+        </div>
+        <div class="carousel__overlay-content">
+            <button class="btn carousel__overlay-btn-toggle d-none overlay-hidden btn--media-stroke" aria-label="Show overlay content" aria-expanded="false" tabindex="-1" aria-controls="mwf5e6e3ca2-3-bf mwf5e6e3ca2-controls">
+                <span class="glyph-prepend glyph-prepend-chevron-up" aria-hidden="true"></span>
+            </button>
+            <div class="block-feature d-flex align-items-start block-feature--s block-feature--align-stacked block-feature--text-center" aria-live="polite" id="mwf5e6e3ca2-3-bf">
+                <div class="block-feature__body d-flex flex-column align-items-start">
+                    <div class="block-feature__headings d-flex flex-column align-items-start">
+                        <div class="block-feature__eyebrow">
+                            <p class="block-feature__label ">12 mins</p>
+                        </div>
+                        <h3 class="block-feature__title ">OpenAPI now vs. the future</h3>
+                    </div>
+                    <p class="block-feature__paragraph"></p>
+                </div>
+            </div>
+        </div>
+    </div><div role="group" aria-roledescription="slide" tabindex="-1" id="mwf5e6e3ca2-4" class="carousel__slide layout__col" aria-label="4 of 6" aria-hidden="true">
+
+
+        <div class="media  media--ratio-16-9 overlay__target media--universal-media-player">
+            <div class="ump-container ump-inherit mx-auto">
+                <universal-media-player data-video='{ 
+                "options": {
+                    "market": "en-US",
+                    "autoplay": false,
+                    "mute": false,
+                    "percentage": 0,
+                    "loop": false,
+                    "playFullScreen": false,
+                    "playPauseTrigger": false,
+                    "playButtonTheme": "dark",
+                    "playButtonSize": "large",
+                    "maskLevel": "0",
+                    "share": false,
+                    "shareOptions": [],
+                    "playbackSpeed": false,
+                    "reporting": {
+                        "enabled": true
+                    },
+                    "centered": true
+                },
+                                "metadata": {
+                                    "title": "APIOps: Transforming Azure APIM Deployments with GitOps and DevOps Methodologies",
+                                    "posterframeUrl": "/_devcom/images/views/build-apis/apis-in-action/4.jpg",
+                                    "videoFiles": [
+                                        { "mediaType": "HLS", "url": "https://videoencodingpublic-hgeaeyeba8gycee3.b01.azurefd.net/public-08cc908a-223b-4a86-b1ec-7a2d4bb672cb/AD-APIs-16-APIOps%20Transforming%20A_master.m3u8" }
+                                    ],
+                                    "videoAssetId": "08cc908a-223b-4a86-b1ec-7a2d4bb672cb"
+                                }
+                            }'>
+                </universal-media-player>
+            </div>
+        </div>
+        <div class="carousel__overlay-content">
+            <button class="btn carousel__overlay-btn-toggle d-none overlay-hidden btn--media-stroke" aria-label="Show overlay content" aria-expanded="false" tabindex="-1" aria-controls="mwf5e6e3ca2-4-bf mwf5e6e3ca2-controls">
+                <span class="glyph-prepend glyph-prepend-chevron-up" aria-hidden="true"></span>
+            </button>
+            <div class="block-feature d-flex align-items-start block-feature--s block-feature--align-stacked block-feature--text-center" aria-live="polite" id="mwf5e6e3ca2-4-bf">
+                <div class="block-feature__body d-flex flex-column align-items-start">
+                    <div class="block-feature__headings d-flex flex-column align-items-start">
+                        <div class="block-feature__eyebrow">
+                            <p class="block-feature__label ">28 mins</p>
+                        </div>
+                        <h3 class="block-feature__title ">APIOps: Transforming Azure APIM Deployments with GitOps and DevOps Methodologies</h3>
+                    </div>
+                    <p class="block-feature__paragraph"></p>
+                </div>
+            </div>
+        </div>
+    </div><div role="group" aria-roledescription="slide" tabindex="-1" id="mwf5e6e3ca2-5" class="carousel__slide layout__col" aria-label="5 of 6" aria-hidden="true">
+
+
+        <div class="media  media--ratio-16-9 overlay__target media--universal-media-player">
+            <div class="ump-container ump-inherit mx-auto">
+                <universal-media-player data-video='{ 
+                "options": {
+                    "market": "en-US",
+                    "autoplay": false,
+                    "mute": false,
+                    "percentage": 0,
+                    "loop": false,
+                    "playFullScreen": false,
+                    "playPauseTrigger": false,
+                    "playButtonTheme": "dark",
+                    "playButtonSize": "large",
+                    "maskLevel": "0",
+                    "share": false,
+                    "shareOptions": [],
+                    "playbackSpeed": false,
+                    "reporting": {
+                        "enabled": true
+                    },
+                    "centered": true
+                },
+                                "metadata": {
+                                    "title": "Enhance your API security posture with Microsoft Defender for APIs",
+                                    "posterframeUrl": "/_devcom/images/views/build-apis/apis-in-action/5.jpg",
+                                    "videoFiles": [
+                                        { "mediaType": "HLS", "url": "https://videoencodingpublic-hgeaeyeba8gycee3.b01.azurefd.net/public-7c7587e4-0a6c-4f51-8319-625cbde05245/AD-APIs-13-Enhance%20your%20API%20secu_master.m3u8" }
+                                    ],
+                                    "videoAssetId": "7c7587e4-0a6c-4f51-8319-625cbde05245"
+                                }
+                            }'>
+                </universal-media-player>
+            </div>
+        </div>
+        <div class="carousel__overlay-content">
+            <button class="btn carousel__overlay-btn-toggle d-none overlay-hidden btn--media-stroke" aria-label="Show overlay content" aria-expanded="false" tabindex="-1" aria-controls="mwf5e6e3ca2-5-bf mwf5e6e3ca2-controls">
+                <span class="glyph-prepend glyph-prepend-chevron-up" aria-hidden="true"></span>
+            </button>
+            <div class="block-feature d-flex align-items-start block-feature--s block-feature--align-stacked block-feature--text-center" aria-live="polite" id="mwf5e6e3ca2-5-bf">
+                <div class="block-feature__body d-flex flex-column align-items-start">
+                    <div class="block-feature__headings d-flex flex-column align-items-start">
+                        <div class="block-feature__eyebrow">
+                            <p class="block-feature__label ">16 mins</p>
+                        </div>
+                        <h3 class="block-feature__title ">Enhance your API security posture with Microsoft Defender for APIs</h3>
+                    </div>
+                    <p class="block-feature__paragraph"></p>
+                </div>
+            </div>
+        </div>
+    </div><div role="group" aria-roledescription="slide" tabindex="-1" id="mwf5e6e3ca2-6" class="carousel__slide layout__col" aria-label="6 of 6" aria-hidden="true">
+
+
+        <div class="media  media--ratio-16-9 overlay__target media--universal-media-player">
+            <div class="ump-container ump-inherit mx-auto">
+                <universal-media-player data-video='{ 
+                "options": {
+                    "market": "en-US",
+                    "autoplay": false,
+                    "mute": false,
+                    "percentage": 0,
+                    "loop": false,
+                    "playFullScreen": false,
+                    "playPauseTrigger": false,
+                    "playButtonTheme": "dark",
+                    "playButtonSize": "large",
+                    "maskLevel": "0",
+                    "share": false,
+                    "shareOptions": [],
+                    "playbackSpeed": false,
+                    "reporting": {
+                        "enabled": true
+                    },
+                    "centered": true
+                },
+                                "metadata": {
+                                    "title": "API Developer Experience (DevEx)",
+                                    "posterframeUrl": "/_devcom/images/views/build-apis/apis-in-action/6.jpg",
+                                    "videoFiles": [
+                                        { "mediaType": "HLS", "url": "https://videoencodingpublic-hgeaeyeba8gycee3.b01.azurefd.net/public-d8a4532b-5ea8-4cb8-914e-1336370250bd/AD-APIs-07-API%20Developer%20Experie_master.m3u8" }
+                                    ],
+                                    "videoAssetId": "d8a4532b-5ea8-4cb8-914e-1336370250bd"
+                                }
+                            }'>
+                </universal-media-player>
+            </div>
+        </div>
+        <div class="carousel__overlay-content">
+            <button class="btn carousel__overlay-btn-toggle d-none overlay-hidden btn--media-stroke" aria-label="Show overlay content" aria-expanded="false" tabindex="-1" aria-controls="mwf5e6e3ca2-6-bf mwf5e6e3ca2-controls">
+                <span class="glyph-prepend glyph-prepend-chevron-up" aria-hidden="true"></span>
+            </button>
+            <div class="block-feature d-flex align-items-start block-feature--s block-feature--align-stacked block-feature--text-center" aria-live="polite" id="mwf5e6e3ca2-6-bf">
+                <div class="block-feature__body d-flex flex-column align-items-start">
+                    <div class="block-feature__headings d-flex flex-column align-items-start">
+                        <div class="block-feature__eyebrow">
+                            <p class="block-feature__label ">25 mins</p>
+                        </div>
+                        <h3 class="block-feature__title ">API Developer Experience (DevEx)</h3>
+                    </div>
+                    <p class="block-feature__paragraph"></p>
+                </div>
+            </div>
+        </div>
+    </div>                                            <div class="empty-slide"></div>
+                                        </div>
+                                    </div>
+                                    <a href="javascript:void(0);" class="carousel__back-to-controls sr-only-focusable position-absolute">Back to carousel navigation controls</a>
+                                </section>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section id="featured-blogs">
+                <div class="section-master bg--base-fade section-master--breadth-comfortable section-master--layout-slot-horizontal-alignment-right section-master--layout-slot-vertical-alignment-bottom section-master--blade-card-carousel">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <div class="ocr-divider ocr-divider--size-m pb-xl"></div>
+                                <div class="layout section-master__layout section-master--layout-cols-2">
+                                    <div class="layout__col">
+                                        <div class="section-master__layout-header">
+                                            <div class="block-heading block-heading--size-m">
+                                                <h2 class="block-heading__title">Featured blogs</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="story-grid">
+                                    <div class="story-grid__heading-divider"></div>
+                                    <div class="story-grid--next-to-3 layout layout--cols-2">
+                                        <div class="story-grid__featured-article layout__col">
+                                            <div class="ghost-card ghost-card--stacked ghost-card--divider-disabled">
+                                                <div class="layout layout--cols-2">
+                                                    <div class="layout__col">
+                                                        <div class="media ">
+                                                            <div class="ocr-img media__asset media--ratio-16-9">
+                                                                <picture>
+                                                                    <source srcset="/__mirror/assets/b7d73c419be7bf24d4e93d43">
+                                                                    <source srcset="/__mirror/assets/d721eb5218877665a77a38e6">
+                                                                    <img src="/__mirror/assets/d721eb5218877665a77a38e6" alt="">
+                                                                </source></source></picture>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="layout__col">
+                                                        <div class="block-feature d-flex align-items-start block-feature--2xs block-feature--align-stacked">
+                                                            <div class="block-feature__body d-flex flex-column align-items-start">
+                                                                <div class="block-feature__eyebrow">
+                                                                    <h4 class="block-feature__label">anishta</h4>
+                                                                    <h4 class="block-feature__date">
+                                                                        <span> • </span>
+                                                                        Jun 2026</h4>
+                                                                </div>
+                                                                <div class="block-feature__headings d-flex flex-column align-items-start">
+                                                                    <h5 class="block-feature__title">Productize, observe, version, and automate MCP servers in Azure API Management</h5>
+                                                                </div>
+                                                                <p class="base block-feature__paragraph">As organizations move from AI-assisted applications to agentic workflows, MCP servers are becoming a critical integration layer between agents and APIs</p>
+                                                                <div class="block-feature__footer">
+                                                                    <div class="block-slim">
+                                                                        <a href="https://techcommunity.microsoft.com/blog/integrationsonazureblog/productize-observe-version-and-automate-mcp-servers-in-azure-api-management/4526931" class="link link-inline" target="_blank" data-bi-an="featured-blogs" data-bi-id="productize-mcp-servers-apim" data-bi-ct="link" aria-label="Read more about productizing, observing, versioning, and automating MCP servers in Azure API Management">
+                                                                            <span class="link__text">Read more</span>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="story-grid__other-articles layout__col">
+                                            <div class="ghost-card ghost-card--size-medium">
+        <div class=""></div>
+
+
+        <div class="block-feature d-flex align-items-start block-feature--2xs">
+            <div class="layout layout--cols-2">
+                <div class="layout__col">
+                    <div class="media">
+                        <div class="ocr-img media__asset media--ratio-16-9">
+                            <picture>
+                                <source srcset="/__mirror/assets/2c73fe89ed6fc7b88af9c9cd" media="none and (prefers-color-scheme: dark)">
+                                <source srcset="/__mirror/assets/6e3711875cad01df609a5df5" media="none and (prefers-color-scheme: dark)">
+                                <source srcset="/__mirror/assets/2c73fe89ed6fc7b88af9c9cd" media="none and (prefers-color-scheme: light)">
+                                <source srcset="/__mirror/assets/6e3711875cad01df609a5df5" media="none and (prefers-color-scheme: light)">
+                                <img src="/__mirror/assets/6e3711875cad01df609a5df5" alt="">
+                            </source></source></source></source></picture>
+                        </div>
+                    </div>
+                </div>
+                <div class="layout__col">
+                    <div class="d-flex align-items-start block-feature--2xs block-feature--align-stacked">
+                        <div class="block-feature__body d-flex flex-column align-items-start">
+                            <div class="block-feature__headings d-flex flex-column align-items-start">
+                                <div class="block-feature__eyebrow">
+                                    <h4 class="block-feature__label">Sreekanth_Thirthala</h4>
+                                    <h4 class="block-feature__date">
+                                        <span> • </span>
+                                        Jun 2026</h4>
+                                </div>
+                                <h5 class="block-feature__title">Azure API Center Introduces a Data Plane MCP Server for Enterprise-Wide API and AI Asset Discovery</h5>
+                            </div>
+                            <div class="block-feature__footer">
+                                <div class="block-slim"> 
+                                    <a href="https://techcommunity.microsoft.com/blog/integrationsonazureblog/azure-api-center-introduces-a-data-plane-mcp-server-for-enterprise-wide-api-and-/4524635" class="link link-inline" target="_blank" , data-bi-an="featured-blogs" data-bi-id="api-center-data-plane-mcp" data-bi-ct="link" aria-label="Read more about Azure API Center's data plane MCP server for enterprise-wide API and AI asset discovery">
+                                        <span class="link__text">Read more</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+                                            <div class="ghost-card ghost-card--size-medium">
+        <div class="ocr-divider story-grid__article-divider"></div>
+
+
+        <div class="block-feature d-flex align-items-start block-feature--2xs">
+            <div class="layout layout--cols-2">
+                <div class="layout__col">
+                    <div class="media">
+                        <div class="ocr-img media__asset media--ratio-16-9">
+                            <picture>
+                                <source srcset="/__mirror/assets/6e7137d9787e11608ede53ce" media="none and (prefers-color-scheme: dark)">
+                                <source srcset="/__mirror/assets/02e3ec4ca700947eebe03560" media="none and (prefers-color-scheme: dark)">
+                                <source srcset="/__mirror/assets/6e7137d9787e11608ede53ce" media="none and (prefers-color-scheme: light)">
+                                <source srcset="/__mirror/assets/02e3ec4ca700947eebe03560" media="none and (prefers-color-scheme: light)">
+                                <img src="/__mirror/assets/02e3ec4ca700947eebe03560" alt="">
+                            </source></source></source></source></picture>
+                        </div>
+                    </div>
+                </div>
+                <div class="layout__col">
+                    <div class="d-flex align-items-start block-feature--2xs block-feature--align-stacked">
+                        <div class="block-feature__body d-flex flex-column align-items-start">
+                            <div class="block-feature__headings d-flex flex-column align-items-start">
+                                <div class="block-feature__eyebrow">
+                                    <h4 class="block-feature__label">Sreekanth_Thirthala</h4>
+                                    <h4 class="block-feature__date">
+                                        <span> • </span>
+                                        Jun 2026</h4>
+                                </div>
+                                <h5 class="block-feature__title">Azure API Center now supports agent registration, agent assessment, and Git-based synchronization</h5>
+                            </div>
+                            <div class="block-feature__footer">
+                                <div class="block-slim"> 
+                                    <a href="https://techcommunity.microsoft.com/blog/integrationsonazureblog/azure-api-center-now-supports-agent-registration-agent-assessment-and-git-based-/4524630" class="link link-inline" target="_blank" , data-bi-an="featured-blogs" data-bi-id="api-center-agent-registration" data-bi-ct="link" aria-label="Read more about Azure API Center support for agent registration, agent assessment, and Git-based synchronization">
+                                        <span class="link__text">Read more</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+                                            <div class="ghost-card ghost-card--size-medium">
+        <div class="ocr-divider story-grid__article-divider"></div>
+
+
+        <div class="block-feature d-flex align-items-start block-feature--2xs">
+            <div class="layout layout--cols-2">
+                <div class="layout__col">
+                    <div class="media">
+                        <div class="ocr-img media__asset media--ratio-16-9">
+                            <picture>
+                                <source srcset="/__mirror/assets/828c1ea02d2609a72da369da" media="none and (prefers-color-scheme: dark)">
+                                <source srcset="/__mirror/assets/f03730d34c0fa21ef4b40470" media="none and (prefers-color-scheme: dark)">
+                                <source srcset="/__mirror/assets/828c1ea02d2609a72da369da" media="none and (prefers-color-scheme: light)">
+                                <source srcset="/__mirror/assets/f03730d34c0fa21ef4b40470" media="none and (prefers-color-scheme: light)">
+                                <img src="/__mirror/assets/f03730d34c0fa21ef4b40470" alt="">
+                            </source></source></source></source></picture>
+                        </div>
+                    </div>
+                </div>
+                <div class="layout__col">
+                    <div class="d-flex align-items-start block-feature--2xs block-feature--align-stacked">
+                        <div class="block-feature__body d-flex flex-column align-items-start">
+                            <div class="block-feature__headings d-flex flex-column align-items-start">
+                                <div class="block-feature__eyebrow">
+                                    <h4 class="block-feature__label">budzynski</h4>
+                                    <h4 class="block-feature__date">
+                                        <span> • </span>
+                                        Jun 2026</h4>
+                                </div>
+                                <h5 class="block-feature__title">New AI gateway capabilities in Azure API Management</h5>
+                            </div>
+                            <div class="block-feature__footer">
+                                <div class="block-slim"> 
+                                    <a href="https://techcommunity.microsoft.com/blog/integrationsonazureblog/new-ai-gateway-capabilities-in-azure-api-management/4524604" class="link link-inline" target="_blank" , data-bi-an="featured-blogs" data-bi-id="new-ai-gateway-capabilities" data-bi-ct="link" aria-label="Read more about new AI gateway capabilities in Azure API Management">
+                                        <span class="link__text">Read more</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+    </div>
+
+    <!-- Theme picker / UHF Footer -->
+    <div class="mx-0 px-0 overflow-hidden uhf-footer-wrapper">
+        
+<div class="uhf11-footer-container">
+    <button type="button" class="uhf11-btn-theme" id="theme-toggle" aria-label="Change page theme" aria-pressed="false" data-bi-an="uhf-footer" data-bi-id="theme-toggle" data-bi-ct="button">
+        <svg xmlns="http://www.w3.org/2000/svg" style="margin-right:10px" width="24" height="24" fill="currentColor" class="bi bi-brightness-high" viewbox="0 0 16 16" aria-hidden="true">
+            <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"></path>
+        </svg><span>Theme</span>
+    </button>
+    
+<uhf-footer locale="en-us" partnerid="MSDev-Community" footerid="MSDev-DEVCOM-Community-Footer" theme="light">
+    <script id="uhf-footer-ccpa">
+        (function () {
+            function checkThirdPartyAdsOptOutCookie() {
+                try {
+                    var match = document.cookie.match('(^|;)\\s*3PAdsOptOut\\s*=\\s*([^;]+)');
+                    return (match ? match[2] : '') !== '1';
+                } catch (e) {
+                    return true;
+                }
+            }
+            var globalPrivacyControlEnabled = navigator.globalPrivacyControl;
+            window.GPC_DataSharingOptIn = globalPrivacyControlEnabled ? false : checkThirdPartyAdsOptOutCookie();
+            if (typeof window.onGPCLoaded === 'function') {
+                window.onGPCLoaded();
+            }
+        })();
+    </script>
+    
+<uhf-footer-nav slot="uhf-footer-nav">
+</uhf-footer-nav>
+        <a slot="uhf-footer-locale-picker" class="uhf-footer-link" href="/en-us/_devcom/locale" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_English (United States)_nav","ecn":"LegalNav_LocalePicker_nav","ehn":"LegalNav"}' aria-label="Content Language Selector. Currently set to English (United States)">English (United States)</a>
+    <div slot="uhf-footer-california-privacy-link">
+        
+<a class="uhf-footer-link" href="https://aka.ms/yourcaliforniaprivacychoices" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_California Privacy_nav","ecn":"LegalNav_CaliforniaPrivacy_nav","ehn":"LegalNav"}'>
+    <svg role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 14" xml:space="preserve" height="16" width="43">
+    <title>Your Privacy Choices Opt-Out Icon</title>
+    <path d="M7.4 12.8h6.8l3.1-11.6H7.4C4.2 1.2 1.6 3.8 1.6 7s2.6 5.8 5.8 5.8z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#fff"></path>
+    <path d="M22.6 0H7.4c-3.9 0-7 3.1-7 7s3.1 7 7 7h15.2c3.9 0 7-3.1 7-7s-3.2-7-7-7zm-21 7c0-3.2 2.6-5.8 5.8-5.8h9.9l-3.1 11.6H7.4c-3.2 0-5.8-2.6-5.8-5.8z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#06f"></path>
+    <path d="M24.6 4c.2.2.2.6 0 .8L22.5 7l2.2 2.2c.2.2.2.6 0 .8-.2.2-.6.2-.8 0l-2.2-2.2-2.2 2.2c-.2.2-.6.2-.8 0-.2-.2-.2-.6 0-.8L20.8 7l-2.2-2.2c-.2-.2-.2-.6 0-.8.2-.2.6-.2.8 0l2.2 2.2L23.8 4c.2-.2.6-.2.8 0z" style="fill:#fff"></path>
+    <path d="M12.7 4.1c.2.2.3.6.1.8L8.6 9.8c-.1.1-.2.2-.3.2-.2.1-.5.1-.7-.1L5.4 7.7c-.2-.2-.2-.6 0-.8.2-.2.6-.2.8 0L8 8.6l3.8-4.5c.2-.2.6-.2.9 0z" style="fill:#06f"></path>
+    </svg>
+    <span>Your Privacy Choices</span>
+</a>
+        <noscript>
+            
+<a class="uhf-footer-link" href="https://aka.ms/yourcaliforniaprivacychoices" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_California Privacy_nav","ecn":"LegalNav_CaliforniaPrivacy_nav","ehn":"LegalNav"}'>
+    <svg role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 14" xml:space="preserve" height="16" width="43">
+    <title>Your Privacy Choices Opt-Out Icon</title>
+    <path d="M7.4 12.8h6.8l3.1-11.6H7.4C4.2 1.2 1.6 3.8 1.6 7s2.6 5.8 5.8 5.8z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#fff"></path>
+    <path d="M22.6 0H7.4c-3.9 0-7 3.1-7 7s3.1 7 7 7h15.2c3.9 0 7-3.1 7-7s-3.2-7-7-7zm-21 7c0-3.2 2.6-5.8 5.8-5.8h9.9l-3.1 11.6H7.4c-3.2 0-5.8-2.6-5.8-5.8z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#06f"></path>
+    <path d="M24.6 4c.2.2.2.6 0 .8L22.5 7l2.2 2.2c.2.2.2.6 0 .8-.2.2-.6.2-.8 0l-2.2-2.2-2.2 2.2c-.2.2-.6.2-.8 0-.2-.2-.2-.6 0-.8L20.8 7l-2.2-2.2c-.2-.2-.2-.6 0-.8.2-.2.6-.2.8 0l2.2 2.2L23.8 4c.2-.2.6-.2.8 0z" style="fill:#fff"></path>
+    <path d="M12.7 4.1c.2.2.3.6.1.8L8.6 9.8c-.1.1-.2.2-.3.2-.2.1-.5.1-.7-.1L5.4 7.7c-.2-.2-.2-.6 0-.8.2-.2.6-.2.8 0L8 8.6l3.8-4.5c.2-.2.6-.2.9 0z" style="fill:#06f"></path>
+    </svg>
+    <span>Your Privacy Choices</span>
+</a>
+        </noscript>
+    </div>
+    <a slot="uhf-footer-consumer-health-privacy-link" class="uhf-footer-link" href="https://go.microsoft.com/fwlink/?linkid=2259814" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_Consumer Health Privacy_nav","ecn":"LegalNav_ConsumerHealthPrivacy_nav","ehn":"LegalNav"}'>Consumer Health Privacy</a>
+    
+<uhf-footer-menu slot="uhf-footer-menu" data-nav-label="Microsoft corporate links">
+            <a class="uhf-footer-link" href="https://support.microsoft.com/contactus/" id="uhf-Contact Microsoft " data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_Contact Microsoft _nav","ecn":"LegalNav_Contact Microsoft _nav","ehn":"LegalNav"}'>Contact Microsoft </a>
+            <a class="uhf-footer-link" href="https://go.microsoft.com/fwlink/?LinkId=521839" id="uhf-Privacy &amp; Cookies" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_Privacy &amp; Cookies_nav","ecn":"LegalNav_Privacy &amp; Cookies_nav","ehn":"LegalNav"}'>Privacy &amp; Cookies</a>
+            <a class="uhf-footer-link" href="#" id="uhf-Manage cookies" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_Manage cookies_nav","ecn":"LegalNav_Manage cookies_nav","ehn":"LegalNav"}'>Manage cookies</a>
+            <a class="uhf-footer-link" href="https://go.microsoft.com/fwlink/?LinkID=206977" id="uhf-Terms of Use" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_Terms of Use_nav","ecn":"LegalNav_Terms of Use_nav","ehn":"LegalNav"}'>Terms of Use</a>
+            <a class="uhf-footer-link" href="https://www.microsoft.com/trademarks" id="uhf-Trademarks" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_Trademarks_nav","ecn":"LegalNav_Trademarks_nav","ehn":"LegalNav"}'>Trademarks</a>
+</uhf-footer-menu>
+</uhf-footer>
+</div>
+    </div>
+    <!-- /Theme picker -->
+
+
+    <!-- Scripts -->
+    <script src="/__mirror/assets/6c595ffdb677c4a558469896" async></script>
+
+    
+<script type="module" src="/__mirror/assets/adb93738516987ac3e9c9096"></script>
+    
+ <!-- UHF scripts -->
+
+    
+    <script type="text/javascript" src="/__mirror/assets/b06372a56d52fb4c2e59c37b"></script>
+
+    
+    <script src="/__mirror/assets/5bc8db1ff406d4f5b65d6317"></script>
+    <!-- /Scripts -->
+
+    <script src="/__mirror/assets/942efe456a10a90269264a6f"></script>
+</body>
+</html>
