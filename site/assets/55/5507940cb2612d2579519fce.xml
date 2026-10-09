@@ -1,0 +1,106 @@
+<shell><cssIncludes>&lt;style&gt;
+    uhf-header:not(:defined) {
+        display: block;
+        height: 54px;
+    }
+
+    uhf-brand:not(:defined),
+    uhf-contextual-nav:not(:defined),
+    uhf-actions:not(:defined),
+    uhf-global-nav:not(:defined),
+    uhf-search:not(:defined),
+    uhf-mecontrol:not(:defined),
+    uhf-cart:not(:defined),
+    uhf-dropdown:not(:defined),
+    uhf-popout:not(:defined) {
+        visibility: hidden;
+    }
+&lt;/style&gt;
+&lt;link rel="stylesheet" href="/__mirror/assets/e4d14f1f8bc83e293e136adc"&gt;
+</cssIncludes><javascriptIncludes /><headerHtml>&lt;uhf-header locale="en-us" partnerid="MSFormulaDesign" headerid="MSFormulaDesignHeader" theme="light"&gt;
+    &lt;a slot="skip-link" class="uhf-skip-link" href="#main-content" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "SkipToMain", "cN": "Skip to content_nonnav", "ecn": "Skip to content_nonnav", "ehn": "SkipToMain"}'&gt;Skip to main content&lt;/a&gt;
+    
+&lt;uhf-brand slot="brand"&gt;
+        &lt;a href="https://www.microsoft.com" class="uhf-microsoft-logo" slot="microsoft-logo" aria-label="Microsoft" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Anchor", "cN": "GlobalNav_Logo_cont", "ecn": "GlobalNav_Logo_cont", "ehn": "Anchor"}'&gt;
+            &lt;img src="/__mirror/assets/adea6dac4ae78fd2b1b9eda9" alt="Microsoft"&gt;
+        &lt;/a&gt;
+            &lt;a href="/" class="uhf-site-logo" slot="brand-logo" aria-label="Formula Design System" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Anchor", "cN": "CatNav_Formula Design System_nav", "ecn": "CatNav_Formula Design System_nav", "ehn": "Anchor"}'&gt;
+ &lt;span&gt;Formula Design System&lt;/span&gt;             &lt;/a&gt;
+&lt;/uhf-brand&gt;
+
+
+&lt;uhf-contextual-nav slot="contextual-nav" overflowtext="More" brand="Formula Design System" homeurl="/" hometext="Home" data-nav-label="Contextual menu"&gt;
+
+
+    &lt;a class="uhf-nav-item uhf-nav-link" href="https://developer.microsoft.com/en-us/azure-devops/components" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Components", "cN": "CatNav_Components_nav", "ecn": "CatNav_components_nav", "ehn": "components"}'&gt;Components&lt;/a&gt;
+            &lt;a class="uhf-nav-item uhf-nav-cta" href="https://developercommunity.visualstudio.com/AzureDevOps" slot="CTA" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "CatNav_OneMicrosoftBar_Get Support_nav", "ecn": "CatNav_OneMicrosoftBar_Get Support_nav", "ehn": "OneMicrosoftBar"}'&gt;
+                Get Support
+            &lt;/a&gt;
+&lt;/uhf-contextual-nav&gt;    &lt;uhf-actions slot="actions"&gt;
+        
+
+    &lt;/uhf-actions&gt;
+&lt;/uhf-header&gt;
+</headerHtml><footerHtml>&lt;uhf-footer locale="en-us" partnerid="MSFormulaDesign" footerid="MSFormulaDesignFooter" theme="light"&gt;
+    &lt;script id="uhf-footer-ccpa"&gt;
+        (function () {
+            function checkThirdPartyAdsOptOutCookie() {
+                try {
+                    var match = document.cookie.match('(^|;)\\s*3PAdsOptOut\\s*=\\s*([^;]+)');
+                    return (match ? match[2] : '') !== '1';
+                } catch (e) {
+                    return true;
+                }
+            }
+            var globalPrivacyControlEnabled = navigator.globalPrivacyControl;
+            window.GPC_DataSharingOptIn = globalPrivacyControlEnabled ? false : checkThirdPartyAdsOptOutCookie();
+            if (typeof window.onGPCLoaded === 'function') {
+                window.onGPCLoaded();
+            }
+        })();
+    &lt;/script&gt;
+    
+&lt;uhf-footer-nav slot="uhf-footer-nav"&gt;
+&lt;/uhf-footer-nav&gt;
+        &lt;a slot="uhf-footer-locale-picker" class="uhf-footer-link" href="https://www.microsoft.com/en-us/locale" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_English (United States)_nav","ecn":"LegalNav_LocalePicker_nav","ehn":"LegalNav"}' aria-label="Content Language Selector. Currently set to English (United States)"&gt;English (United States)&lt;/a&gt;
+    &lt;div slot="uhf-footer-california-privacy-link"&gt;
+        
+&lt;a class="uhf-footer-link" href="https://aka.ms/yourcaliforniaprivacychoices" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_California Privacy_nav","ecn":"LegalNav_CaliforniaPrivacy_nav","ehn":"LegalNav"}'&gt;
+    &lt;svg role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 14" xml:space="preserve" height="16" width="43"&gt;
+    &lt;title&gt;Your Privacy Choices Opt-Out Icon&lt;/title&gt;
+    &lt;path d="M7.4 12.8h6.8l3.1-11.6H7.4C4.2 1.2 1.6 3.8 1.6 7s2.6 5.8 5.8 5.8z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#fff"&gt;&lt;/path&gt;
+    &lt;path d="M22.6 0H7.4c-3.9 0-7 3.1-7 7s3.1 7 7 7h15.2c3.9 0 7-3.1 7-7s-3.2-7-7-7zm-21 7c0-3.2 2.6-5.8 5.8-5.8h9.9l-3.1 11.6H7.4c-3.2 0-5.8-2.6-5.8-5.8z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#06f"&gt;&lt;/path&gt;
+    &lt;path d="M24.6 4c.2.2.2.6 0 .8L22.5 7l2.2 2.2c.2.2.2.6 0 .8-.2.2-.6.2-.8 0l-2.2-2.2-2.2 2.2c-.2.2-.6.2-.8 0-.2-.2-.2-.6 0-.8L20.8 7l-2.2-2.2c-.2-.2-.2-.6 0-.8.2-.2.6-.2.8 0l2.2 2.2L23.8 4c.2-.2.6-.2.8 0z" style="fill:#fff"&gt;&lt;/path&gt;
+    &lt;path d="M12.7 4.1c.2.2.3.6.1.8L8.6 9.8c-.1.1-.2.2-.3.2-.2.1-.5.1-.7-.1L5.4 7.7c-.2-.2-.2-.6 0-.8.2-.2.6-.2.8 0L8 8.6l3.8-4.5c.2-.2.6-.2.9 0z" style="fill:#06f"&gt;&lt;/path&gt;
+    &lt;/svg&gt;
+    &lt;span&gt;Your Privacy Choices&lt;/span&gt;
+&lt;/a&gt;
+        &lt;noscript&gt;
+            
+&lt;a class="uhf-footer-link" href="https://aka.ms/yourcaliforniaprivacychoices" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_California Privacy_nav","ecn":"LegalNav_CaliforniaPrivacy_nav","ehn":"LegalNav"}'&gt;
+    &lt;svg role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 14" xml:space="preserve" height="16" width="43"&gt;
+    &lt;title&gt;Your Privacy Choices Opt-Out Icon&lt;/title&gt;
+    &lt;path d="M7.4 12.8h6.8l3.1-11.6H7.4C4.2 1.2 1.6 3.8 1.6 7s2.6 5.8 5.8 5.8z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#fff"&gt;&lt;/path&gt;
+    &lt;path d="M22.6 0H7.4c-3.9 0-7 3.1-7 7s3.1 7 7 7h15.2c3.9 0 7-3.1 7-7s-3.2-7-7-7zm-21 7c0-3.2 2.6-5.8 5.8-5.8h9.9l-3.1 11.6H7.4c-3.2 0-5.8-2.6-5.8-5.8z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#06f"&gt;&lt;/path&gt;
+    &lt;path d="M24.6 4c.2.2.2.6 0 .8L22.5 7l2.2 2.2c.2.2.2.6 0 .8-.2.2-.6.2-.8 0l-2.2-2.2-2.2 2.2c-.2.2-.6.2-.8 0-.2-.2-.2-.6 0-.8L20.8 7l-2.2-2.2c-.2-.2-.2-.6 0-.8.2-.2.6-.2.8 0l2.2 2.2L23.8 4c.2-.2.6-.2.8 0z" style="fill:#fff"&gt;&lt;/path&gt;
+    &lt;path d="M12.7 4.1c.2.2.3.6.1.8L8.6 9.8c-.1.1-.2.2-.3.2-.2.1-.5.1-.7-.1L5.4 7.7c-.2-.2-.2-.6 0-.8.2-.2.6-.2.8 0L8 8.6l3.8-4.5c.2-.2.6-.2.9 0z" style="fill:#06f"&gt;&lt;/path&gt;
+    &lt;/svg&gt;
+    &lt;span&gt;Your Privacy Choices&lt;/span&gt;
+&lt;/a&gt;
+        &lt;/noscript&gt;
+    &lt;/div&gt;
+    &lt;a slot="uhf-footer-consumer-health-privacy-link" class="uhf-footer-link" href="https://go.microsoft.com/fwlink/?linkid=2259814" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_Consumer Health Privacy_nav","ecn":"LegalNav_ConsumerHealthPrivacy_nav","ehn":"LegalNav"}'&gt;Consumer Health Privacy&lt;/a&gt;
+    
+&lt;uhf-footer-menu slot="uhf-footer-menu" data-nav-label="Microsoft corporate links"&gt;
+            &lt;a class="uhf-footer-link" href="https://www.microsoft.com/en-us/sitemap1.aspx" id="uhf-Footer_Sitemap" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_Sitemap_nav","ecn":"LegalNav_Footer_Sitemap_nav","ehn":"LegalNav"}'&gt;Sitemap&lt;/a&gt;
+            &lt;a class="uhf-footer-link" href="https://support.microsoft.com/contactus" id="uhf-Footer_ContactUs" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_Contact Microsoft_nav","ecn":"LegalNav_Footer_ContactUs_nav","ehn":"LegalNav"}'&gt;Contact Microsoft&lt;/a&gt;
+            &lt;a class="uhf-footer-link" href="https://go.microsoft.com/fwlink/?LinkId=521839" id="uhf-Footer_PrivacyandCookies" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_Privacy _nav","ecn":"LegalNav_Footer_PrivacyandCookies_nav","ehn":"LegalNav"}'&gt;Privacy &lt;/a&gt;
+            &lt;a class="uhf-footer-link" href="#" id="uhf-Footer_ManageCookies" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_Manage cookies_nav","ecn":"LegalNav_Footer_ManageCookies_nav","ehn":"LegalNav"}'&gt;Manage cookies&lt;/a&gt;
+            &lt;a class="uhf-footer-link" href="https://go.microsoft.com/fwlink/?LinkID=206977" id="uhf-Footer_TermsOfUse" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_Terms of use_nav","ecn":"LegalNav_Footer_TermsOfUse_nav","ehn":"LegalNav"}'&gt;Terms of use&lt;/a&gt;
+            &lt;a class="uhf-footer-link" href="https://go.microsoft.com/fwlink/?linkid=2196228" id="uhf-Footer_Trademarks" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_Trademarks_nav","ecn":"LegalNav_Footer_Trademarks_nav","ehn":"LegalNav"}'&gt;Trademarks&lt;/a&gt;
+            &lt;a class="uhf-footer-link" href="https://go.microsoft.com/fwlink/?linkid=2196227" id="uhf-Footer_SafetyAndEco" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_Safety &amp;amp; eco_nav","ecn":"LegalNav_Footer_SafetyAndEco_nav","ehn":"LegalNav"}'&gt;Safety &amp;amp; eco&lt;/a&gt;
+            &lt;a class="uhf-footer-link" href="https://www.microsoft.com/en-us/legal/compliance/recycling" id="uhf-Recycling" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_Recycling_nav","ecn":"LegalNav_Recycling_nav","ehn":"LegalNav"}'&gt;Recycling&lt;/a&gt;
+            &lt;a class="uhf-footer-link" href="https://choice.microsoft.com" id="uhf-Footer_AboutourAds" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_About our ads_nav","ecn":"LegalNav_Footer_AboutourAds_nav","ehn":"LegalNav"}'&gt;About our ads&lt;/a&gt;
+&lt;/uhf-footer-menu&gt;
+&lt;/uhf-footer&gt;
+</footerHtml></shell>
