@@ -1,0 +1,1 @@
+window.addEventListener("load",()=>{const n=document.getElementById("shouldRunTimeZoneReExecution").getAttribute("data-executeTimeZone");n==="True"&&(setTimeZone(),window.location.reload(!0))})
