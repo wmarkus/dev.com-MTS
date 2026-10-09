@@ -1,0 +1,557 @@
+<!doctype html>
+<html lang="en-US" data-theme="light" theme="light">
+<head>
+    <!-- Authorized local recreation. External services are not impersonated; analytics disabled. --><meta name="robots" content="noindex,nofollow"><script src="/__mirror/runtime.js"></script><title>Python | Microsoft Developer</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark light">
+    <meta name="awa-env" content="Production">
+    <meta name="description" content="Explore Microsoft tools for every Python developer on the planet.">
+
+    <meta property="og:title" content="Python | Microsoft Developer">
+    <meta property="og:description" content="Explore Microsoft tools for every Python developer on the planet.">
+    <meta property="og:image" content="https://developer.microsoft.com/_devcom/images/logo-ms-social.jpg">
+    <meta property="og:image:alt" content="Microsoft Developer">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Microsoft Developer">
+    <meta property="og:url" content="https://developer.microsoft.com/en-us/python">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@msdev">
+    <meta name="twitter:image" content="https://developer.microsoft.com/_devcom/images/logo-ms-social.jpg">
+
+    
+    <meta name="awa-pageType" content="Resources">
+    <meta name="awa-product" content="Multiple">
+    <meta name="awa-prdct" content="Multiple">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+    <link rel="canonical" href="https://developer.microsoft.com/en-us/python">
+    
+    
+<style>
+    uhf-header:not(:defined) {
+        display: block;
+        height: 54px;
+    }
+
+    uhf-brand:not(:defined),
+    uhf-contextual-nav:not(:defined),
+    uhf-actions:not(:defined),
+    uhf-global-nav:not(:defined),
+    uhf-search:not(:defined),
+    uhf-mecontrol:not(:defined),
+    uhf-cart:not(:defined),
+    uhf-dropdown:not(:defined),
+    uhf-popout:not(:defined) {
+        visibility: hidden;
+    }
+</style>
+<link rel="stylesheet" href="/__mirror/assets/e4d14f1f8bc83e293e136adc"> <!-- UHF CSS -->
+
+    <script src="/__mirror/assets/fe2fc9b62e744e583f0eb2a4"></script>
+    
+    
+    <link rel="stylesheet" href="/__mirror/assets/f0a2f4bb8e7fd8f995b212dd">
+    <link rel="stylesheet" href="/__mirror/assets/7645384d8723410070241432">
+    
+    <script type="module" src="/__mirror/assets/a0e5b0f304f32fc68c4bf67b"></script>
+    
+    <script src="/__mirror/assets/389caacc8c667b179afc3c37"></script>
+    
+    <style>
+        body {
+            background-color: var(--ds-app-color-base-default-bg-opt1);
+            color: var(--ds-app-color-base-default-fg-body);
+        }
+        /* Eyebrow labels should be uppercase */
+        [slot="heading-block__eyebrow-label"] {
+            text-transform: uppercase;
+        }
+    </style>
+
+    <!-- 1DS script -->
+    
+    
+    <!-- /1DS script -->
+
+    
+</head>
+<body data-windows-version="">
+    <!-- UHF Header -->
+    
+<uhf-header locale="en-us" partnerid="MSDev-Community" headerid="MSDev-DEVCOM-Community-Header" theme="light">
+    <a slot="skip-link" class="uhf-skip-link" href="#mainContent" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "SkipToMain", "cN": "Skip to content_nonnav", "ecn": "Skip to content_nonnav", "ehn": "SkipToMain"}'>Skip to main content</a>
+    
+<uhf-brand slot="brand">
+        <a href="https://www.microsoft.com/" class="uhf-microsoft-logo" slot="microsoft-logo" aria-label="Microsoft" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Anchor", "cN": "GlobalNav_Logo_cont", "ecn": "GlobalNav_Logo_cont", "ehn": "Anchor"}'>
+            <img src="/__mirror/assets/adea6dac4ae78fd2b1b9eda9" alt="Microsoft">
+        </a>
+            <a href="/en-us/" class="uhf-site-logo" slot="brand-logo" aria-label="Developer" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Anchor", "cN": "CatNav_Developer_nav", "ecn": "CatNav_Developer_nav", "ehn": "Anchor"}'>
+ <span>Developer</span>             </a>
+</uhf-brand>
+
+
+<uhf-contextual-nav slot="contextual-nav" overflowtext="More" brand="Developer" homeurl="https://developer.microsoft.com/en-us/" hometext="Home" data-nav-label="Contextual menu">
+
+
+
+<uhf-dropdown text="Products" id="" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_nav", "ecn": "CatNav_Products_nav", "ehn": "Products"}'>
+    
+
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://learn.microsoft.com/en-us/dynamics365/get-started/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Dynamics 365_nav", "ecn": "CatNav_Products_Dynamics 365_nav", "ehn": "Products"}'>Dynamics 365</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://github.com/home" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_GitHub_nav", "ecn": "CatNav_Products_GitHub_nav", "ehn": "Products"}'>GitHub</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://developer.microsoft.com/en-us/microsoft-365" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Microsoft 365_nav", "ecn": "CatNav_Products_Microsoft 365_nav", "ehn": "Products"}'>Microsoft 365</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/azure" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Microsoft Azure_nav", "ecn": "CatNav_Products_Microsoft Azure_nav", "ehn": "Products"}'>Microsoft Azure</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://developer.microsoft.com/en-us/microsoft-edge/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Microsoft Edge_nav", "ecn": "CatNav_Products_Microsoft Edge_nav", "ehn": "Products"}'>Microsoft Edge</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://ai.azure.com/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Microsoft Foundry_nav", "ecn": "CatNav_Products_Microsoft Foundry_nav", "ehn": "Products"}'>Microsoft Foundry</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://developer.microsoft.com/en-us/graph" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Microsoft Graph_nav", "ecn": "CatNav_Products_Microsoft Graph_nav", "ehn": "Products"}'>Microsoft Graph</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/identity" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Microsoft Identity Platform_nav", "ecn": "CatNav_Products_Microsoft Identity Platform_nav", "ehn": "Products"}'>Microsoft Identity Platform</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://developer.microsoft.com/en-us/microsoft-teams" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Microsoft Teams_nav", "ecn": "CatNav_Products_Microsoft Teams_nav", "ehn": "Products"}'>Microsoft Teams</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/power-platform" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Power Platform_nav", "ecn": "CatNav_Products_Power Platform_nav", "ehn": "Products"}'>Power Platform</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://visualstudio.microsoft.com/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Visual Studio_nav", "ecn": "CatNav_Products_Visual Studio_nav", "ehn": "Products"}'>Visual Studio</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://code.visualstudio.com/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Visual Studio Code_nav", "ecn": "CatNav_Products_Visual Studio Code_nav", "ehn": "Products"}'>Visual Studio Code</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/windows/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Windows_nav", "ecn": "CatNav_Products_Windows_nav", "ehn": "Products"}'>Windows</a>
+
+
+</uhf-dropdown>
+
+
+<uhf-dropdown text="Languages" id="" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Languages", "cN": "CatNav_Languages_nav", "ecn": "CatNav_Languages_nav", "ehn": "Languages"}'>
+    
+
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://dotnet.microsoft.com/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Languages", "cN": "CatNav_Languages_.NET_nav", "ecn": "CatNav_Languages_.NET_nav", "ehn": "Languages"}'>.NET</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/cpp" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Languages", "cN": "CatNav_Languages_C++_nav", "ecn": "CatNav_Languages_C++_nav", "ehn": "Languages"}'>C++</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/java" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Languages", "cN": "CatNav_Languages_Java_nav", "ecn": "CatNav_Languages_Java_nav", "ehn": "Languages"}'>Java</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/javascript/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Languages", "cN": "CatNav_Languages_JavaScript_nav", "ecn": "CatNav_Languages_JavaScript_nav", "ehn": "Languages"}'>JavaScript</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/python" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Languages", "cN": "CatNav_Languages_Python_nav", "ecn": "CatNav_Languages_Python_nav", "ehn": "Languages"}'>Python</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://www.typescriptlang.org/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Languages", "cN": "CatNav_Languages_TypeScript_nav", "ecn": "CatNav_Languages_TypeScript_nav", "ehn": "Languages"}'>TypeScript</a>
+
+
+</uhf-dropdown>
+
+
+<uhf-dropdown text="Hubs" id="" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Hubs", "cN": "CatNav_Hubs_nav", "ecn": "CatNav_Hubs_nav", "ehn": "Hubs"}'>
+    
+
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/build-apis" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Hubs", "cN": "CatNav_Hubs_Build APIs_nav", "ecn": "CatNav_Hubs_Build APIs_nav", "ehn": "Hubs"}'>Build APIs</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://developer.microsoft.com/en-us/games/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Hubs", "cN": "CatNav_Hubs_Game development_nav", "ecn": "CatNav_Hubs_Game development_nav", "ehn": "Hubs"}'>Game development</a>
+
+
+</uhf-dropdown>
+
+    <a class="uhf-nav-item uhf-nav-link" href="https://developer.microsoft.com/blog" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Blog", "cN": "CatNav_Blog_nav", "ecn": "CatNav_Blog_nav", "ehn": "Blog"}'>Blog</a>
+
+
+    <a class="uhf-nav-item uhf-nav-link" href="/en-us/events" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Events", "cN": "CatNav_Events_nav", "ecn": "CatNav_Events_nav", "ehn": "Events"}'>Events</a>
+
+
+    <a class="uhf-nav-item uhf-nav-link" href="https://learn.microsoft.com/docs/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Documentation", "cN": "CatNav_Documentation_nav", "ecn": "CatNav_Documentation_nav", "ehn": "Documentation"}'>Documentation</a>
+
+
+    <a class="uhf-nav-item uhf-nav-link" href="/en-us/community" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Community", "cN": "CatNav_Community_nav", "ecn": "CatNav_Community_nav", "ehn": "Community"}'>Community</a>
+
+
+    <a class="uhf-nav-item uhf-nav-link" href="/en-us/changelog" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Changelog", "cN": "CatNav_Changelog_nav", "ecn": "CatNav_Changelog_nav", "ehn": "Changelog"}'>Changelog</a>
+</uhf-contextual-nav>    <uhf-actions slot="actions">
+        
+<uhf-global-nav slot="global-nav" text="All Microsoft" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_nonnav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_nonnav", "ehn": "OneMicrosoftBar"}' data-nav-label="All Microsoft menu">
+    
+    <uhf-dropdown-header slot="header">
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/security" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Microsoft Security_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Microsoft Security_nav", "ehn": "OneMicrosoftBar"}'>Microsoft Security</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://azure.microsoft.com/en-us/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Azure_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Azure_nav", "ehn": "OneMicrosoftBar"}'>Azure</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://dynamics.microsoft.com/en-us/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Dynamics 365_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Dynamics 365_nav", "ehn": "OneMicrosoftBar"}'>Dynamics 365</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/microsoft-365/business/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Microsoft 365_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Microsoft 365_nav", "ehn": "OneMicrosoftBar"}'>Microsoft 365</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/microsoft-teams/group-chat-software" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Microsoft Teams_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Microsoft Teams_nav", "ehn": "OneMicrosoftBar"}'>Microsoft Teams</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/windows-365" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Windows 365_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Windows 365_nav", "ehn": "OneMicrosoftBar"}'>Windows 365</a>
+    </uhf-dropdown-header>
+
+        <uhf-dropdown-column title="Tech &amp; innovation" show-tooltip="false" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_nav", "ehn": "OneMicrosoftBar"}'>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/ai?icid=DSM_AllCommercial_AI" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_Microsoft AI_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_More_TechInnovation__AI_nav", "ehn": "OneMicrosoftBar"}'>Microsoft AI</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://azure.microsoft.com/en-us/solutions/space/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_Azure Space_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_More_TechInnovation_AzureSpace_nav", "ehn": "OneMicrosoftBar"}'>Azure Space</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/mixed-reality/windows-mixed-reality" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_Mixed reality_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_More_TechInnovation_MixedReality_nav", "ehn": "OneMicrosoftBar"}'>Mixed reality</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/hololens" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_Microsoft HoloLens_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_More_TechInnovation_MicrosoftHololens_nav", "ehn": "OneMicrosoftBar"}'>Microsoft HoloLens</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/microsoft-viva" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_Microsoft Viva_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_More_TechInnovation_Microsoft Viva_nav", "ehn": "OneMicrosoftBar"}'>Microsoft Viva</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://azure.microsoft.com/en-us/solutions/quantum-computing/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_Quantum computing_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_More_TechInnovation_QuantumComputing_nav", "ehn": "OneMicrosoftBar"}'>Quantum computing</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/corporate-responsibility/sustainability?icid=DSM_AllCommercial_Sustainability" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_Sustainability_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_More_TechInnovation_Sustainability_nav", "ehn": "OneMicrosoftBar"}'>Sustainability</a>
+        </uhf-dropdown-column>
+        <uhf-dropdown-column title="Industries" show-tooltip="false" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_nav", "ehn": "OneMicrosoftBar"}'>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/education" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_Education_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_More_Industries_Education_nav", "ehn": "OneMicrosoftBar"}'>Education</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/industry/automotive" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_Automotive_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_More_Industries_Automotive_nav", "ehn": "OneMicrosoftBar"}'>Automotive</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/industry/financial-services/banking" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_Financial services_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_More_Industries_Financialservices_nav", "ehn": "OneMicrosoftBar"}'>Financial services</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/industry/government" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_Government_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_More_Industries_Government_nav", "ehn": "OneMicrosoftBar"}'>Government</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/industry/health/microsoft-cloud-for-healthcare" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_Healthcare_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_More_Industries_Health_nav", "ehn": "OneMicrosoftBar"}'>Healthcare</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/industry/manufacturing/microsoft-cloud-for-manufacturing" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_Manufacturing_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_More_Industries_Manufacturing_nav", "ehn": "OneMicrosoftBar"}'>Manufacturing</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/industry/consumer-goods" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_Retail_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_More_Industries_Retail_nav", "ehn": "OneMicrosoftBar"}'>Retail</a>
+        </uhf-dropdown-column>
+        <uhf-dropdown-column title="Partners" show-tooltip="false" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_nav", "ehn": "OneMicrosoftBar"}'>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://partner.microsoft.com/en-US/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_Find a partner_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_More_Partner_FindPartner_nav", "ehn": "OneMicrosoftBar"}'>Find a partner</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://partner.microsoft.com/en-US/membership/cloud-solution-provider" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_Become a partner_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_More_Partner_BecomePartner_nav", "ehn": "OneMicrosoftBar"}'>Become a partner</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://partner.microsoft.com/en-us/membership" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_Partner Network_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_More_Partner_PartnerNetwork_nav", "ehn": "OneMicrosoftBar"}'>Partner Network</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://marketplace.microsoft.com/?icid=DSM_AllCommercial_Marketplace" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_Microsoft Marketplace_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_More_Partner_Marketplace_nav", "ehn": "OneMicrosoftBar"}'>Microsoft Marketplace</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/software-development-companies?icid=DSM_AllCommercial_SoftwareCompanies" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_Software companies_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_Software companies_nav", "ehn": "OneMicrosoftBar"}'>Software companies</a>
+        </uhf-dropdown-column>
+        <uhf-dropdown-column title="Resources" show-tooltip="false" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_nav", "ehn": "OneMicrosoftBar"}'>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://blogs.microsoft.com/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_Blog_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_More_Resources_Blog_nav", "ehn": "OneMicrosoftBar"}'>Blog</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://about.ads.microsoft.com/en-us?s_cid=dig-src_uhfcomm" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_Microsoft Advertising_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_More_Resources_MicrosoftAdvertising_nav", "ehn": "OneMicrosoftBar"}'>Microsoft Advertising</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_Developer Center_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_More_Resources_DeveloperCenter_nav", "ehn": "OneMicrosoftBar"}'>Developer Center</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://learn.microsoft.com/docs/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_Documentation_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_More_Resources_Documentation_nav", "ehn": "OneMicrosoftBar"}'>Documentation</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/events" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_Events_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_More_Resources_Events_nav", "ehn": "OneMicrosoftBar"}'>Events</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/licensing/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_Licensing_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_More_Resources_Licensing_nav", "ehn": "OneMicrosoftBar"}'>Licensing</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://learn.microsoft.com/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_Microsoft Learn_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_More_Resources_MicrosoftLearn_nav", "ehn": "OneMicrosoftBar"}'>Microsoft Learn</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/research/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_Microsoft Research_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_More_Resources_MicrosoftResearch_nav", "ehn": "OneMicrosoftBar"}'>Microsoft Research</a>
+        </uhf-dropdown-column>
+
+    <uhf-dropdown-footer slot="footer">
+        <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/sitemap" data-m="">View Sitemap</a>
+    </uhf-dropdown-footer>
+
+</uhf-global-nav>
+
+
+            <uhf-search slot="search" placeholder="Search or ask a question" search-label="Search" cancel-label="Cancel" suggestions-available-text="{0} suggestions available" searchurl="https://www.microsoft.com/en-us/search/explore" autosuggesturl="https://www.microsoft.com/msstoreapiprod/api/autosuggest" queryparametername="q" clientid="7F27B536-CF6B-4C65-8638-A0F8CBDFCA65" productcount="1,5,5" source="Iris-Products,DCatAll-Products,Microsoft-Terms">
+            </uhf-search>
+    </uhf-actions>
+</uhf-header>
+
+
+    <div class="site-banners">
+
+
+
+
+<style>
+    /* Purple announcement banner styling to match original design */
+    #announcement-banner-windows-hybrid-intelligence {
+        --ds-fill-color-override: #6761D9;
+        --ds-text-color-override: #FFFFFF;
+        --ds-button-ghost-color: #FFFFFF;
+    }
+    
+    :root[data-theme="dark"] #announcement-banner-windows-hybrid-intelligence {
+        --ds-fill-color-override: #514AC9;
+    }
+    
+    #announcement-banner-windows-hybrid-intelligence [slot="announcement__label"],
+    #announcement-banner-windows-hybrid-intelligence [slot="announcement__link"] {
+        color: #FFFFFF;
+    }
+    
+    #announcement-banner-windows-hybrid-intelligence reimagine-link {
+        --ds-link-color: #FFFFFF;
+        --ds-link-outline: 0.1875rem dotted #FFFFFF;
+    }
+    
+    /* White outline around badge icon */
+    #announcement-banner-windows-hybrid-intelligence [slot="announcement__badge"] {
+        border: 1px solid #FFFFFF;
+        border-radius: var(--root-radii-s, 0.5rem);
+        box-sizing: content-box;
+    }
+</style>
+
+<reimagine-announcement id="announcement-banner-windows-hybrid-intelligence" class="d-none" data-identifier="windows-hybrid-intelligence" role="alert" aria-label="Building Windows for hybrid intelligence announcement" close-label="Close announcement" sr-close-text="Announcement closed" data-bi-an="top-banner">
+    
+    <img slot="announcement__badge" src="/__mirror/assets/3e387745acc96f18d8365e8a" alt="">
+
+    <p slot="announcement__label">Building Windows for hybrid intelligence – Run agents locally or in the cloud, with enterprise-grade security and manageability.</p>
+    
+    <reimagine-link slot="announcement__link" href="https://aka.ms/WindowsEraofAI" target="_blank" data-bi-an="top-banner" data-bi-id="windows-hybrid-intelligence">
+        <span slot="link__text">Read more</span>
+    </reimagine-link>
+</reimagine-announcement>
+    </div>
+
+    <div id="mainContent" role="main">
+        
+
+<div id="python-page">
+
+    <section id="hero"><reimagine-hero-featured header-layout-configuration="2-col-even" media-orientation="mobile-stack" density="compact" breadth="compact"><reimagine-media slot="ui-shell-media" aspect-ratio="21-9" overlay="gradient"><picture slot="media__asset"><source srcset="/__mirror/assets/0fc63e33382074f48178f357" media="none and (prefers-color-scheme: dark)"></source>
+                    <source srcset="/__mirror/assets/57ce124e578111298faaecc0" media="none and (prefers-color-scheme: dark)"></source>
+                    <source srcset="/__mirror/assets/9fad6c2895aeabf25480204d" media="none and (prefers-color-scheme: light)"></source>
+                    <source srcset="/__mirror/assets/cab59c7cf0fb0bebdefee7e6" media="none and (prefers-color-scheme: light)"></source>
+                    <img src="/__mirror/assets/cab59c7cf0fb0bebdefee7e6" alt></picture></reimagine-media>
+        
+        <reimagine-layout-column slot="ui-shell-header"><reimagine-heading-block size="m"><h1 slot="heading-block__heading-text">Microsoft for Python developers</h1>
+                <p slot="heading-block__content-text">Discover a suite of innovative tools, services, and resources tailored to elevate your Python development.</p></reimagine-heading-block></reimagine-layout-column></reimagine-hero-featured></section>
+
+<reimagine-scroll-spy scroll-body class="secondary-sticky-nav"><reimagine-sticky slot="scroll-spy__navigation-links" direction="top" observer-behavior="always"><reimagine-secondary-nav configuration="navigation" hide-divider label="Menu"><reimagine-secondary-nav-item href="#tools" configuration="navigation" data-bi-an="secondary-sticky-nav" data-bi-id="tools" data-bi-ct="nav">Tools</reimagine-secondary-nav-item>
+        <reimagine-secondary-nav-item href="#products" configuration="navigation" data-bi-an="secondary-sticky-nav" data-bi-id="products" data-bi-ct="nav">Products</reimagine-secondary-nav-item>
+        <reimagine-secondary-nav-item href="#customer-stories" configuration="navigation" data-bi-an="secondary-sticky-nav" data-bi-id="customer-stories" data-bi-ct="nav">Customer stories</reimagine-secondary-nav-item>
+        <reimagine-secondary-nav-item href="#learn" configuration="navigation" data-bi-an="secondary-sticky-nav" data-bi-id="learn" data-bi-ct="nav">Learn</reimagine-secondary-nav-item>
+        <reimagine-secondary-nav-item href="#on-github" configuration="navigation" data-bi-an="secondary-sticky-nav" data-bi-id="on-github" data-bi-ct="nav">Repositories</reimagine-secondary-nav-item>
+        <reimagine-secondary-nav-item href="#blogs" configuration="navigation" data-bi-an="secondary-sticky-nav" data-bi-id="blogs" data-bi-ct="nav">Blogs</reimagine-secondary-nav-item></reimagine-secondary-nav></reimagine-sticky>
+    <section id="tools" aria-label="Tools section"><reimagine-carousel-card-grid background="app-color-base-default-bg-opt1" breadth="comfortable" configuration="three-featured" data-bi-an="tools-content" bottom-breadth="comfortable"><reimagine-layout-column slot="ui-shell-header"><reimagine-heading-block size="s"><div slot="heading-block__eyebrow-label">Tools</div><h2 slot="heading-block__heading-text">Cloud and AI developer tools</h2><p slot="heading-block__content-text">From Azure's powerful cloud solutions to our cutting-edge AI frameworks, Microsoft offers everything you need to build, deploy, and scale your Python projects seamlessly.</p></reimagine-heading-block></reimagine-layout-column><div slot="carousel-card-grid__content"><reimagine-carousel layout-configuration="3-card" full-bleed scrollslider-item-role="group" skip-label="Skip Tools carousel carousel" end-label="End of carousel" back-to-controls-label="Back to carousel controls" aria-label="Tools carousel carousel"><reimagine-layout-column slot="carousel__window"><reimagine-carousel-item id="tools-extensions-content-carousel-0" role="group" aria-roledescription="slide" aria-label="Visual Studio Code (1 of 6)"><reimagine-card-feature surface="glass" clickable><reimagine-media slot="card-feature__media" aspect-ratio="initial"><picture slot="media__asset"><source srcset="/__mirror/assets/1f6b5c78779ba6eb81a8a03e"></source>
+                            <source srcset="/__mirror/assets/8da7bc004068f12b23a28206"></source>
+                            <img src="/__mirror/assets/8da7bc004068f12b23a28206" alt loading="lazy"></picture></reimagine-media><reimagine-text-block slot="card-feature__content-body" configuration="stacked" size="2xs"><span slot="text-block__heading">Visual Studio Code</span>
+                    <span slot="text-block__content">The lightweight, powerful and extensible editor, optimized for modern web and cloud applications.</span></reimagine-text-block>
+                <reimagine-link slot="card-feature__content-footer-bottom" href="https://code.visualstudio.com/docs/languages/python" with-button target="_blank" rel="noopener noreferrer" data-bi-an="tools-content" data-bi-id="visual-studio-code" data-bi-ct="link" link-label="Learn more about Visual Studio Code"><span slot="link__text">Learn more</span></reimagine-link></reimagine-card-feature></reimagine-carousel-item></reimagine-layout-column>
+                    <reimagine-layout-column slot="carousel__window"><reimagine-carousel-item id="tools-extensions-content-carousel-1" role="group" aria-roledescription="slide" aria-label="GitHub Copilot (2 of 6)"><reimagine-card-feature surface="glass" clickable><reimagine-media slot="card-feature__media" aspect-ratio="initial"><picture slot="media__asset"><source srcset="/__mirror/assets/3a305838a03e37c17cd90ed5"></source>
+                            <source srcset="/__mirror/assets/774ffc01f88aa7b19e548ddb"></source>
+                            <img src="/__mirror/assets/774ffc01f88aa7b19e548ddb" alt loading="lazy"></picture></reimagine-media><reimagine-text-block slot="card-feature__content-body" configuration="stacked" size="2xs"><span slot="text-block__heading">GitHub Copilot</span>
+                    <span slot="text-block__content">GitHub Copilot uses AI to suggest entire functions in real-time, right from your editor. Work smarter.</span></reimagine-text-block>
+                <reimagine-link slot="card-feature__content-footer-bottom" href="https://github.com/features/copilot" with-button target="_blank" rel="noopener noreferrer" data-bi-an="tools-content" data-bi-id="github-copilot" data-bi-ct="link" link-label="Learn more about GitHub Copilot"><span slot="link__text">Learn more</span></reimagine-link></reimagine-card-feature></reimagine-carousel-item></reimagine-layout-column>
+                    <reimagine-layout-column slot="carousel__window"><reimagine-carousel-item id="tools-extensions-content-carousel-2" role="group" aria-roledescription="slide" aria-label="Azure (3 of 6)"><reimagine-card-feature surface="glass" clickable><reimagine-media slot="card-feature__media" aspect-ratio="initial"><picture slot="media__asset"><source srcset="/__mirror/assets/278949d2c2dbb1d5f0bb281a"></source>
+                            <source srcset="/__mirror/assets/68a308d39fa5fff7ee24893b"></source>
+                            <img src="/__mirror/assets/68a308d39fa5fff7ee24893b" alt loading="lazy"></picture></reimagine-media><reimagine-text-block slot="card-feature__content-body" configuration="stacked" size="2xs"><span slot="text-block__heading">Azure</span>
+                    <span slot="text-block__content">The cloud platform designed to help you bring new solutions to life.</span></reimagine-text-block>
+                <reimagine-link slot="card-feature__content-footer-bottom" href="https://azure.microsoft.com/resources/developers/python/" with-button target="_blank" rel="noopener noreferrer" data-bi-an="tools-content" data-bi-id="azure" data-bi-ct="link" link-label="Learn more about Azure"><span slot="link__text">Learn more</span></reimagine-link></reimagine-card-feature></reimagine-carousel-item></reimagine-layout-column>
+                    <reimagine-layout-column slot="carousel__window"><reimagine-carousel-item id="tools-extensions-content-carousel-3" role="group" aria-roledescription="slide" aria-label="Windows Subsystem for Linux (WSL) (4 of 6)"><reimagine-card-feature surface="glass" clickable><reimagine-media slot="card-feature__media" aspect-ratio="initial"><picture slot="media__asset"><source srcset="/__mirror/assets/74a046f862d8a7dcfd76247e"></source>
+                            <source srcset="/__mirror/assets/308d25080b961c776f5a5b64"></source>
+                            <img src="/__mirror/assets/308d25080b961c776f5a5b64" alt loading="lazy"></picture></reimagine-media><reimagine-text-block slot="card-feature__content-body" configuration="stacked" size="2xs"><span slot="text-block__heading">Windows Subsystem for Linux (WSL)</span>
+                    <span slot="text-block__content">Access the power of Windows and Linux at the same time on a Windows machine.</span></reimagine-text-block>
+                <reimagine-link slot="card-feature__content-footer-bottom" href="https://learn.microsoft.com/windows/wsl/" with-button target="_blank" rel="noopener noreferrer" data-bi-an="tools-content" data-bi-id="wsl" data-bi-ct="link" link-label="Learn more about Windows Subsystem for Linux"><span slot="link__text">Learn more</span></reimagine-link></reimagine-card-feature></reimagine-carousel-item></reimagine-layout-column>
+                    <reimagine-layout-column slot="carousel__window"><reimagine-carousel-item id="tools-extensions-content-carousel-4" role="group" aria-roledescription="slide" aria-label="Python on Windows (5 of 6)"><reimagine-card-feature surface="glass" clickable><reimagine-media slot="card-feature__media" aspect-ratio="initial"><picture slot="media__asset"><source srcset="/__mirror/assets/ad6a9e390056d378a2db12ed"></source>
+                            <source srcset="/__mirror/assets/10356baf99dc271ded666e83"></source>
+                            <img src="/__mirror/assets/10356baf99dc271ded666e83" alt loading="lazy"></picture></reimagine-media><reimagine-text-block slot="card-feature__content-body" configuration="stacked" size="2xs"><span slot="text-block__heading">Python on Windows</span>
+                    <span slot="text-block__content">Find the information and ideas you need to power your ingenuity.</span></reimagine-text-block>
+                <reimagine-link slot="card-feature__content-footer-bottom" href="https://learn.microsoft.com/windows/python/beginners" with-button target="_blank" rel="noopener noreferrer" data-bi-an="tools-content" data-bi-id="python-on-windows" data-bi-ct="link" link-label="Learn more about Python on Windows"><span slot="link__text">Learn more</span></reimagine-link></reimagine-card-feature></reimagine-carousel-item></reimagine-layout-column>
+                    <reimagine-layout-column slot="carousel__window"><reimagine-carousel-item id="tools-extensions-content-carousel-5" role="group" aria-roledescription="slide" aria-label="Python for education (6 of 6)"><reimagine-card-feature surface="glass" clickable><reimagine-media slot="card-feature__media" aspect-ratio="initial"><picture slot="media__asset"><source srcset="/__mirror/assets/6398e20e400e5c4830bf4712"></source>
+                            <source srcset="/__mirror/assets/74a6bb35510b4947d7561e20"></source>
+                            <img src="/__mirror/assets/74a6bb35510b4947d7561e20" alt loading="lazy"></picture></reimagine-media><reimagine-text-block slot="card-feature__content-body" configuration="stacked" size="2xs"><span slot="text-block__heading">Python for education</span>
+                    <span slot="text-block__content">Unparalleled products and support for educators and students.</span></reimagine-text-block>
+                <reimagine-link slot="card-feature__content-footer-bottom" href="https://learn.microsoft.com/training/educator-center/" with-button target="_blank" rel="noopener noreferrer" data-bi-an="tools-content" data-bi-id="python-for-education" data-bi-ct="link" link-label="Learn more about Python for education"><span slot="link__text">Learn more</span></reimagine-link></reimagine-card-feature></reimagine-carousel-item></reimagine-layout-column></reimagine-carousel></div></reimagine-carousel-card-grid></section>
+
+        <section id="products" aria-label="Products section"><reimagine-base-ui-shell background="app-color-base-default-bg-opt1" breadth="comfortable" data-bi-an="products" bottom-breadth="relaxed"><reimagine-layout-column slot="ui-shell-header"><reimagine-heading-block size="s"><div slot="heading-block__eyebrow-label">Products</div><h2 slot="heading-block__heading-text">Products for Python</h2></reimagine-heading-block></reimagine-layout-column>
+    
+    <reimagine-tabs configuration="pill" alignment="start" enable-base-container enable-panel-container><reimagine-tab id="products-1-pill-bar" tab-panel-id="products-1" active><reimagine-pill active>AI and machine learning</reimagine-pill></reimagine-tab>
+                    <reimagine-tab id="products-2-pill-bar" tab-panel-id="products-2"><reimagine-pill>Data and analytics</reimagine-pill></reimagine-tab>
+                    <reimagine-tab id="products-3-pill-bar" tab-panel-id="products-3"><reimagine-pill>Web and Cloud-native development</reimagine-pill></reimagine-tab>
+        <reimagine-tab-panel slot="tabs__tabpanel" id="products-1" tab-label="tabs" active><reimagine-layout configuration="4-col-even-1"><reimagine-layout-column><reimagine-card-badge surface="glass" text-block-configuration="stacked" clickable=""><reimagine-text-block size="2xs"><reimagine-badge slot="text-block__badge" size="s" surface="solid-border" style="--ds-badge-padding-block-start: 0; --ds-badge-padding-block-end: 0; --ds-badge-padding-inline-start: 0; --ds-badge-padding-inline-end: 0"><img src="/__mirror/assets/c23f35f9aa8fae254e14bec0" class="" alt style="width: 100%; height: 100%; object-fit: contain" loading="lazy"></reimagine-badge><span slot="text-block__heading" role="heading" aria-level="5">Microsoft Agent Framework</span><span slot="text-block__content">Microsoft Agent Framework is an open-source development kit for building AI agents and multi-agent workflows for .NET and Python. It brings together and extends ideas from Semantic Kernel and AutoGen projects, combining their strengths while adding new capabilities.</span></reimagine-text-block><reimagine-link slot="card-badge__footer-bottom" href="https://aka.ms/agent-framework" with-button target="_blank" data-bi-an="products--ai-and-ml" data-bi-id="agent-framework" data-bi-ct="link" link-label="Learn more about Microsoft Agent Framework"><span slot="link__text">Learn more</span></reimagine-link></reimagine-card-badge></reimagine-layout-column>
+                        <reimagine-layout-column><reimagine-card-badge surface="glass" text-block-configuration="stacked" clickable=""><reimagine-text-block size="2xs"><reimagine-badge slot="text-block__badge" size="s" surface="solid-border" style="--ds-badge-padding-block-start: 0; --ds-badge-padding-block-end: 0; --ds-badge-padding-inline-start: 0; --ds-badge-padding-inline-end: 0"><img src="/__mirror/assets/8c265fe85ba2f8e4af524f53" class="" alt style="width: 100%; height: 100%; object-fit: contain" loading="lazy"></reimagine-badge><span slot="text-block__heading" role="heading" aria-level="5">Jupyter Notebooks in VS Code</span><span slot="text-block__content">Check out this GitHub repo with Data Science for energy lab.</span></reimagine-text-block><reimagine-link slot="card-badge__footer-bottom" href="https://github.com/microsoft/azure-data-manager-for-energy-experience-lab" with-button target="_blank" data-bi-an="products--ai-and-ml" data-bi-id="jupyter-notebooks-in-vs-code" data-bi-ct="link" link-label="Learn more about Jupyter Notebooks in VS Code"><span slot="link__text">Learn more</span></reimagine-link></reimagine-card-badge></reimagine-layout-column>
+                        <reimagine-layout-column><reimagine-card-badge surface="glass" text-block-configuration="stacked" clickable=""><reimagine-text-block size="2xs"><reimagine-badge slot="text-block__badge" size="s" surface="solid-border" style="--ds-badge-padding-block-start: 0; --ds-badge-padding-block-end: 0; --ds-badge-padding-inline-start: 0; --ds-badge-padding-inline-end: 0"><img src="/__mirror/assets/39b8f4b483b9248dd32f3e56" class="" alt style="width: 100%; height: 100%; object-fit: contain" loading="lazy"></reimagine-badge><span slot="text-block__heading" role="heading" aria-level="5">VS Code AI Toolkit</span><span slot="text-block__content">A VS Code extension that simplifies generative AI app development by bringing together cutting-edge AI development tools and models from Azure AI Foundry Catalog and other catalogs like Hugging Face.</span></reimagine-text-block><reimagine-link slot="card-badge__footer-bottom" href="https://learn.microsoft.com/windows/ai/toolkit/" with-button target="_blank" data-bi-an="products--ai-and-ml" data-bi-id="vs-code-ai-toolkit" data-bi-ct="link" link-label="Learn more about VS Code AI Toolkit"><span slot="link__text">Learn more</span></reimagine-link></reimagine-card-badge></reimagine-layout-column>
+                        <reimagine-layout-column><reimagine-card-badge surface="glass" text-block-configuration="stacked" clickable=""><reimagine-text-block size="2xs"><reimagine-badge slot="text-block__badge" size="s" surface="solid-border" style="--ds-badge-padding-block-start: 0; --ds-badge-padding-block-end: 0; --ds-badge-padding-inline-start: 0; --ds-badge-padding-inline-end: 0"><img src="/__mirror/assets/f007a4ff0b1c2d052b63ea25" class="" alt style="width: 100%; height: 100%; object-fit: contain" loading="lazy"></reimagine-badge><span slot="text-block__heading" role="heading" aria-level="5">Azure ML for VS Code</span><span slot="text-block__content">Don't leave your VS Code editor when managing Azure Machine Learning resources, training models, debugging ML experiments and schema-based language support.</span></reimagine-text-block><reimagine-link slot="card-badge__footer-bottom" href="https://learn.microsoft.com/azure/machine-learning/how-to-setup-vs-code?view=azureml-api-2" with-button target="_blank" data-bi-an="products--ai-and-ml" data-bi-id="azure-ml-for-vs-code" data-bi-ct="link" link-label="Learn more about Azure ML for VS Code"><span slot="link__text">Learn more</span></reimagine-link></reimagine-card-badge></reimagine-layout-column></reimagine-layout></reimagine-tab-panel>
+                    <reimagine-tab-panel slot="tabs__tabpanel" id="products-2" tab-label="tabs"><reimagine-layout configuration="4-col-even-1"><reimagine-layout-column><reimagine-card-badge surface="glass" text-block-configuration="stacked" clickable=""><reimagine-text-block size="2xs"><reimagine-badge slot="text-block__badge" size="s" surface="solid-border" style="--ds-badge-padding-block-start: 0; --ds-badge-padding-block-end: 0; --ds-badge-padding-inline-start: 0; --ds-badge-padding-inline-end: 0"><img src="/__mirror/assets/e6ba23375c6f5127d9dd2d59" class="" alt style="width: 100%; height: 100%; object-fit: contain" loading="lazy"></reimagine-badge><span slot="text-block__heading" role="heading" aria-level="5">Azure Cosmos DB</span><span slot="text-block__content">Cosmos DB code gallery is your best source for patterns and content for Azure Cosmos DB.</span></reimagine-text-block><reimagine-link slot="card-badge__footer-bottom" href="https://azurecosmosdb.github.io/gallery/" with-button target="_blank" data-bi-an="products--data-and-analytics" data-bi-id="azure-cosmos-db" data-bi-ct="link" link-label="Learn more about Azure Cosmos DB"><span slot="link__text">Learn more</span></reimagine-link></reimagine-card-badge></reimagine-layout-column>
+                        <reimagine-layout-column><reimagine-card-badge surface="glass" text-block-configuration="stacked" clickable=""><reimagine-text-block size="2xs"><reimagine-badge slot="text-block__badge" size="s" surface="solid-border" style="--ds-badge-padding-block-start: 0; --ds-badge-padding-block-end: 0; --ds-badge-padding-inline-start: 0; --ds-badge-padding-inline-end: 0"><img src="/__mirror/assets/3ba9db33cd2e6eb78e9ab2ad" class="" alt style="width: 100%; height: 100%; object-fit: contain" loading="lazy"></reimagine-badge><span slot="text-block__heading" role="heading" aria-level="5">Azure OpenAI Service</span><span slot="text-block__content">Build your own copilot and generative AI applications.</span></reimagine-text-block><reimagine-link slot="card-badge__footer-bottom" href="https://azure.microsoft.com/products/ai-services/openai-service/" with-button target="_blank" data-bi-an="products--data-and-analytics" data-bi-id="azure-openai-service" data-bi-ct="link" link-label="Learn more about Azure OpenAI Service"><span slot="link__text">Learn more</span></reimagine-link></reimagine-card-badge></reimagine-layout-column>
+                        <reimagine-layout-column><reimagine-card-badge surface="glass" text-block-configuration="stacked" clickable=""><reimagine-text-block size="2xs"><reimagine-badge slot="text-block__badge" size="s" surface="solid-border" style="--ds-badge-padding-block-start: 0; --ds-badge-padding-block-end: 0; --ds-badge-padding-inline-start: 0; --ds-badge-padding-inline-end: 0"><img src="/__mirror/assets/ea840f0337b053b42e8bc1a2" class="" alt style="width: 100%; height: 100%; object-fit: contain" loading="lazy"></reimagine-badge><span slot="text-block__heading" role="heading" aria-level="5">Azure Python SDK</span><span slot="text-block__content">A collection of libraries built to make it easier to use Azure services.</span></reimagine-text-block><reimagine-link slot="card-badge__footer-bottom" href="https://learn.microsoft.com/azure/developer/python/sdk/azure-sdk-overview" with-button target="_blank" data-bi-an="products--data-and-analytics" data-bi-id="azure-python-sdk" data-bi-ct="link" link-label="Learn more about Azure Python SDK"><span slot="link__text">Learn more</span></reimagine-link></reimagine-card-badge></reimagine-layout-column>
+                        <reimagine-layout-column><reimagine-card-badge surface="glass" text-block-configuration="stacked" clickable=""><reimagine-text-block size="2xs"><reimagine-badge slot="text-block__badge" size="s" surface="solid-border" style="--ds-badge-padding-block-start: 0; --ds-badge-padding-block-end: 0; --ds-badge-padding-inline-start: 0; --ds-badge-padding-inline-end: 0"><img src="/__mirror/assets/8aec978375d40eb4b46afe00" class="" alt style="width: 100%; height: 100%; object-fit: contain" loading="lazy"></reimagine-badge><span slot="text-block__heading" role="heading" aria-level="5">Azure Data Factory</span><span slot="text-block__content">Simplify hybrid data integration at enterprise scale.</span></reimagine-text-block><reimagine-link slot="card-badge__footer-bottom" href="https://azure.microsoft.com/products/data-factory/" with-button target="_blank" data-bi-an="products--data-and-analytics" data-bi-id="azure-data-factory" data-bi-ct="link" link-label="Learn more about Azure Data Factory"><span slot="link__text">Learn more</span></reimagine-link></reimagine-card-badge></reimagine-layout-column>
+                        <reimagine-layout-column><reimagine-card-badge surface="glass" text-block-configuration="stacked" clickable=""><reimagine-text-block size="2xs"><reimagine-badge slot="text-block__badge" size="s" surface="solid-border" style="--ds-badge-padding-block-start: 0; --ds-badge-padding-block-end: 0; --ds-badge-padding-inline-start: 0; --ds-badge-padding-inline-end: 0"><img src="/__mirror/assets/d33d62ea5f754a94bf190f95" class="" alt style="width: 100%; height: 100%; object-fit: contain" loading="lazy"></reimagine-badge><span slot="text-block__heading" role="heading" aria-level="5">Data Wrangler VS Code</span><span slot="text-block__content">A code-centric data viewing and cleaning tool that is integrated into VS Code and VS Code Jupyter Notebooks.</span></reimagine-text-block><reimagine-link slot="card-badge__footer-bottom" href="https://code.visualstudio.com/docs/datascience/data-wrangler" with-button target="_blank" data-bi-an="products--data-and-analytics" data-bi-id="data-wrangler" data-bi-ct="link" link-label="Learn more about Data Wrangler VS Code"><span slot="link__text">Learn more</span></reimagine-link></reimagine-card-badge></reimagine-layout-column>
+                        <reimagine-layout-column><reimagine-card-badge surface="glass" text-block-configuration="stacked" clickable=""><reimagine-text-block size="2xs"><reimagine-badge slot="text-block__badge" size="s" surface="solid-border" style="--ds-badge-padding-block-start: 0; --ds-badge-padding-block-end: 0; --ds-badge-padding-inline-start: 0; --ds-badge-padding-inline-end: 0"><img src="/__mirror/assets/035e6b44a237397626eec915" class="" alt style="width: 100%; height: 100%; object-fit: contain" loading="lazy"></reimagine-badge><span slot="text-block__heading" role="heading" aria-level="5">MarkItDown</span><span slot="text-block__content">Python tool for converting files and office documents to Markdown.</span></reimagine-text-block><reimagine-link slot="card-badge__footer-bottom" href="https://github.com/microsoft/markitdown" with-button target="_blank" data-bi-an="products--data-and-analytics" data-bi-id="mark-it-down" data-bi-ct="link" link-label="Learn more about MarkItDown"><span slot="link__text">Learn more</span></reimagine-link></reimagine-card-badge></reimagine-layout-column></reimagine-layout></reimagine-tab-panel>
+                    <reimagine-tab-panel slot="tabs__tabpanel" id="products-3" tab-label="tabs"><reimagine-layout configuration="4-col-even-1"><reimagine-layout-column><reimagine-card-badge surface="glass" text-block-configuration="stacked" clickable=""><reimagine-text-block size="2xs"><reimagine-badge slot="text-block__badge" size="s" surface="solid-border" style="--ds-badge-padding-block-start: 0; --ds-badge-padding-block-end: 0; --ds-badge-padding-inline-start: 0; --ds-badge-padding-inline-end: 0"><img src="/__mirror/assets/602ad116369487f8caa569c0" class="" alt style="width: 100%; height: 100%; object-fit: contain" loading="lazy"></reimagine-badge><span slot="text-block__heading" role="heading" aria-level="5">Playwright</span><span slot="text-block__content">See how Playwright's cross-browser, cross-platform open-source framework enables reliable end-to-end testing for modern Python web apps.</span></reimagine-text-block><reimagine-link slot="card-badge__footer-bottom" href="https://playwright.dev/python/docs/library" with-button target="_blank" data-bi-an="products--web-and-cloud-native" data-bi-id="playwright" data-bi-ct="link" link-label="Learn more about Playwright"><span slot="link__text">Learn more</span></reimagine-link></reimagine-card-badge></reimagine-layout-column>
+                        <reimagine-layout-column><reimagine-card-badge surface="glass" text-block-configuration="stacked" clickable=""><reimagine-text-block size="2xs"><reimagine-badge slot="text-block__badge" size="s" surface="solid-border" style="--ds-badge-padding-block-start: 0; --ds-badge-padding-block-end: 0; --ds-badge-padding-inline-start: 0; --ds-badge-padding-inline-end: 0"><img src="/__mirror/assets/c2b03ba89cf2f3920e8de9a5" class="" alt style="width: 100%; height: 100%; object-fit: contain" loading="lazy"></reimagine-badge><span slot="text-block__heading" role="heading" aria-level="5">Awesome AZD</span><span slot="text-block__content">An awesome list that curates content and templates for the Azure Developer CLI.</span></reimagine-text-block><reimagine-link slot="card-badge__footer-bottom" href="https://azure.github.io/awesome-azd/?tags=python" with-button target="_blank" data-bi-an="products--web-and-cloud-native" data-bi-id="awesome-azd" data-bi-ct="link" link-label="Learn more about Awesome AZD"><span slot="link__text">Learn more</span></reimagine-link></reimagine-card-badge></reimagine-layout-column>
+                        <reimagine-layout-column><reimagine-card-badge surface="glass" text-block-configuration="stacked" clickable=""><reimagine-text-block size="2xs"><reimagine-badge slot="text-block__badge" size="s" surface="solid-border" style="--ds-badge-padding-block-start: 0; --ds-badge-padding-block-end: 0; --ds-badge-padding-inline-start: 0; --ds-badge-padding-inline-end: 0"><img src="/__mirror/assets/3d9c04000470fde47781a5e4" class="" alt style="width: 100%; height: 100%; object-fit: contain" loading="lazy"></reimagine-badge><span slot="text-block__heading" role="heading" aria-level="5">Dev containers</span><span slot="text-block__content">A full-featured development environment with a well-defined tool and runtime stack.</span></reimagine-text-block><reimagine-link slot="card-badge__footer-bottom" href="https://containers.dev/" with-button target="_blank" data-bi-an="products--web-and-cloud-native" data-bi-id="dev-containers" data-bi-ct="link" link-label="Learn more about Dev containers"><span slot="link__text">Learn more</span></reimagine-link></reimagine-card-badge></reimagine-layout-column></reimagine-layout></reimagine-tab-panel></reimagine-tabs></reimagine-base-ui-shell></section>
+
+        <section id="banner"><reimagine-cta-banner background="app-color-base-default-bg-opt1" style="--ds-ui-shell-gap: 0;" data-bi-an="banner"><reimagine-layout-column slot="ui-shell-header"><reimagine-heading-block size="m" alignment="center"><h2 slot="heading-block__heading-text">Build in the cloud with an Azure account</h2><p slot="heading-block__content-text">Get started creating, deploying, and managing applications—across multiple clouds, on-premises, and at the edge—with scalable and cost-efficient Azure services.</p><reimagine-button-group slot="heading-block__footer-link"><reimagine-button href="https://aka.ms/AzureFreeTrialDev.MSFT" appearance="button--primary" shape="rounded" size="medium" target="_blank" data-bi-an="banner" data-bi-id="try-azure-for-free" data-bi-ct="button"><span slot="button__text">Try Azure for free</span></reimagine-button></reimagine-button-group></reimagine-heading-block></reimagine-layout-column><reimagine-media slot="ui-shell-media" aspect-ratio="hero"><picture slot="media__asset"><source srcset="/__mirror/assets/954ee1c4b685faea68eccc94" media="none and (prefers-color-scheme: dark)"></source>
+                <source srcset="/__mirror/assets/8ec41d8f0a5786077c682685" media="none and (prefers-color-scheme: dark)"></source>
+                <source srcset="/__mirror/assets/0ba7a0c0e32a135b91f8fa13" media="none and (prefers-color-scheme: light)"></source>
+                <source srcset="/__mirror/assets/0e2a8de3441924779b62b268" media="none and (prefers-color-scheme: light)"></source>
+                <img src="/__mirror/assets/0e2a8de3441924779b62b268" alt loading="lazy"></picture></reimagine-media></reimagine-cta-banner></section>
+
+        <section id="customer-stories" aria-label="Customer stories section"><reimagine-carousel-featured indicator-configuration="media" breadth="comfortable" bottom-breadth="compact"><reimagine-layout-column slot="ui-shell-header"><reimagine-heading-block size="s"><div slot="heading-block__eyebrow-label">Customer stories</div><h2 slot="heading-block__heading-text">Customer success with Python</h2><p slot="heading-block__content-text">Learn how teams around the world are using our tools to augment their workflows.</p></reimagine-heading-block></reimagine-layout-column>
+
+    <reimagine-carousel slot="body" style="--ds-carousel-indicator-width: calc(1328px / 6);" skip-label="Skip customer stories carousel" end-label="End of customer stories carousel" back-to-controls-label="Back to carousel navigation controls" aria-label="Customer stories carousel"><reimagine-carousel-indicator slot="carousel__indicators" aria-label="Customer story: Square Enix"><reimagine-tab-compound><reimagine-media slot="tab-compound__media"><picture slot="media__asset"><source srcset="/__mirror/assets/74cceee11e38340290a04582" media="none and (prefers-color-scheme: dark)"></source>
+                            <source srcset="/__mirror/assets/f17cc4a9e0d900efc9327111" media="none and (prefers-color-scheme: light)"></source>
+                            <img src="/__mirror/assets/f17cc4a9e0d900efc9327111" alt loading="lazy"></picture></reimagine-media></reimagine-tab-compound></reimagine-carousel-indicator><reimagine-carousel-indicator slot="carousel__indicators" aria-label="Customer story: Zooniverse"><reimagine-tab-compound><reimagine-media slot="tab-compound__media"><picture slot="media__asset"><source srcset="/__mirror/assets/a1546320cdcd708d9f7daa29" media="none and (prefers-color-scheme: dark)"></source>
+                            <source srcset="/__mirror/assets/f7b8841ac33b3400295bd7c3" media="none and (prefers-color-scheme: light)"></source>
+                            <img src="/__mirror/assets/f7b8841ac33b3400295bd7c3" alt loading="lazy"></picture></reimagine-media></reimagine-tab-compound></reimagine-carousel-indicator><reimagine-carousel-indicator slot="carousel__indicators" aria-label="Customer story: Dentsu"><reimagine-tab-compound><reimagine-media slot="tab-compound__media"><picture slot="media__asset"><source srcset="/__mirror/assets/35269c0e84e44995e2ea6a4d" media="none and (prefers-color-scheme: dark)"></source>
+                            <source srcset="/__mirror/assets/af36bf0939c06110b19d59d8" media="none and (prefers-color-scheme: light)"></source>
+                            <img src="/__mirror/assets/af36bf0939c06110b19d59d8" alt loading="lazy"></picture></reimagine-media></reimagine-tab-compound></reimagine-carousel-indicator><reimagine-layout-column slot="carousel__window"><reimagine-carousel-item id="customer-story-1" aria-label="1 of 3"><reimagine-card-case-study surface="glass" configuration="default" clickable><reimagine-media slot="card-case-study__media"><picture slot="media__asset"><source srcset="/__mirror/assets/3261e718967b1c196ec0e832"></source>
+                    <source srcset="/__mirror/assets/038d2f4bd5d9d88b67194a90"></source>
+                    <img src="/__mirror/assets/038d2f4bd5d9d88b67194a90" alt loading="lazy"></picture></reimagine-media>
+            <reimagine-media slot="card-case-study__content-logo" aspect-ratio="16-9"><picture slot="media__asset"><source srcset="/__mirror/assets/74cceee11e38340290a04582" media="none and (prefers-color-scheme: dark)"></source>
+                    <source srcset="/__mirror/assets/f17cc4a9e0d900efc9327111" media="none and (prefers-color-scheme: light)"></source>
+                    <img src="/__mirror/assets/f17cc4a9e0d900efc9327111" alt loading="lazy"></picture></reimagine-media>
+            <reimagine-text-block slot="card-case-study__content-body" configuration="default" size="xs"><h4 slot="text-block__heading">Square Enix uses Azure OpenAI Service for AI-enhanced game development</h4></reimagine-text-block>
+            <reimagine-related-products slot="card-case-study__content-related-products" configuration="horizontal" density="roomy"><reimagine-related-products-item slot="related-product__items"><reimagine-badge slot="related-product-item__badge" size="xs" surface="glass"><img src="/__mirror/assets/1b2ab4a9ad7bb2eaa5c5e372" alt loading="lazy"></reimagine-badge>
+                        <span slot="related-product-item__text">Azure Functions</span></reimagine-related-products-item><reimagine-related-products-item slot="related-product__items"><reimagine-badge slot="related-product-item__badge" size="xs" surface="glass"><img src="/__mirror/assets/013076ca6d60eeb7004316fb" alt loading="lazy"></reimagine-badge>
+                        <span slot="related-product-item__text">Microsoft Copilot</span></reimagine-related-products-item><reimagine-related-products-item slot="related-product__items"><reimagine-badge slot="related-product-item__badge" size="xs" surface="glass"><img src="/__mirror/assets/7bc39c31bd288e34d973bcfa" alt loading="lazy"></reimagine-badge>
+                        <span slot="related-product-item__text">Azure AI Search</span></reimagine-related-products-item><reimagine-related-products-item slot="related-product__items"><reimagine-badge slot="related-product-item__badge" size="xs" surface="glass"><img src="/__mirror/assets/d79a129dab0776c6274425d8" alt loading="lazy"></reimagine-badge>
+                        <span slot="related-product-item__text">Azure OpenAI</span></reimagine-related-products-item></reimagine-related-products>
+            <reimagine-button-group slot="card-case-study__content-button-group"><reimagine-button href="https://www.microsoft.com/en/customers/story/21034-square-enix-co-ltd-azure-ai-search" appearance="button--primary" shape="rounded" size="medium" target="_blank" data-bi-an="customer-stories" data-bi-id="square-enix" data-bi-ct="button" button-label="Read more about Square Enix case study"><span slot="button__text">Read more</span></reimagine-button></reimagine-button-group></reimagine-card-case-study></reimagine-carousel-item></reimagine-layout-column>
+                    <reimagine-layout-column slot="carousel__window"><reimagine-carousel-item id="customer-story-2" aria-label="2 of 3"><reimagine-card-case-study surface="glass" configuration="default" clickable><reimagine-media slot="card-case-study__media"><picture slot="media__asset"><source srcset="/__mirror/assets/23ad67b329059dcd78a3f7b0"></source>
+                    <source srcset="/__mirror/assets/ba700cb59ce1e630a4944ca9"></source>
+                    <img src="/__mirror/assets/ba700cb59ce1e630a4944ca9" alt loading="lazy"></picture></reimagine-media>
+            <reimagine-media slot="card-case-study__content-logo" aspect-ratio="16-9"><picture slot="media__asset"><source srcset="/__mirror/assets/a1546320cdcd708d9f7daa29" media="none and (prefers-color-scheme: dark)"></source>
+                    <source srcset="/__mirror/assets/f7b8841ac33b3400295bd7c3" media="none and (prefers-color-scheme: light)"></source>
+                    <img src="/__mirror/assets/f7b8841ac33b3400295bd7c3" alt loading="lazy"></picture></reimagine-media>
+            <reimagine-text-block slot="card-case-study__content-body" configuration="default" size="xs"><h4 slot="text-block__heading">Zooniverse's move to Azure enhances citizen science</h4></reimagine-text-block>
+            <reimagine-related-products slot="card-case-study__content-related-products" configuration="horizontal" density="roomy"><reimagine-related-products-item slot="related-product__items"><reimagine-badge slot="related-product-item__badge" size="xs" surface="glass"><img src="/__mirror/assets/1b2ab4a9ad7bb2eaa5c5e372" alt loading="lazy"></reimagine-badge>
+                        <span slot="related-product-item__text">Azure Cache for Redis</span></reimagine-related-products-item><reimagine-related-products-item slot="related-product__items"><reimagine-badge slot="related-product-item__badge" size="xs" surface="glass"><img src="/__mirror/assets/1b2ab4a9ad7bb2eaa5c5e372" alt loading="lazy"></reimagine-badge>
+                        <span slot="related-product-item__text">Azure DNS</span></reimagine-related-products-item><reimagine-related-products-item slot="related-product__items"><reimagine-badge slot="related-product-item__badge" size="xs" surface="glass"><img src="/__mirror/assets/1b2ab4a9ad7bb2eaa5c5e372" alt loading="lazy"></reimagine-badge>
+                        <span slot="related-product-item__text">Azure Database for PostgreSQL</span></reimagine-related-products-item><reimagine-related-products-item slot="related-product__items"><reimagine-badge slot="related-product-item__badge" size="xs" surface="glass"><img src="/__mirror/assets/1b2ab4a9ad7bb2eaa5c5e372" alt loading="lazy"></reimagine-badge>
+                        <span slot="related-product-item__text">Azure Front Door</span></reimagine-related-products-item></reimagine-related-products>
+            <reimagine-button-group slot="card-case-study__content-button-group"><reimagine-button href="https://www.microsoft.com/en/customers/story/1376275735613758956-zooniverse-azure-non-profit" appearance="button--primary" shape="rounded" size="medium" target="_blank" data-bi-an="customer-stories" data-bi-id="zooniverse" data-bi-ct="button" button-label="Read more about Zooniverse case study"><span slot="button__text">Read more</span></reimagine-button></reimagine-button-group></reimagine-card-case-study></reimagine-carousel-item></reimagine-layout-column>
+                    <reimagine-layout-column slot="carousel__window"><reimagine-carousel-item id="customer-story-3" aria-label="3 of 3"><reimagine-card-case-study surface="glass" configuration="default" clickable><reimagine-media slot="card-case-study__media"><picture slot="media__asset"><source srcset="/__mirror/assets/6aca999ba80e21c5a79aa597"></source>
+                    <source srcset="/__mirror/assets/f13bf4f1949690d7b834fd89"></source>
+                    <img src="/__mirror/assets/f13bf4f1949690d7b834fd89" alt loading="lazy"></picture></reimagine-media>
+            <reimagine-media slot="card-case-study__content-logo" aspect-ratio="16-9"><picture slot="media__asset"><source srcset="/__mirror/assets/35269c0e84e44995e2ea6a4d" media="none and (prefers-color-scheme: dark)"></source>
+                    <source srcset="/__mirror/assets/af36bf0939c06110b19d59d8" media="none and (prefers-color-scheme: light)"></source>
+                    <img src="/__mirror/assets/af36bf0939c06110b19d59d8" alt loading="lazy"></picture></reimagine-media>
+            <reimagine-text-block slot="card-case-study__content-body" configuration="default" size="xs"><h4 slot="text-block__heading">Dentsu reduces time to media insights by 90% using Azure AI</h4></reimagine-text-block>
+            <reimagine-related-products slot="card-case-study__content-related-products" configuration="horizontal" density="roomy"><reimagine-related-products-item slot="related-product__items"><reimagine-badge slot="related-product-item__badge" size="xs" surface="glass"><img src="/__mirror/assets/d79a129dab0776c6274425d8" alt loading="lazy"></reimagine-badge>
+                        <span slot="related-product-item__text">Azure OpenAI</span></reimagine-related-products-item><reimagine-related-products-item slot="related-product__items"><reimagine-badge slot="related-product-item__badge" size="xs" surface="glass"><img src="/__mirror/assets/82ca8b023771a5d2887c1a0a" alt loading="lazy"></reimagine-badge>
+                        <span slot="related-product-item__text">Azure Machine Learning</span></reimagine-related-products-item><reimagine-related-products-item slot="related-product__items"><reimagine-badge slot="related-product-item__badge" size="xs" surface="glass"><img src="/__mirror/assets/fed17f8fd1016c8c87dec640" alt loading="lazy"></reimagine-badge>
+                        <span slot="related-product-item__text">Visual Studio</span></reimagine-related-products-item><reimagine-related-products-item slot="related-product__items"><reimagine-badge slot="related-product-item__badge" size="xs" surface="glass"><img src="/__mirror/assets/1b2ab4a9ad7bb2eaa5c5e372" alt loading="lazy"></reimagine-badge>
+                        <span slot="related-product-item__text">Azure Kubernetes Service</span></reimagine-related-products-item></reimagine-related-products>
+            <reimagine-button-group slot="card-case-study__content-button-group"><reimagine-button href="https://www.microsoft.com/en/customers/story/19582-dentsu-azure-kubernetes-service" appearance="button--primary" shape="rounded" size="medium" target="_blank" data-bi-an="customer-stories" data-bi-id="dentsu" data-bi-ct="button" button-label="Read more about Dentsu case study"><span slot="button__text">Read more</span></reimagine-button></reimagine-button-group></reimagine-card-case-study></reimagine-carousel-item></reimagine-layout-column></reimagine-carousel></reimagine-carousel-featured></section>
+
+        <section id="learn" aria-label="Learn section"><reimagine-base-ui-shell background="app-color-base-default-bg-opt1" breadth="comfortable" data-bi-an="learn-content" top-breadth="compact"><reimagine-layout-column slot="ui-shell-header"><reimagine-heading-block size="s"><div slot="heading-block__eyebrow-label">Learn</div><h2 slot="heading-block__heading-text">Learn with Python</h2></reimagine-heading-block></reimagine-layout-column><reimagine-container><reimagine-carousel layout-configuration="4-card" full-bleed scrollslider-item-role="group" skip-label="Skip Learn carousel carousel" end-label="End of carousel" back-to-controls-label="Back to carousel controls" aria-label="Learn carousel carousel"><reimagine-layout-column slot="carousel__window"><reimagine-carousel-item id="learn-with-python-carousel-0" role="group" aria-roledescription="slide" aria-label="Using GitHub Copilot with Python (1 of 4)"><reimagine-card-feature surface="glass" clickable><reimagine-media slot="card-feature__media" aspect-ratio="initial"><picture slot="media__asset"><source srcset="/__mirror/assets/e87f08efda752295f2d0cb2c"></source>
+                            <source srcset="/__mirror/assets/b87dde77255f8ba2a9f2ce05"></source>
+                            <img src="/__mirror/assets/b87dde77255f8ba2a9f2ce05" alt loading="lazy"></picture></reimagine-media><reimagine-text-block slot="card-feature__content-body" configuration="stacked" size="2xs"><span slot="text-block__heading">Using GitHub Copilot with Python</span>
+                    <span slot="text-block__content">GitHub Copilot is an AI pair programmer that offers autocomplete-style suggestions as you code in Python.</span></reimagine-text-block>
+                <reimagine-link slot="card-feature__content-footer-bottom" href="https://learn.microsoft.com/training/modules/introduction-copilot-python/" with-button target="_blank" rel="noopener noreferrer" data-bi-an="learn-content" data-bi-id="github-copilot-with-python" data-bi-ct="link" link-label="Get started with GitHub Copilot and Python"><span slot="link__text">Get started now</span></reimagine-link></reimagine-card-feature></reimagine-carousel-item></reimagine-layout-column>
+                    <reimagine-layout-column slot="carousel__window"><reimagine-carousel-item id="learn-with-python-carousel-1" role="group" aria-roledescription="slide" aria-label="Explore and analyze data with Python (2 of 4)"><reimagine-card-feature surface="glass" clickable><reimagine-media slot="card-feature__media" aspect-ratio="initial"><picture slot="media__asset"><source srcset="/__mirror/assets/9df7409ebd3664d21d138faf"></source>
+                            <source srcset="/__mirror/assets/b82b4ac9abce97a5255c3a90"></source>
+                            <img src="/__mirror/assets/b82b4ac9abce97a5255c3a90" alt loading="lazy"></picture></reimagine-media><reimagine-text-block slot="card-feature__content-body" configuration="stacked" size="2xs"><span slot="text-block__heading">Explore and analyze data with Python</span>
+                    <span slot="text-block__content">Data exploration and analysis are at the core of data science. Data scientists require skills in programming languages like Python to explore, visualize, and manipulate data.</span></reimagine-text-block>
+                <reimagine-link slot="card-feature__content-footer-bottom" href="https://learn.microsoft.com/training/modules/explore-analyze-data-with-python/" with-button target="_blank" rel="noopener noreferrer" data-bi-an="learn-content" data-bi-id="analyze-data-with-python" data-bi-ct="link" link-label="Get started with exploring and analyzing data with Python"><span slot="link__text">Get started now</span></reimagine-link></reimagine-card-feature></reimagine-carousel-item></reimagine-layout-column>
+                    <reimagine-layout-column slot="carousel__window"><reimagine-carousel-item id="learn-with-python-carousel-2" role="group" aria-roledescription="slide" aria-label="Using advanced GitHub Copilot features (3 of 4)"><reimagine-card-feature surface="glass" clickable><reimagine-media slot="card-feature__media" aspect-ratio="initial"><picture slot="media__asset"><source srcset="/__mirror/assets/50bb1cc9f6864c1a203eeb01"></source>
+                            <source srcset="/__mirror/assets/4bb1101013eb9c42a98d129f"></source>
+                            <img src="/__mirror/assets/4bb1101013eb9c42a98d129f" alt loading="lazy"></picture></reimagine-media><reimagine-text-block slot="card-feature__content-body" configuration="stacked" size="2xs"><span slot="text-block__heading">Using advanced GitHub Copilot features</span>
+                    <span slot="text-block__content">Use advanced GitHub Copilot features with a Python application.</span></reimagine-text-block>
+                <reimagine-link slot="card-feature__content-footer-bottom" href="https://learn.microsoft.com/training/modules/advanced-github-copilot/" with-button target="_blank" rel="noopener noreferrer" data-bi-an="learn-content" data-bi-id="advanced-github-copilot-features" data-bi-ct="link" link-label="Get started with advanced GitHub Copilot features"><span slot="link__text">Get started now</span></reimagine-link></reimagine-card-feature></reimagine-carousel-item></reimagine-layout-column>
+                    <reimagine-layout-column slot="carousel__window"><reimagine-carousel-item id="learn-with-python-carousel-3" role="group" aria-roledescription="slide" aria-label="Build a minigame with GitHub Copilot and Python (4 of 4)"><reimagine-card-feature surface="glass" clickable><reimagine-media slot="card-feature__media" aspect-ratio="initial"><picture slot="media__asset"><source srcset="/__mirror/assets/81beeddc1e92f1fe56feb611"></source>
+                            <source srcset="/__mirror/assets/057c65620d4c9c9b63ef04a5"></source>
+                            <img src="/__mirror/assets/057c65620d4c9c9b63ef04a5" alt loading="lazy"></picture></reimagine-media><reimagine-text-block slot="card-feature__content-body" configuration="stacked" size="2xs"><span slot="text-block__heading">Build a minigame with GitHub Copilot and Python</span>
+                    <span slot="text-block__content">Demonstrate your ability to analyze, create, and use different methods to develop a console minigame in Python with GitHub.</span></reimagine-text-block>
+                <reimagine-link slot="card-feature__content-footer-bottom" href="https://learn.microsoft.com/training/modules/challenge-project-create-mini-game-with-copilot/" with-button target="_blank" rel="noopener noreferrer" data-bi-an="learn-content" data-bi-id="build-a-minigame-with-github-copilot-and-python" data-bi-ct="link" link-label="Get started with building a minigame with GitHub Copilot and Python"><span slot="link__text">Get started now</span></reimagine-link></reimagine-card-feature></reimagine-carousel-item></reimagine-layout-column></reimagine-carousel></reimagine-container></reimagine-base-ui-shell></section>
+
+        <section id="on-github" aria-label="On GitHub section"><reimagine-base-ui-shell background="" breadth="comfortable" data-bi-an="on-github" top-breadth="comfortable" bottom-breadth="comfortable"><reimagine-layout-column slot="ui-shell-header"><reimagine-heading-block size="s"><div slot="heading-block__eyebrow-label">Repositories</div><h2 slot="heading-block__heading-text">On GitHub</h2><p slot="heading-block__content-text">Some of our most popular open-source Python libraries and tools.</p></reimagine-heading-block></reimagine-layout-column><reimagine-container><reimagine-carousel layout-configuration="5-card" full-bleed scrollslider-item-role="group" skip-label="Skip Repositories on GitHub carousel carousel" end-label="End of carousel" back-to-controls-label="Back to carousel controls" aria-label="Repositories on GitHub carousel carousel"><reimagine-layout-column slot="carousel__window"><reimagine-carousel-item id="on-github-carousel-0" role="group" aria-roledescription="slide" aria-label="Pyright (1 of 9)"><reimagine-card-feature surface="glass" clickable><reimagine-text-block slot="card-feature__content-body" configuration="stacked" size="2xs"><reimagine-badge slot="text-block__badge" size="s" surface="solid-border" style="--ds-badge-padding-block-start: 0; --ds-badge-padding-block-end: 0; --ds-badge-padding-inline-start: 0; --ds-badge-padding-inline-end: 0"><img src="/__mirror/assets/4d2c6d1c34848d6c9aac831f" class="" alt style="width: 100%; height: 100%; object-fit: contain" loading="lazy"></reimagine-badge><span slot="text-block__heading">Pyright</span>
+                    <span slot="text-block__content">Pyright is a full-featured, standards-based static type checker for Python. It is designed for high performance and can be used with large Python source bases.</span></reimagine-text-block>
+                <reimagine-link slot="card-feature__content-footer-bottom" href="https://github.com/microsoft/pyright" with-button target="_blank" rel="noopener noreferrer" data-bi-an="on-github" data-bi-id="pyright" data-bi-ct="link" link-label="Get the code from the Pyright repository on GitHub"><span slot="link__text">Get the code</span></reimagine-link></reimagine-card-feature></reimagine-carousel-item></reimagine-layout-column>
+                    <reimagine-layout-column slot="carousel__window"><reimagine-carousel-item id="on-github-carousel-1" role="group" aria-roledescription="slide" aria-label="MarkItDown (2 of 9)"><reimagine-card-feature surface="glass" clickable><reimagine-text-block slot="card-feature__content-body" configuration="stacked" size="2xs"><reimagine-badge slot="text-block__badge" size="s" surface="solid-border" style="--ds-badge-padding-block-start: 0; --ds-badge-padding-block-end: 0; --ds-badge-padding-inline-start: 0; --ds-badge-padding-inline-end: 0"><img src="/__mirror/assets/035e6b44a237397626eec915" class="" alt style="width: 100%; height: 100%; object-fit: contain" loading="lazy"></reimagine-badge><span slot="text-block__heading">MarkItDown</span>
+                    <span slot="text-block__content">MarkItDown is a lightweight Python utility for converting various files to Markdown for use with LLMs and related text analysis pipelines.</span></reimagine-text-block>
+                <reimagine-link slot="card-feature__content-footer-bottom" href="https://github.com/microsoft/markitdown" with-button target="_blank" rel="noopener noreferrer" data-bi-an="on-github" data-bi-id="markitdown" data-bi-ct="link" link-label="Get the code from the MarkItDown repository on GitHub"><span slot="link__text">Get the code</span></reimagine-link></reimagine-card-feature></reimagine-carousel-item></reimagine-layout-column>
+                    <reimagine-layout-column slot="carousel__window"><reimagine-carousel-item id="on-github-carousel-2" role="group" aria-roledescription="slide" aria-label="PyRIT (3 of 9)"><reimagine-card-feature surface="glass" clickable><reimagine-text-block slot="card-feature__content-body" configuration="stacked" size="2xs"><reimagine-badge slot="text-block__badge" size="s" surface="solid-border" style="--ds-badge-padding-block-start: 0; --ds-badge-padding-block-end: 0; --ds-badge-padding-inline-start: 0; --ds-badge-padding-inline-end: 0"><img src="/__mirror/assets/4d2c6d1c34848d6c9aac831f" class="" alt style="width: 100%; height: 100%; object-fit: contain" loading="lazy"></reimagine-badge><span slot="text-block__heading">PyRIT</span>
+                    <span slot="text-block__content">Python Risk Identification Tool for generative AI (PyRIT) is an open-source framework built to empower security professionals and engineers to proactively identify risks in generative AI systems.</span></reimagine-text-block>
+                <reimagine-link slot="card-feature__content-footer-bottom" href="https://github.com/Azure/PyRIT" with-button target="_blank" rel="noopener noreferrer" data-bi-an="on-github" data-bi-id="pyrit" data-bi-ct="link" link-label="Get the code from the PyRIT repository on GitHub"><span slot="link__text">Get the code</span></reimagine-link></reimagine-card-feature></reimagine-carousel-item></reimagine-layout-column>
+                    <reimagine-layout-column slot="carousel__window"><reimagine-carousel-item id="on-github-carousel-3" role="group" aria-roledescription="slide" aria-label="Microsoft Agent Framework (4 of 9)"><reimagine-card-feature surface="glass" clickable><reimagine-text-block slot="card-feature__content-body" configuration="stacked" size="2xs"><reimagine-badge slot="text-block__badge" size="s" surface="solid-border" style="--ds-badge-padding-block-start: 0; --ds-badge-padding-block-end: 0; --ds-badge-padding-inline-start: 0; --ds-badge-padding-inline-end: 0"><img src="/__mirror/assets/c23f35f9aa8fae254e14bec0" class="" alt style="width: 100%; height: 100%; object-fit: contain" loading="lazy"></reimagine-badge><span slot="text-block__heading">Microsoft Agent Framework</span>
+                    <span slot="text-block__content">A framework for building, orchestrating, and deploying AI agents and multi-agent workflows with support for Python and .NET.</span></reimagine-text-block>
+                <reimagine-link slot="card-feature__content-footer-bottom" href="https://github.com/microsoft/agent-framework" with-button target="_blank" rel="noopener noreferrer" data-bi-an="on-github" data-bi-id="microsoft-agent-framework" data-bi-ct="link" link-label="Get the code from the Microsoft Agent Framework repository on GitHub"><span slot="link__text">Get the code</span></reimagine-link></reimagine-card-feature></reimagine-carousel-item></reimagine-layout-column>
+                    <reimagine-layout-column slot="carousel__window"><reimagine-carousel-item id="on-github-carousel-4" role="group" aria-roledescription="slide" aria-label="BitNet (5 of 9)"><reimagine-card-feature surface="glass" clickable><reimagine-text-block slot="card-feature__content-body" configuration="stacked" size="2xs"><reimagine-badge slot="text-block__badge" size="s" surface="solid-border" style="--ds-badge-padding-block-start: 0; --ds-badge-padding-block-end: 0; --ds-badge-padding-inline-start: 0; --ds-badge-padding-inline-end: 0"><img src="/__mirror/assets/4d2c6d1c34848d6c9aac831f" class="" alt style="width: 100%; height: 100%; object-fit: contain" loading="lazy"></reimagine-badge><span slot="text-block__heading">BitNet</span>
+                    <span slot="text-block__content">bitnet.cpp is the official inference framework for 1-bit LLMs (for example, BitNet b1.58).</span></reimagine-text-block>
+                <reimagine-link slot="card-feature__content-footer-bottom" href="https://github.com/microsoft/BitNet" with-button target="_blank" rel="noopener noreferrer" data-bi-an="on-github" data-bi-id="bitnet" data-bi-ct="link" link-label="Get the code from the BitNet repository on GitHub"><span slot="link__text">Get the code</span></reimagine-link></reimagine-card-feature></reimagine-carousel-item></reimagine-layout-column>
+                    <reimagine-layout-column slot="carousel__window"><reimagine-carousel-item id="on-github-carousel-5" role="group" aria-roledescription="slide" aria-label="GraphRAG (6 of 9)"><reimagine-card-feature surface="glass" clickable><reimagine-text-block slot="card-feature__content-body" configuration="stacked" size="2xs"><reimagine-badge slot="text-block__badge" size="s" surface="solid-border" style="--ds-badge-padding-block-start: 0; --ds-badge-padding-block-end: 0; --ds-badge-padding-inline-start: 0; --ds-badge-padding-inline-end: 0"><img src="/__mirror/assets/4d2c6d1c34848d6c9aac831f" class="" alt style="width: 100%; height: 100%; object-fit: contain" loading="lazy"></reimagine-badge><span slot="text-block__heading">GraphRAG</span>
+                    <span slot="text-block__content">The GraphRAG project is a data pipeline and transformation suite that is designed to extract meaningful, structured data from unstructured text using the power of LLMs.</span></reimagine-text-block>
+                <reimagine-link slot="card-feature__content-footer-bottom" href="https://github.com/microsoft/graphrag" with-button target="_blank" rel="noopener noreferrer" data-bi-an="on-github" data-bi-id="graphrag" data-bi-ct="link" link-label="Get the code from the GraphRAG repository on GitHub"><span slot="link__text">Get the code</span></reimagine-link></reimagine-card-feature></reimagine-carousel-item></reimagine-layout-column>
+                    <reimagine-layout-column slot="carousel__window"><reimagine-carousel-item id="on-github-carousel-6" role="group" aria-roledescription="slide" aria-label="Azure Command-Line Interface (7 of 9)"><reimagine-card-feature surface="glass" clickable><reimagine-text-block slot="card-feature__content-body" configuration="stacked" size="2xs"><reimagine-badge slot="text-block__badge" size="s" surface="solid-border" style="--ds-badge-padding-block-start: 0; --ds-badge-padding-block-end: 0; --ds-badge-padding-inline-start: 0; --ds-badge-padding-inline-end: 0"><img src="/__mirror/assets/4d2c6d1c34848d6c9aac831f" class="" alt style="width: 100%; height: 100%; object-fit: contain" loading="lazy"></reimagine-badge><span slot="text-block__heading">Azure Command-Line Interface</span>
+                    <span slot="text-block__content">A great cloud needs great tools; we're excited to introduce Azure CLI, our next generation multi-platform command-line experience for Azure.</span></reimagine-text-block>
+                <reimagine-link slot="card-feature__content-footer-bottom" href="https://github.com/Azure/azure-cli" with-button target="_blank" rel="noopener noreferrer" data-bi-an="on-github" data-bi-id="azure-cli" data-bi-ct="link" link-label="Get the code from the Azure CLI repository on GitHub"><span slot="link__text">Get the code</span></reimagine-link></reimagine-card-feature></reimagine-carousel-item></reimagine-layout-column>
+                    <reimagine-layout-column slot="carousel__window"><reimagine-carousel-item id="on-github-carousel-7" role="group" aria-roledescription="slide" aria-label="Azure SDK for Python (8 of 9)"><reimagine-card-feature surface="glass" clickable><reimagine-text-block slot="card-feature__content-body" configuration="stacked" size="2xs"><reimagine-badge slot="text-block__badge" size="s" surface="solid-border" style="--ds-badge-padding-block-start: 0; --ds-badge-padding-block-end: 0; --ds-badge-padding-inline-start: 0; --ds-badge-padding-inline-end: 0"><img src="/__mirror/assets/ea840f0337b053b42e8bc1a2" class="" alt style="width: 100%; height: 100%; object-fit: contain" loading="lazy"></reimagine-badge><span slot="text-block__heading">Azure SDK for Python</span>
+                    <span slot="text-block__content">This repository is for active development of the Azure SDK for Python.</span></reimagine-text-block>
+                <reimagine-link slot="card-feature__content-footer-bottom" href="https://github.com/Azure/azure-sdk-for-python" with-button target="_blank" rel="noopener noreferrer" data-bi-an="on-github" data-bi-id="azure-sdk-for-python" data-bi-ct="link" link-label="Get the code from the Azure SDK for Python repository on GitHub"><span slot="link__text">Get the code</span></reimagine-link></reimagine-card-feature></reimagine-carousel-item></reimagine-layout-column>
+                    <reimagine-layout-column slot="carousel__window"><reimagine-carousel-item id="on-github-carousel-8" role="group" aria-roledescription="slide" aria-label="Playwright for Python (9 of 9)"><reimagine-card-feature surface="glass" clickable><reimagine-text-block slot="card-feature__content-body" configuration="stacked" size="2xs"><reimagine-badge slot="text-block__badge" size="s" surface="solid-border" style="--ds-badge-padding-block-start: 0; --ds-badge-padding-block-end: 0; --ds-badge-padding-inline-start: 0; --ds-badge-padding-inline-end: 0"><img src="/__mirror/assets/602ad116369487f8caa569c0" class="" alt style="width: 100%; height: 100%; object-fit: contain" loading="lazy"></reimagine-badge><span slot="text-block__heading">Playwright for Python</span>
+                    <span slot="text-block__content">Playwright is a Python library to automate Chromium,  Firefox and WebKit browsers with a single API. Playwright delivers automation that is ever-green, capable, reliable and fast.</span></reimagine-text-block>
+                <reimagine-link slot="card-feature__content-footer-bottom" href="https://github.com/microsoft/playwright-python" with-button target="_blank" rel="noopener noreferrer" data-bi-an="on-github" data-bi-id="playwright-for-python" data-bi-ct="link" link-label="Get the code from the Playwright for Python repository on GitHub"><span slot="link__text">Get the code</span></reimagine-link></reimagine-card-feature></reimagine-carousel-item></reimagine-layout-column></reimagine-carousel></reimagine-container></reimagine-base-ui-shell></section>
+
+        <section id="blogs" aria-label="Blogs section"><reimagine-story-grid background="app-color-base-default-bg-opt1" breadth="comfortable" configuration="featured-plus-4-stories" data-bi-an="python-blog" top-breadth="comfortable"><reimagine-section-title top-divider slot="title"><reimagine-divider size="m" slot="section-title__divider-top"></reimagine-divider>
+        <h3 slot="section-title__body-text">Recent Python blog posts</h3><reimagine-button-group slot="section-title__body-button"><reimagine-button appearance="button--secondary" shape="rounded" href="https://devblogs.microsoft.com/python/" target="_blank" data-bi-an="python-blog" data-bi-id="more blogs" data-bi-ct="button"><span slot="button__text">More blogs</span></reimagine-button></reimagine-button-group></reimagine-section-title><reimagine-media slot="media" aspect-ratio="16-9" style="--ds-media-width: 100%"><picture slot="media__asset"><source srcset="/__mirror/assets/d284bed3dc6637b5212afa0e"></source>
+                    <source srcset="/__mirror/assets/de013e3e60c15e1023fcb654"></source>
+                    <img src="/__mirror/assets/de013e3e60c15e1023fcb654" alt loading="lazy"></picture></reimagine-media><reimagine-text-block slot="text-block" configuration="default" size="xs"><span slot="text-block__eyebrow-label">Vedha Ranganathan</span>
+        <span slot="text-block__eyebrow-date">• May 14, 2026</span>
+        <h4 slot="text-block__heading">PyCon US 2026</h4><p slot="text-block__content">PyCon US 2026
+The post PyCon US 2026 appeared first on Microsoft for Python Developers Blog.</p><reimagine-link slot="text-block__footer" icon-position="left" href="https://devblogs.microsoft.com/python/pycon-us-2026/" target="_blank" link-label="Read more about PyCon US 2026" data-bi-an="python-blog" data-bi-id="read-featured-article" data-bi-ct="link"><span slot="link__text">Read more</span></reimagine-link></reimagine-text-block>
+    
+    <div slot="editorial-with-divider"><reimagine-card-editorial configuration="small"><reimagine-divider slot="divider"></reimagine-divider>
+            <reimagine-text-block configuration="default" size="2xs"><span slot="text-block__eyebrow-label">Saumya Garg</span>
+                <span slot="text-block__eyebrow-date">• May 04, 2026</span>
+                <h5 slot="text-block__heading">Introducing Apache Arrow Support in mssql-python</h5>
+                <reimagine-link slot="text-block__footer" icon-position="left" href="https://devblogs.microsoft.com/python/introducing-apache-arrow-support-in-mssql-python/" target="_blank" link-label="Read more about Introducing Apache Arrow Support in mssql-python" data-bi-an="python-blog" data-bi-id="read-article" data-bi-ct="link"><span slot="link__text">Read more</span></reimagine-link></reimagine-text-block></reimagine-card-editorial></div><div slot="editorial-with-divider"><reimagine-card-editorial configuration="small"><reimagine-divider slot="divider"></reimagine-divider>
+            <reimagine-text-block configuration="default" size="2xs"><span slot="text-block__eyebrow-label">Vedha Ranganathan</span>
+                <span slot="text-block__eyebrow-date">• April 27, 2026</span>
+                <h5 slot="text-block__heading">Python Environments Extension for VS Code- April Update</h5>
+                <reimagine-link slot="text-block__footer" icon-position="left" href="https://devblogs.microsoft.com/python/python-in-visual-studio-code-april-2026-release/" target="_blank" link-label="Read more about Python Environments Extension for VS Code- April Update" data-bi-an="python-blog" data-bi-id="read-article" data-bi-ct="link"><span slot="link__text">Read more</span></reimagine-link></reimagine-text-block></reimagine-card-editorial></div><div slot="editorial-with-divider"><reimagine-card-editorial configuration="small"><reimagine-divider slot="divider"></reimagine-divider>
+            <reimagine-text-block configuration="default" size="2xs"><span slot="text-block__eyebrow-label">Jahnvi Thakkar</span>
+                <span slot="text-block__eyebrow-date">• April 07, 2026</span>
+                <h5 slot="text-block__heading">Write SQL Your Way: Dual Parameter Style Benefits in mssql-python</h5>
+                <reimagine-link slot="text-block__footer" icon-position="left" href="https://devblogs.microsoft.com/python/write-sql-your-way-dual-parameter-style-benefits-in-mssql-python/" target="_blank" link-label="Read more about Write SQL Your Way: Dual Parameter Style Benefits in mssql-python" data-bi-an="python-blog" data-bi-id="read-article" data-bi-ct="link"><span slot="link__text">Read more</span></reimagine-link></reimagine-text-block></reimagine-card-editorial></div><div slot="editorial-with-divider"><reimagine-card-editorial configuration="small"><reimagine-divider slot="divider"></reimagine-divider>
+            <reimagine-text-block configuration="default" size="2xs"><span slot="text-block__eyebrow-label">Vedha Ranganathan</span>
+                <span slot="text-block__eyebrow-date">• April 02, 2026</span>
+                <h5 slot="text-block__heading">Python in Visual Studio Code – March 2026 Release</h5>
+                <reimagine-link slot="text-block__footer" icon-position="left" href="https://devblogs.microsoft.com/python/python-in-visual-studio-code-march-2026-release/" target="_blank" link-label="Read more about Python in Visual Studio Code – March 2026 Release" data-bi-an="python-blog" data-bi-id="read-article" data-bi-ct="link"><span slot="link__text">Read more</span></reimagine-link></reimagine-text-block></reimagine-card-editorial></div></reimagine-story-grid></section></reimagine-scroll-spy>
+
+</div>
+    </div>
+
+
+    <!-- Theme picker / UHF Footer -->
+    <div class="mx-0 px-0 overflow-hidden uhf-footer-wrapper">
+        
+<div class="uhf11-footer-container">
+    <button type="button" class="uhf11-btn-theme" id="theme-toggle" aria-label="Change page theme" aria-pressed="false" data-bi-an="uhf-footer" data-bi-id="theme-toggle" data-bi-ct="button">
+        <svg xmlns="http://www.w3.org/2000/svg" style="margin-right:10px" width="24" height="24" fill="currentColor" class="bi bi-brightness-high" viewbox="0 0 16 16" aria-hidden="true">
+            <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"></path>
+        </svg><span>Theme</span>
+    </button>
+    
+<uhf-footer locale="en-us" partnerid="MSDev-Community" footerid="MSDev-DEVCOM-Community-Footer" theme="light">
+    <script id="uhf-footer-ccpa">
+        (function () {
+            function checkThirdPartyAdsOptOutCookie() {
+                try {
+                    var match = document.cookie.match('(^|;)\\s*3PAdsOptOut\\s*=\\s*([^;]+)');
+                    return (match ? match[2] : '') !== '1';
+                } catch (e) {
+                    return true;
+                }
+            }
+            var globalPrivacyControlEnabled = navigator.globalPrivacyControl;
+            window.GPC_DataSharingOptIn = globalPrivacyControlEnabled ? false : checkThirdPartyAdsOptOutCookie();
+            if (typeof window.onGPCLoaded === 'function') {
+                window.onGPCLoaded();
+            }
+        })();
+    </script>
+    
+<uhf-footer-nav slot="uhf-footer-nav">
+</uhf-footer-nav>
+        <a slot="uhf-footer-locale-picker" class="uhf-footer-link" href="/en-us/_devcom/locale" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_English (United States)_nav","ecn":"LegalNav_LocalePicker_nav","ehn":"LegalNav"}' aria-label="Content Language Selector. Currently set to English (United States)">English (United States)</a>
+    <div slot="uhf-footer-california-privacy-link">
+        
+<a class="uhf-footer-link" href="https://aka.ms/yourcaliforniaprivacychoices" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_California Privacy_nav","ecn":"LegalNav_CaliforniaPrivacy_nav","ehn":"LegalNav"}'>
+    <svg role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 14" xml:space="preserve" height="16" width="43">
+    <title>Your Privacy Choices Opt-Out Icon</title>
+    <path d="M7.4 12.8h6.8l3.1-11.6H7.4C4.2 1.2 1.6 3.8 1.6 7s2.6 5.8 5.8 5.8z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#fff"></path>
+    <path d="M22.6 0H7.4c-3.9 0-7 3.1-7 7s3.1 7 7 7h15.2c3.9 0 7-3.1 7-7s-3.2-7-7-7zm-21 7c0-3.2 2.6-5.8 5.8-5.8h9.9l-3.1 11.6H7.4c-3.2 0-5.8-2.6-5.8-5.8z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#06f"></path>
+    <path d="M24.6 4c.2.2.2.6 0 .8L22.5 7l2.2 2.2c.2.2.2.6 0 .8-.2.2-.6.2-.8 0l-2.2-2.2-2.2 2.2c-.2.2-.6.2-.8 0-.2-.2-.2-.6 0-.8L20.8 7l-2.2-2.2c-.2-.2-.2-.6 0-.8.2-.2.6-.2.8 0l2.2 2.2L23.8 4c.2-.2.6-.2.8 0z" style="fill:#fff"></path>
+    <path d="M12.7 4.1c.2.2.3.6.1.8L8.6 9.8c-.1.1-.2.2-.3.2-.2.1-.5.1-.7-.1L5.4 7.7c-.2-.2-.2-.6 0-.8.2-.2.6-.2.8 0L8 8.6l3.8-4.5c.2-.2.6-.2.9 0z" style="fill:#06f"></path>
+    </svg>
+    <span>Your Privacy Choices</span>
+</a>
+        <noscript>
+            
+<a class="uhf-footer-link" href="https://aka.ms/yourcaliforniaprivacychoices" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_California Privacy_nav","ecn":"LegalNav_CaliforniaPrivacy_nav","ehn":"LegalNav"}'>
+    <svg role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 14" xml:space="preserve" height="16" width="43">
+    <title>Your Privacy Choices Opt-Out Icon</title>
+    <path d="M7.4 12.8h6.8l3.1-11.6H7.4C4.2 1.2 1.6 3.8 1.6 7s2.6 5.8 5.8 5.8z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#fff"></path>
+    <path d="M22.6 0H7.4c-3.9 0-7 3.1-7 7s3.1 7 7 7h15.2c3.9 0 7-3.1 7-7s-3.2-7-7-7zm-21 7c0-3.2 2.6-5.8 5.8-5.8h9.9l-3.1 11.6H7.4c-3.2 0-5.8-2.6-5.8-5.8z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#06f"></path>
+    <path d="M24.6 4c.2.2.2.6 0 .8L22.5 7l2.2 2.2c.2.2.2.6 0 .8-.2.2-.6.2-.8 0l-2.2-2.2-2.2 2.2c-.2.2-.6.2-.8 0-.2-.2-.2-.6 0-.8L20.8 7l-2.2-2.2c-.2-.2-.2-.6 0-.8.2-.2.6-.2.8 0l2.2 2.2L23.8 4c.2-.2.6-.2.8 0z" style="fill:#fff"></path>
+    <path d="M12.7 4.1c.2.2.3.6.1.8L8.6 9.8c-.1.1-.2.2-.3.2-.2.1-.5.1-.7-.1L5.4 7.7c-.2-.2-.2-.6 0-.8.2-.2.6-.2.8 0L8 8.6l3.8-4.5c.2-.2.6-.2.9 0z" style="fill:#06f"></path>
+    </svg>
+    <span>Your Privacy Choices</span>
+</a>
+        </noscript>
+    </div>
+    <a slot="uhf-footer-consumer-health-privacy-link" class="uhf-footer-link" href="https://go.microsoft.com/fwlink/?linkid=2259814" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_Consumer Health Privacy_nav","ecn":"LegalNav_ConsumerHealthPrivacy_nav","ehn":"LegalNav"}'>Consumer Health Privacy</a>
+    
+<uhf-footer-menu slot="uhf-footer-menu" data-nav-label="Microsoft corporate links">
+            <a class="uhf-footer-link" href="https://support.microsoft.com/contactus/" id="uhf-Contact Microsoft " data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_Contact Microsoft _nav","ecn":"LegalNav_Contact Microsoft _nav","ehn":"LegalNav"}'>Contact Microsoft </a>
+            <a class="uhf-footer-link" href="https://go.microsoft.com/fwlink/?LinkId=521839" id="uhf-Privacy &amp; Cookies" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_Privacy &amp; Cookies_nav","ecn":"LegalNav_Privacy &amp; Cookies_nav","ehn":"LegalNav"}'>Privacy &amp; Cookies</a>
+            <a class="uhf-footer-link" href="#" id="uhf-Manage cookies" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_Manage cookies_nav","ecn":"LegalNav_Manage cookies_nav","ehn":"LegalNav"}'>Manage cookies</a>
+            <a class="uhf-footer-link" href="https://go.microsoft.com/fwlink/?LinkID=206977" id="uhf-Terms of Use" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_Terms of Use_nav","ecn":"LegalNav_Terms of Use_nav","ehn":"LegalNav"}'>Terms of Use</a>
+            <a class="uhf-footer-link" href="https://www.microsoft.com/trademarks" id="uhf-Trademarks" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_Trademarks_nav","ecn":"LegalNav_Trademarks_nav","ehn":"LegalNav"}'>Trademarks</a>
+</uhf-footer-menu>
+</uhf-footer>
+</div>
+    </div>
+    <!-- /Theme picker -->
+
+
+    <!-- Scripts -->
+    <script>window.cdaTrackerShadowDOM = true;</script>
+    <script src="/__mirror/assets/6c595ffdb677c4a558469896" async></script>
+
+    
+<script type="module" src="/__mirror/assets/adb93738516987ac3e9c9096"></script>
+    
+ <!-- UHF scripts -->
+
+    
+    
+    <!-- /Scripts -->
+</body>
+</html>
