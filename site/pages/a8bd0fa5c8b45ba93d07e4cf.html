@@ -1,0 +1,517 @@
+<!doctype html>
+<html lang="en-US" data-theme="light" theme="light">
+<head>
+    <!-- Authorized local recreation. External services are not impersonated; analytics disabled. --><meta name="robots" content="noindex,nofollow"><script src="/__mirror/runtime.js"></script><title>Windows Subsystem for Linux | Microsoft Developer</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark light">
+    <meta name="awa-env" content="Production">
+    <meta name="description" content="Run a real Linux environment on Windows without a virtual machine or dual boot. See when WSL fits, install it with one command, run Linux containers with wslc, and set up your tools.">
+
+    <meta property="og:title" content="Windows Subsystem for Linux | Microsoft Developer">
+    <meta property="og:description" content="Run a real Linux environment on Windows without a virtual machine or dual boot. See when WSL fits, install it with one command, run Linux containers with wslc, and set up your tools.">
+    <meta property="og:image" content="https://developer.microsoft.com/_devcom/images/logo-ms-social.jpg">
+    <meta property="og:image:alt" content="Microsoft Developer">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Microsoft Developer">
+    <meta property="og:url" content="https://developer.microsoft.com/en-us/windows/wsl">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@msdev">
+    <meta name="twitter:image" content="https://developer.microsoft.com/_devcom/images/logo-ms-social.jpg">
+
+    
+    <meta name="awa-pageType" content="Resources">
+    <meta name="awa-product" content="Windows">
+    <meta name="awa-prdct" content="Windows">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+    <link rel="canonical" href="https://developer.microsoft.com/en-us/windows/wsl">
+    
+    
+<style>
+    uhf-header:not(:defined) {
+        display: block;
+        height: 54px;
+    }
+
+    uhf-brand:not(:defined),
+    uhf-contextual-nav:not(:defined),
+    uhf-actions:not(:defined),
+    uhf-global-nav:not(:defined),
+    uhf-search:not(:defined),
+    uhf-mecontrol:not(:defined),
+    uhf-cart:not(:defined),
+    uhf-dropdown:not(:defined),
+    uhf-popout:not(:defined) {
+        visibility: hidden;
+    }
+</style>
+<link rel="stylesheet" href="/__mirror/assets/e4d14f1f8bc83e293e136adc"> <!-- UHF CSS -->
+
+    <script src="/__mirror/assets/fe2fc9b62e744e583f0eb2a4"></script>
+    
+    
+    <link rel="stylesheet" href="/__mirror/assets/f0a2f4bb8e7fd8f995b212dd">
+    <link rel="stylesheet" href="/__mirror/assets/7645384d8723410070241432">
+    
+    <script type="module" src="/__mirror/assets/a0e5b0f304f32fc68c4bf67b"></script>
+    
+    <script src="/__mirror/assets/389caacc8c667b179afc3c37"></script>
+    
+    <style>
+        body {
+            background-color: var(--ds-app-color-base-default-bg-opt1);
+            color: var(--ds-app-color-base-default-fg-body);
+        }
+        /* Eyebrow labels should be uppercase */
+        [slot="heading-block__eyebrow-label"] {
+            text-transform: uppercase;
+        }
+    </style>
+
+    <!-- 1DS script -->
+    
+    
+    <!-- /1DS script -->
+
+    
+</head>
+<body data-windows-version="v2">
+    <!-- UHF Header -->
+    
+<uhf-header locale="en-us" partnerid="MSDev-Community" headerid="MSDev-DEVCOM-Community-Header" theme="light">
+    <a slot="skip-link" class="uhf-skip-link" href="#mainContent" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "SkipToMain", "cN": "Skip to content_nonnav", "ecn": "Skip to content_nonnav", "ehn": "SkipToMain"}'>Skip to main content</a>
+    
+<uhf-brand slot="brand">
+        <a href="https://www.microsoft.com/" class="uhf-microsoft-logo" slot="microsoft-logo" aria-label="Microsoft" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Anchor", "cN": "GlobalNav_Logo_cont", "ecn": "GlobalNav_Logo_cont", "ehn": "Anchor"}'>
+            <img src="/__mirror/assets/adea6dac4ae78fd2b1b9eda9" alt="Microsoft">
+        </a>
+            <a href="/en-us/" class="uhf-site-logo" slot="brand-logo" aria-label="Developer" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Anchor", "cN": "CatNav_Developer_nav", "ecn": "CatNav_Developer_nav", "ehn": "Anchor"}'>
+ <span>Developer</span>             </a>
+</uhf-brand>
+
+
+<uhf-contextual-nav slot="contextual-nav" overflowtext="More" brand="Developer" homeurl="https://developer.microsoft.com/en-us/" hometext="Home" data-nav-label="Contextual menu">
+
+
+
+<uhf-dropdown text="Products" id="" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_nav", "ecn": "CatNav_Products_nav", "ehn": "Products"}'>
+    
+
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://learn.microsoft.com/en-us/dynamics365/get-started/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Dynamics 365_nav", "ecn": "CatNav_Products_Dynamics 365_nav", "ehn": "Products"}'>Dynamics 365</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://github.com/home" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_GitHub_nav", "ecn": "CatNav_Products_GitHub_nav", "ehn": "Products"}'>GitHub</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://developer.microsoft.com/en-us/microsoft-365" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Microsoft 365_nav", "ecn": "CatNav_Products_Microsoft 365_nav", "ehn": "Products"}'>Microsoft 365</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/azure" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Microsoft Azure_nav", "ecn": "CatNav_Products_Microsoft Azure_nav", "ehn": "Products"}'>Microsoft Azure</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://developer.microsoft.com/en-us/microsoft-edge/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Microsoft Edge_nav", "ecn": "CatNav_Products_Microsoft Edge_nav", "ehn": "Products"}'>Microsoft Edge</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://ai.azure.com/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Microsoft Foundry_nav", "ecn": "CatNav_Products_Microsoft Foundry_nav", "ehn": "Products"}'>Microsoft Foundry</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://developer.microsoft.com/en-us/graph" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Microsoft Graph_nav", "ecn": "CatNav_Products_Microsoft Graph_nav", "ehn": "Products"}'>Microsoft Graph</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/identity" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Microsoft Identity Platform_nav", "ecn": "CatNav_Products_Microsoft Identity Platform_nav", "ehn": "Products"}'>Microsoft Identity Platform</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://developer.microsoft.com/en-us/microsoft-teams" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Microsoft Teams_nav", "ecn": "CatNav_Products_Microsoft Teams_nav", "ehn": "Products"}'>Microsoft Teams</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/power-platform" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Power Platform_nav", "ecn": "CatNav_Products_Power Platform_nav", "ehn": "Products"}'>Power Platform</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://visualstudio.microsoft.com/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Visual Studio_nav", "ecn": "CatNav_Products_Visual Studio_nav", "ehn": "Products"}'>Visual Studio</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://code.visualstudio.com/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Visual Studio Code_nav", "ecn": "CatNav_Products_Visual Studio Code_nav", "ehn": "Products"}'>Visual Studio Code</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/windows/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Windows_nav", "ecn": "CatNav_Products_Windows_nav", "ehn": "Products"}'>Windows</a>
+
+
+</uhf-dropdown>
+
+
+<uhf-dropdown text="Languages" id="" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Languages", "cN": "CatNav_Languages_nav", "ecn": "CatNav_Languages_nav", "ehn": "Languages"}'>
+    
+
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://dotnet.microsoft.com/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Languages", "cN": "CatNav_Languages_.NET_nav", "ecn": "CatNav_Languages_.NET_nav", "ehn": "Languages"}'>.NET</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/cpp" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Languages", "cN": "CatNav_Languages_C++_nav", "ecn": "CatNav_Languages_C++_nav", "ehn": "Languages"}'>C++</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/java" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Languages", "cN": "CatNav_Languages_Java_nav", "ecn": "CatNav_Languages_Java_nav", "ehn": "Languages"}'>Java</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/javascript/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Languages", "cN": "CatNav_Languages_JavaScript_nav", "ecn": "CatNav_Languages_JavaScript_nav", "ehn": "Languages"}'>JavaScript</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/python" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Languages", "cN": "CatNav_Languages_Python_nav", "ecn": "CatNav_Languages_Python_nav", "ehn": "Languages"}'>Python</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://www.typescriptlang.org/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Languages", "cN": "CatNav_Languages_TypeScript_nav", "ecn": "CatNav_Languages_TypeScript_nav", "ehn": "Languages"}'>TypeScript</a>
+
+
+</uhf-dropdown>
+
+
+<uhf-dropdown text="Hubs" id="" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Hubs", "cN": "CatNav_Hubs_nav", "ecn": "CatNav_Hubs_nav", "ehn": "Hubs"}'>
+    
+
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/build-apis" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Hubs", "cN": "CatNav_Hubs_Build APIs_nav", "ecn": "CatNav_Hubs_Build APIs_nav", "ehn": "Hubs"}'>Build APIs</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://developer.microsoft.com/en-us/games/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Hubs", "cN": "CatNav_Hubs_Game development_nav", "ecn": "CatNav_Hubs_Game development_nav", "ehn": "Hubs"}'>Game development</a>
+
+
+</uhf-dropdown>
+
+    <a class="uhf-nav-item uhf-nav-link" href="https://developer.microsoft.com/blog" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Blog", "cN": "CatNav_Blog_nav", "ecn": "CatNav_Blog_nav", "ehn": "Blog"}'>Blog</a>
+
+
+    <a class="uhf-nav-item uhf-nav-link" href="/en-us/events" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Events", "cN": "CatNav_Events_nav", "ecn": "CatNav_Events_nav", "ehn": "Events"}'>Events</a>
+
+
+    <a class="uhf-nav-item uhf-nav-link" href="https://learn.microsoft.com/docs/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Documentation", "cN": "CatNav_Documentation_nav", "ecn": "CatNav_Documentation_nav", "ehn": "Documentation"}'>Documentation</a>
+
+
+    <a class="uhf-nav-item uhf-nav-link" href="/en-us/community" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Community", "cN": "CatNav_Community_nav", "ecn": "CatNav_Community_nav", "ehn": "Community"}'>Community</a>
+
+
+    <a class="uhf-nav-item uhf-nav-link" href="/en-us/changelog" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Changelog", "cN": "CatNav_Changelog_nav", "ecn": "CatNav_Changelog_nav", "ehn": "Changelog"}'>Changelog</a>
+</uhf-contextual-nav>    <uhf-actions slot="actions">
+        
+<uhf-global-nav slot="global-nav" text="All Microsoft" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_nonnav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_nonnav", "ehn": "OneMicrosoftBar"}' data-nav-label="All Microsoft menu">
+    
+    <uhf-dropdown-header slot="header">
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/security" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Microsoft Security_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Microsoft Security_nav", "ehn": "OneMicrosoftBar"}'>Microsoft Security</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://azure.microsoft.com/en-us/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Azure_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Azure_nav", "ehn": "OneMicrosoftBar"}'>Azure</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://dynamics.microsoft.com/en-us/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Dynamics 365_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Dynamics 365_nav", "ehn": "OneMicrosoftBar"}'>Dynamics 365</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/microsoft-365/business/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Microsoft 365_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Microsoft 365_nav", "ehn": "OneMicrosoftBar"}'>Microsoft 365</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/microsoft-teams/group-chat-software" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Microsoft Teams_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Microsoft Teams_nav", "ehn": "OneMicrosoftBar"}'>Microsoft Teams</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/windows-365" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Windows 365_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Windows 365_nav", "ehn": "OneMicrosoftBar"}'>Windows 365</a>
+    </uhf-dropdown-header>
+
+        <uhf-dropdown-column title="Tech &amp; innovation" show-tooltip="false" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_nav", "ehn": "OneMicrosoftBar"}'>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/ai?icid=DSM_AllCommercial_AI" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_Microsoft AI_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_More_TechInnovation__AI_nav", "ehn": "OneMicrosoftBar"}'>Microsoft AI</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://azure.microsoft.com/en-us/solutions/space/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_Azure Space_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_More_TechInnovation_AzureSpace_nav", "ehn": "OneMicrosoftBar"}'>Azure Space</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/mixed-reality/windows-mixed-reality" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_Mixed reality_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_More_TechInnovation_MixedReality_nav", "ehn": "OneMicrosoftBar"}'>Mixed reality</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/hololens" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_Microsoft HoloLens_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_More_TechInnovation_MicrosoftHololens_nav", "ehn": "OneMicrosoftBar"}'>Microsoft HoloLens</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/microsoft-viva" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_Microsoft Viva_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_More_TechInnovation_Microsoft Viva_nav", "ehn": "OneMicrosoftBar"}'>Microsoft Viva</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://azure.microsoft.com/en-us/solutions/quantum-computing/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_Quantum computing_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_More_TechInnovation_QuantumComputing_nav", "ehn": "OneMicrosoftBar"}'>Quantum computing</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/corporate-responsibility/sustainability?icid=DSM_AllCommercial_Sustainability" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_Sustainability_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_More_TechInnovation_Sustainability_nav", "ehn": "OneMicrosoftBar"}'>Sustainability</a>
+        </uhf-dropdown-column>
+        <uhf-dropdown-column title="Industries" show-tooltip="false" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_nav", "ehn": "OneMicrosoftBar"}'>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/education" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_Education_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_More_Industries_Education_nav", "ehn": "OneMicrosoftBar"}'>Education</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/industry/automotive" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_Automotive_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_More_Industries_Automotive_nav", "ehn": "OneMicrosoftBar"}'>Automotive</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/industry/financial-services/banking" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_Financial services_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_More_Industries_Financialservices_nav", "ehn": "OneMicrosoftBar"}'>Financial services</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/industry/government" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_Government_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_More_Industries_Government_nav", "ehn": "OneMicrosoftBar"}'>Government</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/industry/health/microsoft-cloud-for-healthcare" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_Healthcare_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_More_Industries_Health_nav", "ehn": "OneMicrosoftBar"}'>Healthcare</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/industry/manufacturing/microsoft-cloud-for-manufacturing" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_Manufacturing_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_More_Industries_Manufacturing_nav", "ehn": "OneMicrosoftBar"}'>Manufacturing</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/industry/consumer-goods" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_Retail_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_More_Industries_Retail_nav", "ehn": "OneMicrosoftBar"}'>Retail</a>
+        </uhf-dropdown-column>
+        <uhf-dropdown-column title="Partners" show-tooltip="false" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_nav", "ehn": "OneMicrosoftBar"}'>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://partner.microsoft.com/en-US/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_Find a partner_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_More_Partner_FindPartner_nav", "ehn": "OneMicrosoftBar"}'>Find a partner</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://partner.microsoft.com/en-US/membership/cloud-solution-provider" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_Become a partner_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_More_Partner_BecomePartner_nav", "ehn": "OneMicrosoftBar"}'>Become a partner</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://partner.microsoft.com/en-us/membership" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_Partner Network_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_More_Partner_PartnerNetwork_nav", "ehn": "OneMicrosoftBar"}'>Partner Network</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://marketplace.microsoft.com/?icid=DSM_AllCommercial_Marketplace" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_Microsoft Marketplace_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_More_Partner_Marketplace_nav", "ehn": "OneMicrosoftBar"}'>Microsoft Marketplace</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/software-development-companies?icid=DSM_AllCommercial_SoftwareCompanies" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_Software companies_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_Software companies_nav", "ehn": "OneMicrosoftBar"}'>Software companies</a>
+        </uhf-dropdown-column>
+        <uhf-dropdown-column title="Resources" show-tooltip="false" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_nav", "ehn": "OneMicrosoftBar"}'>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://blogs.microsoft.com/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_Blog_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_More_Resources_Blog_nav", "ehn": "OneMicrosoftBar"}'>Blog</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://about.ads.microsoft.com/en-us?s_cid=dig-src_uhfcomm" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_Microsoft Advertising_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_More_Resources_MicrosoftAdvertising_nav", "ehn": "OneMicrosoftBar"}'>Microsoft Advertising</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_Developer Center_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_More_Resources_DeveloperCenter_nav", "ehn": "OneMicrosoftBar"}'>Developer Center</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://learn.microsoft.com/docs/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_Documentation_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_More_Resources_Documentation_nav", "ehn": "OneMicrosoftBar"}'>Documentation</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/events" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_Events_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_More_Resources_Events_nav", "ehn": "OneMicrosoftBar"}'>Events</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/licensing/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_Licensing_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_More_Resources_Licensing_nav", "ehn": "OneMicrosoftBar"}'>Licensing</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://learn.microsoft.com/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_Microsoft Learn_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_More_Resources_MicrosoftLearn_nav", "ehn": "OneMicrosoftBar"}'>Microsoft Learn</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/research/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_Microsoft Research_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_More_Resources_MicrosoftResearch_nav", "ehn": "OneMicrosoftBar"}'>Microsoft Research</a>
+        </uhf-dropdown-column>
+
+    <uhf-dropdown-footer slot="footer">
+        <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/sitemap" data-m="">View Sitemap</a>
+    </uhf-dropdown-footer>
+
+</uhf-global-nav>
+
+
+            <uhf-search slot="search" placeholder="Search or ask a question" search-label="Search" cancel-label="Cancel" suggestions-available-text="{0} suggestions available" searchurl="https://www.microsoft.com/en-us/search/explore" autosuggesturl="https://www.microsoft.com/msstoreapiprod/api/autosuggest" queryparametername="q" clientid="7F27B536-CF6B-4C65-8638-A0F8CBDFCA65" productcount="1,5,5" source="Iris-Products,DCatAll-Products,Microsoft-Terms">
+            </uhf-search>
+    </uhf-actions>
+</uhf-header>
+
+<reimagine-secondary-nav configuration="navigation" hide-divider label="Windows Dev Center navigation" data-nav-type="secondary-uhf">
+    <a href="/en-us/windows" slot="secondary-nav__label" data-bi-an="secondary-uhf-nav" data-bi-id="windows-dev-center" data-bi-ct="nav">Windows Dev Center</a>
+        <reimagine-secondary-nav-item href="/en-us/windows/apps/build-a-windows-app" configuration="navigation" data-bi-an="secondary-uhf-nav" data-bi-id="build-apps" data-bi-ct="nav">Build Windows apps</reimagine-secondary-nav-item>
+        <reimagine-secondary-nav-item href="/en-us/windows/dev-tools" configuration="navigation" data-bi-an="secondary-uhf-nav" data-bi-id="dev-box" data-bi-ct="nav">Get developer tools</reimagine-secondary-nav-item>
+        <reimagine-secondary-nav-item href="/en-us/windows/local-ai" configuration="navigation" data-bi-an="secondary-uhf-nav" data-bi-id="local-ai" data-bi-ct="nav">Code with AI</reimagine-secondary-nav-item>
+        <reimagine-secondary-nav-item href="/en-us/windows/agentic" configuration="navigation" data-bi-an="secondary-uhf-nav" data-bi-id="agent-platform" data-bi-ct="nav">Run agents locally</reimagine-secondary-nav-item>
+    <reimagine-button-group slot="secondary-nav__button-group">
+            <reimagine-button size="small" appearance="button--secondary" shape="rounded" href="/en-us/windows/support" target="_self" data-bi-an="secondary-uhf-nav" data-bi-id="support" data-bi-ct="button">
+                <span slot="button__text">Support</span>
+            </reimagine-button>
+            <reimagine-button size="small" appearance="button--primary" shape="rounded" href="https://partner.microsoft.com/dashboard" target="_blank" rel="noopener noreferrer" data-bi-an="secondary-uhf-nav" data-bi-id="partner-center" data-bi-ct="button">
+                <span slot="button__text">Partner Center</span>
+            </reimagine-button>
+    </reimagine-button-group>
+</reimagine-secondary-nav>
+
+    <div class="site-banners">
+
+
+
+
+<style>
+    /* Purple announcement banner styling to match original design */
+    #announcement-banner-windows-hybrid-intelligence {
+        --ds-fill-color-override: #6761D9;
+        --ds-text-color-override: #FFFFFF;
+        --ds-button-ghost-color: #FFFFFF;
+    }
+    
+    :root[data-theme="dark"] #announcement-banner-windows-hybrid-intelligence {
+        --ds-fill-color-override: #514AC9;
+    }
+    
+    #announcement-banner-windows-hybrid-intelligence [slot="announcement__label"],
+    #announcement-banner-windows-hybrid-intelligence [slot="announcement__link"] {
+        color: #FFFFFF;
+    }
+    
+    #announcement-banner-windows-hybrid-intelligence reimagine-link {
+        --ds-link-color: #FFFFFF;
+        --ds-link-outline: 0.1875rem dotted #FFFFFF;
+    }
+    
+    /* White outline around badge icon */
+    #announcement-banner-windows-hybrid-intelligence [slot="announcement__badge"] {
+        border: 1px solid #FFFFFF;
+        border-radius: var(--root-radii-s, 0.5rem);
+        box-sizing: content-box;
+    }
+</style>
+
+<reimagine-announcement id="announcement-banner-windows-hybrid-intelligence" class="d-none" data-identifier="windows-hybrid-intelligence" role="alert" aria-label="Building Windows for hybrid intelligence announcement" close-label="Close announcement" sr-close-text="Announcement closed" data-bi-an="top-banner">
+    
+    <img slot="announcement__badge" src="/__mirror/assets/3e387745acc96f18d8365e8a" alt="">
+
+    <p slot="announcement__label">Building Windows for hybrid intelligence – Run agents locally or in the cloud, with enterprise-grade security and manageability.</p>
+    
+    <reimagine-link slot="announcement__link" href="https://aka.ms/WindowsEraofAI" target="_blank" data-bi-an="top-banner" data-bi-id="windows-hybrid-intelligence">
+        <span slot="link__text">Read more</span>
+    </reimagine-link>
+</reimagine-announcement>
+    </div>
+
+    <div id="mainContent" role="main">
+        
+
+<div id="windows-wsl-page">
+    <section id="hero"><reimagine-hero-featured header-layout-configuration="2-col-even" media-orientation="mobile-stack" density="compact" breadth="compact"><reimagine-media slot="ui-shell-media" aspect-ratio="21-9" overlay="gradient"><picture slot="media__asset"><source srcset="/__mirror/assets/7a1aa310de6851fcfe6e4ec7" media="none and (prefers-color-scheme: dark)"></source><source srcset="/__mirror/assets/64d91294c790b46d98b30ad3" media="none and (prefers-color-scheme: light)"></source><img src="/__mirror/assets/64d91294c790b46d98b30ad3" alt></picture></reimagine-media>
+        
+        <reimagine-layout-column slot="ui-shell-header"><reimagine-heading-block size="m"><h1 slot="heading-block__heading-text">Windows Subsystem for Linux</h1>
+                <p slot="heading-block__content-text">Use Linux distributions, tools, and workflows directly on Windows, without managing a traditional virtual machine or dual-boot setup.</p></reimagine-heading-block></reimagine-layout-column></reimagine-hero-featured></section>
+
+<section id="why-wsl" aria-label="When WSL is the right choice"><reimagine-base-ui-shell breadth="compact"><div slot="ui-shell-header"><reimagine-heading-block size="m"><span slot="heading-block__eyebrow-label">Why WSL</span>
+                <span slot="heading-block__heading-text" role="heading" aria-level="2">Linux tooling, on the machine you already use</span>
+                <span slot="heading-block__content-text">WSL runs Linux applications, utilities, and Bash tools directly on Windows. Compare it with virtual machines, remote environments, and containers to choose the right setup for your work.</span></reimagine-heading-block></div>
+        <reimagine-container><reimagine-layout configuration="3-col-even"><reimagine-layout-column><reimagine-card-feature><reimagine-media slot="card-feature__media" aspect-ratio="16-9" object-fit="cover"><picture slot="media__asset"><source srcset="/__mirror/assets/9ae7d9a554f3ec7a515825fd" media="none and (prefers-color-scheme: dark)">
+                                <source srcset="/__mirror/assets/3ba2b859117b89f90d0b7c1b" media="none and (prefers-color-scheme: light)">
+                                <img src="/__mirror/assets/3ba2b859117b89f90d0b7c1b" alt loading="lazy"></source></source></picture></reimagine-media>
+                        <reimagine-text-block slot="card-feature__content-body" configuration="stacked" size="2xs"><span slot="text-block__eyebrow-label">Instead of a VM or dual boot</span>
+                            <span slot="text-block__heading" role="heading" aria-level="3">Both systems, at the same time</span>
+                            <span slot="text-block__content">Run Linux beside Windows and share files without rebooting. Choose a full VM when you need strict isolation, another kernel, or an exact production image.</span></reimagine-text-block></reimagine-card-feature></reimagine-layout-column>
+                <reimagine-layout-column><reimagine-card-feature><reimagine-media slot="card-feature__media" aspect-ratio="16-9" object-fit="cover"><picture slot="media__asset"><source srcset="/__mirror/assets/f2d730bbe158fbac1e6944d9" media="none and (prefers-color-scheme: dark)">
+                                <source srcset="/__mirror/assets/3474b77b1293c77456775057" media="none and (prefers-color-scheme: light)">
+                                <img src="/__mirror/assets/3474b77b1293c77456775057" alt loading="lazy"></source></source></picture></reimagine-media>
+                        <reimagine-text-block slot="card-feature__content-body" configuration="stacked" size="2xs"><span slot="text-block__eyebrow-label">Instead of a remote Linux box</span>
+                            <span slot="text-block__heading" role="heading" aria-level="3">Your code stays local</span>
+                            <span slot="text-block__content">Keep builds, debugging, and files on your machine, even offline. Choose a remote environment when you need more compute or specialized hardware.</span></reimagine-text-block></reimagine-card-feature></reimagine-layout-column>
+                <reimagine-layout-column><reimagine-card-feature><reimagine-media slot="card-feature__media" aspect-ratio="16-9" object-fit="cover"><picture slot="media__asset"><source srcset="/__mirror/assets/3ce6b2c8c26ea50382a60526" media="none and (prefers-color-scheme: dark)">
+                                <source srcset="/__mirror/assets/a729f2ee41227ac354fef158" media="none and (prefers-color-scheme: light)">
+                                <img src="/__mirror/assets/a729f2ee41227ac354fef158" alt loading="lazy"></source></source></picture></reimagine-media>
+                        <reimagine-text-block slot="card-feature__content-body" configuration="stacked" size="2xs"><span slot="text-block__eyebrow-label">Alongside containers</span>
+                            <span slot="text-block__heading" role="heading" aria-level="3">Build with WSL and containers</span>
+                            <span slot="text-block__content">Use WSL as your development environment and its new WSL container feature to have a powerful local Linux development environment.</span></reimagine-text-block></reimagine-card-feature></reimagine-layout-column></reimagine-layout></reimagine-container></reimagine-base-ui-shell></section>
+
+<section id="what-you-do" aria-label="Working with WSL"><reimagine-base-ui-shell breadth="comfortable"><div slot="ui-shell-header"><reimagine-heading-block size="s"><h2 slot="heading-block__heading-text">What working with WSL looks like</h2></reimagine-heading-block></div>
+        <reimagine-container><reimagine-layout configuration="3-col-even"><reimagine-layout-column><reimagine-card-badge text-block-configuration="stacked"><reimagine-text-block size="2xs"><h3 slot="text-block__heading">Set up WSL</h3>
+                            <p slot="text-block__content">Install WSL and a Linux distribution with one command. Create your Linux username and password on first launch, and add distributions later.</p></reimagine-text-block></reimagine-card-badge></reimagine-layout-column>
+                <reimagine-layout-column><reimagine-card-badge text-block-configuration="stacked"><reimagine-text-block size="2xs"><h3 slot="text-block__heading">Use your development tools</h3>
+                            <p slot="text-block__content">Keep Visual Studio Code and Windows Terminal on Windows while your toolchain and debugger run in Linux. Use the same environment with Git and Docker Desktop.</p></reimagine-text-block></reimagine-card-badge></reimagine-layout-column>
+                <reimagine-layout-column><reimagine-card-badge text-block-configuration="stacked"><reimagine-text-block size="2xs"><h3 slot="text-block__heading">Manage WSL for teams</h3>
+                            <p slot="text-block__content">Configure resource, network, and firewall settings, and apply organization policies to help teams maintain consistent development environments.</p></reimagine-text-block></reimagine-card-badge></reimagine-layout-column></reimagine-layout></reimagine-container></reimagine-base-ui-shell></section>
+
+<section id="containers" aria-label="Linux containers with WSL"><reimagine-base-ui-shell breadth="compact"><reimagine-media slot="ui-shell-media"><picture slot="media__asset"><source srcset="/__mirror/assets/da9cdee21b7c7a91a8c14b15" media="none and (prefers-color-scheme: dark)">
+                <source srcset="/__mirror/assets/cba4ba77b248b1e05d034af2" media="none and (prefers-color-scheme: light)">
+                <img src="/__mirror/assets/cba4ba77b248b1e05d034af2" alt loading="lazy"></source></source></picture></reimagine-media>
+        <div slot="ui-shell-header"><reimagine-heading-block size="m"><span slot="heading-block__eyebrow-label">WSL container</span>
+                <span slot="heading-block__heading-text" role="heading" aria-level="2">Linux containers, built right into Windows</span>
+                <span slot="heading-block__content-text">WSL containers add a Linux container CLI and an API to Windows, so you can build, run, and manage Linux containers without installing a separate container engine.</span></reimagine-heading-block></div>
+        <reimagine-container><reimagine-card-split media-last surface="glass"><reimagine-text-block slot="header" size="s"><span slot="text-block__eyebrow-label">Generally available</span>
+                    <span slot="text-block__heading" role="heading" aria-level="3">Run your first container</span></reimagine-text-block>
+                <span slot="body-primary">Run wsl --update to get the wslc command, then start a container with `wslc.exe` using the same syntax you're used to, for example wslc run --rm -it ubuntu:latest bash.</span>
+                <span slot="body-secondary">Containers get GPU access for CUDA and other accelerated workloads, and Visual Studio Code dev containers can use wslc as their container driver by setting the Docker Path setting to wslc.</span>
+                <reimagine-button-group slot="content-bottom"><reimagine-button href="https://aka.ms/wslc" appearance="button--primary" shape="rounded" size="medium" target="_blank" rel="noopener noreferrer" button-label="Read the WSL containers documentation" data-bi-an="wsl-containers" data-bi-id="wslc-docs" data-bi-ct="button"><span slot="button__text">Get started with WSL containers</span></reimagine-button>
+                    <reimagine-link href="https://www.youtube.com/watch?v=i0M13ZvL04M" target="_blank" rel="noopener noreferrer" link-label="Watch the WSL containers session from Microsoft Build 2026" data-bi-an="wsl-containers" data-bi-id="build-2026-session" data-bi-ct="link"><span slot="link__text">Watch the Build 2026 session</span></reimagine-link></reimagine-button-group>
+                <reimagine-media slot="media" aspect-ratio="16-9" object-fit="contain"><img slot="media__asset" src="/__mirror/assets/8570de65ae07ab74a08cd68d" alt width="912" height="513" loading="lazy"></reimagine-media></reimagine-card-split></reimagine-container></reimagine-base-ui-shell></section>
+
+<section id="containers-capabilities" aria-label="What WSL containers include"><reimagine-base-ui-shell breadth="comfortable"><reimagine-container><reimagine-layout configuration="3-col-even"><reimagine-layout-column><reimagine-card-badge text-block-configuration="stacked"><reimagine-text-block size="2xs"><span slot="text-block__eyebrow-label">Command line</span>
+                            <h3 slot="text-block__heading">A container CLI in the box</h3>
+                            <p slot="text-block__content">Use wslc to run, build, debug, and test Linux containers. This release adds container restart, file copy in and out, system info, network attach and detach, healthchecks, a configurable stop timeout, a configurable storage path, and an event stream.</p></reimagine-text-block>
+                        <reimagine-link slot="card-badge__footer-bottom" href="https://learn.microsoft.com/windows/wsl/wsl-container" target="_blank" rel="noopener noreferrer" link-label="Read the WSL container documentation on Microsoft Learn" data-bi-an="wsl-containers" data-bi-id="wslc-cli-docs" data-bi-ct="link"><span slot="link__text">Read the CLI documentation</span></reimagine-link></reimagine-card-badge></reimagine-layout-column>
+                <reimagine-layout-column><reimagine-card-badge text-block-configuration="stacked"><reimagine-text-block size="2xs"><span slot="text-block__eyebrow-label">For your app</span>
+                            <h3 slot="text-block__heading">Call containers from Windows code</h3>
+                            <p slot="text-block__content">A NuGet package brings container support to C, C++, and C# applications, so a Windows app can run Linux code as part of its own logic. The API integrates with MSBuild and CMake, so container build and deploy steps become part of your normal build.</p></reimagine-text-block>
+                        <reimagine-link slot="card-badge__footer-bottom" href="https://wsl.dev/api-reference/" target="_blank" rel="noopener noreferrer" link-label="Read the WSL container API reference" data-bi-an="wsl-containers" data-bi-id="wslc-api-reference" data-bi-ct="link"><span slot="link__text">Read the API reference</span></reimagine-link></reimagine-card-badge></reimagine-layout-column>
+                <reimagine-layout-column><reimagine-card-badge text-block-configuration="stacked"><reimagine-text-block size="2xs"><span slot="text-block__eyebrow-label">For your organization</span>
+                            <h3 slot="text-block__heading">Managed and monitored</h3>
+                            <p slot="text-block__content">The Microsoft Defender for Endpoint plugin reports container activity alongside your existing Windows signals. Administrators can allow or block container access and set a registry allowlist, so only approved images can be pulled.</p></reimagine-text-block>
+                        <reimagine-link slot="card-badge__footer-bottom" href="https://learn.microsoft.com/windows/wsl/enterprise" target="_blank" rel="noopener noreferrer" link-label="Set up WSL for your enterprise, documentation on Microsoft Learn" data-bi-an="wsl-containers" data-bi-id="wslc-enterprise-docs" data-bi-ct="link"><span slot="link__text">Read the enterprise guidance</span></reimagine-link></reimagine-card-badge></reimagine-layout-column></reimagine-layout></reimagine-container></reimagine-base-ui-shell></section>
+
+<section id="containers-platform" aria-label="Platform improvements and planned work"><reimagine-base-ui-shell breadth="comfortable"><reimagine-container><reimagine-layout configuration="2-col-even"><reimagine-layout-column><reimagine-card-badge text-block-configuration="stacked"><reimagine-text-block size="2xs"><span slot="text-block__eyebrow-label">Under the hood</span>
+                            <h3 slot="text-block__heading">Faster files and better networking</h3>
+                            <p slot="text-block__content">WSL containers use the virtiofs file system, which Microsoft measures as twice as fast for Windows file access, and a networking mode called consomme that relays Linux traffic through Windows so containers inherit your existing network and security configuration. Memory is also returned to Windows more steadily when a container is idle.</p></reimagine-text-block></reimagine-card-badge></reimagine-layout-column>
+                <reimagine-layout-column><reimagine-card-badge text-block-configuration="stacked"><reimagine-text-block size="2xs"><span slot="text-block__eyebrow-label">Planned</span>
+                            <h3 slot="text-block__heading">Multi-container workflows are next</h3>
+                            <p slot="text-block__content">Support for running your existing compose files is the most requested feature and the current focus of the team. Work also continues on the WSL fundamentals underneath, which benefits WSL distributions and other container tools built on WSL.</p></reimagine-text-block>
+                        <reimagine-link slot="card-badge__footer-bottom" href="https://github.com/microsoft/WSL/issues" target="_blank" rel="noopener noreferrer" link-label="File issues and upvote feature requests in the WSL repository on GitHub" data-bi-an="wsl-containers" data-bi-id="wslc-feedback" data-bi-ct="link"><span slot="link__text">Request and upvote features</span></reimagine-link></reimagine-card-badge></reimagine-layout-column></reimagine-layout></reimagine-container></reimagine-base-ui-shell></section>
+
+
+<section id="start" aria-label="Install WSL"><reimagine-base-ui-shell breadth="compact"><reimagine-media slot="ui-shell-media"><picture slot="media__asset"><source srcset="/__mirror/assets/6e884f239096bf48dbfa4257" media="none and (prefers-color-scheme: dark)">
+                <source srcset="/__mirror/assets/9e79237d45198c1336ebb113" media="none and (prefers-color-scheme: light)">
+                <img src="/__mirror/assets/9e79237d45198c1336ebb113" alt loading="lazy"></source></source></picture></reimagine-media>
+        <reimagine-container><reimagine-card-split media-last surface="glass"><reimagine-text-block slot="header" size="s"><span slot="text-block__eyebrow-label">Get started</span>
+                    <span slot="text-block__heading" role="heading" aria-level="2">Install WSL with one command</span></reimagine-text-block>
+                <span slot="body-primary">On Windows 11, or Windows 10 version 2004 and higher (build 19041 and higher), open PowerShell as administrator and run wsl --install, then restart your machine. That enables the features WSL needs and installs Ubuntu, the default distribution. To pick a different one, run wsl --list --online to see what is available, then wsl --install -d followed by the distribution name.</span>
+                <span slot="body-secondary">Want guided help? Connect your AI assistant to the Microsoft Learn MCP server. It can explain each step and suggest commands based on current Microsoft documentation. Review and run each command yourself. This can help if you are new to Linux tooling or an installation does not go as planned.</span>
+                <reimagine-button-group slot="content-bottom"><reimagine-button href="https://learn.microsoft.com/windows/wsl/install" appearance="button--primary" shape="rounded" size="medium" target="_blank" rel="noopener noreferrer" button-label="Open the official WSL installation guide on Microsoft Learn" data-bi-an="wsl-start" data-bi-id="install-wsl" data-bi-ct="button"><span slot="button__text">Install WSL</span></reimagine-button>
+                    <reimagine-link href="https://learn.microsoft.com/training/support/mcp" target="_blank" rel="noopener noreferrer" link-label="Set up the Microsoft Learn MCP server for documentation-grounded answers" data-bi-an="wsl-start" data-bi-id="learn-mcp-server" data-bi-ct="link"><span slot="link__text">Set up the Microsoft Learn MCP server</span></reimagine-link></reimagine-button-group>
+                <reimagine-media slot="media" aspect-ratio="16-9" object-fit="contain"><picture slot="media__asset"><source srcset="/__mirror/assets/f9d8b2cce505f1e7fd03057c" media="none and (prefers-color-scheme: dark)">
+                        <img src="/__mirror/assets/3f63b44ccf00a851836fafc2" alt width="912" height="513" loading="lazy"></source></picture></reimagine-media></reimagine-card-split></reimagine-container></reimagine-base-ui-shell></section>
+
+<section id="more-resources" aria-label="More WSL resources"><reimagine-utility-link-list configuration="3-col-even" breadth="relaxed" background="app-color-base-special-bg-opt1-left" theme="dark"><div slot="ui-shell-header"><reimagine-heading-block size="s"><span slot="heading-block__eyebrow-label">Keep going</span>
+                <h2 slot="heading-block__heading-text">Documentation, tooling, and releases</h2></reimagine-heading-block></div>
+        <reimagine-layout-column><reimagine-link-list><h3 slot="title">Learn and set up</h3>
+                <li slot="link"><reimagine-link href="https://learn.microsoft.com/windows/wsl/" target="_blank" rel="noopener noreferrer" link-label="Windows Subsystem for Linux documentation on Microsoft Learn" data-bi-an="wsl-resources" data-bi-id="wsl-docs" data-bi-ct="link"><span slot="link__text">WSL documentation</span></reimagine-link></li>
+                <li slot="link"><reimagine-link href="https://learn.microsoft.com/windows/wsl/install" target="_blank" rel="noopener noreferrer" link-label="How to install WSL, documentation on Microsoft Learn" data-bi-an="wsl-resources" data-bi-id="wsl-install-docs" data-bi-ct="link"><span slot="link__text">Install WSL</span></reimagine-link></li>
+                <li slot="link"><reimagine-link href="https://learn.microsoft.com/windows/wsl/setup/environment" target="_blank" rel="noopener noreferrer" link-label="Best practices for setting up a WSL development environment on Microsoft Learn" data-bi-an="wsl-resources" data-bi-id="wsl-environment-best-practices" data-bi-ct="link"><span slot="link__text">Set up a WSL development environment</span></reimagine-link></li>
+                <li slot="link"><reimagine-link href="https://learn.microsoft.com/windows/wsl/basic-commands" target="_blank" rel="noopener noreferrer" link-label="Basic WSL commands reference on Microsoft Learn" data-bi-an="wsl-resources" data-bi-id="wsl-basic-commands" data-bi-ct="link"><span slot="link__text">Basic WSL commands</span></reimagine-link></li></reimagine-link-list></reimagine-layout-column>
+        <reimagine-layout-column><reimagine-link-list><h3 slot="title">Tools and advanced workflows</h3>
+                <li slot="link"><reimagine-link href="https://code.visualstudio.com/docs/remote/wsl" target="_blank" rel="noopener noreferrer" link-label="Developing in WSL with Visual Studio Code" data-bi-an="wsl-resources" data-bi-id="vscode-wsl" data-bi-ct="link"><span slot="link__text">Develop in WSL with VS Code</span></reimagine-link></li>
+                <li slot="link"><reimagine-link href="https://learn.microsoft.com/windows/wsl/wsl-container" target="_blank" rel="noopener noreferrer" link-label="WSL container documentation on Microsoft Learn" data-bi-an="wsl-resources" data-bi-id="wsl-container-docs" data-bi-ct="link"><span slot="link__text">Run Linux containers with WSL</span></reimagine-link></li>
+                <li slot="link"><reimagine-link href="https://learn.microsoft.com/windows/wsl/tutorials/wsl-containers" target="_blank" rel="noopener noreferrer" link-label="Get started with Docker containers on WSL, tutorial on Microsoft Learn" data-bi-an="wsl-resources" data-bi-id="wsl-containers-tutorial" data-bi-ct="link"><span slot="link__text">Run Docker containers on WSL</span></reimagine-link></li>
+                <li slot="link"><reimagine-link href="https://learn.microsoft.com/windows/wsl/tutorials/gpu-compute" target="_blank" rel="noopener noreferrer" link-label="GPU-accelerated machine learning training in WSL on Microsoft Learn" data-bi-an="wsl-resources" data-bi-id="wsl-gpu-compute" data-bi-ct="link"><span slot="link__text">GPU-accelerated workloads</span></reimagine-link></li>
+                <li slot="link"><reimagine-link href="https://learn.microsoft.com/windows/wsl/wsl-config" target="_blank" rel="noopener noreferrer" link-label="Advanced settings configuration in WSL on Microsoft Learn" data-bi-an="wsl-resources" data-bi-id="wsl-config" data-bi-ct="link"><span slot="link__text">Advanced settings configuration</span></reimagine-link></li></reimagine-link-list></reimagine-layout-column>
+        <reimagine-layout-column><reimagine-link-list><h3 slot="title">Enterprise, open source, and releases</h3>
+                <li slot="link"><reimagine-link href="https://learn.microsoft.com/windows/wsl/enterprise" target="_blank" rel="noopener noreferrer" link-label="Set up WSL for your enterprise, documentation on Microsoft Learn" data-bi-an="wsl-resources" data-bi-id="wsl-enterprise" data-bi-ct="link"><span slot="link__text">WSL for your enterprise</span></reimagine-link></li>
+                <li slot="link"><reimagine-link href="https://github.com/microsoft/WSL" target="_blank" rel="noopener noreferrer" link-label="The WSL open source repository on GitHub" data-bi-an="wsl-resources" data-bi-id="wsl-github" data-bi-ct="link"><span slot="link__text">WSL on GitHub</span></reimagine-link></li>
+                <li slot="link"><reimagine-link href="https://github.com/mhackermsft/wslcontainerdesktop" target="_blank" rel="noopener noreferrer" link-label="WSL Container Desktop, a community project on GitHub" data-bi-an="wsl-resources" data-bi-id="wsl-container-desktop" data-bi-ct="link"><span slot="link__text">WSL Container Desktop (community)</span></reimagine-link></li>
+                <li slot="link"><reimagine-link href="https://github.com/microsoft/WSL/releases" target="_blank" rel="noopener noreferrer" link-label="WSL release notes on GitHub" data-bi-an="wsl-resources" data-bi-id="wsl-releases" data-bi-ct="link"><span slot="link__text">WSL releases</span></reimagine-link></li>
+                <li slot="link"><reimagine-link href="https://learn.microsoft.com/windows/wsl/faq" target="_blank" rel="noopener noreferrer" link-label="Frequently asked questions about WSL on Microsoft Learn" data-bi-an="wsl-resources" data-bi-id="wsl-faq" data-bi-ct="link"><span slot="link__text">WSL FAQ</span></reimagine-link></li></reimagine-link-list></reimagine-layout-column></reimagine-utility-link-list></section>
+</div>
+
+    </div>
+
+<section class="windows-developer-social" aria-labelledby="windows-developer-social-heading">
+    <div class="windows-developer-social__inner">
+        <h2 id="windows-developer-social-heading" class="windows-developer-social__heading">
+            Follow Windows Developer
+        </h2>
+        <ul class="windows-developer-social__list">
+            <li>
+                <a class="windows-developer-social__link" href="https://x.com/windowsdev" target="_blank" rel="noopener noreferrer" aria-label="Follow Windows Developer on X" data-bi-an="windows-social" data-bi-id="x" data-bi-ct="link">
+                    <svg viewbox="0 0 1200 1227" aria-hidden="true" focusable="false">
+                        <path d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.137 519.284H714.163ZM569.165 687.828L521.697 619.934L144.011 79.6944H306.615L611.412 515.685L658.88 583.579L1055.08 1150.3H892.476L569.165 687.854V687.828Z"></path>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a class="windows-developer-social__link" href="https://www.instagram.com/windowsdeveloper/" target="_blank" rel="noopener noreferrer" aria-label="Follow Windows Developer on Instagram" data-bi-an="windows-social" data-bi-id="instagram" data-bi-ct="link">
+                    <svg viewbox="0 0 16 16" aria-hidden="true" focusable="false">
+                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a class="windows-developer-social__link" href="https://www.facebook.com/windowsdeveloper/" target="_blank" rel="noopener noreferrer" aria-label="Follow Windows Developer on Facebook" data-bi-an="windows-social" data-bi-id="facebook" data-bi-ct="link">
+                    <svg viewbox="0 0 32 33" aria-hidden="true" focusable="false">
+                        <path d="M28.455 2.49805H3.54623C3.13636 2.49821 2.74332 2.66111 2.4535 2.95093C2.16367 3.24076 2.00078 3.6338 2.00061 4.04367V28.9524C2.00078 29.3623 2.16367 29.7553 2.4535 30.0452C2.74332 30.335 3.13636 30.4979 3.54623 30.498H16.0006V19.498H12.6537V15.498H16.0006V12.3105C16.0006 8.69429 18.5087 6.72555 21.7394 6.72555C23.285 6.72555 24.9475 6.8418 25.3337 6.89305V10.6699H22.76C21.0025 10.6699 20.6675 11.5012 20.6675 12.7262V15.498H24.855L24.3081 19.498H20.6675V30.498H28.455C28.8648 30.4979 29.2579 30.335 29.5477 30.0452C29.8375 29.7553 30.0004 29.3623 30.0006 28.9524V4.04367C30.0004 3.6338 29.8375 3.24076 29.5477 2.95093C29.2579 2.66111 28.8648 2.49821 28.455 2.49805Z"></path>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a class="windows-developer-social__link" href="https://www.linkedin.com/company/windows-developer" target="_blank" rel="noopener noreferrer" aria-label="Follow Windows Developer on LinkedIn" data-bi-an="windows-social" data-bi-id="linkedin" data-bi-ct="link">
+                    <svg viewbox="0 0 16 16" aria-hidden="true" focusable="false">
+                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"></path>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+    <!-- Theme picker / UHF Footer -->
+    <div class="mx-0 px-0 overflow-hidden uhf-footer-wrapper">
+        
+<div class="uhf11-footer-container">
+    <button type="button" class="uhf11-btn-theme" id="theme-toggle" aria-label="Change page theme" aria-pressed="false" data-bi-an="uhf-footer" data-bi-id="theme-toggle" data-bi-ct="button">
+        <svg xmlns="http://www.w3.org/2000/svg" style="margin-right:10px" width="24" height="24" fill="currentColor" class="bi bi-brightness-high" viewbox="0 0 16 16" aria-hidden="true">
+            <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"></path>
+        </svg><span>Theme</span>
+    </button>
+    
+<uhf-footer locale="en-us" partnerid="MSDev-Community" footerid="MSDev-DEVCOM-Community-Footer" theme="light">
+    <script id="uhf-footer-ccpa">
+        (function () {
+            function checkThirdPartyAdsOptOutCookie() {
+                try {
+                    var match = document.cookie.match('(^|;)\\s*3PAdsOptOut\\s*=\\s*([^;]+)');
+                    return (match ? match[2] : '') !== '1';
+                } catch (e) {
+                    return true;
+                }
+            }
+            var globalPrivacyControlEnabled = navigator.globalPrivacyControl;
+            window.GPC_DataSharingOptIn = globalPrivacyControlEnabled ? false : checkThirdPartyAdsOptOutCookie();
+            if (typeof window.onGPCLoaded === 'function') {
+                window.onGPCLoaded();
+            }
+        })();
+    </script>
+    
+<uhf-footer-nav slot="uhf-footer-nav">
+</uhf-footer-nav>
+        <a slot="uhf-footer-locale-picker" class="uhf-footer-link" href="/en-us/_devcom/locale" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_English (United States)_nav","ecn":"LegalNav_LocalePicker_nav","ehn":"LegalNav"}' aria-label="Content Language Selector. Currently set to English (United States)">English (United States)</a>
+    <div slot="uhf-footer-california-privacy-link">
+        
+<a class="uhf-footer-link" href="https://aka.ms/yourcaliforniaprivacychoices" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_California Privacy_nav","ecn":"LegalNav_CaliforniaPrivacy_nav","ehn":"LegalNav"}'>
+    <svg role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 14" xml:space="preserve" height="16" width="43">
+    <title>Your Privacy Choices Opt-Out Icon</title>
+    <path d="M7.4 12.8h6.8l3.1-11.6H7.4C4.2 1.2 1.6 3.8 1.6 7s2.6 5.8 5.8 5.8z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#fff"></path>
+    <path d="M22.6 0H7.4c-3.9 0-7 3.1-7 7s3.1 7 7 7h15.2c3.9 0 7-3.1 7-7s-3.2-7-7-7zm-21 7c0-3.2 2.6-5.8 5.8-5.8h9.9l-3.1 11.6H7.4c-3.2 0-5.8-2.6-5.8-5.8z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#06f"></path>
+    <path d="M24.6 4c.2.2.2.6 0 .8L22.5 7l2.2 2.2c.2.2.2.6 0 .8-.2.2-.6.2-.8 0l-2.2-2.2-2.2 2.2c-.2.2-.6.2-.8 0-.2-.2-.2-.6 0-.8L20.8 7l-2.2-2.2c-.2-.2-.2-.6 0-.8.2-.2.6-.2.8 0l2.2 2.2L23.8 4c.2-.2.6-.2.8 0z" style="fill:#fff"></path>
+    <path d="M12.7 4.1c.2.2.3.6.1.8L8.6 9.8c-.1.1-.2.2-.3.2-.2.1-.5.1-.7-.1L5.4 7.7c-.2-.2-.2-.6 0-.8.2-.2.6-.2.8 0L8 8.6l3.8-4.5c.2-.2.6-.2.9 0z" style="fill:#06f"></path>
+    </svg>
+    <span>Your Privacy Choices</span>
+</a>
+        <noscript>
+            
+<a class="uhf-footer-link" href="https://aka.ms/yourcaliforniaprivacychoices" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_California Privacy_nav","ecn":"LegalNav_CaliforniaPrivacy_nav","ehn":"LegalNav"}'>
+    <svg role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 14" xml:space="preserve" height="16" width="43">
+    <title>Your Privacy Choices Opt-Out Icon</title>
+    <path d="M7.4 12.8h6.8l3.1-11.6H7.4C4.2 1.2 1.6 3.8 1.6 7s2.6 5.8 5.8 5.8z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#fff"></path>
+    <path d="M22.6 0H7.4c-3.9 0-7 3.1-7 7s3.1 7 7 7h15.2c3.9 0 7-3.1 7-7s-3.2-7-7-7zm-21 7c0-3.2 2.6-5.8 5.8-5.8h9.9l-3.1 11.6H7.4c-3.2 0-5.8-2.6-5.8-5.8z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#06f"></path>
+    <path d="M24.6 4c.2.2.2.6 0 .8L22.5 7l2.2 2.2c.2.2.2.6 0 .8-.2.2-.6.2-.8 0l-2.2-2.2-2.2 2.2c-.2.2-.6.2-.8 0-.2-.2-.2-.6 0-.8L20.8 7l-2.2-2.2c-.2-.2-.2-.6 0-.8.2-.2.6-.2.8 0l2.2 2.2L23.8 4c.2-.2.6-.2.8 0z" style="fill:#fff"></path>
+    <path d="M12.7 4.1c.2.2.3.6.1.8L8.6 9.8c-.1.1-.2.2-.3.2-.2.1-.5.1-.7-.1L5.4 7.7c-.2-.2-.2-.6 0-.8.2-.2.6-.2.8 0L8 8.6l3.8-4.5c.2-.2.6-.2.9 0z" style="fill:#06f"></path>
+    </svg>
+    <span>Your Privacy Choices</span>
+</a>
+        </noscript>
+    </div>
+    <a slot="uhf-footer-consumer-health-privacy-link" class="uhf-footer-link" href="https://go.microsoft.com/fwlink/?linkid=2259814" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_Consumer Health Privacy_nav","ecn":"LegalNav_ConsumerHealthPrivacy_nav","ehn":"LegalNav"}'>Consumer Health Privacy</a>
+    
+<uhf-footer-menu slot="uhf-footer-menu" data-nav-label="Microsoft corporate links">
+            <a class="uhf-footer-link" href="https://support.microsoft.com/contactus/" id="uhf-Contact Microsoft " data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_Contact Microsoft _nav","ecn":"LegalNav_Contact Microsoft _nav","ehn":"LegalNav"}'>Contact Microsoft </a>
+            <a class="uhf-footer-link" href="https://go.microsoft.com/fwlink/?LinkId=521839" id="uhf-Privacy &amp; Cookies" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_Privacy &amp; Cookies_nav","ecn":"LegalNav_Privacy &amp; Cookies_nav","ehn":"LegalNav"}'>Privacy &amp; Cookies</a>
+            <a class="uhf-footer-link" href="#" id="uhf-Manage cookies" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_Manage cookies_nav","ecn":"LegalNav_Manage cookies_nav","ehn":"LegalNav"}'>Manage cookies</a>
+            <a class="uhf-footer-link" href="https://go.microsoft.com/fwlink/?LinkID=206977" id="uhf-Terms of Use" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_Terms of Use_nav","ecn":"LegalNav_Terms of Use_nav","ehn":"LegalNav"}'>Terms of Use</a>
+            <a class="uhf-footer-link" href="https://www.microsoft.com/trademarks" id="uhf-Trademarks" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_Trademarks_nav","ecn":"LegalNav_Trademarks_nav","ehn":"LegalNav"}'>Trademarks</a>
+</uhf-footer-menu>
+</uhf-footer>
+</div>
+    </div>
+    <!-- /Theme picker -->
+
+
+    <!-- Scripts -->
+    <script>window.cdaTrackerShadowDOM = true;</script>
+    <script src="/__mirror/assets/6c595ffdb677c4a558469896" async></script>
+
+    
+<script type="module" src="/__mirror/assets/adb93738516987ac3e9c9096"></script>
+    
+ <!-- UHF scripts -->
+
+    
+    
+    <!-- /Scripts -->
+</body>
+</html>
