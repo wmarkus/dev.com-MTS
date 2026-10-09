@@ -1,0 +1,2338 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:02.460
+>> Je toho víc, co je třeba
+Azure IoT Edge than
+
+00:00:02.460 --> 00:00:04.455
+typický modul Vision AI
+
+00:00:04.455 --> 00:00:07.005
+běží na zařízení
+rozpoznat objekty.
+
+00:00:07.005 --> 00:00:10.680
+Co kdybych ti to řekl?
+umožňuje hrát
+
+00:00:10.680 --> 00:00:14.910
+Flappy Bird na digitálním značení
+zatímco budete čekat na autobus.
+
+00:00:14.910 --> 00:00:17.370
+To je přesně to, co Andreas z
+
+00:00:17.370 --> 00:00:21.975
+Ombori Grid je tu, aby ukázal
+nás a jak to funguje.
+
+00:00:21.975 --> 00:00:24.270
+Velmi pěkné demo a způsob
+
+00:00:24.270 --> 00:00:26.340
+více než jen Flappy Bird
+na konci dne,
+
+00:00:26.340 --> 00:00:28.930
+a to je dnes v IoT Show.
+
+00:00:42.260 --> 00:00:43.360
+[HUDBA]
+
+00:00:43.360 --> 00:00:45.890
+>> Ahoj všichni. Díky za
+připojují se k nám v The IoT Show.
+
+00:00:45.890 --> 00:00:47.315
+Jsem Olivier, váš hostitel.
+
+00:00:47.315 --> 00:00:50.450
+Dnes jste tu, abyste slyšeli
+o IoT Edge a jak je
+
+00:00:50.450 --> 00:00:54.800
+slouží k posílení digitální vědy
+zkušenosti a přemostění IoT,
+
+00:00:54.800 --> 00:00:57.705
+Obrazovky a mobilní zařízení
+s Ombori Grid.
+
+00:00:57.705 --> 00:00:59.400
+Za to jsem
+Andreas se mnou dneska.
+
+00:00:59.400 --> 00:01:00.840
+Andreasi, jak se máš?
+
+00:01:00.840 --> 00:01:03.645
+>> Ahoj, Oliviere. Jsem
+skvělé, díky. Jak se máš?
+
+00:01:03.645 --> 00:01:07.110
+>> jsem fantastická. Kde
+Voláte nám z?
+
+00:01:07.110 --> 00:01:10.335
+>> Stockholmu, Švédsko.
+
+00:01:10.335 --> 00:01:13.470
+>> úžasné. Řekni mi
+trochu o sobě.
+
+00:01:13.470 --> 00:01:15.150
+Jaké je vaše pozadí v IoT?
+
+00:01:15.150 --> 00:01:16.950
+Jak dlouho jste
+v tomto oboru?
+
+00:01:16.950 --> 00:01:18.990
+Pak si promluvíme o
+Ombori a Ombori Grid,
+
+00:01:18.990 --> 00:01:21.840
+což je skvělé řešení
+Přišel jste nám to ukázat.
+
+00:01:21.840 --> 00:01:24.725
+>> No, pracoval jsem s
+
+00:01:24.725 --> 00:01:27.994
+IoT a Edge Compute za minulost,
+
+00:01:27.994 --> 00:01:29.870
+Myslím, že tři nebo čtyři roky
+
+00:01:29.870 --> 00:01:34.020
+nyní, když jsme stavěli
+platformu Ombori Grid.
+
+00:01:35.930 --> 00:01:38.255
+>> vím, že používáte
+
+00:01:38.255 --> 00:01:40.925
+Technologie společnosti Microsoft.
+Proto jsi tady.
+
+00:01:40.925 --> 00:01:44.540
+Zajímavé je, že když
+mluvíme o Azure IoT Edge,
+
+00:01:44.540 --> 00:01:45.830
+což je naše runtime pro
+
+00:01:45.830 --> 00:01:47.915
+přinést pracovní vytížení z
+mrak na okraj.
+
+00:01:47.915 --> 00:01:50.975
+Velmi často jen přinášíme
+demo vision AI.
+
+00:01:50.975 --> 00:01:54.105
+Je to jako, "Hej, můžeš to udělat.
+Vision AI na tom zařízení Edge."
+
+00:01:54.105 --> 00:01:57.895
+Ale ve skutečnosti je spousta
+lidé používají IoT Edge pro
+
+00:01:57.895 --> 00:01:59.590
+z jiných důvodů než z jiných důvodů, než jsou
+
+00:01:59.590 --> 00:02:02.680
+jen schopnost běžet
+nějaký model AI na okraji.
+
+00:02:02.680 --> 00:02:05.240
+Jste tu, abyste nám řekl, jak
+
+00:02:05.240 --> 00:02:09.390
+Ombori Grid používá pákový
+IoT Edge mimo jiné
+
+00:02:09.390 --> 00:02:12.250
+ale myslím, že vidíme
+ta obrazovka za vámi.
+
+00:02:12.250 --> 00:02:14.860
+Máme náznak, že
+bude to o
+
+00:02:14.860 --> 00:02:17.765
+digitálních značek a
+technologie s ním spojené.
+
+00:02:17.765 --> 00:02:19.380
+Pojďme do toho.
+
+00:02:19.380 --> 00:02:22.695
+Povězte nám o Ombori a
+Ombori Grid. Co to je?
+
+00:02:22.695 --> 00:02:26.565
+Jak se dostal k
+vytvořit toto řešení?
+
+00:02:26.565 --> 00:02:29.425
+Pak si promluvíme o detailech.
+a uvidíme o jeho demo.
+
+00:02:29.425 --> 00:02:33.010
+>> Rozhodně. Je to
+docela zábavný příběh vlastně,
+
+00:02:33.010 --> 00:02:35.010
+ale nechám to krátké.
+
+00:02:35.010 --> 00:02:38.430
+Ale když jsme začali
+budování sítě Ombori,
+
+00:02:38.430 --> 00:02:41.750
+začali jsme vytvářet
+Platforma pro správu aplikací
+
+00:02:41.750 --> 00:02:44.765
+a zaměřili jsme se na
+mobilní zážitek ve skutečnosti.
+
+00:02:44.765 --> 00:02:48.800
+Ale spolupracovali jsme.
+s H&M a Microsoftem
+
+00:02:48.800 --> 00:02:52.730
+před několika lety, které šly
+virové s mluvícím zrcadlem.
+
+00:02:52.730 --> 00:02:55.670
+Mnoho kolegů nebo klientů
+začal nám volat a
+
+00:02:55.670 --> 00:02:58.805
+žádá nás, abychom pomohli s inovacemi
+ve fyzickém prostoru,
+
+00:02:58.805 --> 00:03:01.850
+vytvoření opravdu skvělého
+zákaznická zkušenost
+
+00:03:01.850 --> 00:03:04.030
+a také zkušenosti zaměstnanců.
+
+00:03:04.030 --> 00:03:06.860
+Začali jsme rozšiřovat naši platformu na
+
+00:03:06.860 --> 00:03:09.410
+být vhodnější pro tyto případy použití.
+
+00:03:09.410 --> 00:03:12.830
+Tehdy jsme přijali IoT.
+Platforma Edge pro všechny
+
+00:03:12.830 --> 00:03:14.660
+naše správa zařízení
+a všechno, co je
+
+00:03:14.660 --> 00:03:17.110
+probíhá na Edge Compute.
+
+00:03:17.110 --> 00:03:20.310
+>> zajímavé. Uvidíme
+že během ukázek.
+
+00:03:20.310 --> 00:03:23.430
+Je tu jedna věc, která
+Napadlo mě, že jsme,
+
+00:03:23.430 --> 00:03:26.415
+já tady, zejména v
+Tým IoT, jsme zaujatí.
+
+00:03:26.415 --> 00:03:28.870
+Vidíme IoT Edge každý den a tak dále.
+
+00:03:28.870 --> 00:03:33.470
+Řekni mi něco o tom, jak
+naše digitální věda.
+
+00:03:33.470 --> 00:03:36.845
+Řekl bych, že chytřejší
+ty v těchto dnech
+
+00:03:36.845 --> 00:03:41.215
+jsou rozvíjeny z
+technologie, kterou tam používali?
+
+00:03:41.215 --> 00:03:45.190
+>> ano, myslím, že existuje
+spousta webových rámců se děje
+
+00:03:45.190 --> 00:03:48.910
+pokud jde o digitální
+vývoj značení.
+
+00:03:48.910 --> 00:03:51.910
+Ale něco, co jsme
+se zaměřili na
+
+00:03:51.910 --> 00:03:54.880
+on není tolik, že znamení sám,
+
+00:03:54.880 --> 00:03:57.295
+ale více, jak můžeme vytvořit
+
+00:03:57.295 --> 00:03:59.560
+digitální cestu jak pro
+
+00:03:59.560 --> 00:04:02.770
+zaměstnanci a začtvrté,
+pro návštěvníky?
+
+00:04:02.770 --> 00:04:06.635
+Jde to mnohem dál, než co
+děje se na obrazovce.
+
+00:04:06.635 --> 00:04:08.780
+Jistě, mít velké obrazovky, jako je tento
+
+00:04:08.780 --> 00:04:11.635
+jsou skvělé, protože
+jsou poutavá pozornost
+
+00:04:11.635 --> 00:04:14.530
+a mohou návštěvníka vzdělávat, aby
+
+00:04:14.530 --> 00:04:17.710
+prostor o tom, co
+možnosti existují.
+
+00:04:17.710 --> 00:04:20.335
+Ale vždy se snažíme dostat dál.
+
+00:04:20.335 --> 00:04:22.600
+zařízení pro návštěvníky
+a jak mohou používat
+
+00:04:22.600 --> 00:04:25.625
+svůj vlastní telefon, aby
+procházet prostorem.
+
+00:04:25.625 --> 00:04:28.160
+K tomu potřebujete
+opravdu přemostět
+
+00:04:28.160 --> 00:04:31.250
+tyto tři různé oblasti
+s digitální obrazovkou,
+
+00:04:31.250 --> 00:04:34.385
+IoT a jak
+mít připojená zařízení,
+
+00:04:34.385 --> 00:04:38.130
+a pak mobilní telefon.
+Dává to smysl?
+
+00:04:38.130 --> 00:04:40.025
+>> Dává to smysl.
+
+00:04:40.025 --> 00:04:41.690
+Vidím,
+
+00:04:41.690 --> 00:04:42.950
+protože jsem je už viděl.
+
+00:04:42.950 --> 00:04:45.530
+Myslím, že si to lidé uvědomili.
+že když tam skočíme,
+
+00:04:45.530 --> 00:04:49.235
+toto přemostění je provedeno
+možné prostřednictvím cloudu.
+
+00:04:49.235 --> 00:04:52.160
+Protože nechceš.
+mít připojení ke spotřebiteli
+
+00:04:52.160 --> 00:04:55.490
+zařízení přímo do
+neznámé digitální znamení.
+
+00:04:55.490 --> 00:04:59.690
+Z hlediska ochrany osobních údajů
+bezpečnostní perspektiva,
+
+00:04:59.690 --> 00:05:01.040
+jako obousměrně, nemáte
+
+00:05:01.040 --> 00:05:02.540
+chtějí, aby se spojili a nemají
+
+00:05:02.540 --> 00:05:06.100
+chtějí, aby toto digitální znamení mělo
+přístup přímo k jejich zařízení.
+
+00:05:06.100 --> 00:05:09.755
+Určitě musíte mít
+tyto zprostředkovatele, který je,
+
+00:05:09.755 --> 00:05:14.265
+v našem případě do cloudu. Líbí se mi to.
+
+00:05:14.265 --> 00:05:16.680
+Co kdybyste nám to ukázal?
+
+00:05:16.680 --> 00:05:19.700
+Protože máme vývojáře
+tady nás sledujeme,
+
+00:05:19.700 --> 00:05:22.610
+Rád bych, abyste přinesli
+cli také a ukázat
+
+00:05:22.610 --> 00:05:26.695
+jak vypadá řešení
+jako a jak se používá.
+
+00:05:26.695 --> 00:05:28.395
+>> Ne, rád bych.
+
+00:05:28.395 --> 00:05:32.510
+Mohu skutečně sdílet svou obrazovku
+a možná vás tím provede.
+
+00:05:32.510 --> 00:05:36.680
+Protože, myslím, jsme
+budování všeho v Azure.
+
+00:05:36.680 --> 00:05:40.160
+Celá platforma Ombori Grid
+je poháněn Microsoft Azure
+
+00:05:40.160 --> 00:05:44.015
+a mohou být připojeny k vašemu
+vlastní tenant Azure také
+
+00:05:44.015 --> 00:05:48.395
+ale nástroje nějakou dobu zaberou
+
+00:05:48.395 --> 00:05:50.210
+používat a využívat
+
+00:05:50.210 --> 00:05:53.180
+nejlepší způsob, jak, když opravdu
+chcete se zaměřit na zážitek.
+
+00:05:53.180 --> 00:05:54.920
+To, co jsme udělali, je, že jsme
+
+00:05:54.920 --> 00:05:56.930
+zefektivnil vše
+pokud jde o
+
+00:05:56.930 --> 00:06:01.265
+zřizování zařízení a
+onboarding a tak dále.
+
+00:06:01.265 --> 00:06:04.430
+Jen abyste se mohli dostat na rovinu
+do vytváření modulů Edge,
+
+00:06:04.430 --> 00:06:07.280
+mobilních aplikací nebo digitálních aplikací
+aplikace pro obrazovku a všechno
+
+00:06:07.280 --> 00:06:08.330
+prostě funguje a máte
+
+00:06:08.330 --> 00:06:10.355
+Komunikace v reálném čase
+mezi těmito třemi.
+
+00:06:10.355 --> 00:06:12.410
+Ale to je hezké.
+
+00:06:12.410 --> 00:06:16.030
+>> to miluju, protože jsme dodali
+našim partnerům, jako jste vy,
+
+00:06:16.030 --> 00:06:19.670
+vrstva, která vám umožní
+musí znovu objevit kolo pro
+
+00:06:19.670 --> 00:06:21.230
+starší správa modulů a
+
+00:06:21.230 --> 00:06:23.780
+připojení zařízení
+do cloudu a tak dále.
+
+00:06:23.780 --> 00:06:26.120
+Přidáváte další vrstvu
+pro vaše zákazníky v
+
+00:06:26.120 --> 00:06:28.930
+oblasti digitálních znaků a
+inteligentní digitální věda, která
+
+00:06:28.930 --> 00:06:31.670
+nemusí to dělat.
+další sada věcí
+
+00:06:31.670 --> 00:06:34.805
+které jsou běžné a
+obecné v tomto prostoru.
+
+00:06:34.805 --> 00:06:37.490
+Myslím, že to dává smysl.
+na rozdíl od vrstvení,
+
+00:06:37.490 --> 00:06:44.865
+Myslím, že je to velmi explicitní pro
+lidé pochopit a pochopit.
+
+00:06:44.865 --> 00:06:48.140
+>> přesně tak. Chci říct, máme
+zákazníky, které mají
+
+00:06:48.140 --> 00:06:49.370
+žádný koncept Azure nebo
+
+00:06:49.370 --> 00:06:52.430
+služeb Azure a jejich
+stačí přímo s naší platformou.
+
+00:06:52.430 --> 00:06:55.460
+Ale máme také spoustu zákazníků
+které jsou opravdu hluboko v
+
+00:06:55.460 --> 00:06:57.695
+celý ekosystém Azure
+a pak se připojte
+
+00:06:57.695 --> 00:07:00.760
+jejich stávající služby k tomu, co
+se děje v Ombori Grid.
+
+00:07:00.760 --> 00:07:02.900
+Celé připojení k Azure
+opravdu je přítomen
+
+00:07:02.900 --> 00:07:05.650
+pod jeho povrchem.
+
+00:07:05.650 --> 00:07:09.290
+První možnost, jak začít
+je prostě jít na naše webové stránky,
+
+00:07:09.290 --> 00:07:13.925
+ombori.com/grid zadejte svůj
+e-mailovou adresu a vypadnete.
+
+00:07:13.925 --> 00:07:16.880
+Druhá možnost, pokud
+už jste v Azure,
+
+00:07:16.880 --> 00:07:18.920
+stačí přejít na Azure Portal,
+
+00:07:18.920 --> 00:07:20.550
+vyhledejte Ombori a můžete
+
+00:07:20.550 --> 00:07:22.235
+najdete ji v
+Marketplace a můžete
+
+00:07:22.235 --> 00:07:25.925
+stačí jej nainstalovat a použít
+jako každá jiná služba Azure.
+
+00:07:25.925 --> 00:07:26.540
+>> perfektní.
+
+00:07:26.540 --> 00:07:28.805
+>> Jakmile budete mít toto nastavení,
+
+00:07:28.805 --> 00:07:33.325
+skončíte v tom, co
+zavolejte konzoli Ombori Grid.
+
+00:07:33.325 --> 00:07:37.190
+Zde máme tržiště s
+aplikace připravené k použití, které můžete
+
+00:07:37.190 --> 00:07:41.120
+stačí nainstalovat a nakonfigurovat
+bez jakéhokoliv kódování
+
+00:07:41.120 --> 00:07:42.410
+ale máme také
+
+00:07:42.410 --> 00:07:46.235
+tyto vývojářské nástroje a to je
+na co se chci dnes zaměřit.
+
+00:07:46.235 --> 00:07:49.850
+Pokud naskočíte na
+developer.ombori.com,
+
+00:07:49.850 --> 00:07:53.420
+máte dokumentaci, jak
+provádět vývoj obrazovky,
+
+00:07:53.420 --> 00:07:58.100
+Vývoj aplikací IoT, jak
+používat rozhraní příkazového řádku atd.
+
+00:07:58.100 --> 00:07:59.515
+>> Nice.
+
+00:07:59.515 --> 00:08:03.350
+>> Demo, o které se chci podělit
+s vámi dnes je, jak
+
+00:08:03.350 --> 00:08:04.730
+spustit Flappy Bird na
+
+00:08:04.730 --> 00:08:06.950
+velká obrazovka s vaším
+mobilní telefon jako dálkový ovladač.
+
+00:08:06.950 --> 00:08:08.990
+>> Samozřejmě, kdo
+nechce hrát
+
+00:08:08.990 --> 00:08:11.500
+Flappy Bird na velkém digitálním znamení?
+
+00:08:11.500 --> 00:08:15.080
+>> přesně tak. Budování tohoto
+utratili jsme příliš mnoho
+
+00:08:15.080 --> 00:08:18.665
+hodiny v kanceláři hraje to
+a to, aby to bylo také.
+
+00:08:18.665 --> 00:08:20.165
+>> Musíte to otestovat.
+
+00:08:20.165 --> 00:08:23.200
+>> ano. Musíme to otestovat.
+
+00:08:23.200 --> 00:08:26.260
+Pokyny zde
+jsou krok za krokem,
+
+00:08:26.260 --> 00:08:27.560
+je to aplikace na obrazovce a
+
+00:08:27.560 --> 00:08:30.095
+mobilní aplikace s
+komunikace v reálném čase.
+
+00:08:30.095 --> 00:08:34.085
+Půjdeme rovnou.
+do úložiště GitHub,
+
+00:08:34.085 --> 00:08:35.540
+což je kovárna z
+
+00:08:35.540 --> 00:08:38.660
+původní open source
+JavaScript Flappy Bird.
+
+00:08:38.660 --> 00:08:41.480
+Existuje odkaz zpět na původní
+Pokud se na to chcete podívat
+
+00:08:41.480 --> 00:08:43.400
+ale tady máme naši verzi s
+
+00:08:43.400 --> 00:08:46.890
+mobilní aplikace a obrazovka nahoru.
+
+00:08:47.540 --> 00:08:50.980
+Já jen naklonuju to repo.
+
+00:08:54.110 --> 00:08:58.240
+Tady to máme. Zde vidíte
+
+00:08:58.240 --> 00:08:59.800
+máme mobilní aplikaci
+a aplikace obrazovky
+
+00:08:59.800 --> 00:09:01.945
+Začněme tedy s mobilní aplikací.
+
+00:09:01.945 --> 00:09:03.970
+Projedeme přízi do
+
+00:09:03.970 --> 00:09:06.395
+získejte všechny mé
+závislosti nainstalovány.
+
+00:09:06.395 --> 00:09:08.080
+>> Nice. Zatímco to dělá
+
+00:09:08.080 --> 00:09:10.045
+protože to jde
+trochu času.
+
+00:09:10.045 --> 00:09:12.790
+Viděli jsme tržiště,
+
+00:09:12.790 --> 00:09:14.110
+a na trhu jsme
+
+00:09:14.110 --> 00:09:16.780
+zmínka o aplikacích, které
+lze předinstalovat.
+
+00:09:16.780 --> 00:09:18.370
+Pokud tomu správně rozumím,
+
+00:09:18.370 --> 00:09:20.440
+tyto aplikace jsou různé věci.
+
+00:09:20.440 --> 00:09:22.840
+K dispozici je část aplikace
+
+00:09:22.840 --> 00:09:25.404
+který běží na
+digitální znakové zařízení,
+
+00:09:25.404 --> 00:09:27.280
+který přináší zážitek.
+
+00:09:27.280 --> 00:09:29.830
+Pak je tu ještě jedna část.
+což by mohla být mobilní aplikace
+
+00:09:29.830 --> 00:09:32.480
+který uživatel používá k
+komunikovat s tímto digitálním znakem.
+
+00:09:32.480 --> 00:09:33.970
+Ty jsou baleny jako to, co
+
+00:09:33.970 --> 00:09:36.815
+voláme zesilovače do vašeho
+tržiště, správně?
+
+00:09:36.815 --> 00:09:40.320
+>> Naprosto správně. My
+řekněme, že máme cloudové aplikace,
+
+00:09:40.320 --> 00:09:43.110
+Aplikace IoT, aplikace na obrazovce,
+a mobilních aplikací.
+
+00:09:43.110 --> 00:09:46.770
+Jeden příklad, když covid zasáhl,
+
+00:09:46.770 --> 00:09:49.695
+mnoho našich zákazníků se nás zeptalo
+pomoci s tou situací.
+
+00:09:49.695 --> 00:09:52.045
+Znovu jsme se postavili do fronty,
+
+00:09:52.045 --> 00:09:54.490
+což je cloudová aplikace, která má
+
+00:09:54.490 --> 00:09:57.350
+digitální znaky, které zobrazují
+obsazenost v reálném čase.
+
+00:09:57.350 --> 00:09:58.690
+Když naskenuji QR kód,
+
+00:09:58.690 --> 00:10:00.455
+Dostal bych lístek do telefonu.
+
+00:10:00.455 --> 00:10:04.015
+Ta jízdenka by mohla být dokonce
+slouží k naskenování, aby
+
+00:10:04.015 --> 00:10:07.570
+otevřete fyzickou bránu, abyste
+Já vstup do prostoru.
+
+00:10:07.570 --> 00:10:10.780
+To je velmi dobrá vitrína.
+této interakce
+
+00:10:10.780 --> 00:10:13.935
+v reálném čase mezi obrazovkami cloudu,
+
+00:10:13.935 --> 00:10:15.845
+IoT a telefony.
+
+00:10:15.845 --> 00:10:19.220
+>> Naprosto, skvělý příklad pro jistotu.
+
+00:10:21.200 --> 00:10:25.530
+>> Jen si nastavím
+Kód sady Visual Studio zde.
+
+00:10:27.550 --> 00:10:35.205
+Demagogové správně.
+Tady to máme, tak tady.
+
+00:10:35.205 --> 00:10:37.035
+>> Ano, věříš si.
+
+00:10:37.035 --> 00:10:39.030
+>> věřím si. Ano.
+
+00:10:39.030 --> 00:10:40.465
+>> Ale tato nová funkce se mi líbí.
+
+00:10:40.465 --> 00:10:43.460
+Je to nedávný rybář a
+kód, který vám umožní
+
+00:10:43.460 --> 00:10:45.080
+uznat, že zdrojem
+
+00:10:45.080 --> 00:10:47.650
+kód je něco
+důvěřujete. To se mi líbí.
+
+00:10:47.650 --> 00:10:50.295
+>> Je to opravdu velmi užitečné.
+
+00:10:50.295 --> 00:10:53.535
+Teď jsem otevřel.
+úložiště zde.
+
+00:10:53.535 --> 00:10:56.059
+Vidíte, že máme mobilní aplikaci
+a aplikace na obrazovce.
+
+00:10:56.059 --> 00:10:59.440
+Právě jsem nainstaloval
+závislosti pro mobilní aplikaci.
+
+00:10:59.440 --> 00:11:00.780
+Zatímco se na to díváme,
+
+00:11:00.780 --> 00:11:02.760
+Udělám totéž pro
+aplikace obrazovky, abychom
+
+00:11:02.760 --> 00:11:05.505
+ušetřete nějaký čas na další krok.
+
+00:11:05.505 --> 00:11:07.800
+>> ano. V takovém případě
+
+00:11:07.800 --> 00:11:12.085
+tato předzápasová příprava je IoT
+Okrajový modul, správně?
+
+00:11:12.085 --> 00:11:14.450
+>> Ano. Jak mobilní aplikace, tak
+
+00:11:14.450 --> 00:11:18.905
+aplikace na obrazovce jsou ve skutečnosti
+pouze webové aplikace HTML5.
+
+00:11:18.905 --> 00:11:21.860
+V tomto případě jsou
+napsáno v "Reagovat".
+
+00:11:21.860 --> 00:11:25.400
+Ale co to vlastně
+Budu to hrát na
+
+00:11:25.400 --> 00:11:29.060
+Obrazovka je tento IoT Edge
+kontejner, který vidíte za mnou,
+
+00:11:29.060 --> 00:11:31.700
+který je zde jen placení videa.
+
+00:11:31.700 --> 00:11:37.555
+Tuto aplikaci nasadíme
+na IoT Edge, vlastně.
+
+00:11:37.555 --> 00:11:39.190
+>> to mám. V podstatě
+
+00:11:39.190 --> 00:11:42.005
+používáte předinstalovaný modul
+
+00:11:42.005 --> 00:11:44.930
+v oblasti IoT, která bude nastavena
+
+00:11:44.930 --> 00:11:47.480
+vzdáleně z IoT Hubu k nasazení
+
+00:11:47.480 --> 00:11:48.950
+webová aplikace, která bude
+
+00:11:48.950 --> 00:11:51.685
+přední konec v podstatě
+zařízení?
+
+00:11:51.685 --> 00:11:52.695
+>> přesně tak.
+
+00:11:52.695 --> 00:11:53.685
+>> Dobře.
+
+00:11:53.685 --> 00:11:57.850
+>> Ano. Pokud jsme
+při pohledu na kód zde
+
+00:11:57.850 --> 00:11:59.560
+mobilní aplikace,
+
+00:11:59.560 --> 00:12:01.270
+je to vlastně opravdu jednoduché
+
+00:12:01.270 --> 00:12:03.340
+protože když jsi
+hraje Flappy Bird,
+
+00:12:03.340 --> 00:12:06.085
+jediná věc, kterou opravdu
+je třeba to udělat, je mávnout.
+
+00:12:06.085 --> 00:12:10.360
+Tento kód reakce má jeden
+tlačítko, které se nazývá klapka,
+
+00:12:10.360 --> 00:12:13.075
+a to bude zveřejňovat
+
+00:12:13.075 --> 00:12:17.365
+událost na palubě
+mřížka, která je klapka,
+
+00:12:17.365 --> 00:12:22.930
+ale také se přihlašuje k odběru
+události z aplikace obrazovky,
+
+00:12:22.930 --> 00:12:24.910
+což je Game Over a Game Started,
+
+00:12:24.910 --> 00:12:26.815
+tak, aby si byla vědoma stavu
+
+00:12:26.815 --> 00:12:28.840
+aplikace obrazovky
+za všech okolností,
+
+00:12:28.840 --> 00:12:33.130
+ale pak může odeslat příkaz
+na Flap. Dává to smysl?
+
+00:12:33.130 --> 00:12:35.560
+>> Dává to smysl.
+Vidím tu entitu,
+
+00:12:35.560 --> 00:12:39.310
+aplikace se chystá
+komunikovat s těmito dvěma chlapy,
+
+00:12:39.310 --> 00:12:40.660
+obrazovka a mobilní telefon,
+
+00:12:40.660 --> 00:12:41.860
+a nedává to smysl.
+
+00:12:41.860 --> 00:12:43.975
+Máte tyto trubky
+komunikace,
+
+00:12:43.975 --> 00:12:45.910
+příkaz přejde dolů a dodavatel
+
+00:12:45.910 --> 00:12:48.130
+přijde a pak vy
+musím to vystrašit.
+
+00:12:48.130 --> 00:12:49.735
+>> ano, přesně.
+
+00:12:49.735 --> 00:12:52.345
+Máte několik modulů
+zde, které jsou,
+
+00:12:52.345 --> 00:12:53.530
+Myslím, že docela zajímavé.
+
+00:12:53.530 --> 00:12:57.595
+Jedním z nich se používá nastavení z
+nastavení mobilní mřížky.
+
+00:12:57.595 --> 00:13:01.000
+Ten druhý je
+Skutečná knihovna zpráv,
+
+00:13:01.000 --> 00:13:02.600
+který se nazývá GA Messaging,
+
+00:13:02.600 --> 00:13:05.610
+kde je máte
+komponenty, které můžete
+
+00:13:05.610 --> 00:13:08.985
+stačí použít k odeslání a
+přihlásit se k odběru akcí,
+
+00:13:08.985 --> 00:13:10.710
+veškerou složitost a složitost
+
+00:13:10.710 --> 00:13:13.380
+bezpečnost kolem tohoto je
+jen abstrahován od
+
+00:13:13.380 --> 00:13:15.770
+vy jako vývojář tak
+že se můžete soustředit pouze na
+
+00:13:15.770 --> 00:13:19.345
+o vytváření dobrého
+zkušenosti zákazníků.
+
+00:13:19.345 --> 00:13:21.400
+Pokud jde o použití nastavení,
+
+00:13:21.400 --> 00:13:22.690
+to je další věc, protože pokud
+
+00:13:22.690 --> 00:13:24.355
+vytváříte aplikaci nebo pokud
+
+00:13:24.355 --> 00:13:28.510
+díváme se na naše
+aplikace marketplace,
+
+00:13:28.510 --> 00:13:30.790
+Pokud ano, pojďme
+řekněme, že jste
+
+00:13:30.790 --> 00:13:32.170
+maloobchod na více prodejnách,
+
+00:13:32.170 --> 00:13:33.670
+nebudete mít stejná nastavení
+
+00:13:33.670 --> 00:13:35.440
+nutně ve všech obchodech,
+
+00:13:35.440 --> 00:13:37.825
+budete chtít změnit
+různé věci.
+
+00:13:37.825 --> 00:13:42.865
+Jako vývojář si můžete vybrat
+jaké máte možnosti,
+
+00:13:42.865 --> 00:13:46.330
+Řekněme, že manažeři prodejen nebo
+netechnické osoby by měly mít možnost
+
+00:13:46.330 --> 00:13:49.930
+změna pro každou instalaci
+v konzoli mřížky,
+
+00:13:49.930 --> 00:13:54.085
+a vy to děláte tím, že
+definování tohoto schématu.
+
+00:13:54.085 --> 00:13:56.230
+Jedná se o velmi jednoduché schéma pro
+
+00:13:56.230 --> 00:13:59.785
+mobilní aplikace, která
+v podstatě říká: "Nedělejte nic".
+
+00:13:59.785 --> 00:14:03.880
+Je to lepší příklad, když naskočíme
+přes aplikaci na obrazovce,
+
+00:14:03.880 --> 00:14:06.850
+a podíváme se na schéma
+který je pro to definován,
+
+00:14:06.850 --> 00:14:09.415
+protože zde máme
+
+00:14:09.415 --> 00:14:12.340
+tři hodnoty, které velmi
+
+00:14:12.340 --> 00:14:15.205
+Brzy uvidíme, jak
+v konzoli mřížky.
+
+00:14:15.205 --> 00:14:17.485
+Ale je to místo, kde může
+Najdu ovladač?
+
+00:14:17.485 --> 00:14:19.615
+Jaká je adresa URL dálkového ovladače?
+
+00:14:19.615 --> 00:14:22.120
+Jaká je závažnost ptáka?
+
+00:14:22.120 --> 00:14:27.430
+Jaká je mezera mezi
+trubky hry Flappy Bird,
+
+00:14:27.430 --> 00:14:29.080
+a jaký je tah?
+
+00:14:29.080 --> 00:14:30.970
+Pokud nasadím tuto jinou obrazovku,
+
+00:14:30.970 --> 00:14:33.490
+Můžu mít úplně jiný
+hry tím, že se jen změní
+
+00:14:33.490 --> 00:14:37.060
+tyto parametry v
+konzoly mřížky.
+
+00:14:37.060 --> 00:14:38.930
+>> to mám.
+
+00:14:39.030 --> 00:14:42.160
+>> Pokud se díváte na
+kód pro aplikaci obrazovky,
+
+00:14:42.160 --> 00:14:44.590
+můžete vidět, že jsme
+abstrahovali
+
+00:14:44.590 --> 00:14:45.805
+původní hra do
+
+00:14:45.805 --> 00:14:48.925
+jedna komponenta React
+zde, které říkáme Game,
+
+00:14:48.925 --> 00:14:51.685
+a také se jen načítá
+
+00:14:51.685 --> 00:14:53.710
+knihovna zpráv GA a
+
+00:14:53.710 --> 00:14:57.355
+Knihovna nastavení GA
+s nastavením U,
+
+00:14:57.355 --> 00:15:01.330
+a pak uvidíte, že budeme
+získat všechny hodnoty, jako je
+
+00:15:01.330 --> 00:15:05.290
+gravitační mezera a tah
+z konzoly mřížky,
+
+00:15:05.290 --> 00:15:08.305
+a tento případ
+žádosti,
+
+00:15:08.305 --> 00:15:10.450
+což si myslím, že je docela v pohodě.
+
+00:15:10.450 --> 00:15:12.490
+Co budete také
+vidět, že je, jak jste
+
+00:15:12.490 --> 00:15:15.279
+vyvíjet aplikace na této obrazovce,
+
+00:15:15.279 --> 00:15:17.650
+a jak vyvíjíte
+mobilních aplikací.
+
+00:15:17.650 --> 00:15:19.390
+Prostě následují všechny
+stejné vzory,
+
+00:15:19.390 --> 00:15:21.070
+používají stejné knihovny,
+
+00:15:21.070 --> 00:15:25.180
+takže je opravdu snadné používat
+zkušenosti s mřížkou pro
+
+00:15:25.180 --> 00:15:27.310
+obě mobilní aplikace
+a aplikace na obrazovce a
+
+00:15:27.310 --> 00:15:30.010
+zasílání zpráv a všechno jen
+funguje tak, jak očekáváte.
+
+00:15:30.010 --> 00:15:32.350
+>> ano, to se mi líbí.
+Protože dnes, když jsi
+
+00:15:32.350 --> 00:15:34.330
+vývojář, aplikace pro budovy,
+
+00:15:34.330 --> 00:15:38.515
+Jako bys mluvil s
+další modul aplikace A,
+
+00:15:38.515 --> 00:15:41.530
+aplikace na stejném zařízení
+vedle něj nebo ne.
+
+00:15:41.530 --> 00:15:43.660
+Díky tomu jsou věci super
+jednoduché pro ně.
+
+00:15:43.660 --> 00:15:45.310
+>> ano, přesně.
+
+00:15:45.310 --> 00:15:47.680
+Nyní se díváme na
+mobilní aplikace v aplikaci obrazovky,
+
+00:15:47.680 --> 00:15:48.940
+ale kdybych tvořil,
+
+00:15:48.940 --> 00:15:50.860
+Řekněme Edge Modul,
+
+00:15:50.860 --> 00:15:52.900
+Měl bych přístup k
+stejné knihovny a já
+
+00:15:52.900 --> 00:15:55.060
+může jen publikovat a
+přihlásit se ke stejným událostem,
+
+00:15:55.060 --> 00:15:56.545
+což je opravdu skvělé.
+
+00:15:56.545 --> 00:16:00.340
+Můžete vytvořit scénář, když
+stisknete tlačítko v telefonu,
+
+00:16:00.340 --> 00:16:03.535
+otevírá bránu přes
+například okrajový modul.
+
+00:16:03.535 --> 00:16:04.690
+>> ano. Není to jen o
+
+00:16:04.690 --> 00:16:06.850
+displej nebo jen přehrávání
+něco na obrazovce,
+
+00:16:06.850 --> 00:16:10.315
+je to opravdu o interakci
+s vaším prostředím.
+
+00:16:10.315 --> 00:16:14.965
+>> přesně tak. Také když jste
+budování tohoto typického okraje IoT,
+
+00:16:14.965 --> 00:16:20.740
+příklady jako vize
+algoritmus nebo tak něco.
+
+00:16:20.740 --> 00:16:23.095
+Když zjistíte určité události,
+
+00:16:23.095 --> 00:16:25.720
+můžete je publikovat
+tak, aby obrazovky na
+
+00:16:25.720 --> 00:16:28.735
+telefony mohou reagovat v reálném čase
+na to, co detekují.
+
+00:16:28.735 --> 00:16:32.770
+>> ano. Teď můžeme přivést
+naše vize AI, modul, že?
+
+00:16:32.770 --> 00:16:34.600
+Vždy chceme
+přidat hranu k životu.
+
+00:16:34.600 --> 00:16:35.215
+>> Ano.
+
+00:16:35.215 --> 00:16:36.865
+>> Uvidíme, jak to bude fungovat.
+
+00:16:36.865 --> 00:16:39.565
+Podívejme se, jak nasadíte
+a aby to fungovalo.
+
+00:16:39.565 --> 00:16:45.055
+>> Pojďme to nasadit. Návrat
+zde k naší konzoli Grid.
+
+00:16:45.055 --> 00:16:46.780
+Kromě veřejných aplikací
+
+00:16:46.780 --> 00:16:48.235
+máme také Vaše aplikace,
+
+00:16:48.235 --> 00:16:52.525
+a zde vidíme, že aplikace pro
+tento nájemce, to je prázdné.
+
+00:16:52.525 --> 00:16:54.085
+Chceme sem něco dát.
+
+00:16:54.085 --> 00:16:55.900
+Ale první věc, kterou potřebuji.
+je třeba, že musím
+
+00:16:55.900 --> 00:16:58.450
+zadejte jméno mého tenanta do
+
+00:16:58.450 --> 00:17:01.690
+konfigurace, protože
+integrované rozhraní příkazového řádku sítě
+
+00:17:01.690 --> 00:17:03.115
+potřebuje vědět, kde to zveřejnit.
+
+00:17:03.115 --> 00:17:07.105
+Vidíte, že můj nájemník
+název zde je AH Demo 1.
+
+00:17:07.105 --> 00:17:09.895
+Co budu dělat
+jdu do
+
+00:17:09.895 --> 00:17:13.105
+můj balíček JSON a
+nahraďte moji organizaci
+
+00:17:13.105 --> 00:17:22.940
+AH Demo 1 pro obě obrazovky
+aplikace a pro mou mobilní aplikaci.
+
+00:17:23.130 --> 00:17:28.930
+Tady to máme. Pak můžeme
+vraťte se k našemu CLI,
+
+00:17:28.930 --> 00:17:33.745
+a já budu dělat příze stavět a příze hospoda,
+
+00:17:33.745 --> 00:17:36.770
+což je samozřejmě
+zkratka pro publikování.
+
+00:17:37.980 --> 00:17:40.060
+Co tady teď dělá,
+
+00:17:40.060 --> 00:17:43.450
+je to, že vytváří
+teč [neslyšitelný] soubor,
+
+00:17:43.450 --> 00:17:45.640
+což je plná aplikace postavená,
+
+00:17:45.640 --> 00:17:48.400
+a bude to publikovat
+to mému nájemci,
+
+00:17:48.400 --> 00:17:52.100
+takže je k dispozici pro
+mě skutečně nainstalovat.
+
+00:17:55.590 --> 00:17:59.930
+Sestavení tohoto úspěšného
+a já jsem publikoval,
+
+00:18:02.550 --> 00:18:05.650
+a naše vydání je vytvořeno.
+
+00:18:05.650 --> 00:18:12.530
+Pokud se vrátíme zpět do Gridu
+Konzole a my jen znovu načteme Moje aplikace,
+
+00:18:12.690 --> 00:18:15.340
+vidíme, že to jsou aplikace
+pro normy.
+
+00:18:15.340 --> 00:18:17.515
+Nyní máme Flappy Bird
+aplikace obrazovky zde,
+
+00:18:17.515 --> 00:18:19.330
+a mohu nainstalovat, pokud chci.
+
+00:18:19.330 --> 00:18:22.510
+>> Nice. V podstatě vy
+mít zde vývojáře,
+
+00:18:22.510 --> 00:18:24.625
+v podstatě odeslal aplikaci a pak
+
+00:18:24.625 --> 00:18:28.285
+provozovatel řešení může
+právě teď to tam najděte a řekněte:
+
+00:18:28.285 --> 00:18:29.680
+"Ahoj, chci to nasadit na
+
+00:18:29.680 --> 00:18:32.770
+tato obrazovka tam
+poskytovat tuto zkušenost".
+
+00:18:32.770 --> 00:18:37.540
+>> přesně takhle. Pojďme udělat
+totéž platí pro mobilní aplikaci,
+
+00:18:37.540 --> 00:18:39.730
+a pak si můžeme vzít
+podívejte se, jak
+
+00:18:39.730 --> 00:18:43.760
+skutečně nainstalujte a nasaďte toto.
+
+00:18:45.870 --> 00:18:49.150
+Zatímco mobilní aplikace je
+budování a nasazování,
+
+00:18:49.150 --> 00:18:52.285
+Můžeme ten proces zahájit.
+
+00:18:52.285 --> 00:18:58.730
+Teď stisku "Nainstalovat"
+na obrazovce Flappy Bird.
+
+00:18:58.980 --> 00:19:07.400
+Dám tomu Flappymu.
+Testovací obrazovka, můžeme to nazvat.
+
+00:19:10.830 --> 00:19:15.040
+Teď vidíte, že se objeví pod
+moje instalace zde,
+
+00:19:15.040 --> 00:19:17.800
+a pak mi to ukáže, které
+zařízení, na které běží.
+
+00:19:17.800 --> 00:19:23.035
+To je to, co IoT Edge
+zařízení mám k dispozici.
+
+00:19:23.035 --> 00:19:24.760
+Vidíme, že
+
+00:19:24.760 --> 00:19:27.145
+zařízení jsou v současné době
+připojen k této instalaci,
+
+00:19:27.145 --> 00:19:29.020
+Samozřejmě, že jdeme
+zařízení připojíte.
+
+00:19:29.020 --> 00:19:30.325
+>> Dobře.
+
+00:19:30.325 --> 00:19:35.110
+>> Zde vidím zařízení IoT Edge
+
+00:19:35.110 --> 00:19:37.990
+které jsou již
+běží v tomto tenantovi.
+
+00:19:37.990 --> 00:19:39.460
+Když na jednoho z nich zatlačím,
+
+00:19:39.460 --> 00:19:41.830
+Přesune to z
+
+00:19:41.830 --> 00:19:45.220
+že předchozí instalace
+na ten, který jsme právě vytvořili.
+
+00:19:45.220 --> 00:19:48.700
+Ale je to také opravdu snadné
+nastavit zcela nová zařízení,
+
+00:19:48.700 --> 00:19:51.910
+a to je něco, co
+Jsme na to opravdu hrdí.
+
+00:19:51.910 --> 00:19:55.120
+Pokud máte
+například blokování,
+
+00:19:55.120 --> 00:19:58.750
+nebo pokud máte Raspberry
+Pi nebo něco takového,
+
+00:19:58.750 --> 00:20:01.480
+stačí si vybrat
+typ zařízení a
+
+00:20:01.480 --> 00:20:04.525
+obrázek si můžete stáhnout.
+
+00:20:04.525 --> 00:20:07.700
+Stačí ho dát na USB
+držet a blikat.
+
+00:20:09.090 --> 00:20:12.520
+Zprovoznění
+je stejně jednoduchý jako vstup
+
+00:20:12.520 --> 00:20:16.450
+sériové číslo zde nebo skenování
+QR kód na zařízení.
+
+00:20:16.450 --> 00:20:21.310
+Pokud to děláte v
+vývojové hřiště,
+
+00:20:21.310 --> 00:20:23.500
+pravděpodobně budete chtít
+používat QR kód,
+
+00:20:23.500 --> 00:20:24.730
+ale pokud zřizovate jako
+
+00:20:24.730 --> 00:20:27.535
+statisíce zařízení
+do produkčních prostředí,
+
+00:20:27.535 --> 00:20:30.490
+jen získání seznamu sériových
+čísla je to mnohem jednodušší.
+
+00:20:30.490 --> 00:20:33.700
+Když přidáte hodně najednou.
+
+00:20:33.700 --> 00:20:36.610
+>> to miluju, takže
+opravdu mají pramen.
+
+00:20:36.610 --> 00:20:38.890
+Chtěl jsem se tě zeptat,
+Vy chlapi v oboru
+
+00:20:38.890 --> 00:20:42.220
+samotného zařízení jako řešení?
+
+00:20:42.220 --> 00:20:43.795
+Ale vypadá to, že si můžeš vzít
+
+00:20:43.795 --> 00:20:45.640
+některé z obecných
+které jsou tam venku,
+
+00:20:45.640 --> 00:20:47.440
+a myslím, že seznam
+máte zde je
+
+00:20:47.440 --> 00:20:51.520
+nejčastěji používaný hardware
+pro napájení digitálních značek.
+
+00:20:51.520 --> 00:20:53.319
+>> ano, rozhodně.
+
+00:20:53.319 --> 00:20:58.140
+Podporujeme většinu typů zařízení.
+
+00:20:58.140 --> 00:21:00.615
+Pokud se jedná o hardware Intel,
+
+00:21:00.615 --> 00:21:03.810
+tento obrázek obvykle používáte hned,
+
+00:21:03.810 --> 00:21:07.280
+Raspberry Pi je také
+IoT Edge napájen.
+
+00:21:07.280 --> 00:21:10.360
+Ostatní zařízení nejsou IoT Edge,
+
+00:21:10.360 --> 00:21:11.890
+takže můžete běžet pouze
+
+00:21:11.890 --> 00:21:16.270
+Kontejnery hran nebo hraniční moduly
+na Raspberry Pi a Intel
+
+00:21:16.270 --> 00:21:18.370
+Obrázek, ale můžete spravovat
+
+00:21:18.370 --> 00:21:20.320
+aplikace na obrazovce prostřednictvím
+
+00:21:20.320 --> 00:21:23.935
+IoT Hub s tímto
+jiné typy zařízení.
+
+00:21:23.935 --> 00:21:24.790
+>> Dobře.
+
+00:21:24.790 --> 00:21:32.874
+>> v pohodě. Uvidíme, jestli mobil
+dokončila výstavbu. Stalo se.
+
+00:21:32.874 --> 00:21:37.030
+Navrhuji, abychom se vrátili do
+tržiště, Moje aplikace,
+
+00:21:37.030 --> 00:21:46.340
+a instalujeme mobilní telefon Flappy
+remote pak zavoláme "Ok".
+
+00:21:46.980 --> 00:21:52.765
+To, co zde vidíme, je
+že každý obsah se aktualizuje,
+
+00:21:52.765 --> 00:21:55.300
+pokud chcete, skutečně to stavět a
+
+00:21:55.300 --> 00:21:58.690
+nasazení této verze aplikace.
+
+00:21:58.690 --> 00:22:00.460
+Pokud půjdu na obsah,
+
+00:22:00.460 --> 00:22:04.390
+uvidíte, že
+schéma nastavení, které
+
+00:22:04.390 --> 00:22:09.010
+vytvořili jsme v úložišti
+je zde skutečně vykreslen.
+
+00:22:09.010 --> 00:22:12.220
+Není tu tolik zajímavých
+nastavení na dálkovém ovladači,
+
+00:22:12.220 --> 00:22:16.315
+ale pokud půjdeme na obrazovku a
+přejděte na kartu Obsah,
+
+00:22:16.315 --> 00:22:20.215
+zde vidíme, že
+může změnit gravitaci,
+
+00:22:20.215 --> 00:22:22.780
+pět mezera klapka
+zrychlení a tak dále.
+
+00:22:22.780 --> 00:22:25.120
+To mi také dává
+možnost zvolit
+
+00:22:25.120 --> 00:22:27.310
+mobilní koncový bod a
+
+00:22:27.310 --> 00:22:29.470
+protože jsme nainstalovali tento
+Nyní Flappy mobile a všechny,
+
+00:22:29.470 --> 00:22:31.510
+Můžu si vybrat tohle.
+jeden a pak budou
+
+00:22:31.510 --> 00:22:34.375
+schopen se navzájem objevovat
+pro toto sdělení.
+
+00:22:34.375 --> 00:22:35.860
+>> Dobře.
+
+00:22:35.860 --> 00:22:40.180
+>> to zachráním a
+Zmáčknu "Publikovat".
+
+00:22:40.180 --> 00:22:41.860
+Chci to zveřejnit na
+
+00:22:41.860 --> 00:22:45.130
+a pak vidím
+pokrok v tom, jak je to
+
+00:22:45.130 --> 00:22:52.060
+budování a zavádění tohoto
+aplikace. Jak to myslíš?
+
+00:22:52.060 --> 00:22:55.330
+>> miluju to. To je
+docela přímočaré.
+
+00:22:55.330 --> 00:22:58.900
+Vývojář dělá tuto práci
+jako vývojář a poté
+
+00:22:58.900 --> 00:23:00.850
+provozovatel má prostě
+chcete-li kliknout na tlačítka v
+
+00:23:00.850 --> 00:23:04.250
+uživatelské rozhraní a to je hezké
+přímočaré a intuitivní.
+
+00:23:05.280 --> 00:23:07.690
+Jedna věc, kterou mám opravdu rád jako
+
+00:23:07.690 --> 00:23:10.195
+dobře je, když mluvíme
+o digitálních značkách,
+
+00:23:10.195 --> 00:23:13.525
+vnímání, že
+lidé by to mohli mít
+
+00:23:13.525 --> 00:23:17.050
+funguje to jen pro
+v nejhorším případě nebo ještě hůř,
+
+00:23:17.050 --> 00:23:21.175
+že je to jen webová aplikace, která
+zabalí data z webu.
+
+00:23:21.175 --> 00:23:23.800
+Samotné znamení je dost hloupé.
+
+00:23:23.800 --> 00:23:26.155
+Tady mluvíme
+o něčem, co
+
+00:23:26.155 --> 00:23:31.344
+je přizpůsobitelný docela
+snadno operátorem.
+
+00:23:31.344 --> 00:23:32.935
+Můžeme přinést zážitek.
+
+00:23:32.935 --> 00:23:35.200
+Máte scénář, kdy,
+
+00:23:35.200 --> 00:23:39.370
+na základě umístění
+konkrétní obrazovka a událost,
+
+00:23:39.370 --> 00:23:44.560
+můžete také navrhnout
+zkušenosti, aby byly dynamické.
+
+00:23:44.560 --> 00:23:49.180
+Možná je to něco, co můžeš
+zobrazit to teď, když je nasazený
+
+00:23:49.180 --> 00:23:52.210
+aplikace Flappy Bird a ukažte nám, co
+
+00:23:52.210 --> 00:23:55.345
+více může operátor udělat
+díky Ombori Grid,
+
+00:23:55.345 --> 00:23:59.290
+Představoval bych vytvoření
+digitální zážitek interaktivnější.
+
+00:23:59.290 --> 00:24:04.960
+>> Rozhodně. Jedna
+z nejchladnější věci
+
+00:24:04.960 --> 00:24:08.560
+s mřížkou Ombori
+je to, že kromě toho
+
+00:24:08.560 --> 00:24:12.280
+k tomu, aby bylo možné vytvářet
+vlastní schémata nastavení,
+
+00:24:12.280 --> 00:24:16.195
+máte také všechny
+správa médií,
+
+00:24:16.195 --> 00:24:21.250
+stejně jako každý jiný
+digitální platforma pro značení,
+
+00:24:21.250 --> 00:24:25.795
+můžete spravovat své
+zařízení a soubory.
+
+00:24:25.795 --> 00:24:30.340
+Jedna z věcí, které máme
+ve skutečnosti strávil spoustu času na,
+
+00:24:30.340 --> 00:24:32.005
+Zmínil jste se, že,
+
+00:24:32.005 --> 00:24:36.130
+existuje dojem, že
+když dáte, řekněme,
+
+00:24:36.130 --> 00:24:39.100
+interaktivní obsah
+na digitální obrazovce,
+
+00:24:39.100 --> 00:24:40.540
+To, co děláte, se právě načítá
+
+00:24:40.540 --> 00:24:43.195
+adresa URL webové stránky v podstatě
+na obrazovce.
+
+00:24:43.195 --> 00:24:45.925
+Ale co je vlastně
+děje se zde, že
+
+00:24:45.925 --> 00:24:51.325
+aplikace je nasazena
+do zařízení.
+
+00:24:51.325 --> 00:24:53.500
+Nejedná se pouze o načítání webových stránek,
+
+00:24:53.500 --> 00:24:55.420
+Ve skutečnosti běží lokálně.
+
+00:24:55.420 --> 00:24:58.270
+Vše, co vidíte na
+obrazovka bude fungovat i
+
+00:24:58.270 --> 00:25:01.510
+pokud zařízení náhle ztratí
+konektivita nebo tak něco.
+
+00:25:01.510 --> 00:25:03.970
+Je zřejmé, že nebudete mít
+komunikace v reálném čase
+
+00:25:03.970 --> 00:25:05.140
+s mobilním telefonem a tak dále,
+
+00:25:05.140 --> 00:25:07.330
+ale neskončíte s
+černé obrazovky jen proto, že
+
+00:25:07.330 --> 00:25:11.990
+přerušované připojení
+nebo něco takového.
+
+00:25:12.120 --> 00:25:14.870
+>> To dává smysl.
+
+00:25:15.810 --> 00:25:20.330
+>> Když se vrátíme na obrazovku,
+
+00:25:20.700 --> 00:25:25.315
+vidíme, že stavba byla dokončena zde.
+
+00:25:25.315 --> 00:25:29.365
+Pojďme připojit tuto obrazovku, která
+Vlastně máme za sebou.
+
+00:25:29.365 --> 00:25:31.990
+Jdeme sem, Připojte zařízení.
+
+00:25:31.990 --> 00:25:33.940
+Jedna věc, kterou jsem
+myslím, že je docela pěkný
+
+00:25:33.940 --> 00:25:35.800
+je, že vidíte využití procesoru,
+
+00:25:35.800 --> 00:25:40.400
+využití paměti IoT
+Zařízení Edge za všech okolností.
+
+00:25:40.680 --> 00:25:46.795
+Potvrzuji, že chci
+nasaďte ji a teď se objeví zde.
+
+00:25:46.795 --> 00:25:50.710
+Uvidíte, že to jde
+začnete aplikaci načítat.
+
+00:25:50.710 --> 00:25:53.080
+Máme špatnou orientaci.
+
+00:25:53.080 --> 00:25:56.185
+Můžeme otevřít tady a
+Půjdu do modulů.
+
+00:25:56.185 --> 00:26:00.010
+Zde vidíme moduly, které
+jsou nasazeny do zařízení.
+
+00:26:00.010 --> 00:26:03.500
+Změním
+orientace modulu obrazovky.
+
+00:26:03.660 --> 00:26:06.800
+Stiskněte "Uložit".
+
+00:26:06.930 --> 00:26:10.480
+Navštivte aktualizace v reálném čase.
+
+00:26:10.480 --> 00:26:12.970
+>> Podívejme se na obrazovku
+Teď, protože jsme jen
+
+00:26:12.970 --> 00:26:14.890
+zobrazení demo obrazovky právě teď.
+
+00:26:14.890 --> 00:26:17.185
+Podívejme se na vaše kamery a
+Vidíme, co se děje.
+
+00:26:17.185 --> 00:26:20.870
+Dobře, takže teď je nasazený.
+na obrazovce zde.
+
+00:26:21.270 --> 00:26:23.740
+Chci vyzvat
+ty. Můžete změnit
+
+00:26:23.740 --> 00:26:27.055
+orientaci opět, takže vidíme
+žít, protože jsme to neviděli.
+
+00:26:27.055 --> 00:26:28.150
+>> ano, rozhodně.
+
+00:26:28.150 --> 00:26:29.905
+>> Aby si lidé uvědomili,
+Co se tady děje.
+
+00:26:29.905 --> 00:26:33.950
+>> to dám do toho.
+na šířku, stiskněte tlačítko "Uložit změny".
+
+00:26:35.490 --> 00:26:37.540
+>> ta osoba to dělala.
+
+00:26:37.540 --> 00:26:39.820
+operace není ani
+před tou obrazovkou.
+
+00:26:39.820 --> 00:26:42.010
+Mohou být vzdálené, protože
+komunikují prostřednictvím
+
+00:26:42.010 --> 00:26:45.175
+webovou stránku zde a
+samotný řídicí panel.
+
+00:26:45.175 --> 00:26:46.075
+>> Ano.
+
+00:26:46.075 --> 00:26:47.920
+>> Dobře. Nyní máte
+hrát si s ním muž.
+
+00:26:47.920 --> 00:26:49.895
+Musíš nám ukázat, co se děje.
+
+00:26:49.895 --> 00:26:53.105
+>> Dobře. Zkusím to.
+
+00:26:53.105 --> 00:26:55.930
+Otevřu kameru na
+
+00:26:55.930 --> 00:27:00.950
+můj telefon a já budu
+naskenujte QR kód.
+
+00:27:01.860 --> 00:27:04.555
+Načítá se to tady.
+
+00:27:04.555 --> 00:27:07.105
+Když teď uvidíš můj telefon.
+
+00:27:07.105 --> 00:27:09.835
+Vidíte, že má jeden
+tlačítko, které říká flappy.
+
+00:27:09.835 --> 00:27:10.765
+>> ano
+
+00:27:10.765 --> 00:27:12.985
+>> Samozřejmě, že na to musíme tlačit.
+
+00:27:12.985 --> 00:27:15.550
+>> ano. Dost tvrdě, že?
+
+00:27:15.550 --> 00:27:19.615
+>> ano. Podívej se na tohle.
+
+00:27:19.615 --> 00:27:28.570
+>> snadné. Hezké. Andreas.
+To je něco, co,
+
+00:27:28.570 --> 00:27:31.615
+jako slovní hříčka určená s
+hra, je tu mnoho trubek.
+
+00:27:31.615 --> 00:27:34.240
+K dispozici je mobilní telefon
+aplikace, která je
+
+00:27:34.240 --> 00:27:36.925
+vymazat webovou aplikaci a jste
+interaguje s ním,
+
+00:27:36.925 --> 00:27:38.320
+jde do back-endu,
+
+00:27:38.320 --> 00:27:40.480
+back-end mluví zpět na tuto obrazovku,
+
+00:27:40.480 --> 00:27:43.990
+až do Cloudu a
+použije příkaz,
+
+00:27:43.990 --> 00:27:45.880
+takže jsou snadno zaostávají.
+
+00:27:45.880 --> 00:27:52.585
+>> Mobilní aplikace udržuje stav
+z obrazovky za všech okolností.
+
+00:27:52.585 --> 00:27:58.285
+Zařízení jen říká, že
+zemřeli a pokud znovu zmáčknu,
+
+00:27:58.285 --> 00:28:00.580
+doufejme, že uvidíte trochu
+obrazovky vzadu.
+
+00:28:00.580 --> 00:28:02.290
+>> Resetujete.
+
+00:28:02.290 --> 00:28:05.050
+>> Jedná se o velmi starou latenci na
+
+00:28:05.050 --> 00:28:07.945
+tyto věci, které ve skutečnosti
+dělá to hratelné.
+
+00:28:07.945 --> 00:28:10.720
+>> ano, přesně. To je
+co jsem chtěl říct.
+
+00:28:10.720 --> 00:28:12.610
+Je tam tolik trubek a
+
+00:28:12.610 --> 00:28:15.430
+vypadá to, že intuitivně vy
+řekl bych jako developer,
+
+00:28:15.430 --> 00:28:17.815
+No, to bude
+buďte laggy určitě.
+
+00:28:17.815 --> 00:28:20.680
+Jako, náhle síť zmizí nebo
+
+00:28:20.680 --> 00:28:24.175
+zpomaluje nebo mnoho lidí
+jsou na Wi-Fi nebo tak dále,
+
+00:28:24.175 --> 00:28:27.370
+že na konci dne, protože
+používáte technologie IoT pro
+
+00:28:27.370 --> 00:28:31.360
+konektivita tohoto
+digitálního znaku do cloudu,
+
+00:28:31.360 --> 00:28:33.760
+už šetříte
+hodně, protože to
+
+00:28:33.760 --> 00:28:35.920
+komunikace je optimalizována
+pro zařízení IoT,
+
+00:28:35.920 --> 00:28:39.130
+a tak už jste
+zachránit se,
+
+00:28:39.130 --> 00:28:43.030
+potíže s procházením
+obvyklé trubky HTTP pro web.
+
+00:28:43.030 --> 00:28:46.690
+Tady opravdu procházíš
+kanály IoT v podstatě.
+
+00:28:46.690 --> 00:28:50.740
+>> ano. Přesně a protože
+zařízení je také ověřeno pomocí
+
+00:28:50.740 --> 00:28:52.780
+vlastní unikátní
+certifikáty díky
+
+00:28:52.780 --> 00:28:54.220
+službu zřizování zařízení a
+
+00:28:54.220 --> 00:28:57.130
+všechny tyto věci jako
+asset developer,
+
+00:28:57.130 --> 00:28:58.780
+nemusíte
+zamyslete se nad tím, jak mám
+
+00:28:58.780 --> 00:29:00.925
+ověřit tuto jinou
+věci na nastavení,
+
+00:29:00.925 --> 00:29:02.920
+v reálném čase
+komunikaci, stačí použít
+
+00:29:02.920 --> 00:29:06.100
+ty knihovny, které
+Už jsem ti to ukázal.
+
+00:29:06.100 --> 00:29:12.025
+Pokud přejdeme zpět na můj
+obrazovku zde rychle.
+
+00:29:12.025 --> 00:29:15.805
+Právě import zpráv Ombori GA
+
+00:29:15.805 --> 00:29:19.210
+je vše, co musíte udělat, protože
+veškerá konektivita,
+
+00:29:19.210 --> 00:29:21.850
+povolení, a tak
+
+00:29:21.850 --> 00:29:24.610
+on je spravován Ombori
+v back-endu,
+
+00:29:24.610 --> 00:29:27.925
+takže je to úplně abstraktní
+daleko od vás jako vývojáře.
+
+00:29:27.925 --> 00:29:31.825
+>> to miluju. Docela dobré
+a přímočaré.
+
+00:29:31.825 --> 00:29:34.540
+Andreasi, udělal jsi to.
+
+00:29:34.540 --> 00:29:36.880
+demo celou cestu.
+Měl jste digitální znamení.
+
+00:29:36.880 --> 00:29:40.210
+Bylo to jen ukazování videa.
+a byli jste schopni velmi
+
+00:29:40.210 --> 00:29:44.365
+snadno a rychle vytvořit
+aplikace založená na šabloně
+
+00:29:44.365 --> 00:29:45.580
+ale reaguje,
+
+00:29:45.580 --> 00:29:48.520
+je to docela jednoduché pro
+vývojáři tam stavět
+
+00:29:48.520 --> 00:29:52.135
+tato prostředí se nasazují na dálku,
+
+00:29:52.135 --> 00:29:54.505
+kontrolní parametr a tak dále.
+
+00:29:54.505 --> 00:29:57.310
+To je docela brilantní
+a ukazuje sílu zapnutého
+
+00:29:57.310 --> 00:30:00.655
+palubní mřížka. Díky za to Andreas.
+
+00:30:00.655 --> 00:30:02.830
+Pro naše publikum, pokud
+chtějí se dozvědět více,
+
+00:30:02.830 --> 00:30:04.810
+můžou jít do Ombori.com.
+
+00:30:04.810 --> 00:30:06.490
+Řekl jste, seškrtnete mřížku,
+
+00:30:06.490 --> 00:30:08.590
+tento střední název
+na správném místě.
+
+00:30:08.590 --> 00:30:10.225
+Ombori.com. to je webová stránka.
+
+00:30:10.225 --> 00:30:12.940
+Ale máš něco
+více pro lidi, kteří sledují
+
+00:30:12.940 --> 00:30:16.040
+toto video, pokud chtějí
+získat nějaké freebies, že?
+
+00:30:16.040 --> 00:30:18.570
+>> ano, přesně. Mám dvě věci.
+
+00:30:18.570 --> 00:30:20.820
+Za prvé, jedna funkce
+že jsem zapomněl zmínit,
+
+00:30:20.820 --> 00:30:23.260
+což je ve skutečnosti docela důležité.
+
+00:30:23.260 --> 00:30:27.745
+Viděl jsi mě používat OMG.
+jako Ombori Grid CLI na-
+
+00:30:27.745 --> 00:30:29.305
+>> Což je mimochodem nejlepší.
+
+00:30:29.305 --> 00:30:31.045
+Nejlepší příkaz příkazového řádku vůbec.
+
+00:30:31.045 --> 00:30:32.410
+OMG rozhodně.
+
+00:30:32.410 --> 00:30:33.880
+Na to nemůžete zapomenout.
+
+00:30:33.880 --> 00:30:37.630
+>> Ne, přesně. Skutečnost, že
+je to, že jsem jako vývojář,
+
+00:30:37.630 --> 00:30:39.580
+Nejsem velký fanoušek
+pomocí těchto portálů,
+
+00:30:39.580 --> 00:30:43.345
+to je více pro
+operátory, jak tomu říkáte.
+
+00:30:43.345 --> 00:30:47.830
+Ovládám téměř každý aspekt
+mřížky Ombori prostřednictvím rozhraní příkazového řádku.
+
+00:30:47.830 --> 00:30:49.479
+Můžu propojit svá zařízení.
+
+00:30:49.479 --> 00:30:51.220
+Můžu mu otevřít vzdálenou skořápku.
+
+00:30:51.220 --> 00:30:54.100
+Můžu dokonce otevřít dálkový ovladač.
+Terminál JavaScriptu
+
+00:30:54.100 --> 00:30:56.465
+ladit, co se děje
+s obrazovkou.
+
+00:30:56.465 --> 00:31:01.290
+Mohu dokonce otevřít instanci B a C
+skutečně zrcadlit to, co je
+
+00:31:01.290 --> 00:31:03.600
+pokračuje na obrazovce, aby
+můj počítač a všechno
+
+00:31:03.600 --> 00:31:06.315
+bez obav
+o ověřeních,
+
+00:31:06.315 --> 00:31:09.470
+vyhýbat se zprávám nebo tak, jako je
+to, což je docela v pohodě.
+
+00:31:09.470 --> 00:31:12.110
+>> Ano, je.
+
+00:31:12.270 --> 00:31:17.320
+>> Co se týče freebie. Ano. My
+užijte si nějaké zábavné překvapení,
+
+00:31:17.320 --> 00:31:20.590
+protože, pokud se zaregistrujete
+pro Ombori Grid,
+
+00:31:20.590 --> 00:31:25.345
+především první tři zařízení
+jsou vždy zdarma, protože chceme
+
+00:31:25.345 --> 00:31:27.850
+vývojáři, aby mohli
+použijte to k hraní s ním
+
+00:31:27.850 --> 00:31:30.850
+bez jakýchkoli nákladů.
+
+00:31:30.850 --> 00:31:34.450
+Ale pokud chcete vyzkoušet různé
+placená tržní řešení
+
+00:31:34.450 --> 00:31:37.180
+ven nebo se zbláznit s
+spousta zařízení,
+
+00:31:37.180 --> 00:31:41.080
+budete skutečně
+získejte $ 250 zdarma, pokud
+
+00:31:41.080 --> 00:31:45.070
+použijte kód Microsoftdeveloper.
+
+00:31:45.070 --> 00:31:48.535
+>> Microsoftdeveloper v
+jedno slovo, všechno malé.
+
+00:31:48.535 --> 00:31:50.515
+>> jedno slovo a malá písmena, ano.
+
+00:31:50.515 --> 00:31:52.555
+>> Přidáme to do popisu.
+
+00:31:52.555 --> 00:31:55.195
+Microsoftdeveloper je váš kód
+
+00:31:55.195 --> 00:31:58.300
+za získání freebies od
+Ombori. To je úžasné.
+
+00:31:58.300 --> 00:32:01.630
+Díky Andreasi. Možná to uděláme.
+
+00:32:01.630 --> 00:32:03.805
+uvidíme se znovu na
+IoT show v určitém okamžiku.
+
+00:32:03.805 --> 00:32:05.800
+Všichni děkují, že se naladíte.
+
+00:32:05.800 --> 00:32:07.810
+Chy si skvělý den a
+
+00:32:07.810 --> 00:32:10.465
+těšíme se na vás
+brzy v pořadu IoT. Ahoj.
+
+00:32:10.465 --> 00:32:13.460
+>> díky Olivierovi. Chýtnej se všemi.
+
+00:32:29.730 --> 00:32:32.000
+>> [HUDBA]
+
