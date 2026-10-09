@@ -1,0 +1,1812 @@
+<!doctype html>
+<html class="layout layout-single    profilelist  default-focus" lang="en-us" dir="ltr" data-authenticated="false" data-auth-status-determined="false" data-target="docs" x-ms-format-detection="none">
+			
+		<head>
+			<!-- Authorized local recreation. External services are not impersonated; analytics disabled. --><meta name="robots" content="noindex,nofollow"><script src="/__mirror/runtime.js"></script><title>Microsoft Cloud Advocates | Microsoft Developer</title>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<meta name="color-scheme" content="light dark">
+
+			<meta name="description" content="Trusted advisors to developer and IT professionals.">
+			<link rel="canonical" href="https://developer.microsoft.com/en-us/advocates/"> 
+
+			<!-- Non-customizable open graph and sharing-related metadata -->
+			<meta name="twitter:card" content="summary_large_image">
+			<meta name="twitter:site" content="@MicrosoftLearn">
+			<meta property="og:type" content="website">
+			<meta property="og:image:alt" content="Microsoft Learn">
+			<meta property="og:image" content="https://learn.microsoft.com/en-us/media/open-graph-image.png">
+			<!-- Page specific open graph and sharing-related metadata -->
+			<meta property="og:title" content="Microsoft Cloud Advocates">
+			<meta property="og:url" content="https://developer.microsoft.com/en-us/advocates/">
+			<meta property="og:description" content="Trusted advisors to developer and IT professionals.">
+			<meta name="platform_id" content="9943bfac-3377-576c-ca05-320e0da563d2"> 
+			<meta name="locale" content="en-us">
+			 
+			<meta name="uhfHeaderId" content="DEV_Homeheader">
+
+			<meta name="page_type" content="community">
+
+			<!--page specific meta tags-->
+			
+
+			<!-- custom meta tags -->
+			
+		<meta name="filterText" content="Cloud Advocates">
+	
+		<meta name="schema" content="ProfileList">
+	
+		<meta name="twitterWidgets" content="true">
+	
+		<meta name="author" content="wibjorn">
+	
+		<meta name="document_id" content="a34afa0d-4735-6da5-81ea-8aad55a1a5d7">
+	
+		<meta name="document_version_independent_id" content="a34afa0d-4735-6da5-81ea-8aad55a1a5d7">
+	
+		<meta name="updated_at" content="2026-10-04T21:13:00Z">
+	
+		<meta name="original_content_git_url" content="https://github.com/MicrosoftDocs/cloud-developer-advocates/blob/live/advocates/index.yml">
+	
+		<meta name="gitcommit" content="https://github.com/MicrosoftDocs/cloud-developer-advocates/blob/b04c620199247bf8f557fa306dd3183579270385/advocates/index.yml">
+	
+		<meta name="git_commit_id" content="b04c620199247bf8f557fa306dd3183579270385">
+	
+		<meta name="site_name" content="dev.microsoft.com">
+	
+		<meta name="depot_name" content="MSDN.cloud-developer-advocates">
+	
+		<meta name="page_kind" content="list">
+	
+		<meta name="hasSidebar" content="false">
+	
+		<meta name="toc_rel" content="toc.json">
+	
+		<meta name="feedback_system" content="None">
+	
+		<meta name="feedback_product_url" content="">
+	
+		<meta name="feedback_help_link_type" content="">
+	
+		<meta name="feedback_help_link_url" content="">
+	
+		<meta name="asset_id" content="index">
+	
+		<meta name="moniker_range_name" content="">
+	
+		<meta name="item_type" content="Content">
+	
+		<meta name="source_path" content="advocates/index.yml">
+	
+		<meta name="github_feedback_content_git_url" content="https://github.com/MicrosoftDocs/cloud-developer-advocates/blob/live/advocates/index.yml">
+	
+		<meta name="markdown_url" content="https://developer.microsoft.com/en-us/advocates/?accept=text/markdown">
+	 
+		<meta name="cmProducts" content="https://authoring-docs-microsoft.poolparty.biz/devrel/68ec7f3a-2bc6-459f-b959-19beb729907d" data-source="generated">
+	
+		<meta name="cmProducts" content="https://authoring-docs-microsoft.poolparty.biz/devrel/7696cda6-0510-47f6-8302-71bb5d2e28cf" data-source="generated">
+	
+		<meta name="cmProducts" content="https://authoring-docs-microsoft.poolparty.biz/devrel/e6f942e8-55a7-4c86-b8e3-7456508ea850" data-source="generated">
+	
+		<meta name="spProducts" content="https://authoring-docs-microsoft.poolparty.biz/devrel/90370425-aca4-4a39-9533-d52e5e002a5d" data-source="generated">
+	
+		<meta name="spProducts" content="https://authoring-docs-microsoft.poolparty.biz/devrel/69c76c32-967e-4c65-b89a-74cc527db725" data-source="generated">
+	
+		<meta name="spProducts" content="https://authoring-docs-microsoft.poolparty.biz/devrel/f1834696-48d6-470d-966b-6ee418881596" data-source="generated">
+	
+
+			<!-- Apply persisted/system theme before first paint to prevent wrong-theme flash when scripts are deferred. -->
+			<script id="theme-preference">
+				(function () {
+			try {
+				var stored = localStorage.getItem('theme');
+				var theme = /^(light|dark|high-contrast)$/.test(stored)
+					? stored
+					: matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+				document.documentElement.classList.add('theme-' + theme);
+			} catch (e) {}
+		})();;
+			</script>
+
+			<script id="atlas-layout-preferences">
+				(function () {
+			try {
+				var state = JSON.parse(localStorage.getItem('atlas-layout-preferences') || '{}');
+				var view = state["ProfileList"] || {};
+				var excludesKey = "";
+				var blocked = {};
+				if (excludesKey) {
+					var exclusions = JSON.parse(localStorage.getItem('atlas-layout-exclusions') || '{}');
+					if (Object.prototype.hasOwnProperty.call(exclusions, excludesKey)) {
+						var scoped = exclusions[excludesKey];
+						if (scoped) {
+							if (typeof scoped === 'object') blocked = scoped;
+						}
+					}
+				}
+				var html = document.documentElement;
+				for (var c in view) {
+					if (Object.prototype.hasOwnProperty.call(blocked, c)) continue;
+					if (view[c]) html.classList.add(c);
+					else html.classList.remove(c);
+				}
+			} catch (e) {}
+		})();;
+			</script>
+
+			<!-- assets and js globals -->
+			
+			<link rel="stylesheet" href="/__mirror/assets/b8bef0a7b6a7af383432b859">
+			
+			
+			<!-- Keep this URL in sync with oneDSScriptSelector in instrumentation/one-ds.ts. -->
+			<script async src="/__mirror/assets/057c8beea77f70301e995b45"></script>
+			
+
+			<!-- msdocs global object -->
+			<script id="msdocs-script">
+		var msDocs = {
+  "environment": {
+    "accessLevel": "online",
+    "azurePortalHostname": "portal.azure.com",
+    "reviewFeatures": false,
+    "supportLevel": "production",
+    "systemContent": false,
+    "siteName": "developer",
+    "legacyHosting": false
+  },
+  "data": {
+    "contentLocale": "en-us",
+    "contentDir": "ltr",
+    "userLocale": "en-us",
+    "userDir": "ltr",
+    "pageTemplate": "ProfileList",
+    "layoutStateStorageKey": "ProfileList",
+    "brand": "developer",
+    "context": {},
+    "standardFeedback": false,
+    "showFeedbackReport": false,
+    "feedbackHelpLinkType": "",
+    "feedbackHelpLinkUrl": "",
+    "feedbackSystem": "None",
+    "feedbackGitHubRepo": "",
+    "feedbackProductUrl": "",
+    "extendBreadcrumb": false,
+    "isEditDisplayable": true,
+    "isPrivateUnauthorized": false,
+    "hideViewSource": false,
+    "isPermissioned": false,
+    "hasRecommendations": false
+  },
+  "functions": {}
+};;
+	</script>
+
+			<!-- base scripts, msdocs global should be before this -->
+			<script src="/__mirror/assets/02d23dee81a1e33ddb3158cd" async></script>
+			
+
+			<!-- json-ld -->
+			
+		</head>
+	
+			<body id="body" data-bi-name="body" class="layout-body " lang="en-us" dir="ltr">
+				<header class="layout-body-header ">
+		<div class="header-holder has-default-focus">
+			
+		<a href="#main" style="z-index: 1070" class="outline-color-text visually-hidden-until-focused position-fixed inner-focus focus-visible top-0 left-0 right-0 padding-xs text-align-center background-color-body">
+			Skip to main content
+		</a>
+	
+
+			<div hidden id="cookie-consent-holder" data-test-id="cookie-consent-container"></div>
+			<!-- Unsupported browser warning -->
+			<div id="unsupported-browser" style="background-color: white; color: black; padding: 16px; border-bottom: 1px solid grey;" hidden>
+				<div style="max-width: 800px; margin: 0 auto;">
+					<p style="font-size: 24px">This browser is no longer supported.</p>
+					<p style="font-size: 16px; margin-top: 16px;">
+						Upgrade to Microsoft Edge to take advantage of the latest features, security updates, and technical support.
+					</p>
+					<div style="margin-top: 12px;">
+						<a href="https://go.microsoft.com/fwlink/p/?LinkID=2092881" style="background-color: #0078d4; border: 1px solid #0078d4; color: white; padding: 6px 12px; border-radius: 2px; display: inline-block;">
+							Download Microsoft Edge
+						</a>
+						<a href="https://learn.microsoft.com/en-us/lifecycle/faq/internet-explorer-microsoft-edge" style="background-color: white; padding: 6px 12px; border: 1px solid #505050; color: #171717; border-radius: 2px; display: inline-block;">
+							More info about Internet Explorer and Microsoft Edge
+						</a>
+					</div>
+				</div>
+			</div>
+			<!-- site header -->
+			<div id="ms--site-header" data-test-id="site-header-wrapper" itemscope="itemscope" itemtype="http://schema.org/Organization">
+				<div id="ms--mobile-nav" class="site-header display-none-tablet padding-inline-none gap-none" data-bi-name="mobile-header" data-test-id="mobile-header"></div>
+				<div id="ms--primary-nav" class="site-header display-none display-flex-tablet" data-bi-name="L1-header" data-test-id="primary-header"></div>
+				<div id="ms--secondary-nav" class="display-none" data-bi-name="L2-header" data-test-id="secondary-header" hidden></div>
+			</div>
+			
+		<!-- banner -->
+		<div data-banner>
+			<div id="disclaimer-holder"></div>
+			
+		</div>
+		<!-- banner end -->
+	
+		</div>
+	</header>
+				 
+
+				<main id="main" role="main" class="layout-body-main " data-bi-name="content" lang="en-us" dir="ltr">
+					
+			<div data-main-column class=" margin-bottom-sm ">
+				 <div class="profile-list">
+	<section class="content background-color-body-dark padding-block-sm">
+		<div class="uhf-container">
+			<div class="columns columns-reverse is-vertically-centered">
+					<div class="column is-5 is-offset-1-desktop is-10-mobile is-offset-1-mobile">
+						<img src="/__mirror/assets/b5b1e335d47ea857c7018ab3" alt="Developer Advocate Bit in a Red T-Shirt with Developer Advocate label." data-linktype="absolute-path">
+					</div>
+
+				<div class="column">
+					<h1>Cloud Advocates</h1>
+					<p>Our team's charter is to help every technologist on the planet succeed, be they students or those working in enterprises or startups. We engage in outreach to developers and others in the software ecosystem, all designed to further technical education and proficiency with the Microsoft Cloud + AI platform.</p>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="profiles-container uhf-container">
+		<div class="margin-block-xs">
+			<div class="columns is-gapless is-vertically-centered">
+				<div class="column is-5">
+						<input id="filter-list" class="input" placeholder="Cloud Advocates" type="search" aria-label="Cloud Advocates" aria-describedby="filter-description">
+					<p id="filter-description" hidden="">Content will filter as you type</p>
+				</div>
+				<div class="column is-narrow">
+					<div class="alert is-primary no-results margin-top-none-tablet margin-left-xxs-tablet" hidden="">
+						<p class="alert-title">No results found</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<ul class="grid is-fibonacci margin-top-sm">
+			<li class="grid-item profile-component">
+				<div class="columns is-gapless is-mobile is-vertically-centered">
+					<div class="column is-6">
+						<a href="/en-us/advocates/aaron-powell" title="Aaron Powell" class="display-block" data-linktype="relative-path">
+		<figure class="image is-fullwidth">
+			<img class="border-radius-rounded" src="/__mirror/assets/42d714c1bc198ab05a5945dd" alt="" data-linktype="relative-path">
+		</figure>
+</a>
+
+					</div>
+					<div class="column is-6">
+						<div class="profile-text margin-left-xs">
+							<a href="/en-us/advocates/aaron-powell" title="Aaron Powell" class="display-block" data-linktype="relative-path">
+	<h3 class="title is-6 has-text-color">Aaron Powell</h3>
+</a>
+								<a class="has-no-wrap has-text-overflow-ellipsis display-block" href="https://twitter.com/slace" data-linktype="external">
+									@slace
+								</a>
+								<p>.NET / JavaScript / Web | Microsoft MVP Alumni</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="grid-item profile-component">
+				<div class="columns is-gapless is-mobile is-vertically-centered">
+					<div class="column is-6">
+						<a href="/en-us/advocates/alvaro-videla" title="Alvaro Videla" class="display-block" data-linktype="relative-path">
+		<figure class="image is-fullwidth">
+			<img class="border-radius-rounded" src="/__mirror/assets/e5eb49eee454086e17afa45b" alt="" data-linktype="relative-path">
+		</figure>
+</a>
+
+					</div>
+					<div class="column is-6">
+						<div class="profile-text margin-left-xs">
+							<a href="/en-us/advocates/alvaro-videla" title="Alvaro Videla" class="display-block" data-linktype="relative-path">
+	<h3 class="title is-6 has-text-color">Alvaro Videla</h3>
+</a>
+								<a class="has-no-wrap has-text-overflow-ellipsis display-block" href="https://twitter.com/old_sound" data-linktype="external">
+									@old_sound
+								</a>
+								<p>RabbitMQ / Functional Programming / Architecture</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="grid-item profile-component">
+				<div class="columns is-gapless is-mobile is-vertically-centered">
+					<div class="column is-6">
+						<a href="/en-us/advocates/amy-boyd" title="Amy Boyd" class="display-block" data-linktype="relative-path">
+		<figure class="image is-fullwidth">
+			<img class="border-radius-rounded" src="/__mirror/assets/1b1acaa2e68adf6790249b33" alt="" data-linktype="relative-path">
+		</figure>
+</a>
+
+					</div>
+					<div class="column is-6">
+						<div class="profile-text margin-left-xs">
+							<a href="/en-us/advocates/amy-boyd" title="Amy Boyd" class="display-block" data-linktype="relative-path">
+	<h3 class="title is-6 has-text-color">Amy Boyd</h3>
+</a>
+								<a class="has-no-wrap has-text-overflow-ellipsis display-block" href="https://twitter.com/AmyKateNicho" data-linktype="external">
+									@AmyKateNicho
+								</a>
+								<p>AI / ML</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="grid-item profile-component">
+				<div class="columns is-gapless is-mobile is-vertically-centered">
+					<div class="column is-6">
+						<a href="/en-us/advocates/anthony-bartolo" title="Anthony Bartolo" class="display-block" data-linktype="relative-path">
+		<figure class="image is-fullwidth">
+			<img class="border-radius-rounded" src="/__mirror/assets/db566cbfcfe9bc66f01d9ddd" alt="" data-linktype="relative-path">
+		</figure>
+</a>
+
+					</div>
+					<div class="column is-6">
+						<div class="profile-text margin-left-xs">
+							<a href="/en-us/advocates/anthony-bartolo" title="Anthony Bartolo" class="display-block" data-linktype="relative-path">
+	<h3 class="title is-6 has-text-color">Anthony Bartolo</h3>
+</a>
+								<a class="has-no-wrap has-text-overflow-ellipsis display-block" href="https://twitter.com/wirelesslife" data-linktype="external">
+									@wirelesslife
+								</a>
+								<p>Developer Tools / AI / Infrastructure / Security | Microsoft MVP Alumni</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="grid-item profile-component">
+				<div class="columns is-gapless is-mobile is-vertically-centered">
+					<div class="column is-6">
+						<a href="/en-us/advocates/april-dunnam" title="April Dunnam" class="display-block" data-linktype="relative-path">
+		<figure class="image is-fullwidth">
+			<img class="border-radius-rounded" src="/__mirror/assets/e7a0b17e79d42a3123a0d371" alt="" data-linktype="relative-path">
+		</figure>
+</a>
+
+					</div>
+					<div class="column is-6">
+						<div class="profile-text margin-left-xs">
+							<a href="/en-us/advocates/april-dunnam" title="April Dunnam" class="display-block" data-linktype="relative-path">
+	<h3 class="title is-6 has-text-color">April Dunnam</h3>
+</a>
+								<a class="has-no-wrap has-text-overflow-ellipsis display-block" href="https://twitter.com/aprildunnam" data-linktype="external">
+									@aprildunnam
+								</a>
+								<p>Power Platform</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="grid-item profile-component">
+				<div class="columns is-gapless is-mobile is-vertically-centered">
+					<div class="column is-6">
+						<a href="/en-us/advocates/april-gittens" title="April Gittens" class="display-block" data-linktype="relative-path">
+		<figure class="image is-fullwidth">
+			<img class="border-radius-rounded" src="/__mirror/assets/d22b96f0ddd81e2444008443" alt="" data-linktype="relative-path">
+		</figure>
+</a>
+
+					</div>
+					<div class="column is-6">
+						<div class="profile-text margin-left-xs">
+							<a href="/en-us/advocates/april-gittens" title="April Gittens" class="display-block" data-linktype="relative-path">
+	<h3 class="title is-6 has-text-color">April Gittens</h3>
+</a>
+								<p>United States</p>
+								<p>AI / Responsible AI / Python</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="grid-item profile-component">
+				<div class="columns is-gapless is-mobile is-vertically-centered">
+					<div class="column is-6">
+						<a href="/en-us/advocates/ayca-bas" title="Ayca Bas" class="display-block" data-linktype="relative-path">
+		<figure class="image is-fullwidth">
+			<img class="border-radius-rounded" src="/__mirror/assets/c8bc6ef1fcbcff9d516e59de" alt="" data-linktype="relative-path">
+		</figure>
+</a>
+
+					</div>
+					<div class="column is-6">
+						<div class="profile-text margin-left-xs">
+							<a href="/en-us/advocates/ayca-bas" title="Ayca Bas" class="display-block" data-linktype="relative-path">
+	<h3 class="title is-6 has-text-color">Ayca Bas</h3>
+</a>
+								<a class="has-no-wrap has-text-overflow-ellipsis display-block" href="https://twitter.com/aycabs" data-linktype="external">
+									@aycabs
+								</a>
+								<p>Microsoft Graph</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="grid-item profile-component">
+				<div class="columns is-gapless is-mobile is-vertically-centered">
+					<div class="column is-6">
+						<a href="/en-us/advocates/barnam-bora" title="Barnam Bora" class="display-block" data-linktype="relative-path">
+		<figure class="image is-fullwidth">
+			<img class="border-radius-rounded" src="/__mirror/assets/75dd217eced185e79e7bba27" alt="" data-linktype="relative-path">
+		</figure>
+</a>
+
+					</div>
+					<div class="column is-6">
+						<div class="profile-text margin-left-xs">
+							<a href="/en-us/advocates/barnam-bora" title="Barnam Bora" class="display-block" data-linktype="relative-path">
+	<h3 class="title is-6 has-text-color">Barnam Bora</h3>
+</a>
+								<a class="has-no-wrap has-text-overflow-ellipsis display-block" href="https://twitter.com/barnambora" data-linktype="external">
+									@barnambora
+								</a>
+								<p>AI / ML / Microsoft Teams / Microsoft Graph / CTO Advisory</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="grid-item profile-component">
+				<div class="columns is-gapless is-mobile is-vertically-centered">
+					<div class="column is-6">
+						<a href="/en-us/advocates/brian-benz" title="Brian Benz" class="display-block" data-linktype="relative-path">
+		<figure class="image is-fullwidth">
+			<img class="border-radius-rounded" src="/__mirror/assets/db2859f867aeac44191903e5" alt="" data-linktype="relative-path">
+		</figure>
+</a>
+
+					</div>
+					<div class="column is-6">
+						<div class="profile-text margin-left-xs">
+							<a href="/en-us/advocates/brian-benz" title="Brian Benz" class="display-block" data-linktype="relative-path">
+	<h3 class="title is-6 has-text-color">Brian Benz</h3>
+</a>
+								<a class="has-no-wrap has-text-overflow-ellipsis display-block" href="https://twitter.com/bbenz" data-linktype="external">
+									@bbenz
+								</a>
+								<p>Java / AI / DevOps / Cloud | Java Champion | Jakarta EE Ambassador</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="grid-item profile-component">
+				<div class="columns is-gapless is-mobile is-vertically-centered">
+					<div class="column is-6">
+						<a href="/en-us/advocates/bruno-capuano" title="Bruno Capuano" class="display-block" data-linktype="relative-path">
+		<figure class="image is-fullwidth">
+			<img class="border-radius-rounded" src="/__mirror/assets/30d3d88adeb16745f9d9c130" alt="" data-linktype="relative-path">
+		</figure>
+</a>
+
+					</div>
+					<div class="column is-6">
+						<div class="profile-text margin-left-xs">
+							<a href="/en-us/advocates/bruno-capuano" title="Bruno Capuano" class="display-block" data-linktype="relative-path">
+	<h3 class="title is-6 has-text-color">Bruno Capuano</h3>
+</a>
+								<a class="has-no-wrap has-text-overflow-ellipsis display-block" href="https://twitter.com/elbruno" data-linktype="external">
+									@elbruno
+								</a>
+								<p>AI / ML / .NET | Microsoft MVP Alumni</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="grid-item profile-component">
+				<div class="columns is-gapless is-mobile is-vertically-centered">
+					<div class="column is-6">
+						<a href="/en-us/advocates/burke-holland" title="Burke Holland" class="display-block" data-linktype="relative-path">
+		<figure class="image is-fullwidth">
+			<img class="border-radius-rounded" src="/__mirror/assets/a869e8f0a75172461543d3bb" alt="" data-linktype="relative-path">
+		</figure>
+</a>
+
+					</div>
+					<div class="column is-6">
+						<div class="profile-text margin-left-xs">
+							<a href="/en-us/advocates/burke-holland" title="Burke Holland" class="display-block" data-linktype="relative-path">
+	<h3 class="title is-6 has-text-color">Burke Holland</h3>
+</a>
+								<a class="has-no-wrap has-text-overflow-ellipsis display-block" href="https://twitter.com/burkeholland" data-linktype="external">
+									@burkeholland
+								</a>
+								<p>JavaScript / VS Code</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="grid-item profile-component">
+				<div class="columns is-gapless is-mobile is-vertically-centered">
+					<div class="column is-6">
+						<a href="/en-us/advocates/carlotta-castelluccio" title="Carlotta Castelluccio" class="display-block" data-linktype="relative-path">
+		<figure class="image is-fullwidth">
+			<img class="border-radius-rounded" src="/__mirror/assets/c45c215edc8c979a02e7770b" alt="" data-linktype="relative-path">
+		</figure>
+</a>
+
+					</div>
+					<div class="column is-6">
+						<div class="profile-text margin-left-xs">
+							<a href="/en-us/advocates/carlotta-castelluccio" title="Carlotta Castelluccio" class="display-block" data-linktype="relative-path">
+	<h3 class="title is-6 has-text-color">Carlotta Castelluccio</h3>
+</a>
+								<p> Italy</p>
+								<p>Data Science / Azure / Artificial Intelligence</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="grid-item profile-component">
+				<div class="columns is-gapless is-mobile is-vertically-centered">
+					<div class="column is-6">
+						<a href="/en-us/advocates/cedric-vidal" title="Cedric Vidal" class="display-block" data-linktype="relative-path">
+		<figure class="image is-fullwidth">
+			<img class="border-radius-rounded" src="/__mirror/assets/e3546f95cb4f7b2cf7dd3e03" alt="" data-linktype="relative-path">
+		</figure>
+</a>
+
+					</div>
+					<div class="column is-6">
+						<div class="profile-text margin-left-xs">
+							<a href="/en-us/advocates/cedric-vidal" title="Cedric Vidal" class="display-block" data-linktype="relative-path">
+	<h3 class="title is-6 has-text-color">Cedric Vidal</h3>
+</a>
+								<p> United States</p>
+								<p>AI</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="grid-item profile-component">
+				<div class="columns is-gapless is-mobile is-vertically-centered">
+					<div class="column is-6">
+						<a href="/en-us/advocates/chris-noring" title="Chris Noring" class="display-block" data-linktype="relative-path">
+		<figure class="image is-fullwidth">
+			<img class="border-radius-rounded" src="/__mirror/assets/63f018d94f052a9190d8097e" alt="" data-linktype="relative-path">
+		</figure>
+</a>
+
+					</div>
+					<div class="column is-6">
+						<div class="profile-text margin-left-xs">
+							<a href="/en-us/advocates/chris-noring" title="Chris Noring" class="display-block" data-linktype="relative-path">
+	<h3 class="title is-6 has-text-color">Chris Noring</h3>
+</a>
+								<a class="has-no-wrap has-text-overflow-ellipsis display-block" href="https://twitter.com/chris_noring" data-linktype="external">
+									@chris_noring
+								</a>
+								<p>Web / Azure / JavaScript</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="grid-item profile-component">
+				<div class="columns is-gapless is-mobile is-vertically-centered">
+					<div class="column is-6">
+						<a href="/en-us/advocates/christopher-maneu" title="Christopher Maneu" class="display-block" data-linktype="relative-path">
+		<figure class="image is-fullwidth">
+			<img class="border-radius-rounded" src="/__mirror/assets/ebada9a2c507cb81fa777f8d" alt="" data-linktype="relative-path">
+		</figure>
+</a>
+
+					</div>
+					<div class="column is-6">
+						<div class="profile-text margin-left-xs">
+							<a href="/en-us/advocates/christopher-maneu" title="Christopher Maneu" class="display-block" data-linktype="relative-path">
+	<h3 class="title is-6 has-text-color">Christopher Maneu</h3>
+</a>
+								<a class="has-no-wrap has-text-overflow-ellipsis display-block" href="https://twitter.com/cmaneu" data-linktype="external">
+									@cmaneu
+								</a>
+								<p>Data Engineering &amp; Analytics</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="grid-item profile-component">
+				<div class="columns is-gapless is-mobile is-vertically-centered">
+					<div class="column is-6">
+						<a href="/en-us/advocates/cynthia-zanoni" title="Cynthia Zanoni" class="display-block" data-linktype="relative-path">
+		<figure class="image is-fullwidth">
+			<img class="border-radius-rounded" src="/__mirror/assets/808062b44a79d7a562e323a7" alt="" data-linktype="relative-path">
+		</figure>
+</a>
+
+					</div>
+					<div class="column is-6">
+						<div class="profile-text margin-left-xs">
+							<a href="/en-us/advocates/cynthia-zanoni" title="Cynthia Zanoni" class="display-block" data-linktype="relative-path">
+	<h3 class="title is-6 has-text-color">Cynthia Zanoni</h3>
+</a>
+								<a class="has-no-wrap has-text-overflow-ellipsis display-block" href="https://twitter.com/cynthia_zanoni" data-linktype="external">
+									@cynthia_zanoni
+								</a>
+								<p>JavaScript / GitHub / VSCode</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="grid-item profile-component">
+				<div class="columns is-gapless is-mobile is-vertically-centered">
+					<div class="column is-6">
+						<a href="/en-us/advocates/dan-wahlin" title="Dan Wahlin" class="display-block" data-linktype="relative-path">
+		<figure class="image is-fullwidth">
+			<img class="border-radius-rounded" src="/__mirror/assets/04801071ab28fbbaaced3555" alt="" data-linktype="relative-path">
+		</figure>
+</a>
+
+					</div>
+					<div class="column is-6">
+						<div class="profile-text margin-left-xs">
+							<a href="/en-us/advocates/dan-wahlin" title="Dan Wahlin" class="display-block" data-linktype="relative-path">
+	<h3 class="title is-6 has-text-color">Dan Wahlin</h3>
+</a>
+								<a class="has-no-wrap has-text-overflow-ellipsis display-block" href="https://twitter.com/danwahlin" data-linktype="external">
+									@danwahlin
+								</a>
+								<p>AI / Azure / JavaScript | Microsoft MVP Alumni | Docker Captain | Google Developer Expert | Microsoft RD Alumni</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="grid-item profile-component">
+				<div class="columns is-gapless is-mobile is-vertically-centered">
+					<div class="column is-6">
+						<a href="/en-us/advocates/daniel-laskewitz" title="Daniel Laskewitz" class="display-block" data-linktype="relative-path">
+		<figure class="image is-fullwidth">
+			<img class="border-radius-rounded" src="/__mirror/assets/0a3b51be096bc257eab01cfd" alt="" data-linktype="relative-path">
+		</figure>
+</a>
+
+					</div>
+					<div class="column is-6">
+						<div class="profile-text margin-left-xs">
+							<a href="/en-us/advocates/daniel-laskewitz" title="Daniel Laskewitz" class="display-block" data-linktype="relative-path">
+	<h3 class="title is-6 has-text-color">Daniel Laskewitz</h3>
+</a>
+								<a class="has-no-wrap has-text-overflow-ellipsis display-block" href="https://twitter.com/laskewitz" data-linktype="external">
+									@laskewitz
+								</a>
+								<p>Power Platform</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="grid-item profile-component">
+				<div class="columns is-gapless is-mobile is-vertically-centered">
+					<div class="column is-6">
+						<a href="/en-us/advocates/elaiza-benitez" title="Elaiza Benitez" class="display-block" data-linktype="relative-path">
+		<figure class="image is-fullwidth">
+			<img class="border-radius-rounded" src="/__mirror/assets/9e2966ac685749d5389b4ce7" alt="" data-linktype="relative-path">
+		</figure>
+</a>
+
+					</div>
+					<div class="column is-6">
+						<div class="profile-text margin-left-xs">
+							<a href="/en-us/advocates/elaiza-benitez" title="Elaiza Benitez" class="display-block" data-linktype="relative-path">
+	<h3 class="title is-6 has-text-color">Elaiza Benitez</h3>
+</a>
+								<a class="has-no-wrap has-text-overflow-ellipsis display-block" href="https://twitter.com/benitezhere" data-linktype="external">
+									@benitezhere
+								</a>
+								<p>Power Platform</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="grid-item profile-component">
+				<div class="columns is-gapless is-mobile is-vertically-centered">
+					<div class="column is-6">
+						<a href="/en-us/advocates/em-lazerwalker" title="Em Lazer-Walker" class="display-block" data-linktype="relative-path">
+		<figure class="image is-fullwidth">
+			<img class="border-radius-rounded" src="/__mirror/assets/4c5786a194afacaec307e71a" alt="" data-linktype="relative-path">
+		</figure>
+</a>
+
+					</div>
+					<div class="column is-6">
+						<div class="profile-text margin-left-xs">
+							<a href="/en-us/advocates/em-lazerwalker" title="Em Lazer-Walker" class="display-block" data-linktype="relative-path">
+	<h3 class="title is-6 has-text-color">Em Lazer-Walker</h3>
+</a>
+								<a class="has-no-wrap has-text-overflow-ellipsis display-block" href="https://twitter.com/lazerwalker" data-linktype="external">
+									@lazerwalker
+								</a>
+								<p>Games / Mobile / JavaScript / IoT / Mixed Reality / HoloLens</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="grid-item profile-component">
+				<div class="columns is-gapless is-mobile is-vertically-centered">
+					<div class="column is-6">
+						<a href="/en-us/advocates/garry-trinder" title="Garry Trinder" class="display-block" data-linktype="relative-path">
+		<figure class="image is-fullwidth">
+			<img class="border-radius-rounded" src="/__mirror/assets/e51a302e27625def0a72777b" alt="" data-linktype="relative-path">
+		</figure>
+</a>
+
+					</div>
+					<div class="column is-6">
+						<div class="profile-text margin-left-xs">
+							<a href="/en-us/advocates/garry-trinder" title="Garry Trinder" class="display-block" data-linktype="relative-path">
+	<h3 class="title is-6 has-text-color">Garry Trinder</h3>
+</a>
+								<a class="has-no-wrap has-text-overflow-ellipsis display-block" href="https://twitter.com/garrytrinder" data-linktype="external">
+									@garrytrinder
+								</a>
+								<p>Development on Microsoft 365</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="grid-item profile-component">
+				<div class="columns is-gapless is-mobile is-vertically-centered">
+					<div class="column is-6">
+						<a href="/en-us/advocates/gustavo-cordido" title="Gustavo Cordido" class="display-block" data-linktype="relative-path">
+		<figure class="image is-fullwidth">
+			<img class="border-radius-rounded" src="/__mirror/assets/d7295f96a5a4f52bf174d3a5" alt="" data-linktype="relative-path">
+		</figure>
+</a>
+
+					</div>
+					<div class="column is-6">
+						<div class="profile-text margin-left-xs">
+							<a href="/en-us/advocates/gustavo-cordido" title="Gustavo Cordido" class="display-block" data-linktype="relative-path">
+	<h3 class="title is-6 has-text-color">Gustavo Cordido</h3>
+</a>
+								<a class="has-no-wrap has-text-overflow-ellipsis display-block" href="https://twitter.com/gcordidoa" data-linktype="external">
+									@gcordidoa
+								</a>
+								<p>Spatial Computing / Mixed Reality / AI</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="grid-item profile-component">
+				<div class="columns is-gapless is-mobile is-vertically-centered">
+					<div class="column is-6">
+						<a href="/en-us/advocates/gwyneth-penasiguenza" title="Gwyneth Peña-Siguenza" class="display-block" data-linktype="relative-path">
+		<figure class="image is-fullwidth">
+			<img class="border-radius-rounded" src="/__mirror/assets/aef218008489c49cb11f1c41" alt="" data-linktype="relative-path">
+		</figure>
+</a>
+
+					</div>
+					<div class="column is-6">
+						<div class="profile-text margin-left-xs">
+							<a href="/en-us/advocates/gwyneth-penasiguenza" title="Gwyneth Peña-Siguenza" class="display-block" data-linktype="relative-path">
+	<h3 class="title is-6 has-text-color">Gwyneth Peña-Siguenza</h3>
+</a>
+								<a class="has-no-wrap has-text-overflow-ellipsis display-block" href="https://twitter.com/madebygps" data-linktype="external">
+									@madebygps
+								</a>
+								<p>Cloud Engineering</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="grid-item profile-component">
+				<div class="columns is-gapless is-mobile is-vertically-centered">
+					<div class="column is-6">
+						<a href="/en-us/advocates/henk-boelman" title="Henk Boelman" class="display-block" data-linktype="relative-path">
+		<figure class="image is-fullwidth">
+			<img class="border-radius-rounded" src="/__mirror/assets/458c4433310a050088ec0e8d" alt="" data-linktype="relative-path">
+		</figure>
+</a>
+
+					</div>
+					<div class="column is-6">
+						<div class="profile-text margin-left-xs">
+							<a href="/en-us/advocates/henk-boelman" title="Henk Boelman" class="display-block" data-linktype="relative-path">
+	<h3 class="title is-6 has-text-color">Henk Boelman</h3>
+</a>
+								<a class="has-no-wrap has-text-overflow-ellipsis display-block" href="https://twitter.com/hboelman" data-linktype="external">
+									@hboelman
+								</a>
+								<p>AI / ML / Azure / DevOps</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="grid-item profile-component">
+				<div class="columns is-gapless is-mobile is-vertically-centered">
+					<div class="column is-6">
+						<a href="/en-us/advocates/ismael-mejia" title="Ismaël Mejía" class="display-block" data-linktype="relative-path">
+		<figure class="image is-fullwidth">
+			<img class="border-radius-rounded" src="/__mirror/assets/444d659f615ff10aa21f041e" alt="" data-linktype="relative-path">
+		</figure>
+</a>
+
+					</div>
+					<div class="column is-6">
+						<div class="profile-text margin-left-xs">
+							<a href="/en-us/advocates/ismael-mejia" title="Ismaël Mejía" class="display-block" data-linktype="relative-path">
+	<h3 class="title is-6 has-text-color">Ismaël Mejía</h3>
+</a>
+								<a class="has-no-wrap has-text-overflow-ellipsis display-block" href="https://twitter.com/iemejia" data-linktype="external">
+									@iemejia
+								</a>
+								<p>Big Data / Data Engineering</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="grid-item profile-component">
+				<div class="columns is-gapless is-mobile is-vertically-centered">
+					<div class="column is-6">
+						<a href="/en-us/advocates/jorge-arteiro" title="Jorge Arteiro" class="display-block" data-linktype="relative-path">
+		<figure class="image is-fullwidth">
+			<img class="border-radius-rounded" src="/__mirror/assets/35c9cb58efebac930026ea71" alt="" data-linktype="relative-path">
+		</figure>
+</a>
+
+					</div>
+					<div class="column is-6">
+						<div class="profile-text margin-left-xs">
+							<a href="/en-us/advocates/jorge-arteiro" title="Jorge Arteiro" class="display-block" data-linktype="relative-path">
+	<h3 class="title is-6 has-text-color">Jorge Arteiro</h3>
+</a>
+								<a class="has-no-wrap has-text-overflow-ellipsis display-block" href="https://twitter.com/jorgearteiro" data-linktype="external">
+									@jorgearteiro
+								</a>
+								<p>Containers / Kubernetes / Open Source / Linux</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="grid-item profile-component">
+				<div class="columns is-gapless is-mobile is-vertically-centered">
+					<div class="column is-6">
+						<a href="/en-us/advocates/josh-ndemenge" title="Josh Ndemenge" class="display-block" data-linktype="relative-path">
+		<figure class="image is-fullwidth">
+			<img class="border-radius-rounded" src="/__mirror/assets/8ff6dd924e9c2bebfc623bae" alt="" data-linktype="relative-path">
+		</figure>
+</a>
+
+					</div>
+					<div class="column is-6">
+						<div class="profile-text margin-left-xs">
+							<a href="/en-us/advocates/josh-ndemenge" title="Josh Ndemenge" class="display-block" data-linktype="relative-path">
+	<h3 class="title is-6 has-text-color">Josh Ndemenge</h3>
+</a>
+								<a class="has-no-wrap has-text-overflow-ellipsis display-block" href="https://twitter.com/Jcardif254" data-linktype="external">
+									@Jcardif254
+								</a>
+								<p>Data &amp; Analytics / Big Data</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="grid-item profile-component">
+				<div class="columns is-gapless is-mobile is-vertically-centered">
+					<div class="column is-6">
+						<a href="/en-us/advocates/joshua-duffney" title="Joshua Duffney" class="display-block" data-linktype="relative-path">
+		<figure class="image is-fullwidth">
+			<img class="border-radius-rounded" src="/__mirror/assets/23b28b763c0ae63d9ac6b6e8" alt="" data-linktype="relative-path">
+		</figure>
+</a>
+
+					</div>
+					<div class="column is-6">
+						<div class="profile-text margin-left-xs">
+							<a href="/en-us/advocates/joshua-duffney" title="Joshua Duffney" class="display-block" data-linktype="relative-path">
+	<h3 class="title is-6 has-text-color">Joshua Duffney</h3>
+</a>
+								<p> NE</p>
+								<p>Secure Software Supply Chain</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="grid-item profile-component">
+				<div class="columns is-gapless is-mobile is-vertically-centered">
+					<div class="column is-6">
+						<a href="/en-us/advocates/julia-muiruri" title="Julia Muiruri" class="display-block" data-linktype="relative-path">
+		<figure class="image is-fullwidth">
+			<img class="border-radius-rounded" src="/__mirror/assets/ee50d61eec645c29de1fff17" alt="" data-linktype="relative-path">
+		</figure>
+</a>
+
+					</div>
+					<div class="column is-6">
+						<div class="profile-text margin-left-xs">
+							<a href="/en-us/advocates/julia-muiruri" title="Julia Muiruri" class="display-block" data-linktype="relative-path">
+	<h3 class="title is-6 has-text-color">Julia Muiruri</h3>
+</a>
+								<a class="has-no-wrap has-text-overflow-ellipsis display-block" href="https://twitter.com/juliamuiruri4" data-linktype="external">
+									@juliamuiruri4
+								</a>
+								<p>Students / Educators / VS Code</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="grid-item profile-component">
+				<div class="columns is-gapless is-mobile is-vertically-centered">
+					<div class="column is-6">
+						<a href="/en-us/advocates/julien-dubois" title="Julien Dubois" class="display-block" data-linktype="relative-path">
+		<figure class="image is-fullwidth">
+			<img class="border-radius-rounded" src="/__mirror/assets/8777321c62669983671b1e45" alt="" data-linktype="relative-path">
+		</figure>
+</a>
+
+					</div>
+					<div class="column is-6">
+						<div class="profile-text margin-left-xs">
+							<a href="/en-us/advocates/julien-dubois" title="Julien Dubois" class="display-block" data-linktype="relative-path">
+	<h3 class="title is-6 has-text-color">Julien Dubois</h3>
+</a>
+								<p> France</p>
+								<p>Java</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="grid-item profile-component">
+				<div class="columns is-gapless is-mobile is-vertically-centered">
+					<div class="column is-6">
+						<a href="/en-us/advocates/justin-yoo" title="Justin Yoo" class="display-block" data-linktype="relative-path">
+		<figure class="image is-fullwidth">
+			<img class="border-radius-rounded" src="/__mirror/assets/be572356af8ea0369643c2dc" alt="" data-linktype="relative-path">
+		</figure>
+</a>
+
+					</div>
+					<div class="column is-6">
+						<div class="profile-text margin-left-xs">
+							<a href="/en-us/advocates/justin-yoo" title="Justin Yoo" class="display-block" data-linktype="relative-path">
+	<h3 class="title is-6 has-text-color">Justin Yoo</h3>
+</a>
+								<a class="has-no-wrap has-text-overflow-ellipsis display-block" href="https://twitter.com/justinchronicle" data-linktype="external">
+									@justinchronicle
+								</a>
+								<p>.NET / Power Platform / Cloud-native / DevOps / Integration | Microsoft MVP Alumni | Docker Captain</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="grid-item profile-component">
+				<div class="columns is-gapless is-mobile is-vertically-centered">
+					<div class="column is-6">
+						<a href="/en-us/advocates/kamalshree-soundirapandian" title="Kamal Shree Soundirapandian" class="display-block" data-linktype="relative-path">
+		<figure class="image is-fullwidth">
+			<img class="border-radius-rounded" src="/__mirror/assets/bb4956224f47133a16ac8de2" alt="" data-linktype="relative-path">
+		</figure>
+</a>
+
+					</div>
+					<div class="column is-6">
+						<div class="profile-text margin-left-xs">
+							<a href="/en-us/advocates/kamalshree-soundirapandian" title="Kamal Shree Soundirapandian" class="display-block" data-linktype="relative-path">
+	<h3 class="title is-6 has-text-color">Kamal Shree Soundirapandian</h3>
+</a>
+								<a class="has-no-wrap has-text-overflow-ellipsis display-block" href="https://twitter.com/whatsupcoders" data-linktype="external">
+									@whatsupcoders
+								</a>
+								<p>Microsoft 365 / Flutter &amp; Dart / Android</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="grid-item profile-component">
+				<div class="columns is-gapless is-mobile is-vertically-centered">
+					<div class="column is-6">
+						<a href="/en-us/advocates/kinfey-lo" title="Kinfey Lo" class="display-block" data-linktype="relative-path">
+		<figure class="image is-fullwidth">
+			<img class="border-radius-rounded" src="/__mirror/assets/44c6cb73baed9d9deac4c1b7" alt="" data-linktype="relative-path">
+		</figure>
+</a>
+
+					</div>
+					<div class="column is-6">
+						<div class="profile-text margin-left-xs">
+							<a href="/en-us/advocates/kinfey-lo" title="Kinfey Lo" class="display-block" data-linktype="relative-path">
+	<h3 class="title is-6 has-text-color">Kinfey Lo</h3>
+</a>
+								<a class="has-no-wrap has-text-overflow-ellipsis display-block" href="https://twitter.com/Ljh8304" data-linktype="external">
+									@Ljh8304
+								</a>
+								<p>AzureOpenAIService / AzureAI / GitHub</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="grid-item profile-component">
+				<div class="columns is-gapless is-mobile is-vertically-centered">
+					<div class="column is-6">
+						<a href="/en-us/advocates/laurent-bugnion" title="Laurent Bugnion" class="display-block" data-linktype="relative-path">
+		<figure class="image is-fullwidth">
+			<img class="border-radius-rounded" src="/__mirror/assets/dd2c5b4a3361408f0d7dee34" alt="" data-linktype="relative-path">
+		</figure>
+</a>
+
+					</div>
+					<div class="column is-6">
+						<div class="profile-text margin-left-xs">
+							<a href="/en-us/advocates/laurent-bugnion" title="Laurent Bugnion" class="display-block" data-linktype="relative-path">
+	<h3 class="title is-6 has-text-color">Laurent Bugnion</h3>
+</a>
+								<p> Switzerland</p>
+								<p>.NET / Azure / AI</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="grid-item profile-component">
+				<div class="columns is-gapless is-mobile is-vertically-centered">
+					<div class="column is-6">
+						<a href="/en-us/advocates/lee-stott" title="Lee Stott" class="display-block" data-linktype="relative-path">
+		<figure class="image is-fullwidth">
+			<img class="border-radius-rounded" src="/__mirror/assets/86ba013554e975ecba2b21f2" alt="" data-linktype="relative-path">
+		</figure>
+</a>
+
+					</div>
+					<div class="column is-6">
+						<div class="profile-text margin-left-xs">
+							<a href="/en-us/advocates/lee-stott" title="Lee Stott" class="display-block" data-linktype="relative-path">
+	<h3 class="title is-6 has-text-color">Lee Stott</h3>
+</a>
+								<a class="has-no-wrap has-text-overflow-ellipsis display-block" href="https://twitter.com/lee_stott" data-linktype="external">
+									@lee_stott
+								</a>
+								<p>AI / ML</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="grid-item profile-component">
+				<div class="columns is-gapless is-mobile is-vertically-centered">
+					<div class="column is-6">
+						<a href="/en-us/advocates/liam-hampton" title="Liam Hampton" class="display-block" data-linktype="relative-path">
+		<figure class="image is-fullwidth">
+			<img class="border-radius-rounded" src="/__mirror/assets/30b8ca154e729e4a2ed7ae70" alt="" data-linktype="relative-path">
+		</figure>
+</a>
+
+					</div>
+					<div class="column is-6">
+						<div class="profile-text margin-left-xs">
+							<a href="/en-us/advocates/liam-hampton" title="Liam Hampton" class="display-block" data-linktype="relative-path">
+	<h3 class="title is-6 has-text-color">Liam Hampton</h3>
+</a>
+								<a class="has-no-wrap has-text-overflow-ellipsis display-block" href="https://twitter.com/liamchampton" data-linktype="external">
+									@liamchampton
+								</a>
+								<p>Go / DevOps / Containers</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="grid-item profile-component">
+				<div class="columns is-gapless is-mobile is-vertically-centered">
+					<div class="column is-6">
+						<a href="/en-us/advocates/madoka-chiyoda" title="Madoka Chiyoda" class="display-block" data-linktype="relative-path">
+		<figure class="image is-fullwidth">
+			<img class="border-radius-rounded" src="/__mirror/assets/43974c4e64bf6f74e00f03b4" alt="" data-linktype="relative-path">
+		</figure>
+</a>
+
+					</div>
+					<div class="column is-6">
+						<div class="profile-text margin-left-xs">
+							<a href="/en-us/advocates/madoka-chiyoda" title="Madoka Chiyoda" class="display-block" data-linktype="relative-path">
+	<h3 class="title is-6 has-text-color">Madoka Chiyoda</h3>
+</a>
+								<a class="has-no-wrap has-text-overflow-ellipsis display-block" href="https://twitter.com/chomado" data-linktype="external">
+									@chomado
+								</a>
+								<p>Mixed Reality / HoloLens / C# / Conversational AI / (Manga)</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="grid-item profile-component">
+				<div class="columns is-gapless is-mobile is-vertically-centered">
+					<div class="column is-6">
+						<a href="/en-us/advocates/marlene-mhangami" title="Marlene Mhangami" class="display-block" data-linktype="relative-path">
+		<figure class="image is-fullwidth">
+			<img class="border-radius-rounded" src="/__mirror/assets/4e8fa60766d59f35cf200e34" alt="" data-linktype="relative-path">
+		</figure>
+</a>
+
+					</div>
+					<div class="column is-6">
+						<div class="profile-text margin-left-xs">
+							<a href="/en-us/advocates/marlene-mhangami" title="Marlene Mhangami" class="display-block" data-linktype="relative-path">
+	<h3 class="title is-6 has-text-color">Marlene Mhangami</h3>
+</a>
+								<a class="has-no-wrap has-text-overflow-ellipsis display-block" href="https://twitter.com/marlene_zw" data-linktype="external">
+									@marlene_zw
+								</a>
+								<p>Python</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="grid-item profile-component">
+				<div class="columns is-gapless is-mobile is-vertically-centered">
+					<div class="column is-6">
+						<a href="/en-us/advocates/matthew-soucoup" title="Matthew Soucoup" class="display-block" data-linktype="relative-path">
+		<figure class="image is-fullwidth">
+			<img class="border-radius-rounded" src="/__mirror/assets/2c41f36a90853010e77008c9" alt="" data-linktype="relative-path">
+		</figure>
+</a>
+
+					</div>
+					<div class="column is-6">
+						<div class="profile-text margin-left-xs">
+							<a href="/en-us/advocates/matthew-soucoup" title="Matthew Soucoup" class="display-block" data-linktype="relative-path">
+	<h3 class="title is-6 has-text-color">Matthew Soucoup</h3>
+</a>
+								<a class="has-no-wrap has-text-overflow-ellipsis display-block" href="https://twitter.com/codemillmatt" data-linktype="external">
+									@codemillmatt
+								</a>
+								<p>.NET / Xamarin</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="grid-item profile-component">
+				<div class="columns is-gapless is-mobile is-vertically-centered">
+					<div class="column is-6">
+						<a href="/en-us/advocates/nitya-narasimhan" title="Nitya Narasimhan" class="display-block" data-linktype="relative-path">
+		<figure class="image is-fullwidth">
+			<img class="border-radius-rounded" src="/__mirror/assets/7201c9ea7850ced7a3695a71" alt="" data-linktype="relative-path">
+		</figure>
+</a>
+
+					</div>
+					<div class="column is-6">
+						<div class="profile-text margin-left-xs">
+							<a href="/en-us/advocates/nitya-narasimhan" title="Nitya Narasimhan" class="display-block" data-linktype="relative-path">
+	<h3 class="title is-6 has-text-color">Nitya Narasimhan</h3>
+</a>
+								<a class="has-no-wrap has-text-overflow-ellipsis display-block" href="https://twitter.com/nitya" data-linktype="external">
+									@nitya
+								</a>
+								<p>Mobile, Multi-Platform, Azure, PWA</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="grid-item profile-component">
+				<div class="columns is-gapless is-mobile is-vertically-centered">
+					<div class="column is-6">
+						<a href="/en-us/advocates/olivia-guzzardo" title="Olivia Guzzardo" class="display-block" data-linktype="relative-path">
+		<figure class="image is-fullwidth">
+			<img class="border-radius-rounded" src="/__mirror/assets/2bbf7d5fe715fcebd3e7607a" alt="" data-linktype="relative-path">
+		</figure>
+</a>
+
+					</div>
+					<div class="column is-6">
+						<div class="profile-text margin-left-xs">
+							<a href="/en-us/advocates/olivia-guzzardo" title="Olivia Guzzardo" class="display-block" data-linktype="relative-path">
+	<h3 class="title is-6 has-text-color">Olivia Guzzardo</h3>
+</a>
+								<a class="has-no-wrap has-text-overflow-ellipsis display-block" href="https://twitter.com/@oliviaguzzardo" data-linktype="external">
+									@@oliviaguzzardo
+								</a>
+								<p>VS Code / Azure / GitHub</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="grid-item profile-component">
+				<div class="columns is-gapless is-mobile is-vertically-centered">
+					<div class="column is-6">
+						<a href="/en-us/advocates/orin-thomas" title="Orin Thomas" class="display-block" data-linktype="relative-path">
+		<figure class="image is-fullwidth">
+			<img class="border-radius-rounded" src="/__mirror/assets/a23855037e2071356a0655bd" alt="" data-linktype="relative-path">
+		</figure>
+</a>
+
+					</div>
+					<div class="column is-6">
+						<div class="profile-text margin-left-xs">
+							<a href="/en-us/advocates/orin-thomas" title="Orin Thomas" class="display-block" data-linktype="relative-path">
+	<h3 class="title is-6 has-text-color">Orin Thomas</h3>
+</a>
+								<a class="has-no-wrap has-text-overflow-ellipsis display-block" href="https://twitter.com/orinthomas" data-linktype="external">
+									@orinthomas
+								</a>
+								<p>IT Infrastructure / Operations / IT Pro / Azure | Microsoft MVP Alumni | Microsoft Certified Trainer | Microsoft RD Alumni</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="grid-item profile-component">
+				<div class="columns is-gapless is-mobile is-vertically-centered">
+					<div class="column is-6">
+						<a href="/en-us/advocates/pablo-lopes" title="Pablo Lopes" class="display-block" data-linktype="relative-path">
+		<figure class="image is-fullwidth">
+			<img class="border-radius-rounded" src="/__mirror/assets/0827a2cade8be4d90b457a53" alt="" data-linktype="relative-path">
+		</figure>
+</a>
+
+					</div>
+					<div class="column is-6">
+						<div class="profile-text margin-left-xs">
+							<a href="/en-us/advocates/pablo-lopes" title="Pablo Lopes" class="display-block" data-linktype="relative-path">
+	<h3 class="title is-6 has-text-color">Pablo Lopes</h3>
+</a>
+								<p> Brazil</p>
+								<p>Azure / DotNet / Visual Studio / AI | Microsoft Learn Student Ambassador Alumni</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="grid-item profile-component">
+				<div class="columns is-gapless is-mobile is-vertically-centered">
+					<div class="column is-6">
+						<a href="/en-us/advocates/pamela-fox" title="Pamela Fox" class="display-block" data-linktype="relative-path">
+		<figure class="image is-fullwidth">
+			<img class="border-radius-rounded" src="/__mirror/assets/8904672f6cf3c2ff83b9ccc4" alt="" data-linktype="relative-path">
+		</figure>
+</a>
+
+					</div>
+					<div class="column is-6">
+						<div class="profile-text margin-left-xs">
+							<a href="/en-us/advocates/pamela-fox" title="Pamela Fox" class="display-block" data-linktype="relative-path">
+	<h3 class="title is-6 has-text-color">Pamela Fox</h3>
+</a>
+								<a class="has-no-wrap has-text-overflow-ellipsis display-block" href="https://twitter.com/pamelafox" data-linktype="external">
+									@pamelafox
+								</a>
+								<p>Python</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="grid-item profile-component">
+				<div class="columns is-gapless is-mobile is-vertically-centered">
+					<div class="column is-6">
+						<a href="/en-us/advocates/patrick-chanezon" title="Patrick Chanezon" class="display-block" data-linktype="relative-path">
+		<figure class="image is-fullwidth">
+			<img class="border-radius-rounded" src="/__mirror/assets/007160b10608cc2fe05982ec" alt="" data-linktype="relative-path">
+		</figure>
+</a>
+
+					</div>
+					<div class="column is-6">
+						<div class="profile-text margin-left-xs">
+							<a href="/en-us/advocates/patrick-chanezon" title="Patrick Chanezon" class="display-block" data-linktype="relative-path">
+	<h3 class="title is-6 has-text-color">Patrick Chanezon</h3>
+</a>
+								<a class="has-no-wrap has-text-overflow-ellipsis display-block" href="https://twitter.com/chanezon" data-linktype="external">
+									@chanezon
+								</a>
+								<p>Containers</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="grid-item profile-component">
+				<div class="columns is-gapless is-mobile is-vertically-centered">
+					<div class="column is-6">
+						<a href="/en-us/advocates/paul-decarlo" title="Paul DeCarlo" class="display-block" data-linktype="relative-path">
+		<figure class="image is-fullwidth">
+			<img class="border-radius-rounded" src="/__mirror/assets/05b4d4e959b4bbf990804020" alt="" data-linktype="relative-path">
+		</figure>
+</a>
+
+					</div>
+					<div class="column is-6">
+						<div class="profile-text margin-left-xs">
+							<a href="/en-us/advocates/paul-decarlo" title="Paul DeCarlo" class="display-block" data-linktype="relative-path">
+	<h3 class="title is-6 has-text-color">Paul DeCarlo</h3>
+</a>
+								<a class="has-no-wrap has-text-overflow-ellipsis display-block" href="https://twitter.com/pjdecarlo" data-linktype="external">
+									@pjdecarlo
+								</a>
+								<p>AI, ML, Data, IoT</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="grid-item profile-component">
+				<div class="columns is-gapless is-mobile is-vertically-centered">
+					<div class="column is-6">
+						<a href="/en-us/advocates/pierre-roman" title="Pierre Roman" class="display-block" data-linktype="relative-path">
+		<figure class="image is-fullwidth">
+			<img class="border-radius-rounded" src="/__mirror/assets/06979069a153663cd6d10e5e" alt="" data-linktype="relative-path">
+		</figure>
+</a>
+
+					</div>
+					<div class="column is-6">
+						<div class="profile-text margin-left-xs">
+							<a href="/en-us/advocates/pierre-roman" title="Pierre Roman" class="display-block" data-linktype="relative-path">
+	<h3 class="title is-6 has-text-color">Pierre Roman</h3>
+</a>
+								<a class="has-no-wrap has-text-overflow-ellipsis display-block" href="https://twitter.com/WiredCanuck" data-linktype="external">
+									@WiredCanuck
+								</a>
+								<p>Infrastructure / Azure / IaaS / Hybrid / Operations / IT Pro</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="grid-item profile-component">
+				<div class="columns is-gapless is-mobile is-vertically-centered">
+					<div class="column is-6">
+						<a href="/en-us/advocates/rabia-williams" title="Rabia Williams" class="display-block" data-linktype="relative-path">
+		<figure class="image is-fullwidth">
+			<img class="border-radius-rounded" src="/__mirror/assets/2d557e7fef5a3132be536a1a" alt="" data-linktype="relative-path">
+		</figure>
+</a>
+
+					</div>
+					<div class="column is-6">
+						<div class="profile-text margin-left-xs">
+							<a href="/en-us/advocates/rabia-williams" title="Rabia Williams" class="display-block" data-linktype="relative-path">
+	<h3 class="title is-6 has-text-color">Rabia Williams</h3>
+</a>
+								<a class="has-no-wrap has-text-overflow-ellipsis display-block" href="https://twitter.com/williamsrabia" data-linktype="external">
+									@williamsrabia
+								</a>
+								<p>Development on Microsoft 365</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="grid-item profile-component">
+				<div class="columns is-gapless is-mobile is-vertically-centered">
+					<div class="column is-6">
+						<a href="/en-us/advocates/rick-claus" title="Rick Claus" class="display-block" data-linktype="relative-path">
+		<figure class="image is-fullwidth">
+			<img class="border-radius-rounded" src="/__mirror/assets/89e3912ff7ac81ab0e212a91" alt="" data-linktype="relative-path">
+		</figure>
+</a>
+
+					</div>
+					<div class="column is-6">
+						<div class="profile-text margin-left-xs">
+							<a href="/en-us/advocates/rick-claus" title="Rick Claus" class="display-block" data-linktype="relative-path">
+	<h3 class="title is-6 has-text-color">Rick Claus</h3>
+</a>
+								<a class="has-no-wrap has-text-overflow-ellipsis display-block" href="https://twitter.com/RicksterCDN" data-linktype="external">
+									@RicksterCDN
+								</a>
+								<p>Azure / IaaS / Windows Server / On-Prem / IT Pro</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="grid-item profile-component">
+				<div class="columns is-gapless is-mobile is-vertically-centered">
+					<div class="column is-6">
+						<a href="/en-us/advocates/rory-preddy" title="Rory Preddy" class="display-block" data-linktype="relative-path">
+		<figure class="image is-fullwidth">
+			<img class="border-radius-rounded" src="/__mirror/assets/96c76fc94243b7cab1717bc8" alt="" data-linktype="relative-path">
+		</figure>
+</a>
+
+					</div>
+					<div class="column is-6">
+						<div class="profile-text margin-left-xs">
+							<a href="/en-us/advocates/rory-preddy" title="Rory Preddy" class="display-block" data-linktype="relative-path">
+	<h3 class="title is-6 has-text-color">Rory Preddy</h3>
+</a>
+								<a class="has-no-wrap has-text-overflow-ellipsis display-block" href="https://twitter.com/rorypreddy" data-linktype="external">
+									@rorypreddy
+								</a>
+								<p>Java</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="grid-item profile-component">
+				<div class="columns is-gapless is-mobile is-vertically-centered">
+					<div class="column is-6">
+						<a href="/en-us/advocates/sandra-ahlgrimm" title="Sandra Ahlgrimm" class="display-block" data-linktype="relative-path">
+		<figure class="image is-fullwidth">
+			<img class="border-radius-rounded" src="/__mirror/assets/610c9eca11bfb249d45f28ef" alt="" data-linktype="relative-path">
+		</figure>
+</a>
+
+					</div>
+					<div class="column is-6">
+						<div class="profile-text margin-left-xs">
+							<a href="/en-us/advocates/sandra-ahlgrimm" title="Sandra Ahlgrimm" class="display-block" data-linktype="relative-path">
+	<h3 class="title is-6 has-text-color">Sandra Ahlgrimm</h3>
+</a>
+								<a class="has-no-wrap has-text-overflow-ellipsis display-block" href="https://twitter.com/skriemhild" data-linktype="external">
+									@skriemhild
+								</a>
+								<p>Container / Java / DevOps</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="grid-item profile-component">
+				<div class="columns is-gapless is-mobile is-vertically-centered">
+					<div class="column is-6">
+						<a href="/en-us/advocates/sarah-kaiser" title="Sarah Kaiser" class="display-block" data-linktype="relative-path">
+		<figure class="image is-fullwidth">
+			<img class="border-radius-rounded" src="/__mirror/assets/65f8597309ed90b4a5cac8c9" alt="" data-linktype="relative-path">
+		</figure>
+</a>
+
+					</div>
+					<div class="column is-6">
+						<div class="profile-text margin-left-xs">
+							<a href="/en-us/advocates/sarah-kaiser" title="Sarah Kaiser" class="display-block" data-linktype="relative-path">
+	<h3 class="title is-6 has-text-color">Sarah Kaiser</h3>
+</a>
+								<a class="has-no-wrap has-text-overflow-ellipsis display-block" href="https://twitter.com/crazy4pi314" data-linktype="external">
+									@crazy4pi314
+								</a>
+								<p>Python | Microsoft MVP Alumni</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="grid-item profile-component">
+				<div class="columns is-gapless is-mobile is-vertically-centered">
+					<div class="column is-6">
+						<a href="/en-us/advocates/scott-durow" title="Scott Durow" class="display-block" data-linktype="relative-path">
+		<figure class="image is-fullwidth">
+			<img class="border-radius-rounded" src="/__mirror/assets/115e2eae8891e62c513b4d13" alt="" data-linktype="relative-path">
+		</figure>
+</a>
+
+					</div>
+					<div class="column is-6">
+						<div class="profile-text margin-left-xs">
+							<a href="/en-us/advocates/scott-durow" title="Scott Durow" class="display-block" data-linktype="relative-path">
+	<h3 class="title is-6 has-text-color">Scott Durow</h3>
+</a>
+								<a class="has-no-wrap has-text-overflow-ellipsis display-block" href="https://twitter.com/ScottDurow" data-linktype="external">
+									@ScottDurow
+								</a>
+								<p>Power Platform</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="grid-item profile-component">
+				<div class="columns is-gapless is-mobile is-vertically-centered">
+					<div class="column is-6">
+						<a href="/en-us/advocates/someleze-diko" title="Someleze Diko" class="display-block" data-linktype="relative-path">
+		<figure class="image is-fullwidth">
+			<img class="border-radius-rounded" src="/__mirror/assets/d13593dcbbdfd48d0618c1de" alt="" data-linktype="relative-path">
+		</figure>
+</a>
+
+					</div>
+					<div class="column is-6">
+						<div class="profile-text margin-left-xs">
+							<a href="/en-us/advocates/someleze-diko" title="Someleze Diko" class="display-block" data-linktype="relative-path">
+	<h3 class="title is-6 has-text-color">Someleze Diko</h3>
+</a>
+								<a class="has-no-wrap has-text-overflow-ellipsis display-block" href="https://twitter.com/DikoSomeleze" data-linktype="external">
+									@DikoSomeleze
+								</a>
+								<p>Data &amp; AI | Microsoft Learn Student Ambassador Alumni</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="grid-item profile-component">
+				<div class="columns is-gapless is-mobile is-vertically-centered">
+					<div class="column is-6">
+						<a href="/en-us/advocates/sonia-cuff" title="Sonia Cuff" class="display-block" data-linktype="relative-path">
+		<figure class="image is-fullwidth">
+			<img class="border-radius-rounded" src="/__mirror/assets/663e1e51248e26d679819f1a" alt="" data-linktype="relative-path">
+		</figure>
+</a>
+
+					</div>
+					<div class="column is-6">
+						<div class="profile-text margin-left-xs">
+							<a href="/en-us/advocates/sonia-cuff" title="Sonia Cuff" class="display-block" data-linktype="relative-path">
+	<h3 class="title is-6 has-text-color">Sonia Cuff</h3>
+</a>
+								<a class="has-no-wrap has-text-overflow-ellipsis display-block" href="https://twitter.com/SoniaCuff" data-linktype="external">
+									@SoniaCuff
+								</a>
+								<p>IT Infrastructure / IT Pro / FinOps / Azure    | Microsoft MVP Alumni</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="grid-item profile-component">
+				<div class="columns is-gapless is-mobile is-vertically-centered">
+					<div class="column is-6">
+						<a href="/en-us/advocates/todd-anglin" title="Todd Anglin" class="display-block" data-linktype="relative-path">
+		<figure class="image is-fullwidth">
+			<img class="border-radius-rounded" src="/__mirror/assets/800f673865e3559ba96dda02" alt="" data-linktype="relative-path">
+		</figure>
+</a>
+
+					</div>
+					<div class="column is-6">
+						<div class="profile-text margin-left-xs">
+							<a href="/en-us/advocates/todd-anglin" title="Todd Anglin" class="display-block" data-linktype="relative-path">
+	<h3 class="title is-6 has-text-color">Todd Anglin</h3>
+</a>
+								<a class="has-no-wrap has-text-overflow-ellipsis display-block" href="https://twitter.com/toddanglin" data-linktype="external">
+									@toddanglin
+								</a>
+								<p>DevRel Leadership | Web / Mobile Development | Microsoft MVP Alumni</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="grid-item profile-component">
+				<div class="columns is-gapless is-mobile is-vertically-centered">
+					<div class="column is-6">
+						<a href="/en-us/advocates/tomomi-imura" title="Tomomi Imura" class="display-block" data-linktype="relative-path">
+		<figure class="image is-fullwidth">
+			<img class="border-radius-rounded" src="/__mirror/assets/f4a54b79813bc74f629fd768" alt="" data-linktype="relative-path">
+		</figure>
+</a>
+
+					</div>
+					<div class="column is-6">
+						<div class="profile-text margin-left-xs">
+							<a href="/en-us/advocates/tomomi-imura" title="Tomomi Imura" class="display-block" data-linktype="relative-path">
+	<h3 class="title is-6 has-text-color">Tomomi Imura</h3>
+</a>
+								<a class="has-no-wrap has-text-overflow-ellipsis display-block" href="https://twitter.com/girlie_mac" data-linktype="external">
+									@girlie_mac
+								</a>
+								<p>JavaScript / UX</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="grid-item profile-component">
+				<div class="columns is-gapless is-mobile is-vertically-centered">
+					<div class="column is-6">
+						<a href="/en-us/advocates/vinicius-apolinario" title="Vinicius Apolinario" class="display-block" data-linktype="relative-path">
+		<figure class="image is-fullwidth">
+			<img class="border-radius-rounded" src="/__mirror/assets/82a7c132526917aa3dc03de5" alt="" data-linktype="relative-path">
+		</figure>
+</a>
+
+					</div>
+					<div class="column is-6">
+						<div class="profile-text margin-left-xs">
+							<a href="/en-us/advocates/vinicius-apolinario" title="Vinicius Apolinario" class="display-block" data-linktype="relative-path">
+	<h3 class="title is-6 has-text-color">Vinicius Apolinario</h3>
+</a>
+								<a class="has-no-wrap has-text-overflow-ellipsis display-block" href="https://twitter.com/vrapolinario" data-linktype="external">
+									@vrapolinario
+								</a>
+								<p>Azure / IaaS / Windows Server / Containers / Kubernetes / IT Pro</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="grid-item profile-component">
+				<div class="columns is-gapless is-mobile is-vertically-centered">
+					<div class="column is-6">
+						<a href="/en-us/advocates/waldek-mastykarz" title="Waldek Mastykarz" class="display-block" data-linktype="relative-path">
+		<figure class="image is-fullwidth">
+			<img class="border-radius-rounded" src="/__mirror/assets/7865870f4f67dba275a72d02" alt="" data-linktype="relative-path">
+		</figure>
+</a>
+
+					</div>
+					<div class="column is-6">
+						<div class="profile-text margin-left-xs">
+							<a href="/en-us/advocates/waldek-mastykarz" title="Waldek Mastykarz" class="display-block" data-linktype="relative-path">
+	<h3 class="title is-6 has-text-color">Waldek Mastykarz</h3>
+</a>
+								<a class="has-no-wrap has-text-overflow-ellipsis display-block" href="https://twitter.com/waldekm" data-linktype="external">
+									@waldekm
+								</a>
+								<p>Microsoft 365 | Microsoft MVP Alumni</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="grid-item profile-component">
+				<div class="columns is-gapless is-mobile is-vertically-centered">
+					<div class="column is-6">
+						<a href="/en-us/advocates/wassim-chegham" title="Wassim Chegham" class="display-block" data-linktype="relative-path">
+		<figure class="image is-fullwidth">
+			<img class="border-radius-rounded" src="/__mirror/assets/551637cac10217b12b417d88" alt="" data-linktype="relative-path">
+		</figure>
+</a>
+
+					</div>
+					<div class="column is-6">
+						<div class="profile-text margin-left-xs">
+							<a href="/en-us/advocates/wassim-chegham" title="Wassim Chegham" class="display-block" data-linktype="relative-path">
+	<h3 class="title is-6 has-text-color">Wassim Chegham</h3>
+</a>
+								<a class="has-no-wrap has-text-overflow-ellipsis display-block" href="https://twitter.com/manekinekko" data-linktype="external">
+									@manekinekko
+								</a>
+								<p>Node.js / JavaScript / Web</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="grid-item profile-component">
+				<div class="columns is-gapless is-mobile is-vertically-centered">
+					<div class="column is-6">
+						<a href="/en-us/advocates/yohan-lasorsa" title="Yohan Lasorsa" class="display-block" data-linktype="relative-path">
+		<figure class="image is-fullwidth">
+			<img class="border-radius-rounded" src="/__mirror/assets/6f36473244132580d1a3230a" alt="" data-linktype="relative-path">
+		</figure>
+</a>
+
+					</div>
+					<div class="column is-6">
+						<div class="profile-text margin-left-xs">
+							<a href="/en-us/advocates/yohan-lasorsa" title="Yohan Lasorsa" class="display-block" data-linktype="relative-path">
+	<h3 class="title is-6 has-text-color">Yohan Lasorsa</h3>
+</a>
+								<a class="has-no-wrap has-text-overflow-ellipsis display-block" href="https://twitter.com/sinedied" data-linktype="external">
+									@sinedied
+								</a>
+								<p>JavaScript / Node.js / Web / Mobile</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="grid-item profile-component">
+				<div class="columns is-gapless is-mobile is-vertically-centered">
+					<div class="column is-6">
+						<a href="/en-us/advocates/yoshua-wuyts" title="Yoshua Wuyts" class="display-block" data-linktype="relative-path">
+		<figure class="image is-fullwidth">
+			<img class="border-radius-rounded" src="/__mirror/assets/52ae640b484f2e77cd50dc29" alt="" data-linktype="relative-path">
+		</figure>
+</a>
+
+					</div>
+					<div class="column is-6">
+						<div class="profile-text margin-left-xs">
+							<a href="/en-us/advocates/yoshua-wuyts" title="Yoshua Wuyts" class="display-block" data-linktype="relative-path">
+	<h3 class="title is-6 has-text-color">Yoshua Wuyts</h3>
+</a>
+								<a class="has-no-wrap has-text-overflow-ellipsis display-block" href="https://twitter.com/yoshuawuyts" data-linktype="external">
+									@yoshuawuyts
+								</a>
+								<p>Rust</p>
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</section>
+</div>
+
+			</div>
+		
+				</main>
+				  <div class="layout-body-footer " data-bi-name="layout-footer">
+		<footer id="footer" data-test-id="footer" data-bi-name="footer" class="footer-layout padding-xs padding-sm-desktop has-default-focus border-top" role="contentinfo">
+			<div class="display-flex gap-xs flex-wrap-wrap is-full-height padding-right-lg-desktop">
+				
+		<a data-mscc-ic="false" href="#" data-bi-name="select-locale" class="locale-selector-link flex-shrink-0 button button-sm button-clear external-link-indicator" id="" title=""><span class="icon" aria-hidden="true"><span class="docon docon-world"></span></span><span class="local-selector-link-text">en-us</span></a>
+	 <div class="ccpa-privacy-link" data-ccpa-privacy-link hidden>
+		
+		<a data-mscc-ic="false" href="https://aka.ms/yourcaliforniaprivacychoices" data-bi-name="your-privacy-choices" class="button button-sm button-clear flex-shrink-0 external-link-indicator" id="" title="">
+		<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 14" xml:space="preserve" height="16" width="43" aria-hidden="true" focusable="false">
+			<path d="M7.4 12.8h6.8l3.1-11.6H7.4C4.2 1.2 1.6 3.8 1.6 7s2.6 5.8 5.8 5.8z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#fff"></path>
+			<path d="M22.6 0H7.4c-3.9 0-7 3.1-7 7s3.1 7 7 7h15.2c3.9 0 7-3.1 7-7s-3.2-7-7-7zm-21 7c0-3.2 2.6-5.8 5.8-5.8h9.9l-3.1 11.6H7.4c-3.2 0-5.8-2.6-5.8-5.8z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#06f"></path>
+			<path d="M24.6 4c.2.2.2.6 0 .8L22.5 7l2.2 2.2c.2.2.2.6 0 .8-.2.2-.6.2-.8 0l-2.2-2.2-2.2 2.2c-.2.2-.6.2-.8 0-.2-.2-.2-.6 0-.8L20.8 7l-2.2-2.2c-.2-.2-.2-.6 0-.8.2-.2.6-.2.8 0l2.2 2.2L23.8 4c.2-.2.6-.2.8 0z" style="fill:#fff"></path>
+			<path d="M12.7 4.1c.2.2.3.6.1.8L8.6 9.8c-.1.1-.2.2-.3.2-.2.1-.5.1-.7-.1L5.4 7.7c-.2-.2-.2-.6 0-.8.2-.2.6-.2.8 0L8 8.6l3.8-4.5c.2-.2.6-.2.9 0z" style="fill:#06f"></path>
+		</svg>
+	
+			<span>Your Privacy Choices</span></a>
+	
+	</div>
+				<div class="flex-shrink-0">
+		<div class="dropdown has-caret-up">
+			<button data-test-id="theme-selector-button" class="dropdown-trigger button button-clear button-sm inner-focus theme-dropdown-trigger" aria-controls="{{ themeMenuId }}" aria-haspopup="true" aria-expanded="false" data-bi-name="theme">
+				<span class="icon" aria-hidden="true"><span class="docon docon-sun"></span></span>
+				<span>Theme</span>
+				<span class="icon expanded-indicator" aria-hidden="true">
+					<span class="docon docon-chevron-down-light"></span>
+				</span>
+			</button>
+			<div class="dropdown-menu" id="{{ themeMenuId }}" role="menu">
+				<ul class="theme-selector padding-xxs" data-test-id="theme-dropdown-menu" role="none">
+					<li class="theme display-block" role="none">
+						<button class="button button-clear button-sm theme-control button-block justify-content-flex-start text-align-left" role="menuitemradio" aria-checked="false" data-theme-to="light" tabindex="-1">
+							<span class="theme-light margin-right-xxs">
+								<span class="theme-selector-icon border display-inline-block has-body-background" aria-hidden="true">
+									<svg class="svg" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 22 14">
+										<rect width="22" height="14" class="has-fill-body-background"></rect>
+										<rect x="5" y="5" width="12" height="4" class="has-fill-secondary"></rect>
+										<rect x="5" y="2" width="2" height="1" class="has-fill-secondary"></rect>
+										<rect x="8" y="2" width="2" height="1" class="has-fill-secondary"></rect>
+										<rect x="11" y="2" width="3" height="1" class="has-fill-secondary"></rect>
+										<rect x="1" y="1" width="2" height="2" class="has-fill-secondary"></rect>
+										<rect x="5" y="10" width="7" height="2" rx="0.3" class="has-fill-primary"></rect>
+										<rect x="19" y="1" width="2" height="2" rx="1" class="has-fill-secondary"></rect>
+									</svg>
+								</span>
+							</span>
+							<span> Light </span>
+						</button>
+					</li>
+					<li class="theme display-block" role="none">
+						<button class="button button-clear button-sm theme-control button-block justify-content-flex-start text-align-left" role="menuitemradio" aria-checked="false" data-theme-to="dark" tabindex="-1">
+							<span class="theme-dark margin-right-xxs">
+								<span class="border theme-selector-icon display-inline-block has-body-background" aria-hidden="true">
+									<svg class="svg" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 22 14">
+										<rect width="22" height="14" class="has-fill-body-background"></rect>
+										<rect x="5" y="5" width="12" height="4" class="has-fill-secondary"></rect>
+										<rect x="5" y="2" width="2" height="1" class="has-fill-secondary"></rect>
+										<rect x="8" y="2" width="2" height="1" class="has-fill-secondary"></rect>
+										<rect x="11" y="2" width="3" height="1" class="has-fill-secondary"></rect>
+										<rect x="1" y="1" width="2" height="2" class="has-fill-secondary"></rect>
+										<rect x="5" y="10" width="7" height="2" rx="0.3" class="has-fill-primary"></rect>
+										<rect x="19" y="1" width="2" height="2" rx="1" class="has-fill-secondary"></rect>
+									</svg>
+								</span>
+							</span>
+							<span> Dark </span>
+						</button>
+					</li>
+					<li class="theme display-block" role="none">
+						<button class="button button-clear button-sm theme-control button-block justify-content-flex-start text-align-left" role="menuitemradio" aria-checked="false" data-theme-to="high-contrast" tabindex="-1">
+							<span class="theme-high-contrast margin-right-xxs">
+								<span class="border theme-selector-icon display-inline-block has-body-background" aria-hidden="true">
+									<svg class="svg" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 22 14">
+										<rect width="22" height="14" class="has-fill-body-background"></rect>
+										<rect x="5" y="5" width="12" height="4" class="has-fill-secondary"></rect>
+										<rect x="5" y="2" width="2" height="1" class="has-fill-secondary"></rect>
+										<rect x="8" y="2" width="2" height="1" class="has-fill-secondary"></rect>
+										<rect x="11" y="2" width="3" height="1" class="has-fill-secondary"></rect>
+										<rect x="1" y="1" width="2" height="2" class="has-fill-secondary"></rect>
+										<rect x="5" y="10" width="7" height="2" rx="0.3" class="has-fill-primary"></rect>
+										<rect x="19" y="1" width="2" height="2" rx="1" class="has-fill-secondary"></rect>
+									</svg>
+								</span>
+							</span>
+							<span> High contrast </span>
+						</button>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+			</div>
+			<ul class="links" data-bi-name="footerlinks">
+				<li class="manage-cookies-holder" hidden="">
+				</li><li>
+		
+		<a data-mscc-ic="false" href="https://learn.microsoft.com/en-us/principles-for-ai-generated-content" data-bi-name="aiDisclaimer" class=" external-link-indicator" id="" title="">AI Disclaimer</a>
+	
+	</li><li>
+		
+		<a data-mscc-ic="false" href="https://go.microsoft.com/fwlink/?LinkId=521839" data-bi-name="privacy" class=" external-link-indicator" id="" title="">Privacy</a>
+	
+	</li><li>
+		
+		<a data-mscc-ic="false" href="https://go.microsoft.com/fwlink/?linkid=2259814" data-bi-name="consumer-health-privacy" class=" external-link-indicator" id="" title="">Consumer Health Privacy</a>
+	
+	</li><li>
+		
+		<a data-mscc-ic="false" href="https://go.microsoft.com/fwlink/?LinkID=206977" data-bi-name="termsofuse" class=" external-link-indicator" id="" title="">Terms of Use</a>
+	
+	</li><li>
+		
+		<a data-mscc-ic="false" href="https://www.microsoft.com/legal/intellectualproperty/Trademarks/" data-bi-name="trademarks" class=" external-link-indicator" id="" title="">Trademarks</a>
+	
+	</li>
+				<li>© Microsoft 2026</li>
+			</ul>
+		</footer>
+	
+			</div></body>
+		</html>
