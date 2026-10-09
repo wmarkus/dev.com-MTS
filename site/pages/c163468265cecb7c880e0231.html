@@ -1,0 +1,576 @@
+<!doctype html>
+<html lang="en-US" data-theme="light" theme="light">
+<head>
+    <!-- Authorized local recreation. External services are not impersonated; analytics disabled. --><meta name="robots" content="noindex,nofollow"><script src="/__mirror/runtime.js"></script><title>Build and run agents locally on Windows | Microsoft Developer</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark light">
+    <meta name="awa-env" content="Production">
+    <meta name="description" content="Windows provides the foundation for building and running agents with identity, containment and manageability.">
+
+    <meta property="og:title" content="Build and run agents locally on Windows | Microsoft Developer">
+    <meta property="og:description" content="Windows provides the foundation for building and running agents with identity, containment and manageability.">
+    <meta property="og:image" content="https://developer.microsoft.com/_devcom/images/logo-ms-social.jpg">
+    <meta property="og:image:alt" content="Microsoft Developer">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Microsoft Developer">
+    <meta property="og:url" content="https://developer.microsoft.com/en-us/windows/agentic">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@msdev">
+    <meta name="twitter:image" content="https://developer.microsoft.com/_devcom/images/logo-ms-social.jpg">
+
+    
+    <meta name="awa-pageType" content="Resources">
+    <meta name="awa-product" content="Windows">
+    <meta name="awa-prdct" content="Windows">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+    <link rel="canonical" href="https://developer.microsoft.com/en-us/windows/agentic">
+    
+    
+<style>
+    uhf-header:not(:defined) {
+        display: block;
+        height: 54px;
+    }
+
+    uhf-brand:not(:defined),
+    uhf-contextual-nav:not(:defined),
+    uhf-actions:not(:defined),
+    uhf-global-nav:not(:defined),
+    uhf-search:not(:defined),
+    uhf-mecontrol:not(:defined),
+    uhf-cart:not(:defined),
+    uhf-dropdown:not(:defined),
+    uhf-popout:not(:defined) {
+        visibility: hidden;
+    }
+</style>
+<link rel="stylesheet" href="/__mirror/assets/e4d14f1f8bc83e293e136adc"> <!-- UHF CSS -->
+
+    <script src="/__mirror/assets/fe2fc9b62e744e583f0eb2a4"></script>
+    
+    
+    <link rel="stylesheet" href="/__mirror/assets/f0a2f4bb8e7fd8f995b212dd">
+    <link rel="stylesheet" href="/__mirror/assets/7645384d8723410070241432">
+    
+    <script type="module" src="/__mirror/assets/a0e5b0f304f32fc68c4bf67b"></script>
+    
+    <script src="/__mirror/assets/389caacc8c667b179afc3c37"></script>
+    
+    <style>
+        body {
+            background-color: var(--ds-app-color-base-default-bg-opt1);
+            color: var(--ds-app-color-base-default-fg-body);
+        }
+        /* Eyebrow labels should be uppercase */
+        [slot="heading-block__eyebrow-label"] {
+            text-transform: uppercase;
+        }
+    </style>
+
+    <!-- 1DS script -->
+    
+    
+    <!-- /1DS script -->
+
+    
+</head>
+<body data-windows-version="v2">
+    <!-- UHF Header -->
+    
+<uhf-header locale="en-us" partnerid="MSDev-Community" headerid="MSDev-DEVCOM-Community-Header" theme="light">
+    <a slot="skip-link" class="uhf-skip-link" href="#mainContent" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "SkipToMain", "cN": "Skip to content_nonnav", "ecn": "Skip to content_nonnav", "ehn": "SkipToMain"}'>Skip to main content</a>
+    
+<uhf-brand slot="brand">
+        <a href="https://www.microsoft.com/" class="uhf-microsoft-logo" slot="microsoft-logo" aria-label="Microsoft" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Anchor", "cN": "GlobalNav_Logo_cont", "ecn": "GlobalNav_Logo_cont", "ehn": "Anchor"}'>
+            <img src="/__mirror/assets/adea6dac4ae78fd2b1b9eda9" alt="Microsoft">
+        </a>
+            <a href="/en-us/" class="uhf-site-logo" slot="brand-logo" aria-label="Developer" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Anchor", "cN": "CatNav_Developer_nav", "ecn": "CatNav_Developer_nav", "ehn": "Anchor"}'>
+ <span>Developer</span>             </a>
+</uhf-brand>
+
+
+<uhf-contextual-nav slot="contextual-nav" overflowtext="More" brand="Developer" homeurl="https://developer.microsoft.com/en-us/" hometext="Home" data-nav-label="Contextual menu">
+
+
+
+<uhf-dropdown text="Products" id="" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_nav", "ecn": "CatNav_Products_nav", "ehn": "Products"}'>
+    
+
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://learn.microsoft.com/en-us/dynamics365/get-started/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Dynamics 365_nav", "ecn": "CatNav_Products_Dynamics 365_nav", "ehn": "Products"}'>Dynamics 365</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://github.com/home" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_GitHub_nav", "ecn": "CatNav_Products_GitHub_nav", "ehn": "Products"}'>GitHub</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://developer.microsoft.com/en-us/microsoft-365" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Microsoft 365_nav", "ecn": "CatNav_Products_Microsoft 365_nav", "ehn": "Products"}'>Microsoft 365</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/azure" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Microsoft Azure_nav", "ecn": "CatNav_Products_Microsoft Azure_nav", "ehn": "Products"}'>Microsoft Azure</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://developer.microsoft.com/en-us/microsoft-edge/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Microsoft Edge_nav", "ecn": "CatNav_Products_Microsoft Edge_nav", "ehn": "Products"}'>Microsoft Edge</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://ai.azure.com/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Microsoft Foundry_nav", "ecn": "CatNav_Products_Microsoft Foundry_nav", "ehn": "Products"}'>Microsoft Foundry</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://developer.microsoft.com/en-us/graph" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Microsoft Graph_nav", "ecn": "CatNav_Products_Microsoft Graph_nav", "ehn": "Products"}'>Microsoft Graph</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/identity" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Microsoft Identity Platform_nav", "ecn": "CatNav_Products_Microsoft Identity Platform_nav", "ehn": "Products"}'>Microsoft Identity Platform</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://developer.microsoft.com/en-us/microsoft-teams" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Microsoft Teams_nav", "ecn": "CatNav_Products_Microsoft Teams_nav", "ehn": "Products"}'>Microsoft Teams</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/power-platform" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Power Platform_nav", "ecn": "CatNav_Products_Power Platform_nav", "ehn": "Products"}'>Power Platform</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://visualstudio.microsoft.com/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Visual Studio_nav", "ecn": "CatNav_Products_Visual Studio_nav", "ehn": "Products"}'>Visual Studio</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://code.visualstudio.com/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Visual Studio Code_nav", "ecn": "CatNav_Products_Visual Studio Code_nav", "ehn": "Products"}'>Visual Studio Code</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/windows/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Windows_nav", "ecn": "CatNav_Products_Windows_nav", "ehn": "Products"}'>Windows</a>
+
+
+</uhf-dropdown>
+
+
+<uhf-dropdown text="Languages" id="" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Languages", "cN": "CatNav_Languages_nav", "ecn": "CatNav_Languages_nav", "ehn": "Languages"}'>
+    
+
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://dotnet.microsoft.com/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Languages", "cN": "CatNav_Languages_.NET_nav", "ecn": "CatNav_Languages_.NET_nav", "ehn": "Languages"}'>.NET</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/cpp" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Languages", "cN": "CatNav_Languages_C++_nav", "ecn": "CatNav_Languages_C++_nav", "ehn": "Languages"}'>C++</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/java" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Languages", "cN": "CatNav_Languages_Java_nav", "ecn": "CatNav_Languages_Java_nav", "ehn": "Languages"}'>Java</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/javascript/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Languages", "cN": "CatNav_Languages_JavaScript_nav", "ecn": "CatNav_Languages_JavaScript_nav", "ehn": "Languages"}'>JavaScript</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/python" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Languages", "cN": "CatNav_Languages_Python_nav", "ecn": "CatNav_Languages_Python_nav", "ehn": "Languages"}'>Python</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://www.typescriptlang.org/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Languages", "cN": "CatNav_Languages_TypeScript_nav", "ecn": "CatNav_Languages_TypeScript_nav", "ehn": "Languages"}'>TypeScript</a>
+
+
+</uhf-dropdown>
+
+
+<uhf-dropdown text="Hubs" id="" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Hubs", "cN": "CatNav_Hubs_nav", "ecn": "CatNav_Hubs_nav", "ehn": "Hubs"}'>
+    
+
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/build-apis" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Hubs", "cN": "CatNav_Hubs_Build APIs_nav", "ecn": "CatNav_Hubs_Build APIs_nav", "ehn": "Hubs"}'>Build APIs</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://developer.microsoft.com/en-us/games/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Hubs", "cN": "CatNav_Hubs_Game development_nav", "ecn": "CatNav_Hubs_Game development_nav", "ehn": "Hubs"}'>Game development</a>
+
+
+</uhf-dropdown>
+
+    <a class="uhf-nav-item uhf-nav-link" href="https://developer.microsoft.com/blog" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Blog", "cN": "CatNav_Blog_nav", "ecn": "CatNav_Blog_nav", "ehn": "Blog"}'>Blog</a>
+
+
+    <a class="uhf-nav-item uhf-nav-link" href="/en-us/events" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Events", "cN": "CatNav_Events_nav", "ecn": "CatNav_Events_nav", "ehn": "Events"}'>Events</a>
+
+
+    <a class="uhf-nav-item uhf-nav-link" href="https://learn.microsoft.com/docs/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Documentation", "cN": "CatNav_Documentation_nav", "ecn": "CatNav_Documentation_nav", "ehn": "Documentation"}'>Documentation</a>
+
+
+    <a class="uhf-nav-item uhf-nav-link" href="/en-us/community" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Community", "cN": "CatNav_Community_nav", "ecn": "CatNav_Community_nav", "ehn": "Community"}'>Community</a>
+
+
+    <a class="uhf-nav-item uhf-nav-link" href="/en-us/changelog" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Changelog", "cN": "CatNav_Changelog_nav", "ecn": "CatNav_Changelog_nav", "ehn": "Changelog"}'>Changelog</a>
+</uhf-contextual-nav>    <uhf-actions slot="actions">
+        
+<uhf-global-nav slot="global-nav" text="All Microsoft" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_nonnav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_nonnav", "ehn": "OneMicrosoftBar"}' data-nav-label="All Microsoft menu">
+    
+    <uhf-dropdown-header slot="header">
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/security" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Microsoft Security_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Microsoft Security_nav", "ehn": "OneMicrosoftBar"}'>Microsoft Security</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://azure.microsoft.com/en-us/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Azure_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Azure_nav", "ehn": "OneMicrosoftBar"}'>Azure</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://dynamics.microsoft.com/en-us/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Dynamics 365_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Dynamics 365_nav", "ehn": "OneMicrosoftBar"}'>Dynamics 365</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/microsoft-365/business/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Microsoft 365_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Microsoft 365_nav", "ehn": "OneMicrosoftBar"}'>Microsoft 365</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/microsoft-teams/group-chat-software" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Microsoft Teams_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Microsoft Teams_nav", "ehn": "OneMicrosoftBar"}'>Microsoft Teams</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/windows-365" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Windows 365_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Windows 365_nav", "ehn": "OneMicrosoftBar"}'>Windows 365</a>
+    </uhf-dropdown-header>
+
+        <uhf-dropdown-column title="Tech &amp; innovation" show-tooltip="false" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_nav", "ehn": "OneMicrosoftBar"}'>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/ai?icid=DSM_AllCommercial_AI" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_Microsoft AI_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_More_TechInnovation__AI_nav", "ehn": "OneMicrosoftBar"}'>Microsoft AI</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://azure.microsoft.com/en-us/solutions/space/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_Azure Space_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_More_TechInnovation_AzureSpace_nav", "ehn": "OneMicrosoftBar"}'>Azure Space</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/mixed-reality/windows-mixed-reality" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_Mixed reality_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_More_TechInnovation_MixedReality_nav", "ehn": "OneMicrosoftBar"}'>Mixed reality</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/hololens" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_Microsoft HoloLens_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_More_TechInnovation_MicrosoftHololens_nav", "ehn": "OneMicrosoftBar"}'>Microsoft HoloLens</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/microsoft-viva" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_Microsoft Viva_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_More_TechInnovation_Microsoft Viva_nav", "ehn": "OneMicrosoftBar"}'>Microsoft Viva</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://azure.microsoft.com/en-us/solutions/quantum-computing/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_Quantum computing_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_More_TechInnovation_QuantumComputing_nav", "ehn": "OneMicrosoftBar"}'>Quantum computing</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/corporate-responsibility/sustainability?icid=DSM_AllCommercial_Sustainability" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_Sustainability_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_More_TechInnovation_Sustainability_nav", "ehn": "OneMicrosoftBar"}'>Sustainability</a>
+        </uhf-dropdown-column>
+        <uhf-dropdown-column title="Industries" show-tooltip="false" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_nav", "ehn": "OneMicrosoftBar"}'>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/education" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_Education_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_More_Industries_Education_nav", "ehn": "OneMicrosoftBar"}'>Education</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/industry/automotive" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_Automotive_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_More_Industries_Automotive_nav", "ehn": "OneMicrosoftBar"}'>Automotive</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/industry/financial-services/banking" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_Financial services_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_More_Industries_Financialservices_nav", "ehn": "OneMicrosoftBar"}'>Financial services</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/industry/government" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_Government_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_More_Industries_Government_nav", "ehn": "OneMicrosoftBar"}'>Government</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/industry/health/microsoft-cloud-for-healthcare" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_Healthcare_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_More_Industries_Health_nav", "ehn": "OneMicrosoftBar"}'>Healthcare</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/industry/manufacturing/microsoft-cloud-for-manufacturing" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_Manufacturing_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_More_Industries_Manufacturing_nav", "ehn": "OneMicrosoftBar"}'>Manufacturing</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/industry/consumer-goods" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_Retail_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_More_Industries_Retail_nav", "ehn": "OneMicrosoftBar"}'>Retail</a>
+        </uhf-dropdown-column>
+        <uhf-dropdown-column title="Partners" show-tooltip="false" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_nav", "ehn": "OneMicrosoftBar"}'>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://partner.microsoft.com/en-US/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_Find a partner_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_More_Partner_FindPartner_nav", "ehn": "OneMicrosoftBar"}'>Find a partner</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://partner.microsoft.com/en-US/membership/cloud-solution-provider" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_Become a partner_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_More_Partner_BecomePartner_nav", "ehn": "OneMicrosoftBar"}'>Become a partner</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://partner.microsoft.com/en-us/membership" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_Partner Network_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_More_Partner_PartnerNetwork_nav", "ehn": "OneMicrosoftBar"}'>Partner Network</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://marketplace.microsoft.com/?icid=DSM_AllCommercial_Marketplace" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_Microsoft Marketplace_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_More_Partner_Marketplace_nav", "ehn": "OneMicrosoftBar"}'>Microsoft Marketplace</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/software-development-companies?icid=DSM_AllCommercial_SoftwareCompanies" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_Software companies_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_Software companies_nav", "ehn": "OneMicrosoftBar"}'>Software companies</a>
+        </uhf-dropdown-column>
+        <uhf-dropdown-column title="Resources" show-tooltip="false" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_nav", "ehn": "OneMicrosoftBar"}'>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://blogs.microsoft.com/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_Blog_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_More_Resources_Blog_nav", "ehn": "OneMicrosoftBar"}'>Blog</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://about.ads.microsoft.com/en-us?s_cid=dig-src_uhfcomm" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_Microsoft Advertising_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_More_Resources_MicrosoftAdvertising_nav", "ehn": "OneMicrosoftBar"}'>Microsoft Advertising</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_Developer Center_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_More_Resources_DeveloperCenter_nav", "ehn": "OneMicrosoftBar"}'>Developer Center</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://learn.microsoft.com/docs/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_Documentation_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_More_Resources_Documentation_nav", "ehn": "OneMicrosoftBar"}'>Documentation</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/events" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_Events_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_More_Resources_Events_nav", "ehn": "OneMicrosoftBar"}'>Events</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/licensing/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_Licensing_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_More_Resources_Licensing_nav", "ehn": "OneMicrosoftBar"}'>Licensing</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://learn.microsoft.com/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_Microsoft Learn_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_More_Resources_MicrosoftLearn_nav", "ehn": "OneMicrosoftBar"}'>Microsoft Learn</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/research/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_Microsoft Research_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_More_Resources_MicrosoftResearch_nav", "ehn": "OneMicrosoftBar"}'>Microsoft Research</a>
+        </uhf-dropdown-column>
+
+    <uhf-dropdown-footer slot="footer">
+        <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/sitemap" data-m="">View Sitemap</a>
+    </uhf-dropdown-footer>
+
+</uhf-global-nav>
+
+
+            <uhf-search slot="search" placeholder="Search or ask a question" search-label="Search" cancel-label="Cancel" suggestions-available-text="{0} suggestions available" searchurl="https://www.microsoft.com/en-us/search/explore" autosuggesturl="https://www.microsoft.com/msstoreapiprod/api/autosuggest" queryparametername="q" clientid="7F27B536-CF6B-4C65-8638-A0F8CBDFCA65" productcount="1,5,5" source="Iris-Products,DCatAll-Products,Microsoft-Terms">
+            </uhf-search>
+    </uhf-actions>
+</uhf-header>
+
+<reimagine-secondary-nav configuration="navigation" hide-divider label="Windows Dev Center navigation" data-nav-type="secondary-uhf">
+    <a href="/en-us/windows" slot="secondary-nav__label" data-bi-an="secondary-uhf-nav" data-bi-id="windows-dev-center" data-bi-ct="nav">Windows Dev Center</a>
+        <reimagine-secondary-nav-item href="/en-us/windows/apps/build-a-windows-app" configuration="navigation" data-bi-an="secondary-uhf-nav" data-bi-id="build-apps" data-bi-ct="nav">Build Windows apps</reimagine-secondary-nav-item>
+        <reimagine-secondary-nav-item href="/en-us/windows/dev-tools" configuration="navigation" data-bi-an="secondary-uhf-nav" data-bi-id="dev-box" data-bi-ct="nav">Get developer tools</reimagine-secondary-nav-item>
+        <reimagine-secondary-nav-item href="/en-us/windows/local-ai" configuration="navigation" data-bi-an="secondary-uhf-nav" data-bi-id="local-ai" data-bi-ct="nav">Code with AI</reimagine-secondary-nav-item>
+        <reimagine-secondary-nav-item href="/en-us/windows/agentic" configuration="navigation" active="" data-bi-an="secondary-uhf-nav" data-bi-id="agent-platform" data-bi-ct="nav">Run agents locally</reimagine-secondary-nav-item>
+    <reimagine-button-group slot="secondary-nav__button-group">
+            <reimagine-button size="small" appearance="button--secondary" shape="rounded" href="/en-us/windows/support" target="_self" data-bi-an="secondary-uhf-nav" data-bi-id="support" data-bi-ct="button">
+                <span slot="button__text">Support</span>
+            </reimagine-button>
+            <reimagine-button size="small" appearance="button--primary" shape="rounded" href="https://partner.microsoft.com/dashboard" target="_blank" rel="noopener noreferrer" data-bi-an="secondary-uhf-nav" data-bi-id="partner-center" data-bi-ct="button">
+                <span slot="button__text">Partner Center</span>
+            </reimagine-button>
+    </reimagine-button-group>
+</reimagine-secondary-nav>
+
+    <div class="site-banners">
+
+
+
+
+<style>
+    /* Purple announcement banner styling to match original design */
+    #announcement-banner-windows-hybrid-intelligence {
+        --ds-fill-color-override: #6761D9;
+        --ds-text-color-override: #FFFFFF;
+        --ds-button-ghost-color: #FFFFFF;
+    }
+    
+    :root[data-theme="dark"] #announcement-banner-windows-hybrid-intelligence {
+        --ds-fill-color-override: #514AC9;
+    }
+    
+    #announcement-banner-windows-hybrid-intelligence [slot="announcement__label"],
+    #announcement-banner-windows-hybrid-intelligence [slot="announcement__link"] {
+        color: #FFFFFF;
+    }
+    
+    #announcement-banner-windows-hybrid-intelligence reimagine-link {
+        --ds-link-color: #FFFFFF;
+        --ds-link-outline: 0.1875rem dotted #FFFFFF;
+    }
+    
+    /* White outline around badge icon */
+    #announcement-banner-windows-hybrid-intelligence [slot="announcement__badge"] {
+        border: 1px solid #FFFFFF;
+        border-radius: var(--root-radii-s, 0.5rem);
+        box-sizing: content-box;
+    }
+</style>
+
+<reimagine-announcement id="announcement-banner-windows-hybrid-intelligence" class="d-none" data-identifier="windows-hybrid-intelligence" role="alert" aria-label="Building Windows for hybrid intelligence announcement" close-label="Close announcement" sr-close-text="Announcement closed" data-bi-an="top-banner">
+    
+    <img slot="announcement__badge" src="/__mirror/assets/3e387745acc96f18d8365e8a" alt="">
+
+    <p slot="announcement__label">Building Windows for hybrid intelligence – Run agents locally or in the cloud, with enterprise-grade security and manageability.</p>
+    
+    <reimagine-link slot="announcement__link" href="https://aka.ms/WindowsEraofAI" target="_blank" data-bi-an="top-banner" data-bi-id="windows-hybrid-intelligence">
+        <span slot="link__text">Read more</span>
+    </reimagine-link>
+</reimagine-announcement>
+    </div>
+
+    <div id="mainContent" role="main">
+        
+
+<div id="windows-agentic-page">
+        <header id="agent-hero"><reimagine-base-ui-shell breadth="compact"><reimagine-media slot="ui-shell-media" object-fit="cover" overlay="gradient"><picture slot="media__asset"><source srcset="/__mirror/assets/7f4d3e45cd1eca2ac178e9ab" media="none and (prefers-color-scheme: dark)">
+                <img src="/__mirror/assets/95470ba5b5f96d9acc51c73c" alt loading="eager"></source></picture></reimagine-media>
+        <reimagine-layout-column slot="ui-shell-header"><reimagine-heading-block size="m"><h1 slot="heading-block__heading-text">Build and run agents locally on Windows</h1>
+                <span slot="heading-block__content-text">Windows provides the foundation for building and running agents with identity, containment and manageability.</span>
+                <reimagine-button-group slot="heading-block__last"><reimagine-button href="https://github.com/microsoft/mxc/tree/main" appearance="button--primary" shape="rounded" size="medium" target="_blank" rel="noopener noreferrer" button-label="Explore Microsoft Execution Containers on GitHub" data-bi-an="agent-platform-hero" data-bi-id="mxc" data-bi-ct="button"><span slot="button__text">Explore Microsoft Execution Containers</span></reimagine-button></reimagine-button-group></reimagine-heading-block></reimagine-layout-column></reimagine-base-ui-shell></header>
+
+<section id="platform-value" aria-label="Windows agent platform"><reimagine-base-ui-shell breadth="compact"><reimagine-container><reimagine-layout configuration="3-col-even"><reimagine-layout-column><reimagine-text-block configuration="stacked" size="2xs"><reimagine-icon slot="text-block__icon" icon="apps" size="3xlarge" aria-hidden="true"></reimagine-icon>
+                        <span slot="text-block__eyebrow-label">What is it?</span>
+                        <span slot="text-block__heading" role="heading" aria-level="2">A trusted Windows platform for agents</span>
+                        <span slot="text-block__content">A trusted Windows platform for building and running AI agents with risk-based identity, containment, and manageability controls.</span></reimagine-text-block></reimagine-layout-column>
+                <reimagine-layout-column><reimagine-text-block configuration="stacked" size="2xs"><reimagine-icon slot="text-block__icon" icon="windows-settings" size="3xlarge" aria-hidden="true"></reimagine-icon>
+                        <span slot="text-block__eyebrow-label">Why does it matter?</span>
+                        <span slot="text-block__heading" role="heading" aria-level="2">Attribute, contain, and govern agent activity</span>
+                        <span slot="text-block__content">Agents can act at machine speed across files, apps, tools, services, and data. Without the right platform controls, agent activity can become difficult to attribute, contain, or govern.</span></reimagine-text-block></reimagine-layout-column>
+                <reimagine-layout-column><reimagine-text-block configuration="stacked" size="2xs"><reimagine-icon slot="text-block__icon" icon="code" size="3xlarge" aria-hidden="true"></reimagine-icon>
+                        <span slot="text-block__eyebrow-label">Why this approach?</span>
+                        <span slot="text-block__heading" role="heading" aria-level="2">One agent-ready platform</span>
+                        <span slot="text-block__content">Windows combines local execution, cloud integration, identity, containment enforcement, and manageability signals into one agent-ready platform.</span></reimagine-text-block></reimagine-layout-column></reimagine-layout></reimagine-container></reimagine-base-ui-shell></section>
+
+<section id="validated-scenario" aria-label="User-directed coding agent"><reimagine-base-ui-shell breadth="compact" background="app-color-base-alt1-bg-opt1"><reimagine-layout-column slot="ui-shell-header"><reimagine-heading-block size="s"><h2 slot="heading-block__heading-text">User-directed coding agent</h2>
+                <span slot="heading-block__content-text">A developer uses a coding agent, such as GitHub Copilot, to inspect code, call tools, update files, and help complete development tasks.</span></reimagine-heading-block></reimagine-layout-column>
+        <reimagine-container id="scenario-proof"><reimagine-layout configuration="3-col-even"><reimagine-layout-column><reimagine-card-badge surface="solid-border" text-block-configuration="stacked"><reimagine-text-block size="2xs"><span slot="text-block__heading" role="heading" aria-level="3">Attribute agent activity</span>
+                            <span slot="text-block__content">Entra will help distinguish agent actions from human actions</span></reimagine-text-block></reimagine-card-badge></reimagine-layout-column>
+                <reimagine-layout-column><reimagine-card-badge surface="solid-border" text-block-configuration="stacked"><reimagine-text-block size="2xs"><span slot="text-block__heading" role="heading" aria-level="3">Contain risky execution</span>
+                            <span slot="text-block__content">Run tools, code, and agent loops in the right containment layer, from process isolation to session containers.</span></reimagine-text-block></reimagine-card-badge></reimagine-layout-column>
+                <reimagine-layout-column><reimagine-card-badge surface="solid-border" text-block-configuration="stacked"><reimagine-text-block size="2xs"><span slot="text-block__heading" role="heading" aria-level="3">Govern at enterprise scale</span>
+                            <span slot="text-block__content">Connect agent execution to Microsoft Agent 365, Intune, Entra, Defender, and Purview for agent governance.</span></reimagine-text-block></reimagine-card-badge></reimagine-layout-column></reimagine-layout></reimagine-container>
+        <reimagine-container><reimagine-layout configuration="2-col-even"><reimagine-layout-column><reimagine-text-block size="xs"><span slot="text-block__heading" role="heading" aria-level="3">With Windows agent platform controls:</span>
+                        <ul slot="text-block__content"><li>The agent runs in the user’s session.</li>
+                            <li>Agent-driven processes and tokens can be tagged for attribution.</li>
+                            <li>Tool calls and code execution can run inside containers.</li>
+                            <li>Local file access, network access, and managed-service access can be filtered.</li>
+                            <li>Defender, Purview, Windows, and Entra provide manageability signals.</li>
+                            <li>Human confirmation can remain part of the workflow for sensitive actions.</li></ul></reimagine-text-block></reimagine-layout-column>
+                <reimagine-layout-column><reimagine-card-badge surface="solid-border" text-block-configuration="stacked"><reimagine-text-block size="xs"><span slot="text-block__heading" role="heading" aria-level="3">Outcome</span>
+                            <span slot="text-block__content">Developers can keep the productivity benefits of AI-assisted coding while giving IT and security teams better visibility into what the agent did, which tools it used, and which resources it accessed.</span></reimagine-text-block></reimagine-card-badge></reimagine-layout-column></reimagine-layout></reimagine-container></reimagine-base-ui-shell></section>
+
+<section id="platform-resources" aria-label="Windows Platform for Agents"><reimagine-base-ui-shell breadth="compact" background="app-color-base-default-bg-opt3"><reimagine-layout-column slot="ui-shell-header"><reimagine-heading-block size="s"><h2 slot="heading-block__heading-text">Windows Platform for Agents</h2></reimagine-heading-block></reimagine-layout-column>
+        <reimagine-container><reimagine-layout configuration="3-col-even"><reimagine-layout-column><reimagine-card-badge surface="solid-border" text-block-configuration="stacked"><reimagine-text-block size="2xs"><span slot="text-block__heading" role="heading" aria-level="3">Microsoft Execution Containers</span>
+                            <span slot="text-block__content">Explore Microsoft Execution Containers (MXC) options for process isolation and session containment.</span></reimagine-text-block>
+                        <reimagine-link slot="card-badge__footer-bottom" href="https://github.com/microsoft/mxc/tree/main" target="_blank" rel="noopener noreferrer" link-label="Explore Microsoft Execution Containers on GitHub" data-bi-an="agent-platform-resources" data-bi-id="mxc" data-bi-ct="link"><span slot="link__text">Explore Microsoft Execution Containers</span></reimagine-link></reimagine-card-badge></reimagine-layout-column>
+                <reimagine-layout-column><reimagine-card-badge surface="solid-border" text-block-configuration="stacked"><reimagine-text-block size="2xs"><span slot="text-block__heading" role="heading" aria-level="3">Agent identity and agent management</span>
+                            <span slot="text-block__content">Learn how Windows connects to the Microsoft ecosystem to help discover, identify, manage, and govern agents across the enterprise.</span></reimagine-text-block>
+                        <reimagine-link slot="card-badge__footer-bottom" href="https://blogs.windows.com/windowsdeveloper/2026/06/02/windows-platform-security-for-ai-agents/" target="_blank" rel="noopener noreferrer" link-label="Read about Windows agent security on the Windows Developer Blog" data-bi-an="agent-platform-resources" data-bi-id="security-blog" data-bi-ct="link"><span slot="link__text">Read about Windows agent security</span></reimagine-link></reimagine-card-badge></reimagine-layout-column>
+                <reimagine-layout-column><reimagine-card-badge surface="solid-border" text-block-configuration="stacked"><reimagine-text-block size="2xs"><span slot="text-block__heading" role="heading" aria-level="3">Microsoft Learn</span>
+                            <span slot="text-block__content">Implementation guidance for building secure agents on Windows, including identity, containment, policy, and deployment patterns.</span></reimagine-text-block>
+                        <reimagine-link slot="card-badge__footer-bottom" href="https://learn.microsoft.com/windows/apps/develop/mxc/" target="_blank" rel="noopener noreferrer" link-label="Explore secure agent implementation guidance on Microsoft Learn" data-bi-an="agent-platform-resources" data-bi-id="microsoft-learn" data-bi-ct="link"><span slot="link__text">Explore implementation guidance</span></reimagine-link></reimagine-card-badge></reimagine-layout-column></reimagine-layout></reimagine-container></reimagine-base-ui-shell></section>
+
+<section id="partner-demos" aria-labelledby="partner-demos-title"><reimagine-base-ui-shell breadth="compact" background="app-color-base-alt1-bg-opt1"><reimagine-layout-column slot="ui-shell-header"><reimagine-heading-block size="s"><h2 id="partner-demos-title" slot="heading-block__heading-text">See MXC in action</h2></reimagine-heading-block></reimagine-layout-column>
+            <reimagine-container><p class="demo-player-error" role="alert" hidden>The video player couldn't load. Refresh the page to try again.</p>
+                <reimagine-carousel id="partner-demo-carousel" layout-configuration="2-card" full-bleed scrollslider-item-role="group" aria-label="Partner demos" skip-label="Skip partner demos" end-label="End of partner demos" back-to-controls-label="Back to carousel controls" prev-control-label="Previous demo" next-control-label="Next demo" slide-label="slide" data-bi-an="partner-demos" data-bi-id="demo-carousel" data-bi-ct="nav"><reimagine-layout-column slot="carousel__window"><reimagine-carousel-item id="replit-demo-card"><reimagine-card-feature configuration="vertical" surface="solid-border"><reimagine-media slot="card-feature__media" aspect-ratio="16-9" object-fit="contain"><universal-media-player id="replit-demo" slot="media__asset" data-poster="/_devcom/images/views/windows-agentic/partner-demos-preview/replit@2x.avif" data-src="/_devcom/videos/views/windows-agentic/partner-demos-preview/replit.mp4" data-caption-base="/_devcom/images/views/windows-agentic/partner-demos-preview/captions/replit/replit" data-title="Replit demo: Build an app from local files" data-bi-an="partner-demos" data-bi-id="replit-demo" data-bi-ct="video"></universal-media-player></reimagine-media>
+                                <reimagine-text-block slot="card-feature__content-body" configuration="stacked" size="xs"><span slot="text-block__eyebrow-label">Replit</span>
+                                    <span slot="text-block__heading" role="heading" aria-level="3">Build an app from local files</span>
+                                    <span slot="text-block__content">See Replit build a file-cleanup app on Windows using a folder selected by the user.</span></reimagine-text-block></reimagine-card-feature></reimagine-carousel-item></reimagine-layout-column>
+                    <reimagine-layout-column slot="carousel__window"><reimagine-carousel-item id="box-demo-card"><reimagine-card-feature configuration="vertical" surface="solid-border"><reimagine-media slot="card-feature__media" aspect-ratio="16-9" object-fit="contain"><universal-media-player id="box-demo" slot="media__asset" data-poster="/_devcom/images/views/windows-agentic/partner-demos-preview/box@2x.avif" data-src="/_devcom/videos/views/windows-agentic/partner-demos-preview/box.mp4" data-caption-base="/_devcom/images/views/windows-agentic/partner-demos-preview/captions/box/box" data-title="Box demo: Create a quarter-close report" data-bi-an="partner-demos" data-bi-id="box-demo" data-bi-ct="video"></universal-media-player></reimagine-media>
+                                <reimagine-text-block slot="card-feature__content-body" configuration="stacked" size="xs"><span slot="text-block__eyebrow-label">Box</span>
+                                    <span slot="text-block__heading" role="heading" aria-level="3">Create a quarter-close report</span>
+                                    <span slot="text-block__content">Follow a finance workflow that brings together files from Box and local execution with MXC.</span></reimagine-text-block></reimagine-card-feature></reimagine-carousel-item></reimagine-layout-column>
+                    <reimagine-layout-column slot="carousel__window"><reimagine-carousel-item id="egnyte-demo-card"><reimagine-card-feature configuration="vertical" surface="solid-border"><reimagine-media slot="card-feature__media" aspect-ratio="16-9" object-fit="contain"><universal-media-player id="egnyte-demo" slot="media__asset" data-poster="/_devcom/images/views/windows-agentic/partner-demos-preview/egnyte@2x.avif" data-src="/_devcom/videos/views/windows-agentic/partner-demos-preview/egnyte.mp4" data-caption-base="/_devcom/images/views/windows-agentic/partner-demos-preview/captions/egnyte/egnyte" data-title="Egnyte demo: Prepare a drawing set" data-bi-an="partner-demos" data-bi-id="egnyte-demo" data-bi-ct="video"></universal-media-player></reimagine-media>
+                                <reimagine-text-block slot="card-feature__content-body" configuration="stacked" size="xs"><span slot="text-block__eyebrow-label">Egnyte</span>
+                                    <span slot="text-block__heading" role="heading" aria-level="3">Prepare a drawing set</span>
+                                    <span slot="text-block__content">Explore an AI-assisted Revit workflow for selecting sheets, exporting PDFs, and comparing revisions.</span></reimagine-text-block></reimagine-card-feature></reimagine-carousel-item></reimagine-layout-column>
+                    <reimagine-layout-column slot="carousel__window"><reimagine-carousel-item id="unsloth-demo-card"><reimagine-card-feature configuration="vertical" surface="solid-border"><reimagine-media slot="card-feature__media" aspect-ratio="16-9" object-fit="contain"><universal-media-player id="unsloth-demo" slot="media__asset" data-poster="/_devcom/images/views/windows-agentic/partner-demos-preview/unsloth@2x.avif" data-src="/_devcom/videos/views/windows-agentic/partner-demos-preview/unsloth.mp4" data-caption-base="/_devcom/images/views/windows-agentic/partner-demos-preview/captions/unsloth/unsloth" data-title="Unsloth demo: Turn data into a web page" data-bi-an="partner-demos" data-bi-id="unsloth-demo" data-bi-ct="video"></universal-media-player></reimagine-media>
+                                <reimagine-text-block slot="card-feature__content-body" configuration="stacked" size="xs"><span slot="text-block__eyebrow-label">Unsloth</span>
+                                    <span slot="text-block__heading" role="heading" aria-level="3">Turn data into a web page</span>
+                                    <span slot="text-block__content">See an AI coding assistant create a sales chart, build a web page, and save the project files.</span></reimagine-text-block></reimagine-card-feature></reimagine-carousel-item></reimagine-layout-column>
+                    <reimagine-layout-column slot="carousel__window"><reimagine-carousel-item id="simular-demo-card"><reimagine-card-feature configuration="vertical" surface="solid-border"><reimagine-media slot="card-feature__media" aspect-ratio="16-9" object-fit="contain"><universal-media-player id="simular-demo" slot="media__asset" data-poster="/_devcom/images/views/windows-agentic/partner-demos-preview/simular@2x.avif" data-src="/_devcom/videos/views/windows-agentic/partner-demos-preview/simular.mp4" data-caption-base="/_devcom/images/views/windows-agentic/partner-demos-preview/captions/simular/simular" data-title="Simular demo: Contain agent commands with MXC" data-bi-an="partner-demos" data-bi-id="simular-demo" data-bi-ct="video"></universal-media-player></reimagine-media>
+                                <reimagine-text-block slot="card-feature__content-body" configuration="stacked" size="xs"><span slot="text-block__eyebrow-label">Simular</span>
+                                    <span slot="text-block__heading" role="heading" aria-level="3">Contain agent commands with MXC</span>
+                                    <span slot="text-block__content">See Sai use MXC to limit shell commands to an allowed workspace and block writes outside it.</span></reimagine-text-block></reimagine-card-feature></reimagine-carousel-item></reimagine-layout-column></reimagine-carousel></reimagine-container></reimagine-base-ui-shell></section>
+
+<section id="partner-logos" aria-label="Our partners"><reimagine-base-ui-shell breadth="compact"><reimagine-layout-column slot="ui-shell-header"><reimagine-heading-block size="s"><h2 slot="heading-block__heading-text">Our partners</h2></reimagine-heading-block></reimagine-layout-column>
+        <reimagine-container><reimagine-layout class="partner-logo-wall" configuration="6-col-even"><reimagine-layout-column><reimagine-logobar-item><reimagine-media class="partner-logo partner-logo--anthropic" object-fit="contain"><picture slot="media__asset"><source srcset="/__mirror/assets/01d78ccc5d15cf6ad11e39ce" media="none and (prefers-color-scheme: dark)">
+                            <img src="/__mirror/assets/cada23c59ee9f30733547d70" alt="Anthropic logo" loading="lazy"></source></picture></reimagine-media></reimagine-logobar-item></reimagine-layout-column>
+            <reimagine-layout-column><reimagine-logobar-item><reimagine-media class="partner-logo partner-logo--nvidia" object-fit="contain"><picture slot="media__asset"><source srcset="/__mirror/assets/0c352517a8686741e97d0629" media="none and (prefers-color-scheme: dark)">
+                            <img src="/__mirror/assets/9f0609e8afa9d7ef42c043ac" alt="NVIDIA logo" loading="lazy"></source></picture></reimagine-media></reimagine-logobar-item></reimagine-layout-column>
+            <reimagine-layout-column><reimagine-logobar-item><reimagine-media class="partner-logo partner-logo--heidi" object-fit="contain"><picture slot="media__asset"><source srcset="/__mirror/assets/2638a94920581ee2cff5e5ce" media="none and (prefers-color-scheme: dark)">
+                            <img src="/__mirror/assets/6c5e78e5982a7f36da9438fd" alt="Heidi logo" loading="lazy"></source></picture></reimagine-media></reimagine-logobar-item></reimagine-layout-column>
+            <reimagine-layout-column><reimagine-logobar-item><reimagine-media class="partner-logo partner-logo--openclaw" object-fit="contain"><picture slot="media__asset"><source srcset="/__mirror/assets/29c55305893d9325378ee37e" media="none and (prefers-color-scheme: dark)">
+                            <img src="/__mirror/assets/a7e9acde45659b87022ed456" alt="OpenClaw logo" loading="lazy"></source></picture></reimagine-media></reimagine-logobar-item></reimagine-layout-column>
+            <reimagine-layout-column><reimagine-logobar-item><reimagine-media class="partner-logo partner-logo--lm-studio" object-fit="contain"><picture slot="media__asset"><source srcset="/__mirror/assets/0b5fee4967f1c9b19e5e0301" media="none and (prefers-color-scheme: dark)">
+                            <img src="/__mirror/assets/2183a91f2bff1e428a11efc9" alt="LM Studio logo" loading="lazy"></source></picture></reimagine-media></reimagine-logobar-item></reimagine-layout-column>
+            <reimagine-layout-column><reimagine-logobar-item><reimagine-media class="partner-logo partner-logo--manus" object-fit="contain"><picture slot="media__asset"><source srcset="/__mirror/assets/f8c81b0fcd234b857738ebce" media="none and (prefers-color-scheme: dark)">
+                            <img src="/__mirror/assets/1c368dc55f28f82886542137" alt="Manus logo" loading="lazy"></source></picture></reimagine-media></reimagine-logobar-item></reimagine-layout-column>
+            <reimagine-layout-column><reimagine-logobar-item><reimagine-media class="partner-logo partner-logo--openai" object-fit="contain"><picture slot="media__asset"><source srcset="/__mirror/assets/e850ea62748aa666ae65d32b" media="none and (prefers-color-scheme: dark)">
+                            <img src="/__mirror/assets/4703308b990a37ead9150d1b" alt="OpenAI logo" loading="lazy"></source></picture></reimagine-media></reimagine-logobar-item></reimagine-layout-column>
+            <reimagine-layout-column><reimagine-logobar-item><reimagine-media class="partner-logo partner-logo--box" object-fit="contain"><picture slot="media__asset"><source srcset="/__mirror/assets/179a3a312708f949735d6229" media="none and (prefers-color-scheme: dark)">
+                            <img src="/__mirror/assets/929aec06cd1c49cd3b1aa72a" alt="Box logo" loading="lazy"></source></picture></reimagine-media></reimagine-logobar-item></reimagine-layout-column>
+            <reimagine-layout-column><reimagine-logobar-item><reimagine-media class="partner-logo partner-logo--egnyte" object-fit="contain"><picture slot="media__asset"><source srcset="/__mirror/assets/4bb92a2874f456def10f29a7" media="none and (prefers-color-scheme: dark)">
+                            <img src="/__mirror/assets/82c1ad6994132f025eae54f7" alt="Egnyte logo" loading="lazy"></source></picture></reimagine-media></reimagine-logobar-item></reimagine-layout-column>
+            <reimagine-layout-column><reimagine-logobar-item><reimagine-media class="partner-logo partner-logo--nous" object-fit="contain"><picture slot="media__asset"><source srcset="/__mirror/assets/bf476ef8d6991b68f09016a5" media="none and (prefers-color-scheme: dark)">
+                            <img src="/__mirror/assets/d56ff4a3882279c4502f4614" alt="Nous Research logo" loading="lazy"></source></picture></reimagine-media></reimagine-logobar-item></reimagine-layout-column>
+            <reimagine-layout-column><reimagine-logobar-item><reimagine-media class="partner-logo partner-logo--perplexity" object-fit="contain"><picture slot="media__asset"><source srcset="/__mirror/assets/31d795d38534debf1784e9e6" media="none and (prefers-color-scheme: dark)">
+                            <img src="/__mirror/assets/6162edf5418bf5792bf991b7" alt="Perplexity logo" loading="lazy"></source></picture></reimagine-media></reimagine-logobar-item></reimagine-layout-column>
+            <reimagine-layout-column><reimagine-logobar-item><reimagine-media class="partner-logo partner-logo--raycast" object-fit="contain"><picture slot="media__asset"><source srcset="/__mirror/assets/3c1472edecf7b7c33b9a2898" media="none and (prefers-color-scheme: dark)">
+                            <img src="/__mirror/assets/d67557cc3c80bfb20fa6e645" alt="Raycast logo" loading="lazy"></source></picture></reimagine-media></reimagine-logobar-item></reimagine-layout-column>
+            <reimagine-layout-column><reimagine-logobar-item><reimagine-media class="partner-logo partner-logo--replit" object-fit="contain"><picture slot="media__asset"><source srcset="/__mirror/assets/be8a11059593d701aaa7362a" media="none and (prefers-color-scheme: dark)">
+                            <img src="/__mirror/assets/89e7f1c0225e620079a915a0" alt="Replit logo" loading="lazy"></source></picture></reimagine-media></reimagine-logobar-item></reimagine-layout-column>
+            <reimagine-layout-column><reimagine-logobar-item><reimagine-media class="partner-logo partner-logo--simular" object-fit="contain"><picture slot="media__asset"><source srcset="/__mirror/assets/fffe189bceeb77de3097b4dc" media="none and (prefers-color-scheme: dark)">
+                            <img src="/__mirror/assets/597eeab704872aad92ff4eba" alt="Simular logo" loading="lazy"></source></picture></reimagine-media></reimagine-logobar-item></reimagine-layout-column>
+            <reimagine-layout-column><reimagine-logobar-item><reimagine-media class="partner-logo partner-logo--unsloth" object-fit="contain"><picture slot="media__asset"><source srcset="/__mirror/assets/1707040316959b5a441aaf55" media="none and (prefers-color-scheme: dark)">
+                            <img src="/__mirror/assets/70d45992f9d4d9e286430933" alt="Unsloth AI logo" loading="lazy"></source></picture></reimagine-media></reimagine-logobar-item></reimagine-layout-column></reimagine-layout></reimagine-container></reimagine-base-ui-shell></section>
+</div>
+
+
+    </div>
+
+<section class="windows-developer-social" aria-labelledby="windows-developer-social-heading">
+    <div class="windows-developer-social__inner">
+        <h2 id="windows-developer-social-heading" class="windows-developer-social__heading">
+            Follow Windows Developer
+        </h2>
+        <ul class="windows-developer-social__list">
+            <li>
+                <a class="windows-developer-social__link" href="https://x.com/windowsdev" target="_blank" rel="noopener noreferrer" aria-label="Follow Windows Developer on X" data-bi-an="windows-social" data-bi-id="x" data-bi-ct="link">
+                    <svg viewbox="0 0 1200 1227" aria-hidden="true" focusable="false">
+                        <path d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.137 519.284H714.163ZM569.165 687.828L521.697 619.934L144.011 79.6944H306.615L611.412 515.685L658.88 583.579L1055.08 1150.3H892.476L569.165 687.854V687.828Z"></path>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a class="windows-developer-social__link" href="https://www.instagram.com/windowsdeveloper/" target="_blank" rel="noopener noreferrer" aria-label="Follow Windows Developer on Instagram" data-bi-an="windows-social" data-bi-id="instagram" data-bi-ct="link">
+                    <svg viewbox="0 0 16 16" aria-hidden="true" focusable="false">
+                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a class="windows-developer-social__link" href="https://www.facebook.com/windowsdeveloper/" target="_blank" rel="noopener noreferrer" aria-label="Follow Windows Developer on Facebook" data-bi-an="windows-social" data-bi-id="facebook" data-bi-ct="link">
+                    <svg viewbox="0 0 32 33" aria-hidden="true" focusable="false">
+                        <path d="M28.455 2.49805H3.54623C3.13636 2.49821 2.74332 2.66111 2.4535 2.95093C2.16367 3.24076 2.00078 3.6338 2.00061 4.04367V28.9524C2.00078 29.3623 2.16367 29.7553 2.4535 30.0452C2.74332 30.335 3.13636 30.4979 3.54623 30.498H16.0006V19.498H12.6537V15.498H16.0006V12.3105C16.0006 8.69429 18.5087 6.72555 21.7394 6.72555C23.285 6.72555 24.9475 6.8418 25.3337 6.89305V10.6699H22.76C21.0025 10.6699 20.6675 11.5012 20.6675 12.7262V15.498H24.855L24.3081 19.498H20.6675V30.498H28.455C28.8648 30.4979 29.2579 30.335 29.5477 30.0452C29.8375 29.7553 30.0004 29.3623 30.0006 28.9524V4.04367C30.0004 3.6338 29.8375 3.24076 29.5477 2.95093C29.2579 2.66111 28.8648 2.49821 28.455 2.49805Z"></path>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a class="windows-developer-social__link" href="https://www.linkedin.com/company/windows-developer" target="_blank" rel="noopener noreferrer" aria-label="Follow Windows Developer on LinkedIn" data-bi-an="windows-social" data-bi-id="linkedin" data-bi-ct="link">
+                    <svg viewbox="0 0 16 16" aria-hidden="true" focusable="false">
+                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"></path>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+    <!-- Theme picker / UHF Footer -->
+    <div class="mx-0 px-0 overflow-hidden uhf-footer-wrapper">
+        
+<div class="uhf11-footer-container">
+    <button type="button" class="uhf11-btn-theme" id="theme-toggle" aria-label="Change page theme" aria-pressed="false" data-bi-an="uhf-footer" data-bi-id="theme-toggle" data-bi-ct="button">
+        <svg xmlns="http://www.w3.org/2000/svg" style="margin-right:10px" width="24" height="24" fill="currentColor" class="bi bi-brightness-high" viewbox="0 0 16 16" aria-hidden="true">
+            <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"></path>
+        </svg><span>Theme</span>
+    </button>
+    
+<uhf-footer locale="en-us" partnerid="MSDev-Community" footerid="MSDev-DEVCOM-Community-Footer" theme="light">
+    <script id="uhf-footer-ccpa">
+        (function () {
+            function checkThirdPartyAdsOptOutCookie() {
+                try {
+                    var match = document.cookie.match('(^|;)\\s*3PAdsOptOut\\s*=\\s*([^;]+)');
+                    return (match ? match[2] : '') !== '1';
+                } catch (e) {
+                    return true;
+                }
+            }
+            var globalPrivacyControlEnabled = navigator.globalPrivacyControl;
+            window.GPC_DataSharingOptIn = globalPrivacyControlEnabled ? false : checkThirdPartyAdsOptOutCookie();
+            if (typeof window.onGPCLoaded === 'function') {
+                window.onGPCLoaded();
+            }
+        })();
+    </script>
+    
+<uhf-footer-nav slot="uhf-footer-nav">
+</uhf-footer-nav>
+        <a slot="uhf-footer-locale-picker" class="uhf-footer-link" href="/en-us/_devcom/locale" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_English (United States)_nav","ecn":"LegalNav_LocalePicker_nav","ehn":"LegalNav"}' aria-label="Content Language Selector. Currently set to English (United States)">English (United States)</a>
+    <div slot="uhf-footer-california-privacy-link">
+        
+<a class="uhf-footer-link" href="https://aka.ms/yourcaliforniaprivacychoices" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_California Privacy_nav","ecn":"LegalNav_CaliforniaPrivacy_nav","ehn":"LegalNav"}'>
+    <svg role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 14" xml:space="preserve" height="16" width="43">
+    <title>Your Privacy Choices Opt-Out Icon</title>
+    <path d="M7.4 12.8h6.8l3.1-11.6H7.4C4.2 1.2 1.6 3.8 1.6 7s2.6 5.8 5.8 5.8z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#fff"></path>
+    <path d="M22.6 0H7.4c-3.9 0-7 3.1-7 7s3.1 7 7 7h15.2c3.9 0 7-3.1 7-7s-3.2-7-7-7zm-21 7c0-3.2 2.6-5.8 5.8-5.8h9.9l-3.1 11.6H7.4c-3.2 0-5.8-2.6-5.8-5.8z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#06f"></path>
+    <path d="M24.6 4c.2.2.2.6 0 .8L22.5 7l2.2 2.2c.2.2.2.6 0 .8-.2.2-.6.2-.8 0l-2.2-2.2-2.2 2.2c-.2.2-.6.2-.8 0-.2-.2-.2-.6 0-.8L20.8 7l-2.2-2.2c-.2-.2-.2-.6 0-.8.2-.2.6-.2.8 0l2.2 2.2L23.8 4c.2-.2.6-.2.8 0z" style="fill:#fff"></path>
+    <path d="M12.7 4.1c.2.2.3.6.1.8L8.6 9.8c-.1.1-.2.2-.3.2-.2.1-.5.1-.7-.1L5.4 7.7c-.2-.2-.2-.6 0-.8.2-.2.6-.2.8 0L8 8.6l3.8-4.5c.2-.2.6-.2.9 0z" style="fill:#06f"></path>
+    </svg>
+    <span>Your Privacy Choices</span>
+</a>
+        <noscript>
+            
+<a class="uhf-footer-link" href="https://aka.ms/yourcaliforniaprivacychoices" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_California Privacy_nav","ecn":"LegalNav_CaliforniaPrivacy_nav","ehn":"LegalNav"}'>
+    <svg role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 14" xml:space="preserve" height="16" width="43">
+    <title>Your Privacy Choices Opt-Out Icon</title>
+    <path d="M7.4 12.8h6.8l3.1-11.6H7.4C4.2 1.2 1.6 3.8 1.6 7s2.6 5.8 5.8 5.8z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#fff"></path>
+    <path d="M22.6 0H7.4c-3.9 0-7 3.1-7 7s3.1 7 7 7h15.2c3.9 0 7-3.1 7-7s-3.2-7-7-7zm-21 7c0-3.2 2.6-5.8 5.8-5.8h9.9l-3.1 11.6H7.4c-3.2 0-5.8-2.6-5.8-5.8z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#06f"></path>
+    <path d="M24.6 4c.2.2.2.6 0 .8L22.5 7l2.2 2.2c.2.2.2.6 0 .8-.2.2-.6.2-.8 0l-2.2-2.2-2.2 2.2c-.2.2-.6.2-.8 0-.2-.2-.2-.6 0-.8L20.8 7l-2.2-2.2c-.2-.2-.2-.6 0-.8.2-.2.6-.2.8 0l2.2 2.2L23.8 4c.2-.2.6-.2.8 0z" style="fill:#fff"></path>
+    <path d="M12.7 4.1c.2.2.3.6.1.8L8.6 9.8c-.1.1-.2.2-.3.2-.2.1-.5.1-.7-.1L5.4 7.7c-.2-.2-.2-.6 0-.8.2-.2.6-.2.8 0L8 8.6l3.8-4.5c.2-.2.6-.2.9 0z" style="fill:#06f"></path>
+    </svg>
+    <span>Your Privacy Choices</span>
+</a>
+        </noscript>
+    </div>
+    <a slot="uhf-footer-consumer-health-privacy-link" class="uhf-footer-link" href="https://go.microsoft.com/fwlink/?linkid=2259814" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_Consumer Health Privacy_nav","ecn":"LegalNav_ConsumerHealthPrivacy_nav","ehn":"LegalNav"}'>Consumer Health Privacy</a>
+    
+<uhf-footer-menu slot="uhf-footer-menu" data-nav-label="Microsoft corporate links">
+            <a class="uhf-footer-link" href="https://support.microsoft.com/contactus/" id="uhf-Contact Microsoft " data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_Contact Microsoft _nav","ecn":"LegalNav_Contact Microsoft _nav","ehn":"LegalNav"}'>Contact Microsoft </a>
+            <a class="uhf-footer-link" href="https://go.microsoft.com/fwlink/?LinkId=521839" id="uhf-Privacy &amp; Cookies" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_Privacy &amp; Cookies_nav","ecn":"LegalNav_Privacy &amp; Cookies_nav","ehn":"LegalNav"}'>Privacy &amp; Cookies</a>
+            <a class="uhf-footer-link" href="#" id="uhf-Manage cookies" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_Manage cookies_nav","ecn":"LegalNav_Manage cookies_nav","ehn":"LegalNav"}'>Manage cookies</a>
+            <a class="uhf-footer-link" href="https://go.microsoft.com/fwlink/?LinkID=206977" id="uhf-Terms of Use" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_Terms of Use_nav","ecn":"LegalNav_Terms of Use_nav","ehn":"LegalNav"}'>Terms of Use</a>
+            <a class="uhf-footer-link" href="https://www.microsoft.com/trademarks" id="uhf-Trademarks" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_Trademarks_nav","ecn":"LegalNav_Trademarks_nav","ehn":"LegalNav"}'>Trademarks</a>
+</uhf-footer-menu>
+</uhf-footer>
+</div>
+    </div>
+    <!-- /Theme picker -->
+
+
+    <!-- Scripts -->
+    <script>window.cdaTrackerShadowDOM = true;</script>
+    <script src="/__mirror/assets/6c595ffdb677c4a558469896" async></script>
+
+    
+<script type="module" src="/__mirror/assets/adb93738516987ac3e9c9096"></script>
+    
+ <!-- UHF scripts -->
+
+    
+    <script type="module">
+        const partnerDemos = document.querySelectorAll("#partner-demos universal-media-player[data-src]");
+        if (partnerDemos.length) {
+            try {
+                const { ump } = await import("/__mirror/assets/4cf4b40529121abcc439409d");
+                const captionLocales = [
+                    "en-us", "de-de", "es-es", "fr-fr", "it-it",
+                    "pt-br", "ko-kr", "zh-cn", "zh-tw", "ja-jp"
+                ];
+                partnerDemos.forEach(demo => {
+                    demo.addEventListener("play", () => {
+                        partnerDemos.forEach(other => {
+                            if (other !== demo) other.pause();
+                        });
+                    });
+                    const options = {
+                        partnerName: "devcom",
+                        autoplay: false,
+                        muted: false,
+                        loop: false,
+                        share: false,
+                        reporting: false,
+                        title: demo.dataset.title,
+                        language: document.documentElement.lang,
+                        poster: demo.dataset.poster,
+                        playButtonTheme: "light",
+                        sources: [{ src: demo.dataset.src, type: "MP4" }]
+                    };
+                    if (demo.dataset.captionBase) {
+                        options.ccFiles = captionLocales.map(locale => ({
+                            locale,
+                            url: `${demo.dataset.captionBase}.${locale}.vtt`
+                        }));
+                    }
+                    ump(demo.id, options);
+                    if (demo.dataset.captionBase) {
+                        demo.addEventListener("play", () => {
+                            const playerState = demo.playerStateContext?.value;
+                            if (!playerState?.captionSettings) return;
+
+                            demo.playerStateContext.setValue({
+                                ...playerState,
+                                captionSettings: {
+                                    ...playerState.captionSettings,
+                                    fontScale: 0.75
+                                }
+                            });
+                        }, { once: true });
+                    }
+                });
+            } catch (error) {
+                console.error("Unable to initialize MXC partner demo players.", error);
+                document.querySelectorAll("#partner-demos .demo-player-error")
+                    .forEach(message => { message.hidden = false; });
+            }
+        }
+    </script>
+
+    
+    <!-- /Scripts -->
+</body>
+</html>
