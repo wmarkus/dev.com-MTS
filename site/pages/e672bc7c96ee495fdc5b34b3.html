@@ -1,0 +1,2615 @@
+<!doctype html>
+<html lang="en-US" data-theme="light">
+<head>
+    <!-- Authorized local recreation. External services are not impersonated; analytics disabled. --><meta name="robots" content="noindex,nofollow"><script src="/__mirror/runtime.js"></script><title>C++ | Microsoft Developer</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark light">
+    <meta name="awa-env" content="Production">
+    <meta name="description" content="Explore Microsoft tools for every C++ developer on the planet.">
+
+    <meta property="og:title" content="C++ | Microsoft Developer">
+    <meta property="og:description" content="Explore Microsoft tools for every C++ developer on the planet.">
+    <meta property="og:image" content="https://developer.microsoft.com/_devcom/images/logo-ms-social.jpg">
+    <meta property="og:image:alt" content="Microsoft Developer">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Microsoft Developer">
+    <meta property="og:url" content="https://developer.microsoft.com/en-us/cpp">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@msdev">
+    <meta name="twitter:image" content="https://developer.microsoft.com/_devcom/images/logo-ms-social.jpg">
+
+    
+<meta name="awa-pageType" content="Resources">
+<meta name="awa-product" content="Multiple">
+<meta name="awa-prdct" content="Multiple">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+    <link rel="canonical" href="https://developer.microsoft.com/en-us/cpp">
+    
+    <link rel="stylesheet" href="/__mirror/assets/e1c24783ae544852495a6d6a">
+
+    
+<style>
+    uhf-header:not(:defined) {
+        display: block;
+        height: 54px;
+    }
+
+    uhf-brand:not(:defined),
+    uhf-contextual-nav:not(:defined),
+    uhf-actions:not(:defined),
+    uhf-global-nav:not(:defined),
+    uhf-search:not(:defined),
+    uhf-mecontrol:not(:defined),
+    uhf-cart:not(:defined),
+    uhf-dropdown:not(:defined),
+    uhf-popout:not(:defined) {
+        visibility: hidden;
+    }
+</style>
+<link rel="stylesheet" href="/__mirror/assets/e4d14f1f8bc83e293e136adc"> <!-- UHF CSS -->
+
+    <script src="/__mirror/assets/fe2fc9b62e744e583f0eb2a4"></script>
+
+    <!-- 1DS script -->
+    
+    
+    <!-- /1DS script -->
+
+    
+</head>
+<body>
+    <!-- UHF Header -->
+    
+<uhf-header locale="en-us" partnerid="MSDev-Community" headerid="MSDev-DEVCOM-Community-Header" theme="light">
+    <a slot="skip-link" class="uhf-skip-link" href="#mainContent" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "SkipToMain", "cN": "Skip to content_nonnav", "ecn": "Skip to content_nonnav", "ehn": "SkipToMain"}'>Skip to main content</a>
+    
+<uhf-brand slot="brand">
+        <a href="https://www.microsoft.com/" class="uhf-microsoft-logo" slot="microsoft-logo" aria-label="Microsoft" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Anchor", "cN": "GlobalNav_Logo_cont", "ecn": "GlobalNav_Logo_cont", "ehn": "Anchor"}'>
+            <img src="/__mirror/assets/adea6dac4ae78fd2b1b9eda9" alt="Microsoft">
+        </a>
+            <a href="/en-us/" class="uhf-site-logo" slot="brand-logo" aria-label="Developer" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Anchor", "cN": "CatNav_Developer_nav", "ecn": "CatNav_Developer_nav", "ehn": "Anchor"}'>
+ <span>Developer</span>             </a>
+</uhf-brand>
+
+
+<uhf-contextual-nav slot="contextual-nav" overflowtext="More" brand="Developer" homeurl="https://developer.microsoft.com/en-us/" hometext="Home" data-nav-label="Contextual menu">
+
+
+
+<uhf-dropdown text="Products" id="" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_nav", "ecn": "CatNav_Products_nav", "ehn": "Products"}'>
+    
+
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://learn.microsoft.com/en-us/dynamics365/get-started/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Dynamics 365_nav", "ecn": "CatNav_Products_Dynamics 365_nav", "ehn": "Products"}'>Dynamics 365</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://github.com/home" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_GitHub_nav", "ecn": "CatNav_Products_GitHub_nav", "ehn": "Products"}'>GitHub</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://developer.microsoft.com/en-us/microsoft-365" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Microsoft 365_nav", "ecn": "CatNav_Products_Microsoft 365_nav", "ehn": "Products"}'>Microsoft 365</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/azure" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Microsoft Azure_nav", "ecn": "CatNav_Products_Microsoft Azure_nav", "ehn": "Products"}'>Microsoft Azure</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://developer.microsoft.com/en-us/microsoft-edge/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Microsoft Edge_nav", "ecn": "CatNav_Products_Microsoft Edge_nav", "ehn": "Products"}'>Microsoft Edge</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://ai.azure.com/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Microsoft Foundry_nav", "ecn": "CatNav_Products_Microsoft Foundry_nav", "ehn": "Products"}'>Microsoft Foundry</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://developer.microsoft.com/en-us/graph" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Microsoft Graph_nav", "ecn": "CatNav_Products_Microsoft Graph_nav", "ehn": "Products"}'>Microsoft Graph</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/identity" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Microsoft Identity Platform_nav", "ecn": "CatNav_Products_Microsoft Identity Platform_nav", "ehn": "Products"}'>Microsoft Identity Platform</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://developer.microsoft.com/en-us/microsoft-teams" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Microsoft Teams_nav", "ecn": "CatNav_Products_Microsoft Teams_nav", "ehn": "Products"}'>Microsoft Teams</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/power-platform" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Power Platform_nav", "ecn": "CatNav_Products_Power Platform_nav", "ehn": "Products"}'>Power Platform</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://visualstudio.microsoft.com/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Visual Studio_nav", "ecn": "CatNav_Products_Visual Studio_nav", "ehn": "Products"}'>Visual Studio</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://code.visualstudio.com/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Visual Studio Code_nav", "ecn": "CatNav_Products_Visual Studio Code_nav", "ehn": "Products"}'>Visual Studio Code</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/windows/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Products", "cN": "CatNav_Products_Windows_nav", "ecn": "CatNav_Products_Windows_nav", "ehn": "Products"}'>Windows</a>
+
+
+</uhf-dropdown>
+
+
+<uhf-dropdown text="Languages" id="" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Languages", "cN": "CatNav_Languages_nav", "ecn": "CatNav_Languages_nav", "ehn": "Languages"}'>
+    
+
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://dotnet.microsoft.com/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Languages", "cN": "CatNav_Languages_.NET_nav", "ecn": "CatNav_Languages_.NET_nav", "ehn": "Languages"}'>.NET</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/cpp" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Languages", "cN": "CatNav_Languages_C++_nav", "ecn": "CatNav_Languages_C++_nav", "ehn": "Languages"}'>C++</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/java" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Languages", "cN": "CatNav_Languages_Java_nav", "ecn": "CatNav_Languages_Java_nav", "ehn": "Languages"}'>Java</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/javascript/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Languages", "cN": "CatNav_Languages_JavaScript_nav", "ecn": "CatNav_Languages_JavaScript_nav", "ehn": "Languages"}'>JavaScript</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/python" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Languages", "cN": "CatNav_Languages_Python_nav", "ecn": "CatNav_Languages_Python_nav", "ehn": "Languages"}'>Python</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://www.typescriptlang.org/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Languages", "cN": "CatNav_Languages_TypeScript_nav", "ecn": "CatNav_Languages_TypeScript_nav", "ehn": "Languages"}'>TypeScript</a>
+
+
+</uhf-dropdown>
+
+
+<uhf-dropdown text="Hubs" id="" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Hubs", "cN": "CatNav_Hubs_nav", "ecn": "CatNav_Hubs_nav", "ehn": "Hubs"}'>
+    
+
+            <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/build-apis" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Hubs", "cN": "CatNav_Hubs_Build APIs_nav", "ecn": "CatNav_Hubs_Build APIs_nav", "ehn": "Hubs"}'>Build APIs</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://developer.microsoft.com/en-us/games/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Hubs", "cN": "CatNav_Hubs_Game development_nav", "ecn": "CatNav_Hubs_Game development_nav", "ehn": "Hubs"}'>Game development</a>
+
+
+</uhf-dropdown>
+
+    <a class="uhf-nav-item uhf-nav-link" href="https://developer.microsoft.com/blog" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Blog", "cN": "CatNav_Blog_nav", "ecn": "CatNav_Blog_nav", "ehn": "Blog"}'>Blog</a>
+
+
+    <a class="uhf-nav-item uhf-nav-link" href="/en-us/events" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Events", "cN": "CatNav_Events_nav", "ecn": "CatNav_Events_nav", "ehn": "Events"}'>Events</a>
+
+
+    <a class="uhf-nav-item uhf-nav-link" href="https://learn.microsoft.com/docs/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Documentation", "cN": "CatNav_Documentation_nav", "ecn": "CatNav_Documentation_nav", "ehn": "Documentation"}'>Documentation</a>
+
+
+    <a class="uhf-nav-item uhf-nav-link" href="/en-us/community" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Community", "cN": "CatNav_Community_nav", "ecn": "CatNav_Community_nav", "ehn": "Community"}'>Community</a>
+
+
+    <a class="uhf-nav-item uhf-nav-link" href="/en-us/changelog" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "Changelog", "cN": "CatNav_Changelog_nav", "ecn": "CatNav_Changelog_nav", "ehn": "Changelog"}'>Changelog</a>
+</uhf-contextual-nav>    <uhf-actions slot="actions">
+        
+<uhf-global-nav slot="global-nav" text="All Microsoft" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_nonnav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_nonnav", "ehn": "OneMicrosoftBar"}' data-nav-label="All Microsoft menu">
+    
+    <uhf-dropdown-header slot="header">
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/security" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Microsoft Security_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Microsoft Security_nav", "ehn": "OneMicrosoftBar"}'>Microsoft Security</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://azure.microsoft.com/en-us/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Azure_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Azure_nav", "ehn": "OneMicrosoftBar"}'>Azure</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://dynamics.microsoft.com/en-us/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Dynamics 365_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Dynamics 365_nav", "ehn": "OneMicrosoftBar"}'>Dynamics 365</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/microsoft-365/business/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Microsoft 365_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Microsoft 365_nav", "ehn": "OneMicrosoftBar"}'>Microsoft 365</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/microsoft-teams/group-chat-software" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Microsoft Teams_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Microsoft Teams_nav", "ehn": "OneMicrosoftBar"}'>Microsoft Teams</a>
+            <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/windows-365" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Windows 365_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_Windows 365_nav", "ehn": "OneMicrosoftBar"}'>Windows 365</a>
+    </uhf-dropdown-header>
+
+        <uhf-dropdown-column title="Tech &amp; innovation" show-tooltip="false" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_nav", "ehn": "OneMicrosoftBar"}'>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/ai?icid=DSM_AllCommercial_AI" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_Microsoft AI_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_More_TechInnovation__AI_nav", "ehn": "OneMicrosoftBar"}'>Microsoft AI</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://azure.microsoft.com/en-us/solutions/space/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_Azure Space_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_More_TechInnovation_AzureSpace_nav", "ehn": "OneMicrosoftBar"}'>Azure Space</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/mixed-reality/windows-mixed-reality" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_Mixed reality_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_More_TechInnovation_MixedReality_nav", "ehn": "OneMicrosoftBar"}'>Mixed reality</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/hololens" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_Microsoft HoloLens_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_More_TechInnovation_MicrosoftHololens_nav", "ehn": "OneMicrosoftBar"}'>Microsoft HoloLens</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/microsoft-viva" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_Microsoft Viva_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_More_TechInnovation_Microsoft Viva_nav", "ehn": "OneMicrosoftBar"}'>Microsoft Viva</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://azure.microsoft.com/en-us/solutions/quantum-computing/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_Quantum computing_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_More_TechInnovation_QuantumComputing_nav", "ehn": "OneMicrosoftBar"}'>Quantum computing</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/corporate-responsibility/sustainability?icid=DSM_AllCommercial_Sustainability" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_Sustainability_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Tech &amp; innovation_More_TechInnovation_Sustainability_nav", "ehn": "OneMicrosoftBar"}'>Sustainability</a>
+        </uhf-dropdown-column>
+        <uhf-dropdown-column title="Industries" show-tooltip="false" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_nav", "ehn": "OneMicrosoftBar"}'>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/education" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_Education_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_More_Industries_Education_nav", "ehn": "OneMicrosoftBar"}'>Education</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/industry/automotive" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_Automotive_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_More_Industries_Automotive_nav", "ehn": "OneMicrosoftBar"}'>Automotive</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/industry/financial-services/banking" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_Financial services_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_More_Industries_Financialservices_nav", "ehn": "OneMicrosoftBar"}'>Financial services</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/industry/government" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_Government_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_More_Industries_Government_nav", "ehn": "OneMicrosoftBar"}'>Government</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/industry/health/microsoft-cloud-for-healthcare" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_Healthcare_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_More_Industries_Health_nav", "ehn": "OneMicrosoftBar"}'>Healthcare</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/industry/manufacturing/microsoft-cloud-for-manufacturing" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_Manufacturing_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_More_Industries_Manufacturing_nav", "ehn": "OneMicrosoftBar"}'>Manufacturing</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/industry/consumer-goods" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_Retail_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Industries_More_Industries_Retail_nav", "ehn": "OneMicrosoftBar"}'>Retail</a>
+        </uhf-dropdown-column>
+        <uhf-dropdown-column title="Partners" show-tooltip="false" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_nav", "ehn": "OneMicrosoftBar"}'>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://partner.microsoft.com/en-US/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_Find a partner_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_More_Partner_FindPartner_nav", "ehn": "OneMicrosoftBar"}'>Find a partner</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://partner.microsoft.com/en-US/membership/cloud-solution-provider" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_Become a partner_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_More_Partner_BecomePartner_nav", "ehn": "OneMicrosoftBar"}'>Become a partner</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://partner.microsoft.com/en-us/membership" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_Partner Network_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_More_Partner_PartnerNetwork_nav", "ehn": "OneMicrosoftBar"}'>Partner Network</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://marketplace.microsoft.com/?icid=DSM_AllCommercial_Marketplace" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_Microsoft Marketplace_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_More_Partner_Marketplace_nav", "ehn": "OneMicrosoftBar"}'>Microsoft Marketplace</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/software-development-companies?icid=DSM_AllCommercial_SoftwareCompanies" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_Software companies_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Partners_Software companies_nav", "ehn": "OneMicrosoftBar"}'>Software companies</a>
+        </uhf-dropdown-column>
+        <uhf-dropdown-column title="Resources" show-tooltip="false" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_nav", "ehn": "OneMicrosoftBar"}'>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://blogs.microsoft.com/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_Blog_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_More_Resources_Blog_nav", "ehn": "OneMicrosoftBar"}'>Blog</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://about.ads.microsoft.com/en-us?s_cid=dig-src_uhfcomm" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_Microsoft Advertising_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_More_Resources_MicrosoftAdvertising_nav", "ehn": "OneMicrosoftBar"}'>Microsoft Advertising</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="/en-us/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_Developer Center_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_More_Resources_DeveloperCenter_nav", "ehn": "OneMicrosoftBar"}'>Developer Center</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://learn.microsoft.com/docs/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_Documentation_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_More_Resources_Documentation_nav", "ehn": "OneMicrosoftBar"}'>Documentation</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/events" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_Events_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_More_Resources_Events_nav", "ehn": "OneMicrosoftBar"}'>Events</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/licensing/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_Licensing_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_More_Resources_Licensing_nav", "ehn": "OneMicrosoftBar"}'>Licensing</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://learn.microsoft.com/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_Microsoft Learn_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_More_Resources_MicrosoftLearn_nav", "ehn": "OneMicrosoftBar"}'>Microsoft Learn</a>
+                    <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/research/" data-m='{"compnm": "UHF", "view": "UHF", "pa": "UniversalHeader", "hn": "OneMicrosoftBar", "cN": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_Microsoft Research_nav", "ecn": "GlobalNav_OneMicrosoftBar_AllMicrosoft_More_Resources_More_Resources_MicrosoftResearch_nav", "ehn": "OneMicrosoftBar"}'>Microsoft Research</a>
+        </uhf-dropdown-column>
+
+    <uhf-dropdown-footer slot="footer">
+        <a class="uhf-nav-item uhf-dropdown-link" href="https://www.microsoft.com/en-us/sitemap" data-m="">View Sitemap</a>
+    </uhf-dropdown-footer>
+
+</uhf-global-nav>
+
+
+            <uhf-search slot="search" placeholder="Search or ask a question" search-label="Search" cancel-label="Cancel" suggestions-available-text="{0} suggestions available" searchurl="https://www.microsoft.com/en-us/search/explore" autosuggesturl="https://www.microsoft.com/msstoreapiprod/api/autosuggest" queryparametername="q" clientid="7F27B536-CF6B-4C65-8638-A0F8CBDFCA65" productcount="1,5,5" source="Iris-Products,DCatAll-Products,Microsoft-Terms">
+            </uhf-search>
+    </uhf-actions>
+</uhf-header>
+
+    <div class="site-banners">
+
+
+
+<section class="announcement-banner d-none" data-mount="ocr-alert-dismissible" data-identifier="windows-hybrid-intelligence">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="announcement-banner__badge">
+                    <span class="badge badge--size-xs badge-logo--m theme-day">
+                        <div class="ocr-icon d-inline-flex">
+                            <div class="ocr-img media__asset">
+                                <img src="/__mirror/assets/3e387745acc96f18d8365e8a" alt="">
+                            </div>
+                        </div>
+                    </span>
+                </div>
+                <div class="announcement-banner__center">
+                    <div class="announcement-banner__content" role="alert">
+                        
+                        <p>Building Windows for hybrid intelligence  –  Run agents locally or in the cloud, with enterprise-grade security and manageability.</p>
+                    </div>
+                    <div class="announcement-banner__action">
+                        <a href="https://aka.ms/WindowsEraofAI" class="link link-inline" target="_blank" data-bi-an="top-banner" data-bi-id="windows-hybrid-intelligence">
+                            <span class="link__text">Read more</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-auto d-flex">
+                <div class="announcement-banner__dismiss">
+                    <button id="fake-button" type="button" class="d-none" aria-label="close" data-dismiss="alert"></button>
+                    <button type="button" class="alert-dismiss btn btn--ghost glyph-append glyph-append-cancel" aria-label="close">
+                        <span class="glyph-prepend"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>    </div>
+
+    <div id="mainContent" role="main">
+        
+
+
+
+
+
+
+<div id="cpp-page">
+    
+    <section id="hero">
+        <div class="section-master section-master--bg-image section-master--bg-image-stacked bg--neutral-fade section-master--density-compact section-master--blade-hero-card-carousel">
+            <div class="section-master__image">
+                <div class="ocr-img media__asset">
+                    <picture>
+                        <source srcset="/__mirror/assets/21fc6470819d9f610451530e" media="none and (prefers-color-scheme: dark)">
+                        <source srcset="/__mirror/assets/00a7ecd179cd48dd0b654ba7" media="none and (prefers-color-scheme: dark)">
+                        <source srcset="/__mirror/assets/3d4fa1f7c3f0da7ea349b2de" media="none and (prefers-color-scheme: light)">
+                        <source srcset="/__mirror/assets/90370ee92c9f5519c8108ac5" media="none and (prefers-color-scheme: light)">
+                        <img src="/__mirror/assets/90370ee92c9f5519c8108ac5" alt="">
+                    </source></source></source></source></picture>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="layout section-master__layout section-master--layout-cols-2">
+                            <div class="layout__col">
+                                <div class="section-master__layout-header">
+                                    <div class="block-heading block-heading--size-xl">
+                                        <h1 class="block-heading__title">Microsoft for C++ developers</h1>
+                                        <p class="block-heading__paragraph">Tools for every C++ developer on the planet.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="secondary-sticky-nav">
+        <div class="sticky" data-mount="sticky" data-direction="top" data-observer-behavior="always">
+            <div class="secondary-nav">
+                <nav id="sticky-nav" class="container d-flex flex-grow-1" aria-label="In Page Navigation">
+                    <div class="dropdown">
+                        <a class="w-100 dropdown__link" id="menu-list-label-default" data-mount="m365-dropdown" aria-expanded="false" aria-controls="secondary-sticky-nav-menu-list" type="button" role="button" tabindex="0" aria-labelledby="secondary-sticky-nav-label">
+                            <div class="list-item">
+                                <div class="list-item__inner d-flex align-items-center py-m" id="secondary-sticky-nav-label" aria-hidden="true">
+                                    <div class="list-item__content flex-grow-1 d-flex flex-column">
+                                        <div class="fg--base-strong label list-item__content-title">
+                                            <p>Menu</p>
+                                        </div>
+                                    </div>
+                                    <div class="list-item__trailing">
+                                        <div class="ocr-icon d-inline-flex ocr-icon--size-s">
+                                            <span class="glyph-prepend glyph-prepend-chevron-down" aria-label="">
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <ul class="dropdown-menu menu-list p-0 rounded-scrollbar overflow-auto" id="secondary-sticky-nav-menu-list" aria-labelledby="menu-list-label-default" tabindex="-1">
+                            <li class="menu-list__list-item">
+        <a class="menu-list__item-link" href="#tools" data-bi-an="secondary-sticky-nav" data-bi-id="tools" data-bi-ct="nav">
+            <div class="indicator indicator--shape-pill"></div>
+            <span class="menu-list__list-item-text">
+                <div class="list-item">
+                    <div class="list-item__inner d-flex align-items-center py-m">
+                        <div class="list-item__content flex-grow-1 d-flex flex-column">
+                            <div class="fg--base-strong label list-item__content-title">
+                                <p>Tools</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </span>
+        </a>
+    </li>
+                            <li class="menu-list__list-item">
+        <a class="menu-list__item-link" href="#pure-virtual-cpp" data-bi-an="secondary-sticky-nav" data-bi-id="pure-virtual-cpp" data-bi-ct="nav">
+            <div class="indicator indicator--shape-pill"></div>
+            <span class="menu-list__list-item-text">
+                <div class="list-item">
+                    <div class="list-item__inner d-flex align-items-center py-m">
+                        <div class="list-item__content flex-grow-1 d-flex flex-column">
+                            <div class="fg--base-strong label list-item__content-title">
+                                <p>Pure Virtual C++</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </span>
+        </a>
+    </li>
+                            <li class="menu-list__list-item">
+        <a class="menu-list__item-link" href="#customer-stories" data-bi-an="secondary-sticky-nav" data-bi-id="customer-stories" data-bi-ct="nav">
+            <div class="indicator indicator--shape-pill"></div>
+            <span class="menu-list__list-item-text">
+                <div class="list-item">
+                    <div class="list-item__inner d-flex align-items-center py-m">
+                        <div class="list-item__content flex-grow-1 d-flex flex-column">
+                            <div class="fg--base-strong label list-item__content-title">
+                                <p>Stories</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </span>
+        </a>
+    </li>
+                            <li class="menu-list__list-item">
+        <a class="menu-list__item-link" href="#learn" data-bi-an="secondary-sticky-nav" data-bi-id="learn" data-bi-ct="nav">
+            <div class="indicator indicator--shape-pill"></div>
+            <span class="menu-list__list-item-text">
+                <div class="list-item">
+                    <div class="list-item__inner d-flex align-items-center py-m">
+                        <div class="list-item__content flex-grow-1 d-flex flex-column">
+                            <div class="fg--base-strong label list-item__content-title">
+                                <p>Learn</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </span>
+        </a>
+    </li>
+                            <li class="menu-list__list-item">
+        <a class="menu-list__item-link" href="#on-github" data-bi-an="secondary-sticky-nav" data-bi-id="on-github" data-bi-ct="nav">
+            <div class="indicator indicator--shape-pill"></div>
+            <span class="menu-list__list-item-text">
+                <div class="list-item">
+                    <div class="list-item__inner d-flex align-items-center py-m">
+                        <div class="list-item__content flex-grow-1 d-flex flex-column">
+                            <div class="fg--base-strong label list-item__content-title">
+                                <p>Repositories</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </span>
+        </a>
+    </li>
+                            <li class="menu-list__list-item">
+        <a class="menu-list__item-link" href="#blogs" data-bi-an="secondary-sticky-nav" data-bi-id="blogs" data-bi-ct="nav">
+            <div class="indicator indicator--shape-pill"></div>
+            <span class="menu-list__list-item-text">
+                <div class="list-item">
+                    <div class="list-item__inner d-flex align-items-center py-m">
+                        <div class="list-item__content flex-grow-1 d-flex flex-column">
+                            <div class="fg--base-strong label list-item__content-title">
+                                <p>Blogs</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </span>
+        </a>
+    </li>
+                            <li class="menu-list__list-item">
+        <a class="menu-list__item-link" href="#videos" data-bi-an="secondary-sticky-nav" data-bi-id="getting-started-videos" data-bi-ct="nav">
+            <div class="indicator indicator--shape-pill"></div>
+            <span class="menu-list__list-item-text">
+                <div class="list-item">
+                    <div class="list-item__inner d-flex align-items-center py-m">
+                        <div class="list-item__content flex-grow-1 d-flex flex-column">
+                            <div class="fg--base-strong label list-item__content-title">
+                                <p>Videos</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </span>
+        </a>
+    </li>
+                        </ul>
+    
+                    </div>
+                </nav>
+                <div class="indicator indicator--horizontal"></div>
+            </div>
+        </div>
+
+        <div class="scrollspy-container">
+
+            <section id="tools">
+                <div class="section-master bg--base-fade section-master--breadth-comfortable section-master--layout-slot-horizontal-alignment-right section-master--layout-slot-vertical-alignment-bottom section-master--blade-card-carousel">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <div class="layout section-master__layout section-master--layout-cols-1">
+        <div class="layout__col">
+            <div class="section-master__layout-header">
+                <div class="block-heading block-heading--size-s">
+                        <h3 class="block-heading__eyebrow">Tools</h3>
+                        <h2 class="block-heading__title">Our C++ tools</h2>
+                        <p class="block-heading__paragraph">Tools to make every C++ developer's lives better.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card-grid row section-master__slot card-grid--disable-card-promo">
+                            <div class="card-grid__cards">
+                                <div class="layout layout--cols-4">
+                                    <div class="layout__col">
+        <div class="card rounded-l">
+            <div class="card__content p-l">
+
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__badge">
+            <div class="block-feature__badge pb-s">
+                <span class="badge badge--size-s badge-logo--l badge--solid">
+                    <div class="ocr-icon d-inline-flex">
+                        <div class="ocr-img media__asset">
+                            <img src="/__mirror/assets/a04a4c900321e8a2dd0d21cd" class="" alt="">
+                        </div>
+                    </div>
+                </span>
+            </div>
+
+        <div class="block-feature__headings d-flex flex-column align-items-start">
+        <h5 class="block-feature__title">Visual Studio</h5>
+    </div>
+    </div>
+
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Develop on Windows, target any platform with an AI-powered IDE that boosts productivity. Build modern C and C++ apps using tools of your choice.</p>
+                    </div>
+                </div>
+
+                <div class="block-slim block-slim--checklist">
+                        <a href="https://visualstudio.microsoft.com/vs/features/cplusplus/" class="link link-inline" data-bi-an="tools" data-bi-id="learn-more" data-bi-ct="link" target="_blank" aria-label="Learn more about Visual Studio">
+                            <span class="link__text">Learn more</span>
+                        </a>
+                </div>
+            </div>
+        </div>
+    </div>
+                                    <div class="layout__col">
+        <div class="card rounded-l">
+            <div class="card__content p-l">
+
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__badge">
+            <div class="block-feature__badge pb-s">
+                <span class="badge badge--size-s badge-logo--l badge--solid">
+                    <div class="ocr-icon d-inline-flex">
+                        <div class="ocr-img media__asset">
+                            <img src="/__mirror/assets/6042875068f3cb61d0160b5a" class="" alt="">
+                        </div>
+                    </div>
+                </span>
+            </div>
+
+        <div class="block-feature__headings d-flex flex-column align-items-start">
+        <h5 class="block-feature__title">Visual Studio Code</h5>
+    </div>
+    </div>
+
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">The lightweight, powerful and extensible editor, built on open source, available on Windows, Linux, and Mac.</p>
+                    </div>
+                </div>
+
+                <div class="block-slim block-slim--checklist">
+                        <a href="https://code.visualstudio.com/docs/languages/cpp" class="link link-inline" data-bi-an="tools" data-bi-id="learn-more" data-bi-ct="link" target="_blank" aria-label="Learn more about Visual Studio Code">
+                            <span class="link__text">Learn more</span>
+                        </a>
+                </div>
+            </div>
+        </div>
+    </div>
+                                    <div class="layout__col">
+        <div class="card rounded-l">
+            <div class="card__content p-l">
+
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__badge">
+            <div class="block-feature__badge pb-s">
+                <span class="badge badge--size-s badge-logo--l badge--solid">
+                    <div class="ocr-icon d-inline-flex">
+                        <div class="ocr-img media__asset">
+                            <img src="/__mirror/assets/eae8a5ed120b1bf38b3b2ad4" class="" alt="">
+                        </div>
+                    </div>
+                </span>
+            </div>
+
+        <div class="block-feature__headings d-flex flex-column align-items-start">
+        <h5 class="block-feature__title">vcpkg</h5>
+    </div>
+    </div>
+
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Open-source C and C++ dependency manager for all platforms, buildsystems, and workflows.</p>
+                    </div>
+                </div>
+
+                <div class="block-slim block-slim--checklist">
+                        <a href="https://vcpkg.io/" class="link link-inline" data-bi-an="tools" data-bi-id="learn-more" data-bi-ct="link" target="_blank" aria-label="Learn more about vcpkg">
+                            <span class="link__text">Learn more</span>
+                        </a>
+                </div>
+            </div>
+        </div>
+    </div>
+                                    <div class="layout__col">
+        <div class="card rounded-l">
+            <div class="card__content p-l">
+
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__badge">
+            <div class="block-feature__badge pb-s">
+                <span class="badge badge--size-s badge-logo--l badge--solid">
+                    <div class="ocr-icon d-inline-flex">
+                        <div class="ocr-img media__asset">
+                            <img src="/__mirror/assets/a04a4c900321e8a2dd0d21cd" class="" alt="">
+                        </div>
+                    </div>
+                </span>
+            </div>
+
+        <div class="block-feature__headings d-flex flex-column align-items-start">
+        <h5 class="block-feature__title">Microsoft C++ Compiler</h5>
+    </div>
+    </div>
+
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Use the MSVC toolchain for developing your C and C++ code.</p>
+                    </div>
+                </div>
+
+                <div class="block-slim block-slim--checklist">
+                        <a href="https://visualstudio.microsoft.com/downloads/?q=build+tools#build-tools-for-visual-studio-2022" class="link link-inline" data-bi-an="tools" data-bi-id="learn-more" data-bi-ct="link" target="_blank" aria-label="Learn more about Microsoft C++ Compiler">
+                            <span class="link__text">Learn more</span>
+                        </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                                    <div class="layout__col">
+        <div class="card rounded-l">
+            <div class="card__content p-l">
+
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__badge">
+            <div class="block-feature__badge pb-s">
+                <span class="badge badge--size-s badge-logo--l badge--solid">
+                    <div class="ocr-icon d-inline-flex">
+                        <div class="ocr-img media__asset">
+                            <img src="/__mirror/assets/906cb3bc9c3e6c774ec71d59" class="" alt="">
+                        </div>
+                    </div>
+                </span>
+            </div>
+
+        <div class="block-feature__headings d-flex flex-column align-items-start">
+        <h5 class="block-feature__title">GitHub Copilot</h5>
+    </div>
+    </div>
+
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">The AI coding assistant elevating developer workflows.</p>
+                    </div>
+                </div>
+
+                <div class="block-slim block-slim--checklist">
+                        <a href="https://github.com/features/copilot" class="link link-inline" data-bi-an="tools" data-bi-id="learn-more" data-bi-ct="link" target="_blank" aria-label="Learn more about GitHub Copilot">
+                            <span class="link__text">Learn more</span>
+                        </a>
+                </div>
+            </div>
+        </div>
+    </div>
+                                    <div class="layout__col">
+        <div class="card rounded-l">
+            <div class="card__content p-l">
+
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__badge">
+            <div class="block-feature__badge pb-s">
+                <span class="badge badge--size-s badge-logo--l badge--solid">
+                    <div class="ocr-icon d-inline-flex">
+                        <div class="ocr-img media__asset">
+                            <img src="/__mirror/assets/e6b69626c8a27871f3fa530f" class="" alt="">
+                        </div>
+                    </div>
+                </span>
+            </div>
+
+        <div class="block-feature__headings d-flex flex-column align-items-start">
+        <h5 class="block-feature__title">Windows Subsystem for Linux (WSL)</h5>
+    </div>
+    </div>
+
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Access the power of Windows and Linux at the same time on a Windows machine.</p>
+                    </div>
+                </div>
+
+                <div class="block-slim block-slim--checklist">
+                        <a href="https://aka.ms/wsl" class="link link-inline" data-bi-an="tools" data-bi-id="learn-more" data-bi-ct="link" target="_blank" aria-label="Learn more about Windows Subsystem for Linux">
+                            <span class="link__text">Learn more</span>
+                        </a>
+                </div>
+            </div>
+        </div>
+    </div>
+                                    <div class="layout__col">
+        <div class="card rounded-l">
+            <div class="card__content p-l">
+
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__badge">
+            <div class="block-feature__badge pb-s">
+                <span class="badge badge--size-s badge-logo--l badge--solid">
+                    <div class="ocr-icon d-inline-flex">
+                        <div class="ocr-img media__asset">
+                            <img src="/__mirror/assets/a432f5b335d5ac23f1f7a6ec" class="" alt="">
+                        </div>
+                    </div>
+                </span>
+            </div>
+
+        <div class="block-feature__headings d-flex flex-column align-items-start">
+        <h5 class="block-feature__title">Azure SDK</h5>
+    </div>
+    </div>
+
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Manage and interact with Azure cloud services from C++.</p>
+                    </div>
+                </div>
+
+                <div class="block-slim block-slim--checklist">
+                        <a href="https://azure.github.io/azure-sdk-for-cpp/" class="link link-inline" data-bi-an="tools" data-bi-id="learn-more" data-bi-ct="link" target="_blank" aria-label="Learn more about Azure SDK">
+                            <span class="link__text">Learn more</span>
+                        </a>
+                </div>
+            </div>
+        </div>
+    </div>
+                                    <div class="layout__col">
+        <div class="card rounded-l">
+            <div class="card__content p-l">
+
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__badge">
+            <div class="block-feature__badge pb-s">
+                <span class="badge badge--size-s badge-logo--l badge--solid">
+                    <div class="ocr-icon d-inline-flex">
+                        <div class="ocr-img media__asset">
+                            <img src="/__mirror/assets/581ac8aa8a314c9b43962107" class="" alt="">
+                        </div>
+                    </div>
+                </span>
+            </div>
+
+        <div class="block-feature__headings d-flex flex-column align-items-start">
+        <h5 class="block-feature__title">Visual Studio Tools for Unreal Engine</h5>
+    </div>
+    </div>
+
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Develop games for Unreal Engine from Visual Studio.</p>
+                    </div>
+                </div>
+
+                <div class="block-slim block-slim--checklist">
+                        <a href="https://learn.microsoft.com/visualstudio/gamedev/unreal/get-started/vs-tools-unreal-overview" class="link link-inline" data-bi-an="tools" data-bi-id="learn-more" data-bi-ct="link" target="_blank" aria-label="Learn more about Visual Studio Tools for Unreal Engine">
+                            <span class="link__text">Learn more</span>
+                        </a>
+                </div>
+            </div>
+        </div>
+    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="pure-virtual-cpp">
+                <div class="section-master bg--base-fade section-master--breadth-comfortable section-master--layout-slot-horizontal-alignment-right section-master--layout-slot-vertical-alignment-bottom section-master--blade-card-carousel">
+                    <div class="container">
+                        <div class="row mb-l">
+                            <div class="col justify-items-center">
+                                <div class="layout section-master__layout section-master--layout-cols-1">
+                                    <div class="layout__col text-align-center">
+                                        <div class="section-master__layout-header">
+                                            <div class="block-heading block-heading--size-s">
+                                                <h2 class="block-heading__title">Pure Virtual C++</h2>
+                                                <p class="block-heading__paragraph pr-0">Our free, virtual, one-day conference for the whole C++ community.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row section-master__slot">
+                            <div class="col justify-items-center">
+                                <div class="pill-bar no-gutters px-0 mx-0 w-100">
+                                    <div data-mount="tab-slider" class="col">
+                                        <div class="tab-overflow">
+                                            <div class="tab-window">
+                                                <div class="tab-group" role="group" style="--tab-group-x-align: center;" aria-label="Select a year for pure c++ conference content">
+                                                    
+                                                    <button id="pure-2026-pill-bar" class="pill-bar__item active" href="#pure-2026" role="button" data-mount="tab" aria-controls="pure-2026" aria-disabled="" tabindex="0">
+        <span class="pill-bar__item__label">2026</span>
+    </button>
+                                                    <button id="pure-2025-pill-bar" class="pill-bar__item " href="#pure-2025" role="button" data-mount="tab" aria-controls="pure-2025" aria-disabled="" tabindex="0">
+        <span class="pill-bar__item__label">2025</span>
+    </button>
+                                                    <button id="pure-2024-pill-bar" class="pill-bar__item " href="#pure-2024" role="button" data-mount="tab" aria-controls="pure-2024" aria-disabled="" tabindex="0">
+        <span class="pill-bar__item__label">2024</span>
+    </button>
+                                                    <button id="pure-2023-pill-bar" class="pill-bar__item " href="#pure-2023" role="button" data-mount="tab" aria-controls="pure-2023" aria-disabled="" tabindex="0">
+        <span class="pill-bar__item__label">2023</span>
+    </button>
+                                                    <button id="pure-2022-pill-bar" class="pill-bar__item " href="#pure-2022" role="button" data-mount="tab" aria-controls="pure-2022" aria-disabled="" tabindex="0">
+        <span class="pill-bar__item__label">2022</span>
+    </button>
+                                                    <button id="pure-2021-pill-bar" class="pill-bar__item " href="#pure-2021" role="button" data-mount="tab" aria-controls="pure-2021" aria-disabled="" tabindex="0">
+        <span class="pill-bar__item__label">2021</span>
+    </button>
+                                                    <button id="pure-2020-pill-bar" class="pill-bar__item " href="#pure-2020" role="button" data-mount="tab" aria-controls="pure-2020" aria-disabled="" tabindex="0">
+        <span class="pill-bar__item__label">2020</span>
+    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-arrows">
+                                            <button type="button" class="arrow-prev" tabindex="-1" aria-hidden="true" data-width="40">
+                                                <span class="sr-only">Previous</span>
+                                            </button>
+                                            <div class="arrow-prev pill-bar__arrow-prev-bg"></div>
+                                            <button type="button" class="arrow-next" tabindex="-1" aria-hidden="true" data-width="40">
+                                                <span class="sr-only">Next</span>
+                                            </button>
+                                            <div class="arrow-next pill-bar__arrow-next-bg"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row pb-xl">
+                                    <div class="col">
+                                        <div class="tab-panel-group" id="pure-cpp-panels">
+                                            <div id="pure-2026" class="tab-panel fade active show" role="tabpanel" aria-labelledby="pure-2026-pill-bar" tabindex="0">
+        <div class="pill-bar__panel__content">
+            <div class="card-grid row">
+                <div class="col">
+                    <div class="block-heading block-heading--size-xs pb-m">
+                        <h2 class="block-heading__title">Pure Virtual C++ 2026</h2>
+                    </div>
+                    <div class="feature-card rounded-l">
+                        <div class="media media--ratio-16-9 media--highlight media--highlight-glass depth-4 media--pos-middle-middle">
+                            <div class="w-100 ocr-img media__asset">
+                                <iframe class="w-100" style="aspect-ratio: 16/9" data-bi-an="pure-virtual-cpp" loading="lazy" src="https://www.youtube-nocookie.com/embed/videoseries?si=osp1PiPaelOkei6m&amp;list=PLDd6OJEZ3V7c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen data-external-embed="true">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                                            <div id="pure-2025" class="tab-panel fade " role="tabpanel" aria-labelledby="pure-2025-pill-bar" tabindex="0">
+        <div class="pill-bar__panel__content">
+            <div class="card-grid row">
+                <div class="col">
+                    <div class="block-heading block-heading--size-xs pb-m">
+                        <h2 class="block-heading__title">Pure Virtual C++ 2025</h2>
+                    </div>
+                    <div class="feature-card rounded-l">
+                        <div class="media media--ratio-16-9 media--highlight media--highlight-glass depth-4 media--pos-middle-middle">
+                            <div class="w-100 ocr-img media__asset">
+                                <iframe class="w-100" style="aspect-ratio: 16/9" data-bi-an="pure-virtual-cpp" loading="lazy" src="https://www.youtube-nocookie.com/embed/videoseries?si=-4t681wU9sILM61L&amp;list=PLReL099Y5nRfLGBGRHml5WE81yk2OxdVU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen data-external-embed="true">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                                            <div id="pure-2024" class="tab-panel fade " role="tabpanel" aria-labelledby="pure-2024-pill-bar" tabindex="0">
+        <div class="pill-bar__panel__content">
+            <div class="card-grid row">
+                <div class="col">
+                    <div class="block-heading block-heading--size-xs pb-m">
+                        <h2 class="block-heading__title">Pure Virtual C++ 2024</h2>
+                    </div>
+                    <div class="feature-card rounded-l">
+                        <div class="media media--ratio-16-9 media--highlight media--highlight-glass depth-4 media--pos-middle-middle">
+                            <div class="w-100 ocr-img media__asset">
+                                <iframe class="w-100" style="aspect-ratio: 16/9" data-bi-an="pure-virtual-cpp" loading="lazy" src="https://www.youtube-nocookie.com/embed/videoseries?si=f8azdIjLJwWnuaSB&amp;list=PLReL099Y5nRdGvEMSX_CX8kCDv8dqekak" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen data-external-embed="true">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                                            <div id="pure-2023" class="tab-panel fade " role="tabpanel" aria-labelledby="pure-2023-pill-bar" tabindex="0">
+        <div class="pill-bar__panel__content">
+            <div class="card-grid row">
+                <div class="col">
+                    <div class="block-heading block-heading--size-xs pb-m">
+                        <h2 class="block-heading__title">Pure Virtual C++ 2023</h2>
+                    </div>
+                    <div class="feature-card rounded-l">
+                        <div class="media media--ratio-16-9 media--highlight media--highlight-glass depth-4 media--pos-middle-middle">
+                            <div class="w-100 ocr-img media__asset">
+                                <iframe class="w-100" style="aspect-ratio: 16/9" data-bi-an="pure-virtual-cpp" loading="lazy" src="https://www.youtube-nocookie.com/embed/videoseries?si=A_568_jNlEPJ_V-j&amp;list=PLReL099Y5nRc8Cbb_fodHFQeZ5I4N7KYo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen data-external-embed="true">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                                            <div id="pure-2022" class="tab-panel fade " role="tabpanel" aria-labelledby="pure-2022-pill-bar" tabindex="0">
+        <div class="pill-bar__panel__content">
+            <div class="card-grid row">
+                <div class="col">
+                    <div class="block-heading block-heading--size-xs pb-m">
+                        <h2 class="block-heading__title">Pure Virtual C++ 2022</h2>
+                    </div>
+                    <div class="feature-card rounded-l">
+                        <div class="media media--ratio-16-9 media--highlight media--highlight-glass depth-4 media--pos-middle-middle">
+                            <div class="w-100 ocr-img media__asset">
+                                <iframe class="w-100" style="aspect-ratio: 16/9" data-bi-an="pure-virtual-cpp" loading="lazy" src="https://www.youtube-nocookie.com/embed/videoseries?si=9a-M51RClFcjJxFJ&amp;list=PLlrxD0HtieHgeA2C5XXCeoo04keztrREX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen data-external-embed="true">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                                            <div id="pure-2021" class="tab-panel fade " role="tabpanel" aria-labelledby="pure-2021-pill-bar" tabindex="0">
+        <div class="pill-bar__panel__content">
+            <div class="card-grid row">
+                <div class="col">
+                    <div class="block-heading block-heading--size-xs pb-m">
+                        <h2 class="block-heading__title">Pure Virtual C++ 2021</h2>
+                    </div>
+                    <div class="feature-card rounded-l">
+                        <div class="media media--ratio-16-9 media--highlight media--highlight-glass depth-4 media--pos-middle-middle">
+                            <div class="w-100 ocr-img media__asset">
+                                <iframe class="w-100" style="aspect-ratio: 16/9" data-bi-an="pure-virtual-cpp" loading="lazy" src="https://www.youtube-nocookie.com/embed/videoseries?si=0mezlENvVXeVxgdF&amp;list=PLReL099Y5nRcWPNnKO4cwxN5RJZl9A48P" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen data-external-embed="true">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                                            <div id="pure-2020" class="tab-panel fade " role="tabpanel" aria-labelledby="pure-2020-pill-bar" tabindex="0">
+        <div class="pill-bar__panel__content">
+            <div class="card-grid row">
+                <div class="col">
+                    <div class="block-heading block-heading--size-xs pb-m">
+                        <h2 class="block-heading__title">Pure Virtual C++ 2020</h2>
+                    </div>
+                    <div class="feature-card rounded-l">
+                        <div class="media media--ratio-16-9 media--highlight media--highlight-glass depth-4 media--pos-middle-middle">
+                            <div class="w-100 ocr-img media__asset">
+                                <iframe class="w-100" style="aspect-ratio: 16/9" data-bi-an="pure-virtual-cpp" loading="lazy" src="https://www.youtube-nocookie.com/embed/videoseries?si=59Ps2beq-Xhd0ZWY&amp;list=PLReL099Y5nRdHYz4JwB0bq1kaVw2yGDag" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen data-external-embed="true">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="customer-stories">
+                <div class="section-master bg--base-fade section-master--breadth-comfortable section-master--layout-slot-horizontal-alignment-right section-master--layout-slot-vertical-alignment-bottom section-master--blade-card-carousel">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <div class="layout section-master__layout section-master--layout-cols-1">
+        <div class="layout__col">
+            <div class="section-master__layout-header">
+                <div class="block-heading block-heading--size-s">
+                        <h3 class="block-heading__eyebrow">Stories</h3>
+                        <h2 class="block-heading__title">Customer stories</h2>
+                        <p class="block-heading__paragraph">Learn how teams around the world are using our tools to augment their workflows.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row section-master__slot">
+                            <div class="col">
+
+                                <div class="carousel carousel--indicator-media-bar carousel--type-case-study">
+                                    <section class="carousel__section" aria-label="case study carousel" aria-roledescription="carousel" data-mount="ocr-carousel">
+                                        <span id="mwf9c5484fa-announcement-text" class="carousel__announcement-text sr-only" aria-live="polite" data-multi-slide-translatable="Showing %{curStart}-%{curEnd} of %{totalSlides} slides" data-single-slide-translatable="Showing slide %{curStart} of %{totalSlides}"></span>
+
+                                        <div id="mwf9c5484fa-controls" class="carousel__controls">
+                                            <button type="button" class="carousel__arrow-prev" title="Previous slide" data-slide="prev" aria-labelledby="carousel-control-prev-mwf9c5484fa" aria-controls="mwf9c5484fa-carousel__container">
+                                                <span class="sr-only" id="carousel-control-prev-mwf9c5484fa">Previous slide</span><span class="glyph-prepend glyph-prepend-back glyph-prepend-medium" aria-hidden="true"></span>
+                                            </button>
+                                            
+                                            <ol class="carousel__indicators">
+<li class="carousel__indicators-item-wrapper">
+        <a href="#mwf9c5484fa-1" class="carousel__indicators-item" role="button" aria-controls="mwf9c5484fa-1" aria-label="Customer story: siemens" aria-current="false" data-current-slide-translatable="current slide">
+            
+            <div class="carousel__indicators-item--container carousel__indicators-type--media">
+                <div class="carousel__indicators-item__media">
+                    <div class="media  media--ratio-16-9">
+                        <div class="ocr-img media__asset py-0">
+                            <picture>
+                                <source srcset="/__mirror/assets/a4b5fdceb202d80725d26863" media="none and (prefers-color-scheme: dark)">
+                                <source srcset="/__mirror/assets/08585bab019586bb0e8a235e" media="none and (prefers-color-scheme: light)">
+                                <img src="/__mirror/assets/08585bab019586bb0e8a235e" alt="">
+                            </source></source></picture>
+                        </div>
+                    </div>
+
+                </div>
+                <span class="indicator" role="presentation"></span>
+            </div>
+        </a>
+    </li><li class="carousel__indicators-item-wrapper">
+        <a href="#mwf9c5484fa-2" class="carousel__indicators-item" role="button" aria-controls="mwf9c5484fa-2" aria-label="Customer story: askia" aria-current="false" data-current-slide-translatable="current slide">
+            
+            <div class="carousel__indicators-item--container carousel__indicators-type--media">
+                <div class="carousel__indicators-item__media">
+                    <div class="media  media--ratio-16-9">
+                        <div class="ocr-img media__asset py-0">
+                            <picture>
+                                <source srcset="/__mirror/assets/720e912aeaeff02767759ffe" media="none and (prefers-color-scheme: dark)">
+                                <source srcset="/__mirror/assets/2fa9000be0d84ac3e0eb59ea" media="none and (prefers-color-scheme: light)">
+                                <img src="/__mirror/assets/2fa9000be0d84ac3e0eb59ea" alt="">
+                            </source></source></picture>
+                        </div>
+                    </div>
+
+                </div>
+                <span class="indicator" role="presentation"></span>
+            </div>
+        </a>
+    </li><li class="carousel__indicators-item-wrapper">
+        <a href="#mwf9c5484fa-3" class="carousel__indicators-item" role="button" aria-controls="mwf9c5484fa-3" aria-label="Customer story: genetec" aria-current="false" data-current-slide-translatable="current slide">
+            
+            <div class="carousel__indicators-item--container carousel__indicators-type--media">
+                <div class="carousel__indicators-item__media">
+                    <div class="media  media--ratio-16-9">
+                        <div class="ocr-img media__asset py-0">
+                            <picture>
+                                <source srcset="/__mirror/assets/7e9e854a4da20b5e83f53d49" media="none and (prefers-color-scheme: dark)">
+                                <source srcset="/__mirror/assets/32b42143108e4e299dbbc703" media="none and (prefers-color-scheme: light)">
+                                <img src="/__mirror/assets/32b42143108e4e299dbbc703" alt="">
+                            </source></source></picture>
+                        </div>
+                    </div>
+
+                </div>
+                <span class="indicator" role="presentation"></span>
+            </div>
+        </a>
+    </li><li class="carousel__indicators-item-wrapper">
+        <a href="#mwf9c5484fa-4" class="carousel__indicators-item" role="button" aria-controls="mwf9c5484fa-4" aria-label="Customer story: bosch" aria-current="false" data-current-slide-translatable="current slide">
+            
+            <div class="carousel__indicators-item--container carousel__indicators-type--media">
+                <div class="carousel__indicators-item__media">
+                    <div class="media  media--ratio-16-9">
+                        <div class="ocr-img media__asset py-0">
+                            <picture>
+                                <source srcset="/__mirror/assets/cd15fab91bf7556099f93d74" media="none and (prefers-color-scheme: dark)">
+                                <source srcset="/__mirror/assets/e33d4e10a850708f0e91ce6d" media="none and (prefers-color-scheme: light)">
+                                <img src="/__mirror/assets/e33d4e10a850708f0e91ce6d" alt="">
+                            </source></source></picture>
+                        </div>
+                    </div>
+
+                </div>
+                <span class="indicator" role="presentation"></span>
+            </div>
+        </a>
+    </li><li class="carousel__indicators-item-wrapper">
+        <a href="#mwf9c5484fa-5" class="carousel__indicators-item" role="button" aria-controls="mwf9c5484fa-5" aria-label="Customer story: microsoft-azure" aria-current="false" data-current-slide-translatable="current slide">
+            
+            <div class="carousel__indicators-item--container carousel__indicators-type--media">
+                <div class="carousel__indicators-item__media">
+                    <div class="media  media--ratio-16-9">
+                        <div class="ocr-img media__asset py-0">
+                            <picture>
+                                <source srcset="/__mirror/assets/b1e5c00c056de00e0e7c0e12" media="none and (prefers-color-scheme: dark)">
+                                <source srcset="/__mirror/assets/55d446163670197ebafb83bb" media="none and (prefers-color-scheme: light)">
+                                <img src="/__mirror/assets/55d446163670197ebafb83bb" alt="">
+                            </source></source></picture>
+                        </div>
+                    </div>
+
+                </div>
+                <span class="indicator" role="presentation"></span>
+            </div>
+        </a>
+    </li>    </ol>
+
+                                            <button type="button" class="carousel__arrow-next" title="Next slide" data-slide="next" aria-labelledby="carousel-control-next-mwf9c5484fa" aria-controls="mwf9c5484fa-carousel__container">
+                                                <span class="sr-only" id="carousel-control-next-mwf9c5484fa">Next slide</span><span class="glyph-prepend glyph-prepend-forward glyph-prepend-medium" aria-hidden="true"></span>
+                                            </button>
+                                        </div>
+                                        <div class="carousel__window hide-scrollbar">
+                                            <div id="mwf9c5484fa-carousel__container" class="carousel__container layout layout--overflow layout-cols-3">
+
+                                                <div role="group" aria-roledescription="slide" tabindex="0" id="mwf9c5484fa-1" class="carousel__slide layout__col" aria-label="1 of 5">
+        <div class="testimonial-card bg--card-normal depth-4 row m-0">
+            <div class="testimonial-card__media order-md-1 col-6 col-md-6 col-lg-12">
+                <div class="media media--ratio-21-9 media--pos-middle-middle">
+                    <div class="ocr-img media__asset">
+                        <picture>
+                            <source srcset="/__mirror/assets/91409965102c76d71a9bbd1a">
+                            <source srcset="/__mirror/assets/f741faf491aff789921529ff">
+                            <img src="/__mirror/assets/f741faf491aff789921529ff" alt="">
+                        </source></source></picture>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card__content col-6 col-md-6 col-lg-12">
+                <div class="testimonial-card__quote">
+                    <div class="testimonial-card__content-media" style="width:160px">
+                        <div class="media  media--ratio-16-9">
+                            <div class="ocr-img media__asset">
+                                <picture>
+                                    <source srcset="/__mirror/assets/a4b5fdceb202d80725d26863" media="none and (prefers-color-scheme: dark)">
+                                    <source srcset="/__mirror/assets/08585bab019586bb0e8a235e" media="none and (prefers-color-scheme: light)">
+                                    <img src="/__mirror/assets/08585bab019586bb0e8a235e" alt="">
+                                </source></source></picture>
+                            </div>
+                        </div>
+                    </div>
+                    <h4 class="fg--base-strong">Siemens Healthineers manages C++ libraries with vcpkg in an offline build environment</h4>
+                </div>
+                <div class="testimonial-card__footer">
+                    <div class="button-group">
+                        <a href="https://devblogs.microsoft.com/cppblog/siemens-healthineers-manages-c-libraries-with-vcpkg-in-an-offline-build-environment/" class="btn btn--md" target="_blank" data-bi-an="customer-stories" data-bi-id="siemens-healthineers" data-bi-ct="button" aria-label="Read more about Siemens Healthineers case study">
+                            <div class="btn__text">Read more</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+                                                <div role="group" aria-roledescription="slide" tabindex="0" id="mwf9c5484fa-2" class="carousel__slide layout__col" aria-label="2 of 5">
+        <div class="testimonial-card bg--card-normal depth-4 row m-0">
+            <div class="testimonial-card__media order-md-1 col-6 col-md-6 col-lg-12">
+                <div class="media media--ratio-21-9 media--pos-middle-middle">
+                    <div class="ocr-img media__asset">
+                        <picture>
+                            <source srcset="/__mirror/assets/54026d7e6af3d7d40121fc8b">
+                            <source srcset="/__mirror/assets/d5807d7f50b5918518d327a6">
+                            <img src="/__mirror/assets/d5807d7f50b5918518d327a6" alt="">
+                        </source></source></picture>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card__content col-6 col-md-6 col-lg-12">
+                <div class="testimonial-card__quote">
+                    <div class="testimonial-card__content-media" style="width:160px">
+                        <div class="media  media--ratio-16-9">
+                            <div class="ocr-img media__asset">
+                                <picture>
+                                    <source srcset="/__mirror/assets/720e912aeaeff02767759ffe" media="none and (prefers-color-scheme: dark)">
+                                    <source srcset="/__mirror/assets/2fa9000be0d84ac3e0eb59ea" media="none and (prefers-color-scheme: light)">
+                                    <img src="/__mirror/assets/2fa9000be0d84ac3e0eb59ea" alt="">
+                                </source></source></picture>
+                            </div>
+                        </div>
+                    </div>
+                    <h4 class="fg--base-strong">Askia, an Ipsos company, achieved faster, reproducible builds with vcpkg</h4>
+                </div>
+                <div class="testimonial-card__footer">
+                    <div class="button-group">
+                        <a href="https://devblogs.microsoft.com/cppblog/askia-an-ipsos-company-achieved-faster-reproducible-builds-with-vcpkg/" class="btn btn--md" target="_blank" data-bi-an="customer-stories" data-bi-id="askia" data-bi-ct="button" aria-label="Read more about Askia case study">
+                            <div class="btn__text">Read more</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+                                                <div role="group" aria-roledescription="slide" tabindex="0" id="mwf9c5484fa-3" class="carousel__slide layout__col" aria-label="3 of 5">
+        <div class="testimonial-card bg--card-normal depth-4 row m-0">
+            <div class="testimonial-card__media order-md-1 col-6 col-md-6 col-lg-12">
+                <div class="media media--ratio-21-9 media--pos-middle-middle">
+                    <div class="ocr-img media__asset">
+                        <picture>
+                            <source srcset="/__mirror/assets/c39975b2a6f8636a7ad64e4a">
+                            <source srcset="/__mirror/assets/982b18ec0c9e402336006bff">
+                            <img src="/__mirror/assets/982b18ec0c9e402336006bff" alt="">
+                        </source></source></picture>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card__content col-6 col-md-6 col-lg-12">
+                <div class="testimonial-card__quote">
+                    <div class="testimonial-card__content-media" style="width:160px">
+                        <div class="media  media--ratio-16-9">
+                            <div class="ocr-img media__asset">
+                                <picture>
+                                    <source srcset="/__mirror/assets/7e9e854a4da20b5e83f53d49" media="none and (prefers-color-scheme: dark)">
+                                    <source srcset="/__mirror/assets/32b42143108e4e299dbbc703" media="none and (prefers-color-scheme: light)">
+                                    <img src="/__mirror/assets/32b42143108e4e299dbbc703" alt="">
+                                </source></source></picture>
+                            </div>
+                        </div>
+                    </div>
+                    <h4 class="fg--base-strong">Genetec uses Visual Studio, CMake, vcpkg, and Docker for remote Linux C++ development</h4>
+                </div>
+                <div class="testimonial-card__footer">
+                    <div class="button-group">
+                        <a href="https://devblogs.microsoft.com/cppblog/genetec-uses-visual-studio-for-cmake-and-remote-container-development/" class="btn btn--md" target="_blank" data-bi-an="customer-stories" data-bi-id="genetec" data-bi-ct="button" aria-label="Read more about Genetec case study">
+                            <div class="btn__text">Read more</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+                                                <div role="group" aria-roledescription="slide" tabindex="0" id="mwf9c5484fa-4" class="carousel__slide layout__col" aria-label="4 of 5">
+        <div class="testimonial-card bg--card-normal depth-4 row m-0">
+            <div class="testimonial-card__media order-md-1 col-6 col-md-6 col-lg-12">
+                <div class="media media--ratio-21-9 media--pos-middle-middle">
+                    <div class="ocr-img media__asset">
+                        <picture>
+                            <source srcset="/__mirror/assets/e12208a4fa7d34b03d982110">
+                            <source srcset="/__mirror/assets/1ec15c2d1b92239a85f6b2bf">
+                            <img src="/__mirror/assets/1ec15c2d1b92239a85f6b2bf" alt="">
+                        </source></source></picture>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card__content col-6 col-md-6 col-lg-12">
+                <div class="testimonial-card__quote">
+                    <div class="testimonial-card__content-media" style="width:160px">
+                        <div class="media  media--ratio-16-9">
+                            <div class="ocr-img media__asset">
+                                <picture>
+                                    <source srcset="/__mirror/assets/cd15fab91bf7556099f93d74" media="none and (prefers-color-scheme: dark)">
+                                    <source srcset="/__mirror/assets/e33d4e10a850708f0e91ce6d" media="none and (prefers-color-scheme: light)">
+                                    <img src="/__mirror/assets/e33d4e10a850708f0e91ce6d" alt="">
+                                </source></source></picture>
+                            </div>
+                        </div>
+                    </div>
+                    <h4 class="fg--base-strong">Bosch widely adopts Visual Studio 2022 after experiencing performance improvements for C++ Linux cross-compilation</h4>
+                </div>
+                <div class="testimonial-card__footer">
+                    <div class="button-group">
+                        <a href="https://devblogs.microsoft.com/cppblog/bosch-widely-adopts-visual-studio-2022-after-experiencing-performance-improvements-for-c-linux-cross-compilation/" class="btn btn--md" target="_blank" data-bi-an="customer-stories" data-bi-id="bosch" data-bi-ct="button" aria-label="Read more about Bosch case study">
+                            <div class="btn__text">Read more</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+                                                <div role="group" aria-roledescription="slide" tabindex="0" id="mwf9c5484fa-5" class="carousel__slide layout__col" aria-label="5 of 5">
+        <div class="testimonial-card bg--card-normal depth-4 row m-0">
+            <div class="testimonial-card__media order-md-1 col-6 col-md-6 col-lg-12">
+                <div class="media media--ratio-21-9 media--pos-middle-middle">
+                    <div class="ocr-img media__asset">
+                        <picture>
+                            <source srcset="/__mirror/assets/32b5af4d65fa9e552a11a149">
+                            <source srcset="/__mirror/assets/7963667aeecfb395e6fc6427">
+                            <img src="/__mirror/assets/7963667aeecfb395e6fc6427" alt="">
+                        </source></source></picture>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card__content col-6 col-md-6 col-lg-12">
+                <div class="testimonial-card__quote">
+                    <div class="testimonial-card__content-media" style="width:160px">
+                        <div class="media  media--ratio-16-9">
+                            <div class="ocr-img media__asset">
+                                <picture>
+                                    <source srcset="/__mirror/assets/b1e5c00c056de00e0e7c0e12" media="none and (prefers-color-scheme: dark)">
+                                    <source srcset="/__mirror/assets/55d446163670197ebafb83bb" media="none and (prefers-color-scheme: light)">
+                                    <img src="/__mirror/assets/55d446163670197ebafb83bb" alt="">
+                                </source></source></picture>
+                            </div>
+                        </div>
+                    </div>
+                    <h4 class="fg--base-strong">Azure Networking Team reaches peak productivity with Visual Studio's new remote Linux capabilities and improvements</h4>
+                </div>
+                <div class="testimonial-card__footer">
+                    <div class="button-group">
+                        <a href="https://devblogs.microsoft.com/cppblog/azure-networking-team-reaches-peak-productivity-with-visual-studios-new-remote-linux-capabilities-and-improvements/" class="btn btn--md" target="_blank" data-bi-an="customer-stories" data-bi-id="azure-networking-team" data-bi-ct="button" aria-label="Read more about Azure Networking Team case study">
+                            <div class="btn__text">Read more</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+                                                <div class="empty-slide"></div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="learn">
+                <div class="section-master bg--base-fade section-master--breadth-comfortable section-master--layout-slot-horizontal-alignment-right section-master--layout-slot-vertical-alignment-bottom section-master--blade-card-carousel">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <div class="layout section-master__layout section-master--layout-cols-1">
+        <div class="layout__col">
+            <div class="section-master__layout-header">
+                <div class="block-heading block-heading--size-s">
+                        <h3 class="block-heading__eyebrow">Learn</h3>
+                        <h2 class="block-heading__title">C++ on Microsoft Learn</h2>
+                        <p class="block-heading__paragraph">Documentation to help you make the most of our tools.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card-grid row section-master__slot">
+                            <div class="col-lg-6 col-md-3">
+                                <div id="feature" class="card rounded-l">
+                                    <div class="card__content justify-content-end">
+                                        <div class="block-feature d-flex align-items-start block-feature--2xs">
+                                            <div class="block-feature__top d-flex flex-row align-items-start">
+                                                <div class="block-feature__headings d-flex flex-column align-items-start">
+                                                    <h5 class="block-feature__title text-white">C++ Language Documentation</h5>
+                                                </div>
+                                            </div>
+                                            <div class="block-feature__body d-flex flex-column align-items-start">
+                                                <p class="block-feature__paragraph base block-feature__paragraph text-white">Learn to use C++ and the C++ standard library.</p>
+                                            </div>
+                                        </div>
+                                        <div class="mt-0">
+                                            <a href="https://learn.microsoft.com/cpp/cpp/cpp-language-reference" class="btn btn--md mt-l" target="_blank" data-bi-an="cpp-on-ms-learn" data-bi-id="cpp-lang-docs" data-bi-ct="button" aria-label="Read the docs for C++ Language documentation">
+                                                <span class="link__text">Read the docs</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-18 col-md-9">
+                                <div class="card-grid__cards">
+                                    <div class="layout layout--cols-3">
+                                        <div class="layout__col">
+        <div class="card rounded-l">
+            <div class="card__content p-l">
+
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__badge">
+            <div class="block-feature__badge pb-s">
+                <span class="badge badge--size-s badge-logo--l badge--solid">
+                    <div class="ocr-icon d-inline-flex">
+                        <div class="ocr-img media__asset">
+                            <img src="/__mirror/assets/a04a4c900321e8a2dd0d21cd" class="" alt="">
+                        </div>
+                    </div>
+                </span>
+            </div>
+
+        <div class="block-feature__headings d-flex flex-column align-items-start">
+        <h5 class="block-feature__title">Get Started with C++ in Visual Studio</h5>
+    </div>
+    </div>
+
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Get up and running with C++ in minutes.</p>
+                    </div>
+                </div>
+
+                <div class="block-slim block-slim--checklist">
+                        <a href="https://learn.microsoft.com/cpp/overview/visual-cpp-in-visual-studio" class="link link-inline" data-bi-an="cpp-on-ms-learn" data-bi-id="get-started-with-cpp-in-vs" data-bi-ct="link" target="_blank" aria-label="Read the docs for Getting Started with C++ in Visual Studio">
+                            <span class="link__text">Read the docs</span>
+                        </a>
+                </div>
+            </div>
+        </div>
+    </div>
+                                        <div class="layout__col">
+        <div class="card rounded-l">
+            <div class="card__content p-l">
+
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__badge">
+            <div class="block-feature__badge pb-s">
+                <span class="badge badge--size-s badge-logo--l badge--solid">
+                    <div class="ocr-icon d-inline-flex">
+                        <div class="ocr-img media__asset">
+                            <img src="/__mirror/assets/c993363e0e2d7b1d7a9ca70b" class="" alt="">
+                        </div>
+                    </div>
+                </span>
+            </div>
+
+        <div class="block-feature__headings d-flex flex-column align-items-start">
+        <h5 class="block-feature__title">MSVC Compiler and Build Tools Reference</h5>
+    </div>
+    </div>
+
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Learn how to use the MSVC C++ compiler.</p>
+                    </div>
+                </div>
+
+                <div class="block-slim block-slim--checklist">
+                        <a href="https://learn.microsoft.com/cpp/build/reference/c-cpp-building-reference" class="link link-inline" data-bi-an="cpp-on-ms-learn" data-bi-id="msvc-compiler-and-build-tools-ref" data-bi-ct="link" target="_blank" aria-label="Read the docs for MSVC Compiler and Build Tools Reference">
+                            <span class="link__text">Read the docs</span>
+                        </a>
+                </div>
+            </div>
+        </div>
+    </div>
+                                        <div class="layout__col">
+        <div class="card rounded-l">
+            <div class="card__content p-l">
+
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__badge">
+            <div class="block-feature__badge pb-s">
+                <span class="badge badge--size-s badge-logo--l badge--solid">
+                    <div class="ocr-icon d-inline-flex">
+                        <div class="ocr-img media__asset">
+                            <img src="/__mirror/assets/d717924e1896b8ee7d48d95c" class="" alt="">
+                        </div>
+                    </div>
+                </span>
+            </div>
+
+        <div class="block-feature__headings d-flex flex-column align-items-start">
+        <h5 class="block-feature__title">MSVC Conformance</h5>
+    </div>
+    </div>
+
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Find out the latest in our conformance improvements.</p>
+                    </div>
+                </div>
+
+                <div class="block-slim block-slim--checklist">
+                        <a href="https://learn.microsoft.com/cpp/overview/cpp-conformance-improvements" class="link link-inline" data-bi-an="cpp-on-ms-learn" data-bi-id="msvc-conformance" data-bi-ct="link" target="_blank" aria-label="Read the docs for MSVC Conformance">
+                            <span class="link__text">Read the docs</span>
+                        </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                                        <div class="layout__col">
+        <div class="card rounded-l">
+            <div class="card__content p-l">
+
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__badge">
+            <div class="block-feature__badge pb-s">
+                <span class="badge badge--size-s badge-logo--l badge--solid">
+                    <div class="ocr-icon d-inline-flex">
+                        <div class="ocr-img media__asset">
+                            <img src="/__mirror/assets/1355970042fcd1a1ea6a2146" class="" alt="">
+                        </div>
+                    </div>
+                </span>
+            </div>
+
+        <div class="block-feature__headings d-flex flex-column align-items-start">
+        <h5 class="block-feature__title">C Runtime Library Reference</h5>
+    </div>
+    </div>
+
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Learn how to use the C runtime library.</p>
+                    </div>
+                </div>
+
+                <div class="block-slim block-slim--checklist">
+                        <a href="https://learn.microsoft.com/cpp/c-runtime-library/c-run-time-library-reference" class="link link-inline" data-bi-an="cpp-on-ms-learn" data-bi-id="c-runtime-lib-ref" data-bi-ct="link" target="_blank" aria-label="Read the docs for C Runtime Library Reference">
+                            <span class="link__text">Read the docs</span>
+                        </a>
+                </div>
+            </div>
+        </div>
+    </div>
+                                        <div class="layout__col">
+        <div class="card rounded-l">
+            <div class="card__content p-l">
+
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__badge">
+            <div class="block-feature__badge pb-s">
+                <span class="badge badge--size-s badge-logo--l badge--solid">
+                    <div class="ocr-icon d-inline-flex">
+                        <div class="ocr-img media__asset">
+                            <img src="/__mirror/assets/8b5da10346e0c5f878811dc5" class="" alt="">
+                        </div>
+                    </div>
+                </span>
+            </div>
+
+        <div class="block-feature__headings d-flex flex-column align-items-start">
+        <h5 class="block-feature__title">C Language Documentation</h5>
+    </div>
+    </div>
+
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Learn to use the C programming language.</p>
+                    </div>
+                </div>
+
+                <div class="block-slim block-slim--checklist">
+                        <a href="https://learn.microsoft.com/cpp/c-language/c-language-reference" class="link link-inline" data-bi-an="cpp-on-ms-learn" data-bi-id="c-lang-docs" data-bi-ct="link" target="_blank" aria-label="Read the docs for C Language Documentation">
+                            <span class="link__text">Read the docs</span>
+                        </a>
+                </div>
+            </div>
+        </div>
+    </div>
+                                        <div class="layout__col">
+        <div class="card rounded-l">
+            <div class="card__content p-l">
+
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__badge">
+            <div class="block-feature__badge pb-s">
+                <span class="badge badge--size-s badge-logo--l badge--solid">
+                    <div class="ocr-icon d-inline-flex">
+                        <div class="ocr-img media__asset">
+                            <img src="/__mirror/assets/2c8f5e0ec3dcccbfdcc598da" class="" alt="">
+                        </div>
+                    </div>
+                </span>
+            </div>
+
+        <div class="block-feature__headings d-flex flex-column align-items-start">
+        <h5 class="block-feature__title">C++ Samples</h5>
+    </div>
+    </div>
+
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Samples for a host of technologies, including ATL, MFC, and COM.</p>
+                    </div>
+                </div>
+
+                <div class="block-slim block-slim--checklist">
+                        <a href="https://learn.microsoft.com/cpp/overview/visual-cpp-samples" class="link link-inline" data-bi-an="cpp-on-ms-learn" data-bi-id="cpp-samples" data-bi-ct="link" target="_blank" aria-label="Read the docs for C++ Samples">
+                            <span class="link__text">Read the docs</span>
+                        </a>
+                </div>
+            </div>
+        </div>
+    </div>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="on-github">
+                <div class="section-master section-master--breadth-comfortable section-master--layout-slot-horizontal-alignment-right section-master--layout-slot-vertical-alignment-bottom section-master--blade-card-carousel">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <div class="layout section-master__layout section-master--layout-cols-1">
+        <div class="layout__col">
+            <div class="section-master__layout-header">
+                <div class="block-heading block-heading--size-s">
+                        <h3 class="block-heading__eyebrow">Repositories</h3>
+                        <h2 class="block-heading__title">On GitHub</h2>
+                        <p class="block-heading__paragraph">Some of our most popular open-source C++ libraries and tools.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel carousel--type-regular">
+        <section class="carousel__section" aria-label="Repositories on GitHub carousel" aria-roledescription="carousel" data-mount="ocr-carousel">
+            <a href="#on-github-carousel" class="sr-only-focusable w-100 position-absolute">Skip carousel</a>
+
+            <span id="on-github-carousel-announcement-text" class="carousel__announcement-text sr-only" aria-live="polite" data-multi-slide-translatable="Showing %{curStart}-%{curEnd} of %{totalSlides} slides" data-single-slide-translatable="Showing slide %{curStart} of %{totalSlides}"></span>
+
+            <div id="on-github-carousel-controls" class="carousel__controls carousel__container">
+                <button type="button" class="carousel__arrow-prev" title="Previous slide" data-slide="prev" aria-labelledby="carousel-control-prev-on-github-carousel">
+                    <span class="sr-only" id="carousel-control-prev-on-github-carousel">Previous slide</span>
+                    <span class="glyph-prepend glyph-prepend-back glyph-prepend-medium" aria-hidden="true"></span>
+                </button>
+                <button type="button" class="carousel__arrow-next" title="Next slide" data-slide="next" aria-labelledby="carousel-control-next-on-github-carousel">
+                    <span class="sr-only" id="carousel-control-next-on-github-carousel">Next slide</span>
+                    <span class="glyph-prepend glyph-prepend-forward glyph-prepend-medium" aria-hidden="true"></span>
+                </button>
+            </div>
+            <div class="carousel__window hide-scrollbar">
+                <div class="carousel__container layout layout--overflow  layout--cols-5" aria-label="Repositories on GitHub carousel">
+
+<section id="on-github-carousel-0" class="carousel__slide layout__col" tabindex="-1" aria-label="Slide 1 of 7">
+        <div class="card rounded-l">
+
+
+            <div class="card__content p-l">
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+                        <div class="block-feature__badge">
+            <div class="block-feature__badge pb-s">
+                <span class="badge badge--size-s badge-logo--l badge--solid">
+                    <div class="ocr-icon d-inline-flex">
+                        <div class="ocr-img media__asset">
+                            <img src="/__mirror/assets/9199193f0855fea3f5e68950" class="" alt="">
+                        </div>
+                    </div>
+                </span>
+            </div>
+
+        <div class="block-feature__headings d-flex flex-column align-items-start">
+        <h5 class="block-feature__title">Microsoft C++ Standard Library (STL)</h5>
+    </div>
+    </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Our open-source implementation of the C++ standard library.</p>
+                    </div>
+                </div>
+
+                <div class="block-slim"> 
+                    <a href="https://github.com/microsoft/STL" class="link link-inline" target="_blank" data-bi-an="on-github" data-bi-cn="microsoft-cpp-standard-library-stl" data-bi-ct="link" aria-label="Get the code from the Microsoft C++ Standard Library (STL) repository on GitHub">
+                        <span class="link__text">Get the code</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section><section id="on-github-carousel-1" class="carousel__slide layout__col" tabindex="-1" aria-label="Slide 2 of 7">
+        <div class="card rounded-l">
+
+
+            <div class="card__content p-l">
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+                        <div class="block-feature__badge">
+            <div class="block-feature__badge pb-s">
+                <span class="badge badge--size-s badge-logo--l badge--solid">
+                    <div class="ocr-icon d-inline-flex">
+                        <div class="ocr-img media__asset">
+                            <img src="/__mirror/assets/9199193f0855fea3f5e68950" class="" alt="">
+                        </div>
+                    </div>
+                </span>
+            </div>
+
+        <div class="block-feature__headings d-flex flex-column align-items-start">
+        <h5 class="block-feature__title">Guideline Support Library (GSL)</h5>
+    </div>
+    </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Functions and types that are suggested for use by the C++ Core Guidelines.</p>
+                    </div>
+                </div>
+
+                <div class="block-slim"> 
+                    <a href="https://github.com/microsoft/GSL" class="link link-inline" target="_blank" data-bi-an="on-github" data-bi-cn="gsl" data-bi-ct="link" aria-label="Get the code from the Guideline Support Library (GSL) repository on GitHub">
+                        <span class="link__text">Get the code</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section><section id="on-github-carousel-2" class="carousel__slide layout__col" tabindex="-1" aria-label="Slide 3 of 7">
+        <div class="card rounded-l">
+
+
+            <div class="card__content p-l">
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+                        <div class="block-feature__badge">
+            <div class="block-feature__badge pb-s">
+                <span class="badge badge--size-s badge-logo--l badge--solid">
+                    <div class="ocr-icon d-inline-flex">
+                        <div class="ocr-img media__asset">
+                            <img src="/__mirror/assets/9199193f0855fea3f5e68950" class="" alt="">
+                        </div>
+                    </div>
+                </span>
+            </div>
+
+        <div class="block-feature__headings d-flex flex-column align-items-start">
+        <h5 class="block-feature__title">Visual Studio Code C++ Extension</h5>
+    </div>
+    </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Adds language support for C/C++ to Visual Studio Code, including editing (IntelliSense) and debugging features.</p>
+                    </div>
+                </div>
+
+                <div class="block-slim"> 
+                    <a href="https://github.com/microsoft/vscode-cpptools" class="link link-inline" target="_blank" data-bi-an="on-github" data-bi-cn="visual-studio-code-cpp-extension" data-bi-ct="link" aria-label="Get the code from the Visual Studio Code C++ Extension repository on GitHub">
+                        <span class="link__text">Get the code</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section><section id="on-github-carousel-3" class="carousel__slide layout__col" tabindex="-1" aria-label="Slide 4 of 7">
+        <div class="card rounded-l">
+
+
+            <div class="card__content p-l">
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+                        <div class="block-feature__badge">
+            <div class="block-feature__badge pb-s">
+                <span class="badge badge--size-s badge-logo--l badge--solid">
+                    <div class="ocr-icon d-inline-flex">
+                        <div class="ocr-img media__asset">
+                            <img src="/__mirror/assets/9199193f0855fea3f5e68950" class="" alt="">
+                        </div>
+                    </div>
+                </span>
+            </div>
+
+        <div class="block-feature__headings d-flex flex-column align-items-start">
+        <h5 class="block-feature__title">Visual Studio Code CMake Extension</h5>
+    </div>
+    </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Provides the native developer a full-featured, convenient, and powerful workflow for CMake-based projects in Visual Studio Code.</p>
+                    </div>
+                </div>
+
+                <div class="block-slim"> 
+                    <a href="https://github.com/microsoft/vscode-cmake-tools" class="link link-inline" target="_blank" data-bi-an="on-github" data-bi-cn="visual-studio-code-cmake-extension" data-bi-ct="link" aria-label="Get the code from the Visual Studio Code CMake Extension repository on GitHub">
+                        <span class="link__text">Get the code</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section><section id="on-github-carousel-4" class="carousel__slide layout__col" tabindex="-1" aria-label="Slide 5 of 7">
+        <div class="card rounded-l">
+
+
+            <div class="card__content p-l">
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+                        <div class="block-feature__badge">
+            <div class="block-feature__badge pb-s">
+                <span class="badge badge--size-s badge-logo--l badge--solid">
+                    <div class="ocr-icon d-inline-flex">
+                        <div class="ocr-img media__asset">
+                            <img src="/__mirror/assets/9199193f0855fea3f5e68950" class="" alt="">
+                        </div>
+                    </div>
+                </span>
+            </div>
+
+        <div class="block-feature__headings d-flex flex-column align-items-start">
+        <h5 class="block-feature__title">C++/WinRT</h5>
+    </div>
+    </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Target the modern Windows API with modern C++.</p>
+                    </div>
+                </div>
+
+                <div class="block-slim"> 
+                    <a href="https://github.com/microsoft/cppwinrt" class="link link-inline" target="_blank" data-bi-an="on-github" data-bi-cn="cppwinrt" data-bi-ct="link" aria-label="Get the code from the C++/WinRT repository on GitHub">
+                        <span class="link__text">Get the code</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section><section id="on-github-carousel-5" class="carousel__slide layout__col" tabindex="-1" aria-label="Slide 6 of 7">
+        <div class="card rounded-l">
+
+
+            <div class="card__content p-l">
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+                        <div class="block-feature__badge">
+            <div class="block-feature__badge pb-s">
+                <span class="badge badge--size-s badge-logo--l badge--solid">
+                    <div class="ocr-icon d-inline-flex">
+                        <div class="ocr-img media__asset">
+                            <img src="/__mirror/assets/9199193f0855fea3f5e68950" class="" alt="">
+                        </div>
+                    </div>
+                </span>
+            </div>
+
+        <div class="block-feature__headings d-flex flex-column align-items-start">
+        <h5 class="block-feature__title">DirectXShaderCompiler</h5>
+    </div>
+    </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">HLSL to DXIL compiler based on LLVM and Clang.</p>
+                    </div>
+                </div>
+
+                <div class="block-slim"> 
+                    <a href="https://github.com/microsoft/DirectXShaderCompiler" class="link link-inline" target="_blank" data-bi-an="on-github" data-bi-cn="directxshadercompiler" data-bi-ct="link" aria-label="Get the code from the DirectXShaderCompiler repository on GitHub">
+                        <span class="link__text">Get the code</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section><section id="on-github-carousel-6" class="carousel__slide layout__col" tabindex="-1" aria-label="Slide 7 of 7">
+        <div class="card rounded-l">
+
+
+            <div class="card__content p-l">
+                <div class="block-feature d-flex align-items-start block-feature--2xs">
+                    <div class="block-feature__top d-flex flex-row align-items-start">
+                        <div class="block-feature__badge">
+            <div class="block-feature__badge pb-s">
+                <span class="badge badge--size-s badge-logo--l badge--solid">
+                    <div class="ocr-icon d-inline-flex">
+                        <div class="ocr-img media__asset">
+                            <img src="/__mirror/assets/9199193f0855fea3f5e68950" class="" alt="">
+                        </div>
+                    </div>
+                </span>
+            </div>
+
+        <div class="block-feature__headings d-flex flex-column align-items-start">
+        <h5 class="block-feature__title">Proxy</h5>
+    </div>
+    </div>
+                    </div>
+                    <div class="block-feature__body d-flex flex-column align-items-start">
+                        <p class="block-feature__paragraph base block-feature__paragraph">Next-generation polymorphism in C++.</p>
+                    </div>
+                </div>
+
+                <div class="block-slim"> 
+                    <a href="https://github.com/microsoft/proxy" class="link link-inline" target="_blank" data-bi-an="on-github" data-bi-cn="proxy" data-bi-ct="link" aria-label="Get the code from the Proxy repository on GitHub">
+                        <span class="link__text">Get the code</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>                </div>
+            </div>
+
+            <a href="#on-github-carousel-controls" class="sr-only-focusable w-100 position-absolute">Back to carousel navigation controls</a>
+
+            <a id="on-github-carousel" class="sr-only-focusable" tabindex="-1"></a>
+        </section>
+    </div>
+            </section>
+
+            <section id="blogs">
+                <div class="section-master bg--base-fade section-master--breadth-comfortable section-master--layout-slot-horizontal-alignment-right section-master--layout-slot-vertical-alignment-bottom section-master--blade-card-carousel">
+                    <div class="container">
+                        <div class="row pb-xl">
+                            <div class="col">
+
+                                <div class="story-grid__heading-divider">
+                                    <div class="ocr-divider ocr-divider--size-m pb-l">
+                                    </div>
+                                </div>
+
+                                <div class="layout section-master__layout section-master--layout-cols-2">
+        <div class="layout__col">
+            <div class="section-master__layout-header">
+                <div class="block-heading block-heading--size-s">
+                        <h2 class="block-heading__title">Recent blog posts</h2>
+                </div>
+            </div>
+        </div>
+
+            <div class="layout__col">
+                <div class="section-master__layout-slot">
+                    <div class="button-group">
+                        <a href="https://devblogs.microsoft.com/cppblog/" class="btn btn--secondary" target="_blank" data-bi-an="cpp-on-ms-learn" data-bi-id="more blogs" data-bi-ct="button">More blogs</a>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col">
+                                <div class="story-grid story-grid--stacked-on-4">
+                                    <div class="layout layout--cols-2">
+                                        <div class="layout__col">
+                                            <div class="media  media--ratio-4-3">
+                                                <div class="ocr-img media__asset rounded-m">
+                                                    <picture>
+                                                        <source srcset="/__mirror/assets/304f1380cda2e177b2c98519">
+                                                        <source srcset="/__mirror/assets/d76cfc058ac4aa2d2fc5c757">
+                                                        <img src="/__mirror/assets/d76cfc058ac4aa2d2fc5c757" alt="">
+                                                    </source></source></picture>
+                                                </div>
+                                            </div>
+                                        </div>
+
+<div class="layout__col">
+        <div class="block-feature d-flex align-items-start block-feature--2xs block-feature--align-stacked">
+            <div class="block-feature__body d-flex flex-column align-items-start">
+                <div class="block-feature__headings d-flex flex-column align-items-start">
+                    <div class="block-feature__eyebrow">
+                        <h4 class="block-feature__label">Hannia Valera</h4>
+                        <h4 class="block-feature__date">
+                            <span> • </span>
+                            September 25, 2026</h4>
+                    </div>
+                    <h5 class="block-feature__title">Visual Studio Code CMake Tools 1.24</h5>
+                        <p class="mb-10">CMake Tools 1.24 includes several reliability fixes and productivity improvements. You can run tests from the editor, save preset-backed cache edits as user overrides, and keep source-file lists up to date. See the CMake Tools release page and full changelog for details. Thank you to the community contributors whose work is included in these updates: […]
+The post Visual Studio Code CMake Tools 1.24 appeared first on C++ Team Blog.</p>
+                </div>
+                <div class="block-feature__footer">
+                    <div class="block-slim"> 
+                        <a href="https://devblogs.microsoft.com/cppblog/visual-studio-code-cmake-tools-1-24/" class="link link-inline" target="_blank" , data-bi-an="cpp-blog" data-bi-id="read-article" data-bi-ct="link" aria-label="Read more about: Visual Studio Code CMake Tools 1.24">
+                            <span class="link__text">Read more</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>                                    </div>
+                                </div>
+                                <div class="editorial-cards editorial-cards--4-up">
+                                    <div class=" layout layout--cols-4">
+                                    
+                                            <div class="layout__col">
+                                                <div class="ghost-card ghost-card--no-media">
+                                                    <div class="layout__col">
+            <div class="ocr-divider ocr-divider--size-s">
+            </div>
+        <div class="block-feature d-flex align-items-start block-feature--2xs block-feature--align-stacked">
+            <div class="block-feature__body d-flex flex-column align-items-start">
+                <div class="block-feature__headings d-flex flex-column align-items-start">
+                    <div class="block-feature__eyebrow">
+                        <h4 class="block-feature__label">Sinem Akinci</h4>
+                        <h4 class="block-feature__date">
+                            <span> • </span>
+                            September 22, 2026</h4>
+                    </div>
+                    <h5 class="block-feature__title">Faster C++ code intelligence for Copilot CLI with Whole Codebase Indexing</h5>
+                </div>
+                <div class="block-feature__footer">
+                    <div class="block-slim"> 
+                        <a href="https://devblogs.microsoft.com/cppblog/faster-c-code-intelligence-for-copilot-cli-with-whole-codebase-indexing/" class="link link-inline" target="_blank" , data-bi-an="cpp-blog" data-bi-id="read-article" data-bi-ct="link" aria-label="Read more about: Faster C++ code intelligence for Copilot CLI with Whole Codebase Indexing">
+                            <span class="link__text">Read more</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+                                                </div>
+                                            </div>
+                                            <div class="layout__col">
+                                                <div class="ghost-card ghost-card--no-media">
+                                                    <div class="layout__col">
+            <div class="ocr-divider ocr-divider--size-s">
+            </div>
+        <div class="block-feature d-flex align-items-start block-feature--2xs block-feature--align-stacked">
+            <div class="block-feature__body d-flex flex-column align-items-start">
+                <div class="block-feature__headings d-flex flex-column align-items-start">
+                    <div class="block-feature__eyebrow">
+                        <h4 class="block-feature__label">Cody Miller, Tue Ly, Michael Jones</h4>
+                        <h4 class="block-feature__date">
+                            <span> • </span>
+                            September 16, 2026</h4>
+                    </div>
+                    <h5 class="block-feature__title">Bringing Correctly Rounded Math to Production with LLVM-libc</h5>
+                </div>
+                <div class="block-feature__footer">
+                    <div class="block-slim"> 
+                        <a href="https://devblogs.microsoft.com/cppblog/bringing-correctly-rounded-math-to-production-with-llvm-libc/" class="link link-inline" target="_blank" , data-bi-an="cpp-blog" data-bi-id="read-article" data-bi-ct="link" aria-label="Read more about: Bringing Correctly Rounded Math to Production with LLVM-libc">
+                            <span class="link__text">Read more</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+                                                </div>
+                                            </div>
+                                            <div class="layout__col">
+                                                <div class="ghost-card ghost-card--no-media">
+                                                    <div class="layout__col">
+            <div class="ocr-divider ocr-divider--size-s">
+            </div>
+        <div class="block-feature d-flex align-items-start block-feature--2xs block-feature--align-stacked">
+            <div class="block-feature__body d-flex flex-column align-items-start">
+                <div class="block-feature__headings d-flex flex-column align-items-start">
+                    <div class="block-feature__eyebrow">
+                        <h4 class="block-feature__label">Augustin Popa</h4>
+                        <h4 class="block-feature__date">
+                            <span> • </span>
+                            September 14, 2026</h4>
+                    </div>
+                    <h5 class="block-feature__title">C++ in the Age of AI: Visual Studio at CppCon 2026</h5>
+                </div>
+                <div class="block-feature__footer">
+                    <div class="block-slim"> 
+                        <a href="https://devblogs.microsoft.com/cppblog/c-in-the-age-of-ai-visual-studio-at-cppcon-2026/" class="link link-inline" target="_blank" , data-bi-an="cpp-blog" data-bi-id="read-article" data-bi-ct="link" aria-label="Read more about: C++ in the Age of AI: Visual Studio at CppCon 2026">
+                            <span class="link__text">Read more</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+                                                </div>
+                                            </div>
+                                            <div class="layout__col">
+                                                <div class="ghost-card ghost-card--no-media">
+                                                    <div class="layout__col">
+            <div class="ocr-divider ocr-divider--size-s">
+            </div>
+        <div class="block-feature d-flex align-items-start block-feature--2xs block-feature--align-stacked">
+            <div class="block-feature__body d-flex flex-column align-items-start">
+                <div class="block-feature__headings d-flex flex-column align-items-start">
+                    <div class="block-feature__eyebrow">
+                        <h4 class="block-feature__label">Augustin Popa</h4>
+                        <h4 class="block-feature__date">
+                            <span> • </span>
+                            September 14, 2026</h4>
+                    </div>
+                    <h5 class="block-feature__title">What’s New for C++ Developers in Visual Studio 2026 (18.7 – 18.10)</h5>
+                </div>
+                <div class="block-feature__footer">
+                    <div class="block-slim"> 
+                        <a href="https://devblogs.microsoft.com/cppblog/whats-new-for-c-developers-in-visual-studio-2026-18-7-18-10/" class="link link-inline" target="_blank" , data-bi-an="cpp-blog" data-bi-id="read-article" data-bi-ct="link" aria-label="Read more about: What’s New for C++ Developers in Visual Studio 2026 (18.7 – 18.10)">
+                            <span class="link__text">Read more</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="videos">
+                <div class="section-master bg--base-fade section-master--breadth-relaxed section-master--alignment-center section-master--layout-header-horizontal-alignment-center">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <div class="layout section-master__layout section-master--layout-cols-1">
+                                    <div class="layout__col">
+                                        <div class="section-master__layout-header">
+                                            <div class="block-heading block-heading--alignment-centered block-heading--size-s">
+                                                <h3 class="block-heading__eyebrow">Videos</h3>
+                                                <h2 class="block-heading__title">Getting started videos</h2>
+                                                <p class="block-heading__paragraph">Get started with the tools of your choice.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="videos" class="section-master theme-night bg--base-fade section-master--alignment-center section-master--layout-header-horizontal-alignment-center-focus section-master--blade-media-playlist-video">
+                    <div class="row section-master__slot">
+                        <div class="col">
+                            <div class="carousel carousel--indicator-media-bar carousel--type-media-playlist-video scroll-snap-mandatory">
+                                <section class="carousel__section" aria-label="video carousel" aria-roledescription="carousel" data-mount="ocr-carousel" style="--media-playlist-indicator-height: 175px;">
+                                    <span id="videos-carousel-announcement-text" class="carousel__announcement-text sr-only" aria-live="polite" data-multi-slide-translatable="Showing %{curStart}-%{curEnd} of %{totalSlides} slides" data-single-slide-translatable="Showing slide %{curStart} of %{totalSlides}">Showing slide 6 of 6</span>
+
+                                    <div id="videos-carousel-controls" class="carousel__controls slide-up-animation" style="z-index: 2;">
+                                        <button type="button" class="carousel__arrow-prev" title="Previous slide" data-slide="prev" aria-labelledby="carousel-control-prev-videos-carousel" aria-controls="videos-carousel-carousel__container">
+                                            <span class="sr-only" id="carousel-control-prev-videos-carousel">Previous slide</span><span class="glyph-prepend glyph-prepend-back glyph-prepend-medium" aria-hidden="true"></span>
+                                        </button>
+                                        <div data-mount="ocr-slider" class="col ocr-slider" data-item-list-selector=".carousel__indicators-item">
+                                            <div class="slider__overflow">
+                                                <div class="slider__window rounded-scrollbar justify-content-center" style="margin-top: 50px;">
+                                                    <div class="d-flex flex-column align-items-center">
+                                                        <ol class="carousel__indicators">
+<li class="carousel__indicators-item-wrapper">
+
+        <a href="#videos-carousel-1" class="carousel__indicators-item" role="button" aria-controls="videos-carousel-1" aria-label="Video 1 : Getting started building C++ Linux projects in Visual Studio" data-current-slide-translatable="current slide">
+            <div class="carousel__indicators-item--container carousel__indicators-type--media carousel__indicators-type--videos depth-2 surface--solid">
+                <div class="carousel__indicators-item__media">
+                    <div class="media media--ratio-16-9">
+                        <div class="ocr-img media__asset">
+                            <picture>
+                                <source srcset="/__mirror/assets/82b56abdf11df529d8e4c7f0" media="(min-width: 1400px)">
+                                <img src="/__mirror/assets/82b56abdf11df529d8e4c7f0" alt="Getting started building C++ Linux projects in Visual Studio cover image">
+                            </source></picture>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <div class="list-item__inner d-flex align-items-center">
+                        <div class="list-item__content flex-grow-1 d-flex flex-column">
+                            <div class="fg--base-highlight label-small">
+                                <p>5 mins</p>
+                            </div>
+                            <div class="fg--base-strong label list-item__content-title">
+                                <p>Getting started building C++ Linux projects in Visual Studio</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <span class="indicator" role="presentation"></span>
+            </div>
+        </a>
+    </li><li class="carousel__indicators-item-wrapper">
+
+        <a href="#videos-carousel-2" class="carousel__indicators-item" role="button" aria-controls="videos-carousel-2" aria-label="Video 2 : C++ in VS Code: A Quick Guide" data-current-slide-translatable="current slide">
+            <div class="carousel__indicators-item--container carousel__indicators-type--media carousel__indicators-type--videos depth-2 surface--solid">
+                <div class="carousel__indicators-item__media">
+                    <div class="media media--ratio-16-9">
+                        <div class="ocr-img media__asset">
+                            <picture>
+                                <source srcset="/__mirror/assets/c8bd21b93f0ab4d73c30deea" media="(min-width: 1400px)">
+                                <img src="/__mirror/assets/c8bd21b93f0ab4d73c30deea" alt="C++ in VS Code: A Quick Guide cover image">
+                            </source></picture>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <div class="list-item__inner d-flex align-items-center">
+                        <div class="list-item__content flex-grow-1 d-flex flex-column">
+                            <div class="fg--base-highlight label-small">
+                                <p>5 mins</p>
+                            </div>
+                            <div class="fg--base-strong label list-item__content-title">
+                                <p>C++ in VS Code: A Quick Guide</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <span class="indicator" role="presentation"></span>
+            </div>
+        </a>
+    </li><li class="carousel__indicators-item-wrapper">
+
+        <a href="#videos-carousel-3" class="carousel__indicators-item" role="button" aria-controls="videos-carousel-3" aria-label="Video 3 : Getting started using Copilot Chat for C++ in VS Code" data-current-slide-translatable="current slide">
+            <div class="carousel__indicators-item--container carousel__indicators-type--media carousel__indicators-type--videos depth-2 surface--solid">
+                <div class="carousel__indicators-item__media">
+                    <div class="media media--ratio-16-9">
+                        <div class="ocr-img media__asset">
+                            <picture>
+                                <source srcset="/__mirror/assets/611cefb9dbdbac7d90dbe161" media="(min-width: 1400px)">
+                                <img src="/__mirror/assets/611cefb9dbdbac7d90dbe161" alt="Getting started using Copilot Chat for C++ in VS Code cover image">
+                            </source></picture>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <div class="list-item__inner d-flex align-items-center">
+                        <div class="list-item__content flex-grow-1 d-flex flex-column">
+                            <div class="fg--base-highlight label-small">
+                                <p>6 mins</p>
+                            </div>
+                            <div class="fg--base-strong label list-item__content-title">
+                                <p>Getting started using Copilot Chat for C++ in VS Code</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <span class="indicator" role="presentation"></span>
+            </div>
+        </a>
+    </li><li class="carousel__indicators-item-wrapper">
+
+        <a href="#videos-carousel-4" class="carousel__indicators-item" role="button" aria-controls="videos-carousel-4" aria-label="Video 4 : Installing MinGW to build C++ Code on Windows" data-current-slide-translatable="current slide">
+            <div class="carousel__indicators-item--container carousel__indicators-type--media carousel__indicators-type--videos depth-2 surface--solid">
+                <div class="carousel__indicators-item__media">
+                    <div class="media media--ratio-16-9">
+                        <div class="ocr-img media__asset">
+                            <picture>
+                                <source srcset="/__mirror/assets/6b6eaf197ea4b72ad4427194" media="(min-width: 1400px)">
+                                <img src="/__mirror/assets/6b6eaf197ea4b72ad4427194" alt="Installing MinGW to build C++ Code on Windows cover image">
+                            </source></picture>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <div class="list-item__inner d-flex align-items-center">
+                        <div class="list-item__content flex-grow-1 d-flex flex-column">
+                            <div class="fg--base-highlight label-small">
+                                <p>3 mins</p>
+                            </div>
+                            <div class="fg--base-strong label list-item__content-title">
+                                <p>Installing MinGW to build C++ Code on Windows</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <span class="indicator" role="presentation"></span>
+            </div>
+        </a>
+    </li><li class="carousel__indicators-item-wrapper">
+
+        <a href="#videos-carousel-5" class="carousel__indicators-item" role="button" aria-controls="videos-carousel-5" aria-label="Video 5 : C++ in VS Code: Building your Code with CMake" data-current-slide-translatable="current slide">
+            <div class="carousel__indicators-item--container carousel__indicators-type--media carousel__indicators-type--videos depth-2 surface--solid">
+                <div class="carousel__indicators-item__media">
+                    <div class="media media--ratio-16-9">
+                        <div class="ocr-img media__asset">
+                            <picture>
+                                <source srcset="/__mirror/assets/0a447f33000a5d9887577717" media="(min-width: 1400px)">
+                                <img src="/__mirror/assets/0a447f33000a5d9887577717" alt="C++ in VS Code: Building your Code with CMake cover image">
+                            </source></picture>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <div class="list-item__inner d-flex align-items-center">
+                        <div class="list-item__content flex-grow-1 d-flex flex-column">
+                            <div class="fg--base-highlight label-small">
+                                <p>10 mins</p>
+                            </div>
+                            <div class="fg--base-strong label list-item__content-title">
+                                <p>C++ in VS Code: Building your Code with CMake</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <span class="indicator" role="presentation"></span>
+            </div>
+        </a>
+    </li>                                                        </ol>
+                                                        <div class="carousel__show-more-indicator">
+                                                            <div class="button-group">
+                                                                <button class="btn btn--secondary" aria-label="Show more items in carousel">
+                                                                    <span class="btn__text">Show more</span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="slider__arrows d-none">
+                                                <button type="button" class="slider__arrow-prev" tabindex="-1" aria-hidden="true"></button>
+                                                <div class="slider__arrow-prev slider__arrow-prev-bg"></div>
+                                                <button type="button" class="slider__arrow-next" tabindex="-1" aria-hidden="true"></button>
+                                                <div class="slider__arrow-next slider__arrow-next-bg"></div>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="carousel__arrow-next" title="Next slide" data-slide="next" aria-labelledby="carousel-control-next-videos-carousel" aria-controls="videos-carousel-carousel__container" disabled>
+                                            <span class="sr-only" id="carousel-control-next-videos-carousel">Next slide</span><span class="glyph-prepend glyph-prepend-forward glyph-prepend-medium" aria-hidden="true"></span>
+                                        </button>
+                                    </div>
+
+                                    <div class="carousel__window hide-scrollbar sticky sticky-direction-top" data-mount="sticky" data-observer-behavior="size-aware" style="--vw: 3817px; position: initial; scroll-padding-inline-start: 4px; height: 2145px; margin-top: 0px;">
+                                        <div id="videos-carousel-carousel__container" class="carousel__container layout layout--overflow " data-expanded-aria-label="Hide overlay content" data-collapsed-aria-label="Show overlay content">
+<div role="group" aria-roledescription="slide" tabindex="-1" id="videos-carousel-1" class="carousel__slide layout__col" aria-label="1 of 5" aria-hidden="true">
+
+
+        <div class="media  media--ratio-16-9 overlay__target media--universal-media-player">
+            <div class="ump-container ump-inherit mx-auto">
+                <universal-media-player data-video='{ 
+                "options": {
+                    "market": "en-US",
+                    "autoplay": false,
+                    "mute": false,
+                    "percentage": 0,
+                    "loop": false,
+                    "playFullScreen": false,
+                    "playPauseTrigger": false,
+                    "playButtonTheme": "dark",
+                    "playButtonSize": "large",
+                    "maskLevel": "0",
+                    "share": false,
+                    "shareOptions": [],
+                    "playbackSpeed": false,
+                    "reporting": {
+                        "enabled": true
+                    },
+                    "centered": true
+                },
+                                "metadata": {
+                                    "title": "Getting started building C++ Linux projects in Visual Studio",
+                                    "posterframeUrl": "https://videoencodingpublic-hgeaeyeba8gycee3.b01.azurefd.net/public-3fdd95e5-2b31-47e2-98ff-0d60463542e6/24_23_Getting_Started_Building_Cpp_Linux_in_VS_v2_w1120.jpg",
+                                    "videoFiles": [
+                                        { "mediaType": "HLS", "url": "https://videoencodingpublic-hgeaeyeba8gycee3.b01.azurefd.net/public-3fdd95e5-2b31-47e2-98ff-0d60463542e6/24_23_Getting_Started_Building_Cpp_Linux_in_VS_v2_1733938640611_master.m3u8" }
+                                    ],
+                                    "videoAssetId": "3fdd95e5-2b31-47e2-98ff-0d60463542e6"
+                                }
+                            }'>
+                </universal-media-player>
+            </div>
+        </div>
+        <div class="carousel__overlay-content">
+            <button class="btn carousel__overlay-btn-toggle d-none overlay-hidden btn--media-stroke" aria-label="Show overlay content" aria-expanded="false" tabindex="-1" aria-controls="videos-carousel-1-bf videos-carousel-controls">
+                <span class="glyph-prepend glyph-prepend-chevron-up" aria-hidden="true"></span>
+            </button>
+            <div class="block-feature d-flex align-items-start block-feature--s block-feature--align-stacked block-feature--text-center" aria-live="polite" id="videos-carousel-1-bf">
+                <div class="block-feature__body d-flex flex-column align-items-start">
+                    <div class="block-feature__headings d-flex flex-column align-items-start">
+                        <div class="block-feature__eyebrow">
+                            <p class="block-feature__label ">5 mins</p>
+                        </div>
+                        <h3 class="block-feature__title ">Getting started building C++ Linux projects in Visual Studio</h3>
+                    </div>
+                    <p class="block-feature__paragraph"></p>
+                </div>
+            </div>
+        </div>
+    </div><div role="group" aria-roledescription="slide" tabindex="-1" id="videos-carousel-2" class="carousel__slide layout__col" aria-label="2 of 5" aria-hidden="true">
+
+
+        <div class="media  media--ratio-16-9 overlay__target media--universal-media-player">
+            <div class="ump-container ump-inherit mx-auto">
+                <universal-media-player data-video='{ 
+                "options": {
+                    "market": "en-US",
+                    "autoplay": false,
+                    "mute": false,
+                    "percentage": 0,
+                    "loop": false,
+                    "playFullScreen": false,
+                    "playPauseTrigger": false,
+                    "playButtonTheme": "dark",
+                    "playButtonSize": "large",
+                    "maskLevel": "0",
+                    "share": false,
+                    "shareOptions": [],
+                    "playbackSpeed": false,
+                    "reporting": {
+                        "enabled": true
+                    },
+                    "centered": true
+                },
+                                "metadata": {
+                                    "title": "C++ in VS Code: A Quick Guide",
+                                    "posterframeUrl": "https://videoencodingpublic-hgeaeyeba8gycee3.b01.azurefd.net/public-89a2a318-5a32-4b21-b72e-d9eae1b67e7b/23_83a_Cpp_in_VSC_A_Quick_Guide_v2_w1120.jpg",
+                                    "videoFiles": [
+                                        { "mediaType": "HLS", "url": "https://videoencodingpublic-hgeaeyeba8gycee3.b01.azurefd.net/public-89a2a318-5a32-4b21-b72e-d9eae1b67e7b/23_83a_Cpp_in_VSC_A_Quick_Guide_v2_1733938385943_master.m3u8" }
+                                    ],
+                                    "videoAssetId": "89a2a318-5a32-4b21-b72e-d9eae1b67e7b"
+                                }
+                            }'>
+                </universal-media-player>
+            </div>
+        </div>
+        <div class="carousel__overlay-content">
+            <button class="btn carousel__overlay-btn-toggle d-none overlay-hidden btn--media-stroke" aria-label="Show overlay content" aria-expanded="false" tabindex="-1" aria-controls="videos-carousel-2-bf videos-carousel-controls">
+                <span class="glyph-prepend glyph-prepend-chevron-up" aria-hidden="true"></span>
+            </button>
+            <div class="block-feature d-flex align-items-start block-feature--s block-feature--align-stacked block-feature--text-center" aria-live="polite" id="videos-carousel-2-bf">
+                <div class="block-feature__body d-flex flex-column align-items-start">
+                    <div class="block-feature__headings d-flex flex-column align-items-start">
+                        <div class="block-feature__eyebrow">
+                            <p class="block-feature__label ">5 mins</p>
+                        </div>
+                        <h3 class="block-feature__title ">C++ in VS Code: A Quick Guide</h3>
+                    </div>
+                    <p class="block-feature__paragraph"></p>
+                </div>
+            </div>
+        </div>
+    </div><div role="group" aria-roledescription="slide" tabindex="-1" id="videos-carousel-3" class="carousel__slide layout__col" aria-label="3 of 5" aria-hidden="true">
+
+
+        <div class="media  media--ratio-16-9 overlay__target media--universal-media-player">
+            <div class="ump-container ump-inherit mx-auto">
+                <universal-media-player data-video='{ 
+                "options": {
+                    "market": "en-US",
+                    "autoplay": false,
+                    "mute": false,
+                    "percentage": 0,
+                    "loop": false,
+                    "playFullScreen": false,
+                    "playPauseTrigger": false,
+                    "playButtonTheme": "dark",
+                    "playButtonSize": "large",
+                    "maskLevel": "0",
+                    "share": false,
+                    "shareOptions": [],
+                    "playbackSpeed": false,
+                    "reporting": {
+                        "enabled": true
+                    },
+                    "centered": true
+                },
+                                "metadata": {
+                                    "title": "Getting started using Copilot Chat for C++ in VS Code",
+                                    "posterframeUrl": "https://videoencodingpublic-hgeaeyeba8gycee3.b01.azurefd.net/public-5d3dc0c9-231d-47c5-b234-ecd70ab87d0e/24_24_Getting_Started_using_Copilot_Chat_for_Cppin_VSC_v3_w1120.jpg",
+                                    "videoFiles": [
+                                        { "mediaType": "HLS", "url": "https://videoencodingpublic-hgeaeyeba8gycee3.b01.azurefd.net/public-5d3dc0c9-231d-47c5-b234-ecd70ab87d0e/24_24_Getting_Started_using_Copilot_Chat_for_Cppin_VSC_v3_1733938050445_master.m3u8" }
+                                    ],
+                                    "videoAssetId": "5d3dc0c9-231d-47c5-b234-ecd70ab87d0e"
+                                }
+                            }'>
+                </universal-media-player>
+            </div>
+        </div>
+        <div class="carousel__overlay-content">
+            <button class="btn carousel__overlay-btn-toggle d-none overlay-hidden btn--media-stroke" aria-label="Show overlay content" aria-expanded="false" tabindex="-1" aria-controls="videos-carousel-3-bf videos-carousel-controls">
+                <span class="glyph-prepend glyph-prepend-chevron-up" aria-hidden="true"></span>
+            </button>
+            <div class="block-feature d-flex align-items-start block-feature--s block-feature--align-stacked block-feature--text-center" aria-live="polite" id="videos-carousel-3-bf">
+                <div class="block-feature__body d-flex flex-column align-items-start">
+                    <div class="block-feature__headings d-flex flex-column align-items-start">
+                        <div class="block-feature__eyebrow">
+                            <p class="block-feature__label ">6 mins</p>
+                        </div>
+                        <h3 class="block-feature__title ">Getting started using Copilot Chat for C++ in VS Code</h3>
+                    </div>
+                    <p class="block-feature__paragraph"></p>
+                </div>
+            </div>
+        </div>
+    </div><div role="group" aria-roledescription="slide" tabindex="-1" id="videos-carousel-4" class="carousel__slide layout__col" aria-label="4 of 5" aria-hidden="true">
+
+
+        <div class="media  media--ratio-16-9 overlay__target media--universal-media-player">
+            <div class="ump-container ump-inherit mx-auto">
+                <universal-media-player data-video='{ 
+                "options": {
+                    "market": "en-US",
+                    "autoplay": false,
+                    "mute": false,
+                    "percentage": 0,
+                    "loop": false,
+                    "playFullScreen": false,
+                    "playPauseTrigger": false,
+                    "playButtonTheme": "dark",
+                    "playButtonSize": "large",
+                    "maskLevel": "0",
+                    "share": false,
+                    "shareOptions": [],
+                    "playbackSpeed": false,
+                    "reporting": {
+                        "enabled": true
+                    },
+                    "centered": true
+                },
+                                "metadata": {
+                                    "title": "Installing MinGW to build C++ Code on Windows",
+                                    "posterframeUrl": "https://videoencodingpublic-hgeaeyeba8gycee3.b01.azurefd.net/public-60670cae-6797-48a9-8a03-189a7a07fa5c/23_83_Installing_MinGW_to_build_cpp_on_Windows_v3_w1120.jpg",
+                                    "videoFiles": [
+                                        { "mediaType": "HLS", "url": "https://videoencodingpublic-hgeaeyeba8gycee3.b01.azurefd.net/public-60670cae-6797-48a9-8a03-189a7a07fa5c/23_83_Installing_MinGW_to_build_cpp_on_Windows_v3_1733938750059_master.m3u8" }
+                                    ],
+                                    "videoAssetId": "60670cae-6797-48a9-8a03-189a7a07fa5c"
+                                }
+                            }'>
+                </universal-media-player>
+            </div>
+        </div>
+        <div class="carousel__overlay-content">
+            <button class="btn carousel__overlay-btn-toggle d-none overlay-hidden btn--media-stroke" aria-label="Show overlay content" aria-expanded="false" tabindex="-1" aria-controls="videos-carousel-4-bf videos-carousel-controls">
+                <span class="glyph-prepend glyph-prepend-chevron-up" aria-hidden="true"></span>
+            </button>
+            <div class="block-feature d-flex align-items-start block-feature--s block-feature--align-stacked block-feature--text-center" aria-live="polite" id="videos-carousel-4-bf">
+                <div class="block-feature__body d-flex flex-column align-items-start">
+                    <div class="block-feature__headings d-flex flex-column align-items-start">
+                        <div class="block-feature__eyebrow">
+                            <p class="block-feature__label ">3 mins</p>
+                        </div>
+                        <h3 class="block-feature__title ">Installing MinGW to build C++ Code on Windows</h3>
+                    </div>
+                    <p class="block-feature__paragraph"></p>
+                </div>
+            </div>
+        </div>
+    </div><div role="group" aria-roledescription="slide" tabindex="-1" id="videos-carousel-5" class="carousel__slide layout__col" aria-label="5 of 5" aria-hidden="true">
+
+
+        <div class="media  media--ratio-16-9 overlay__target media--universal-media-player">
+            <div class="ump-container ump-inherit mx-auto">
+                <universal-media-player data-video='{ 
+                "options": {
+                    "market": "en-US",
+                    "autoplay": false,
+                    "mute": false,
+                    "percentage": 0,
+                    "loop": false,
+                    "playFullScreen": false,
+                    "playPauseTrigger": false,
+                    "playButtonTheme": "dark",
+                    "playButtonSize": "large",
+                    "maskLevel": "0",
+                    "share": false,
+                    "shareOptions": [],
+                    "playbackSpeed": false,
+                    "reporting": {
+                        "enabled": true
+                    },
+                    "centered": true
+                },
+                                "metadata": {
+                                    "title": "C++ in VS Code: Building your Code with CMake",
+                                    "posterframeUrl": "https://videoencodingpublic-hgeaeyeba8gycee3.b01.azurefd.net/public-6ecb292a-a6c1-48d3-86df-18aa5b78e716/C%20%20%20in%20VS%20Code_%20Building%20your%20Code%20with%20CMake_w1120.png",
+                                    "videoFiles": [
+                                        { "mediaType": "HLS", "url": "https://videoencodingpublic-hgeaeyeba8gycee3.b01.azurefd.net/public-6ecb292a-a6c1-48d3-86df-18aa5b78e716/24-33%20CMake%20and%20Build%20Systems%20fo_master.m3u8" }
+                                    ],
+                                    "videoAssetId": "6ecb292a-a6c1-48d3-86df-18aa5b78e716"
+                                }
+                            }'>
+                </universal-media-player>
+            </div>
+        </div>
+        <div class="carousel__overlay-content">
+            <button class="btn carousel__overlay-btn-toggle d-none overlay-hidden btn--media-stroke" aria-label="Show overlay content" aria-expanded="false" tabindex="-1" aria-controls="videos-carousel-5-bf videos-carousel-controls">
+                <span class="glyph-prepend glyph-prepend-chevron-up" aria-hidden="true"></span>
+            </button>
+            <div class="block-feature d-flex align-items-start block-feature--s block-feature--align-stacked block-feature--text-center" aria-live="polite" id="videos-carousel-5-bf">
+                <div class="block-feature__body d-flex flex-column align-items-start">
+                    <div class="block-feature__headings d-flex flex-column align-items-start">
+                        <div class="block-feature__eyebrow">
+                            <p class="block-feature__label ">10 mins</p>
+                        </div>
+                        <h3 class="block-feature__title ">C++ in VS Code: Building your Code with CMake</h3>
+                    </div>
+                    <p class="block-feature__paragraph"></p>
+                </div>
+            </div>
+        </div>
+    </div>                                            <div class="empty-slide"></div>
+                                        </div>
+                                    </div>
+                                    <a href="javascript:void(0);" class="carousel__back-to-controls sr-only-focusable position-absolute">Back to carousel navigation controls</a>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Theme picker / UHF Footer -->
+    <div class="mx-0 px-0 overflow-hidden uhf-footer-wrapper">
+        
+<div class="uhf11-footer-container">
+    <button type="button" class="uhf11-btn-theme" id="theme-toggle" aria-label="Change page theme" aria-pressed="false" data-bi-an="uhf-footer" data-bi-id="theme-toggle" data-bi-ct="button">
+        <svg xmlns="http://www.w3.org/2000/svg" style="margin-right:10px" width="24" height="24" fill="currentColor" class="bi bi-brightness-high" viewbox="0 0 16 16" aria-hidden="true">
+            <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"></path>
+        </svg><span>Theme</span>
+    </button>
+    
+<uhf-footer locale="en-us" partnerid="MSDev-Community" footerid="MSDev-DEVCOM-Community-Footer" theme="light">
+    <script id="uhf-footer-ccpa">
+        (function () {
+            function checkThirdPartyAdsOptOutCookie() {
+                try {
+                    var match = document.cookie.match('(^|;)\\s*3PAdsOptOut\\s*=\\s*([^;]+)');
+                    return (match ? match[2] : '') !== '1';
+                } catch (e) {
+                    return true;
+                }
+            }
+            var globalPrivacyControlEnabled = navigator.globalPrivacyControl;
+            window.GPC_DataSharingOptIn = globalPrivacyControlEnabled ? false : checkThirdPartyAdsOptOutCookie();
+            if (typeof window.onGPCLoaded === 'function') {
+                window.onGPCLoaded();
+            }
+        })();
+    </script>
+    
+<uhf-footer-nav slot="uhf-footer-nav">
+</uhf-footer-nav>
+        <a slot="uhf-footer-locale-picker" class="uhf-footer-link" href="/en-us/_devcom/locale" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_English (United States)_nav","ecn":"LegalNav_LocalePicker_nav","ehn":"LegalNav"}' aria-label="Content Language Selector. Currently set to English (United States)">English (United States)</a>
+    <div slot="uhf-footer-california-privacy-link">
+        
+<a class="uhf-footer-link" href="https://aka.ms/yourcaliforniaprivacychoices" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_California Privacy_nav","ecn":"LegalNav_CaliforniaPrivacy_nav","ehn":"LegalNav"}'>
+    <svg role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 14" xml:space="preserve" height="16" width="43">
+    <title>Your Privacy Choices Opt-Out Icon</title>
+    <path d="M7.4 12.8h6.8l3.1-11.6H7.4C4.2 1.2 1.6 3.8 1.6 7s2.6 5.8 5.8 5.8z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#fff"></path>
+    <path d="M22.6 0H7.4c-3.9 0-7 3.1-7 7s3.1 7 7 7h15.2c3.9 0 7-3.1 7-7s-3.2-7-7-7zm-21 7c0-3.2 2.6-5.8 5.8-5.8h9.9l-3.1 11.6H7.4c-3.2 0-5.8-2.6-5.8-5.8z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#06f"></path>
+    <path d="M24.6 4c.2.2.2.6 0 .8L22.5 7l2.2 2.2c.2.2.2.6 0 .8-.2.2-.6.2-.8 0l-2.2-2.2-2.2 2.2c-.2.2-.6.2-.8 0-.2-.2-.2-.6 0-.8L20.8 7l-2.2-2.2c-.2-.2-.2-.6 0-.8.2-.2.6-.2.8 0l2.2 2.2L23.8 4c.2-.2.6-.2.8 0z" style="fill:#fff"></path>
+    <path d="M12.7 4.1c.2.2.3.6.1.8L8.6 9.8c-.1.1-.2.2-.3.2-.2.1-.5.1-.7-.1L5.4 7.7c-.2-.2-.2-.6 0-.8.2-.2.6-.2.8 0L8 8.6l3.8-4.5c.2-.2.6-.2.9 0z" style="fill:#06f"></path>
+    </svg>
+    <span>Your Privacy Choices</span>
+</a>
+        <noscript>
+            
+<a class="uhf-footer-link" href="https://aka.ms/yourcaliforniaprivacychoices" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_California Privacy_nav","ecn":"LegalNav_CaliforniaPrivacy_nav","ehn":"LegalNav"}'>
+    <svg role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 14" xml:space="preserve" height="16" width="43">
+    <title>Your Privacy Choices Opt-Out Icon</title>
+    <path d="M7.4 12.8h6.8l3.1-11.6H7.4C4.2 1.2 1.6 3.8 1.6 7s2.6 5.8 5.8 5.8z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#fff"></path>
+    <path d="M22.6 0H7.4c-3.9 0-7 3.1-7 7s3.1 7 7 7h15.2c3.9 0 7-3.1 7-7s-3.2-7-7-7zm-21 7c0-3.2 2.6-5.8 5.8-5.8h9.9l-3.1 11.6H7.4c-3.2 0-5.8-2.6-5.8-5.8z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#06f"></path>
+    <path d="M24.6 4c.2.2.2.6 0 .8L22.5 7l2.2 2.2c.2.2.2.6 0 .8-.2.2-.6.2-.8 0l-2.2-2.2-2.2 2.2c-.2.2-.6.2-.8 0-.2-.2-.2-.6 0-.8L20.8 7l-2.2-2.2c-.2-.2-.2-.6 0-.8.2-.2.6-.2.8 0l2.2 2.2L23.8 4c.2-.2.6-.2.8 0z" style="fill:#fff"></path>
+    <path d="M12.7 4.1c.2.2.3.6.1.8L8.6 9.8c-.1.1-.2.2-.3.2-.2.1-.5.1-.7-.1L5.4 7.7c-.2-.2-.2-.6 0-.8.2-.2.6-.2.8 0L8 8.6l3.8-4.5c.2-.2.6-.2.9 0z" style="fill:#06f"></path>
+    </svg>
+    <span>Your Privacy Choices</span>
+</a>
+        </noscript>
+    </div>
+    <a slot="uhf-footer-consumer-health-privacy-link" class="uhf-footer-link" href="https://go.microsoft.com/fwlink/?linkid=2259814" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_Consumer Health Privacy_nav","ecn":"LegalNav_ConsumerHealthPrivacy_nav","ehn":"LegalNav"}'>Consumer Health Privacy</a>
+    
+<uhf-footer-menu slot="uhf-footer-menu" data-nav-label="Microsoft corporate links">
+            <a class="uhf-footer-link" href="https://support.microsoft.com/contactus/" id="uhf-Contact Microsoft " data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_Contact Microsoft _nav","ecn":"LegalNav_Contact Microsoft _nav","ehn":"LegalNav"}'>Contact Microsoft </a>
+            <a class="uhf-footer-link" href="https://go.microsoft.com/fwlink/?LinkId=521839" id="uhf-Privacy &amp; Cookies" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_Privacy &amp; Cookies_nav","ecn":"LegalNav_Privacy &amp; Cookies_nav","ehn":"LegalNav"}'>Privacy &amp; Cookies</a>
+            <a class="uhf-footer-link" href="#" id="uhf-Manage cookies" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_Manage cookies_nav","ecn":"LegalNav_Manage cookies_nav","ehn":"LegalNav"}'>Manage cookies</a>
+            <a class="uhf-footer-link" href="https://go.microsoft.com/fwlink/?LinkID=206977" id="uhf-Terms of Use" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_Terms of Use_nav","ecn":"LegalNav_Terms of Use_nav","ehn":"LegalNav"}'>Terms of Use</a>
+            <a class="uhf-footer-link" href="https://www.microsoft.com/trademarks" id="uhf-Trademarks" data-m='{"compnm":"UHF","view":"UHF","pa":"UniversalFooter","hn":"LegalNav","cN":"LegalNav_Trademarks_nav","ecn":"LegalNav_Trademarks_nav","ehn":"LegalNav"}'>Trademarks</a>
+</uhf-footer-menu>
+</uhf-footer>
+</div>
+    </div>
+    <!-- /Theme picker -->
+
+
+    <!-- Scripts -->
+    <script src="/__mirror/assets/6c595ffdb677c4a558469896" async></script>
+
+    
+<script type="module" src="/__mirror/assets/adb93738516987ac3e9c9096"></script>
+    
+ <!-- UHF scripts -->
+
+    
+    <script type="text/javascript" src="/__mirror/assets/b06372a56d52fb4c2e59c37b"></script>
+
+    
+    <script src="/__mirror/assets/5bc8db1ff406d4f5b65d6317"></script>
+    <!-- /Scripts -->
+
+    <script src="/__mirror/assets/942efe456a10a90269264a6f"></script>
+</body>
+</html>
